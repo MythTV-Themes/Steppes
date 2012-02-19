@@ -92,5 +92,52 @@
 	</buttonlist>
     </window>
 
+    <window name="standbymode">
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>Standby Mode</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="statusgroup">
+	    <area>100,100,-100,-100</area>
+
+	    <shape name="background" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+	    <statetype name="backendstatus">
+		<area>10,10,-10,-10</area>
+		<state name="idle">
+		    <area>0,0,100%,100%</area>
+		    <textarea name="status">
+			<area>20,20,-20,-20</area>
+			<align>center</align>
+			<font>mylargebold</font>
+			<value>Backend is idle</value>
+		    </textarea>
+		</state>
+		<state name="recording" from="idle">
+		    <textarea name="status">
+			<value>Backend is recording</value>
+		    </textarea>
+		</state>
+		<state name="shuttingdown" from="idle">
+		    <textarea name="status">
+			<value>Backend is recording</value>
+		    </textarea>
+		</state>
+		<state name="offline" from="idle">
+		    <textarea name="status">
+			<value>Backend is recording</value>
+		    </textarea>
+		</state>
+	    </statetype>
+	</group>
+    </window>
+
 </mythuitheme>
 

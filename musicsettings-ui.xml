@@ -116,7 +116,7 @@
 	</group>
 
 	<group name="dialog">
-	    <area>600,150,-400,-400</area>
+	    <area>600,150,-350,-400</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -142,14 +142,14 @@
 		<position>425, 200</position>
 	    </checkbox>
 	    <textarea name="autolookupcd_label" from="labelcheckbox">
-		<position>475, 200</position>
+		<area>475, 200,-10,70</area>
 		<value>Automatically lookup CDs</value>
 	    </textarea>
 
 	    <checkbox name="autoplaycd" from="basecheckbox">
 		<position>425, 280</position>
 	    </checkbox>
-	    <textarea name="autoplaycd_label" from="labelcheckbox">
+	    <textarea name="autoplaycd_label" from="autolookupcd_label">
 		<position>475, 280</position>
 		<value>Automatically Play CDs</value>
 	    </textarea>

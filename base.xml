@@ -1685,7 +1685,7 @@
 		<area>0,0,100%,100%</area>
 		<minsize>100%,40</minsize>
 		<type>roundbox</type>
-		<line color="#00FFFF" width="7" alpha="160" />
+		<line color="#00FFFF" width="5" alpha="160" />
 		<fill color="#000000" alpha="150" />
 		<cornerradius>10</cornerradius>
 	    </shape>
@@ -1693,27 +1693,27 @@
 	<state name="normal" from="default" />
 	<state name="error" from="default">
 	    <shape name="statusborder">
-		<line color="#e43e3e" width="7" alpha="255"/>
+		<line color="#e43e3e" width="6" alpha="255"/>
 	    </shape>
 	</state>
 	<state name="warning" from="default">
 	    <shape name="statusborder">
-		<line color="#ff9147" width="7" alpha="255"/>
+		<line color="#ff9147" width="5" alpha="255"/>
 	    </shape>
 	</state>
 	<state name="disabled" from="default">
 	    <shape name="statusborder">
-		<line color="#feffce" width="7" alpha="160" />
+		<line color="#feffce" width="5" alpha="160" />
 	    </shape>
 	</state>
 	<state name="running" from="default">
 	    <shape name="statusborder">
-		<line color="#33bf33" width="7" alpha="255" />
+		<line color="#33bf33" width="5" alpha="255" />
 	    </shape>
 	</state>
 	<state name="marked" from="default">
 	    <shape name="statusborder">
-		<line color="#FFFF00" width="7" alpha="255" />
+		<line color="#FFFF00" width="5" alpha="255" />
 	    </shape>
 	</state>
     </statetype>
@@ -2552,7 +2552,7 @@ or
 	</group>
 
 	<button name="back" from="varbuttoncenter">
-	    <area>1200,200,-30,70</area>
+	    <area>1200,200,-10,70</area>
 	    <value>Go up a level</value>
 	</button>
 

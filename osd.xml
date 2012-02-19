@@ -1009,11 +1009,11 @@
 	<buttonlist name="list">
 	    <arrange>stack</arrange>
 	    <align>center</align>
-	    <area>15,190,-15,-20</area>
+	    <area>5,190,-5,-20</area>
 	    <layout>vertical</layout>
 	    <spacing>2</spacing>
 	    <wrapstyle>selection</wrapstyle>
-	    <buttonarea>20,0,-30,100%</buttonarea>
+	    <buttonarea>15,0,-15,100%</buttonarea>
 	    <statetype name="buttonitem">
 		<area>0,0,100%,90</area>
 		<state name="active">
@@ -1026,7 +1026,7 @@
 			<cornerradius>20</cornerradius>
 		    </shape>
 		    <textarea name="buttontext">
-			<area>15,5,-15,-5</area>
+			<area>25,5,-25,-5</area>
 			<cutdown>yes</cutdown>
 			<align>center</align>
 			<multiline>yes</multiline>

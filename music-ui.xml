@@ -347,7 +347,7 @@
 	  </textedit>
 
 	  <group name="matches" from="basematchgroup">
-	      <area>1340, 32, 300, 70</area>
+	      <area>1340, 32, 400, 70</area>
 	      <textarea name="matches_text" from="resulttext" />
 	  </group>
 
@@ -947,7 +947,7 @@
 	</group>
 
 	<group name="dialog">
-	    <area>250,40,-250,-100</area>
+	    <area>250,30,-250,-90</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -1060,16 +1060,16 @@
 	    </spinbox>
 
 	    <textarea name="rating_label" from="labeltext">
-		<area>410,860,200,70</area>
+		<area>410,860,310,70</area>
 		<value>Rating:</value>
 	    </textarea>
 
 	    <spinbox name="ratingspin" from="basespinbox">
-		<position>620,860</position>
+		<position>720,860</position>
 	    </spinbox>
 
 	    <statetype name="ratingstate" from="baseratingstate">
-		<position>800,885</position>
+		<position>650,930</position>
 	    </statetype>
 	    
 
@@ -1188,7 +1188,7 @@
     <!-- Home -> Media Library -> Listen to Music -> 'I'
     -->
     <window name="trackdetail_popup">
-        <area>-1,-1,1400,720</area>
+        <area>-1,-1,1400,1000</area>
 
 	<shape name="dialogbackground" from="basewidgetshape">
 	    <area>0,0,100%,100%</area>
@@ -1201,116 +1201,117 @@
         </imagetype>
 
         <textarea name="titlelbl" from="labeltext">
-            <position>20,50</position>
+            <position>20,30</position>
             <value>Title:</value>
         </textarea>
 
         <textarea name="title" from="basetextarea">
-            <area>280,50,580,75</area>
+            <area>280,30,580,75</area>
 	    <align>left,vcenter</align>
 	    <multiline>yes</multiline>
         </textarea>
 
         <textarea name="artistlbl" from="titlelbl">
-	    <position>20,100</position>
+	    <position>20,110</position>
             <value>Artist:</value>
         </textarea>
 
         <textarea name="artist" from="title">
-	    <position>280,100</position>
+	    <position>280,110</position>
         </textarea>
 
         <textarea name="albumlbl" from="titlelbl">
-	    <position>20,150</position>
+	    <position>20,190</position>
             <value>Album:</value>
         </textarea>
 
         <textarea name="album" from="title">
-	    <position>280,150</position>
+	    <position>280,190</position>
         </textarea>
 
         <textarea name="genrelbl" from="titlelbl">
-	    <position>20,200</position>
+	    <position>20,270</position>
             <value>Genre:</value>
         </textarea>
 
         <textarea name="genre" from="title">
-	    <position>280,200</position>
+	    <position>280,270</position>
         </textarea>
 
         <textarea name="tracknumlbl" from="titlelbl">
-	    <position>20,250</position>
+	    <position>20,350</position>
             <value>Track No.:</value>
         </textarea>
 
         <textarea name="tracknum" from="title">
-	    <position>280,250</position>
+	    <position>280,350</position>
         </textarea>
 
         <textarea name="lenlbl" from="titlelbl">
-            <area>310,250,200,70</area>
+            <area>310,350,200,70</area>
             <value>Length:</value>
         </textarea>
 
         <textarea name="length" from="title">
-	    <position>520,250</position>
+	    <position>520,350</position>
         </textarea>
 
         <textarea name="yearlbl" from="titlelbl">
-	    <position>20,300</position>
+	    <position>20,430</position>
             <value>Year:</value>
         </textarea>
 
         <textarea name="year" from="title">
-	    <position>280,300</position>
+	    <position>280,430</position>
         </textarea>
 
         <textarea name="ratinglbl" from="titlelbl">
-	    <position>20,350</position>
+	    <position>20,510</position>
             <value>Rating:</value>
         </textarea>
 
         <statetype name="rating_state" from="baseratingstate">
-            <position>280,375</position>
+            <position>280,540</position>
         </statetype>
 
         <textarea name="dateaddedlbl" from="titlelbl">
-	    <position>20,400</position>
+	    <position>20,590</position>
             <value>Date Added:</value>
         </textarea>
 
         <textarea name="dateadded" from="title">
-	    <position>280,400</position>
+	    <position>280,590</position>
             <value>Last Value</value>
         </textarea>
 
         <textarea name="lastplaylbl" from="titlelbl">
-	    <position>20,450</position>
+	    <position>20,670</position>
             <value>Last Played:</value>
         </textarea>
 
         <textarea name="lastplayed" from="title">
-	    <position>280,450</position>
+	    <position>280,670</position>
             <value>Last Value</value>
         </textarea>
 
         <textarea name="playcountlbl" from="titlelbl">
-	    <position>20,500</position>
+	    <position>20,750</position>
             <value>Played:</value>
         </textarea>
 
         <textarea name="playcount" from="title">
-	    <position>280,500</position>
+	    <position>280,750</position>
             <template>%playcount% times</template>
         </textarea>
 
         <textarea name="filenamelbl" from="titlelbl">
-	    <position>20,550</position>
+	    <area>50,850,-20,35</area>
             <value>Filename:</value>
+	    <align>left</align>
         </textarea>
 
         <textarea name="filename" from="title">
-            <area>80,570,-30,110</area>
+            <area>80,875,-30,110</area>
             <multiline>yes</multiline>
         </textarea>
     </window>
@@ -1397,12 +1398,12 @@
 	    </button>
 
 	    <button name="scan" from="varbuttonleft">
-		<position>280,90</position>
+		<area>280,90,900,70</area>
 		<value>Look Up</value>
 	    </button>
 
-	    <button name="coverart" from="varbuttonleft">
-		<position>1030,90</position>
+	    <button name="coverart" from="varbuttonright">
+		<area>280,90,900,70</area>
 		<value>Cover Art</value>
 	    </button>
 
@@ -1730,28 +1731,29 @@
 		</shape>
 
 		<textarea name="track_label" from="basetextarea">
-		    <area>40,10,100,40</area>
+		    <area>20,10,150,40</area>
 		    <value>Track</value>
 		    <align>hcenter</align>
 		</textarea>
 
 		<textarea name="title_label" from="track_label">
-		    <position>130,10</position>
+		    <position>180,10</position>
 		    <value>Title</value>
 		</textarea>
 
 		<textarea name="list_artist_label" from="track_label">
-		    <position>50%+90,10</position>
+		    <area>50%+90,10,250,40</area>
 		    <value>Artist</value>
 		</textarea>
 
-		<textarea name="length_label" from="track_label">
-		    <position>100%-140,10</position>
+		<textarea name="length_label" from="list_artist_label">
+		    <position>100%-280,10</position>
+		    <align>right</align>
 		    <value>Length</value>
 		</textarea>
 
 		<buttonlist name="tracks" from="basechecklist">
-		    <area>10,40,-10,-10</area>
+		    <area>0,40,100%,-10</area>
 		    <statetype name="buttonitem">
 			<state name="active">
 			    <textarea name="track" from="buttontext">

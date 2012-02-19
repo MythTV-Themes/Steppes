@@ -200,28 +200,25 @@
 		<position>20,20</position>
 		<value>Browser Command:</value>
 	    </textarea>
-
 	    <textedit name="command" from="basetextedit">
 		<position>280,20</position>
 	    </textedit>
 
 	    <textarea name="zoomlabel" from="commandlabel">
-		<position>20,90</position>
+		<position>20,100</position>
 		<value>Text Size:</value>
 	    </textarea>
-
 	    <textedit name="zoom" from="command">
-		<position>280,90</position>
+		<position>280,100</position>
 	    </textedit>
 
+	    <checkbox name="enablepluginscheck" from="basecheckbox">
+		<position>280,180</position>
+	    </checkbox>
 	    <textarea name="pluginlabel" from="labelcheckbox">
-		<position>330,160</position>
+		<area>330,180,-10,70</area>
 		<value>Enable plugins</value>
 	    </textarea>
-
-	    <checkbox name="enablepluginscheck" from="basecheckbox">
-		<position>280,160</position>
-	    </checkbox>
 
 	    <button name="ok" from="varbuttonright">
 		<value>OK</value>

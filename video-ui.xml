@@ -1005,38 +1005,38 @@
 	    </shape>
 
 	    <textarea name="extension_text" from="labeltext">
-		<position>10,40</position>
+		<position>10,50</position>
 		<value>Extension:</value>
 	    </textarea>
 
 	    <buttonlist name="extension_select" from="baseselector">
-		<position>270,40</position>
+		<position>270,50</position>
 	    </buttonlist>
 
 	    <textarea name="command_text" from="labeltext">
-		<position>10,160</position>
+		<position>10,130</position>
 		<value>Command:</value>
 	    </textarea>
 
 	    <textedit name="command" from="basetextedit">
-		<position>270,160</position>
+		<position>270,130</position>
 	    </textedit>
 
 	    <checkbox name="default_check" from="basecheckbox">
-		<position>270,250</position>
+		<position>270,210</position>
 	    </checkbox>
 
 	    <textarea name="default_text" from="labelcheckbox">
-		<position>320,250</position>
+		<area>320,210,-10,70</area>
 		<value>Use default player</value>
 	    </textarea>
 
 	    <checkbox name="ignore_check" from="basecheckbox">
-		<position>270,315</position>
+		<position>270,290</position>
 	    </checkbox>
 
-	    <textarea name="ignore_text" from="labelcheckbox">
-		<position>320,315</position>
+	    <textarea name="ignore_text" from="default_text">
+		<position>320,290</position>
 		<value>Ignore</value>
 	    </textarea>
 

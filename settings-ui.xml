@@ -26,18 +26,18 @@
 	</group>
 
 	<group name="inputgroup">
-            <area>900,600,760,240</area>
+            <area>900,550,760,300</area>
 
 	    <shape name="dialogbackground" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
 	    </shape>
 
 	    <textarea name="label-text" from="labelcheckbox">
-		<area>20,20,-20,45</area>
+		<area>20,20,-20,70</area>
 	    </textarea>
 
 	    <textedit name="settingvalue" from="basewidetextedit">
-		<position>80,75</position>
+		<position>80,100</position>
 	    </textedit>
 
 	    <button name="cancel" from="varbuttonleft">
