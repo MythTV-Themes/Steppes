@@ -469,21 +469,22 @@
                     </textarea>
 
                     <textarea name="callsign" from="chanstr">
-                        <area>230,10,250,40</area>
+                        <area>220,10,240,40</area>
 			<align>center</align>
                     </textarea>
 
                     <textarea name="channelname" from="callsign">
-                        <area>500,10,690,40</area>
+                        <area>470,10,700,40</area>
 			<value>name</value>
                     </textarea>
 
 		    <textarea name="channelsourcename" from="callsign">
-			<area>1200,10,300,40</area>
+			<area>1180,10,290,40</area>
 		    </textarea>
 
 		    <textarea name="recprioritylabel" from="callsign">
-			<area>1510,10,280,40</area>
+			<area>1480,10,280,40</area>
+			<align>right,vcenter</align>
 			<value>Priority:</value>
 		    </textarea>
 

@@ -878,7 +878,7 @@
 			</statetype>
 
 			<statetype name="videolevel">
-			    <area>100%-225,14,28,28</area>
+			    <area>100%-225,10,28,28</area>
 			    <state name="None">
 				<imagetype name="icon">
 				    <filename>mv_level_none.png</filename>

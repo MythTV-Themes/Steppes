@@ -2165,7 +2165,7 @@
     <!-- mythtv-setup -> Channel Editor -> Icon Download
 	 -> Download all icons...
 or
-         Home -> Setup -> Music -> Scan for new Music
+         Home -> Setup -> Media Settings -> Music Tools -> Scan for New Music
     -->
     <window name="MythProgressDialog">
 	<area>-1,700,900,200</area>

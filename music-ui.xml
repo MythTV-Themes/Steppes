@@ -1685,8 +1685,9 @@
 		<position>270,160</position>
 	    </textedit>
 
-	    <button name="searchalbum" from="searchartist">
-		<area>830,160,230,60</area>
+	    <button name="searchalbum" from="varbuttonleft">
+		<area>830,160,230,70</area>
+		<value>Search</value>
 	    </button>
 
 	    <textarea name="genre_text" from="artist_label">
@@ -1698,8 +1699,9 @@
 		<position>270,230</position>
 	    </textedit>
 
-	    <button name="searchgenre" from="searchartist">
-		<area>830,230,230,60</area>
+	    <button name="searchgenre" from="varbuttonleft">
+		<area>830,230,230,70</area>
+		<value>Search</value>
 	    </button>
 
 	    <textarea name="year_label" from="artist_label">

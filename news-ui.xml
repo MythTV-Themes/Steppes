@@ -239,11 +239,12 @@
 		<area>680,20,800,-20</area>
 		<showarrow>no</showarrow>
 	    </buttonlist>
-
+<!--
 	    <textarea name="context_switch" from="basetextarea">
 		<area>20,550,760,50</area>
 		<multiline>yes</multiline>
 	    </textarea>
+-->
 	</group>
     </window>
 
