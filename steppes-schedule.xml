@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
+
+<mythuitheme>
+
+    <group name="prioritygroup">
+	<area>0,0,100%,100%</area>
+
+	<imagetype name="fanart">
+	    <area>0,0,100%,100%</area>
+	    <filename />
+	</imagetype>
+	
+	<group name="msggroup" from="baseMsgGroup">
+	    <textarea name="keyinstr" from="msgText">
+		<font>mysmall</font>
+		<value>(1) Title (2) Priority (4) Type</value>
+		<align>allcenter</align>
+	    </textarea>
+	</group>
+
+	<buttonlist name="programs" from="episodeList">
+	    <area>30,60,-30,870</area>
+	    <buttonarea>25,0,100%,100%</buttonarea>
+	    <statetype name="buttonitem">
+		<area>0,0,100%,100%</area>
+
+		<state name="inactive">
+
+                    <textarea name="recpriority">
+                        <area>5,10,60,40</area>
+                        <align>right</align>
+			<font>mysmallgrey</font>
+                    </textarea>
+
+                    <textarea name="recpriorityB">
+			<area>70,10,95,40</area>
+                        <align>right</align>
+			<font>mysmallgrey</font>
+			<template>(%1) +</template>
+                    </textarea>
+
+                    <textarea name="rectypepriority">
+			<area>170,10,60,40</area>
+                        <align>right</align>
+			<font>mysmallgrey</font>
+                    </textarea>
+
+                    <textarea name="finalpriority">
+			<area>235,10,100,40</area>
+                        <align>left</align>
+			<font>mysmallgrey</font>
+			<template>= %1</template>
+                    </textarea>
+
+                    <group name="rectypeGroup">
+			<area>325,7,600,36</area>
+			<minsize>50,100%</minsize>
+
+			<shape name="rectypeShape">
+			    <area>0,0,100%,100%</area>
+			    <minsize>50,100%</minsize>
+			    <type>roundbox</type>
+			    <cornerradius>10</cornerradius>
+			    <fill color="#302040" alpha="160" />
+			    <line color="#FFFFFF" alpha="160" width="0" />
+			</shape>
+
+			<textarea name="rectypestatus">
+			    <area>15,3,-15,-3</area>
+			    <minsize>50,100%</minsize>
+			    <align>center</align>
+			    <font>myverysmall</font>
+			    <font state="running">myverysmallgreen</font>
+			    <font state="disabled">myverysmallgrey</font>
+			    <font state="error">myverysmallred</font>
+			    <font state="normal">myverysmallblue</font>
+			    <font state="warning">myverysmallorange</font>
+			</textarea>
+		    </group>
+
+		    <group name="progstats" from="programStats">
+			<area>935,4,100%,40</area>
+
+			<textarea name="timedate">
+			    <area>0,0,0,0</area>
+			</textarea>
+			
+			<textarea name="lastrecorded">
+			    <area>0,6,-305,40</area>
+			    <align>center</align>
+			    <font>mysmallgrey</font>
+			    <template>(Last: %1)</template>
+			</textarea>
+
+			<textarea name="lenmins">
+			    <area>0,0,0,0</area>
+			</textarea>
+
+			<textarea name="channel">
+			    <area>100%-300,4,-15,40</area>
+			    <font>mysmallnarrowgrey</font>
+			    <align>right,vcenter</align>
+			</textarea>
+		    </group>
+		</state>
+
+		<state name="active" from="inactive" />
+
+		<state name="selectedinactive" from="active">
+		    <area>0,0,100%,320</area>
+
+		    <textarea name="titlesubtitle">
+			<area>0,0,0,0</area>
+		    </textarea>
+
+		    <textarea name="description">
+			<area>25,125,-25,-110</area>
+		    </textarea>
+
+		    <group name="details">
+			<area>8,100%-104,-8,-12</area>
+
+			<shape name="infoshape">
+			    <area>0, 0, 100%, 100%</area>
+			    <type>roundbox</type>
+			    <line color="#000000" alpha="0" width="0" />
+			    <fill color="#502550" alpha="80" />
+			    <cornerradius>10</cornerradius>
+			</shape>
+
+			<textarea name="category_label" from="labeltext">
+			    <area>10,0,350,35</area>
+			    <value>Category:</value>
+			    <font>mylabelfontsmall</font>
+			</textarea>
+
+			<textarea name="category">
+			    <area>370,0,360,40</area>
+			    <align>left,vcenter</align>
+			    <font>myverysmall</font>
+			</textarea>
+
+			<textarea name="recordingprofile_label"
+				  from="category_label">
+			    <position>750,0</position>
+			    <value>Recording Profile:</value>
+			</textarea>
+
+			<textarea name="recordingprofile" from="category">
+			    <position>1110,0</position>
+			</textarea>
+
+			<textarea name="scheduleinfo"
+				  from="category">
+			    <area>1500,0,-20,40</area>
+			    <align>right,vcenter</align>
+			</textarea>
+
+
+			<textarea name="storagegroup_label"
+				  from="category_label">
+			    <position>10,30</position>
+			    <value>Storage Group:</value>
+			</textarea>
+
+			<textarea name="storagegroup" from="category">
+			    <area>370,30,-15,40</area>
+			    <cutdown>no</cutdown>
+			    <scroll direction="horizontal" />
+			</textarea>
+
+			<textarea name="recordinggroup_label"
+				  from="category_label">
+			    <position>10,60</position>
+			    <value>Recording Group:</value>
+			</textarea>
+
+			<textarea name="recordinggroup"
+				  from="storagegroup">
+			    <position>370,60</position>
+			</textarea>
+		    </group>
+		</state>
+
+		<state name="selectedactive" from="selectedinactive">
+		    <statetype name="status" from="itemsSelectedState" />
+		</state>
+
+	    </statetype>
+	</buttonlist>
+    </group>
+
+</mythuitheme>

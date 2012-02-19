@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
+<mythuitheme>
+    <!-- Home -> Setup -> Screen Setup Wizards
+    -->
+    <window name="appearance">
+
+        <fontdef name="title" face="Liberation Sans">
+            <color>#ffffff</color>
+            <size>18</size>
+            <weight>bold</weight>
+        </fontdef>
+
+        <textarea name="part">
+            <area>300,230,1320,60</area>
+            <font>title</font>
+            <value>Appearance Wizard</value>
+            <align>center</align>
+        </textarea>
+
+        <imagetype name="topleft">
+            <position>0,0</position>
+            <filename>topleft.png</filename>
+        </imagetype>
+
+        <imagetype name="bottomright">
+            <position>800,600</position>
+            <filename>bottomright.png</filename>
+        </imagetype>
+
+        <textarea name="part1">
+            <font>title</font>
+            <area>500,300,-500,470</area>
+            <value>Move the selected arrow to the corner of the TV screen.  Press SELECT to edit the other arrow.  Press MENU for options and ESC to quit.</value>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <textarea name="size">
+            <area>500,450,-500,140</area>
+            <font>title</font>
+        </textarea>
+
+        <textarea name="offsets">
+            <area>500,550,-500,140</area>
+            <font>title</font>
+        </textarea>
+
+        <textarea name="changeamount">
+            <area>500,650,-500,140</area>
+            <font>title</font>
+        </textarea>
+
+    </window>
+</mythuitheme>

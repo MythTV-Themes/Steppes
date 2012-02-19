@@ -1,0 +1,1736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
+
+<mythuitheme>
+
+    <!-- Home -> Media Library -> Watch Videos -> select video, 'I'(nfo)
+	 -> Video Info -> View Cast
+    -->
+    <window name="castpopup">
+        <area>-1,-1,600,900</area>
+
+	<shape name="background" from="basewidgetshape" />
+
+        <buttonlist name="cast" from="basepopupbuttonlist">
+	    <area>20,20,-20,-100</area>
+	</buttonlist>
+
+        <button name="ok" from="varbuttonright">
+            <value>Done</value>
+        </button>
+    </window>
+
+    <!-- Home -> Media Library -> Watch Videos -> select video, 'I'(nfo)
+	 -> Video Info -> View Full Plot
+    -->
+    <window name="descriptionpopup">
+        <area>-1,-1,1280,720</area>
+
+	<shape name="background" from="basewidgetshape" />
+
+        <textarea name="description" from="basetextarea">
+            <area>20,20,-20,-100</area>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="ok" from="varbuttonright">
+            <value>Done</value>
+        </button>
+    </window>
+
+    <!-- Home -> Media Library -> Watch Videos -> select video, 'I'(nfo)
+	 -> Video Info -> View Details
+    -->
+    <window name="itemdetailpopup">
+        <area>-1,-1,1280,800</area>
+
+	<shape name="basewidgetshape">
+	    <area>0,0,100%,100%</area>
+	    <type>roundbox</type>
+	    <cornerradius>20</cornerradius>
+	    <fill color="#000000" alpha="255" />
+	    <line color="#FFFFFF" width="6" alpha="96"/>
+	</shape>
+
+        <imagetype name="coverart">
+            <area>25,40,312,465</area>
+            <filename>Images/Graphite/mv_browse_nocover_large.png</filename>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+	<group name="previewgroup">
+	    <area>25,520,434,255</area>
+	    <minsize vanish="yes">100%,100%</minsize>
+
+	    <shape name="previewShape">
+		<area>0,0,100%,100%</area>
+		<minsize vanish="yes">100%,100%</minsize>
+		<type>roundbox</type>
+		<cornerradius>5</cornerradius>
+		<fill color="#555555" alpha="255" />
+		<line color="#FFFFFF" alpha="160" width="8" />
+	    </shape>
+
+	    <imagetype name="screenshot">
+		<area>12,12,-12,-12</area>
+		<minsize vanish="yes">100%,100%</minsize>
+		<preserveaspect>true</preserveaspect>
+	    </imagetype>
+	</group>
+
+
+        <textarea name="title" from="basetextarea">
+            <area>350,15,-15,95</area>
+            <multiline>yes</multiline>
+            <font>mylarge</font>
+            <align>center</align>
+        </textarea>
+
+	<textarea name="subtitle">
+	    <area>350,90,-15,80</area>
+	    <font>mymedium</font>
+	    <multiline>yes</multiline>
+	    <align>center</align>
+	</textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>370,170,-15,345</area>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <textarea name="rating" from="basetextarea">
+            <area>480,530,770,35</area>
+        </textarea>
+
+        <textarea name="year" from="basetextarea">
+            <area>710,530,200,35</area>
+	    <template>Year: %1</template>
+	    <align>top,hcenter</align>
+        </textarea>
+
+        <textarea name="userrating" from="basetextarea">
+            <area>940,530,220,35</area>
+            <align>right,top</align>
+            <template>User Rating: %1</template>
+        </textarea>
+
+        <textarea name="length" from="basetextarea">
+            <area>480,570,200,35</area>
+            <align>top,left</align>
+        </textarea>
+
+	<textarea name="s##e##" from="year">
+	    <position>710,570</position>
+	    <template />
+	</textarea>
+
+	<textarea name="inetref" from="userrating">
+	    <position>940,570</position>
+	    <template>IMDB: %1</template>
+	</textarea>
+
+	<statetype name="videolevel" from="basevideolevel">
+	    <position>720,660</position>
+	</statetype>
+
+        <textarea name="director" from="basetextarea">
+            <area>480,620,-120,55</area>
+            <font>mymedium</font>
+	    <template>Directed by %1</template>
+	    <align>top,hcenter</align>
+        </textarea>
+
+	<group name="buttons">
+	    <area>475,100%-80,-100,100%</area>
+
+	    <button name="done_button" from="varbuttonleft">
+		<value>Done</value>
+	    </button>
+
+	    <button name="play_button" from="varbuttonright">
+		<value>Play</value>
+	    </button>
+	</group>
+
+    </window>
+
+    <!-- Home -> Media Library -> Watch Videos -> 'M'(enu) -> Change View
+	 -> Switch to Manage View
+    -->
+    <window name="manager">
+
+	<imagetype name="fanart">
+	    <area>0,0,100%,100%</area>
+	    <filename />
+	</imagetype>
+	
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>Video Manager</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="msggroup" from="baseMsgGroupLarge">
+	    <textarea name="novideos" from="msgText">
+		<value>No videos in library,or no files found.  If you have configured a video directory,press "M" (or the MENU key) and select "Scan for Changes."</value>
+	    </textarea>
+	</group>
+
+	<group name="previewgroup">
+	    <area>48,802,434,255</area>
+	    <minsize vanish="yes">100%,100%</minsize>
+
+	    <shape name="previewShape">
+		<area>0,0,100%,100%</area>
+		<minsize vanish="yes">100%,100%</minsize>
+		<type>roundbox</type>
+		<cornerradius>5</cornerradius>
+		<fill color="#555555" alpha="255" />
+		<line color="#FFFFFF" alpha="160" width="8" />
+	    </shape>
+
+	    <imagetype name="screenshot">
+		<area>12,12,-12,-12</area>
+		<minsize vanish="yes">100%,100%</minsize>
+		<preserveaspect>true</preserveaspect>
+	    </imagetype>
+	</group>
+
+	<imagetype name="coverart">
+	    <area>35,25,460,680</area>
+	    <filename />
+	    <preserveaspect>true</preserveaspect>
+	</imagetype>
+
+	<buttonlist name="videos" from="episodeList">
+	    <statetype name="buttonitem">
+		<area>0,0,100%,100%</area>
+
+		<state name="inactive">
+
+                    <textarea name="inetref">
+                        <area>15,10,150,55</area>
+                        <align>top,left</align>
+			<font>myverysmallgrey</font>
+                    </textarea>
+
+                    <textarea name="rating" from="inetref">
+			<area>100,10,200,55</area>
+                        <align>top,right</align>
+                    </textarea>
+
+                    <textarea name="length" from="inetref">
+			<area>450,10,200,55</area>
+			<align>top,hcenter</align>
+                    </textarea>
+
+		    <statetype name="videolevel" from="basevideolevel">
+			<position>680,8</position>
+		    </statetype>
+
+		    <textarea name="s##e##" from="basetextarea">
+			<area>100%-200,10,120,55</area>
+			<font>myverysmallnarrowgrey</font>
+			<align>top,right</align>
+			<multiline>no</multiline>
+		    </textarea>
+		    <textarea name="year" from="s##e##">
+			<area>100%-70,6,-15,55</area>
+		    </textarea>
+
+		    <textarea name="title" from="titlesubtitle">
+			<template>%TITLE%% - |SUBTITLE%</template>
+		    </textarea>
+
+		</state>
+
+		<state name="active" from="inactive" />
+
+		<state name="selectedinactive" from="active">
+		    <area>0,0,100%,340</area>
+
+		    <textarea name="titlesubtitle">
+			<area>0,0,0,0</area>
+		    </textarea>
+
+		    <textarea name="description">
+			<area>25,130,-25,-100</area>
+		    </textarea>
+
+		    <group name="details">
+			<area>8,100%-104,-8,-12</area>
+
+			<shape name="infoshape">
+			    <area>0, 0, 100%, 100%</area>
+			    <type>roundbox</type>
+			    <line color="#000000" alpha="0" width="0" />
+			    <fill color="#502550" alpha="80" />
+			    <cornerradius>10</cornerradius>
+			</shape>
+
+			<textarea name="browselbl" from="labeltext">
+			    <area>10,0,250,35</area>
+			    <value>Browsable:</value>
+			    <font>mylabelfontsmall</font>
+			</textarea>
+
+			<textarea name="browseable">
+			    <area>270,0,100,40</area>
+			    <align>left,vcenter</align>
+			    <font>myverysmall</font>
+			</textarea>
+
+			<textarea name="directorlbl" from="browselbl">
+			    <position>400,0</position>
+			    <value>Directed by:</value>
+			</textarea>
+
+			<textarea name="director" from="browseable">
+			    <area>660,0,-15,40</area>
+			</textarea>
+
+			<textarea name="fillbl" from="browselbl">
+			    <position>10,30</position>
+			    <value>Filename:</value>
+			</textarea>
+
+			<textarea name="filename" from="browseable">
+			    <area>270,30,-15,40</area>
+			    <cutdown>no</cutdown>
+			    <scroll direction="horizontal" />
+			</textarea>
+
+			<textarea name="cvflbl" from="fillbl">
+			    <position>10,60</position>
+			    <value>Cover File:</value>
+			</textarea>
+
+			<textarea name="coverfile" from="filename">
+			    <position>270,60</position>
+			</textarea>
+
+		    </group>
+
+		    <textarea name="title">
+			<area>20,45,100%,50</area>
+			<align>left</align>
+			<font>mylargebold</font>
+			<template>%TITLE%</template>
+		    </textarea>
+		    <textarea name="subtitle">
+			<area>60,88,100%,45</area>
+			<align>left</align>
+			<font>mymediumbold</font>
+		    </textarea>
+		</state>
+
+		<state name="selectedactive" from="selectedinactive">
+		    <statetype name="status" from="itemsSelectedState" />
+		</state>
+
+	    </statetype>
+
+	</buttonlist>
+    </window>
+
+    <!-- Home -> Media Library -> Watch Videos -> 'M'(enu) -> Change View
+	 -> Switch to Browse View
+    -->
+    <window name="browser" include="steppes-video.xml">
+        <imagetype name="fanart">
+            <area>0,0,100%,100%</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>Video Browser</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<textarea name="novideos">
+	    <area>20,20,-20,980</area>
+	    <font>myextralargebold</font>
+	    <multiline>yes</multiline>
+	    <cutdown>no</cutdown>
+	    <align>center</align>
+	    <value>No videos in library,or no files found.  If you have configured a video directory,press "M" (or the MENU key) and select "Scan for Changes."</value>
+	</textarea>
+
+        <buttonlist name="videos">
+	    <arrange>stack</arrange>
+	    <align>bottom,left</align>
+	    <area>30,30,-30,960</area>
+	    <buttonarea>25,0,100%,100%</buttonarea>
+	    <wrapstyle>selection</wrapstyle>
+	    <spacing>0</spacing>
+	    
+	    <statetype name="upscrollarrow">
+		<area>0,50%-25,20,20</area>
+		<state type="off">
+		</state>
+		<state type="full">
+		    <imagetype name="upon">
+			<filename>Images/uparrow-on.png</filename>
+		    </imagetype>
+		</state>
+	    </statetype>
+	    <statetype name="downscrollarrow">
+		<area>0,50%+5,20,20</area>
+		<state type="off">
+		</state>
+		<state type="full">
+		    <imagetype name="dnon">
+			<filename>Images/downarrow-on.png</filename>
+		    </imagetype>
+		</state>
+	    </statetype>
+
+	    <statetype name="buttonitem">
+<!--
+		<area>0,0,100%,100%</area>
+-->
+	    <area>0,16,100%,-16</area>
+		<minsize>100%,160</minsize>
+
+		<state name="inactive">
+		    <area>0,0,100%,160</area>
+
+		    <shape name="statusborder">
+			<area>7,0,-7,100%</area>
+			<minsize>100%,160</minsize>
+			<type>roundbox</type>
+			<line color="#9e9e9e" alpha="255" width="1" />
+			<fill color="#000000" alpha="144" />
+			<cornerradius>10</cornerradius>
+		    </shape>
+
+		    <textarea name="title">
+			<area>230,6,-210,50</area>
+			<align>left,vcenter</align>
+			<font>mylarge</font>
+		    </textarea>
+		    
+		    <textarea name="subtitle">
+			<area>280,50,-170,45</area>
+			<align>left,vcenter</align>
+			<font>mymedium</font>
+		    </textarea>
+
+		    <textarea name="year" from="basetextarea">
+			<area>100%-80,6,-15,55</area>
+			<font>mysmallnarrowgrey</font>
+			<align>right,vcenter</align>
+		    </textarea>
+		    <textarea name="s##e##" from="year">
+			<area>100%-210,6,120,55</area>
+		    </textarea>
+
+		    <textarea name="rating">
+			<area>100%-215, 100%-38, 200, 30</area>
+
+			<minsize shrink="short" vanish="true">
+			1,1</minsize>
+
+			<align>right,top</align>
+			<font>myverysmall</font>
+		    </textarea>
+
+		    <textarea name="length" from="rating">
+			<area>100%-400,100%-40,200,30</area>
+		    </textarea>
+
+		    <textarea name="userrating" from="rating">
+			<area>250,100%-38,200,30</area>
+			<align>left,top</align>
+			<template>User Rating: %1</template>
+		    </textarea>
+
+		    <textarea name="director" from="rating">
+			<area>420,100%-38,-420,30</area>
+			<align>top,hcenter</align>
+			<template>Directed by %1</template>
+		    </textarea>
+
+		    <statetype name="watchedstate">
+			<area>135,80,56,28</area>
+			<state name="yes">
+			    <imagetype name="yes">
+				<filename>Images/icons/watched.png</filename>
+			    </imagetype>
+			</state>
+			<state name="no">
+			    <imagetype name="blank">
+				<filename>Images/icons/watched.png</filename>
+				<alpha>64</alpha>
+			    </imagetype>
+			</state>
+		    </statetype>
+
+		    <statetype name="videolevel">
+			<area>149,18,28,28</area>
+			<state name="None">
+			    <imagetype name="icon">
+				<filename>mv_level_none.png</filename>
+			    </imagetype>
+			</state>
+			<state name="Lowest">
+			    <imagetype name="icon">
+				<filename>mv_level_lowest.png</filename>
+			    </imagetype>
+			</state>
+			<state name="Low">
+			    <imagetype name="icon">
+				<filename>mv_level_low.png</filename>
+			    </imagetype>
+			</state>
+			<state name="Medium">
+			    <imagetype name="icon">
+				<filename>mv_level_medium.png</filename>
+			    </imagetype>
+			</state>
+			<state name="High">
+			    <imagetype name="icon">
+				<filename>mv_level_high.png</filename>
+			    </imagetype>
+			</state>
+		    </statetype>
+
+		    <imagetype name="coverart">
+			<area>20,12,100,136</area>
+			<minsize initiator="false" vanish="yes">100,120</minsize>
+			<filename />
+			<preserveaspect>true</preserveaspect>
+		    </imagetype>
+
+                    <statetype name="nodetype">
+                        <position>135,7</position>
+                        <state name="subfolder">
+                            <imagetype name="icon">
+                                <area>0,0,80,80</area>
+                                <filename>Images/Graphite/folderclosed.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <area>0,0,80,80</area>
+                                <filename>Images/Graphite/mv_gallery_dir_up.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <textarea name="childcount" from="basetextarea">
+		      <area>122,15,80,80</area>
+                        <font>myverysmallyellow</font>
+                        <align>right,vcenter</align>
+                    </textarea>
+
+		</state>
+		
+		<state name="active" from="inactive">
+		</state>
+		
+		<state name="selectedinactive" from="inactive">
+		    <area>0,0,100%,320</area>
+		    <minsize>100%,160</minsize>
+		    
+		    <shape name="statusborder">
+			<area>0,0,100%,100%</area>
+			<minsize>100%,160</minsize>
+			<line color="#00ffff" alpha="192" width="7" />
+		    </shape>
+
+		    <textarea name="title">
+			<scroll direction="horizontal" />
+			<cutdown>no</cutdown>
+		    </textarea>
+
+		    <textarea name="subtitle">
+			<scroll direction="horizontal" />
+			<cutdown>no</cutdown>
+		    </textarea>
+
+		    <group name="detailsgroup">
+			<area>0,50,100%,100%</area>
+			<minsize vanish="true">100%,110</minsize>
+
+			<group name="bufferzone">
+			    <area>0,0,100%,100%</area>
+			    <group name="screengroup">
+				<area>10,100,212,160</area>
+				<minsize vanish="true">100%,100%</minsize>
+
+				<shape name="screenshape">
+				    <area>0,0,100%,100%</area>
+				    <minsize vanish="true">100%,100%</minsize>
+				    <type>roundbox</type>
+				    <line color="#FFFFFF" alpha="180" width="4" />
+				    <fill color="#000000" alpha="200" />
+				    <cornerradius>3</cornerradius>
+				</shape>
+
+				<imagetype name="screenshot">
+				    <area>6,4,-6,-4</area>
+				    <minsize vanish="yes">210,295</minsize>
+				    <filename />
+				    <preserveaspect>true</preserveaspect>
+				</imagetype>
+			    </group>
+			</group>			
+
+			<group name="extragroup" from="VideoExtraGroup">
+			    <area>230,0,100%,100%</area>
+			    <minsize vanish="true">100%,110</minsize>
+			</group>
+
+		    </group>
+
+                    <statetype name="nodetype">
+                        <position>135,7</position>
+                        <state name="subfolder">
+                            <imagetype name="icon">
+                                <filename>Images/Graphite/folderopen.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder" from="subfolder">
+                            <imagetype name="icon">
+                                <filename>Images/Graphite/mv_gallery_dir_up_open.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+
+		</state>
+
+		<state name="selectedactive" from="selectedinactive" />
+	    </statetype>
+	</buttonlist>
+    </window>
+
+    <!-- Home -> Media Library -> Watch Videos -> 'M'(enu) -> Change View
+	 -> Switch to Gallery View
+    -->
+    <window name="gallery">
+
+        <imagetype name="fanart">
+            <area>0,0,100%,100%</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>Video Gallery</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<buttonlist name="videos" from="basegridlist">
+	    <scrollstyle>groupcenter</scrollstyle>
+	    <wrapstyle>items</wrapstyle>
+
+	    <area>20,10,-80,-100</area>
+
+		
+	    <statetype name="buttonitem">
+		<state name="selectedinactive" from="active">
+
+		    <area>-140,-140,560,560</area>
+
+		    <shape name="statusborder" />
+
+		    <group name="imagegroup">
+			<area>15,15,284,284</area>
+			<minsize>0,0</minsize>
+			<imagetype name="buttonimage">
+			    <area>4,4,-4,-4</area>
+			    <minsize>0,0</minsize>
+			    <filename />
+			    <preserveaspect>true</preserveaspect>
+			</imagetype>
+		    </group>
+
+		    <statetype name="nodetype">
+			<position>100%-100,10</position>
+		    </statetype>
+
+		    <statetype name="videolevel" from="basevideolevel">
+			<position>320,15</position>
+		    </statetype>
+
+		    <textarea name="year" from="basetextarea">
+			<area>300,50,-15,35</area>
+			<align>right</align>
+		    </textarea>
+
+		    <textarea name="rating" from="year">
+			<position>300,85</position>
+		    </textarea>
+
+		    <textarea name="s##e##" from="year">
+			<position>300,120</position>
+		    </textarea>
+
+		    <textarea name="length" from="year">
+			<position>300,155</position>
+		    </textarea>
+
+		    <textarea name="userrating" from="year">
+			<position>300,190</position>
+			<template>User Rating: %1</template>
+		    </textarea>
+
+		    <textarea name="inetref" from="year">
+			<position>300,225</position>
+			<template>IMDB: %1</template>
+		    </textarea>
+
+		    <statetype name="watchedstate">
+			<area>490,260,56,28</area>
+			<state name="yes">
+			    <imagetype name="yes">
+				<filename>Images/icons/watched.png</filename>
+			    </imagetype>
+			</state>
+			<state name="no">
+			    <imagetype name="blank">
+				<filename>Images/icons/watched.png</filename>
+				<alpha>64</alpha>
+			    </imagetype>
+			</state>
+		    </statetype>
+
+		    <group name="textgroup">
+			<area>0,0,0,0</area>
+			<shape name="shadow">
+			    <area>0,0,0,0</area>
+			</shape>
+			<textarea name="buttontext">
+			    <area>0,0,0,0</area>
+			</textarea>
+		    </group>
+
+		    <textarea name="title">
+			<area>15,300,-15,125</area>
+			<multiline>yes</multiline>
+			<font>mylargelightgrey</font>
+		    </textarea>
+
+		    <textarea name="subtitle">
+			<area>15,395,-15,100</area>
+			<font>mymedium</font>
+			<multiline>yes</multiline>
+			<align>right</align>
+		    </textarea>
+
+		    <textarea name="category" from="year">
+			<area>15,475,-15,40</area>
+			<template>Category: %1</template>
+			<align>left</align>
+		    </textarea>
+
+		    <textarea name="director" from="category">
+			<area>15,515,-15,40</area>
+			<template>Directed by %1</template>
+		    </textarea>
+
+
+		</state>
+
+		<state name="selectedactive" from="selectedinactive">
+		    <shape name="statusborder">
+			<line color="#00FFFF" width="5" alpha="160" />
+			<fill color="#000000" alpha="240" />
+		    </shape>
+
+		    <group name="imagegroup" />
+		    <statetype name="nodetype" />
+		</state>
+
+	    </statetype>
+	</buttonlist>
+
+	<textarea name="novideos">
+	    <area>20,20,-20,980</area>
+	    <font>myextralargebold</font>
+	    <multiline>yes</multiline>
+	    <cutdown>no</cutdown>
+	    <align>center</align>
+	    <value>No videos in library,or no files found.  If you have configured a video directory,press "M" (or the MENU key) and select "Scan for Changes."</value>
+	</textarea>
+
+    </window>
+
+    <!-- Home -> Media Library -> Watch Videos -> 'M'(enu) -> Change View
+	 -> Switch to List View
+    -->
+    <window name="tree" include="steppes-video.xml">
+
+	<imagetype name="fanart">
+	    <area>0,0,100%,100%</area>
+	    <filename>Backgrounds/</filename>
+	</imagetype>
+
+	<group name="posgroup" from="baseModeGroup">
+	    <area>550,25,200,45</area>
+	    <textarea name="position" from="pagemode">
+		<align>center</align>
+		<font>mysmall</font>
+		<extraleading>1</extraleading>
+		<cutdown>left</cutdown>
+	    </textarea>
+	</group>
+
+	<group name="crumbgroup" from="baseModeGroup">
+	    <area>750,25,-20,45</area>
+	    <textarea name="breadcrumbs" from="pagemode">
+		<align>left,vcenter</align>
+		<font>mysmall</font>
+		<extraleading>1</extraleading>
+		<cutdown>left</cutdown>
+	    </textarea>
+	</group>
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>Video List</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="msggroup" from="baseMsgGroupLarge">
+	    <textarea name="novideos" from="msgText">
+		<value>No videos in library,or no files found.  If you have configured a video directory,press "M" (or the MENU key) and select "Scan for Changes."</value>
+	    </textarea>
+	</group>
+
+	<group name="previewgroup">
+	    <area>48,802,434,255</area>
+	    <minsize vanish="yes">100%,100%</minsize>
+
+	    <shape name="previewShape">
+		<area>0,0,100%,100%</area>
+		<minsize vanish="yes">100%,100%</minsize>
+		<type>roundbox</type>
+		<cornerradius>5</cornerradius>
+		<fill color="#555555" alpha="255" />
+		<line color="#FFFFFF" alpha="160" width="8" />
+	    </shape>
+
+	    <imagetype name="screenshot">
+		<area>12,12,-12,-12</area>
+		<minsize vanish="yes">100%,100%</minsize>
+		<preserveaspect>true</preserveaspect>
+	    </imagetype>
+	</group>
+
+	<imagetype name="coverart">
+	    <area>35,25,460,680</area>
+	    <filename />
+	    <preserveaspect>true</preserveaspect>
+	</imagetype>
+
+	<buttontree name="videos">
+	    <area>530,120,1360,870</area>
+
+	    <buttonlist name="listtemplate">
+		<arrange>stack</arrange>
+		<align>bottom,left</align>
+		<!-- Put the right edge @ 1890 -->
+		<area>530,120,1360,870</area>
+		<buttonarea>25,0,100%,100%</buttonarea>
+		<wrapstyle>selection</wrapstyle>
+		<spacing>0</spacing>
+		
+		<statetype name="buttonitem">
+		    <area>0,0,100%,100%</area>
+
+		    <state name="inactive">
+			<area>0,0,100%,60</area>
+			
+			<shape name="statusborder">
+			    <area>5,0,-5,100%</area>
+			    <minsize shrink="short">100%,60</minsize>
+			    <type>roundbox</type>
+			    <line color="#9e9e9e" alpha="255" width="1" />
+			    <fill color="#000000" alpha="144" />
+			    <cornerradius>10</cornerradius>
+			</shape>
+
+			<statetype name="watchedstate">
+			    <area>10,15,56,28</area>
+			    <state name="yes">
+				<imagetype name="yes">
+				    <filename>Images/icons/watched.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="no">
+				<imagetype name="blank">
+				    <filename>Images/icons/watched.png</filename>
+				    <alpha>64</alpha>
+				</imagetype>
+			    </state>
+			</statetype>
+
+			<statetype name="videolevel">
+			    <area>100%-225,14,28,28</area>
+			    <state name="None">
+				<imagetype name="icon">
+				    <filename>mv_level_none.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="Lowest">
+				<imagetype name="icon">
+				    <filename>mv_level_lowest.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="Low">
+				<imagetype name="icon">
+				    <filename>mv_level_low.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="Medium">
+				<imagetype name="icon">
+				    <filename>mv_level_medium.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="High">
+				<imagetype name="icon">
+				    <filename>mv_level_high.png</filename>
+				</imagetype>
+			    </state>
+			</statetype>
+
+			<textarea name="title">
+			    <area>80,4,-230,50</area>
+			    <align>left,vcenter</align>
+			    <font>mylarge</font>
+			    <template>%TITLE%% - |SUBTITLE%</template>
+			</textarea>
+
+			<textarea name="year" from="basetextarea">
+			    <area>100%-80,4,-15,50</area>
+			    <font>mysmallnarrowgrey</font>
+			    <align>right,vcenter</align>
+			</textarea>
+			<textarea name="s##e##" from="year">
+			    <area>100%-210,4,120,50</area>
+			</textarea>
+
+		    </state>
+		    
+		    <state name="active" from="inactive">
+		    </state>
+		    
+		    <state name="selectedinactive" from="inactive">
+			<area>0,0,100%,400</area>
+			<minsize shrink="short">100%,60</minsize>
+
+			<shape name="statusborder">
+			    <area>0,0,100%,100%</area>
+			    <line color="#00ffff" alpha="192" width="5" />
+			</shape>
+
+			<textarea name="title">
+			    <template>%TITLE%</template>
+			    <scroll direction="horizontal" />
+			    <cutdown>no</cutdown>
+			</textarea>
+
+			<group name="extragroup" from="VideoExtraGroup">
+			    <area>0,52,100%,100%</area>
+			</group>
+
+		    </state>
+
+		    <state name="selectedactive" from="selectedinactive" />
+
+		</statetype>
+		<statetype name="upscrollarrow">
+		    <area>0,100%-85,20,20</area>
+		    <state type="off">
+			<imagetype name="upoff">
+			    <filename>Images/uparrow-off.png</filename>
+			</imagetype>
+		    </state>
+		    <state type="full">
+			<imagetype name="upon">
+			    <filename>Images/uparrow-on.png</filename>
+			</imagetype>
+		    </state>
+		</statetype>
+		<statetype name="downscrollarrow">
+		    <area>0,100%-55,20,20</area>
+		    <state type="off">
+			<imagetype name="dnoff">
+			    <filename>Images/downarrow-off.png</filename>
+			</imagetype>
+		    </state>
+		    <state type="full">
+			<imagetype name="dnon">
+			    <filename>Images/downarrow-on.png</filename>
+			</imagetype>
+		    </state>
+		</statetype>
+	    </buttonlist>
+	</buttontree>
+    </window>
+
+    <!-- Home -> Setup -> Media Settings -> Videos Settings -> File Types
+    -->
+    <window name="file_associations">
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>MythVideo File Associations</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="msggroup" from="baseMsgGroupLarge">
+	    <textarea name="helptext" from="msgText" />
+	</group>
+
+	<group name="dialog">
+	    <area>550,120,-550,600</area>
+
+	    <shape name="background" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+	    <textarea name="extension_text" from="labeltext">
+		<position>10,40</position>
+		<value>Extension:</value>
+	    </textarea>
+
+	    <buttonlist name="extension_select" from="baseselector">
+		<position>270,40</position>
+	    </buttonlist>
+
+	    <textarea name="command_text" from="labeltext">
+		<position>10,160</position>
+		<value>Command:</value>
+	    </textarea>
+
+	    <textedit name="command" from="basetextedit">
+		<position>270,160</position>
+	    </textedit>
+
+	    <checkbox name="default_check" from="basecheckbox">
+		<position>270,250</position>
+	    </checkbox>
+
+	    <textarea name="default_text" from="labelcheckbox">
+		<position>320,250</position>
+		<value>Use default player</value>
+	    </textarea>
+
+	    <checkbox name="ignore_check" from="basecheckbox">
+		<position>270,315</position>
+	    </checkbox>
+
+	    <textarea name="ignore_text" from="labelcheckbox">
+		<position>320,315</position>
+		<value>Ignore</value>
+	    </textarea>
+
+	    <button name="new_button" from="varbuttonleft">
+		<value>New</value>
+	    </button>
+
+	    <button name="delete_button" from="varbuttoncenter">
+		<value>Delete</value>
+	    </button>
+
+	    <button name="done_button" from="varbuttonright">
+		<value>Done</value>
+	    </button>
+
+	</group>
+    </window>
+
+    <!-- Home -> Media Library -> Watch Videos -> select video, 'E'dit
+    -->
+    <window name="edit_metadata">
+
+	<imagetype name="backgroundimage">
+	    <filename>Backgrounds/background.png</filename>
+	</imagetype>
+
+	<group name="previewgroup">
+	    <area>48,802,434,255</area>
+	    <minsize vanish="yes">100%,100%</minsize>
+
+	    <shape name="previewShape">
+		<area>0,0,100%,100%</area>
+		<minsize vanish="yes">100%,100%</minsize>
+		<type>roundbox</type>
+		<cornerradius>5</cornerradius>
+		<fill color="#555555" alpha="255" />
+		<line color="#FFFFFF" alpha="160" width="8" />
+	    </shape>
+
+	    <imagetype name="screenshot">
+		<area>12,12,-12,-12</area>
+		<minsize vanish="yes">100%,100%</minsize>
+		<preserveaspect>true</preserveaspect>
+	    </imagetype>
+	</group>
+
+	<imagetype name="coverart">
+	    <area>35,25,460,680</area>
+	    <filename />
+	    <preserveaspect>true</preserveaspect>
+	</imagetype>
+
+	<group name="form">
+	    <area>520,20,-20,-20</area>
+
+	    <shape name="background">
+		<area>0,0,100%,100%</area>
+		<fill style="gradient">
+		    <gradient start="#000000" end="#302040" alpha="255"
+			      direction="diagonal"  />
+		</fill>
+		<line color="#FFFFFF" alpha="128" width="4" />
+	    </shape>
+
+	    <textarea name="title_label" from="labeltext">
+		<area>20,20,160,70</area>
+		<value>Title:</value>
+	    </textarea>
+
+	    <textedit name="title_edit" from="basecentertextedit">
+		<area>190,20,600,70</area>
+	    </textedit>
+
+	    <textarea name="subtitle_label" from="title_label">
+		<position>20,80</position>
+		<value>Subtitle:</value>
+	    </textarea>
+
+	    <textedit name="subtitle_edit" from="title_edit">
+		<position>190,80</position>
+	    </textedit>
+
+	    <textarea name="tagline_label" from="title_label">
+		<position>20,140</position>
+		<value>Tagline:</value>
+	    </textarea>
+
+	    <textedit name="tagline_edit" from="title_edit">
+		<position>190,140</position>
+	    </textedit>
+
+	    <textarea name="inetref_label" from="title_label">
+		<position>790,20</position>
+		<value>TMDB:</value>
+	    </textarea>
+
+	    <textedit name="inetref_edit" from="basecentertextedit">
+		<area>960,20,400,70</area>
+	    </textedit>
+
+	    <textarea name="rating_label" from="title_label">
+		<position>790,80</position>
+		<value>Rating:</value>
+	    </textarea>
+
+	    <textedit name="rating_edit" from="inetref_edit">
+		<position>960,80</position>
+	    </textedit>
+
+	    <textarea name="director_label" from="title_label">
+		<position>790,140</position>
+		<value>Director:</value>
+	    </textarea>
+
+	    <textedit name="director_edit" from="inetref_edit">
+		<position>960,140</position>
+	    </textedit>
+
+	    <textarea name="desc_label" from="title_label">
+		<area>20,205,160,155</area>
+		<value>Plot:</value>
+	    </textarea>
+
+	    <textedit name="description_edit" from="basemultilinetextedit">
+		<area>190,205,-20,155</area>
+	    </textedit>
+
+	    <!-- Category -->
+	    <textarea name="category_text" from="labeltext">
+		<area>10,360,150,70</area>
+		<value>Category:</value>
+	    </textarea>
+
+	    <buttonlist name="category_select" from="baseselector">
+		<area>170,360,430,70</area>
+	    </buttonlist>
+
+	    <!-- Season -->
+	    <textarea name="season_text" from="labeltext">
+		<area>10,430,150,70</area>
+		<value>Season:</value>
+	    </textarea>
+
+	    <spinbox name="season" from="basespinbox">
+		<position>170,430</position>
+	    </spinbox>
+
+	    <!-- Episode -->
+	    <textarea name="episode_text" from="season_text">
+		<position>290,430</position>
+		<value>Episode:</value>
+	    </textarea>
+
+	    <spinbox name="episode" from="basespinbox">
+		<position>450,430</position>
+	    </spinbox>
+
+	    <!-- Year -->
+	    <textarea name="year_text" from="season_text">
+		<position>600,360</position>
+		<value>Year:</value>
+	    </textarea>
+
+	    <spinbox name="year_spin" from="basespinbox">
+		<position>760,360</position>
+	    </spinbox>
+
+	    <!-- Length -->
+	    <textarea name="length_text" from="season_text">
+		<position>600,430</position>
+		<value>Length:</value>
+	    </textarea>
+
+	    <spinbox name="length_spin" from="basespinbox">
+		<position>760,430</position>
+	    </spinbox>
+
+	    <!-- User rating -->
+	    <textarea name="userrating_text" from="labeltext">
+		<area>910,360,240,70</area>
+		<value>User Rating:</value>
+	    </textarea>
+
+	    <spinbox name="userrating_spin" from="basespinbox">
+		<area>1160,360,200,70</area>
+	    </spinbox>
+
+	    <!-- Parental level -->
+	    <textarea name="parent_text" from="userrating_text">
+		<position>910,430</position>
+		<value>Parental Level:</value>
+	    </textarea>
+
+	    <buttonlist name="level_select" from="baseselector">
+		<area>1160,430,200,70</area>
+	    </buttonlist>
+
+	    <!-- Homepage -->
+	    <textarea name="homepage_label" from="labeltext">
+		<area>20,500,190,70</area>
+		<value>Homepage:</value>
+	    </textarea>
+
+	    <textedit name="homepage_edit" from="basetextedit">
+		<area>220,500,-20,70</area>
+	    </textedit>
+
+	    <!-- Player -->
+	    <textarea name="player_text" from="homepage_label">
+		<position>20,570</position>
+		<value>Custom Player:</value>
+	    </textarea>
+
+	    <textedit name="player_edit" from="basecentertextedit">
+		<area>220,570,400,70</area>
+	    </textedit>
+
+	    <!-- Play next... -->
+	    <textarea name="child_text" from="season_text">
+		<position>610,570</position>
+		<value>Next File:</value>
+	    </textarea>
+
+	    <buttonlist name="child_select" from="basewideselector">
+		<position>765,570</position>
+	    </buttonlist>
+
+	    <!-- Trailer -->
+	    <textarea name="trailer_label" from="homepage_label">
+		<area>20,650,240,70</area>
+		<value>Trailer:</value>
+	    </textarea>
+
+	    <button name="trailer_button" from="basewidebutton">
+		<area>270,650,850,70</area>
+	    </button>
+
+	    <textarea name="trailer_text" from="labelbutton">
+		<area>325,650,780,70</area>
+		<value>Find local trailers</value>
+		<align>center</align>
+	    </textarea>
+
+	    <!-- Banner -->
+	    <textarea name="banner_text_label" from="trailer_label">
+		<position>20,710</position>
+		<value>Banner:</value>
+	    </textarea>
+
+	    <button name="net_banner_button" from="basebutton">
+		<area>270,710,290,70</area>
+		<value>Get Banner</value>
+	    </button>
+
+	    <button name="banner_button" from="basewidebutton">
+		<area>560,710,800,70</area>
+	    </button>
+
+	    <textarea name="banner_text" from="labelbutton">
+		<area>580,710,780,70</area>
+		<align>center</align>
+		<cutdown>yes</cutdown>
+		<value>Find local banner</value>
+	    </textarea>
+
+	    <!-- Coverart -->
+	    <textarea name="coverart_text_label" from="trailer_label">
+		<position>20,770</position>
+		<value>Cover Art:</value>
+	    </textarea>
+
+	    <button name="net_coverart_button" from="net_banner_button">
+		<position>270,770</position>
+		<value>Get coverart</value>
+	    </button>
+
+	    <button name="coverart_button" from="banner_button">
+		<position>560,770</position>
+	    </button>
+
+	    <textarea name="coverart_text" from="banner_text">
+		<position>580,770</position>
+		<align>center</align>
+		<cutdown>yes</cutdown>
+		<value>Find local coverart</value>
+	    </textarea>
+
+	    <!-- Fanart -->
+	    <textarea name="fanart_text_label" from="trailer_label">
+		<position>20,830</position>
+		<value>Fanart:</value>
+	    </textarea>
+
+	    <button name="net_fanart_button" from="net_banner_button">
+		<position>270,830</position>
+		<value>Get Fanart</value>
+	    </button>
+
+	    <button name="fanart_button" from="banner_button">
+		<position>560,830</position>
+	    </button>
+
+	    <textarea name="fanart_text" from="banner_text">
+		<position>580,830</position>
+		<align>center</align>
+		<cutdown>yes</cutdown>
+		<value>Find local fanart</value>
+	    </textarea>
+
+	    <!-- Screenshot -->
+	    <textarea name="screenshot_text_label" from="trailer_label">
+		<position>20,890</position>
+		<value>Screenshot:</value>
+	    </textarea>
+
+	    <button name="net_screenshot_button" from="net_banner_button">
+		<position>270,890</position>
+		<value>Get Screenshot</value>
+	    </button>
+
+	    <button name="screenshot_button" from="banner_button">
+		<position>560,890</position>
+	    </button>
+
+	    <textarea name="screenshot_text" from="banner_text">
+		<position>580,890</position>
+		<align>center</align>
+		<cutdown>yes</cutdown>
+		<value>Find local screenshot</value>
+	    </textarea>
+
+	    <!-- Watched -->
+	    <textarea name="watched_text" from="labelcheckbox">
+		<position>280,100%-75</position>
+		<value>Watched</value>
+	    </textarea>
+
+	    <checkbox name="watched_check" from="basecheckbox">
+		<position>230,100%-75</position>
+	    </checkbox>
+
+	    <!-- Browsable -->
+	    <textarea name="browse_text" from="labelcheckbox">
+		<position>580,100%-75</position>
+		<value>Browsable</value>
+	    </textarea>
+
+	    <checkbox name="browse_check" from="basecheckbox">
+		<position>530,100%-75</position>
+	    </checkbox>
+
+	    <button name="done_button" from="varbuttonright">
+		<value>Done</value>
+	    </button>
+	</group>
+    </window>
+
+    <!-- Home -> Media Library -> Watch Videos -> 'M'(enu) -> Filter Display
+    -->
+    <window name="filter">
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>Filter video list</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="dialog">
+	    <area>250,30,-250,900</area>
+
+	    <shape name="background" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+	    <textarea name="textfilter_text" from="labeltext">
+		<position>290,10</position>
+		<value>Text Filter:</value>
+	    </textarea>
+
+	    <textedit name="textfilter_input" from="basetextedit">
+		<position>550,10</position>
+	    </textedit>
+
+	    <textarea name="category_text" from="labeltextlarge">
+		<position>40,90</position>
+		<value>Category :</value>
+	    </textarea>
+
+	    <buttonlist name="category_select" from="baselargeselector">
+		<position>295,90</position>
+	    </buttonlist>
+
+	    <textarea name="genre_text" from="category_text">
+		<position>40,190</position>
+		<value>Genre :</value>
+	    </textarea>
+
+	    <buttonlist name="genre_select" from="baselargeselector">
+		<position>295,190</position>
+	    </buttonlist>
+
+	    <textarea name="country_text" from="category_text">
+		<position>40,295</position>
+		<value>Country :</value>
+	    </textarea>
+
+	    <buttonlist name="country_select" from="baselargeselector">
+		<position>295,290</position>
+	    </buttonlist>
+
+	    <textarea name="cast_text" from="category_text">
+		<position>40,390</position>
+		<value>Actor/Actress :</value>
+	    </textarea>
+
+	    <buttonlist name="cast_select" from="baselargeselector">
+		<position>295,390</position>
+	    </buttonlist>
+
+	    <textarea name="year_text" from="category_text">
+		<position>40,490</position>
+		<value>Year :</value>
+	    </textarea>
+
+	    <buttonlist name="year_select" from="baselargeselector">
+		<position>295,490</position>
+	    </buttonlist>
+
+	    <textarea name="runtime_text" from="category_text">
+		<position>40,590</position>
+		<value>Runtime :</value>
+	    </textarea>
+
+	    <buttonlist name="runtime_select" from="baselargeselector">
+		<position>295,590</position>
+	    </buttonlist>
+
+	    <textarea name="userrating_text" from="category_text">
+		<position>650,90</position>
+		<value>User Rating :</value>
+	    </textarea>
+
+	    <buttonlist name="userrating_select" from="baselargeselector">
+		<position>900,90</position>
+	    </buttonlist>
+
+	    <textarea name="browse_text" from="category_text">
+		<position>650,190</position>
+		<value>Browse :</value>
+	    </textarea>
+
+	    <buttonlist name="browse_select" from="baselargeselector">
+		<position>900,190</position>
+	    </buttonlist>
+
+	    <textarea name="inetref_text" from="category_text">
+		<position>650,290</position>
+		<value>InetRef :</value>
+	    </textarea>
+
+	    <buttonlist name="inetref_select" from="baselargeselector">
+		<position>900,290</position>
+	    </buttonlist>
+
+	    <textarea name="coverfile_text" from="category_text">
+		<position>650,390</position>
+		<value>Cover File :</value>
+	    </textarea>
+
+	    <buttonlist name="coverfile_select" from="baselargeselector">
+		<position>900,390</position>
+	    </buttonlist>
+
+	    <textarea name="orderby_text" from="category_text">
+		<position>650,490</position>
+		<value>Sort by :</value>
+	    </textarea>
+
+	    <buttonlist name="orderby_select" from="baselargeselector">
+		<position>900,490</position>
+	    </buttonlist>
+
+	    <textarea name="watched_text" from="category_text">
+		<position>650,590</position>
+		<value>Watched :</value>
+	    </textarea>
+
+	    <buttonlist name="watched_select" from="baselargeselector">
+		<position>900,590</position>
+	    </buttonlist>
+
+	    <group name="resultgroup">
+		<area>500,670,600,140</area>
+		<minsize vanish="true">1,55</minsize>
+
+		<shape name="msgShape">
+		    <area>0,0,100%,100%</area>
+		    <minsize vanish="true">1,55</minsize>
+		    <type>roundbox</type>
+		    <cornerradius>5</cornerradius>
+		    <fill color="#301530" alpha="200" />
+		    <line color="#000000" alpha="0" />
+		</shape>
+
+		<textarea name="numvideos_text" from="basetextarea">
+		    <area>10,10,-10,-10</area>
+		    <minsize vanish="true" shrink="short">1,55</minsize>
+		    <multiline>yes</multiline>
+		    <font>mysmall</font>
+		    <align>center</align>
+		</textarea>
+	    </group>
+
+	    <group name="buttons">
+		<area>295, 100%-80, 1005, 100%</area>
+
+		<button name="save_button" from="varbuttonleft">
+		    <value>Save as default</value>
+		</button>
+
+		<button name="done_button" from="varbuttonright">
+		    <value>Done</value>
+		</button>
+	    </group>
+	</group>
+    </window>
+
+    <!-- Home -> Setup -> Media Settings -> Videos Settings -> Player Settings
+    -->
+    <window name="playersettings">
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>Player Settings</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="msggroup" from="baseMsgGroupWide">
+	    <textarea name="helptext" from="msgText" />
+	</group>
+
+	<group name="dialog">
+	    <area>450,100,1000,650</area>
+
+	    <shape name="dialogbackground" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+	    <textarea name="default_text" from="labeltext">
+		<position>20,20</position>
+		<value>Default Player:</value>
+	    </textarea>
+
+	    <textedit name="defaultplayer" from="basewidetextedit">
+		<position>280,20</position>
+	    </textedit>
+
+	    <textarea name="dvd_text" from="default_text">
+		<position>20,90</position>
+		<value>DVD Player:</value>
+	    </textarea>
+
+	    <textedit name="dvdplayer" from="basewidetextedit">
+		<position>280,90</position>
+	    </textedit>
+
+	    <textarea name="dvddrive_text" from="labeltext">
+		<position>20,160</position>
+		<value>DVD Drive:</value>
+	    </textarea>
+
+	    <textedit name="dvddrive" from="basewidetextedit">
+		<position>280,160</position>
+	    </textedit>
+
+	    <textarea name="bluraymount_text" from="default_text">
+		<position>20,230</position>
+		<value>Blu-ray Mount:</value>
+	    </textarea>
+
+	    <textedit name="bluraymount" from="basewidetextedit">
+		<position>280,230</position>
+	    </textedit>
+
+	    <textarea name="blureg_text" from="labeltextlarge">
+		<position>20,300</position>
+		<value>Blu-ray Region:</value>
+	    </textarea>
+
+	    <buttonlist name="blurayregionlist" from="baselargeselector">
+		<area>280,300,600,90</area>
+	    </buttonlist>
+
+	    <checkbox name="altcheck" from="basecheckbox">
+		<position>280,420</position>
+	    </checkbox>
+
+	    <textarea name="altcheck_text" from="labelcheckbox">
+		<position>330,420</position>
+		<value>Enable Alternate Player</value>
+	    </textarea>
+
+	    <textedit name="altplayer" from="basewidetextedit">
+		<position>280,460</position>
+	    </textedit>
+
+	    <group name="buttons">
+		<area>245, 100%-80, 670, 100%</area>
+		<button name="cancel" from="varbuttonleft">
+		    <value>Cancel</value>
+		</button>
+
+		<button name="ok" from="varbuttonright">
+		    <value>OK</value>
+		</button>
+	    </group>
+	</group>
+    </window>
+
+    <!-- Home -> Setup -> Media Settings -> Videos Settings -> Metadata Settings
+    -->
+    <window name="metadatasettings">
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>Video Metadata Settings</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="msggroup" from="baseMsgGroupWide">
+	    <textarea name="helptext" from="msgText" />
+	</group>
+
+	<group name="dialog">
+	    <area>500,220,-500,450</area>
+
+	    <shape name="background" from="basewidgetshape" />
+
+	    <checkbox name="autometaupdatecheck" from="basecheckbox">
+		<position>40,40</position>
+	    </checkbox>
+
+	    <textarea name="autometacheck_text" from="labelcheckbox">
+		<area>90,40,-20,70</area>
+		<value>Perform metadata update after video scan</value>
+	    </textarea>
+
+	    <checkbox name="unknownfilecheck" from="basecheckbox">
+		<position>40,110</position>
+	    </checkbox>
+
+	    <textarea name="unknownfilecheck_text" from="autometacheck_text">
+		<position>90,110</position>
+		<value>Display unknown file types</value>
+	    </textarea>
+
+	    <checkbox name="treeloadsmetacheck" from="basecheckbox">
+		<position>40,180</position>
+	    </checkbox>
+
+	    <textarea name="treeloadsmetacheck_text" from="autometacheck_text">
+		<position>90,180</position>
+		<value>Enable metadata in file browse mode</value>
+	    </textarea>
+
+	    <checkbox name="randomtrailercheck" from="basecheckbox">
+		<position>40,250</position>
+	    </checkbox>
+
+	    <textarea name="trailercheck_text" from="autometacheck_text">
+		<position>90,250</position>
+		<value>Enable Random Trailer Playback</value>
+	    </textarea>
+
+	    <spinbox name="trailernum" from="basespinbox">
+		<position>500,240</position>
+	    </spinbox>
+
+	    <button name="cancel" from="varbuttonleft">
+		<value>Cancel</value>
+	    </button>
+
+	    <button name="ok" from="varbuttonright">
+		<value>OK</value>
+	    </button>
+	</group>
+
+    </window>
+
+
+</mythuitheme>

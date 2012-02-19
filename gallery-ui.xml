@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
+<mythuitheme>
+
+    <!-- Home -> Media Library -> Image Gallery
+    -->
+    <window name="gallery">
+
+        <imagetype name="fanart">
+            <area>0,0,100%,100%</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>Video Gallery</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="posgroup" from="baseModeGroup">
+	    <area>50,25,250,45</area>
+	    <textarea name="position" from="pagemode">
+		<align>center</align>
+		<font>mysmall</font>
+		<extraleading>1</extraleading>
+		<cutdown>left</cutdown>
+	    </textarea>
+	</group>
+
+	<group name="crumbgroup" from="baseModeGroup">
+	    <area>300,25,-30,45</area>
+	    <textarea name="breadcrumbs" from="pagemode">
+		<align>left,vcenter</align>
+		<font>mysmall</font>
+		<extraleading>1</extraleading>
+		<cutdown>left</cutdown>
+	    </textarea>
+	</group>
+
+	<textarea name="noimages" from="pagemode">
+	    <area>120,120,-120,-300</area>
+	    <align>center</align>
+	    <font>mymedium</font>
+	</textarea>
+
+	<buttonlist name="images" from="basegridlist">
+            <spacing>2</spacing>
+	    <statetype name="upscrollarrow">
+		<area>30,100%-15,15,15</area>
+	    </statetype>
+	    <statetype name="downscrollarrow">
+		<area>50,100%-15,15,15</area>
+	    </statetype>
+        </buttonlist>
+    </window>
+
+    <!-- Home -> Media Library -> Image Gallery -> 'M'(enu)
+	 -> "Filter / Sort..."
+    -->
+    <window name="filter">
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>Filter/sort images</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="dialog">
+	    <area>50%-450,140,900,600</area>
+
+	    <shape name="dialogbackground" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>	
+
+	    <textarea name="filter_text" from="labeltext">
+		<position>20,20</position>
+		<value>Directory filter:</value>
+	    </textarea>
+	    
+	    <textedit name="dirfilter_text" from="basetextedit">
+		<position>275,20</position>
+	    </textedit>
+
+	    <textarea name="type_filter" from="labeltext">
+		<position>20,90</position>
+		<value>Type filter:</value>
+	    </textarea>
+
+	    <buttonlist name="typefilter_select" from="basemediumselector">
+		<position>270,90</position>
+	    </buttonlist>
+
+	    <button name="check_button" from="varbuttonleft">
+		<position>580,90</position>
+		<value>Check Filter</value>
+	    </button>
+
+	    <group name="resultgroup">
+		<area>200,160,600,140</area>
+		<minsize>50,25</minsize>
+
+		<shape name="msgShape">
+		    <area>0,0,100%,100%</area>
+		    <minsize>50,25</minsize>
+		    <type>roundbox</type>
+		    <cornerradius>5</cornerradius>
+		    <fill color="#301530" alpha="200" />
+		    <line color="#000000" alpha="0" />
+		</shape>
+
+		<textarea name="numimages_text" from="basetextarea">
+		    <area>10,10,-10,-10</area>
+		    <minsize shrink="short">50,25</minsize>
+		    <multiline>yes</multiline>
+		    <font>mysmall</font>
+		    <align>center</align>
+		</textarea>
+	    </group>
+
+	    <textarea name="sort_text" from="labeltextlarge">
+		<position>60,310</position>
+		<value>Sort by:</value>
+	    </textarea>
+
+	    <buttonlist name="sort_select" from="baselargeselector">
+		<position>310,310</position>
+	    </buttonlist>
+	    
+	    <button name="done_button" from="varbuttonleft">
+		<value>Done</value>
+	    </button>
+	    
+	    <button name="save_button" from="varbuttonright">
+		<value>Save as default</value>
+	    </button>
+	</group>
+    </window>
+
+</mythuitheme>

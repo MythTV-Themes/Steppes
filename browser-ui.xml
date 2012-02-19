@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
+<mythuitheme>
+
+    <!-- Home -> Information Center -> Web -> <select site>
+    -->
+    <window name="browser">
+        <buttonlist name="pagelist" from="basewideselector">
+            <area>20,10,-20,60</area>
+        </buttonlist>
+
+        <webbrowser name="webbrowser">
+            <area>20,90,-20,-100</area>
+            <zoom>1.4</zoom>
+        </webbrowser>
+
+        <progressbar name="progressbar" from="baseprogressbar">
+            <position>20,100%-65</position>
+        </progressbar>
+
+	<group name="statusgroup">
+	    <area>630,100%-80,-20,45</area>
+	    <minsize vanish="true">1,55</minsize>
+
+	    <shape name="msgShape">
+		<area>0,0,100%,100%</area>
+		<minsize vanish="true">1,55</minsize>
+		<type>roundbox</type>
+		<cornerradius>5</cornerradius>
+		<fill color="#301530" alpha="200" />
+		<line color="#000000" alpha="0" />
+	    </shape>
+
+	    <textarea name="status" from="basetextarea">
+		<area>5,5,-5,-5</area>
+		<minsize vanish="true">1,55</minsize>
+		<multiline>yes</multiline>
+		<font>mysmall</font>
+		<align>left,vcenter</align>
+	    </textarea>
+	</group>
+
+    </window>
+
+    <!-- Home -> Information Center -> Web
+    -->
+    <window name="bookmarkmanager">
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>Bookmark Manager</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="category">
+	    <area>40,40,-40,120</area>
+
+	    <shape name="dialogbackground" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+		<line color="#000000" alpha="0" width="0" />
+	    </shape>
+
+	    <textarea name="categorylabel" from="labeltext">
+		<area>20,5,500,35</area>
+		<align>left,vcenter</align>
+		<value>Category:</value>
+	    </textarea>
+
+	    <buttonlist name="grouplist" from="headingList">
+		<area>30,40,-10,60</area>
+		<align>left,top</align>
+	    </buttonlist>
+	</group>
+
+	<group name="bookmarks">
+	    <area>40,200,-40,-100</area>
+
+	    <shape name="dialogbackground" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+		<line color="#000000" alpha="0" width="0" />
+	    </shape>
+
+	    <buttonlist name="bookmarklist" from="basechecklist">
+		<align>top,hcenter</align>
+		<statetype name="buttonitem">
+		    <state name="active">
+			<textarea name="name" from="basetextarea">
+			    <area>50,5,350,-5</area>
+			</textarea>
+			<textarea name="url" from="name">
+			    <area>370,5,-5,-5</area>
+			</textarea>
+		    </state>
+		    <state name="selectedinactive" from="active">
+			<shape name="background"
+			       from="baseselectedinactivebuttonshape" />
+		    </state>
+		    <state name="selectedactive" from="selectedinactive">
+			<shape name="background"
+			       from="baseselectedbuttonshape" />
+		    </state>
+		</statetype>
+	    </buttonlist>
+	</group>
+
+        <textarea name="messagetext" from="basetextarea">
+            <font>basemedium</font>
+            <area>40,230,-40,290</area>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+    </window>
+
+    <!-- Home -> Information Center -> Web -> <select bookmark> -> 'E'(dit)
+    -->
+    <window name="bookmarkeditor">
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="title" from="text">
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="dialog">
+	    <area>50%-600,140,1200,400</area>
+
+	    <shape name="dialogbackground" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>	
+
+	    <textarea name="categorylabel" from="labeltext">
+		<position>20,20</position>
+		<value>Category:</value>
+	    </textarea>
+
+	    <textedit name="category" from="basewidetextedit">
+		<position>275,20</position>
+	    </textedit>
+
+	    <button name="findcategory" from="varbuttonleft">
+		<position>890,20</position>
+		<value>Find</value>
+	    </button>
+
+	    <textarea name="namelabel" from="categorylabel">
+		<position>20,90</position>
+		<value>Name:</value>
+	    </textarea>
+
+	    <textedit name="name" from="category">
+		<position>275,90</position>
+	    </textedit>
+
+	    <textarea name="urllabel" from="categorylabel">
+		<position>20,160</position>
+		<value>URL:</value>
+	    </textarea>
+
+	    <textedit name="url" from="category">
+		<position>275,160</position>
+	    </textedit>
+
+	    <button name="ok" from="varbuttonright">
+		<value>OK</value>
+	    </button>
+
+	    <button name="cancel" from="varbuttonleft">
+		<value>Cancel</value>
+	    </button>
+
+	</group>
+    </window>
+
+    <!-- Home -> Setup -> Info Center Settings -> Web Settings
+    -->
+    <window name="browserconfig">
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="title" from="text">
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="msggroup" from="baseMsgGroupWide">
+	    <textarea name="description" from="msgText" />
+	</group>
+
+	<group name="dialog">
+	    <area>50%-400,220,800,400</area>
+
+	    <shape name="dialogbackground" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>	
+
+	    <textarea name="commandlabel" from="labeltext">
+		<position>20,20</position>
+		<value>Browser Command:</value>
+	    </textarea>
+
+	    <textedit name="command" from="basetextedit">
+		<position>280,20</position>
+	    </textedit>
+
+	    <textarea name="zoomlabel" from="commandlabel">
+		<position>20,90</position>
+		<value>Text Size:</value>
+	    </textarea>
+
+	    <textedit name="zoom" from="command">
+		<position>280,90</position>
+	    </textedit>
+
+	    <textarea name="pluginlabel" from="labelcheckbox">
+		<position>330,160</position>
+		<value>Enable plugins</value>
+	    </textarea>
+
+	    <checkbox name="enablepluginscheck" from="basecheckbox">
+		<position>280,160</position>
+	    </checkbox>
+
+	    <button name="ok" from="varbuttonright">
+		<value>OK</value>
+	    </button>
+
+	    <button name="cancel" from="varbuttonleft">
+		<value>Cancel</value>
+	    </button>
+
+	</group>
+    </window>
+
+</mythuitheme>

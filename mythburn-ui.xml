@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
+
+<mythuitheme>
+
+    <!-- Home -> Optical Disks -> Archive Files -> Create DVD -> Next
+	 -> Next -> 'M'(enu) -> Change Encoding Profile
+    -->
+    <window name="profilepopup">
+        <area>-1,-1,600,600</area>
+
+	<shape name="background" from="basewidgetshape">
+	    <area>0,0,100%,100%</area>
+	</shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>20,20,-20,60</area>
+            <font>mylarge</font>
+            <align>hcenter,top</align>
+            <value>Change Encoding Profile</value>
+        </textarea>
+
+        <textarea name="caption_text" from="basetextarea">
+            <area>20,100,-20,90</area>
+            <align>hcenter,top</align>
+        </textarea>
+
+        <buttonlist name="profile_list" from="basemediumselector">
+            <position>50%-150,210</position>
+        </buttonlist>
+
+        <textarea name="description_text" from="basetextarea">
+            <area>30,280,-30,110</area>
+            <align>center</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+	<textarea name="oldsize_label" from="labeltext">
+            <position>50,410</position>
+	    <value>Old size:</value>
+        </textarea>
+
+	<textarea name="oldsize_text" from="basetextarea">
+	    <area>310,410,200,75</area>
+	</textarea>
+
+	<textarea name="newsize_label" from="oldsize_label">
+	    <position>50,450</position>
+	    <value>New size:</value>
+	</textarea>
+
+	<textarea name="newsize_text" from="basetextarea">
+	    <area>310,450,200,75</area>
+        </textarea>
+
+        <button name="ok_button" from="varbuttonright">
+	    <position>50%,100%-80</position>
+            <value>OK</value>
+        </button>
+
+    </window>
+
+    <!-- Home -> Optical Disks -> Archive Files -> Create DVD -> Next
+    -->
+    <window name="themeselector">
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>DVD Menu Theme</value>
+		</textarea>
+	    </group>
+	</group>
+
+
+	<group name="dialog">
+	    <area>20,20,900,-100</area>
+
+	    <shape name="background" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+	    <imagetype name="theme_image" >
+		<area>50,10,-50,460</area>
+		<preserveaspect>true</preserveaspect>
+	    </imagetype>
+
+	    <textarea name="themetitle" from="labeltextlarge">
+		<position>80,500</position>
+		<value>Select a theme:</value>
+	    </textarea>
+
+	    <buttonlist name="theme_selector" from="baselargeselector">
+		<position>350,500</position>
+	    </buttonlist>
+
+	    <textarea name="themedescription" from="basetextarea">
+		<area>20,600,-20,-120</area>
+		<multiline>yes</multiline>
+	    </textarea>
+
+	    <button name="cancel_button" from="varbuttonleft">
+		<value>Cancel</value>
+	    </button>
+
+	    <group name="buttons">
+		<area>50%, 100%-80, 100%, 70</area>
+		<button name="next_button" from="varbuttonleft">
+		    <area>100%-285, 0, 250, 100%</area>
+		    <value>Next</value>
+		</button>
+		<button name="prev_button" from="varbuttonright">
+		    <area>100%-540, 0, 250, 100%</area>
+		    <value>Prev</value>
+		</button>
+	    </group>
+	</group>
+
+	<group name="previews">
+	    <area>950,20,-20,-100</area>
+
+	    <shape name="background" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+	    <group name="preview">
+		<area>40,40,410,425</area>
+
+		<shape name="imageshape">
+		    <area>0,0,100%,100%</area>
+		    <fill color="#000000" alpha="255" />
+		</shape>
+
+		<imagetype name="image">
+		    <area>10,10,390,324</area>
+		    <preserveaspect>true</preserveaspect>
+		</imagetype>
+
+		<textarea name="title" from="basetextarea">
+		    <area>10,344,390,55</area>
+		    <align>center</align>
+		</textarea>
+	    </group>
+
+	    <group name="introgroup" from="preview">
+		<imagetype name="intro_image" from="image" />
+		<textarea name="title">
+		    <value>Intro</value>
+		</textarea>
+	    </group>
+
+	    <group name="maingroup" from="preview">
+		<position>500,40</position>
+		<imagetype name="mainmenu_image" from="image" />
+		<textarea name="title">
+		    <value>Menu</value>
+		</textarea>
+	    </group>
+
+	    <group name="chaptergroup" from="preview">
+		<position>40,490</position>
+		<imagetype name="chapter_image" from="image" />
+		<textarea name="title">
+		    <value>Chapter</value>
+		</textarea>
+	    </group>
+
+	    <group name="detailgroup" from="preview">
+		<position>500,490</position>
+		<imagetype name="details_image" from="image" />
+		<textarea name="title">
+		    <value>Detail</value>
+		</textarea>
+	    </group>
+	</group>
+    </window>
+
+
+    <!-- Home -> Optical Disks -> Archive Files -> Create DVD
+	 -> Next -> Next
+    -->
+    <window name="mythburn">
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>Select Archive Items</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="dialog">
+	    <area>100,50,-100,-100</area>
+
+	    <shape name="background" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+
+	    <textarea name="maxsize" from="basetextarea">
+		<area>50%+310,20,260,30</area>
+		<font>myverysmall</font>
+		<align>left</align>
+	    </textarea>
+
+	    <textarea name="minsize" from="basetextarea">
+		<area>50%-570,20,260,30</area>
+		<font>myverysmall</font>
+		<align>right</align>
+	    </textarea>
+
+	    <textarea name="currentsize" from="basetextarea">
+		<area>50%-150,45,300,30</area>
+		<font>myverysmall</font>
+		<align>center</align>
+	    </textarea>
+
+	    <textarea name="currentsize_error" from="currentsize">
+		<font>myverysmallred</font>
+	    </textarea>
+
+	    <progressbar name="size_bar" from="baseprogressbar">
+		<position>50%-300,25</position>
+	    </progressbar>
+
+	    <textarea name="nofiles" from="basetextarea">
+		<area>500,100,-500,90</area>
+		<align>center</align>
+		<value>No files are selected for archive</value>
+	    </textarea>
+
+	    <buttonlist name="archivelist" from="itemsList">
+		<area>20,90,-20,-220</area>
+
+		<statetype name="buttonitem">
+		    <state name="inactive">
+			<area>0,0,-25,120</area>
+
+			<textarea name="buttontext" from="basetextarea">
+			    <area>40,10,-350,35</area>
+			    <font>mysmallyellow</font>
+			</textarea>
+			<textarea name="subtitle" from="basetextarea">
+			    <area>70,42,-350,35</area>
+			    <font>mysmallgrey</font>
+			</textarea>
+			<textarea name="timedate" from="basetextarea">
+			    <area>70,74,300,35</area>
+			</textarea>
+			<textarea name="size" from="basetextarea">
+			    <area>100%-320,10,300,35</area>
+			    <align>right</align>
+			</textarea>
+			<textarea name="profile" from="size">
+			    <area>100%-320,42,300,35</area>
+			</textarea>
+			<textarea name="cutlist" from="size">
+			    <area>100%-320,74,300,35</area>
+			</textarea>
+			<statetype name="cutliststatus">
+			    <position>100%-285,100%-40</position>
+			    <state name="none"></state>
+			    <state name="using">
+				<imagetype name="statusimage">
+				    <filename>Images/icons/cutlist.png</filename>
+				</imagetype>
+			    </state>
+			    <state name="notusing" />
+			</statetype>
+
+			<statetype name="movestate" from="basemovestate" />
+		    </state>
+
+		    <state name="active" from="inactive" />
+		    
+		    <state name="selectedinactive" from="inactive" />
+
+		    <state name="selectedactive" from="selectedinactive" >
+			<statetype name="status" from="itemsSelectedState" />
+		    </state>
+		</statetype>
+	    </buttonlist>
+
+	    <button name="addrecording_button" from="varbuttonright">
+		<area>50%-555, 100%-200, 400, 70</area>
+		<value>Add Recording</value>
+	    </button>
+
+	    <button name="addvideo_button" from="varbuttoncenter">
+		<area>50%-150, 100%-200, 300, 70</area>
+		<value>Add Video</value>
+	    </button>
+
+	    <button name="addfile_button" from="varbuttonleft">
+		<area>50%+155, 100%-200, 400, 70</area>
+		<value>Add File</value>
+	    </button>
+
+	    <group name="buttons">
+		<area>50%, 100%-80, 100%, 70</area>
+
+		<button name="next_button" from="varbuttonleft">
+		    <area>100%-285, 0, 250, 100%</area>
+		    <value>Next</value>
+		</button>
+
+		<button name="prev_button" from="varbuttonright">
+		    <area>100%-540, 0, 250, 100%</area>
+		    <value>Prev</value>
+		</button>
+	    </group>
+
+	    <button name="cancel_button" from="varbuttonleft">
+		<value>Cancel</value>
+	    </button>
+
+	</group>
+
+    </window>
+
+    <!-- Home -> Optical Disks -> Archive Files -> Create DVD -> Next
+	 -> Next -> 'M'(enu) -> Edit Details
+    -->
+    <window name="edit_metadata">
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>Archive Item Details</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="dialog">
+	    <area>500,120,-500,700</area>
+
+	    <shape name="background" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+	    <textarea name="title_label" from="labeltext">
+		<position>10,20</position>
+		<value>Title:</value>
+	    </textarea>
+
+	    <textedit name="title_edit" from="basetextedit">
+		<position>270,20</position>
+	    </textedit>
+
+	    <textarea name="subtitle_label" from="title_label">
+		<position>10,90</position>
+		<value>Subtitle:</value>
+	    </textarea>
+
+	    <textedit name="subtitle_edit" from="basetextedit">
+		<position>270,90</position>
+	    </textedit>
+
+	    <textarea name="startdate_label" from="title_label">
+		<position>10,160</position>
+		<value>Start Date:</value>
+	    </textarea>
+
+	    <textedit name="startdate_edit" from="basetextedit">
+		<position>270,160</position>
+	    </textedit>
+
+	    <textarea name="starttime_label" from="title_label">
+		<position>10,230</position>
+		<value>Time:</value>
+	    </textarea>
+
+	    <textedit name="starttime_edit" from="basetextedit">
+		<position>270,230</position>
+	    </textedit>
+
+	    <textarea name="description_label" from="title_label">
+		<position>10,300</position>
+		<value>Description:</value>
+	    </textarea>
+
+	    <textedit name="description_edit" from="basemultilinetextedit">
+		<area>50,350,-50,210</area>
+	    </textedit>
+
+	    <button name="ok_button" from="varbuttonright">
+		<value>OK</value>
+	    </button>
+
+	    <button name="cancel_button" from="varbuttonleft">
+		<value>Cancel</value>
+	    </button>
+	</group>
+
+    </window>
+
+    <!-- Home -> Optical Disks -> Archive Files -> Create DVD -> Next
+	 -> Next -> 'M'(enu) -> Edit Thumbnails
+    -->
+    <window name="thumbfinder">
+
+	<group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+		<textarea name="text">
+		    <value>Thumb Image Selector</value>
+		</textarea>
+	    </group>
+	</group>
+
+
+	<group name="dialog">
+	    <area>200,30,-200,900</area>
+
+	    <shape name="background" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+	    <group name="framegroup">
+		<area>320,20,360,229</area>
+		
+		<button name="frame_button">
+		    <position>0,0</position>
+		    <statetype name="buttonstate">
+			<state name="active">
+			    <imagetype name="background">
+				<filename>ma_frame_button_off.png</filename>
+			    </imagetype>
+			</state>
+			<state name="selected" from="active">
+			    <imagetype name="background">
+				<filename>ma_frame_button_on.png</filename>
+			    </imagetype>
+			</state>
+			<state name="disabled" from="active" />
+			<state name="pushed" from="active">
+			    <imagetype name="background">
+				<filename>ma_frame_button_on.png</filename>
+			    </imagetype>
+			</state>
+		    </statetype>
+		</button>
+
+		<shape name="previewShape">
+		    <area>5,5,-5,-5</area>
+		    <type>roundbox</type>
+		    <cornerradius>5</cornerradius>
+		    <fill color="#555555" alpha="255" />
+		    <line color="#FFFFFF" alpha="160" width="8" />
+		</shape>
+
+		<imagetype name="frameimage">
+		    <area>17,17,-17,-17</area>
+		    <preserveaspect>true</preserveaspect>
+		</imagetype>
+	    </group>
+
+	    <group name="posgroup">
+		<area>720,5,400,280</area>
+
+		<textarea name="current_label" from="basetextarea">
+		    <area>10,10,-10,35</area>
+		    <font>mysmallyellow</font>
+		    <align>center</align>
+		    <value>Current Position</value>
+		</textarea>
+
+		<textarea name="currentpos" from="basetextarea">
+		    <area>10,40,-10,35</area>
+		    <align>center</align>
+		</textarea>
+
+		<imagetype name="positionimage">
+		    <area>5,85,-5,25</area>
+		    <filename>trans-cr-background.png</filename>
+		</imagetype>
+
+		<textarea name="seek_label" from="basetextarea">
+		    <area>10,125,-10,35</area>
+		    <align>center</align>
+		    <font>mysmallyellow</font>
+		    <value>Seek Amount</value>
+		</textarea>
+
+		<textarea name="seekamount" from="basetextarea">
+		    <area>10,155,-10,35</area>
+		    <align>center</align>
+		    <value>Frame</value>
+		</textarea>
+
+		<group name="buttons">
+		    <area>0, 100%-80, 100%, 70</area>
+		    <button name="save_button" from="varbuttonleft">
+			<area>50%+5, 100%-80, 100%, 100%</area>
+			<value>Save</value>
+		    </button>
+		    <button name="cancel_button" from="varbuttonright">
+			<area>0, 100%-80, 50%-5, 100%</area>
+			<value>Cancel</value>
+		    </button>
+		</group>
+	    </group>
+	    
+	    <buttonlist name="thumblist" from="basegridlist">
+		<area>25,320,-25,-25</area>
+		<align>top,left</align>
+	    </buttonlist>
+	</group>
+
+    </window>
+
+</mythuitheme>

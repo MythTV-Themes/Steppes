@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <!-- Home -> Information Center -> System Status
+    -->
+    <window name="status">
+        <area>0,0,1920,1080</area>
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>Status</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="helpgroup" from="baseMsgGroupTall">
+	    <textarea name="justhelptext" from="msgText">
+		<align>top,left</align>
+	    </textarea>
+	</group>
+
+        <buttonlist name="category" from="groupsList">
+	    <area>35,0,460,690</area>
+	  <align>vcenter</align>
+	</buttonlist>
+
+	<buttonlist name="log" from="itemsList">
+	    <statetype name="buttonitem">
+		<area>0,0,100%,100%</area>
+		<minsize>100%,40</minsize>
+		<state name="inactive">
+		    <area>0,0,100%,340</area>
+		    <minsize>100%,40</minsize>
+		    <statetype name="status">
+			<area>0,0,100%,100%</area>
+			<minsize>100%,40</minsize>
+			<state name="default">
+			    <area>0,0,100%,100%</area>
+			    <minsize>100%,40</minsize>
+			    <shape name="statusborder">
+				<area>5,0,-5,100%</area>
+				<minsize>100%,40</minsize>
+			    </shape>
+			</state>
+			<state name="normal" from="default" />
+			<state name="error" from="default">
+			    <shape name="statusborder">
+				<line color="#e43e3e" width="4" alpha="255" />
+			    </shape>
+			</state>
+			<state name="warning" from="default">
+			    <shape name="statusborder">
+				<line color="#ff9147" width="4" alpha="255" />
+			    </shape>
+			</state>
+			<state name="disabled" from="default">
+			    <shape name="statusborder">
+				<line color="#feffce" width="2" alpha="160"/>
+			    </shape>
+			</state>
+			<state name="running" from="default">
+			    <shape name="statusborder">
+				<line color="#33bf33" width="4" alpha="255" />
+			    </shape>
+			</state>
+		    </statetype>
+		    <textarea name="buttontext">
+			<area>15,11,-15,-11</area>
+			<minsize shrink="short">100%,38</minsize>
+			<align>vcenter,left</align>
+			<font>mysmall</font>
+			<multiline>yes</multiline>
+		    </textarea>
+		</state>
+		<state name="active" from="inactive" />
+
+		<state name="selectedinactive" from="inactive">
+		    <textarea name="detail" from="buttontext">
+			<multiline>yes</multiline>
+		    </textarea>
+		    <textarea name="buttontext">
+			<area>0,0,0,0</area>
+		    </textarea>
+		</state>
+
+		<state name="selectedactive" from="selectedinactive" >
+		    <statetype name="status" from="itemsSelectedState" />
+		</state>
+	    </statetype>
+	</buttonlist>
+    </window>
+
+</mythuitheme>
+

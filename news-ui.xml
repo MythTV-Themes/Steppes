@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
+
+<mythuitheme>
+
+    <!-- Home -> Information Center -> News Feeds
+    -->
+    <window name="news">
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>News Feeds</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<buttonlist name="siteslist" from="groupsList">
+	    <align>vcenter,left</align>
+	    <area>40,5,1300,700</area>
+	    <buttonarea>25,0,100%,100%</buttonarea>
+
+	    <statetype name="buttonitem">
+		<area>0,0,1300,700</area>
+
+		<state name="inactive">
+		    <area>0,0,460,85</area>
+
+		    <shape name="groupBorder">
+			<area>5,0,-5,100%</area>
+		    </shape>
+		    <textarea name="buttontext">
+			<area>20,5,-20,-5</area>
+		    </textarea>
+		</state>
+
+		<state name="active" from="inactive">
+		    <area>0,0,100%,55</area>
+		</state>
+
+		<state name="selectedinactive" from="inactive">
+		    <shape name="groupBorder">
+			<fill style="gradient">
+			    <gradient start="#603060" end="#000000" alpha="255"
+				      direction="vertical"  />
+			</fill>
+		    </shape>
+		</state>
+
+		<state name="selectedactive" from="selectedinactive">
+		    <area>0,0,100%,55</area>
+		    <shape name="groupBorder">
+			<area>0,0,100%,100%</area>
+			<type>roundbox</type>
+			<fill style="gradient">
+			    <gradient start="#603060" end="#000000" alpha="255"
+				      direction="vertical"  />
+			</fill>
+			<line color="#AAFFFF" alpha="220" width="5" /> 
+			<cornerradius>10</cornerradius>
+		    </shape>
+		</state>
+	    </statetype>
+	    <statetype name="upscrollarrow">
+		<position>0,100%-120</position>
+	    </statetype>
+	    <statetype name="downscrollarrow">
+		<position>0,100%-90</position>
+	    </statetype>
+	</buttonlist>
+
+	<buttonlist name="articleslist" from="siteslist">
+	    <area>555,5,1300,700</area>
+	    <buttonarea>0,0,100%-25,100%</buttonarea>
+	    <scrollstyle>free</scrollstyle>
+
+	    <statetype name="buttonitem">
+		<area>0,0,1300,700</area>
+
+		<state name="inactive">
+		    <area>100%-460,0,460,85</area>
+		</state>
+		<state name="selectedinactive">
+		    <area>100%-460,0,460,85</area>
+		</state>
+	    </statetype>
+	    <statetype name="upscrollarrow">
+		<position>100%,100%-120</position>
+	    </statetype>
+	    <statetype name="downscrollarrow">
+		<position>100%,100%-90</position>
+	    </statetype>
+	</buttonlist>
+
+	<group name="details">
+	    <area>30,710,-30,-100</area>
+
+	    <shape name="background" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+        <textarea name="nosites" from="basetextarea">
+            <area>20,20,-20,-20</area>
+            <align>center</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <textarea name="title" from="basetextarea">
+            <area>20,5,-20,120</area>
+            <font>mylarge</font>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <imagetype name="thumbnail">
+            <area>100%-200,10,180,120</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="description" from="basetextarea">
+            <area>30,130,-30,-45</area>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <textarea name="updated" from="basetextarea">
+            <area>100%-600,100%-40,-20,35</area>
+	    <align>right,vcenter</align>
+        </textarea>
+
+        <imagetype name="enclosures">
+            <filename>enclosures.png</filename>
+            <position>30,100%-40</position>
+        </imagetype>
+
+        <imagetype name="download">
+            <filename>need-download.png</filename>
+            <position>130,100%-40</position>
+        </imagetype>
+
+        <imagetype name="ispodcast">
+            <filename>podcast.png</filename>
+            <position>230,100%-40</position>
+        </imagetype>
+	</group>
+    </window>
+
+    <!-- Home -> Information Center -> News Feeds -> 'E'
+    -->
+    <window name="editor">
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="title" from="text" />
+	    </group>
+	</group>
+
+	<group name="dialog">
+	    <area>50%-670,120,1240,500</area>
+
+	    <shape name="background" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+	    <textarea name="namelabel" from="labeltext">
+		<position>0,50</position>
+	    </textarea>
+	    
+	    <textedit name="name" from="basewidetextedit">
+		<area>270,50,800,70</area>
+	    </textedit>
+
+	    <textarea name="urllabel" from="namelabel">
+		<position>0,120</position>
+	    </textarea>
+
+	    <textedit name="url" from="name">
+		<position>270,120</position>
+	    </textedit>
+
+	    <textarea name="iconlabel" from="namelabel">
+		<position>0,190</position>
+	    </textarea>
+
+	    <textedit name="icon" from="name">
+		<position>270,190</position>
+	    </textedit>
+
+	    <checkbox name="podcast_check" from="basecheckbox">
+		<position>270,260</position>
+	    </checkbox>
+
+	    <textarea name="podcastlabel" from="labelcheckbox">
+		<position>320,260</position>
+	    </textarea>
+
+	    <group name="buttons">
+		<area>270, 100%-80, 800, 100%</area>
+
+		<button name="cancel" from="varbuttonleft">
+		    <value>Cancel</value>
+		</button>
+		
+		<button name="ok" from="varbuttonright">
+		    <value>OK</value>
+		</button>
+	    </group>
+	</group>
+    </window>
+
+    <!-- Home -> Setup -> Info Center Settings -> News Settings
+    -->
+    <window name="config">
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>News Subscriptions</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="msggroup" from="baseMsgGroupLarge">
+	    <textarea name="help" from="msgText">
+		<value>Choose the news sites you would like to read.</value>
+	    </textarea>
+	</group>
+
+	<group name="dialog">
+	    <area>200,50,-200,-300</area>
+
+	    <shape name="background" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+	    <buttonlist name="category" from="basebuttonlist">
+		<area>20,20,600,-20</area>
+	    </buttonlist>
+
+	    <buttonlist name="sites" from="basechecklist">
+		<area>680,20,800,-20</area>
+		<showarrow>no</showarrow>
+	    </buttonlist>
+
+	    <textarea name="context_switch" from="basetextarea">
+		<area>20,550,760,50</area>
+		<multiline>yes</multiline>
+	    </textarea>
+	</group>
+    </window>
+
+</mythuitheme>

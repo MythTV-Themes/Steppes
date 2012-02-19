@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
+
+<mythuitheme>
+
+    <window name="welcome_screen">
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>Welcome to MythTV</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="dialog">
+	    <area>200,40,-200,-100</area>
+	
+	    <shape name="background" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+	    <textarea name="status_text" from="basetextarea">
+		<area>100,100,-100,80</area>
+		<multiline>yes</multiline>
+		<font>mylarge</font>
+		<align>bottom,hcenter</align>
+		<value>MythTV is idle and will shut down shortly.</value>
+	    </textarea>
+	    
+	    <!-- scheduled recordings conflict warning -->
+	    <textarea name="conflicts_text" from="basetextarea">
+		<area>100,200,-100,50</area>
+		<font>mymediumred</font>
+		<align>center</align>
+		<value>WARNING: There are conflicting scheduled recordings!</value>
+	    </textarea>
+
+	    <button name="startfrontend_button" from="varbuttonright" />
+
+	    <group name="current">
+		<!-- current recordings status -->
+		<area>75, 300, 660, -150</area>
+
+		<shape name="background">
+		    <area>0,0,100%,100%</area>
+		    <fill color="#706050" alpha="48" />
+		</shape>
+
+		<textarea name="recording_label" from="basetextarea">
+		    <area>20,5,-20,90</area>
+		    <font>mymediumbold</font>
+		    <align>bottom,hcenter</align>
+		    <multiline>yes</multiline>
+		    <value>Current Recording(s):</value>
+		</textarea>
+
+		<textarea name="recording_text" from="basetextarea">
+		    <area>15,120,-15,-20</area>
+		    <align>top,left</align>
+		    <multiline>yes</multiline>
+		    <value>Retrieving Recording Status...</value>
+		</textarea>
+	    </group>
+
+	    <group name="next">
+		<!-- next scheduled recording status -->
+		<area>785, 300, 660, -150</area>
+
+		<shape name="background">
+		    <area>0,0,100%,100%</area>
+		    <fill color="#506070" alpha="48" />
+		</shape>
+
+		<textarea name="scheduled_label" from="basetextarea">
+		    <area>20,5,-20,90</area>
+		    <font>mymediumbold</font>
+		    <align>bottom,hcenter</align>
+		    <multiline>yes</multiline>
+		    <value>Next Scheduled Recording(s):</value>
+		</textarea>
+
+		<textarea name="scheduled_text" from="basetextarea">
+		    <area>15,120,-15,-20</area>
+		    <align>top,left</align>
+		    <multiline>yes</multiline>
+		    <value>Retrieving Scheduled Recordings...</value>
+		</textarea>
+	    </group>
+	</group>
+
+    </window>
+
+</mythuitheme>

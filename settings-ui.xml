@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
+
+<mythuitheme>
+
+    <!-- Home -> Setup -> System Event Handlers
+    -->
+    <window name="rawsettingseditor">
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="heading" from="text">
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="listgroup">
+            <area>70,30,720,960</area>
+	    
+	    <shape name="dialogbackground" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+	    <buttonlist name="settings" from="basepopupbuttonlist">
+		<area>20,10,-20,-10</area>
+	    </buttonlist>
+	</group>
+
+	<group name="inputgroup">
+            <area>900,600,760,240</area>
+
+	    <shape name="dialogbackground" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+	    <textarea name="label-text" from="labelcheckbox">
+		<area>20,20,-20,45</area>
+	    </textarea>
+
+	    <textedit name="settingvalue" from="basewidetextedit">
+		<position>80,75</position>
+	    </textedit>
+
+	    <button name="cancel" from="varbuttonleft">
+		<value>Cancel</value>
+	    </button>
+
+	    <button name="save" from="varbuttonright">
+		<value>Save</value>
+	    </button>
+	</group>
+    </window>
+
+    <!-- Home -> Setup -> Theme Chooser
+    -->
+    <window name="themechooser">
+
+        <shape name="background">
+            <area>0,0,100%,100%</area>
+	    <fill style="gradient">
+		<gradient start="#000000" end="#302040" alpha="255"
+			  direction="diagonal"  />
+	    </fill>
+        </shape>
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>Theme Chooser</value>
+		</textarea>
+	    </group>
+	</group>
+
+        <shape name="preview-shape">
+            <area>60,40,1320,760</area>
+            <type>roundbox</type>
+            <fill color="#000000" />
+            <cornerradius>20</cornerradius>
+        </shape>
+
+        <imagetype name="preview">
+            <area>80,60,1280,720</area>
+            <filename />
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="name" from="basetextarea">
+            <area>80,810,1000,55</area>
+            <font>mylarge</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="resolution" from="basetextarea">
+            <area>1100,810,200,55</area>
+            <font>mysmall</font>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="aspect" from="basetextarea">
+            <area>1300,810,80,55</area>
+            <multiline>no</multiline>
+            <font>mysmall</font>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>80,875,1260,-70</area>
+            <multiline>yes</multiline>
+            <font>mysmall</font>
+            <align>left,top</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+	<buttonlist name="themes">
+            <area>1390,40,-45,-100</area>
+	    <arrange>stack</arrange>
+	    <align>left,vcenter</align>
+	    <buttonarea>25,0,100%,100%</buttonarea>
+	    <wrapstyle>selection</wrapstyle>
+	    <spacing>0</spacing>
+
+            <statetype name="buttonitem">
+		<area>0,0,100%,100%</area>
+                <state name="active">
+                    <area>0,0,100%,110</area>
+
+                    <statetype name="themestatus">
+			<area>0,0,100%,100%</area>
+
+			<state name="default">
+			    <area>0,0,100%,100%</area>
+			    <shape name="statusborder">
+				<area>17,0,-17,100%</area>
+				<type>roundbox</type>
+				<line color="#00FFFF" width="1" alpha="160" />
+				<fill color="#000000" alpha="150" />
+				<cornerradius>10</cornerradius>
+			    </shape>
+			</state>
+			<state name="normal" from="default" />
+			<state name="uptodate" from="default" />
+			<state name="updateavailable" from="default">
+			    <shape name="statusborder">
+				<area>16,0,-16,100%</area>
+				<line color="#ff9147" width="4" alpha="255" />
+			    </shape>
+			</state>
+		    </statetype>
+
+                    <imagetype name="buttonimage">
+                        <area>22,10,160,90</area>
+                        <alpha>160</alpha>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>180,5,-20,-5</area>
+                        <align>left,vcenter</align>
+                        <font>mymedium</font>
+			<multiline>yes</multiline>
+                        <alpha>210</alpha>
+                    </textarea>
+		</state>
+
+                <state name="selectedinactive" from="active" />
+
+		<state name="selectedactive" from="active">
+                    <statetype name="themestatus">
+			<area>0,0,100%,100%</area>
+
+			<state name="default">
+			    <area>0,0,100%,100%</area>
+			    <shape name="statusborder">
+				<area>0,0,100%,100%</area>
+				<type>roundbox</type>
+				<line color="#00FFFF" width="7" alpha="160" />
+				<fill color="#000000" alpha="150" />
+				<cornerradius>10</cornerradius>
+			    </shape>
+			</state>
+			<state name="normal" from="default" />
+			<state name="uptodate" from="default" />
+			<state name="updateavailable" from="default">
+			    <shape name="statusborder">
+				<line color="#ff9147" width="7" alpha="255" />
+			    </shape>
+			</state>
+		    </statetype>
+                </state>
+	    </statetype>
+	    <statetype name="upscrollarrow">
+		<area>0,100%-85,20,20</area>
+		<state type="full">
+		    <imagetype name="upon">
+			<filename>Images/uparrow-on.png</filename>
+		    </imagetype>
+		</state>
+	    </statetype>
+	    <statetype name="downscrollarrow">
+		<area>0,100%-55,20,20</area>
+		<state type="full">
+		    <imagetype name="dnon">
+			<filename>Images/downarrow-on.png</filename>
+		    </imagetype>
+		</state>
+	    </statetype>
+	</buttonlist>
+
+
+        <progressbar name="downloadprogressbar" from="baseprogressbar">
+            <position>130,100%-55</position>
+        </progressbar>
+
+        <statetype name="fullpreviewstate">
+            <area>0,0,100%,100%</area>
+            <state name="fullscreen">
+                <area>0,0,100%,100%</area>
+                <imagetype name="fullscreenpreview">
+                    <area>0,0,100%,100%</area>
+                    <filename />
+                </imagetype>
+
+		<group name="previewname">
+		    <area>480,100,960,60</area>
+		    <minsize>25,25</minsize>
+
+		    <shape name="fullscreennameback">
+			<area>0,0,100%,100%</area>
+			<minsize>25,25</minsize>
+			<fill color="#000000" alpha="220" />
+			<line color="#FFFFFF" alpha="255" width="2" />
+		    </shape>
+
+		    <textarea name="fullscreenname">
+			<area>20,10,-20,-10</area>
+			<minsize>25,25</minsize>
+			<multiline>no</multiline>
+			<font>mymediumyellow</font>
+			<align>center</align>
+		    </textarea>
+		</group>
+            </state>
+        </statetype>
+
+    </window>
+
+
+</mythuitheme>
