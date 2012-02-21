@@ -407,51 +407,56 @@
 		    </shape>
 
 		    <textarea name="title">
-			<area>230,6,-210,50</area>
+			<area>230,8,-210,50</area>
 			<align>left,vcenter</align>
 			<font>mylarge</font>
 		    </textarea>
 		    
-		    <textarea name="subtitle">
-			<area>280,50,-170,45</area>
-			<align>left,vcenter</align>
-			<font>mymedium</font>
-		    </textarea>
+		    <group name="summarygroup">
+			<area>230,6,100%,-8</area>
+			<minsize shrink="short" vanish="true">100%,100</minsize>
 
-		    <textarea name="year" from="basetextarea">
-			<area>100%-80,6,-15,55</area>
-			<font>mysmallnarrowgrey</font>
-			<align>right,vcenter</align>
-		    </textarea>
-		    <textarea name="s##e##" from="year">
-			<area>100%-210,6,120,55</area>
-		    </textarea>
+			<textarea name="subtitle">
+			    <area>50,44,-170,45</area>
+			    <align>left,vcenter</align>
+			    <font>mymedium</font>
+			</textarea>
 
-		    <textarea name="rating">
-			<area>100%-215, 100%-38, 200, 30</area>
+			<textarea name="year" from="basetextarea">
+			    <area>100%-80,0,-15,35</area>
+			    <font>mysmallnarrowgrey</font>
+			    <align>top,right</align>
+			</textarea>
+			<textarea name="s##e##" from="year">
+			    <area>100%-210,0,120,35</area>
+			</textarea>
 
-			<minsize shrink="short" vanish="true">
-			1,1</minsize>
+			<textarea name="rating">
+			    <area>100%-215, 100%-38, 200, 30</area>
 
-			<align>right,top</align>
-			<font>myverysmall</font>
-		    </textarea>
+			    <minsize shrink="short" vanish="true">
+			    1,1</minsize>
 
-		    <textarea name="length" from="rating">
-			<area>100%-400,100%-40,200,30</area>
-		    </textarea>
+			    <align>right,top</align>
+			    <font>myverysmall</font>
+			</textarea>
 
-		    <textarea name="userrating" from="rating">
-			<area>250,100%-38,200,30</area>
-			<align>left,top</align>
-			<template>User Rating: %1</template>
-		    </textarea>
+			<textarea name="length" from="rating">
+			    <area>100%-400,100%-40,200,30</area>
+			</textarea>
 
-		    <textarea name="director" from="rating">
-			<area>420,100%-38,-420,30</area>
-			<align>top,hcenter</align>
-			<template>Directed by %1</template>
-		    </textarea>
+			<textarea name="userrating" from="rating">
+			    <area>10,100%-38,200,30</area>
+			    <align>left,top</align>
+			    <template>User Rating: %1</template>
+			</textarea>
+
+			<textarea name="director" from="rating">
+			    <area>420,100%-38,-420,30</area>
+			    <align>top,hcenter</align>
+			    <template>Directed by %1</template>
+			</textarea>
+		    </group>
 
 		    <statetype name="watchedstate">
 			<area>135,80,56,28</area>
