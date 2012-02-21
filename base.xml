@@ -401,6 +401,17 @@
 	<line color="#00FFFF" width="1" />
     </shape>
 
+    <shape name="baseareashape">
+	<area>5,5,-5,-5</area>
+	<type>roundbox</type>
+	<cornerradius>4</cornerradius>
+	<fill style="gradient">
+	    <gradient start="#000000" end="#302040" alpha="196"
+		      direction="diagonal"  />
+	</fill>
+	<line color="#00FFFF" width="1" />
+    </shape>
+
     <shape name="baseselectedwidgetshape" from="basewidgetshape">
 	<area>0,0,100%,100%</area>
 	<fill color="#202060" alpha="200" />
