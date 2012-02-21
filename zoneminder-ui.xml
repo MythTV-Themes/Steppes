@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+
+    <!-- Home -> Information Center -> ZoneMinder -> Show Console
+    -->
+    <window name="zmconsole">
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>ZoneMinder Console</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="msggroup" from="baseMsgGroup">
+	    <textarea name="label" from="msgText">
+		<value>[R] = Running\n[S] = Stopped</value>
+	    </textarea>
+	</group>
+
+	<group name="statusgroup" from="baseModeGroup">
+	    <area>20,25,-20,50</area>
+	    <textarea name="status_text" from="pagemode">
+		<font>mymediumgreen</font>
+		<font state="running">mymediumgreen</font>
+		<font state="stopped">mymediumred</font>
+		<extraleading>1</extraleading>
+	    </textarea>
+	</group>
+
+	<!-- Required, but undesired -->
+	<textarea name="date_text">
+	    <area>0, 0, 0, 0</area>
+	</textarea>
+	<textarea name="time_text">
+	    <area>0, 0, 0, 0</area>
+	</textarea>
+
+	<group name="details">
+	    <area>60,100,-60,-130</area>
+
+	    <shape name="background" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+	    <textarea name="load_text" from="basetextarea">
+		<area>10,100%-40,350,-10</area>
+		<align>left,vcenter</align>
+		<font>mysmalllightgrey</font>
+		<!--
+		    <value>Load: 0.12</value>
+		-->
+	    </textarea>
+
+	    <textarea name="disk_text" from="basetextarea">
+		<area>100%-360,100%-40,-10,-10</area>
+		<align>right,vcenter</align>
+		<font>mysmalllightgrey</font>
+		<!--
+		    <value>Disk: 100%</value>
+		-->
+	    </textarea>
+
+	    <textarea name="label1" from="labeltext">
+		<area>10,10,600,35</area>
+		<align>left,bottom</align>
+		<value>Camera</value>
+	    </textarea>
+
+	    <textarea name="label2" from="label1">
+		<area>620,10,300,35</area>
+		<value>Function</value>
+	    </textarea>
+
+	    <textarea name="label3" from="label1">
+		<area>930,10,-205,35</area>
+		<value>Source</value>
+	    </textarea>
+
+	    <textarea name="label4" from="label1">
+		<area>100%-200,10,-10,35</area>
+		<align>right</align>
+		<value>Events</value>
+	    </textarea>
+
+	    <buttonlist name="monitor_list" from="basebuttonlist">
+		<area>0, 50, 100%, -50</area>
+		<statetype name="buttonitem">
+		    <area>0,0,100%,</area>
+		    <state name="active">
+			<textarea name="name" from="basetextarea">
+			    <area>10,5,600,-5</area>
+			</textarea>
+			<textarea name="zmcstatus" from="buttontext">
+			    <area>620,5,300,-5</area>
+			</textarea>
+			<textarea name="zmastatus" from="buttontext">
+			    <area>930,5,-105,-5</area>
+			</textarea>
+			<textarea name="eventcount" from="buttontext">
+			    <area>100%-100,5,-10,-5</area>
+			    <align>right</align>
+			</textarea>
+		    </state>
+		    <state name="selectedactive" from="selectedinactive">
+			<shape name="background" from="baseselectedbuttonshape" />
+		    </state>
+		</statetype>
+	    </buttonlist>
+
+	</group>
+    </window>
+
+
+    <!--
+        <window name="zmevents">
+    -->
+
+    <!--
+        <window name="zmplayer">
+    -->
+
+    <!--
+        <window name="zmliveplayer">
+    -->
+
+    <!--
+        <window name="functionpopup"> 
+    -->
+
+</mythuitheme>

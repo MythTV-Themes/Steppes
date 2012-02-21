@@ -194,6 +194,10 @@
 	<color>#000000</color>
     </fontdef>
 
+    <fontdef name="mymediumgreen" from="mymedium">
+	<color>#3EFF3E</color>
+    </fontdef>
+
     <fontdef name="mymediumyellow" from="mymedium">
 	<color>#FFFF33</color>
     </fontdef>
