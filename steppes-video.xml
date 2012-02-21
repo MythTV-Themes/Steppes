@@ -18,7 +18,7 @@
 	</textarea>
 
 	<textarea name="description">
-	    <area>15,40,-15,50%+10</area>
+	    <area>15,35,-15,100%-140</area>
 	    <align>top,left</align>
 	    <minsize shrink="short" vanish="true">100%,1</minsize>
 	    <font>mysmall</font>
@@ -30,7 +30,7 @@
 	<group name="bufferzone">
 	    <area>0,0,100%,100%</area>
 	    <group name="castgroup">
-		<area>10,50%+25,-10,100%-45</area>
+		<area>10,100%-140,-10,100%-45</area>
 		<minsize vanish="true">100%,10</minsize>
 
 		<shape name="castshape">

@@ -364,7 +364,7 @@
         <buttonlist name="videos">
 	    <arrange>stack</arrange>
 	    <align>bottom,left</align>
-	    <area>30,30,-30,960</area>
+	    <area>30,25,-30,970</area>
 	    <buttonarea>25,0,100%,100%</buttonarea>
 	    <wrapstyle>selection</wrapstyle>
 	    <spacing>0</spacing>
@@ -391,10 +391,7 @@
 	    </statetype>
 
 	    <statetype name="buttonitem">
-<!--
 		<area>0,0,100%,100%</area>
--->
-	    <area>0,16,100%,-16</area>
 		<minsize>100%,160</minsize>
 
 		<state name="inactive">
@@ -476,16 +473,19 @@
 			<state name="None">
 			    <imagetype name="icon">
 				<filename>mv_level_none.png</filename>
+				<alpha>64</alpha>
 			    </imagetype>
 			</state>
 			<state name="Lowest">
 			    <imagetype name="icon">
 				<filename>mv_level_lowest.png</filename>
+				<alpha>196</alpha>
 			    </imagetype>
 			</state>
 			<state name="Low">
 			    <imagetype name="icon">
 				<filename>mv_level_low.png</filename>
+				<alpha>224</alpha>
 			    </imagetype>
 			</state>
 			<state name="Medium">
@@ -536,7 +536,7 @@
 		</state>
 		
 		<state name="selectedinactive" from="inactive">
-		    <area>0,0,100%,320</area>
+		    <area>0,0,100%,330</area>
 		    <minsize>100%,160</minsize>
 		    
 		    <shape name="statusborder">
@@ -882,16 +882,19 @@
 			    <state name="None">
 				<imagetype name="icon">
 				    <filename>mv_level_none.png</filename>
+				    <alpha>64</alpha>
 				</imagetype>
 			    </state>
 			    <state name="Lowest">
 				<imagetype name="icon">
 				    <filename>mv_level_lowest.png</filename>
+				    <alpha>196</alpha>
 				</imagetype>
 			    </state>
 			    <state name="Low">
 				<imagetype name="icon">
 				    <filename>mv_level_low.png</filename>
+				    <alpha>224</alpha>
 				</imagetype>
 			    </state>
 			    <state name="Medium">

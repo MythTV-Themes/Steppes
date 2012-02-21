@@ -1339,6 +1339,7 @@
 	    <imagetype name="icon">
 		<area>0,1,28,28</area>
 		<filename>mv_level_lowest.png</filename>
+		<alpha>196</alpha>
 	    </imagetype>
 	    <textarea name="label">
 		<area>35,2,300,35</area>
@@ -1349,6 +1350,7 @@
 	<state name="Low" from="Lowest">
 	    <imagetype name="icon">
 		<filename>mv_level_low.png</filename>
+		<alpha>224</alpha>
 	    </imagetype>
 	    <textarea name="label">
 		<value>partially restricted</value>
