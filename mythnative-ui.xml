@@ -250,14 +250,14 @@
 	</group>
 
 	<group name="dialog">
-	    <area>520,50,-100,-200</area>
+	    <area>520,60,-100,-210</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
 	    </shape>
 
 	    <group name="archiveinfo">
-		<area>50,50,50%-20,500</area>
+		<area>50,60,50%-20,480</area>
 
 		<shape name="background" from="basewidgetshape">
 		    <area>0,0,100%,100%</area>
@@ -271,73 +271,69 @@
 		</textarea>
 
 		<textarea name="chanid_label" from="labeltext">
-		    <area>10,90,150,70</area>
-		    <value>Chan. ID:</value>
+		    <position>10,90</position>
+		    <value>Channel ID:</value>
 		</textarea>
 
 		<textarea name="chanid" from="basetextarea">
-		    <area>180,90,-20,70</area>
+		    <area>290,90,360,70</area>
 		</textarea>
 
 		<textarea name="channo_label" from="chanid_label">
-		    <position>10,160</position>
-		    <value>Chan. No:</value>
+		    <position>10,170</position>
+		    <value>Channel Number:</value>
 		</textarea>
 
 		<textarea name="channo" from="chanid">
-		    <position>180,160</position>
+		    <position>290,170</position>
 		</textarea>
 
 		<textarea name="callsign_label" from="chanid_label">
-		    <position>10,230</position>
+		    <position>10,250</position>
 		    <value>Callsign:</value>
 		</textarea>
 
 		<textarea name="callsign" from="chanid">
-		    <position>180,230</position>
+		    <position>290,250</position>
 		</textarea>
 
 		<textarea name="name_label" from="chanid_label">
-		    <position>10,300</position>
+		    <position>10,330</position>
 		    <value>Name:</value>
 		</textarea>
 
 		<textarea name="name" from="chanid">
-		    <position>180,300</position>
+		    <position>290,330</position>
 		</textarea>
 	    </group>
 
 	    <group name="localinfo" from="archiveinfo">
-		<area>50%+20,50,-50,500</area>
+		<area>50%+20,60,-50,480</area>
 
 		<textarea name="group_label">
 		    <value>Local Channel</value>
 		</textarea>
 
+		<button name="searchchanid_button" from="basewidebutton">
+		    <area>270,90,-30,70</area>
+		</button>
 		<textarea name="local_chanid" from="chanid" />
 
-		<button name="searchchanid_button" from="varbuttonleft">
-		    <position>100%-220,90</position>
-		    <value>Search</value>
+		<button name="searchchanno_button" from="searchchanid_button">
+		    <position>270,170</position>
 		</button>
-
 		<textarea name="local_channo" from="channo" />
 
-		<button name="searchchanno_button" from="searchchanid_button">
-		    <position>100%-220,160</position>
+		<button name="searchcallsign_button" from="searchchanid_button">
+		    <position>270,250</position>
 		</button>
-
 		<textarea name="local_callsign" from="callsign" />
 
-		<button name="searchcallsign_button" from="searchchanid_button">
-		    <position>100%-220,230</position>
+		<button name="searchname_button" from="searchchanid_button">
+		    <position>270,330</position>
 		</button>
-
 		<textarea name="local_name" from="name" />
 
-		<button name="searchname_button" from="searchchanid_button">
-		    <position>100%-220,300</position>
-		</button>
 	    </group>
 
 	    <button name="cancel_button" from="varbuttonleft">
