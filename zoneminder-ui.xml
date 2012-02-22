@@ -59,53 +59,52 @@
 		<area>100%-360,100%-40,-10,-10</area>
 		<align>right,vcenter</align>
 		<font>mysmalllightgrey</font>
-		<!--
-		    <value>Disk: 100%</value>
-		-->
 	    </textarea>
 
 	    <textarea name="label1" from="labeltext">
-		<area>10,10,600,35</area>
+		<area>35,10,560,35</area>
 		<align>left,bottom</align>
 		<value>Camera</value>
 	    </textarea>
 
 	    <textarea name="label2" from="label1">
-		<area>620,10,300,35</area>
+		<area>600,10,345,35</area>
 		<value>Function</value>
 	    </textarea>
 
 	    <textarea name="label3" from="label1">
-		<area>930,10,-205,35</area>
+		<area>955,10,-205,35</area>
 		<value>Source</value>
 	    </textarea>
 
 	    <textarea name="label4" from="label1">
-		<area>100%-200,10,-10,35</area>
-		<align>right</align>
+		<area>100%-200,10,-35,35</area>
+		<align>right,bottom</align>
 		<value>Events</value>
 	    </textarea>
 
 	    <buttonlist name="monitor_list" from="basebuttonlist">
 		<area>0, 50, 100%, -50</area>
+		<align>top</align>
 		<statetype name="buttonitem">
 		    <area>0,0,100%,</area>
 		    <state name="active">
 			<textarea name="name" from="basetextarea">
-			    <area>10,5,600,-5</area>
+			    <area>10,5,560,-5</area>
+			    <align>left,vcenter</align>
 			</textarea>
-			<textarea name="zmcstatus" from="buttontext">
-			    <area>620,5,300,-5</area>
+			<textarea name="zmcstatus" from="name">
+			    <area>575,5,345,-5</area>
 			</textarea>
-			<textarea name="zmastatus" from="buttontext">
+			<textarea name="zmastatus" from="name">
 			    <area>930,5,-105,-5</area>
 			</textarea>
-			<textarea name="eventcount" from="buttontext">
-			    <area>100%-100,5,-10,-5</area>
-			    <align>right</align>
+			<textarea name="eventcount" from="name">
+			    <area>100%-200,5,-10,-5</area>
+			    <align>right,vcenter</align>
 			</textarea>
 		    </state>
-		    <state name="selectedactive" from="selectedinactive">
+		    <state name="selectedactive" from="active">
 			<shape name="background" from="baseselectedbuttonshape" />
 		    </state>
 		</statetype>
@@ -115,20 +114,442 @@
     </window>
 
 
-    <!--
-        <window name="zmevents">
+    <!-- Home -> Information Center -> ZoneMinder -> Show Events
     -->
+    <window name="zmevents">
 
-    <!--
-        <window name="zmplayer">
-    -->
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>ZoneMinder Events</value>
+		</textarea>
+	    </group>
+	</group>
 
-    <!--
-        <window name="zmliveplayer">
-    -->
+	<group name="details">
+	    <area>30,30,-30,-100</area>
 
-    <!--
-        <window name="functionpopup"> 
+	    <shape name="background" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+	    <textarea name="label1" from="labeltext">
+		<position>10, 20</position>
+		<value>Select Camera:</value>
+	    </textarea>
+	    <buttonlist name="camera_selector" from="basemediumselector">
+		<position>270,20</position>
+	    </buttonlist>
+
+	    <textarea name="label2" from="label1">
+		<position>650,20</position>
+		<value>Select Date:</value>
+	    </textarea>
+	    <buttonlist name="date_selector" from="basemediumselector">
+		<position>910,20</position>
+	    </buttonlist>
+
+	    <group name="results" from="basematchgroup">
+		<area>1320,20,-50,70</area>
+		<textarea name="eventno_text" from="resulttext">
+		    <value>0/0</value>
+		</textarea>
+	    </group>
+
+	    <!-- list view -->
+	    <group name="listview">
+		<area>60,100,-60,-90</area>
+
+		<textarea name="layout1_title1" from="labeltext">
+		    <area>35,10,560,35</area>
+		    <align>left,bottom</align>
+		    <value>Event Name</value>
+		</textarea>
+
+		<textarea name="layout1_title2" from="layout1_title1">
+		    <area>600,10,345,35</area>
+		    <value>Camera</value>
+		</textarea>
+
+		<textarea name="layout1_title3" from="layout1_title1">
+		    <area>955,10,-205,35</area>
+		    <value>Date/Time</value>
+		</textarea>
+
+		<textarea name="layout1_title4" from="layout1_title1">
+		    <area>100%-200,10,-35,35</area>
+		    <align>right,bottom</align>
+		    <value>Length</value>
+		</textarea>
+
+		<buttonlist name="layout1_eventlist" from="basebuttonlist">
+		    <area>0, 50, 100%, -10</area>
+		    <align>top</align>
+		    <statetype name="buttonitem">
+			<state name="active">
+			    <textarea name="buttontext" from="basetextarea">
+				<area>10,5,560,-5</area>
+				<align>left,vcenter</align>
+			    </textarea>
+			    <textarea name="camera" from="buttontext">
+				<area>575,5,345,-5</area>
+			    </textarea>
+			    <textarea name="time" from="buttontext">
+				<area>930,5,-105,-5</area>
+			    </textarea>
+			    <textarea name="length" from="buttontext">
+				<area>100%-200,5,-10,-5</area>
+				<align>right,vcenter</align>
+			    </textarea>
+			</state>
+			<state name="selectedinactive" from="active">
+			    <shape name="background" from="baseselectedinactivebuttonshape" />
+			</state>
+			<state name="selectedactive" from="selectedinactive">
+			    <shape name="background" from="baseselectedbuttonshape" />
+			</state>
+		    </statetype>
+		</buttonlist>
+	    </group>
+
+	    <!-- list preview -->
+	    <group name="preview">
+		<area>60,100,-60,-90</area>
+
+		<buttonlist name="layout2_eventlist" from="basebuttonlist">
+		    <area>200, 50, -200, -10</area>
+		    <statetype name="buttonitem">
+			<area>0,0,100%,100%</area>
+			<state name="active">
+			    <area>0,0,100%,130</area>
+
+			    <imagetype name="buttonimage">
+				<area>15,15,540,100</area>
+				<preserveaspect>true</preserveaspect>
+			    </imagetype>
+
+			    <textarea name="namelabel" from="labeltext">
+				<position>550,20</position>
+				<value>Name</value>
+			    </textarea>
+			    <textarea name="buttontext" from="basetextarea">
+				<area>810,20,-20,75</area>
+			    </textarea>
+			</state>
+			<state name="selectedinactive" from="active">
+			    <area>0,0, 100%, 400</area>
+			    <shape name="background" from="baseselectedinactivebuttonshape" />
+			    <imagetype name="buttonimage">
+				<area>15,15,540,370</area>
+			    </imagetype>
+			    <textarea name="cameralabel" from="namelabel">
+				<position>550,100</position>
+				<value>Camera</value>
+			    </textarea>
+			    <textarea name="camera" from="buttontext">
+				<position>810,100</position>
+			    </textarea>
+
+			    <textarea name="datelabel" from="namelabel">
+				<position>550,180</position>
+				<value>Date</value>
+			    </textarea>
+			    <textarea name="time" from="buttontext">
+				<position>810,180</position>
+			    </textarea>
+
+			    <textarea name="durationlabel" from="namelabel">
+				<position>550,260</position>
+				<value>Duration</value>
+			    </textarea>
+			    <textarea name="length" from="buttontext">
+				<position>810,260</position>
+			    </textarea>
+			</state>
+			<state name="selectedactive" from="selectedinactive">
+			    <shape name="background" from="baseselectedbuttonshape" />
+			</state>
+
+		    </statetype>
+		</buttonlist>
+	    </group>
+
+	    <!-- gallery -->
+	    <group name="gridview">
+		<area>60,180,-60,-110</area>
+
+		<buttonlist name="layout3_eventlist" from="basegridlist">
+		    <area>0, 0, 100%, 100%</area>
+		</buttonlist>
+	    </group>
+
+
+	    <button name="play_button" from="varbuttonleft">
+		<area>50%+10,100%-80,-20,70</area>
+	    </button>
+	    <button name="delete_button" from="varbuttonright">
+		<area>20,100%-80,50%-10,70</area>
+	    </button>
+
+	</group>
+    </window>
+
+    <!-- Home -> Information Center -> ZoneMinder -> Show Events
+	 -> <select an event>
     -->
+    <window name="zmplayer">
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>ZoneMinder Event Player</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="previewgroup">
+	    <area>110,130,824,624</area>
+	    <minsize vanish="yes">100%,100%</minsize>
+
+	    <shape name="previewShape">
+		<area>0,0,100%,100%</area>
+		<minsize vanish="yes">100%,100%</minsize>
+		<type>roundbox</type>
+		<cornerradius>5</cornerradius>
+		<fill color="#555555" alpha="255" />
+		<line color="#FFFFFF" alpha="160" width="8" />
+	    </shape>
+
+	    <imagetype name="frameimage">
+		<area>12,12,-12,-12</area>
+		<minsize vanish="yes">100%,100%</minsize>
+		<preserveaspect>true</preserveaspect>
+		<filename>mz_testcard.png</filename>
+	    </imagetype>
+	</group>
+
+        <textarea name="noevents_text">
+	    <area>48,200,824,624</area>
+            <font>data</font>
+            <align>center</align>
+            <value>There are no events to show</value>
+        </textarea>
+
+        <!-- fullscreen player -->
+        <imagetype name="framefsimage">
+            <area>0,0,1920,1080</area>
+        </imagetype>
+
+	<group name="details">
+	    <area>100%-934,130,824,624</area>
+
+	    <shape name="background" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+	    <textarea name="label1" from="labeltext">
+		<position>10, 10</position>
+		<value>Event:</value>
+	    </textarea>
+
+	    <textarea name="event_text" from="basetextarea">
+		<area>270,10,-10,75</area>
+		<align>left,vcenter</align>
+		<value>Event Name (1/123)</value>
+	    </textarea>
+
+	    <textarea name="label2" from="label1">
+		<position>10, 90</position>
+		<value>Camera:</value>
+	    </textarea>
+
+	    <textarea name="camera_text" from="event_text">
+		<position>270,90</position>
+		<value>Camera Name</value>
+	    </textarea>
+
+	    <textarea name="label3" from="label1">
+		<position>10,170</position>
+		<value>Frame:</value>
+	    </textarea>
+	    
+	    <textarea name="frame_text" from="event_text">
+		<position>270,170</position>
+		<value>1/123</value>
+	    </textarea>
+
+	    <textarea name="label4" from="label1">
+		<position>10,250</position>
+		<value>Date:</value>
+	    </textarea>
+
+	    <textarea name="date_text" from="event_text">
+		<position>270,250</position>
+		<value>Mon 01 Nov 2006 12:34</value>
+	    </textarea>
+
+	    <button name="play_button" from="varbuttoncenter">
+		<area>10, 360, 50%-10, 70</area>
+		<value>Test</value>
+	    </button>
+	    <button name="delete_button" from="varbuttoncenter">
+		<area>10, 440, 50%-10, 70</area>
+		<value>Record</value>
+	    </button>
+	    <button name="prev_button" from="varbuttoncenter">
+		<area>50%+10, 360, -10, 70</area>
+		<value>Cancel</value>
+	    </button>
+	    <button name="next_button" from="varbuttoncenter">
+		<area>50%+10, 440, -10, 70</area>
+		<value>Store</value>
+	    </button>
+	</group>
+    </window>
+
+
+    <!-- Home -> Information Center -> ZoneMinder -> Show Events -> 'M'
+    -->
+    <window name="functionpopup">
+        <area>-1,-1,400,560</area>
+
+	<shape name="background" from="basewidgetshape">
+	    <area>0,0,100%,100%</area>
+	</shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>20,20,-20,110</area>
+            <font>mymedium</font>
+            <align>center</align>
+            <value>Edit Monitor Function</value>
+	    <multiline>yes</multiline>
+        </textarea>
+
+        <textarea name="caption_text" from="basetextarea">
+            <area>20,120,-20,110</area>
+            <align>center</align>
+        </textarea>
+
+        <buttonlist name="function_list" from="basemediumselector">
+            <position>50,250</position>
+        </buttonlist>
+
+        <checkbox name="enable_check" from="basecheckbox">
+            <position>50,330</position>
+        </checkbox>
+
+        <textarea name="enable_text" from="labelcheckbox">
+            <area>100,330,-50,70</area>
+            <value>Enabled</value>
+        </textarea>
+
+        <button name="ok_button" from="varbuttoncenter" />
+    </window>
+
+
+    <!-- Home -> Information Center -> ZoneMinder -> Show Live View
+    -->
+    <window name="zmliveplayer">
+
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>ZoneMinder Live Player</value>
+		</textarea>
+	    </group>
+	</group>
+
+	<group name="details">
+	    <area>30,30,-30,-100</area>
+
+	    <shape name="background" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+	    </shape>
+
+	    <!-- one monitor view -->
+	    <textarea name="name1-1" from="basetextarea">
+		<area>20,20,50%-10,35</area>
+		<align>right,vcenter</align>
+		<value>Monitor 1</value>
+	    </textarea>
+	    <textarea name="status1-1" from="basetextarea">
+		<area>50%+10,20,-20,35</area>
+		<align>left,vcenter</align>
+		<font>mysmallgrey</font>
+		<font state="idle">mysmallgrey</font>
+		<font state="alarm">mysmallred</font>
+		<font state="alert">mysmallorange</font>
+		<value></value>
+	    </textarea>
+
+	    <imagetype name="frame1-1">
+		<area>20,60,-20,-60</area>
+		<filename>mz_testcard.png</filename>
+		<preserveaspect>true</preserveaspect>
+	    </imagetype>
+
+	    <!-- two monitor view -->
+	    <textarea name="name2-1" from="name1-1">
+		<area>150,20,315,35</area>
+		<value>Monitor 1</value>
+	    </textarea>
+	    <textarea name="status2-1" from="status1-1">
+		<area>485,20,315,35</area>
+	    </textarea>
+	    <imagetype name="frame2-1" from="frame1-1">
+		<area>20,60,900,-20</area>
+		<preserveaspect>true</preserveaspect>
+	    </imagetype>
+
+	    <textarea name="name2-2" from="name2-1">
+		<area>50%+135,20,315,35</area>
+		<value>Monitor 2</value>
+	    </textarea>
+	    <textarea name="status2-2" from="status2-1">
+		<area>50%+470,20,315,35</area>
+	    </textarea>
+	    <imagetype name="frame2-2" from="frame2-1">
+		<position>50%+10,60</position>
+	    </imagetype>
+
+
+	    <!-- four monitor view -->
+
+	    <textarea name="name3-1" from="name2-1" />
+	    <textarea name="status3-1" from="status2-1" />
+	    <imagetype name="frame3-1" from="frame2-1">
+		<area>20,60,900,400</area>
+	    </imagetype>
+
+	    <textarea name="name3-2" from="name2-2" />
+	    <textarea name="status3-2" from="status2-2" />
+	    <imagetype name="frame3-2" from="frame3-1">
+		<position>50%+10,60</position>
+	    </imagetype>
+
+	    <textarea name="name3-3" from="name2-1">
+		<area>150,50%+10,315,35</area>
+		<value>Monitor 3</value>
+	    </textarea>
+	    <textarea name="status3-3" from="status2-1">
+		<area>485,50%+10,315,35</area>
+	    </textarea>
+	    <imagetype name="frame3-3" from="frame3-1">
+		<position>20,50%+50</position>
+	    </imagetype>
+
+	    <textarea name="name3-4" from="name2-2">
+		<area>50%+135,50%+10,315,35</area>
+		<value>Monitor 4</value>
+	    </textarea>
+	    <textarea name="status3-4" from="status2-1">
+		<area>50%+470,50%+10,315,35</area>
+	    </textarea>
+	    <imagetype name="frame3-4" from="frame3-2">
+		<position>50%+10,50%+50</position>
+	    </imagetype>
+
+	</group>
+    </window>
 
 </mythuitheme>
