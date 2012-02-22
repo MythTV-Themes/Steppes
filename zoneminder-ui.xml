@@ -149,10 +149,13 @@
 		<position>910,20</position>
 	    </buttonlist>
 
-	    <group name="results" from="basematchgroup">
+	    <group name="posgroup" from="baseModeGroup">
 		<area>1320,20,-50,70</area>
-		<textarea name="eventno_text" from="resulttext">
-		    <value>0/0</value>
+		<textarea name="eventno_text" from="pagemode">
+		    <align>center</align>
+		    <font>mysmall</font>
+		    <extraleading>1</extraleading>
+		    <cutdown>left</cutdown>
 		</textarea>
 	    </group>
 
@@ -234,6 +237,7 @@
 			    </textarea>
 			    <textarea name="buttontext" from="basetextarea">
 				<area>810,20,-20,75</area>
+				<multiline>yes</multiline>
 			    </textarea>
 			</state>
 			<state name="selectedinactive" from="active">
@@ -351,10 +355,10 @@
 		<position>10, 10</position>
 		<value>Event:</value>
 	    </textarea>
-
 	    <textarea name="event_text" from="basetextarea">
 		<area>270,10,-10,75</area>
 		<align>left,vcenter</align>
+		<multiline>yes</multiline>
 		<value>Event Name (1/123)</value>
 	    </textarea>
 
@@ -362,7 +366,6 @@
 		<position>10, 90</position>
 		<value>Camera:</value>
 	    </textarea>
-
 	    <textarea name="camera_text" from="event_text">
 		<position>270,90</position>
 		<value>Camera Name</value>
@@ -372,7 +375,6 @@
 		<position>10,170</position>
 		<value>Frame:</value>
 	    </textarea>
-	    
 	    <textarea name="frame_text" from="event_text">
 		<position>270,170</position>
 		<value>1/123</value>
@@ -382,7 +384,6 @@
 		<position>10,250</position>
 		<value>Date:</value>
 	    </textarea>
-
 	    <textarea name="date_text" from="event_text">
 		<position>270,250</position>
 		<value>Mon 01 Nov 2006 12:34</value>
