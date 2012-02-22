@@ -24,7 +24,8 @@
     <detail>
         <thumbnail name="preview">preview.jpg</thumbnail>
         <thumbnail name="osdpreview">osd_preview.jpg</thumbnail>
-        <description>Designed to show off some different element arrangements available in Myth 0.25.  Tested at 1280x720 and with Français</description>
+        <description>Designed to show off some different element arrangements available in Myth 0.25.  Tested at 1280x720 and with Français.
+Reminder: On Watch Recordings screen [Rew] and [FF] can be used to change the Rec. Group.</description>
         <errata>N/A</errata>
     </detail>
 </themeinfo>

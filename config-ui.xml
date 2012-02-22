@@ -39,7 +39,7 @@
 		<layout>grid</layout>
 		<spacing>10</spacing>
 		<scrollstyle>free</scrollstyle>
-		<wrapstyle>flowing</wrapstyle>
+		<wrapstyle>none</wrapstyle>
 		<buttonarea>0,0,100%,100%-35</buttonarea>
 
 		<statetype name="buttonitem">
