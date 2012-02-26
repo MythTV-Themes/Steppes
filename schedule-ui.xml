@@ -1094,360 +1094,376 @@
 	 -> Program Guide -> 'E'(dit) -> Schedule Options
     -->
     <window name="scheduleoptionseditor">
-	<area>830,35,700,960</area>
+        <area>525,35,-30,960</area>
 
-	<shape name="layershape">
-	    <area>0,0,100%,100%</area>
-	    <fill style="gradient">
-		<gradient start="#000000" end="#303030" alpha="240"
-			  direction="horizontal"  />
-	    </fill>
-	</shape>
+        <group name="schedulegroup">
+	    <area>50%-350,0,700,100%</area>
 
-	<textarea name="titlelabel">
-	    <area>10,20,-10,50</area>
-	    <font>mymedium</font>
-	    <align>center</align>
-	    <value>Schedule Options</value>
-	</textarea>
+	    <shape name="layershape">
+		<area>0,0,100%,100%</area>
+		<fill style="gradient">
+		    <gradient start="#000000" end="#303030" alpha="240"
+			      direction="horizontal"  />
+		</fill>
+	    </shape>
 
-	<textarea name="subtitlelabel">
-	    <area>20,75,-20,70</area>
-	    <multiline>yes</multiline>
-	    <font>mysmall</font>
-	    <align>center</align>
-	    <cutdown>yes</cutdown>
-	    <value>Select the options for this recording.</value>
-	</textarea>
+	    <textarea name="titlelabel">
+		<area>10,20,-10,50</area>
+		<font>mymedium</font>
+		<align>center</align>
+		<value>Schedule Options</value>
+	    </textarea>
 
-	<textarea name="priority_label" from="labeltextlarge">
-	    <area>10,150,200,90</area>
-	    <value>Priority:</value>
-	</textarea>
+	    <textarea name="subtitlelabel">
+		<area>20,75,-20,70</area>
+		<multiline>yes</multiline>
+		<font>mysmall</font>
+		<align>center</align>
+		<cutdown>yes</cutdown>
+		<value>Select the options for this recording.</value>
+	    </textarea>
 
-	<spinbox name="priority" from="baselargespinbox">
-	    <area>220,150,450,90</area>
-	    <template type="negative">-%n</template>
-	    <template type="zero">Normal</template>
-	    <template type="positive">+%n</template>
-	</spinbox>
+	    <textarea name="priority_label" from="labeltextlarge">
+		<area>10,150,200,90</area>
+		<value>Priority:</value>
+	    </textarea>
 
-	<textarea name="input_label" from="priority_label">
-	    <position>10,240</position>
-	    <align>right,vcenter</align>
-	    <value>Input:</value>
-	</textarea>
+	    <spinbox name="priority" from="baselargespinbox">
+		<area>220,150,450,90</area>
+		<template type="negative">-%n</template>
+		<template type="zero">Normal</template>
+		<template type="positive">+%n</template>
+	    </spinbox>
 
-	<spinbox name="input" from="priority">
-	    <position>220,240</position>
-	</spinbox>
+	    <textarea name="input_label" from="priority_label">
+		<position>10,240</position>
+		<align>right,vcenter</align>
+		<value>Input:</value>
+	    </textarea>
 
-	<textarea name="startoffset_label" from="priority_label">
-	    <position>10,330</position>
-	    <value>Start Offset:</value>
-	</textarea>
+	    <spinbox name="input" from="priority">
+		<position>220,240</position>
+	    </spinbox>
 
-	<spinbox name="startoffset" from="priority">
-	    <position>220,330</position>
-	    <template type="negative">%n minute(s) late</template>
-	    <template type="zero">Start on time</template>
-	    <template type="positive">%n minute(s) early</template>
-	</spinbox>
+	    <textarea name="startoffset_label" from="priority_label">
+		<position>10,330</position>
+		<value>Start Offset:</value>
+	    </textarea>
 
-	<textarea name="endoffset_label" from="priority_label">
-	    <position>10,420</position>
-	    <align>right,vcenter</align>
-	    <value>End Offset:</value>
-	</textarea>
+	    <spinbox name="startoffset" from="priority">
+		<position>220,330</position>
+		<template type="negative">%n minute(s) late</template>
+		<template type="zero">Start on time</template>
+		<template type="positive">%n minute(s) early</template>
+	    </spinbox>
 
-	<spinbox name="endoffset" from="priority">
-	    <position>220,420</position>
-	    <template type="negative">%n minute(s) early</template>
-	    <template type="zero">End on time</template>
-	    <template type="positive">%n minute(s) late</template>
-	</spinbox>
+	    <textarea name="endoffset_label" from="priority_label">
+		<position>10,420</position>
+		<align>right,vcenter</align>
+		<value>End Offset:</value>
+	    </textarea>
 
-	<textarea name="dupmethod_label" from="priority_label">
-	    <position>10,510</position>
-	    <value>Dup Method:</value>
-	</textarea>
+	    <spinbox name="endoffset" from="priority">
+		<position>220,420</position>
+		<template type="negative">%n minute(s) early</template>
+		<template type="zero">End on time</template>
+		<template type="positive">%n minute(s) late</template>
+	    </spinbox>
 
-	<spinbox name="dupmethod" from="priority">
-	    <position>220,510</position>
-	</spinbox>
+	    <textarea name="dupmethod_label" from="priority_label">
+		<position>10,510</position>
+		<value>Dup Method:</value>
+	    </textarea>
 
-	<textarea name="dupscope_label" from="priority_label">
-	    <position>10,600</position>
-	    <value>Dup Scope:</value>
-	</textarea>
+	    <spinbox name="dupmethod" from="priority">
+		<position>220,510</position>
+	    </spinbox>
 
-	<spinbox name="dupscope" from="priority">
-	    <position>220,600</position>
-	</spinbox>
+	    <textarea name="dupscope_label" from="priority_label">
+		<position>10,600</position>
+		<value>Dup Scope:</value>
+	    </textarea>
 
-	<button name="filters" from="baselargebutton">
-	    <area>220,690,450,90</area>
-	    <value>Schedule filters</value>
-	    <helptext></helptext>
-	</button>
+	    <spinbox name="dupscope" from="priority">
+		<position>220,600</position>
+	    </spinbox>
 
-	<checkbox name="ruleactive" from="basecheckbox">
-	    <position>220,800</position>
-	</checkbox>
+	    <button name="filters" from="baselargebutton">
+		<area>220,690,450,90</area>
+		<value>Schedule filters</value>
+		<helptext></helptext>
+	    </button>
 
-	<textarea name="ruleactive_label" from="labelcheckbox">
-	    <area>270,800,-20,70</area>
-	    <value>Recording Rule is Active</value>
-	</textarea>
+	    <checkbox name="ruleactive" from="basecheckbox">
+		<position>220,800</position>
+	    </checkbox>
 
-	<button name="back" from="varbuttonright">
-	    <value>Done</value>
-	</button>
+	    <textarea name="ruleactive_label" from="labelcheckbox">
+		<area>270,800,-20,70</area>
+		<value>Recording Rule is Active</value>
+	    </textarea>
+
+	    <button name="back" from="varbuttonright">
+		<value>Done</value>
+	    </button>
+	</group>
     </window>
 
     <!-- Home -> Manage Recordings -> Schedule Recordings
 	 -> Program Guide -> 'E'(dit) -> Schedule Options -> Schedule Filters
     -->
     <window name="schedulefiltereditor">
-	<area>1190,35,700,960</area>
+        <area>525,35,-30,960</area>
 
-	<shape name="layershape">
-	    <area>0,0,100%,100%</area>
-	    <fill style="gradient">
-		<gradient start="#000000" end="#303030" alpha="240"
-			  direction="horizontal"  />
-	    </fill>
-	</shape>
+        <group name="schedulegroup">
+	    <area>100%-700,0,700,100%</area>
 
-	<textarea name="titlelabel">
-	    <area>10,40,-10,60</area>
-	    <font>mymedium</font>
-	    <align>center</align>
-	    <value>Filter Options</value>
-	</textarea>
+	    <shape name="layershape">
+		<area>0,0,100%,100%</area>
+		<fill style="gradient">
+		    <gradient start="#000000" end="#303030" alpha="240"
+			      direction="horizontal"  />
+		</fill>
+	    </shape>
 
-	<textarea name="subtitlelabel">
-	    <area>20,80,-20,100</area>
-	    <multiline>yes</multiline>
-	    <font>mysmall</font>
-	    <align>center</align>
-	    <cutdown>yes</cutdown>
-	    <value>Select the filters that should be applied for this recording.</value>
-	</textarea>
+	    <textarea name="titlelabel">
+		<area>10,40,-10,60</area>
+		<font>mymedium</font>
+		<align>center</align>
+		<value>Filter Options</value>
+	    </textarea>
 
-	<buttonlist name="filters" from="basechecklist">
-	    <area>30,150,640,610</area>
-	    <wrapstyle>none</wrapstyle>
-	</buttonlist>
+	    <textarea name="subtitlelabel">
+		<area>20,80,-20,100</area>
+		<multiline>yes</multiline>
+		<font>mysmall</font>
+		<align>center</align>
+		<cutdown>yes</cutdown>
+		<value>Select the filters that should be applied for this recording.</value>
+	    </textarea>
 
-	<button name="back" from="varbuttonright">
-	    <!--
-		<position>470,100%-80</position>
-	    -->
-	    <value>Done</value>
-	</button>
+	    <buttonlist name="filters" from="basechecklist">
+		<area>30,150,640,610</area>
+		<wrapstyle>none</wrapstyle>
+	    </buttonlist>
 
+	    <button name="back" from="varbuttonright">
+		<!--
+		    <position>470,100%-80</position>
+		-->
+		<value>Done</value>
+	    </button>
+
+	</group>
     </window>
 
     <!-- Home -> Manage Recordings -> Schedule Recordings
 	 -> Program Guide -> 'E'(dit) -> Storage Options
     -->
     <window name="storageoptionseditor">
-	<area>830,35,790,960</area>
+        <area>525,35,-30,960</area>
 
-	<shape name="layershape">
-	    <area>0,0,100%,100%</area>
-	    <fill style="gradient">
-		<gradient start="#000000" end="#303030" alpha="240"
-			  direction="horizontal"  />
-	    </fill>
-	</shape>
+        <group name="schedulegroup">
+	    <area>50%-395,0,790,100%</area>
 
-	<textarea name="titlelabel">
-	    <area>10,40,-10,60</area>
-	    <font>mymedium</font>
-	    <align>center</align>
-	    <value>Storage Options</value>
-	</textarea>
+	    <shape name="layershape">
+		<area>0,0,100%,100%</area>
+		<fill style="gradient">
+		    <gradient start="#000000" end="#303030" alpha="240"
+			      direction="horizontal"  />
+		</fill>
+	    </shape>
 
-	<textarea name="subtitlelabel">
-	    <area>20,80,-20,70</area>
-	    <multiline>yes</multiline>
-	    <font>mysmall</font>
-	    <align>center</align>
-	    <cutdown>yes</cutdown>
-	    <value>Select how the recording file should be treated.</value>
-	</textarea>
+	    <textarea name="titlelabel">
+		<area>10,40,-10,60</area>
+		<font>mymedium</font>
+		<align>center</align>
+		<value>Storage Options</value>
+	    </textarea>
 
-	<textarea name="recprofile_label" from="labeltextlarge">
-	    <area>10,195,290,90</area>
-	    <value>Rec. Profile:</value>
-	</textarea>
+	    <textarea name="subtitlelabel">
+		<area>20,80,-20,70</area>
+		<multiline>yes</multiline>
+		<font>mysmall</font>
+		<align>center</align>
+		<cutdown>yes</cutdown>
+		<value>Select how the recording file should be treated.</value>
+	    </textarea>
 
-	<buttonlist name="recprofile" from="baselargeselector">
-	    <area>310,195,450,90</area>
-	</buttonlist>
+	    <textarea name="recprofile_label" from="labeltextlarge">
+		<area>10,195,290,90</area>
+		<value>Rec. Profile:</value>
+	    </textarea>
 
-	<textarea name="recgroup_label" from="recprofile_label">
-	    <position>10,285</position>
-	    <value>Rec. Group:</value>
-	</textarea>
+	    <buttonlist name="recprofile" from="baselargeselector">
+		<area>310,195,450,90</area>
+	    </buttonlist>
 
-	<buttonlist name="recgroup" from="recprofile">
-	    <position>310,285</position>
-	</buttonlist>
+	    <textarea name="recgroup_label" from="recprofile_label">
+		<position>10,285</position>
+		<value>Rec. Group:</value>
+	    </textarea>
 
-	<textarea name="storagegroup_label" from="recprofile_label">
-	    <position>10,375</position>
-	    <value>Strg. Group:</value>
-	</textarea>
+	    <buttonlist name="recgroup" from="recprofile">
+		<position>310,285</position>
+	    </buttonlist>
 
-	<buttonlist name="storagegroup" from="recprofile">
-	    <position>310,375</position>
-	</buttonlist>
+	    <textarea name="storagegroup_label" from="recprofile_label">
+		<position>10,375</position>
+		<value>Strg. Group:</value>
+	    </textarea>
 
-	<textarea name="playgroup_label" from="recprofile_label">
-	    <position>10,465</position>
-	    <value>Play Group:</value>
-	</textarea>
+	    <buttonlist name="storagegroup" from="recprofile">
+		<position>310,375</position>
+	    </buttonlist>
 
-	<buttonlist name="playgroup" from="recprofile">
-	    <position>310,465</position>
-	</buttonlist>
+	    <textarea name="playgroup_label" from="recprofile_label">
+		<position>10,465</position>
+		<value>Play Group:</value>
+	    </textarea>
 
-	<textarea name="maxepisodes_label" from="recprofile_label">
-	    <position>10,555</position>
-	    <value>Max to Keep:</value>
-	</textarea>
+	    <buttonlist name="playgroup" from="recprofile">
+		<position>310,465</position>
+	    </buttonlist>
 
-	<spinbox name="maxepisodes" from="baselargespinbox">
-	    <area>310,555,450,90</area>
-	</spinbox>
+	    <textarea name="maxepisodes_label" from="recprofile_label">
+		<position>10,555</position>
+		<value>Max to Keep:</value>
+	    </textarea>
 
-	<textarea name="maxnewest_label" from="recprofile_label">
-	    <position>10,645</position>
-	    <value>Max Newest:</value>
-	</textarea>
+	    <spinbox name="maxepisodes" from="baselargespinbox">
+		<area>310,555,450,90</area>
+	    </spinbox>
 
-	<buttonlist name="maxnewest" from="recprofile">
-	    <position>310,645</position>
-	</buttonlist>
+	    <textarea name="maxnewest_label" from="recprofile_label">
+		<position>10,645</position>
+		<value>Max Newest:</value>
+	    </textarea>
 
-	<checkbox name="autoexpire" from="basecheckbox">
-	    <position>270,765</position>
-	</checkbox>
+	    <buttonlist name="maxnewest" from="recprofile">
+		<position>310,645</position>
+	    </buttonlist>
 
-	<textarea name="allowautoexpire_label" from="labelcheckbox">
-	    <area>320,765,-10,70</area>
-	    <value>Allow Recordings to Auto-Expire</value>
-	</textarea>
+	    <checkbox name="autoexpire" from="basecheckbox">
+		<position>270,765</position>
+	    </checkbox>
 
-	<button name="back" from="varbuttonright">
-	    <value>Done</value>
-	</button>
+	    <textarea name="allowautoexpire_label" from="labelcheckbox">
+		<area>320,765,-10,70</area>
+		<value>Allow Recordings to Auto-Expire</value>
+	    </textarea>
+
+	    <button name="back" from="varbuttonright">
+		<value>Done</value>
+	    </button>
+	</group>
     </window>
 
     <!-- Home -> Manage Recordings -> Schedule Recordings
 	 -> Program Guide -> 'E'(dit) -> Post Processing
     -->
     <window name="postproceditor">
-	<area>830,35,710,960</area>
+        <area>525,35,-30,960</area>
 
-	<shape name="layershape">
-	    <area>0,0,100%,100%</area>
-	    <fill style="gradient">
-		<gradient start="#000000" end="#303030" alpha="240"
-			  direction="horizontal"  />
-	    </fill>
-	</shape>
+        <group name="schedulegroup">
+	    <area>50%-355,0,710,100%</area>
 
-	<textarea name="titlelabel">
-	    <area>10,20,-10,100</area>
-	    <font>mymedium</font>
-	    <align>center</align>
-	    <value>Post Processing Options</value>
-	    <multiline>yes</multiline>
-	</textarea>
+	    <shape name="layershape">
+		<area>0,0,100%,100%</area>
+		<fill style="gradient">
+		    <gradient start="#000000" end="#303030" alpha="240"
+			      direction="horizontal"  />
+		</fill>
+	    </shape>
 
-	<textarea name="subtitlelabel">
-	    <area>20,120,-20,70</area>
-	    <multiline>yes</multiline>
-	    <font>mysmall</font>
-	    <align>center</align>
-	    <cutdown>yes</cutdown>
-	    <value>Select any jobs you want run on the recording.</value>
-	</textarea>
+	    <textarea name="titlelabel">
+		<area>10,20,-10,100</area>
+		<font>mymedium</font>
+		<align>center</align>
+		<value>Post Processing Options</value>
+		<multiline>yes</multiline>
+	    </textarea>
 
-	<checkbox name="autocommflag" from="basecheckbox">
-	    <position>60,210</position>
-	</checkbox>
+	    <textarea name="subtitlelabel">
+		<area>20,120,-20,70</area>
+		<multiline>yes</multiline>
+		<font>mysmall</font>
+		<align>center</align>
+		<cutdown>yes</cutdown>
+		<value>Select any jobs you want run on the recording.</value>
+	    </textarea>
 
-	<textarea name="autocommflag_label" from="labelcheckbox">
-	    <area>110,210,-10,70</area>
-	    <value>Automatically Commercial Flag Recordings</value>
-	</textarea>
+	    <checkbox name="autocommflag" from="basecheckbox">
+		<position>60,210</position>
+	    </checkbox>
 
-	<checkbox name="metadatalookup" from="basecheckbox">
-	    <position>60,290</position>
-	</checkbox>
+	    <textarea name="autocommflag_label" from="labelcheckbox">
+		<area>110,210,-10,70</area>
+		<value>Automatically Commercial Flag Recordings</value>
+	    </textarea>
 
-	<textarea name="autometadata_label" from="autocommflag_label">
-	    <position>110,290</position>
-	    <value>Automatically Look Up Metadata</value>
-	</textarea>
+	    <checkbox name="metadatalookup" from="basecheckbox">
+		<position>60,290</position>
+	    </checkbox>
 
-	<checkbox name="autotranscode" from="basecheckbox">
-	    <position>60,370</position>
-	</checkbox>
+	    <textarea name="autometadata_label" from="autocommflag_label">
+		<position>110,290</position>
+		<value>Automatically Look Up Metadata</value>
+	    </textarea>
 
-	<textarea name="autotranscode_label" from="autocommflag_label">
-	    <position>110,370</position>
-	    <value>Automatically Transcode Recordings</value>
-	</textarea>
+	    <checkbox name="autotranscode" from="basecheckbox">
+		<position>60,370</position>
+	    </checkbox>
 
-	<buttonlist name="transcodeprofile" from="baselargeselector">
-	    <position>120,460</position>
-	</buttonlist>
+	    <textarea name="autotranscode_label" from="autocommflag_label">
+		<position>110,370</position>
+		<value>Automatically Transcode Recordings</value>
+	    </textarea>
 
-        <checkbox name="userjob1" from="basecheckbox">
-            <position>60,560</position>
-        </checkbox>
+	    <buttonlist name="transcodeprofile" from="baselargeselector">
+		<position>120,460</position>
+	    </buttonlist>
 
-        <textarea name="userjob1text" from="autocommflag_label">
-            <position>110,560</position>
-            <value>Run User Job #1</value>
-        </textarea>
+	    <checkbox name="userjob1" from="basecheckbox">
+		<position>60,560</position>
+	    </checkbox>
 
-        <checkbox name="userjob2" from="basecheckbox">
-            <position>60,630</position>
-        </checkbox>
+	    <textarea name="userjob1text" from="autocommflag_label">
+		<position>110,560</position>
+		<value>Run User Job #1</value>
+	    </textarea>
 
-        <textarea name="userjob2text" from="autocommflag_label">
-            <position>110,630</position>
-            <value>Run User Job #1</value>
-        </textarea>
+	    <checkbox name="userjob2" from="basecheckbox">
+		<position>60,630</position>
+	    </checkbox>
 
-        <checkbox name="userjob3" from="basecheckbox">
-            <position>60,700</position>
-        </checkbox>
+	    <textarea name="userjob2text" from="autocommflag_label">
+		<position>110,630</position>
+		<value>Run User Job #1</value>
+	    </textarea>
 
-        <textarea name="userjob3text" from="autocommflag_label">
-            <position>110,700</position>
-            <value>Run User Job #1</value>
-        </textarea>
+	    <checkbox name="userjob3" from="basecheckbox">
+		<position>60,700</position>
+	    </checkbox>
 
-        <checkbox name="userjob4" from="basecheckbox">
-            <position>60,780</position>
-        </checkbox>
+	    <textarea name="userjob3text" from="autocommflag_label">
+		<position>110,700</position>
+		<value>Run User Job #1</value>
+	    </textarea>
 
-        <textarea name="userjob4text" from="autocommflag_label">
-            <position>110,780</position>
-            <value>Run User Job #1</value>
-        </textarea>
+	    <checkbox name="userjob4" from="basecheckbox">
+		<position>60,780</position>
+	    </checkbox>
 
-	<button name="back" from="varbuttonright">
-	    <value>Done</value>
-	</button>
+	    <textarea name="userjob4text" from="autocommflag_label">
+		<position>110,780</position>
+		<value>Run User Job #1</value>
+	    </textarea>
+
+	    <button name="back" from="varbuttonright">
+		<value>Done</value>
+	    </button>
+	</group>
     </window>
 
     <!-- Home -> Manage Recordings -> Schedule Recordings
@@ -1571,99 +1587,103 @@
 	 -> Program Guide -> 'E'(dit) -> Metadata Options
     -->
     <window name="metadataoptions">
-	<area>830,35,700,960</area>
+        <area>525,35,-30,960</area>
 
-	<shape name="layershape">
-	    <area>0,0,100%,100%</area>
-	    <fill style="gradient">
-		<gradient start="#000000" end="#303030" alpha="240"
-			  direction="horizontal"  />
-	    </fill>
-	</shape>
+        <group name="schedulegroup">
+	    <area>50%-350,0,700,100%</area>
 
-	<textarea name="titlelabel">
-	    <area>0,0,100%,100</area>
-	    <font>mymedium</font>
-	    <align>center</align>
-	    <value>Metadata Options</value>
-	    <multiline>yes</multiline>
-	</textarea>
+	    <shape name="layershape">
+		<area>0,0,100%,100%</area>
+		<fill style="gradient">
+		    <gradient start="#000000" end="#303030" alpha="240"
+			      direction="horizontal"  />
+		</fill>
+	    </shape>
 
-	<textarea name="subtitlelabel">
-	    <area>10,110,-10,75</area>
-	    <multiline>yes</multiline>
-	    <font>mysmall</font>
-	    <align>center</align>
-	    <cutdown>yes</cutdown>
-	    <value>Select artwork, and find recording information online.</value>
-	</textarea>
+	    <textarea name="titlelabel">
+		<area>0,0,100%,100</area>
+		<font>mymedium</font>
+		<align>center</align>
+		<value>Metadata Options</value>
+		<multiline>yes</multiline>
+	    </textarea>
 
-        <textarea name="inetref_label" from="labeltext">
-            <position>5,200</position>
-            <value>TMDB/TVDB #</value>
-        </textarea>
+	    <textarea name="subtitlelabel">
+		<area>10,110,-10,75</area>
+		<multiline>yes</multiline>
+		<font>mysmall</font>
+		<align>center</align>
+		<cutdown>yes</cutdown>
+		<value>Select artwork, and find recording information online.</value>
+	    </textarea>
 
-        <textedit name="inetref_edit" from="basenarrowtextedit">
-            <position>260,200</position>
-        </textedit>
+	    <textarea name="inetref_label" from="labeltext">
+		<position>5,200</position>
+		<value>TMDB/TVDB #</value>
+	    </textarea>
 
-        <textarea name="season_label" from="labeltext">
-            <area>55,280,120,70</area>
-            <value>Season:</value>
-        </textarea>
+	    <textedit name="inetref_edit" from="basenarrowtextedit">
+		<position>260,200</position>
+	    </textedit>
 
-        <spinbox name="season_spinbox" from="basespinbox">
-            <position>185,280</position>
-        </spinbox>
+	    <textarea name="season_label" from="labeltext">
+		<area>55,280,120,70</area>
+		<value>Season:</value>
+	    </textarea>
 
-        <textarea name="episode_label" from="season_label">
-            <area>320,280,200,70</area>
-            <value>Episode:</value>
-        </textarea>
+	    <spinbox name="season_spinbox" from="basespinbox">
+		<position>185,280</position>
+	    </spinbox>
 
-        <spinbox name="episode_spinbox" from="basespinbox">
-            <position>530,280</position>
-        </spinbox>
+	    <textarea name="episode_label" from="season_label">
+		<area>320,280,200,70</area>
+		<value>Episode:</value>
+	    </textarea>
 
-        <button name="query_button" from="varbuttoncenter">
-            <area>160,360,500,70</area>
-            <value>Perform Query</value>
-        </button>
+	    <spinbox name="episode_spinbox" from="basespinbox">
+		<position>530,280</position>
+	    </spinbox>
 
-        <button name="online_coverart_button" from="basewidebutton">
-            <position>160,500</position>
-            <value>Find Coverart Online</value>
-        </button>
+	    <button name="query_button" from="varbuttoncenter">
+		<area>160,360,500,70</area>
+		<value>Perform Query</value>
+	    </button>
 
-        <button name="local_coverart_button" from="basewidebutton">
-            <position>160,560</position>
-            <value>Select Local Coverart</value>
-        </button>
+	    <button name="online_coverart_button" from="basewidebutton">
+		<position>160,500</position>
+		<value>Find Coverart Online</value>
+	    </button>
 
-        <button name="online_fanart_button" from="basewidebutton">
-            <position>160,620</position>
-            <value>Find Fanart Online</value>
-        </button>
+	    <button name="local_coverart_button" from="basewidebutton">
+		<position>160,560</position>
+		<value>Select Local Coverart</value>
+	    </button>
 
-        <button name="local_fanart_button" from="basewidebutton">
-            <position>160,680</position>
-            <value>Select Local Fanart</value>
-        </button>
+	    <button name="online_fanart_button" from="basewidebutton">
+		<position>160,620</position>
+		<value>Find Fanart Online</value>
+	    </button>
 
-        <button name="online_banner_button" from="basewidebutton">
-            <position>160,740</position>
-            <value>Find Banners Online</value>
-        </button>
+	    <button name="local_fanart_button" from="basewidebutton">
+		<position>160,680</position>
+		<value>Select Local Fanart</value>
+	    </button>
 
-        <button name="local_banner_button" from="basewidebutton">
-            <position>160,800</position>
-            <value>Select Local Banner</value>
-        </button>
+	    <button name="online_banner_button" from="basewidebutton">
+		<position>160,740</position>
+		<value>Find Banners Online</value>
+	    </button>
 
-	<button name="back" from="varbuttonright">
-	    <value>Done</value>
-	</button>
+	    <button name="local_banner_button" from="basewidebutton">
+		<position>160,800</position>
+		<value>Select Local Banner</value>
+	    </button>
 
+	    <button name="back" from="varbuttonright">
+		<value>Done</value>
+	    </button>
+
+	</group>
     </window>
 
 </mythuitheme>
