@@ -153,8 +153,9 @@
 
 			<textarea name="scheduleinfo"
 				  from="category">
-			    <area>1500,0,-20,40</area>
-			    <align>right,vcenter</align>
+			    <area>100%-275,0,-20,-5</area>
+			    <align>right,top</align>
+			    <multiline>yes</multiline>
 			</textarea>
 
 
@@ -165,7 +166,7 @@
 			</textarea>
 
 			<textarea name="storagegroup" from="category">
-			    <area>370,30,-15,40</area>
+			    <area>370,30,-280,40</area>
 			    <cutdown>no</cutdown>
 			    <scroll direction="horizontal" />
 			</textarea>
