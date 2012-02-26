@@ -29,7 +29,7 @@
 	</group>
 
 	<group name="details">
-	    <area>300,100,-300,-300</area>
+	    <area>50%-660,100,1320,-300</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -62,7 +62,7 @@
 	</group>
 
 	<group name="details">
-	    <area>300,100,-300,-200</area>
+	    <area>50%-660,100,1320,-200</area>
 
 	    <group name="group1">
 		<area>125,75,700,500</area>
@@ -181,7 +181,7 @@
 	</group>
 
 	<group name="details">
-	    <area>300,100,-300,-300</area>
+	    <area>50%-660,100,1320,-300</area>
 
 	    <group name="day0">
 		<area>20,20,400,-60</area>
@@ -293,7 +293,7 @@
 	</group>
 
 	<group name="details">
-	    <area>300,100,-300,-300</area>
+	    <area>50%-660,100,1320,-300</area>
 
 	    <group name="day0">
 		<area>10,10,420,320</area>
@@ -467,7 +467,7 @@
 	</group>
 
 	<group name="details">
-	    <area>300,100,-300,-300</area>
+	    <area>50%-660,100,1320,-300</area>
 
 	    <imagetype name="map">
 		<area>10,10,-10,-10</area>
@@ -495,7 +495,7 @@
 	</group>
 
 	<group name="details">
-	    <area>300,100,-300,-300</area>
+	    <area>50%-660,100,1320,-300</area>
 
 	    <imagetype name="animatedimage">
 		<area>10,10,-10,-10</area>
@@ -523,7 +523,7 @@
 	</group>
 
 	<group name="details">
-	    <area>300,100,-300,-300</area>
+	    <area>50%-660,100,1320,-300</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -556,7 +556,7 @@
 	</group>
 
 	<group name="details">
-	    <area>300,100,-300,-300</area>
+	    <area>50%-660,100,1320,-300</area>
 
 	    <group name="time0">
 		<area>10,10,420,320</area>
@@ -817,7 +817,7 @@
 	</group>
 
 	<group name="dialog">
-	    <area>50%-600,50,1360,-300</area>
+	    <area>50%-660,50,1320,-300</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>

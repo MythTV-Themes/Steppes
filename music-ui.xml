@@ -25,7 +25,7 @@
 
 		<statetype name="buttonitem">
 		    <state name="selectedinactive">
-			<area>0,0,1800,200</area>
+			<area>0,0,100%,200</area>
 
 			<statetype name="playstate">
 			    <area>0,0,100%,100%</area>
@@ -120,7 +120,7 @@
         <group name="playliststatus" from="baseplayliststatus" />
 
 	<group name="infogroup">
-	    <area>500,802,1370,-100</area>
+	    <area>500,802,-50,-100</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -261,7 +261,7 @@
 	<group name="playliststatus" from="baseplaylistfullstatus" />
 
 	<group name="gallerygroup">
-	    <area>20,420,-30,-90</area>
+	    <area>20,420,-20,-90</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -339,15 +339,15 @@
 	  </shape>
 
 	  <buttonlist name="field_list" from="basemediumselector">
-            <position>400,30</position>
+            <position>60,30</position>
 	  </buttonlist>
 
 	  <textedit name="criteria_edit" from="basewidetextedit">
-            <position>720,32</position>
+            <position>380,32</position>
 	  </textedit>
 
 	  <group name="matches" from="basematchgroup">
-	      <area>1340, 32, 400, 70</area>
+	      <area>1000, 32, 400, 70</area>
 	      <textarea name="matches_text" from="resulttext" />
 	  </group>
 

@@ -5,7 +5,6 @@
     <!-- Home -> Information Center -> System Status
     -->
     <window name="status">
-        <area>0,0,1920,1080</area>
 
         <group name="PageHeading" from="basePageHeading">
 	    <group name="Heading">
@@ -40,7 +39,7 @@
 			    <area>0,0,100%,100%</area>
 			    <minsize>100%,40</minsize>
 			    <shape name="statusborder">
-				<area>5,0,-5,100%</area>
+				<area>6,0,-6,100%</area>
 				<minsize>100%,40</minsize>
 			    </shape>
 			</state>

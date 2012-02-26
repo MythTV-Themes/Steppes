@@ -233,11 +233,6 @@
 		<area>0,20,100%,-60</area>
 
 		<state name="inactive">
-		    <!-- Width needs to have <buttonarea>
-			 subtracted from it -->
-<!--
-		    <area>0,0,-40,60</area>
--->
                     <area>0,0,100%,60</area>
 		    <statetype name="playstate">
 			<area>0,0,100%,100%</area>
