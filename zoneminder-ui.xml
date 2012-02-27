@@ -236,7 +236,7 @@
 				<value>Name</value>
 			    </textarea>
 			    <textarea name="buttontext" from="basetextarea">
-				<area>810,20,-20,75</area>
+				<area>810,20,-20,70</area>
 				<multiline>yes</multiline>
 			    </textarea>
 			</state>
@@ -356,7 +356,7 @@
 		<value>Event:</value>
 	    </textarea>
 	    <textarea name="event_text" from="basetextarea">
-		<area>270,10,-10,75</area>
+		<area>270,10,-10,70</area>
 		<align>left,vcenter</align>
 		<multiline>yes</multiline>
 		<value>Event Name (1/123)</value>

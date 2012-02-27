@@ -1185,7 +1185,7 @@
 
     </window>
 
-    <!-- Home -> Media Library -> Listen to Music -> 'I'
+    <!-- Home -> Media Library -> Listen to Music -> 'I'(nfo)
     -->
     <window name="trackdetail_popup">
         <area>-1,-1,1400,1000</area>
@@ -1206,7 +1206,7 @@
         </textarea>
 
         <textarea name="title" from="basetextarea">
-            <area>280,30,580,75</area>
+            <area>280,30,580,70</area>
 	    <align>left,vcenter</align>
 	    <multiline>yes</multiline>
         </textarea>
@@ -1271,7 +1271,7 @@
         </textarea>
 
         <statetype name="rating_state" from="baseratingstate">
-            <position>280,540</position>
+            <position>280,535</position>
         </statetype>
 
         <textarea name="dateaddedlbl" from="titlelbl">

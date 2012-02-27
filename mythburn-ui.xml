@@ -41,7 +41,7 @@
         </textarea>
 
 	<textarea name="oldsize_text" from="basetextarea">
-	    <area>310,410,200,75</area>
+	    <area>310,410,200,70</area>
 	</textarea>
 
 	<textarea name="newsize_label" from="oldsize_label">
@@ -49,8 +49,8 @@
 	    <value>New size:</value>
 	</textarea>
 
-	<textarea name="newsize_text" from="basetextarea">
-	    <area>310,450,200,75</area>
+	<textarea name="newsize_text" from="oldsize_text">
+	    <position>310,450</position>
         </textarea>
 
         <button name="ok_button" from="varbuttonright">

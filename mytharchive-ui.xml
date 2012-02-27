@@ -37,7 +37,7 @@
 	    </textarea>
 
 	    <textarea name="freespace_text" from="basetextarea">
-		<area>770,20,200,75</area>
+		<area>770,20,200,70</area>
 	    </textarea>
 
 	    <group name="resultgroup">
