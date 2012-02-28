@@ -36,6 +36,7 @@
 		    </shape>
 		    <imagetype name="channelicon">
 			<area>5,8,80,80</area>
+			<preserveaspect>true</preserveaspect>
 		    </imagetype>
 		    <textarea name="buttontext">
 			<area>85,0,110,95</area>
@@ -152,6 +153,7 @@
 		    </shape>
 		    <imagetype name="channelicon">
 			<area>5,8,80,80</area>
+			<preserveaspect>true</preserveaspect>
 		    </imagetype>
 		    <textarea name="buttontext">
 			<area>85,0,110,95</area>
