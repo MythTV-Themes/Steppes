@@ -77,7 +77,7 @@
 	    </textarea>
 
 	    <textarea name="system" from="basetextarea">
-		<area>270,70,330,75</area>
+		<area>270,70,330,70</area>
 		<multiline>yes</multiline>
 	    </textarea>
 
@@ -107,7 +107,7 @@
 	    <statetype name="favorite">
 		<state name="no">
 		    <textarea name="favorite" from="basetextarea">
-			<area>270,310,330,75</area>
+			<area>270,310,330,70</area>
 			<value>No</value>
 		    </textarea>
 		</state>
@@ -191,7 +191,7 @@
 		<value>Game:</value>
 	    </textarea>
 	    <textarea name="title" from="basetextarea">
-		<area>270,20,-20,75</area>
+		<area>270,20,-20,70</area>
 	    </textarea>
 
 	    <textarea name="gametype_lbl" from="gamename_lbl">
@@ -223,7 +223,7 @@
 		<value>System(s):</value>
 	    </textarea>
 	    <textarea name="allsystems" from="title">
-		<area>270,340,400,75</area>
+		<area>270,340,400,70</area>
 	    </textarea>
 
 	    <textarea name="genre_lbl" from="gamename_lbl">
