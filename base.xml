@@ -1425,7 +1425,7 @@
 
     <!-- Common page elements -->
     <group name="baseModeGroup">
-	<area>570,25,1300,60</area>
+	<area>560,25,-25,60</area>
 	<minsize vanish="yes">20,100%</minsize>
 
 	<shape name="modeShape">
@@ -1628,7 +1628,7 @@
 	<area>40,35,460,959</area>
 
 	<group name="titlegroup" from="baseMsgGroup">
-	    <area>0,0,460,130</area>
+	    <area>0,0,100%,130</area>
 
 	    <shape name="msgShape">
 		<line color="#00FFFF" alpha="160" width="0" />
@@ -1639,7 +1639,7 @@
 	</group>
 
 	<group name="subtitlegroup" from="baseMsgGroup">
-	    <area>0,135,460,115</area>
+	    <area>0,135,100%,115</area>
 
 	    <shape name="msgShape">
 		<line color="#00FFFF" alpha="160" width="0" />
@@ -1650,7 +1650,7 @@
 	</group>
 
 	<group name="wheregroup" from="baseMsgGroup">
-	    <area>0,255,460,125</area>
+	    <area>0,255,100%,125</area>
 	    <shape name="msgShape">
 		<line color="#00FFFF" alpha="160" width="0" />
 	    </shape>
@@ -1678,7 +1678,7 @@
 	</group>
 
 	<group name="descgroup" from="baseMsgGroup">
-	    <area>0,385,460,100%</area>
+	    <area>0,385,100%,100%</area>
 	    
 	    <shape name="msgShape">
 		<line color="#00FFFF" alpha="160" width="0" />

@@ -55,28 +55,29 @@
 	</buttonlist>
 
 	<textarea name="datetext">
-	    <area>535,89,180,42</area>
+	    <area>520,89,195,42</area>
 	    <font>mymediumnarrow</font>
 	    <align>center</align>
 	</textarea>
 
 	<buttonlist name="timelist">
-	    <area>725,98,1168,30</area>
+	    <area>714,98,-30,30</area>
 	    <layout>horizontal</layout>
 	    <arrange>spread</arrange>
 	    <buttonarea>0,0,100%,100%</buttonarea>
-	    <spacing>1</spacing>
+	    <spacing>0</spacing>
 	    <statetype name="buttonitem">
-		<area>0,0,291,30</area>
+		<area>0,0,25%,30</area>
 		<state name="active">
+		    <area>0,0,100%,100%</area>
 		    <shape name="timebg">
-			<area>0,0,291,30</area>
+			<area>0,0,100%,30</area>
 			<type>roundbox</type>
 			<cornerradius>30</cornerradius>
 			<fill color="#FFFFFF" alpha="60" />
 		    </shape>
 		    <textarea name="buttontext" from="basetextarea">
-			<area>10,3,280,30</area>
+			<area>10,3,-10,-3</area>
 			<font>mysmall</font>
 			<align>center</align>
 		    </textarea>
@@ -87,12 +88,12 @@
 	</buttonlist>
 
 	<shape name="background">
-	    <area>725,128,1168,864</area>
+	    <area>715,128,-30,864</area>
 	    <type>box</type>
 	    <fill color="#000000" alpha="255" />
 	</shape>
 	<guidegrid name="guidegrid">
-	    <area>725,128,1168,864</area>
+	    <area>715,128,-30,864</area>
 	    <layout>horizontal</layout>
 	    <channels>9</channels>
 	    <timeslots>4</timeslots>
@@ -172,28 +173,28 @@
 	</buttonlist>
 
 	<textarea name="datetext">
-	    <area>535,89,180,42</area>
+	    <area>520,89,195,42</area>
 	    <font>mymediumnarrow</font>
 	    <align>center</align>
 	</textarea>
 
 	<buttonlist name="timelist">
-	    <area>725,98,1168,30</area>
+	    <area>714,98,-30,30</area>
 	    <layout>horizontal</layout>
 	    <arrange>spread</arrange>
 	    <buttonarea>0,0,100%,100%</buttonarea>
-	    <spacing>1</spacing>
+	    <spacing>0</spacing>
 	    <statetype name="buttonitem">
-		<area>0,0,291,30</area>
+		<area>0,0,100%,30</area>
 		<state name="active">
 		    <shape name="timebg">
-			<area>0,0,291,30</area>
+			<area>0,0,100%,30</area>
 			<type>roundbox</type>
 			<cornerradius>30</cornerradius>
 			<fill color="#FFFFFF" alpha="60" />
 		    </shape>
 		    <textarea name="buttontext" from="basetextarea">
-			<area>10,3,280,30</area>
+			<area>10,3,-10,-3</area>
 			<font>mysmall</font>
 			<align>center</align>
 		    </textarea>
@@ -204,12 +205,12 @@
 	</buttonlist>
 
 	<shape name="background">
-	    <area>725,128,1168,864</area>
+	    <area>715,128,-30,864</area>
 	    <type>box</type>
 	    <fill color="#000000" alpha="255" />
 	</shape>
 	<guidegrid name="guidegrid">
-	    <area>725,128,1168,864</area>
+	    <area>715,128,-30,864</area>
 	    <layout>horizontal</layout>
 	    <channels>9</channels>
 	    <timeslots>4</timeslots>
