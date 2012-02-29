@@ -225,7 +225,7 @@
 	</group>
 
 	<group name="dialog">
-	    <area>200,50,-200,-300</area>
+	    <area>50%-760,50,1520,-300</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>

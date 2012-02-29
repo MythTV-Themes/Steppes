@@ -265,7 +265,7 @@
 	</group>
 
 	<group name="dialog">
-	    <area>340,150,-340,600</area>
+	    <area>50%-620,150,1240,600</area>
 
 	    <shape name="background" from="basewidgetshape" />
 
@@ -337,7 +337,7 @@
 	</group>
 
 	<group name="dialog">
-	    <area>700,150,-700,600</area>
+	    <area>50%-250,150,500,600</area>
 	    
 	    <shape name="background" from="basewidgetshape" />
 
@@ -385,7 +385,7 @@
 	</group>
 
 	<group name="dialog">
-	    <area>400,50,-400,840</area>
+	    <area>560,50,1120,840</area>
 
 	    <shape name="background" from="basewidgetshape" />
 

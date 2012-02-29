@@ -185,8 +185,9 @@
 	    <buttonarea>0,0,100%,100%</buttonarea>
 	    <spacing>0</spacing>
 	    <statetype name="buttonitem">
-		<area>0,0,100%,30</area>
+		<area>0,0,25%,30</area>
 		<state name="active">
+		    <area>0,0,100%,100%</area>
 		    <shape name="timebg">
 			<area>0,0,100%,30</area>
 			<type>roundbox</type>
@@ -547,7 +548,7 @@
 	</group>
 
 	<group name="dialog">
-	    <area>300,75,-300,-200</area>
+	    <area>50%-660,75,1320,-200</area>
 
 	    <shape name="dialogbackground" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
