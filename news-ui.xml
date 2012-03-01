@@ -99,47 +99,47 @@
 		<area>0,0,100%,100%</area>
 	    </shape>
 
-        <textarea name="nosites" from="basetextarea">
-            <area>20,20,-20,-20</area>
-            <align>center</align>
-            <multiline>yes</multiline>
-        </textarea>
+	    <textarea name="nosites" from="basetextarea">
+		<area>20,20,-20,-20</area>
+		<align>center</align>
+		<multiline>yes</multiline>
+	    </textarea>
 
-        <textarea name="title" from="basetextarea">
-            <area>20,5,-20,120</area>
-            <font>mylarge</font>
-            <multiline>yes</multiline>
-        </textarea>
+	    <textarea name="title" from="basetextarea">
+		<area>20,5,-20,120</area>
+		<font>mylarge</font>
+		<multiline>yes</multiline>
+	    </textarea>
 
-        <imagetype name="thumbnail">
-            <area>100%-200,10,180,120</area>
-            <preserveaspect>true</preserveaspect>
-        </imagetype>
+	    <imagetype name="thumbnail">
+		<area>100%-200,10,180,120</area>
+		<preserveaspect>true</preserveaspect>
+	    </imagetype>
 
-        <textarea name="description" from="basetextarea">
-            <area>30,130,-30,-45</area>
-            <multiline>yes</multiline>
-        </textarea>
+	    <textarea name="description" from="basetextarea">
+		<area>30,130,-30,-45</area>
+		<multiline>yes</multiline>
+	    </textarea>
 
-        <textarea name="updated" from="basetextarea">
-            <area>100%-600,100%-40,-20,35</area>
-	    <align>right,vcenter</align>
-        </textarea>
+	    <textarea name="updated" from="basetextarea">
+		<area>100%-600,100%-40,-20,35</area>
+		<align>right,vcenter</align>
+	    </textarea>
 
-        <imagetype name="enclosures">
-            <filename>enclosures.png</filename>
-            <position>30,100%-40</position>
-        </imagetype>
+	    <imagetype name="enclosures">
+		<filename>enclosures.png</filename>
+		<position>30,100%-40</position>
+	    </imagetype>
 
-        <imagetype name="download">
-            <filename>need-download.png</filename>
-            <position>130,100%-40</position>
-        </imagetype>
+	    <imagetype name="download">
+		<filename>need-download.png</filename>
+		<position>130,100%-40</position>
+	    </imagetype>
 
-        <imagetype name="ispodcast">
-            <filename>podcast.png</filename>
-            <position>230,100%-40</position>
-        </imagetype>
+	    <imagetype name="ispodcast">
+		<filename>podcast.png</filename>
+		<position>230,100%-40</position>
+	    </imagetype>
 	</group>
     </window>
 
@@ -238,12 +238,12 @@
 	    <buttonlist name="sites" from="basechecklist">
 		<area>680,20,800,-20</area>
 	    </buttonlist>
-<!--
-	    <textarea name="context_switch" from="basetextarea">
+	    <!--
+		<textarea name="context_switch" from="basetextarea">
 		<area>20,550,760,50</area>
 		<multiline>yes</multiline>
-	    </textarea>
--->
+		</textarea>
+	    -->
 	</group>
     </window>
 
