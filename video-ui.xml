@@ -866,6 +866,10 @@
 			    <fill color="#000000" alpha="144" />
 			    <cornerradius>10</cornerradius>
 			</shape>
+			<imagetype name="buttonarrow">
+			    <area>100%-24,23,15,15</area>
+			    <filename>Images/rightarrow-on.png</filename>
+			</imagetype>
 
 			<statetype name="watchedstate">
 			    <area>10,15,56,28</area>

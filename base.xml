@@ -2115,7 +2115,6 @@
 
 	<buttonlist name="list" from="basepopupbuttonlist">
 	    <area>30,20%+30,-30,-10</area>
-	    <showarrow>no</showarrow>
 	    <wrapstyle>selection</wrapstyle>
 	</buttonlist>
 

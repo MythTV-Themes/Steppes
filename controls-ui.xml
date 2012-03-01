@@ -49,7 +49,6 @@
 
 	    <buttonlist name="leftlist" from="basebuttonlist">
 		<area>20,60,600,-100</area>
-		<showarrow>no</showarrow>
 	    </buttonlist>
 
 	    <textarea name="rightdesc" from="leftdesc">

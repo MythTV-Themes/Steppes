@@ -368,6 +368,10 @@
 			    <cornerradius>10</cornerradius>
 			</shape>
 
+			<imagetype name="buttonarrow">
+			    <area>100%-24,23,15,15</area>
+			    <filename>Images/rightarrow-on.png</filename>
+			</imagetype>
 
 			<textarea name="buttontext">
 			    <area>80,4,-230,50</area>
