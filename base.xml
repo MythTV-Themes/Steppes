@@ -1473,7 +1473,7 @@
 			<type>roundbox</type>
 			<cornerradius>350</cornerradius>
 			<line color="#AAFFFF" alpha="196" width="3" />
-			<fill color="#000000" alpha="150" />
+			<fill color="#000000" alpha="160" />
 		    </shape>
 		    <textarea name="buttontext">
 			<area>15,5,-15,-5</area>
@@ -1563,7 +1563,7 @@
 		    <area>0,0,100%,100%</area>
 		    <type>roundbox</type>
 		    <line color="#00FFFF" alpha="160" width="0" />
-		    <fill color="#000000" alpha="150" />
+		    <fill color="#000000" alpha="160" />
 		    <cornerradius>10</cornerradius>
 		</shape>
 
@@ -1703,7 +1703,7 @@
 		<minsize>100%,40</minsize>
 		<type>roundbox</type>
 		<line color="#00FFFF" width="5" alpha="160" />
-		<fill color="#000000" alpha="150" />
+		<fill color="#000000" alpha="160" />
 		<cornerradius>10</cornerradius>
 	    </shape>
 	</state>
@@ -1830,7 +1830,7 @@
 			    <area>9,0,-9,100%</area>
 			    <type>roundbox</type>
 			    <line color="#00FFFF" width="1" alpha="160" />
-			    <fill color="#000000" alpha="150" />
+			    <fill color="#000000" alpha="160" />
 			    <cornerradius>10</cornerradius>
 			</shape>
 		    </state>

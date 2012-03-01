@@ -402,7 +402,7 @@
 			<minsize>100%,160</minsize>
 			<type>roundbox</type>
 			<line color="#9e9e9e" alpha="255" width="1" />
-			<fill color="#000000" alpha="144" />
+			<fill color="#000000" alpha="160" />
 			<cornerradius>10</cornerradius>
 		    </shape>
 
@@ -863,7 +863,7 @@
 			    <minsize shrink="short">100%,60</minsize>
 			    <type>roundbox</type>
 			    <line color="#9e9e9e" alpha="255" width="1" />
-			    <fill color="#000000" alpha="144" />
+			    <fill color="#000000" alpha="160" />
 			    <cornerradius>10</cornerradius>
 			</shape>
 			<imagetype name="buttonarrow">
