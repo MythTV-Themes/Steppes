@@ -254,7 +254,7 @@
 		<position>10,660</position>
 		<value>Publisher:</value>
 	    </textarea>
-	    <textarea name="publisher" from="text">
+	    <textarea name="publisher" from="allsystems">
 		<position>270,660</position>
 	    </textarea>
 
