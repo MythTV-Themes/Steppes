@@ -260,7 +260,7 @@
 	    </group>
 	</group>
 
-	<group name="msg" from="baseMsgGroupLarge">
+	<group name="msg" from="baseMsgGroupBanner">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 
@@ -332,7 +332,7 @@
 	    </group>
 	</group>
 
-	<group name="msg" from="baseMsgGroupLarge">
+	<group name="msg" from="baseMsgGroupBanner">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 
@@ -380,12 +380,12 @@
 	    </group>
 	</group>
 
-	<group name="msg" from="baseMsgGroupLarge">
+	<group name="msg" from="baseMsgGroupBanner">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>560,50,1120,840</area>
+	    <area>50%-560,50,1120,800</area>
 
 	    <shape name="background" from="basewidgetshape" />
 
@@ -485,7 +485,7 @@
 	    </group>
 	</group>
 
-	<group name="msg" from="baseMsgGroupLarge">
+	<group name="msg" from="baseMsgGroupBanner">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 

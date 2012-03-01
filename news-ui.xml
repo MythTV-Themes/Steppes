@@ -218,7 +218,7 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupLarge">
+	<group name="msggroup" from="baseMsgGroupBanner">
 	    <textarea name="help" from="msgText">
 		<value>Choose the news sites you would like to read.</value>
 	    </textarea>

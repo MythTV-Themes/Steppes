@@ -768,12 +768,12 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupTall">
+	<group name="msggroup" from="baseMsgGroupBanner">
 	    <textarea name="helptxt" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>560,50,1280,-300</area>
+	    <area>50%-640,50,1280,-300</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>

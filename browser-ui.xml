@@ -185,7 +185,7 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupWide">
+	<group name="msggroup" from="baseMsgGroupBanner">
 	    <textarea name="description" from="msgText" />
 	</group>
 

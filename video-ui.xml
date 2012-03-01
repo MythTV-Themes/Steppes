@@ -1005,12 +1005,12 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupLarge">
+	<group name="msggroup" from="baseMsgGroupBanner">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>550,120,-550,600</area>
+	    <area>50%-450,120,900,600</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -1590,12 +1590,12 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupWide">
+	<group name="msggroup" from="baseMsgGroupBanner">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>450,100,1000,650</area>
+	    <area>50%-500,100,1000,650</area>
 
 	    <shape name="dialogbackground" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -1684,12 +1684,12 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupWide">
+	<group name="msggroup" from="baseMsgGroupBanner">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>500,220,-500,450</area>
+	    <area>50%-450,220,900,450</area>
 
 	    <shape name="background" from="basewidgetshape" />
 

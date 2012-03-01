@@ -15,12 +15,12 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupTall">
+	<group name="msggroup" from="baseMsgGroupBanner">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>550,40,-100,-150</area>
+	    <area>50%-625,40,1250,-230</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -111,12 +111,12 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupTall">
+	<group name="msggroup" from="baseMsgGroupBanner">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>600,150,-350,-400</area>
+	    <area>50%-500,150,1000,-400</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -175,12 +175,12 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupTall">
+	<group name="msggroup" from="baseMsgGroupBanner">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>600,150,-450,-400</area>
+	    <area>50%-400,150,800,-400</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -239,12 +239,12 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupTall">
+	<group name="msggroup" from="baseMsgGroupBanner">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>600,40,-100,-200</area>
+	    <area>50%-690,40,1380,-240</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -335,12 +335,12 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupTall">
+	<group name="msggroup" from="baseMsgGroupBanner">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>600,40,-100,-200</area>
+	    <area>50%-500,40,1000,-240</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -416,12 +416,12 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupTall">
+	<group name="msggroup" from="baseMsgGroupBanner">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>600,150,-450,-400</area>
+	    <area>50%-450,150,900,-400</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -447,14 +447,14 @@
 		<position>220,260</position>
 	    </checkbox>
 	    <textarea name="cycleonsongchange_label" from="labelcheckbox">
-		<position>270,260</position>
+		<area>270,260,-20,70</area>
 		<value>Change Visualizer on each song</value>
 	    </textarea>
 
 	    <checkbox name="randomizeorder" from="basecheckbox">
 		<position>220,340</position>
 	    </checkbox>
-	    <textarea name="randomizeorder_label" from="labelcheckbox">
+	    <textarea name="randomizeorder_label" from="cycleonsongchange_label">
 		<position>270,340</position>
 		<value>Randomize Visualizer order</value>
 	    </textarea>

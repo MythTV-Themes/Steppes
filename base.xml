@@ -1422,6 +1422,10 @@
 	<area>52,809,500,240</area>
     </group>
 
+    <group name="baseMsgGroupBanner" from="baseMsgGroup">
+	<area>300,100%-210,-300,120</area>
+    </group>
+
 
     <!-- Common page elements -->
     <group name="baseModeGroup">
