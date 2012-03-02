@@ -640,8 +640,8 @@
         </textarea>
 
         <buttonlist name="phrase_list" from="basepopupbuttonlist">
-	    <area>50,80,-50,-170</area>
-	    <buttonarea>0,0,100%,100%</buttonarea>
+	    <area>20,80,-20,-170</area>
+	    <buttonarea>20,0,-20,100%</buttonarea>
         </buttonlist>
 
         <textedit name="phrase_edit" from="basewidetextedit">
@@ -744,8 +744,8 @@
         </textarea>
 
         <buttonlist name="phrase_list" from="basepopupbuttonlist">
-	    <area>50,90,-50,-20</area>
-	    <buttonarea>0,0,100%,100%</buttonarea>
+	    <area>20,90,-20,-20</area>
+	    <buttonarea>20,0,-20,100%</buttonarea>
         </buttonlist>
 
         <button name="edit_button" from="varbuttonleft" />

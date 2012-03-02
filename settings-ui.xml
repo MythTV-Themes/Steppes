@@ -155,7 +155,7 @@
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>180,5,-20,-5</area>
+                        <area>190,5,-20,-5</area>
                         <align>left,vcenter</align>
                         <font>mymedium</font>
 			<multiline>yes</multiline>

@@ -15,11 +15,10 @@
     </types>
 
     <baseres>1920x1080</baseres>
-<!--    <baseres>1440x1080</baseres>  -->
 
     <version>
         <major>1</major>
-        <minor>2</minor>
+        <minor>3</minor>
     </version>
 
     <detail>
