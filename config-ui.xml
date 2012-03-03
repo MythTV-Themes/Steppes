@@ -6,317 +6,317 @@
     -->
     <window name="iconimport">
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Channel Icons</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Channel Icons</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="modegroup" from="baseModeGroup">
-	    <area>70,25,-70,60</area>
-	    <textarea name="name" from="pagemode" />
-	</group>
+        <group name="modegroup" from="baseModeGroup">
+            <area>70,25,-70,60</area>
+            <textarea name="name" from="pagemode" />
+        </group>
 
-	<group name="msg" from="baseMsgGroupWide">
-	    <area>45,950,500,110</area>
-	    <textarea name="status" from="msgText" />
-	</group>
+        <group name="msg" from="baseMsgGroupWide">
+            <area>45,950,500,110</area>
+            <textarea name="status" from="msgText" />
+        </group>
 
-	<group name="dialog">
-	    <area>80,120,-80,-165</area>
+        <group name="dialog">
+            <area>80,120,-80,-165</area>
 
-	    <shape name="dialogbackground" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            <shape name="dialogbackground" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-	    <!-- Inheriting from basegridlist doesn't work -->
-	    <buttonlist name="icons">
-		<area>20,20,-20,-110</area>
-		
-		<align>center</align>
-		<arrange>stack</arrange>
-		<layout>grid</layout>
-		<spacing>10</spacing>
-		<scrollstyle>free</scrollstyle>
-		<wrapstyle>none</wrapstyle>
-		<buttonarea>0,0,100%,100%-35</buttonarea>
+            <!-- Inheriting from basegridlist doesn't work -->
+            <buttonlist name="icons">
+                <area>20,20,-20,-110</area>
+                
+                <align>center</align>
+                <arrange>stack</arrange>
+                <layout>grid</layout>
+                <spacing>10</spacing>
+                <scrollstyle>free</scrollstyle>
+                <wrapstyle>none</wrapstyle>
+                <buttonarea>0,0,100%,100%-35</buttonarea>
 
-		<statetype name="buttonitem">
-		    <area>0,0,100%,100%</area>
-		    <state name="inactive">
-			<area>0,0,300,300</area>
+                <statetype name="buttonitem">
+                    <area>0,0,100%,100%</area>
+                    <state name="inactive">
+                        <area>0,0,300,300</area>
 
-			<shape name="statusborder">
-			    <area>0,0,100%,100%</area>
-			    <type>roundbox</type>
-			    <line color="#00FFFF" width="1" alpha="160" />
-			    <fill color="#000000" alpha="144" />
-			    <cornerradius>10</cornerradius>
-			</shape>
+                        <shape name="statusborder">
+                            <area>0,0,100%,100%</area>
+                            <type>roundbox</type>
+                            <line color="#00FFFF" width="1" alpha="160" />
+                            <fill color="#000000" alpha="144" />
+                            <cornerradius>10</cornerradius>
+                        </shape>
 
-			<imagetype name="icon">
-			    <area>12,12,278,278</area>
-			    <preserveaspect>true</preserveaspect>
-			</imagetype>
+                        <imagetype name="icon">
+                            <area>12,12,278,278</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
 
-			<group name="textgroup">
-			    <area>10,10,-5,-5</area>
-			    <minsize vanish="true">20,20</minsize>
+                        <group name="textgroup">
+                            <area>10,10,-5,-5</area>
+                            <minsize vanish="true">20,20</minsize>
 
-			    <shape name="shadow">
-				<area>5,5,-5,-5</area>
-				<minsize vanish="true">5,5</minsize>
-				<type>roundbox</type>
-				<cornerradius>5</cornerradius>
-				<fill color="#000000" alpha="160" />
-			    </shape>			
+                            <shape name="shadow">
+                                <area>5,5,-5,-5</area>
+                                <minsize vanish="true">5,5</minsize>
+                                <type>roundbox</type>
+                                <cornerradius>5</cornerradius>
+                                <fill color="#000000" alpha="160" />
+                            </shape>                    
 
-			    <textarea name="buttontext" from="basetextarea">
-				<area>10,5,-10,-5</area>
-				<align>bottom,right</align>
-				<minsize shrink="short" vanish="true">5,5</minsize>
-				<font>myverysmall</font>
-				<multiline>yes</multiline>
-			    </textarea>
-			</group>
-		    </state> <!-- inactive -->
+                            <textarea name="buttontext" from="basetextarea">
+                                <area>10,5,-10,-5</area>
+                                <align>bottom,right</align>
+                                <minsize shrink="short" vanish="true">5,5</minsize>
+                                <font>myverysmall</font>
+                                <multiline>yes</multiline>
+                            </textarea>
+                        </group>
+                    </state> <!-- inactive -->
 
-		    <state name="active" from="inactive" />
+                    <state name="active" from="inactive" />
 
-		    <state name="selectedinactive" from="active">
-			<area>-20,-20,340,340</area>
-			<shape name="statusborder">
-			    <fill color="#000000" alpha="200" />
-			</shape>
-		    </state>
+                    <state name="selectedinactive" from="active">
+                        <area>-20,-20,340,340</area>
+                        <shape name="statusborder">
+                            <fill color="#000000" alpha="200" />
+                        </shape>
+                    </state>
 
-		    <state name="selectedactive" from="selectedinactive">
-			<shape name="statusborder">
-			    <line color="#00FFFF" width="5" alpha="160" />
-			    <fill color="#000000" alpha="240" />
-			</shape>
-		    </state>
-		</statetype>
+                    <state name="selectedactive" from="selectedinactive">
+                        <shape name="statusborder">
+                            <line color="#00FFFF" width="5" alpha="160" />
+                            <fill color="#000000" alpha="240" />
+                        </shape>
+                    </state>
+                </statetype>
 
-		<statetype name="upscrollarrow">
-		    <area>50%-18,100%-15,15,15</area>
-		    <state type="off" />
-		    <state type="full">
-			<imagetype name="upon">
-			    <filename>Images/uparrow-on.png</filename>
-			</imagetype>
-		    </state>
-		</statetype>
-		<statetype name="downscrollarrow">
-		    <area>50%+2,100%-15,15,15</area>
-		    <state type="off" />
-		    <state type="full">
-			<imagetype name="dnon">
-			    <filename>Images/downarrow-on.png</filename>
-			</imagetype>
-		    </state>
-		</statetype>
+                <statetype name="upscrollarrow">
+                    <area>50%-18,100%-15,15,15</area>
+                    <state type="off" />
+                    <state type="full">
+                        <imagetype name="upon">
+                            <filename>Images/uparrow-on.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>
+                <statetype name="downscrollarrow">
+                    <area>50%+2,100%-15,15,15</area>
+                    <state type="off" />
+                    <state type="full">
+                        <imagetype name="dnon">
+                            <filename>Images/downarrow-on.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>
 
-	    </buttonlist>
+            </buttonlist>
 
-	    <textarea name="manuallabel" from="labeltext">
-		<position>500,100%-80</position>
-		<value>Search terms:</value>
-	    </textarea>
+            <textarea name="manuallabel" from="labeltext">
+                <position>500,100%-80</position>
+                <value>Search terms:</value>
+            </textarea>
 
-	    <textedit name="manualsearch" from="basetextedit">
-		<position>760,100%-80</position>
-	    </textedit>
+            <textedit name="manualsearch" from="basetextedit">
+                <position>760,100%-80</position>
+            </textedit>
 
-	    <button name="search" from="varbuttonleft">
-		<position>1280,100%-80</position>
-		<value>Search</value>
-	    </button>
+            <button name="search" from="varbuttonleft">
+                <position>1280,100%-80</position>
+                <value>Search</value>
+            </button>
 
-	    <button name="skip" from="varbuttonleft">
-		<position>1500,100%-80</position>
-		<value>Skip</value>
-	    </button>
-	</group>
+            <button name="skip" from="varbuttonleft">
+                <position>1500,100%-80</position>
+                <value>Skip</value>
+            </button>
+        </group>
     </window>
 
     <!-- mythtv-setup -> Channel Editor
     -->
     <window name="channeloverview">
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Channel Editor</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Channel Editor</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="dialog">
-	    <area>30,30,-30,-100</area>
+        <group name="dialog">
+            <area>30,30,-30,-100</area>
 
-	    <shape name="dialogbackground" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            <shape name="dialogbackground" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-	    <buttonlist name="channels" from="basebuttonlist">
-		<!-- arrows space is 25, so to balance use -60 -->
-		<area>35,30,-60,660</area>
-		<buttonarea>25,0,100%,100%</buttonarea>
+            <buttonlist name="channels" from="basebuttonlist">
+                <!-- arrows space is 25, so to balance use -60 -->
+                <area>35,30,-60,660</area>
+                <buttonarea>25,0,100%,100%</buttonarea>
 
-		<statetype name="buttonitem">
-		    <area>0,0,100%,100%</area>
-		    <state name="inactive">
-			<area>0,0,100%,55</area>
-			<shape name="background" from="basebuttonshape" />
-			<imagetype name="icon">
-			    <area>15,10,60,-10</area>
-			    <preserveaspect>true</preserveaspect>
-			</imagetype>
-			<textarea name="channum" from="basetextarea">
-			    <area>100,10,100,40</area>
-			    <align>center</align>
-			</textarea>
-			<textarea name="name" from="channum">
-			    <area>200,10,-420,40</area>
-			</textarea>
-			<textarea name="sourcename" from="name">
-			    <area>100%-400,10,380,40</area>
-			    <align>vcenter,right</align>
-			</textarea>
-		    </state>
-		    <state name="active" from="inactive">
-		    </state>
-		    <state name="selectedinactive" from="inactive">
-			<shape name="background" from="baseselectedinactivebuttonshape" />
-		    </state>
-		    <state name="selectedactive" from="selectedinactive">
-			<shape name="background" from="baseselectedbuttonshape" />
-		    </state>
-		</statetype>
-	    </buttonlist>
+                <statetype name="buttonitem">
+                    <area>0,0,100%,100%</area>
+                    <state name="inactive">
+                        <area>0,0,100%,55</area>
+                        <shape name="background" from="basebuttonshape" />
+                        <imagetype name="icon">
+                            <area>15,10,60,-10</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                        <textarea name="channum" from="basetextarea">
+                            <area>100,10,100,40</area>
+                            <align>center</align>
+                        </textarea>
+                        <textarea name="name" from="channum">
+                            <area>200,10,-420,40</area>
+                        </textarea>
+                        <textarea name="sourcename" from="name">
+                            <area>100%-400,10,380,40</area>
+                            <align>vcenter,right</align>
+                        </textarea>
+                    </state>
+                    <state name="active" from="inactive">
+                    </state>
+                    <state name="selectedinactive" from="inactive">
+                        <shape name="background" from="baseselectedinactivebuttonshape" />
+                    </state>
+                    <state name="selectedactive" from="selectedinactive">
+                        <shape name="background" from="baseselectedbuttonshape" />
+                    </state>
+                </statetype>
+            </buttonlist>
 
-	    <group name="optiongroup">
-		<area>100,710,-200,720</area>
+            <group name="optiongroup">
+                <area>100,710,-200,720</area>
 
-		<textarea name="sortlabel" from="labeltext">
-		    <position>0,0</position>
-		    <value>Sort Mode:</value>
-		</textarea>
+                <textarea name="sortlabel" from="labeltext">
+                    <position>0,0</position>
+                    <value>Sort Mode:</value>
+                </textarea>
 
-		<buttonlist name="sorting" from="basewideselector">
-		    <position>250,0</position>
-		</buttonlist>
+                <buttonlist name="sorting" from="basewideselector">
+                    <position>250,0</position>
+                </buttonlist>
 
-		<textarea name="sourcelabel" from="sortlabel">
-		    <position>0,80</position>
-		    <value>Video Source:</value>
-		</textarea>
+                <textarea name="sourcelabel" from="sortlabel">
+                    <position>0,80</position>
+                    <value>Video Source:</value>
+                </textarea>
 
-		<buttonlist name="source" from="sorting">
-		    <position>250,80</position>
-		</buttonlist>
+                <buttonlist name="source" from="sorting">
+                    <position>250,80</position>
+                </buttonlist>
 
-		<button name="delete" from="varbuttonleft">
-		    <position>860,80</position>
-		    <value>Delete</value>
-		</button>
+                <button name="delete" from="varbuttonleft">
+                    <position>860,80</position>
+                    <value>Delete</value>
+                </button>
 
-		<checkbox name="nochannum" from="basecheckbox">
-		    <position>150,160</position>
-		</checkbox>
+                <checkbox name="nochannum" from="basecheckbox">
+                    <position>150,160</position>
+                </checkbox>
 
-		<textarea name="nochannumlabel" from="labelcheckbox">
-		    <position>200,160</position>
-		    <value>Hide Channels without channel number.</value>
-		</textarea>
+                <textarea name="nochannumlabel" from="labelcheckbox">
+                    <position>200,160</position>
+                    <value>Hide Channels without channel number.</value>
+                </textarea>
 
-		<button name="scan" from="varbuttoncenter">
-		    <area>1100,0,-20,70</area>
-		    <value>Channel Scan</value>
-		</button>
+                <button name="scan" from="varbuttoncenter">
+                    <area>1100,0,-20,70</area>
+                    <value>Channel Scan</value>
+                </button>
 
-		<button name="importicons" from="scan">
-		    <position>1100,80</position>
-		    <value>Icon Download</value>
-		</button>
+                <button name="importicons" from="scan">
+                    <position>1100,80</position>
+                    <value>Icon Download</value>
+                </button>
 
-		<button name="edittransport" from="scan">
-		    <position>1100,160</position>
-		    <value>Edit Transports</value>
-		</button>
-	    </group>
-	</group>
+                <button name="edittransport" from="scan">
+                    <position>1100,160</position>
+                    <value>Edit Transports</value>
+                </button>
+            </group>
+        </group>
     </window>
 
     <!-- Home -> Setup -> Artwork and Data Sources
     -->
     <window name="grabbersettings">
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Artwork and Metadata Sources</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Artwork and Metadata Sources</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="msg" from="baseMsgGroupBanner">
-	    <textarea name="helptext" from="msgText" />
-	</group>
+        <group name="msg" from="baseMsgGroupBanner">
+            <textarea name="helptext" from="msgText" />
+        </group>
 
-	<group name="dialog">
-	    <area>50%-620,150,1240,600</area>
+        <group name="dialog">
+            <area>50%-620,150,1240,600</area>
 
-	    <shape name="background" from="basewidgetshape" />
+            <shape name="background" from="basewidgetshape" />
 
-	    <textarea name="moviegrabber_label" from="labeltext">
-		<area>50,120,400,70</area>
-		<value>Movie Metadata Source:</value>
-	    </textarea>
+            <textarea name="moviegrabber_label" from="labeltext">
+                <area>50,120,400,70</area>
+                <value>Movie Metadata Source:</value>
+            </textarea>
 
-	    <buttonlist name="moviegrabber" from="basewideselector">
-		<position>460,120</position>
-	    </buttonlist>
+            <buttonlist name="moviegrabber" from="basewideselector">
+                <position>460,120</position>
+            </buttonlist>
 
-	    <textarea name="tvgrabber_label" from="moviegrabber_label">
-		<position>50,200</position>
-		<value>Television Metadata Source:</value>
-	    </textarea>
+            <textarea name="tvgrabber_label" from="moviegrabber_label">
+                <position>50,200</position>
+                <value>Television Metadata Source:</value>
+            </textarea>
 
-	    <buttonlist name="tvgrabber" from="basewideselector">
-		<position>460,200</position>
-	    </buttonlist>
+            <buttonlist name="tvgrabber" from="basewideselector">
+                <position>460,200</position>
+            </buttonlist>
 
-	    <textarea name="gamegrabber_label" from="moviegrabber_label">
-		<position>50,270</position>
-		<value>Game Metadata Source:</value>
-	    </textarea>
+            <textarea name="gamegrabber_label" from="moviegrabber_label">
+                <position>50,270</position>
+                <value>Game Metadata Source:</value>
+            </textarea>
 
-	    <buttonlist name="gamegrabber" from="basewideselector">
-		<position>460,270</position>
-	    </buttonlist>
+            <buttonlist name="gamegrabber" from="basewideselector">
+                <position>460,270</position>
+            </buttonlist>
 
-	    <checkbox name="dailyupdates" from="basecheckbox">
-		<position>460,340</position>
-	    </checkbox>
+            <checkbox name="dailyupdates" from="basecheckbox">
+                <position>460,340</position>
+            </checkbox>
 
-	    <textarea name="dailyupdates_label" from="labelcheckbox">
-		<position>505,340</position>
-		<value>Perform daily updates of recording artwork</value>
-	    </textarea>
+            <textarea name="dailyupdates_label" from="labelcheckbox">
+                <position>505,340</position>
+                <value>Perform daily updates of recording artwork</value>
+            </textarea>
 
-	    <group name="buttons">
-		<area>460, 100%-80, 600, 70</area>
+            <group name="buttons">
+                <area>460, 100%-80, 600, 70</area>
 
-		<button name="cancel" from="varbuttonleft">
-		    <value>Cancel</value>
-		</button>
+                <button name="cancel" from="varbuttonleft">
+                    <value>Cancel</value>
+                </button>
 
-		<button name="ok" from="varbuttonright">
-		    <value>OK</value>
-		</button>
-	    </group>
-	</group>
+                <button name="ok" from="varbuttonright">
+                    <value>OK</value>
+                </button>
+            </group>
+        </group>
 
     </window>
 
@@ -325,46 +325,46 @@
     <window name="generalwizard">
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>MythTV Configuration Wizard</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>MythTV Configuration Wizard</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="msg" from="baseMsgGroupBanner">
-	    <textarea name="helptext" from="msgText" />
-	</group>
+        <group name="msg" from="baseMsgGroupBanner">
+            <textarea name="helptext" from="msgText" />
+        </group>
 
-	<group name="dialog">
-	    <area>50%-250,150,500,600</area>
-	    
-	    <shape name="background" from="basewidgetshape" />
+        <group name="dialog">
+            <area>50%-250,150,500,600</area>
+            
+            <shape name="background" from="basewidgetshape" />
 
-	    <button name="submit" from="baselargebutton">
-		<position>50%-200,120</position>
-		<value>Submit your hardware profile</value>
-	    </button>
+            <button name="submit" from="baselargebutton">
+                <position>50%-200,120</position>
+                <value>Submit your hardware profile</value>
+            </button>
 
-	    <button name="view" from="submit">
-		<position>50%-200,220</position>
-		<value>View your hardware profile</value>
-	    </button>
+            <button name="view" from="submit">
+                <position>50%-200,220</position>
+                <value>View your hardware profile</value>
+            </button>
 
-	    <button name="delete" from="submit">
-		<position>50%-200,320</position>
-		<value>Delete your hardware profile</value>
-	    </button>
+            <button name="delete" from="submit">
+                <position>50%-200,320</position>
+                <value>Delete your hardware profile</value>
+            </button>
 
-	    <button name="next" from="varbuttonright">
-		<value>Next</value>
-	    </button>
+            <button name="next" from="varbuttonright">
+                <value>Next</value>
+            </button>
 
-	    <button name="cancel" from="varbuttonleft">
-		<value>Cancel</value>
-	    </button>
+            <button name="cancel" from="varbuttonleft">
+                <value>Cancel</value>
+            </button>
 
-	</group>
+        </group>
 
     </window>
 
@@ -373,104 +373,104 @@
     <window name="audiowizard">
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Audio Configuration</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Audio Configuration</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="msg" from="baseMsgGroupBanner">
-	    <textarea name="helptext" from="msgText" />
-	</group>
+        <group name="msg" from="baseMsgGroupBanner">
+            <textarea name="helptext" from="msgText" />
+        </group>
 
-	<group name="dialog">
-	    <area>50%-560,50,1120,800</area>
+        <group name="dialog">
+            <area>50%-560,50,1120,800</area>
 
-	    <shape name="background" from="basewidgetshape" />
+            <shape name="background" from="basewidgetshape" />
 
-	    <textarea name="auddev_text" from="labeltext">
-		<position>20,40</position>
-		<value>Audio Device:</value>
-	    </textarea>
+            <textarea name="auddev_text" from="labeltext">
+                <position>20,40</position>
+                <value>Audio Device:</value>
+            </textarea>
 
-	    <buttonlist name="audiodevices" from="basewideselector">
-		<area>280,40,800,70</area>
-	    </buttonlist>
+            <buttonlist name="audiodevices" from="basewideselector">
+                <area>280,40,800,70</area>
+            </buttonlist>
 
-	    <textarea name="speaktext_text" from="auddev_text">
-		<position>20,110</position>
-		<value>Number of Speakers:</value>
-	    </textarea>
-	    
-	    <buttonlist name="speakers" from="audiodevices">
-		<position>280,110</position>
-	    </buttonlist>
+            <textarea name="speaktext_text" from="auddev_text">
+                <position>20,110</position>
+                <value>Number of Speakers:</value>
+            </textarea>
+            
+            <buttonlist name="speakers" from="audiodevices">
+                <position>280,110</position>
+            </buttonlist>
 
-	    <checkbox name="ac3check" from="basecheckbox">
-		<position>280,200</position>
-	    </checkbox>
-	    
-	    <textarea name="ac3_text" from="labelcheckbox">
-		<position>320,200</position>
-		<value>My speaker supports Dolby Digital</value>
-	    </textarea>
+            <checkbox name="ac3check" from="basecheckbox">
+                <position>280,200</position>
+            </checkbox>
+            
+            <textarea name="ac3_text" from="labelcheckbox">
+                <position>320,200</position>
+                <value>My speaker supports Dolby Digital</value>
+            </textarea>
 
-	    <checkbox name="dtscheck" from="ac3check">
-		<position>280,280</position>
-	    </checkbox>
+            <checkbox name="dtscheck" from="ac3check">
+                <position>280,280</position>
+            </checkbox>
 
-	    <textarea name="dts_text" from="ac3_text">
-		<position>320,280</position>
-		<value>My speaker supports DTS</value>
-	    </textarea>
+            <textarea name="dts_text" from="ac3_text">
+                <position>320,280</position>
+                <value>My speaker supports DTS</value>
+            </textarea>
 
-	    <checkbox name="eac3check" from="ac3check">
-		<position>280,360</position>
-	    </checkbox>
+            <checkbox name="eac3check" from="ac3check">
+                <position>280,360</position>
+            </checkbox>
 
-	    <textarea name="eac3_text" from="ac3_text">
-		<position>320,360</position>
-		<value>My speaker supports E-AC-3</value>
-	    </textarea>
+            <textarea name="eac3_text" from="ac3_text">
+                <position>320,360</position>
+                <value>My speaker supports E-AC-3</value>
+            </textarea>
 
-	    <checkbox name="truehdcheck" from="ac3check">
-		<position>280,440</position>
-	    </checkbox>
+            <checkbox name="truehdcheck" from="ac3check">
+                <position>280,440</position>
+            </checkbox>
 
-	    <textarea name="truehd_text" from="ac3_text">
-		<position>320,440</position>
-		<value>My speaker supports TrueHD</value>
-	    </textarea>
+            <textarea name="truehd_text" from="ac3_text">
+                <position>320,440</position>
+                <value>My speaker supports TrueHD</value>
+            </textarea>
 
-	    <checkbox name="dtshdcheck" from="ac3check">
-		<position>280,520</position>
-	    </checkbox>
+            <checkbox name="dtshdcheck" from="ac3check">
+                <position>280,520</position>
+            </checkbox>
 
-	    <textarea name="dtshd_text" from="ac3_text">
-		<position>320,520</position>
-		<value>My speaker supports DTS-HD</value>
-	    </textarea>
+            <textarea name="dtshd_text" from="ac3_text">
+                <position>320,520</position>
+                <value>My speaker supports DTS-HD</value>
+            </textarea>
 
-	    <button name="testspeakers" from="varbuttoncenter">
-		<area>280,600,-280,70</area>
-	    </button>
+            <button name="testspeakers" from="varbuttoncenter">
+                <area>280,600,-280,70</area>
+            </button>
 
-	    <group name="buttons">
-		<area>0, 100%-80, 100%, 70</area>
+            <group name="buttons">
+                <area>0, 100%-80, 100%, 70</area>
 
-		<button name="next" from="varbuttonleft">
-		    <area>100%-285, 0, 250, 100%</area>
-		    <value>Next</value>
-		</button>
+                <button name="next" from="varbuttonleft">
+                    <area>100%-285, 0, 250, 100%</area>
+                    <value>Next</value>
+                </button>
 
-		<button name="previous" from="varbuttonright">
-		    <area>100%-540, 0, 250, 100%</area>
-		    <value>Prev</value>
-		</button>
-	    </group>
+                <button name="previous" from="varbuttonright">
+                    <area>100%-540, 0, 250, 100%</area>
+                    <value>Prev</value>
+                </button>
+            </group>
 
-	</group>
+        </group>
     </window>
 
     <!-- Home -> Setup -> Setup Wizard -> Next -> Next
@@ -478,54 +478,54 @@
     <window name="videowizard">
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Video Configuration</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Video Configuration</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="msg" from="baseMsgGroupBanner">
-	    <textarea name="helptext" from="msgText" />
-	</group>
+        <group name="msg" from="baseMsgGroupBanner">
+            <textarea name="helptext" from="msgText" />
+        </group>
 
-	<group name="dialog">
-	    <area>530,150,835,460</area>
+        <group name="dialog">
+            <area>530,150,835,460</area>
 
-	    <shape name="background" from="basewidgetshape" />
+            <shape name="background" from="basewidgetshape" />
 
-	    <textarea name="prof_text" from="labeltextlarge">
-		<area>40,40,350,90</area>
-		<value>Video Playback Profile:</value>
-	    </textarea>
-	    
-	    <buttonlist name="playbackprofiles" from="baselargeselector">
-		<position>400,40</position>
-	    </buttonlist>
+            <textarea name="prof_text" from="labeltextlarge">
+                <area>40,40,350,90</area>
+                <value>Video Playback Profile:</value>
+            </textarea>
+            
+            <buttonlist name="playbackprofiles" from="baselargeselector">
+                <position>400,40</position>
+            </buttonlist>
 
-	    <button name="testsd" from="baselargebutton">
-		<position>400,170</position>
-		<value>Test Standard Definition</value>
-	    </button>
+            <button name="testsd" from="baselargebutton">
+                <position>400,170</position>
+                <value>Test Standard Definition</value>
+            </button>
 
-	    <button name="testhd" from="baselargebutton">
-		<position>400,260</position>
-		<value>Test High Definition</value>
-	    </button>
+            <button name="testhd" from="baselargebutton">
+                <position>400,260</position>
+                <value>Test High Definition</value>
+            </button>
 
-	    <group name="buttons">
-		<area>380, 100%-80, 440, 70</area>
+            <group name="buttons">
+                <area>380, 100%-80, 440, 70</area>
 
-		<button name="next" from="varbuttonleft">
-		    <area>220, 0, -5, 100%</area>
-		    <value>Finish</value>
-		</button>
-		<button name="previous" from="varbuttonright">
-		    <area>0, 0, 215, 100%</area>
-		    <value>Prev</value>
-		</button>
-	    </group>
-	</group>
+                <button name="next" from="varbuttonleft">
+                    <area>220, 0, -5, 100%</area>
+                    <value>Finish</value>
+                </button>
+                <button name="previous" from="varbuttonright">
+                    <area>0, 0, 215, 100%</area>
+                    <value>Prev</value>
+                </button>
+            </group>
+        </group>
     </window>
 
 </mythuitheme>

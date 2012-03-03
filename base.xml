@@ -3,1045 +3,1045 @@
 <mythuitheme>
 
     <fontdef name="basesans" face="Liberation Sans">
-	<color>#F0F0FF</color>
-	<pixelsize>1</pixelsize>
+        <color>#F0F0FF</color>
+        <pixelsize>1</pixelsize>
     </fontdef>
 
     <fontdef name="basenarrow" face="Liberation Sans Narrow">
-	<color>#F0F0FF</color>
-	<pixelsize>1</pixelsize>
+        <color>#F0F0FF</color>
+        <pixelsize>1</pixelsize>
     </fontdef>      
 
     <fontdef name="basegothic" face="CartoGothic Std">
-	<color>#FFEAEA</color>
-	<pixelsize>1</pixelsize>
+        <color>#FFEAEA</color>
+        <pixelsize>1</pixelsize>
     </fontdef>
 
     <fontdef name="basemono" face="Liberation Mono">
-	<color>#F0F0FF</color>
-	<pixelsize>1</pixelsize>
+        <color>#F0F0FF</color>
+        <pixelsize>1</pixelsize>
     </fontdef>
 
     <!--  Sans  -->
 
     <fontdef name="mysmallsans" from="basesans">
-	<pixelsize>28</pixelsize>
+        <pixelsize>28</pixelsize>
     </fontdef>
 
     <fontdef name="mysmallsansgrey" from="mysmallsans">
-	<color>#DADADA</color>
+        <color>#DADADA</color>
     </fontdef>
 
     <!--  Narrow  -->
 
     <fontdef name="mynarrow" from="basenarrow">
-	<pixelsize>30</pixelsize>
+        <pixelsize>30</pixelsize>
     </fontdef>
 
     <fontdef name="mysmallnarrow" from="basenarrow">
-	<pixelsize>29</pixelsize>
+        <pixelsize>29</pixelsize>
     </fontdef>
 
     <fontdef name="mymediumnarrow" from="basenarrow">
-	<pixelsize>35</pixelsize>
+        <pixelsize>35</pixelsize>
     </fontdef>
 
     <fontdef name="mylargenarrow" from="basenarrow">
-	<pixelsize>40</pixelsize>
+        <pixelsize>40</pixelsize>
     </fontdef>
 
     <!--
-	<fontdef name="mysmallnarrowoutline" from="mysmallnarrow">
-	<color>#F5F5F5</color>
-	<outlinecolor>#000000</outlinecolor>
-	<outlinesize>2</outlinesize>
-	<weight>bold</weight>
-	</fontdef>
+        <fontdef name="mysmallnarrowoutline" from="mysmallnarrow">
+        <color>#F5F5F5</color>
+        <outlinecolor>#000000</outlinecolor>
+        <outlinesize>2</outlinesize>
+        <weight>bold</weight>
+        </fontdef>
     -->
     <fontdef name="mymediumnarrowbold" from="mymediumnarrow">
-	<weight>bold</weight>
+        <weight>bold</weight>
     </fontdef>
 
     <fontdef name="mymediumnarrowlightgrey" from="mymediumnarrow">
-	<color>#A0A0A0</color>
+        <color>#A0A0A0</color>
     </fontdef>
 
     <fontdef name="mynarrowgrey" from="mynarrow">
-	<color>#DADADA</color>
+        <color>#DADADA</color>
     </fontdef>
 
     <fontdef name="mysmallnarrowgrey" from="mysmallnarrow">
-	<color>#DADADA</color>
+        <color>#DADADA</color>
     </fontdef>
 
     <fontdef name="mysmallnarrowlightgrey" from="mysmallnarrow">
-	<color>#A0A0A0</color>
+        <color>#A0A0A0</color>
     </fontdef>
 
     <fontdef name="mysmallnarrowgreen" from="mysmallnarrow">
-	<color>#33bf33</color>
+        <color>#33bf33</color>
     </fontdef>
 
     <fontdef name="mysmallnarrowred" from="mysmallnarrow">
-	<color>#E43E3E</color>
+        <color>#E43E3E</color>
     </fontdef>
 
     <fontdef name="mysmallnarrowblue" from="mysmallnarrow">
-	<color>#00EEEE</color>
+        <color>#00EEEE</color>
     </fontdef>
 
     <fontdef name="mysmallnarrowpurple" from="mysmallnarrow">
-	<color>#9999cc</color>
+        <color>#9999cc</color>
     </fontdef>
 
     <fontdef name="mysmallnarrowyellow" from="mysmallnarrow">
-	<color>#FF9147</color>
+        <color>#FF9147</color>
     </fontdef>
 
     <fontdef name="mysmallnarrowblack" from="mysmallnarrow">
-	<color>#000000</color>
+        <color>#000000</color>
     </fontdef>
 
     <fontdef name="myverysmallnarrow" from="basenarrow">
-	<pixelsize>26</pixelsize>
+        <pixelsize>26</pixelsize>
     </fontdef>
 
     <fontdef name="myverysmallnarrowgreen" from="myverysmallnarrow">
-	<color>#3EAE09</color>
+        <color>#3EAE09</color>
     </fontdef>
 
     <fontdef name="myverysmallnarrowred" from="myverysmallnarrow">
-	<color>#D40101</color>
+        <color>#D40101</color>
     </fontdef>
 
     <fontdef name="myverysmallnarrowyellow" from="myverysmallnarrow">
-	<color>#FFFF33</color>
+        <color>#FFFF33</color>
     </fontdef>
 
     <fontdef name="myverysmallnarroworange" from="myverysmallnarrow">
-	<color>#ff9147</color>
+        <color>#ff9147</color>
     </fontdef>
 
     <fontdef name="myverysmallnarrowblue" from="myverysmallnarrow">
-	<color>#00EEEE</color>
+        <color>#00EEEE</color>
     </fontdef>
 
     <fontdef name="myverysmallnarrowpurple" from="myverysmallnarrow">
-	<color>#9999cc</color>
+        <color>#9999cc</color>
     </fontdef>
 
     <fontdef name="myverysmallnarrowgrey" from="myverysmallnarrow">
-	<color>#DDDDDD</color>
+        <color>#DDDDDD</color>
     </fontdef>
 
     <!-- Monospace -->
 
     <fontdef name="mysmallmono" from="basemono">
-	<color>#F0F0FF</color>
-	<pixelsize>29</pixelsize>
+        <color>#F0F0FF</color>
+        <pixelsize>29</pixelsize>
     </fontdef>
 
     <!-- Normal -->
 
     <fontdef name="mysmall" from="basegothic">
-	<color>#F0F0FF</color>
-	<pixelsize>29</pixelsize>
+        <color>#F0F0FF</color>
+        <pixelsize>29</pixelsize>
     </fontdef>
 
     <fontdef name="mysmallbold" from="mysmall">
-	<weight>bold</weight>
+        <weight>bold</weight>
     </fontdef>
 
     <fontdef name="myverysmall" from="mysmall">
-	<pixelsize>26</pixelsize>
+        <pixelsize>26</pixelsize>
     </fontdef>
 
     <fontdef name="mylabelfont" from="mysmall">
-	<color>#A0BFFF</color>
+        <color>#A0BFFF</color>
     </fontdef>
 
     <fontdef name="mylabelfontsmall" from="myverysmall">
-	<color>#A0BFFF</color>
+        <color>#A0BFFF</color>
     </fontdef>
 
     <fontdef name="mygroupsmall" from="basegothic">
-	<pixelsize>31</pixelsize>
+        <pixelsize>31</pixelsize>
     </fontdef>
 
     <fontdef name="mygroupmedium" from="basegothic">
-	<pixelsize>32</pixelsize>
+        <pixelsize>32</pixelsize>
     </fontdef>
 
     <fontdef name="mymedium" from="basegothic">
-	<pixelsize>34</pixelsize>
+        <pixelsize>34</pixelsize>
     </fontdef>
 
     <fontdef name="mymediumbold" from="mymedium">
-	<pixelsize>34</pixelsize>
-	<weight>bold</weight>
+        <pixelsize>34</pixelsize>
+        <weight>bold</weight>
     </fontdef>
 
     <fontdef name="mymediumlightgrey" from="mymedium">
-	<!--        <color>#F0F0F0</color> -->
-	<color>#F0F0F0</color>
+        <!--        <color>#F0F0F0</color> -->
+        <color>#F0F0F0</color>
     </fontdef>
 
     <fontdef name="mymediumgrey" from="mymedium">
-	<color>#DDDDDD</color>
+        <color>#DDDDDD</color>
     </fontdef>
 
     <fontdef name="mymediumblack" from="mymedium">
-	<color>#000000</color>
+        <color>#000000</color>
     </fontdef>
 
     <fontdef name="mymediumgreen" from="mymedium">
-	<color>#3EFF3E</color>
+        <color>#3EFF3E</color>
     </fontdef>
 
     <fontdef name="mymediumyellow" from="mymedium">
-	<color>#FFFF33</color>
+        <color>#FFFF33</color>
     </fontdef>
 
     <fontdef name="mymediumorange" from="mymedium">
-	<color>#ff9147</color>
+        <color>#ff9147</color>
     </fontdef>
 
     <fontdef name="mymediumred" from="mymedium">
-	<color>#E43E3E</color>
+        <color>#E43E3E</color>
     </fontdef>
 
     <fontdef name="mylarge" from="basegothic">
-	<pixelsize>40</pixelsize>
+        <pixelsize>40</pixelsize>
     </fontdef>
 
     <fontdef name="mylargebold" from="mylarge">
-	<weight>bold</weight>
+        <weight>bold</weight>
     </fontdef>
 
     <fontdef name="myextralarge" from="basegothic">
-	<pixelsize>44</pixelsize>
+        <pixelsize>44</pixelsize>
     </fontdef>
 
     <fontdef name="myextralargebold" from="myextralarge">
-	<weight>bold</weight>
+        <weight>bold</weight>
     </fontdef>
 
     <fontdef name="myextralargeboldgrey" from="myextralargebold">
-	<color>#F0F0F0</color>
+        <color>#F0F0F0</color>
     </fontdef>
 
     <fontdef name="mylargelightgrey" from="mylarge">
-	<color>#F0F0F0</color>
+        <color>#F0F0F0</color>
     </fontdef>
 
 
     <fontdef name="mysmalllightgrey" from="mysmall">
-	<color>#F0F0F0</color>
+        <color>#F0F0F0</color>
     </fontdef>
 
     <fontdef name="mysmallgrey" from="mysmall">
-	<color>#DADADA</color>
+        <color>#DADADA</color>
     </fontdef>
 
 
     <fontdef name="mysmallblack" from="mysmall">
-	<color>#000000</color>
+        <color>#000000</color>
     </fontdef>
 
     <fontdef name="mysmallgreen" from="mysmall">
-	<color>#33bf33</color>
+        <color>#33bf33</color>
     </fontdef>
 
     <fontdef name="mysmallred" from="mysmall">
-	<color>#E43E3E</color>
+        <color>#E43E3E</color>
     </fontdef>
 
     <fontdef name="mysmallorange" from="mysmall">
-	<color>#ff9147</color>
+        <color>#ff9147</color>
     </fontdef>
 
     <fontdef name="mysmallblue" from="mysmall">
-	<color>#00EEEE</color>
+        <color>#00EEEE</color>
     </fontdef>
 
     <fontdef name="mysmallpurple" from="mysmall">
-	<color>#9999cc</color>
+        <color>#9999cc</color>
     </fontdef>
 
     <fontdef name="mysmallyellow" from="mysmall">
-	<color>#FF9147</color>
+        <color>#FF9147</color>
     </fontdef>
 
     <fontdef name="mysmallboldgreen" from="mysmallgreen">
-	<weight>bold</weight>
+        <weight>bold</weight>
     </fontdef>
 
     <fontdef name="mysmallboldred" from="mysmallred">
-	<weight>bold</weight>
+        <weight>bold</weight>
     </fontdef>
 
     <fontdef name="mysmallboldblue" from="mysmallblue">
-	<weight>bold</weight>
+        <weight>bold</weight>
     </fontdef>
 
     <fontdef name="myverysmalllightgrey" from="myverysmall">
-	<color>#F0F0F0</color>
+        <color>#F0F0F0</color>
     </fontdef>
 
     <fontdef name="myverysmallgrey" from="myverysmall">
-	<color>#DDDDDD</color>
+        <color>#DDDDDD</color>
     </fontdef>
 
     <fontdef name="myverysmallblack" from="myverysmall">
-	<color>#000000</color>
+        <color>#000000</color>
     </fontdef>
 
     <fontdef name="myverysmallgreen" from="myverysmall">
-	<color>#3EAE09</color>
+        <color>#3EAE09</color>
     </fontdef>
 
     <fontdef name="myverysmallred" from="myverysmall">
-	<color>#D40101</color>
+        <color>#D40101</color>
     </fontdef>
 
     <fontdef name="myverysmallyellow" from="myverysmall">
-	<color>#FFFF33</color>
+        <color>#FFFF33</color>
     </fontdef>
 
     <fontdef name="myverysmallorange" from="myverysmall">
-	<color>#ff9147</color>
+        <color>#ff9147</color>
     </fontdef>
 
     <fontdef name="myverysmallblue" from="myverysmall">
-	<!--
-	    <color>#0492A7</color>
-	-->
-	<color>#00EEEE</color>
+        <!--
+            <color>#0492A7</color>
+        -->
+        <color>#00EEEE</color>
     </fontdef>
 
     <fontdef name="myverysmallboldgreen" from="myverysmallgreen">
-	<weight>bold</weight>
+        <weight>bold</weight>
     </fontdef>
 
     <fontdef name="myverysmallboldred" from="myverysmallred">
-	<weight>bold</weight>
+        <weight>bold</weight>
     </fontdef>
 
     <fontdef name="myverysmallboldblue" from="myverysmallblue">
-	<weight>bold</weight>
+        <weight>bold</weight>
     </fontdef>
 
 
     <group name="baseDateHeading">
-	<area>100%-530,1010,500,50</area>
-	<minsize>20,100%</minsize>
+        <area>100%-530,1010,500,50</area>
+        <minsize>20,100%</minsize>
 
-	<shape name="basedateshape">
-	    <area>0,0,100%,100%</area>
-	    <minsize>20,100%</minsize>
-	    <type>roundbox</type>
-	    <cornerradius>15</cornerradius>
-	    <fill color="#000000" alpha="255" />
-	</shape>
-	
-	<clock name="datetime">
-	    <area>25,5,-25,-5</area>
-	    <minsize>20,100%</minsize>
-	    <font>mysmalllightgrey</font>
-	    <template>%DATE%   %TIME%</template>
-	    <align>right,vcenter</align>
-	    <cutdown>true</cutdown>
-	</clock>
+        <shape name="basedateshape">
+            <area>0,0,100%,100%</area>
+            <minsize>20,100%</minsize>
+            <type>roundbox</type>
+            <cornerradius>15</cornerradius>
+            <fill color="#000000" alpha="255" />
+        </shape>
+        
+        <clock name="datetime">
+            <area>25,5,-25,-5</area>
+            <minsize>20,100%</minsize>
+            <font>mysmalllightgrey</font>
+            <template>%DATE%   %TIME%</template>
+            <align>right,vcenter</align>
+            <cutdown>true</cutdown>
+        </clock>
     </group>
 
     <group name="basePageHeading">
         <area>500,1010,-30,50</area>
 
-	<shape name="connectBar">
-	    <area>460,11,-10,-10</area>
-	    <type>box</type>
-	    <line color="#000000" alpha="255" width="4" />
-	</shape>
+        <shape name="connectBar">
+            <area>460,11,-10,-10</area>
+            <type>box</type>
+            <line color="#000000" alpha="255" width="4" />
+        </shape>
 
-	<group name="Heading">
-	    <area>0,0,920,100%</area>
-	    <minsize>50,100%</minsize>
+        <group name="Heading">
+            <area>0,0,920,100%</area>
+            <minsize>50,100%</minsize>
 
-	    <shape name="headingshape">
-	        <area>0,0,100%,100%</area>
-		<minsize>50,100%</minsize>
-		<type>roundbox</type>
-		<cornerradius>15</cornerradius>
-		<fill color="#000000" alpha="255" />
-	    </shape>
-	    
-	    <textarea name="text">
-		<area>25,5,-25,-5</area>
-		<minsize>50,100%</minsize>
-		<align>center</align>
-		<font>mymediumlightgrey</font>
-		<cutdown>no</cutdown>
-	    </textarea>
-	</group>
+            <shape name="headingshape">
+                <area>0,0,100%,100%</area>
+                <minsize>50,100%</minsize>
+                <type>roundbox</type>
+                <cornerradius>15</cornerradius>
+                <fill color="#000000" alpha="255" />
+            </shape>
+            
+            <textarea name="text">
+                <area>25,5,-25,-5</area>
+                <minsize>50,100%</minsize>
+                <align>center</align>
+                <font>mymediumlightgrey</font>
+                <cutdown>no</cutdown>
+            </textarea>
+        </group>
 
-	<group name="Date" from="baseDateHeading">
-	    <position>100%-500,0</position>
-	</group>
+        <group name="Date" from="baseDateHeading">
+            <position>100%-500,0</position>
+        </group>
     </group>
 
     <!-- Base definition of a shape used as a background to many widgets -->
     <shape name="basewidgetshape">
-	<area>5,5,-5,-5</area>
-	<type>roundbox</type>
-	<cornerradius>4</cornerradius>
-	<fill style="gradient">
-	    <gradient start="#000000" end="#302040" alpha="255"
-		      direction="diagonal"  />
-	</fill>
-	<line color="#00FFFF" width="1" />
+        <area>5,5,-5,-5</area>
+        <type>roundbox</type>
+        <cornerradius>4</cornerradius>
+        <fill style="gradient">
+            <gradient start="#000000" end="#302040" alpha="255"
+                      direction="diagonal"  />
+        </fill>
+        <line color="#00FFFF" width="1" />
     </shape>
 
     <shape name="baseareashape">
-	<area>5,5,-5,-5</area>
-	<type>roundbox</type>
-	<cornerradius>4</cornerradius>
-	<fill style="gradient">
-	    <gradient start="#000000" end="#302040" alpha="196"
-		      direction="diagonal"  />
-	</fill>
-	<line color="#00FFFF" width="1" />
+        <area>5,5,-5,-5</area>
+        <type>roundbox</type>
+        <cornerradius>4</cornerradius>
+        <fill style="gradient">
+            <gradient start="#000000" end="#302040" alpha="196"
+                      direction="diagonal"  />
+        </fill>
+        <line color="#00FFFF" width="1" />
     </shape>
 
     <shape name="baseselectedwidgetshape" from="basewidgetshape">
-	<area>0,0,100%,100%</area>
-	<fill color="#202060" alpha="200" />
-	<line color="#00FFFF" width="4" />
+        <area>0,0,100%,100%</area>
+        <fill color="#202060" alpha="200" />
+        <line color="#00FFFF" width="4" />
     </shape>
 
     <shape name="basepushedwidgetshape" from="basewidgetshape">
-	<fill color="#808040" alpha="128" />
+        <fill color="#808040" alpha="128" />
     </shape>
 
     <shape name="basebuttonshape">
-	<area>5,5,-5,-5</area>
-	<fill style="gradient">
-	    <gradient start="#505050" end="#000000" alpha="255"
-		      direction="vertical"  />
-	</fill>
-	<line color="#00FFFF" width="1" />
+        <area>5,5,-5,-5</area>
+        <fill style="gradient">
+            <gradient start="#505050" end="#000000" alpha="255"
+                      direction="vertical"  />
+        </fill>
+        <line color="#00FFFF" width="1" />
     </shape>
 
     <shape name="baseinactivebuttonshape">
-	<area>5,5,-5,-5</area>
-	<fill style="gradient">
-	    <gradient start="#303030" end="#000000" alpha="255"
-		      direction="vertical"  />
-	</fill>
-	<line color="#505050" width="1" />
+        <area>5,5,-5,-5</area>
+        <fill style="gradient">
+            <gradient start="#303030" end="#000000" alpha="255"
+                      direction="vertical"  />
+        </fill>
+        <line color="#505050" width="1" />
     </shape>
 
     <shape name="basepushedbuttonshape">
-	<area>5,5,-5,-5</area>
-	<fill style="gradient">
-	    <gradient start="#000000" end="#505050" alpha="225"
-		      direction="vertical"  />
-	</fill>
-	<line color="#00FFFF" width="1" />
+        <area>5,5,-5,-5</area>
+        <fill style="gradient">
+            <gradient start="#000000" end="#505050" alpha="225"
+                      direction="vertical"  />
+        </fill>
+        <line color="#00FFFF" width="1" />
     </shape>
 
     <shape name="baseselectedinactivebuttonshape">
-	<area>5,5,-5,-5</area>
-	<fill style="gradient">
-	    <gradient start="#603060" end="#000000" alpha="255"
-		      direction="vertical"  />
-	</fill>
-	<line color="#00FFFF" width="1" />
+        <area>5,5,-5,-5</area>
+        <fill style="gradient">
+            <gradient start="#603060" end="#000000" alpha="255"
+                      direction="vertical"  />
+        </fill>
+        <line color="#00FFFF" width="1" />
     </shape>
 
     <shape name="baseselectedbuttonshape">
-	<area>0,0,100%,100%</area>
-	<fill style="gradient">
-	    <gradient start="#603060" end="#000000" alpha="255"
-		      direction="vertical"  />
-	</fill>
-	<line color="#00FFFF" width="4" />
+        <area>0,0,100%,100%</area>
+        <fill style="gradient">
+            <gradient start="#603060" end="#000000" alpha="255"
+                      direction="vertical"  />
+        </fill>
+        <line color="#00FFFF" width="4" />
     </shape>
 
     <textarea name="basewidgettext">
-	<area>15,10,-15,-10</area>
-	<multiline>yes</multiline>
-	<cutdown>yes</cutdown>
-	<align>center</align>
-	<font>mysmallnarrow</font>
-	<font state="running">mysmallnarrowgreen</font>
-	<font state="disabled">mysmallnarrowlightgrey</font>
-	<font state="error">mysmallnarrowred</font>
-	<font state="normal">mysmallnarrow</font>
-	<font state="warning">mysmallnarrowyellow</font>
-	<font state="selected">mysmallnarrowbold</font>
+        <area>15,10,-15,-10</area>
+        <multiline>yes</multiline>
+        <cutdown>yes</cutdown>
+        <align>center</align>
+        <font>mysmallnarrow</font>
+        <font state="running">mysmallnarrowgreen</font>
+        <font state="disabled">mysmallnarrowlightgrey</font>
+        <font state="error">mysmallnarrowred</font>
+        <font state="normal">mysmallnarrow</font>
+        <font state="warning">mysmallnarrowyellow</font>
+        <font state="selected">mysmallnarrowbold</font>
     </textarea>
 
     <!-- Base definition of a button -->
     <button name="basebutton">
-	<area>0,0,150,70</area>
-	<group name="center">
-	    <area>0,6,100%,-6</area>
-	    <statetype name="buttonstate">
-		<area>0,0,100%,100%</area>
-		<state name="active">
-		    <area>0,0,100%,100%</area>
-		    <shape name="background" from="basebuttonshape" />
-		    <textarea name="text" from="basewidgettext" />
-		</state>
-		<state name="selected" from="active">
-		    <shape name="background" from="baseselectedbuttonshape" />
-		</state>
-		<state name="disabled" from="active">
-		    <shape name="background" from="baseinactivebuttonshape" />
-		</state>
-		<state name="pushed" from="active">
-		    <shape name="background" from="basepushedbuttonshape" />
-		</state>
-	    </statetype>
-	</group>
+        <area>0,0,150,70</area>
+        <group name="center">
+            <area>0,6,100%,-6</area>
+            <statetype name="buttonstate">
+                <area>0,0,100%,100%</area>
+                <state name="active">
+                    <area>0,0,100%,100%</area>
+                    <shape name="background" from="basebuttonshape" />
+                    <textarea name="text" from="basewidgettext" />
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background" from="baseselectedbuttonshape" />
+                </state>
+                <state name="disabled" from="active">
+                    <shape name="background" from="baseinactivebuttonshape" />
+                </state>
+                <state name="pushed" from="active">
+                    <shape name="background" from="basepushedbuttonshape" />
+                </state>
+            </statetype>
+        </group>
     </button>
 
-<!--
-    <button name="basemediumbutton" from="basebutton">
-	<area>0,0,200,70</area>
-    </button>
--->
+    <!--
+        <button name="basemediumbutton" from="basebutton">
+        <area>0,0,200,70</area>
+        </button>
+    -->
 
     <button name="basewidebutton" from="basebutton">
-	<area>0,0,400,70</area>
+        <area>0,0,400,70</area>
     </button>
 
     <button name="baselargebutton" from="basebutton">
-	<area>0,0,400,90</area>
-	<group name="center">
-	    <area>0,0,100%,100%</area>
-	</group>
+        <area>0,0,400,90</area>
+        <group name="center">
+            <area>0,0,100%,100%</area>
+        </group>
     </button>
 
     <button name="varbuttonleft">
-	<area>70,100%-80,-70,70</area>
-	<minsize>150,60</minsize>
-	<statetype name="buttonstate">
-	    <area>0,5,100%,-5</area>
-	    <minsize>150,100%</minsize>
-	    <state name="active">
-		<area>0,0,100%,100%</area>
-		<minsize>150,100%</minsize>
-		<shape name="background" from="basebuttonshape">
-		    <area>5,5,-5,-5</area>
-		    <minsize>150,100%</minsize>
-		</shape>
-		<textarea name="text" from="basewidgettext">
-		    <area>20,10,-20,-10</area>
-		    <minsize>110,100%</minsize>
-		    <align>left,vcenter</align>
-		    <multiline>no</multiline>
-		</textarea>
-	    </state>
-	    <state name="disabled" from="active">
-		<shape name="background" from="baseinactivebuttonshape">
-		    <minsize>150,100%</minsize>
-		</shape>
-		<textarea name="text" />
-	    </state>
-	    <state name="selected" from="active">
-		<shape name="background" from="baseselectedbuttonshape">
-		    <minsize>160,100%</minsize>
-		</shape>
-		<textarea name="text" />
-	    </state>
-	    <state name="pushed" from="selected">
-		<shape name="background" from="basepushedbuttonshape">
-		    <minsize>160,100%</minsize>
-		</shape>
-		<textarea name="text" />
-	    </state>
-	</statetype>
+        <area>70,100%-80,-70,70</area>
+        <minsize>150,60</minsize>
+        <statetype name="buttonstate">
+            <area>0,5,100%,-5</area>
+            <minsize>150,100%</minsize>
+            <state name="active">
+                <area>0,0,100%,100%</area>
+                <minsize>150,100%</minsize>
+                <shape name="background" from="basebuttonshape">
+                    <area>5,5,-5,-5</area>
+                    <minsize>150,100%</minsize>
+                </shape>
+                <textarea name="text" from="basewidgettext">
+                    <area>20,10,-20,-10</area>
+                    <minsize>110,100%</minsize>
+                    <align>left,vcenter</align>
+                    <multiline>no</multiline>
+                </textarea>
+            </state>
+            <state name="disabled" from="active">
+                <shape name="background" from="baseinactivebuttonshape">
+                    <minsize>150,100%</minsize>
+                </shape>
+                <textarea name="text" />
+            </state>
+            <state name="selected" from="active">
+                <shape name="background" from="baseselectedbuttonshape">
+                    <minsize>160,100%</minsize>
+                </shape>
+                <textarea name="text" />
+            </state>
+            <state name="pushed" from="selected">
+                <shape name="background" from="basepushedbuttonshape">
+                    <minsize>160,100%</minsize>
+                </shape>
+                <textarea name="text" />
+            </state>
+        </statetype>
     </button>
 
     <button name="varbuttonright" from="varbuttonleft">
-	<statetype name="buttonstate">
-	    <state name="active">
-		<textarea name="text">
-		    <align>right,vcenter</align>
-		</textarea>
-	    </state>
-	    <state name="selected">
-		<textarea name="text">
-		    <align>right,vcenter</align>
-		</textarea>
-	    </state>
-	    <state name="disabled">
-		<textarea name="text">
-		    <align>right,vcenter</align>
-		</textarea>
-	    </state>
-	    <state name="pushed">
-		<textarea name="text">
-		    <align>right,vcenter</align>
-		</textarea>
-	    </state>
-	</statetype>
+        <statetype name="buttonstate">
+            <state name="active">
+                <textarea name="text">
+                    <align>right,vcenter</align>
+                </textarea>
+            </state>
+            <state name="selected">
+                <textarea name="text">
+                    <align>right,vcenter</align>
+                </textarea>
+            </state>
+            <state name="disabled">
+                <textarea name="text">
+                    <align>right,vcenter</align>
+                </textarea>
+            </state>
+            <state name="pushed">
+                <textarea name="text">
+                    <align>right,vcenter</align>
+                </textarea>
+            </state>
+        </statetype>
     </button>
 
     <button name="varbuttoncenter" from="varbuttonleft">
-	<statetype name="buttonstate">
-	    <state name="active">
-		<textarea name="text">
-		    <align>center</align>
-		</textarea>
-	    </state>
-	    <state name="selected">
-		<textarea name="text">
-		    <align>center</align>
-		</textarea>
-	    </state>
-	    <state name="disabled">
-		<textarea name="text">
-		    <align>center</align>
-		</textarea>
-	    </state>
-	    <state name="pushed">
-		<textarea name="text">
-		    <align>center</align>
-		</textarea>
-	    </state>
-	</statetype>
+        <statetype name="buttonstate">
+            <state name="active">
+                <textarea name="text">
+                    <align>center</align>
+                </textarea>
+            </state>
+            <state name="selected">
+                <textarea name="text">
+                    <align>center</align>
+                </textarea>
+            </state>
+            <state name="disabled">
+                <textarea name="text">
+                    <align>center</align>
+                </textarea>
+            </state>
+            <state name="pushed">
+                <textarea name="text">
+                    <align>center</align>
+                </textarea>
+            </state>
+        </statetype>
     </button>
 
     <group name="twobuttons">
-	<area>50%, 100%-80, 100%, 70</area>
-	<button name="prev_button" from="varbuttonright">
-	    <area>100%-540, 0, 250, 100%</area>
-	    <value>Prev</value>
-	</button>
-	
-	<button name="next_button" from="varbuttonleft">
-	    <area>100%-285, 0, 250, 100%</area>
-	    <value>Next</value>
-	</button>
+        <area>50%, 100%-80, 100%, 70</area>
+        <button name="prev_button" from="varbuttonright">
+            <area>100%-540, 0, 250, 100%</area>
+            <value>Prev</value>
+        </button>
+        
+        <button name="next_button" from="varbuttonleft">
+            <area>100%-285, 0, 250, 100%</area>
+            <value>Next</value>
+        </button>
     </group>
 
     <group name="fourbuttons">
-	<area>0, 100%-80, 100%, 70</area>
-	<button name="button1" from="varbuttoncenter">
-	    <area>0, 0, 25%, 100%</area>
-	</button>
-	<button name="button2" from="varbuttoncenter">
-	    <area>25%, 0, 33%, 100%</area>
-	</button>
-	<button name="button3" from="varbuttoncenter">
-	    <area>50%, 0, 50%, 100%</area>
-	</button>
-	<button name="button4" from="varbuttoncenter">
-	    <area>75%, 0, 100%, 100%</area>
-	</button>
+        <area>0, 100%-80, 100%, 70</area>
+        <button name="button1" from="varbuttoncenter">
+            <area>0, 0, 25%, 100%</area>
+        </button>
+        <button name="button2" from="varbuttoncenter">
+            <area>25%, 0, 33%, 100%</area>
+        </button>
+        <button name="button3" from="varbuttoncenter">
+            <area>50%, 0, 50%, 100%</area>
+        </button>
+        <button name="button4" from="varbuttoncenter">
+            <area>75%, 0, 100%, 100%</area>
+        </button>
     </group>
 
     <button name="basebuttonprev">
-	<area>0,0,60,60</area>
-	<statetype name="buttonstate">
-	    <state name="active">
-		<imagetype name="background">
-		    <filename>mm_prev_off.png</filename>
-		</imagetype>
-	    </state>
-	    <state name="selected" from="active">
-		<imagetype name="background">
-		    <filename>mm_prev_on.png</filename>
-		</imagetype>
-	    </state>
-	    <state name="disabled" from="active" />
-	    <state name="pushed" from="active">
-		<imagetype name="background">
-		    <filename>mm_prev_pushed.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
+        <area>0,0,60,60</area>
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="background">
+                    <filename>mm_prev_off.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="background">
+                    <filename>mm_prev_on.png</filename>
+                </imagetype>
+            </state>
+            <state name="disabled" from="active" />
+            <state name="pushed" from="active">
+                <imagetype name="background">
+                    <filename>mm_prev_pushed.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
     </button>
 
     <button name="basebuttonnext">
-	<area>0,0,60,60</area>
-	<statetype name="buttonstate">
-	    <state name="active">
-		<imagetype name="background">
-		    <filename>mm_next_off.png</filename>
-		</imagetype>
-	    </state>
-	    <state name="selected" from="active">
-		<imagetype name="background">
-		    <filename>mm_next_on.png</filename>
-		</imagetype>
-	    </state>
-	    <state name="disabled" from="active" />
-	    <state name="pushed" from="active">
-		<imagetype name="background">
-		    <filename>mm_next_pushed.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
+        <area>0,0,60,60</area>
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="background">
+                    <filename>mm_next_off.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="background">
+                    <filename>mm_next_on.png</filename>
+                </imagetype>
+            </state>
+            <state name="disabled" from="active" />
+            <state name="pushed" from="active">
+                <imagetype name="background">
+                    <filename>mm_next_pushed.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
     </button>
 
     <group name="basescrollgroup">
-	<area>0,0,100%,100%</area>
+        <area>0,0,100%,100%</area>
 
-	<scrollbar name="scrollbar">
-	    <area>0,20,100%,100%-20</area>
-	    <hidedelay>3000</hidedelay>
-	    <layout>vertical</layout>
-	    <shape name="bar">
-		<area>8,4,-8,-4</area>
-		<line color="#FFFFFF" alpha="255" width="2" />
-		<fill color="#000000" />
-	    </shape>
-	    <shape name="slider">
-		<area>5,0,-5,40</area>
-		<type>roundbox</type>
-		<line color="#000000" alpha="255" width="2" />
-		<fill color="#AA90FF" />
-		<cornerradius>12</cornerradius>
-	    </shape>
-	</scrollbar>
+        <scrollbar name="scrollbar">
+            <area>0,20,100%,100%-20</area>
+            <hidedelay>3000</hidedelay>
+            <layout>vertical</layout>
+            <shape name="bar">
+                <area>8,4,-8,-4</area>
+                <line color="#FFFFFF" alpha="255" width="2" />
+                <fill color="#000000" />
+            </shape>
+            <shape name="slider">
+                <area>5,0,-5,40</area>
+                <type>roundbox</type>
+                <line color="#000000" alpha="255" width="2" />
+                <fill color="#AA90FF" />
+                <cornerradius>12</cornerradius>
+            </shape>
+        </scrollbar>
 
-	<statetype name="upscrollarrow">
-	    <area>0,0,20,20</area>
-	    <state type="off">
-<!--
-		<imagetype name="upoff">
-		    <filename>Images/uparrow-off.png</filename>
-		</imagetype>
--->
-	    </state>
-	    <state type="full">
-		<imagetype name="upon">
-		    <filename>Images/uparrow-on.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
-	<statetype name="downscrollarrow">
-	    <area>0,100%-20,20,20</area>
-	    <state type="off">
-<!--
-		<imagetype name="dnoff">
-		    <filename>Images/downarrow-off.png</filename>
-		</imagetype>
--->
-	    </state>
-	    <state type="full">
-		<imagetype name="dnon">
-		    <filename>Images/downarrow-on.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
+        <statetype name="upscrollarrow">
+            <area>0,0,20,20</area>
+            <state type="off">
+                <!--
+                    <imagetype name="upoff">
+                    <filename>Images/uparrow-off.png</filename>
+                    </imagetype>
+                -->
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>Images/uparrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <area>0,100%-20,20,20</area>
+            <state type="off">
+                <!--
+                    <imagetype name="dnoff">
+                    <filename>Images/downarrow-off.png</filename>
+                    </imagetype>
+                -->
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>Images/downarrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
     </group>
 
     <!-- Base definition of checkbox -->
     <checkbox name="basecheckbox">
-	<area>0,0,40,70</area>
-	<group name="center">
-	    <area>0,15,100%,-15</area>
+        <area>0,0,40,70</area>
+        <group name="center">
+            <area>0,15,100%,-15</area>
 
-	    <statetype name="background">
-		<area>0,0,100%,100%</area>
-		<state name="active">
-		    <area>0,0,100%,100%</area>
-		    <shape name="checkbg">
-			<area>6,6,-6,-6</area>
-			<fill color="#000000" alpha="200" />
-			<line color="#33FFFF" alpha="128" width="2" />
-		    </shape>
-		</state>
-		<state name="selected">
-		    <area>0,0,100%,100%</area>
-		    <shape name="background" from="baseselectedwidgetshape">
-		    </shape>
-		</state>
-		<state name="disabled" />
-	    </statetype>
+            <statetype name="background">
+                <area>0,0,100%,100%</area>
+                <state name="active">
+                    <area>0,0,100%,100%</area>
+                    <shape name="checkbg">
+                        <area>6,6,-6,-6</area>
+                        <fill color="#000000" alpha="200" />
+                        <line color="#33FFFF" alpha="128" width="2" />
+                    </shape>
+                </state>
+                <state name="selected">
+                    <area>0,0,100%,100%</area>
+                    <shape name="background" from="baseselectedwidgetshape">
+                    </shape>
+                </state>
+                <state name="disabled" />
+            </statetype>
 
-	    <statetype name="checkstate">
-		<area>0,0,100%,100%</area>
-		<state type="off" />
-		<state type="half">
-		    <area>0,0,100%,100%</area>
-		    <imagetype name="background">
-			<area>6,6,-6,-6</area>
-			<filename>Images/check.png</filename>
-			<alpha>64</alpha>
-		    </imagetype>
-		</state>
-		<state type="full">
-		    <area>0,0,100%,100%</area>
-		    <imagetype name="mark">
-			<area>6,6,-6,-6</area>
-			<filename>Images/check.png</filename>
-		    </imagetype>
-		</state>
-	    </statetype>
-	</group>
+            <statetype name="checkstate">
+                <area>0,0,100%,100%</area>
+                <state type="off" />
+                <state type="half">
+                    <area>0,0,100%,100%</area>
+                    <imagetype name="background">
+                        <area>6,6,-6,-6</area>
+                        <filename>Images/check.png</filename>
+                        <alpha>64</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <area>0,0,100%,100%</area>
+                    <imagetype name="mark">
+                        <area>6,6,-6,-6</area>
+                        <filename>Images/check.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </group>
     </checkbox>
 
     <!-- Base definition of a selctedbox -->
     <statetype name="selectedbox">
-	<area>13,12,30,30</area>
-	<state name="yes">
-	    <area>0,0,30,30</area>
-	    <shape name="checkbg">
-		<area>0,0,100%,100%</area>
-		<type>roundbox</type>
-		<fill color="#000000" alpha="200" />
-		<!--
-		    <line color="#FF7F00" alpha="196" width="4" />
-		-->
-		<line color="#00FF00" alpha="196" width="4" />
-		<cornerradius>5</cornerradius>
-	    </shape>
-	    <imagetype name="mark">
-		<area>4,0,100%,-4</area>
-		<filename>Images/check.png</filename>
-	    </imagetype>
-	</state>
-	<state name="off" from="yes" />
-	<state name="no" />
+        <area>13,12,30,30</area>
+        <state name="yes">
+            <area>0,0,30,30</area>
+            <shape name="checkbg">
+                <area>0,0,100%,100%</area>
+                <type>roundbox</type>
+                <fill color="#000000" alpha="200" />
+                <!--
+                    <line color="#FF7F00" alpha="196" width="4" />
+                -->
+                <line color="#00FF00" alpha="196" width="4" />
+                <cornerradius>5</cornerradius>
+            </shape>
+            <imagetype name="mark">
+                <area>4,0,100%,-4</area>
+                <filename>Images/check.png</filename>
+            </imagetype>
+        </state>
+        <state name="off" from="yes" />
+        <state name="no" />
     </statetype>
 
     <!-- Base definition of a spinbox -->
     <spinbox name="basespinbox">
-	<area>0,0,150,70</area>
-	<layout>horizontal</layout>
-	<buttonarea>0,6,100%,-6</buttonarea>
-	<wrapstyle>items</wrapstyle>
+        <area>0,0,150,70</area>
+        <layout>horizontal</layout>
+        <buttonarea>0,6,100%,-6</buttonarea>
+        <wrapstyle>items</wrapstyle>
 
-	<statetype name="buttonitem">
-	    <area>0,0,100%,100%</area>
-	    <state name="active">
-		<area>0,0,100%,100%</area>
-		<shape name="background" from="basebuttonshape">
-		    <type>roundbox</type>
-		    <cornerradius>15</cornerradius>
-		</shape>
-		<textarea name="buttontext" from="basewidgettext">
-		    <area>30,10,-30,-10</area>
-		</textarea>
-	    </state>
-	    <state name="selectedinactive" from="active" />
-	    <state name="selectedactive" from="active">
-		<shape name="background" from="baseselectedbuttonshape">
-		    <type>roundbox</type>
-		    <cornerradius>20</cornerradius>
-		</shape>
-		<textarea name="buttontext" />
-	    </state>
-	</statetype>
-	<statetype name="upscrollarrow">
-	    <area>7,50%-10,20,20</area>
-	    <state type="off">
-		<imagetype name="upoff">
-		    <filename>Images/leftarrow-off.png</filename>
-		</imagetype>
-	    </state>
-	    <state type="full">
-		<imagetype name="upon">
-		    <filename>Images/leftarrow-on.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
-	<statetype name="downscrollarrow">
-	    <area>100%-27,50%-10,20,20</area>
-	    <state type="off">
-		<imagetype name="dnoff">
-		    <filename>Images/rightarrow-off.png</filename>
-		</imagetype>
-	    </state>
-	    <state type="full">
-		<imagetype name="dnon">
-		    <filename>Images/rightarrow-on.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
+        <statetype name="buttonitem">
+            <area>0,0,100%,100%</area>
+            <state name="active">
+                <area>0,0,100%,100%</area>
+                <shape name="background" from="basebuttonshape">
+                    <type>roundbox</type>
+                    <cornerradius>15</cornerradius>
+                </shape>
+                <textarea name="buttontext" from="basewidgettext">
+                    <area>30,10,-30,-10</area>
+                </textarea>
+            </state>
+            <state name="selectedinactive" from="active" />
+            <state name="selectedactive" from="active">
+                <shape name="background" from="baseselectedbuttonshape">
+                    <type>roundbox</type>
+                    <cornerradius>20</cornerradius>
+                </shape>
+                <textarea name="buttontext" />
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <area>7,50%-10,20,20</area>
+            <state type="off">
+                <imagetype name="upoff">
+                    <filename>Images/leftarrow-off.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>Images/leftarrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <area>100%-27,50%-10,20,20</area>
+            <state type="off">
+                <imagetype name="dnoff">
+                    <filename>Images/rightarrow-off.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>Images/rightarrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
     </spinbox>
 
     <!-- Base definition of a wide spinbox (room for strings) -->
     <spinbox name="baselargespinbox" from="basespinbox">
-	<area>0,0,400,90</area>
-	<buttonarea>0,0,100%,100%</buttonarea>
+        <area>0,0,400,90</area>
+        <buttonarea>0,0,100%,100%</buttonarea>
     </spinbox>
 
     <!-- Base definition of a list in wide 'spinbox' configuration -->
     <spinbox name="basewidespinbox" from="basespinbox">
-	<area>0,0,600,70</area>
+        <area>0,0,600,70</area>
     </spinbox>
 
     <spinbox name="basemediumspinbox" from="basespinbox">
-	<area>0,0,300,70</area>
+        <area>0,0,300,70</area>
     </spinbox>
 
     <!-- Base definition of a list in 'selector' configuration -->
     <buttonlist name="baseselector">
-	<area>0,0,150,70</area>
-	<layout>horizontal</layout>
-	<buttonarea>0,6,100%,-6</buttonarea>
-	<wrapstyle>items</wrapstyle>
+        <area>0,0,150,70</area>
+        <layout>horizontal</layout>
+        <buttonarea>0,6,100%,-6</buttonarea>
+        <wrapstyle>items</wrapstyle>
 
-	<statetype name="buttonitem">
-	    <area>0,0,100%,100%</area>
-	    <state name="active">
-		<area>0,0,100%,100%</area>
-		<shape name="background" from="basebuttonshape">
-		    <type>roundbox</type>
-		    <cornerradius>15</cornerradius>
-		</shape>
-		<textarea name="buttontext" from="basewidgettext">
-		    <area>30,10,-30,-10</area>
-		</textarea>
-	    </state>
-	    <state name="selectedinactive" from="active" />
-	    <state name="selectedactive" from="active">
-		<shape name="background" from="baseselectedbuttonshape">
-		    <type>roundbox</type>
-		    <cornerradius>20</cornerradius>
-		</shape>
-		<textarea name="buttontext" />
-	    </state>
-	    <state name="disabled" from="active">
-		<shape name="background" from="baseinactivebuttonshape">
-		    <area>0,0,100%,100%</area>
-		    <type>roundbox</type>
-		    <cornerradius>20</cornerradius>
-		</shape>
-		<textarea name="text" />
-	    </state>
-	    <state name="inactive" from="disabled" />
-	</statetype>
-	<statetype name="upscrollarrow">
-	    <area>7,50%-10,20,20</area>
-	    <state type="off">
-		<imagetype name="dnoff">
-		    <filename>Images/leftarrow-off.png</filename>
-		</imagetype>
-	    </state>
-	    <state type="full">
-		<imagetype name="dnon">
-		    <filename>Images/leftarrow-on.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
-	<statetype name="downscrollarrow">
-	    <area>100%-27,50%-10,20,20</area>
-	    <state type="off">
-		<imagetype name="upoff">
-		    <filename>Images/rightarrow-off.png</filename>
-		</imagetype>
-	    </state>
-	    <state type="full">
-		<imagetype name="upon">
-		    <filename>Images/rightarrow-on.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
+        <statetype name="buttonitem">
+            <area>0,0,100%,100%</area>
+            <state name="active">
+                <area>0,0,100%,100%</area>
+                <shape name="background" from="basebuttonshape">
+                    <type>roundbox</type>
+                    <cornerradius>15</cornerradius>
+                </shape>
+                <textarea name="buttontext" from="basewidgettext">
+                    <area>30,10,-30,-10</area>
+                </textarea>
+            </state>
+            <state name="selectedinactive" from="active" />
+            <state name="selectedactive" from="active">
+                <shape name="background" from="baseselectedbuttonshape">
+                    <type>roundbox</type>
+                    <cornerradius>20</cornerradius>
+                </shape>
+                <textarea name="buttontext" />
+            </state>
+            <state name="disabled" from="active">
+                <shape name="background" from="baseinactivebuttonshape">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <cornerradius>20</cornerradius>
+                </shape>
+                <textarea name="text" />
+            </state>
+            <state name="inactive" from="disabled" />
+        </statetype>
+        <statetype name="upscrollarrow">
+            <area>7,50%-10,20,20</area>
+            <state type="off">
+                <imagetype name="dnoff">
+                    <filename>Images/leftarrow-off.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>Images/leftarrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <area>100%-27,50%-10,20,20</area>
+            <state type="off">
+                <imagetype name="upoff">
+                    <filename>Images/rightarrow-off.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>Images/rightarrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
     </buttonlist>
 
     <!-- Base definition of a list in dual-line 'selector' configuration -->
     <buttonlist name="baselargeselector" from="baseselector">
-	<area>0,0,400,90</area>
-	<buttonarea>0,0,100%,100%</buttonarea>
+        <area>0,0,400,90</area>
+        <buttonarea>0,0,100%,100%</buttonarea>
     </buttonlist>
 
     <!-- Base definition of a list in wide 'selector' configuration -->
     <buttonlist name="basewideselector" from="baseselector">
-	<area>0,0,600,70</area>
+        <area>0,0,600,70</area>
     </buttonlist>
 
     <!-- Base definition of a list in wide 'selector' configuration -->
     <buttonlist name="basemediumselector" from="baseselector">
-	<area>0,0,300,70</area>
+        <area>0,0,300,70</area>
     </buttonlist>
 
     <!-- Base definition of a textarea -->
     <textarea name="basetextarea">
-	<area>0,0,100,55</area>
-	<font>mysmall</font>
-	<multiline>no</multiline>
-	<align>left,vcenter</align>
+        <area>0,0,100,55</area>
+        <font>mysmall</font>
+        <multiline>no</multiline>
+        <align>left,vcenter</align>
     </textarea>
 
     <textarea name="labeltext">
-	<area>0,0,250,70</area>
-	<font>mylabelfont</font>
-	<extraleading>-1</extraleading>
-	<multiline>yes</multiline>
-	<align>right,vcenter</align>
+        <area>0,0,250,70</area>
+        <font>mylabelfont</font>
+        <extraleading>-1</extraleading>
+        <multiline>yes</multiline>
+        <align>right,vcenter</align>
     </textarea>
 
     <textarea name="labeltextlarge">
-	<area>0,0,250,90</area>
-	<font>mylabelfont</font>
-	<multiline>yes</multiline>
-	<align>right,vcenter</align>
+        <area>0,0,250,90</area>
+        <font>mylabelfont</font>
+        <multiline>yes</multiline>
+        <align>right,vcenter</align>
     </textarea>
 
     <textarea name="labelbutton" from="labeltext">
-	<area>0,0,250,60</area>
+        <area>0,0,250,60</area>
     </textarea>
 
     <textarea name="labelcheckbox" from="labeltext">
-	<area>0,0,600,70</area>
-	<align>left,vcenter</align>
+        <area>0,0,600,70</area>
+        <align>left,vcenter</align>
     </textarea>
 
     <textedit name="basetextedit">
         <area>0,0,500,70</area>
-	<group name="center">
-	    <area>0,7,100%,-7</area>
-	    <statetype name="background">
-		<area>0,0,100%,100%</area>
-		<state name="active">
-		    <area>5,5,-5,-5</area>
-		    <shape name="background" from="basewidgetshape">
-			<area>0,0,100%,100%</area>
-			<fill style="gradient">
-			    <gradient end="#000000" start="#201030" alpha="255"
-				      direction="diagonal"  />
-			</fill>
-		    </shape>
-		</state>
-		<state name="inactive">
-		    <area>5,5,-5,-5</area>
-		    <shape name="background" from="basewidgetshape">
-			<area>0,0,100%,100%</area>
-		    </shape>
-		</state>
-		<state name="selected">
-		    <area>0,0,100%,100%</area>
-		    <shape name="background" from="baseselectedwidgetshape">
-			<area>0,0,100%,100%</area>
-		    </shape>
-		</state>
-	    </statetype>
-	    <imagetype name="cursor">
-		<filename>Images/cursor.png</filename>
-	    </imagetype>
-	    <textarea name="text">
-		<area>15,5,-15,-5</area>
-		<align>left,vcenter</align>
-		<font>mysmall</font>
-	    </textarea>
-	</group>
+        <group name="center">
+            <area>0,7,100%,-7</area>
+            <statetype name="background">
+                <area>0,0,100%,100%</area>
+                <state name="active">
+                    <area>5,5,-5,-5</area>
+                    <shape name="background" from="basewidgetshape">
+                        <area>0,0,100%,100%</area>
+                        <fill style="gradient">
+                            <gradient end="#000000" start="#201030" alpha="255"
+                                      direction="diagonal"  />
+                        </fill>
+                    </shape>
+                </state>
+                <state name="inactive">
+                    <area>5,5,-5,-5</area>
+                    <shape name="background" from="basewidgetshape">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
+                <state name="selected">
+                    <area>0,0,100%,100%</area>
+                    <shape name="background" from="baseselectedwidgetshape">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
+            </statetype>
+            <imagetype name="cursor">
+                <filename>Images/cursor.png</filename>
+            </imagetype>
+            <textarea name="text">
+                <area>15,5,-15,-5</area>
+                <align>left,vcenter</align>
+                <font>mysmall</font>
+            </textarea>
+        </group>
     </textedit>
 
     <!-- Base definition of a textedit with centered text-->
     <textedit name="basecentertextedit" from="basetextedit">
         <area>0,0,500,70</area>
-	<group name="center">
-	    <textarea name="text">
-		<align>center</align>
-	    </textarea>
-	</group>
+        <group name="center">
+            <textarea name="text">
+                <align>center</align>
+            </textarea>
+        </group>
     </textedit>
 
     <textedit name="basenarrowtextedit" from="basetextedit">
@@ -1049,1184 +1049,1184 @@
     </textedit>
 
     <textedit name="basewidetextedit" from="basecentertextedit">
-	<area>0,0,600,70</area>
+        <area>0,0,600,70</area>
     </textedit>
 
     <!-- Base definition of a multiline textedit -->
     <textedit name="basemultilinetextedit" from="basetextedit">
-	<!-- 85, for two lines -->
-	<area>0,0,100%,140</area>
-	<group name="center">
-	    <area>0,0,100%,100%</area>
-	    <textarea name="text">
-		<multiline>true</multiline>
-		<align>top,left</align>
-	    </textarea>
-	</group>
+        <!-- 85, for two lines -->
+        <area>0,0,100%,140</area>
+        <group name="center">
+            <area>0,0,100%,100%</area>
+            <textarea name="text">
+                <multiline>true</multiline>
+                <align>top,left</align>
+            </textarea>
+        </group>
     </textedit>
 
     <!-- Base definition of a generic button list -->
     <buttonlist name="basebuttonlist">
-	<arrange>stack</arrange>
-	<align>center</align>
-	<area>0,20,600,720</area>
-	<layout>vertical</layout>
-	<spacing>1</spacing>
-	<wrapstyle>selection</wrapstyle>
-	<buttonarea>20,0,-20,100%</buttonarea>
-	<statetype name="buttonitem">
-	    <area>0,0,100%,60</area>
-	    <state name="active">
-		<!-- Width needs to have <buttonarea>
-		     subtracted from it -->
-		<area>0,0,100%,60</area>
-		<shape name="background" from="basebuttonshape" />
-		<textarea name="buttontext" from="basewidgettext" />
-		<imagetype name="buttonarrow">
-		    <area>100%-24,50%-7,15,15</area>
-		    <filename>Images/rightarrow-on.png</filename>
-		</imagetype>
-	    </state>
-	    <state name="selectedinactive" from="active">
-		<shape name="background" from="baseselectedinactivebuttonshape" />
-	    </state>
-	    <state name="selectedactive" from="selectedinactive">
-		<shape name="background" from="baseselectedbuttonshape" />
-	    </state>
+        <arrange>stack</arrange>
+        <align>center</align>
+        <area>0,20,600,720</area>
+        <layout>vertical</layout>
+        <spacing>1</spacing>
+        <wrapstyle>selection</wrapstyle>
+        <buttonarea>20,0,-20,100%</buttonarea>
+        <statetype name="buttonitem">
+            <area>0,0,100%,60</area>
+            <state name="active">
+                <!-- Width needs to have <buttonarea>
+                     subtracted from it -->
+                <area>0,0,100%,60</area>
+                <shape name="background" from="basebuttonshape" />
+                <textarea name="buttontext" from="basewidgettext" />
+                <imagetype name="buttonarrow">
+                    <area>100%-24,50%-7,15,15</area>
+                    <filename>Images/rightarrow-on.png</filename>
+                </imagetype>
+            </state>
+            <state name="selectedinactive" from="active">
+                <shape name="background" from="baseselectedinactivebuttonshape" />
+            </state>
+            <state name="selectedactive" from="selectedinactive">
+                <shape name="background" from="baseselectedbuttonshape" />
+            </state>
 
-	</statetype>
+        </statetype>
 
-	<statetype name="upscrollarrow">
-	    <area>100%-20,50%-25,20,20</area>
-	    <state type="off">
-	    </state>
-	    <state type="full">
-		<imagetype name="upon">
-		    <filename>Images/uparrow-on.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
-	<statetype name="downscrollarrow">
-	    <area>100%-20,50%+5,20,20</area>
-	    <state type="off">
-	    </state>
-	    <state type="full">
-		<imagetype name="dnon">
-		    <filename>Images/downarrow-on.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
+        <statetype name="upscrollarrow">
+            <area>100%-20,50%-25,20,20</area>
+            <state type="off">
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>Images/uparrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <area>100%-20,50%+5,20,20</area>
+            <state type="off">
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>Images/downarrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
     </buttonlist>
 
     <!--Buttonlist for the popup menu -->
     <buttonlist name="basepopupbuttonlist" from="basebuttonlist">
-	<area>0,0,444,328</area>
-	<spacing>0</spacing>
+        <area>0,0,444,328</area>
+        <spacing>0</spacing>
     </buttonlist>
 
     <statetype name="basebuttoncheck">
-	<state type="off" />
-	<state type="half">
-	    <position>15,18</position>
-	    <imagetype name="checkhalf">
-		<filename>Images/check.png</filename>
-		<alpha>64</alpha>
-	    </imagetype>
-	</state>
-	<state type="full">
-	    <position>15,18</position>
-	    <imagetype name="checkfull">
-		<filename>Images/check.png</filename>
-	    </imagetype>
-	</state>
-	<state type="on" from="full" />
+        <state type="off" />
+        <state type="half">
+            <position>15,18</position>
+            <imagetype name="checkhalf">
+                <filename>Images/check.png</filename>
+                <alpha>64</alpha>
+            </imagetype>
+        </state>
+        <state type="full">
+            <position>15,18</position>
+            <imagetype name="checkfull">
+                <filename>Images/check.png</filename>
+            </imagetype>
+        </state>
+        <state type="on" from="full" />
     </statetype>
     
     <statetype name="basemovestate">
-	<position>15,50</position>
-	<state name="off"></state>
-	<state name="on">
-	    <imagetype name="statusimage">
-		<filename>Images/move-updown.png</filename>
-	    </imagetype>
-	</state>
+        <position>15,50</position>
+        <state name="off"></state>
+        <state name="on">
+            <imagetype name="statusimage">
+                <filename>Images/move-updown.png</filename>
+            </imagetype>
+        </state>
     </statetype>
 
     <!-- Buttonlist with checkboxes -->
     <buttonlist name="basechecklist" from="basebuttonlist">
-	<area>20,20,-20,-20</area>
-	<scrollstyle>free</scrollstyle>
+        <area>20,20,-20,-20</area>
+        <scrollstyle>free</scrollstyle>
 
-	<statetype name="buttonitem">
-	    <state name="active">
-		<shape name="background" from="basebuttonshape" />
-		<shape name="checkbg">
-		    <area>12,15,26,26</area>
-		    <fill color="#000000" alpha="200" />
-		    <line color="#AAFFFF" alpha="64" width="2" />
-		</shape>
-		<statetype name="buttoncheck" from="basebuttoncheck" />
+        <statetype name="buttonitem">
+            <state name="active">
+                <shape name="background" from="basebuttonshape" />
+                <shape name="checkbg">
+                    <area>12,15,26,26</area>
+                    <fill color="#000000" alpha="200" />
+                    <line color="#AAFFFF" alpha="64" width="2" />
+                </shape>
+                <statetype name="buttoncheck" from="basebuttoncheck" />
 
-		<textarea name="buttontext" from="basetextarea">
-		    <area>50,5,-5,-5</area>
-		</textarea>
-	    </state>
-	    <state name="selectedinactive" from="active" />
-	    <state name="selectedactive" from="selectedinactive">
-		<shape name="background"
-		       from="baseselectedbuttonshape" />
-	    </state>
-	</statetype>
+                <textarea name="buttontext" from="basetextarea">
+                    <area>50,5,-5,-5</area>
+                </textarea>
+            </state>
+            <state name="selectedinactive" from="active" />
+            <state name="selectedactive" from="selectedinactive">
+                <shape name="background"
+                       from="baseselectedbuttonshape" />
+            </state>
+        </statetype>
     </buttonlist>
 
     <!-- Base GRID buttonlist -->
     <buttonlist name="basegridlist">
-	<area>50,90,-50,-50</area>
-	
-	<align>center</align>
-	<arrange>stack</arrange>
-	<layout>grid</layout>
-	<spacing>10</spacing>
-	<scrollstyle>free</scrollstyle>
-	<wrapstyle>flowing</wrapstyle>
+        <area>50,90,-50,-50</area>
+        
+        <align>center</align>
+        <arrange>stack</arrange>
+        <layout>grid</layout>
+        <spacing>10</spacing>
+        <scrollstyle>free</scrollstyle>
+        <wrapstyle>flowing</wrapstyle>
 
-	<buttonarea>0,0,100%,100%-35</buttonarea>
-	<statetype name="buttonitem">
-	    <area>0,0,100%,100%</area>
-	    <state name="inactive">
-		<area>0,0,300,300</area>
+        <buttonarea>0,0,100%,100%-35</buttonarea>
+        <statetype name="buttonitem">
+            <area>0,0,100%,100%</area>
+            <state name="inactive">
+                <area>0,0,300,300</area>
 
-		<shape name="statusborder">
-		    <area>0,0,100%,100%</area>
-		    <type>roundbox</type>
-		    <line color="#00FFFF" width="1" alpha="160" />
-		    <fill color="#000000" alpha="144" />
-		    <cornerradius>10</cornerradius>
-		</shape>
+                <shape name="statusborder">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <line color="#00FFFF" width="1" alpha="160" />
+                    <fill color="#000000" alpha="144" />
+                    <cornerradius>10</cornerradius>
+                </shape>
 
-		<imagetype name="buttonimage">
-		    <area>12,12,278,278</area>
-		    <filename />
-		    <preserveaspect>true</preserveaspect>
-		</imagetype>
+                <imagetype name="buttonimage">
+                    <area>12,12,278,278</area>
+                    <filename />
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
 
-		<statetype name="nodetype">
-		    <position>100%-90,5</position>
-		    <state name="subfolder">
-			<imagetype name="icon">
-			    <area>0,0,80,80</area>
-			    <filename>Images/Graphite/folderclosed.png</filename>
-			    <preserveaspect>yes</preserveaspect>
-			</imagetype>
-		    </state>
-		    <state name="upfolder">
-			<imagetype name="icon">
-			    <area>0,0,80,80</area>
-			    <filename>Images/Graphite/mv_gallery_dir_up.png</filename>
-			    <preserveaspect>yes</preserveaspect>
-			</imagetype>
-		    </state>
-		</statetype>
-		<textarea name="childcount" from="basetextarea">
-		    <area>100%-103,13,80,80</area>
-		    <font>myverysmallyellow</font>
-		    <align>right,vcenter</align>
-		</textarea>
-		<statetype name="buttoncheck" from="basebuttoncheck">
-		    <position>100%-40,0</position>
-		</statetype>
+                <statetype name="nodetype">
+                    <position>100%-90,5</position>
+                    <state name="subfolder">
+                        <imagetype name="icon">
+                            <area>0,0,80,80</area>
+                            <filename>Images/Graphite/folderclosed.png</filename>
+                            <preserveaspect>yes</preserveaspect>
+                        </imagetype>
+                    </state>
+                    <state name="upfolder">
+                        <imagetype name="icon">
+                            <area>0,0,80,80</area>
+                            <filename>Images/Graphite/mv_gallery_dir_up.png</filename>
+                            <preserveaspect>yes</preserveaspect>
+                        </imagetype>
+                    </state>
+                </statetype>
+                <textarea name="childcount" from="basetextarea">
+                    <area>100%-103,13,80,80</area>
+                    <font>myverysmallyellow</font>
+                    <align>right,vcenter</align>
+                </textarea>
+                <statetype name="buttoncheck" from="basebuttoncheck">
+                    <position>100%-40,0</position>
+                </statetype>
 
-		<group name="textgroup">
-		    <area>10,10,-5,-5</area>
-		    <minsize vanish="true">20,20</minsize>
+                <group name="textgroup">
+                    <area>10,10,-5,-5</area>
+                    <minsize vanish="true">20,20</minsize>
 
-		    <shape name="shadow">
-			<area>5,5,-5,-5</area>
-			<minsize vanish="true">5,5</minsize>
-			<type>roundbox</type>
-			<cornerradius>5</cornerradius>
-			<fill color="#000000" alpha="160" />
-		    </shape>			
+                    <shape name="shadow">
+                        <area>5,5,-5,-5</area>
+                        <minsize vanish="true">5,5</minsize>
+                        <type>roundbox</type>
+                        <cornerradius>5</cornerradius>
+                        <fill color="#000000" alpha="160" />
+                    </shape>                    
 
-		    <textarea name="buttontext" from="basetextarea">
-			<area>10,5,-10,-5</area>
-			<align>bottom,right</align>
-			<minsize shrink="short" vanish="true">5,5</minsize>
-			<font>myverysmall</font>
-			<multiline>yes</multiline>
-		    </textarea>
-		</group>
-	    </state> <!-- inactive -->
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>10,5,-10,-5</area>
+                        <align>bottom,right</align>
+                        <minsize shrink="short" vanish="true">5,5</minsize>
+                        <font>myverysmall</font>
+                        <multiline>yes</multiline>
+                    </textarea>
+                </group>
+            </state> <!-- inactive -->
 
-	    <state name="active" from="inactive" />
+            <state name="active" from="inactive" />
 
-	    <state name="selectedinactive" from="active">
-		<area>-20,-20,340,340</area>
-		<shape name="statusborder">
-		    <area>0,0,100%,100%</area>
-		    <type>roundbox</type>
-		    <line color="#00FFFF" width="1" alpha="160" />
-		    <fill color="#000000" alpha="200" />
-		    <cornerradius>10</cornerradius>
-		</shape>
+            <state name="selectedinactive" from="active">
+                <area>-20,-20,340,340</area>
+                <shape name="statusborder">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <line color="#00FFFF" width="1" alpha="160" />
+                    <fill color="#000000" alpha="200" />
+                    <cornerradius>10</cornerradius>
+                </shape>
 
-		<statetype name="nodetype">
-		    <position>100%-90,5</position>
-		    <state name="subfolder">
-			<imagetype name="icon">
-			    <area>0,0,80,80</area>
-			    <filename>Images/Graphite/folderopen.png</filename>
-			</imagetype>
-		    </state>
-		    <state name="upfolder" from="subfolder">
-			<imagetype name="icon">
-			    <filename>Images/Graphite/mv_gallery_dir_up_open.png</filename>
-			</imagetype>
-		    </state>
-		</statetype>
+                <statetype name="nodetype">
+                    <position>100%-90,5</position>
+                    <state name="subfolder">
+                        <imagetype name="icon">
+                            <area>0,0,80,80</area>
+                            <filename>Images/Graphite/folderopen.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="upfolder" from="subfolder">
+                        <imagetype name="icon">
+                            <filename>Images/Graphite/mv_gallery_dir_up_open.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>
 
-	    </state>
+            </state>
 
-	    <state name="selectedactive" from="selectedinactive">
-		<shape name="statusborder">
-		    <line color="#00FFFF" width="5" alpha="160" />
-		    <fill color="#000000" alpha="240" />
-		</shape>
-		<!--
-		    <group name="imagegroup" />
-		-->
-		<imagetype name="buttonimage" />
-		<statetype name="nodetype" />
-	    </state>
+            <state name="selectedactive" from="selectedinactive">
+                <shape name="statusborder">
+                    <line color="#00FFFF" width="5" alpha="160" />
+                    <fill color="#000000" alpha="240" />
+                </shape>
+                <!--
+                    <group name="imagegroup" />
+                -->
+                <imagetype name="buttonimage" />
+                <statetype name="nodetype" />
+            </state>
 
-	</statetype>
-	<statetype name="upscrollarrow">
-	    <area>50%-18,100%-15,15,15</area>
-	    <state type="off" />
-	    <state type="full">
-		<imagetype name="upon">
-		    <filename>Images/uparrow-on.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
-	<statetype name="downscrollarrow">
-	    <area>50%+2,100%-15,15,15</area>
-	    <state type="off" />
-	    <state type="full">
-		<imagetype name="dnon">
-		    <filename>Images/downarrow-on.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <area>50%-18,100%-15,15,15</area>
+            <state type="off" />
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>Images/uparrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <area>50%+2,100%-15,15,15</area>
+            <state type="off" />
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>Images/downarrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
     </buttonlist>
 
     <!-- Base definition of a progressbar -->
     <progressbar name="baseprogressbar">
-	<area>0,0,10,10</area>
-	<layout>horizontal</layout>
-	<style>reveal</style>
-	<imagetype name="background">
-	    <filename>Images/progressbar_bg.png</filename>
-	</imagetype>
-	<imagetype name="progressimage">
-	    <filename>Images/progressbar_fill.png</filename>
-	</imagetype>
+        <area>0,0,10,10</area>
+        <layout>horizontal</layout>
+        <style>reveal</style>
+        <imagetype name="background">
+            <filename>Images/progressbar_bg.png</filename>
+        </imagetype>
+        <imagetype name="progressimage">
+            <filename>Images/progressbar_fill.png</filename>
+        </imagetype>
     </progressbar>
 
     <statetype name="basevideolevel">
-	<position>320,15</position>
-	<state name="Lowest">
-	    <imagetype name="icon">
-		<area>0,1,28,28</area>
-		<filename>mv_level_lowest.png</filename>
-		<alpha>196</alpha>
-	    </imagetype>
-	    <textarea name="label">
-		<area>35,2,300,35</area>
-		<value>unrestricted</value>
-		<font>myverysmallorange</font>
-	    </textarea>
-	</state>
-	<state name="Low" from="Lowest">
-	    <imagetype name="icon">
-		<filename>mv_level_low.png</filename>
-		<alpha>224</alpha>
-	    </imagetype>
-	    <textarea name="label">
-		<value>partially restricted</value>
-	    </textarea>
-	</state>
-	<state name="Medium" from="Lowest">
-	    <imagetype name="icon">
-		<filename>mv_level_medium.png</filename>
-	    </imagetype>
-	    <textarea name="label">
-		<value>mostly restricted</value>
-	    </textarea>
-	</state>
-	<state name="High" from="Lowest">
-	    <imagetype name="icon">
-		<filename>mv_level_high.png</filename>
-	    </imagetype>
-	    <textarea name="label">
-		<value>restricted</value>
-	    </textarea>
-	</state>
+        <position>320,15</position>
+        <state name="Lowest">
+            <imagetype name="icon">
+                <area>0,1,28,28</area>
+                <filename>mv_level_lowest.png</filename>
+                <alpha>196</alpha>
+            </imagetype>
+            <textarea name="label">
+                <area>35,2,300,35</area>
+                <value>unrestricted</value>
+                <font>myverysmallorange</font>
+            </textarea>
+        </state>
+        <state name="Low" from="Lowest">
+            <imagetype name="icon">
+                <filename>mv_level_low.png</filename>
+                <alpha>224</alpha>
+            </imagetype>
+            <textarea name="label">
+                <value>partially restricted</value>
+            </textarea>
+        </state>
+        <state name="Medium" from="Lowest">
+            <imagetype name="icon">
+                <filename>mv_level_medium.png</filename>
+            </imagetype>
+            <textarea name="label">
+                <value>mostly restricted</value>
+            </textarea>
+        </state>
+        <state name="High" from="Lowest">
+            <imagetype name="icon">
+                <filename>mv_level_high.png</filename>
+            </imagetype>
+            <textarea name="label">
+                <value>restricted</value>
+            </textarea>
+        </state>
     </statetype>
 
     <group name="baseMsgGroup">
-	<area>45,975,440,85</area>
-	<!--
-	    <minsize vanish="true">100%,100%</minsize>
-	-->
-	<shape name="msgShape">
-	    <area>0,0,100%,100%</area>
-	    <!--
-		<minsize vanish="true">100%,100%</minsize>
-	    -->
-	    <type>roundbox</type>
-	    <cornerradius>5</cornerradius>
-	    <fill color="#000000" alpha="160" />
-	    <line color="#FFFFFF" alpha="160" width="1" />
-	</shape>
-	
-	<textarea name="msgText">
-	    <area>10,5,-10,-5</area>
-	    <!--
-		<minsize vanish="true" shrink="short">100%,100%</minsize>
-	    -->
-	    <align>center</align>
-	    <multiline>yes</multiline>
-	    <cutdown>yes</cutdown>
-	    <font>mysmallnarrow</font>
-	    <font state="running">mysmallnarrowgreen</font>
-	    <font state="disabled">mysmallnarrowgrey</font>
-	    <font state="error">mysmallnarrowred</font>
-	    <font state="normal">mysmallnarrowblue</font>
-	    <font state="warning">mysmallnarroworange</font>
-	</textarea>
+        <area>45,975,440,85</area>
+        <!--
+            <minsize vanish="true">100%,100%</minsize>
+        -->
+        <shape name="msgShape">
+            <area>0,0,100%,100%</area>
+            <!--
+                <minsize vanish="true">100%,100%</minsize>
+            -->
+            <type>roundbox</type>
+            <cornerradius>5</cornerradius>
+            <fill color="#000000" alpha="160" />
+            <line color="#FFFFFF" alpha="160" width="1" />
+        </shape>
+        
+        <textarea name="msgText">
+            <area>10,5,-10,-5</area>
+            <!--
+                <minsize vanish="true" shrink="short">100%,100%</minsize>
+            -->
+            <align>center</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <font>mysmallnarrow</font>
+            <font state="running">mysmallnarrowgreen</font>
+            <font state="disabled">mysmallnarrowgrey</font>
+            <font state="error">mysmallnarrowred</font>
+            <font state="normal">mysmallnarrowblue</font>
+            <font state="warning">mysmallnarroworange</font>
+        </textarea>
     </group>
 
     <group name="baseMsgGroupLarge" from="baseMsgGroup">
-	<area>52,809,426,240</area>
+        <area>52,809,426,240</area>
     </group>
 
     <group name="baseMsgGroupTall" from="baseMsgGroup">
-	<!--
-	    <area>52,650,426,400</area>
-	-->
+        <!--
+            <area>52,650,426,400</area>
+        -->
         <area>45,702,440,338</area>
     </group>
 
     <group name="baseMsgGroupWide" from="baseMsgGroup">
-	<area>52,809,500,240</area>
+        <area>52,809,500,240</area>
     </group>
 
     <group name="baseMsgGroupBanner" from="baseMsgGroup">
-	<area>300,100%-210,-300,120</area>
+        <area>300,100%-210,-300,120</area>
     </group>
 
 
     <!-- Common page elements -->
     <group name="baseModeGroup">
-	<area>560,25,-25,60</area>
-	<minsize vanish="yes">20,100%</minsize>
+        <area>560,25,-25,60</area>
+        <minsize vanish="yes">20,100%</minsize>
 
-	<shape name="modeShape">
-	    <area>0,0,100%,100%</area>
-	    <minsize vanish="yes">20,100%</minsize>
-	    <type>roundbox</type>
-	    <line color="#00FFFF" alpha="96" width="3" />
-	    <fill color="#000000" alpha="144" />
-	    <cornerradius>150</cornerradius>
-	</shape>
+        <shape name="modeShape">
+            <area>0,0,100%,100%</area>
+            <minsize vanish="yes">20,100%</minsize>
+            <type>roundbox</type>
+            <line color="#00FFFF" alpha="96" width="3" />
+            <fill color="#000000" alpha="144" />
+            <cornerradius>150</cornerradius>
+        </shape>
 
-	<textarea name="pagemode">
-	    <area>30,5,-30,-5</area>
-	    <minsize vanish="yes">20,40</minsize>
-	    <align>center</align>
-	    <font>mymediumlightgrey</font>
-	</textarea>
+        <textarea name="pagemode">
+            <area>30,5,-30,-5</area>
+            <minsize vanish="yes">20,40</minsize>
+            <align>center</align>
+            <font>mymediumlightgrey</font>
+        </textarea>
     </group>
 
     <buttonlist name="headingList">
-	<arrange>stack</arrange>
-	<align>top,hcenter</align>
-	<spacing>0</spacing>
-	<scrollstyle>free</scrollstyle>
-	<wrapstyle>items</wrapstyle>
-	<layout>horizontal</layout>
+        <arrange>stack</arrange>
+        <align>top,hcenter</align>
+        <spacing>0</spacing>
+        <scrollstyle>free</scrollstyle>
+        <wrapstyle>items</wrapstyle>
+        <layout>horizontal</layout>
 
-	<area>560,40,-25,60</area>
-	<buttonarea>25,0,-25,100%</buttonarea>
+        <area>560,40,-25,60</area>
+        <buttonarea>25,0,-25,100%</buttonarea>
 
-	<statetype name="buttonitem">
-	    <area>0,0,400,100%</area>
-	    <minsize>50,100%</minsize>
+        <statetype name="buttonitem">
+            <area>0,0,400,100%</area>
+            <minsize>50,100%</minsize>
 
-	    <state name="selectedinactive">
-		<area>0,0,100%,100%</area>
-		<minsize>50,100%</minsize>
-		<group name="areagroup">
-		    <area>0,0,100%,100%</area>
-		    <minsize>50,100%</minsize>
+            <state name="selectedinactive">
+                <area>0,0,100%,100%</area>
+                <minsize>50,100%</minsize>
+                <group name="areagroup">
+                    <area>0,0,100%,100%</area>
+                    <minsize>50,100%</minsize>
 
-		    <shape name="recGroupShape">
-			<area>0,0,100%,100%</area>
-			<minsize>50,100%</minsize>
-			<type>roundbox</type>
-			<cornerradius>350</cornerradius>
-			<line color="#AAFFFF" alpha="196" width="3" />
-			<fill color="#000000" alpha="160" />
-		    </shape>
-		    <textarea name="buttontext">
-			<area>15,5,-15,-5</area>
-			<minsize>50,100%</minsize>
-			<extraleading>4</extraleading>
-			<align>center</align>
-			<cutdown>yes</cutdown>
-			<font>mysmall</font>
-			<alpha>255</alpha>
-		    </textarea>
-		</group>
-	    </state>
+                    <shape name="recGroupShape">
+                        <area>0,0,100%,100%</area>
+                        <minsize>50,100%</minsize>
+                        <type>roundbox</type>
+                        <cornerradius>350</cornerradius>
+                        <line color="#AAFFFF" alpha="196" width="3" />
+                        <fill color="#000000" alpha="160" />
+                    </shape>
+                    <textarea name="buttontext">
+                        <area>15,5,-15,-5</area>
+                        <minsize>50,100%</minsize>
+                        <extraleading>4</extraleading>
+                        <align>center</align>
+                        <cutdown>yes</cutdown>
+                        <font>mysmall</font>
+                        <alpha>255</alpha>
+                    </textarea>
+                </group>
+            </state>
 
-	    <state name="selectedactive" from="selectedinactive">
-		<group name="areagroup">
-		    <shape name="recGroupShape">
-			<line color="#AAFFFF" alpha="196" width="4" />
-		    </shape>
-		</group>
-	    </state>
+            <state name="selectedactive" from="selectedinactive">
+                <group name="areagroup">
+                    <shape name="recGroupShape">
+                        <line color="#AAFFFF" alpha="196" width="4" />
+                    </shape>
+                </group>
+            </state>
 
-	    <state name="inactive" from="selectedinactive">
-		<area>0,0,100%,100%</area>
-		<group name="areagroup">
-		    <area>0,5,100%,-5</area>
-		    <minsize>50,100%</minsize>
-		    <shape name="recGroupShape">
-			<area>0,0,100%,100%</area>
-			<minsize>50,100%</minsize>
-			<type>roundbox</type>
-			<line color="#00FFFF" alpha="96" width="3" />
-			<fill color="#000000" alpha="144" />
-			<cornerradius>15</cornerradius>
-		    </shape>
-		</group>
-	    </state>
+            <state name="inactive" from="selectedinactive">
+                <area>0,0,100%,100%</area>
+                <group name="areagroup">
+                    <area>0,5,100%,-5</area>
+                    <minsize>50,100%</minsize>
+                    <shape name="recGroupShape">
+                        <area>0,0,100%,100%</area>
+                        <minsize>50,100%</minsize>
+                        <type>roundbox</type>
+                        <line color="#00FFFF" alpha="96" width="3" />
+                        <fill color="#000000" alpha="144" />
+                        <cornerradius>15</cornerradius>
+                    </shape>
+                </group>
+            </state>
 
-	    <state name="active" from="inactive" />
+            <state name="active" from="inactive" />
 
-	</statetype>
+        </statetype>
 
-	<statetype name="upscrollarrow">
-	    <position>0,50%-10</position>
-	    <showempty>yes</showempty>
-	    <state type="full">
-		<imagetype name="lefton">
-		    <filename>Images/leftarrow-on.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
-	<statetype name="downscrollarrow">
-	    <position>100%-20,50%-10</position>
-	    <showempty>yes</showempty>
-	    <state type="full">
-		<imagetype name="righton">
-		    <filename>Images/rightarrow-on.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
+        <statetype name="upscrollarrow">
+            <position>0,50%-10</position>
+            <showempty>yes</showempty>
+            <state type="full">
+                <imagetype name="lefton">
+                    <filename>Images/leftarrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>100%-20,50%-10</position>
+            <showempty>yes</showempty>
+            <state type="full">
+                <imagetype name="righton">
+                    <filename>Images/rightarrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
 
     </buttonlist>
 
     <buttonlist name="groupsList">
-	<arrange>stack</arrange>
-	<align>bottom,left</align>
-	<area>35,0,460,800</area>
-	<buttonarea>20,0,-20,100%</buttonarea>
-	<scrollstyle>center</scrollstyle>
-	<wrapstyle>items</wrapstyle>
-	<spacing>0</spacing>
+        <arrange>stack</arrange>
+        <align>bottom,left</align>
+        <area>35,0,460,800</area>
+        <buttonarea>20,0,-20,100%</buttonarea>
+        <scrollstyle>center</scrollstyle>
+        <wrapstyle>items</wrapstyle>
+        <spacing>0</spacing>
 
-	<statetype name="buttonitem">
-	    <area>0,0,100%,100%</area>
+        <statetype name="buttonitem">
+            <area>0,0,100%,100%</area>
 
-<!--
-	<shape name="Border">
-	    <area>0,0,100%,100%</area>
-	    <type>box</type>
-	    <line color="#00FF00" alpha="255" width="0" />
-	</shape>
--->
+            <!--
+                <shape name="Border">
+                <area>0,0,100%,100%</area>
+                <type>box</type>
+                <line color="#00FF00" alpha="255" width="0" />
+                </shape>
+            -->
 
-	    <state name="inactive">
-		<area>20,0,-20,85</area>
+            <state name="inactive">
+                <area>20,0,-20,85</area>
 
-		<shape name="groupBorder">
-		    <area>0,0,100%,100%</area>
-		    <type>roundbox</type>
-		    <line color="#00FFFF" alpha="160" width="0" />
-		    <fill color="#000000" alpha="160" />
-		    <cornerradius>10</cornerradius>
-		</shape>
+                <shape name="groupBorder">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <line color="#00FFFF" alpha="160" width="0" />
+                    <fill color="#000000" alpha="160" />
+                    <cornerradius>10</cornerradius>
+                </shape>
 
-		<textarea name="buttontext">
-		    <area>10,5,-10,-5</area>
-		    <align>center</align>
-		    <font>mygroupsmall</font>
-		    <multiline>yes</multiline>
-		    <cutdown>yes</cutdown>
-		</textarea>
-	    </state>
+                <textarea name="buttontext">
+                    <area>10,5,-10,-5</area>
+                    <align>center</align>
+                    <font>mygroupsmall</font>
+                    <multiline>yes</multiline>
+                    <cutdown>yes</cutdown>
+                </textarea>
+            </state>
 
-	    <state name="active" from="inactive" />
+            <state name="active" from="inactive" />
 
-	    <state name="selectedinactive" from="inactive">
-		<area>0,0,100%,90</area>
-		<shape name="groupBorder">
-		    <area>5,0,-5,100%</area>
-		    <line color="#AAFFFF" alpha="160" width="0" /> 
-		</shape>
-		<textarea name="buttontext">
-		    <font>mygroupmedium</font>
-		</textarea>
-	    </state>
+            <state name="selectedinactive" from="inactive">
+                <area>0,0,100%,90</area>
+                <shape name="groupBorder">
+                    <area>5,0,-5,100%</area>
+                    <line color="#AAFFFF" alpha="160" width="0" /> 
+                </shape>
+                <textarea name="buttontext">
+                    <font>mygroupmedium</font>
+                </textarea>
+            </state>
 
-	    <state name="selectedactive" from="selectedinactive">
-		<area>0,0,100%,90</area>
+            <state name="selectedactive" from="selectedinactive">
+                <area>0,0,100%,90</area>
 
-		<shape name="groupBorder">
-		    <area>0,0,100%,100%</area>
-		    <type>roundbox</type>
-		    <line color="#AAFFFF" alpha="220" width="5" /> 
-		    <cornerradius>10</cornerradius>
-		</shape>
-	    </state>
-	</statetype>
+                <shape name="groupBorder">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <line color="#AAFFFF" alpha="220" width="5" /> 
+                    <cornerradius>10</cornerradius>
+                </shape>
+            </state>
+        </statetype>
 
-	<statetype name="upscrollarrow">
+        <statetype name="upscrollarrow">
             <position>100%-20,100%-100</position>
-	    <showempty>yes</showempty>
-	    <state type="full">
-		<imagetype name="upon">
-		    <filename>Images/uparrow-on.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
-	<statetype name="downscrollarrow">
-	    <position>100%-20,100%-70</position>
-	    <showempty>yes</showempty>
-	    <state type="full">
-		<imagetype name="dnon">
-		    <filename>Images/downarrow-on.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
+            <showempty>yes</showempty>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>Images/uparrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>100%-20,100%-70</position>
+            <showempty>yes</showempty>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>Images/downarrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
 
-	<searchposition>520,700</searchposition>
+        <searchposition>520,700</searchposition>
 
     </buttonlist>
 
     <group name="guideprogdetails">
-	<area>40,35,460,959</area>
+        <area>40,35,460,959</area>
 
-	<group name="titlegroup" from="baseMsgGroup">
-	    <area>0,0,100%,130</area>
+        <group name="titlegroup" from="baseMsgGroup">
+            <area>0,0,100%,130</area>
 
-	    <shape name="msgShape">
-		<line color="#00FFFF" alpha="160" width="0" />
-	    </shape>
-	    <textarea name="title" from="msgText">
-		<font>mymediumbold</font>
-	    </textarea>
-	</group>
+            <shape name="msgShape">
+                <line color="#00FFFF" alpha="160" width="0" />
+            </shape>
+            <textarea name="title" from="msgText">
+                <font>mymediumbold</font>
+            </textarea>
+        </group>
 
-	<group name="subtitlegroup" from="baseMsgGroup">
-	    <area>0,135,100%,115</area>
+        <group name="subtitlegroup" from="baseMsgGroup">
+            <area>0,135,100%,115</area>
 
-	    <shape name="msgShape">
-		<line color="#00FFFF" alpha="160" width="0" />
-	    </shape>
-	    <textarea name="subtitle" from="msgText">
-		<font>mysmallbold</font>
-	    </textarea>
-	</group>
+            <shape name="msgShape">
+                <line color="#00FFFF" alpha="160" width="0" />
+            </shape>
+            <textarea name="subtitle" from="msgText">
+                <font>mysmallbold</font>
+            </textarea>
+        </group>
 
-	<group name="wheregroup" from="baseMsgGroup">
-	    <area>0,255,100%,125</area>
-	    <shape name="msgShape">
-		<line color="#00FFFF" alpha="160" width="0" />
-	    </shape>
-	    <textarea name="channel" from="msgText">
-		<area>10,5,-10,40</area>
-		<font>mysmallnarrow</font>
-	    </textarea>
+        <group name="wheregroup" from="baseMsgGroup">
+            <area>0,255,100%,125</area>
+            <shape name="msgShape">
+                <line color="#00FFFF" alpha="160" width="0" />
+            </shape>
+            <textarea name="channel" from="msgText">
+                <area>10,5,-10,40</area>
+                <font>mysmallnarrow</font>
+            </textarea>
 
-	    <textarea name="timedate" from="msgText">
-		<area>5,40,-5,40</area>
-		<font>mysmallnarrow</font>
-	    </textarea>
+            <textarea name="timedate" from="msgText">
+                <area>5,40,-5,40</area>
+                <font>mysmallnarrow</font>
+            </textarea>
 
-	    <textarea name="originalairdate" from="msgText">
-		<area>5,77,-5,40</area>
-		<font>mysmallnarrow</font>
-		<template>(%1)</template>
-	    </textarea>
+            <textarea name="originalairdate" from="msgText">
+                <area>5,77,-5,40</area>
+                <font>mysmallnarrow</font>
+                <template>(%1)</template>
+            </textarea>
 
-	    <textarea name="year" from="msgText">
-		<area>5,77,-5,40</area>
-		<font>mysmallnarrow</font>
-		<template>(%1)</template>
-	    </textarea>
-	</group>
+            <textarea name="year" from="msgText">
+                <area>5,77,-5,40</area>
+                <font>mysmallnarrow</font>
+                <template>(%1)</template>
+            </textarea>
+        </group>
 
-	<group name="descgroup" from="baseMsgGroup">
-	    <area>0,385,100%,100%</area>
-	    
-	    <shape name="msgShape">
-		<line color="#00FFFF" alpha="160" width="0" />
-	    </shape>
-	    <textarea name="description" from="msgText">
-		<area>10,10,-10,-10</area>
-		<font>mysmall</font>
-		<align>left,top</align>
-		<template>%|RATING| %%|(STARS|) %%DESCRIPTION%</template>
-	    </textarea>
-	</group>
+        <group name="descgroup" from="baseMsgGroup">
+            <area>0,385,100%,100%</area>
+            
+            <shape name="msgShape">
+                <line color="#00FFFF" alpha="160" width="0" />
+            </shape>
+            <textarea name="description" from="msgText">
+                <area>10,10,-10,-10</area>
+                <font>mysmall</font>
+                <align>left,top</align>
+                <template>%|RATING| %%|(STARS|) %%DESCRIPTION%</template>
+            </textarea>
+        </group>
     </group>
 
     <statetype name="itemsSelectedState">
-	<area>0,0,100%,100%</area>
-	<minsize>100%,40</minsize>
-	<state name="default">
-	    <area>0,0,100%,100%</area>
-	    <minsize>100%,40</minsize>
-	    <shape name="statusborder">
-		<area>0,0,100%,100%</area>
-		<minsize>100%,40</minsize>
-		<type>roundbox</type>
-		<line color="#00FFFF" width="5" alpha="160" />
-		<fill color="#000000" alpha="160" />
-		<cornerradius>10</cornerradius>
-	    </shape>
-	</state>
-	<state name="normal" from="default" />
-	<state name="error" from="default">
-	    <shape name="statusborder">
-		<line color="#e43e3e" width="6" alpha="255"/>
-	    </shape>
-	</state>
-	<state name="warning" from="default">
-	    <shape name="statusborder">
-		<line color="#ff9147" width="5" alpha="255"/>
-	    </shape>
-	</state>
-	<state name="disabled" from="default">
-	    <shape name="statusborder">
-		<line color="#feffce" width="5" alpha="160" />
-	    </shape>
-	</state>
-	<state name="running" from="default">
-	    <shape name="statusborder">
-		<line color="#33bf33" width="5" alpha="255" />
-	    </shape>
-	</state>
-	<state name="marked" from="default">
-	    <shape name="statusborder">
-		<line color="#FFFF00" width="5" alpha="255" />
-	    </shape>
-	</state>
+        <area>0,0,100%,100%</area>
+        <minsize>100%,40</minsize>
+        <state name="default">
+            <area>0,0,100%,100%</area>
+            <minsize>100%,40</minsize>
+            <shape name="statusborder">
+                <area>0,0,100%,100%</area>
+                <minsize>100%,40</minsize>
+                <type>roundbox</type>
+                <line color="#00FFFF" width="5" alpha="160" />
+                <fill color="#000000" alpha="160" />
+                <cornerradius>10</cornerradius>
+            </shape>
+        </state>
+        <state name="normal" from="default" />
+        <state name="error" from="default">
+            <shape name="statusborder">
+                <line color="#e43e3e" width="6" alpha="255"/>
+            </shape>
+        </state>
+        <state name="warning" from="default">
+            <shape name="statusborder">
+                <line color="#ff9147" width="5" alpha="255"/>
+            </shape>
+        </state>
+        <state name="disabled" from="default">
+            <shape name="statusborder">
+                <line color="#feffce" width="5" alpha="160" />
+            </shape>
+        </state>
+        <state name="running" from="default">
+            <shape name="statusborder">
+                <line color="#33bf33" width="5" alpha="255" />
+            </shape>
+        </state>
+        <state name="marked" from="default">
+            <shape name="statusborder">
+                <line color="#FFFF00" width="5" alpha="255" />
+            </shape>
+        </state>
     </statetype>
 
     <group name="programStats">
-	<area>0,0,100%,100%</area>
+        <area>0,0,100%,100%</area>
 
-	<textarea name="timedate">
-	    <area>0,0,530,36</area>
-	    <align>left,vcenter</align>
-	    <font>mysmallsansgrey</font>
-	    <cutdown>no</cutdown>
-	</textarea>
-	
-	<textarea name="originalairdate">
-	    <area>520,0,230,35</area>
-	    <align>center</align>
-	    <font>mysmallnarrowgrey</font>
-	    <template>(%1)</template>
-	    <cutdown>no</cutdown>
-	</textarea>
+        <textarea name="timedate">
+            <area>0,0,530,36</area>
+            <align>left,vcenter</align>
+            <font>mysmallsansgrey</font>
+            <cutdown>no</cutdown>
+        </textarea>
+        
+        <textarea name="originalairdate">
+            <area>520,0,230,35</area>
+            <align>center</align>
+            <font>mysmallnarrowgrey</font>
+            <template>(%1)</template>
+            <cutdown>no</cutdown>
+        </textarea>
 
-	<textarea name="year">
-	    <area>520,0,230,35</area>
-	    <align>center</align>
-	    <font>mysmallnarrowgrey</font>
-	    <template>(%1)</template>
-	</textarea>
-	
-	<textarea name="lenmins">
-	    <area>750,0,150,35</area>
-	    <align>right,vcenter</align>
-	    <font>mysmallnarrowgrey</font>
-	    <template>%1</template>
-	</textarea>
+        <textarea name="year">
+            <area>520,0,230,35</area>
+            <align>center</align>
+            <font>mysmallnarrowgrey</font>
+            <template>(%1)</template>
+        </textarea>
+        
+        <textarea name="lenmins">
+            <area>750,0,150,35</area>
+            <align>right,vcenter</align>
+            <font>mysmallnarrowgrey</font>
+            <template>%1</template>
+        </textarea>
 
-	<textarea name="channel">
-	    <area>910,0,-15,40</area>
-	    <font>mysmallnarrowgrey</font>
-	    <align>right,vcenter</align>
-	</textarea>
+        <textarea name="channel">
+            <area>910,0,-15,40</area>
+            <font>mysmallnarrowgrey</font>
+            <align>right,vcenter</align>
+        </textarea>
     </group>
 
     <buttonlist name="itemsList">
-	<arrange>stack</arrange>
-	<align>bottom,left</align>
-	<area>535,130,-30,-100</area>
-	<buttonarea>25,0,100%,100%</buttonarea>
-	<wrapstyle>selection</wrapstyle>
-	<spacing>0</spacing>
+        <arrange>stack</arrange>
+        <align>bottom,left</align>
+        <area>535,130,-30,-100</area>
+        <buttonarea>25,0,100%,100%</buttonarea>
+        <wrapstyle>selection</wrapstyle>
+        <spacing>0</spacing>
 
-	<showscrollbar>yes</showscrollbar>
-<!--
-	<group name="bar" from="basescrollgroup">
-	    <area>0, 255, 20, 340</area>
-	</group>
--->
-	<statetype name="upscrollarrow">
-	    <area>0,100%-60,20,20</area>
-	    <state type="off">
-		<imagetype name="upoff">
-		    <filename>Images/uparrow-off.png</filename>
-		</imagetype>
-	    </state>
-	    <state type="full">
-		<imagetype name="upon">
-		    <filename>Images/uparrow-on.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
-	<statetype name="downscrollarrow">
-	    <area>0,100%-30,20,20</area>
-	    <state type="off">
-		<imagetype name="dnoff">
-		    <filename>Images/downarrow-off.png</filename>
-		</imagetype>
-	    </state>
-	    <state type="full">
-		<imagetype name="dnon">
-		    <filename>Images/downarrow-on.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
+        <showscrollbar>yes</showscrollbar>
+        <!--
+            <group name="bar" from="basescrollgroup">
+            <area>0, 255, 20, 340</area>
+            </group>
+        -->
+        <statetype name="upscrollarrow">
+            <area>0,100%-60,20,20</area>
+            <state type="off">
+                <imagetype name="upoff">
+                    <filename>Images/uparrow-off.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>Images/uparrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <area>0,100%-30,20,20</area>
+            <state type="off">
+                <imagetype name="dnoff">
+                    <filename>Images/downarrow-off.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>Images/downarrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
 
 
-	<statetype name="buttonitem">
-	    <area>0,0,100%,100%</area>
-	    <state name="inactive">
-		<area>0,0,100%,85</area>
-		
-		<statetype name="status">
-		    <area>0,0,100%,100%</area>
+        <statetype name="buttonitem">
+            <area>0,0,100%,100%</area>
+            <state name="inactive">
+                <area>0,0,100%,85</area>
+                
+                <statetype name="status">
+                    <area>0,0,100%,100%</area>
 
-		    <state name="default">
-			<area>0,0,100%,100%</area>
-			<shape name="statusborder">
-			    <area>9,0,-9,100%</area>
-			    <type>roundbox</type>
-			    <line color="#00FFFF" width="1" alpha="160" />
-			    <fill color="#000000" alpha="160" />
-			    <cornerradius>10</cornerradius>
-			</shape>
-		    </state>
-		    <state name="normal" from="default" />
-		    <state name="error" from="default">
-			<shape name="statusborder">
-			    <line color="#e43e3e" width="4" alpha="255" />
-			</shape>
-		    </state>
-		    <state name="warning" from="default">
-			<shape name="statusborder">
-			    <line color="#ff9147" width="4" alpha="255" />
-			</shape>
-		    </state>
-		    <state name="disabled" from="warning">
-			<shape name="statusborder">
-			    <line color="#feffce" width="2" alpha="160" />
-			</shape>
-		    </state>
-		    <state name="running" from="warning">
-			<shape name="statusborder">
-			    <line color="#33bf33" width="4" alpha="255" />
-			</shape>
-		    </state>
-		    <state name="marked" from="warning">
-			<shape name="statusborder">
-			    <line color="#FFFF00" width="3" alpha="160" />
-			</shape>
-		    </state>
-		</statetype>
-	    </state>
+                    <state name="default">
+                        <area>0,0,100%,100%</area>
+                        <shape name="statusborder">
+                            <area>9,0,-9,100%</area>
+                            <type>roundbox</type>
+                            <line color="#00FFFF" width="1" alpha="160" />
+                            <fill color="#000000" alpha="160" />
+                            <cornerradius>10</cornerradius>
+                        </shape>
+                    </state>
+                    <state name="normal" from="default" />
+                    <state name="error" from="default">
+                        <shape name="statusborder">
+                            <line color="#e43e3e" width="4" alpha="255" />
+                        </shape>
+                    </state>
+                    <state name="warning" from="default">
+                        <shape name="statusborder">
+                            <line color="#ff9147" width="4" alpha="255" />
+                        </shape>
+                    </state>
+                    <state name="disabled" from="warning">
+                        <shape name="statusborder">
+                            <line color="#feffce" width="2" alpha="160" />
+                        </shape>
+                    </state>
+                    <state name="running" from="warning">
+                        <shape name="statusborder">
+                            <line color="#33bf33" width="4" alpha="255" />
+                        </shape>
+                    </state>
+                    <state name="marked" from="warning">
+                        <shape name="statusborder">
+                            <line color="#FFFF00" width="3" alpha="160" />
+                        </shape>
+                    </state>
+                </statetype>
+            </state>
 
-	    <state name="active" from="inactive" />
+            <state name="active" from="inactive" />
 
-	    <state name="selectedinactive" from="inactive">
-		<area>0,0,100%,340</area>
-	    </state>
+            <state name="selectedinactive" from="inactive">
+                <area>0,0,100%,340</area>
+            </state>
 
-	    <state name="selectedactive" from="selectedinactive" >
-		<statetype name="status" from="itemsSelectedState" />
-	    </state>
-	</statetype>
+            <state name="selectedactive" from="selectedinactive" >
+                <statetype name="status" from="itemsSelectedState" />
+            </state>
+        </statetype>
     </buttonlist>
 
     <buttonlist name="episodeList" from="itemsList">
-	<statetype name="buttonitem">
-	    <state name="inactive">
-		<statetype name="jobstate">
-		    <area>2,0,30,45</area>
-		    <state name="recording">
-			<imagetype name="pulse">
-			    <position>12,10</position>
-			    <filename>Images/icons/recording.png</filename>
-			    <alphapulse min="48" max="255" change="2"/>
-			</imagetype>
-		    </state>
-		    <state name="transcoding" from="recording">
-			<imagetype name="pulse">
-			    <position>12,10</position>
-			    <filename>Images/icons/transcoding.png</filename>
-			    <alphapulse min="48" max="255" change="2"/>
-			</imagetype>
-		    </state>
-		</statetype>
+        <statetype name="buttonitem">
+            <state name="inactive">
+                <statetype name="jobstate">
+                    <area>2,0,30,45</area>
+                    <state name="recording">
+                        <imagetype name="pulse">
+                            <position>12,10</position>
+                            <filename>Images/icons/recording.png</filename>
+                            <alphapulse min="48" max="255" change="2"/>
+                        </imagetype>
+                    </state>
+                    <state name="transcoding" from="recording">
+                        <imagetype name="pulse">
+                            <position>12,10</position>
+                            <filename>Images/icons/transcoding.png</filename>
+                            <alphapulse min="48" max="255" change="2"/>
+                        </imagetype>
+                    </state>
+                </statetype>
 
-		<group name="progstats" from="programStats">
-		    <area>165,4,100%,40</area>
-		</group>
+                <group name="progstats" from="programStats">
+                    <area>165,4,100%,40</area>
+                </group>
 
-		<textarea name="titlesubtitle">
-		    <area>20,100%-42,-20,35</area>
-		    <align>left</align>
-		    <font>mymedium</font>
-		</textarea>
-	    </state>
+                <textarea name="titlesubtitle">
+                    <area>20,100%-42,-20,35</area>
+                    <align>left</align>
+                    <font>mymedium</font>
+                </textarea>
+            </state>
 
-	    <state name="active" from="inactive" />
+            <state name="active" from="inactive" />
 
-	    <state name="selectedinactive" from="inactive">
-		<area>0,0,100%,340</area>
+            <state name="selectedinactive" from="inactive">
+                <area>0,0,100%,340</area>
 
-		<group name="progstats" from="programStats">
-		    <area>165,10,100%,40</area>
-		</group>
+                <group name="progstats" from="programStats">
+                    <area>165,10,100%,40</area>
+                </group>
 
-		<textarea name="titlesubtitle">
-		    <area>0,0,0,0</area>
-		</textarea>
+                <textarea name="titlesubtitle">
+                    <area>0,0,0,0</area>
+                </textarea>
 
-		<textarea name="title">
-		    <area>20,45,-15,65</area>
-		    <align>left</align>
-		    <font>mylargebold</font>
-		    <cutdown>no</cutdown>
-		    <scroll direction="horizontal" />
-		</textarea>
-		<textarea name="subtitle">
-		    <area>60,88,-15,55</area>
-		    <align>left</align>
-		    <font>mymediumbold</font>
-		    <cutdown>no</cutdown>
-		    <scroll direction="horizontal" />
-		</textarea>
+                <textarea name="title">
+                    <area>20,45,-15,65</area>
+                    <align>left</align>
+                    <font>mylargebold</font>
+                    <cutdown>no</cutdown>
+                    <scroll direction="horizontal" />
+                </textarea>
+                <textarea name="subtitle">
+                    <area>60,88,-15,55</area>
+                    <align>left</align>
+                    <font>mymediumbold</font>
+                    <cutdown>no</cutdown>
+                    <scroll direction="horizontal" />
+                </textarea>
 
-		<textarea name="description">
-		    <align>left</align>
-		    <area>25,125,-25,-55</area>
-		    <font>mysmall</font>
-		    <multiline>yes</multiline>
-		    <cutdown>yes</cutdown>
-		    <template>%|RATING| %%|(STARS|) %%DESCRIPTION%</template>
-		</textarea>
-	    </state>
+                <textarea name="description">
+                    <align>left</align>
+                    <area>25,125,-25,-55</area>
+                    <font>mysmall</font>
+                    <multiline>yes</multiline>
+                    <cutdown>yes</cutdown>
+                    <template>%|RATING| %%|(STARS|) %%DESCRIPTION%</template>
+                </textarea>
+            </state>
 
-	    <state name="selectedactive" from="selectedinactive">
-		<statetype name="status" from="itemsSelectedState" />
+            <state name="selectedactive" from="selectedinactive">
+                <statetype name="status" from="itemsSelectedState" />
 
-		<statetype name="jobstate">
-		    <area>10,0,30,45</area>
-		</statetype>
+                <statetype name="jobstate">
+                    <area>10,0,30,45</area>
+                </statetype>
 
-		<textarea name="title">
-		    <position>20,50</position>
-		</textarea>
-		<textarea name="subtitle">
-		    <position>60,88</position>
-		</textarea>
+                <textarea name="title">
+                    <position>20,50</position>
+                </textarea>
+                <textarea name="subtitle">
+                    <position>60,88</position>
+                </textarea>
 
-		<textarea name="description">
-		    <area>25,125,100%,-45</area>
-		</textarea>
-	    </state>
-	</statetype>
+                <textarea name="description">
+                    <area>25,125,100%,-45</area>
+                </textarea>
+            </state>
+        </statetype>
     </buttonlist>
 
     <buttonlist name="ArtworkList" from="itemsList">
-	<area>0,0,100%,100%</area>
-	<buttonarea>25,0,100%,100%</buttonarea>
-	<align>vcenter</align>
-	<statetype name="buttonitem">
-	    <area>0,0,100%,100%</area>
-	    <state name="inactive">
-		<area>0,0,100%,180</area>
-		<imagetype name="buttonimage">
-		    <area>10,10,-10,-10</area>
-		    <preserveaspect>true</preserveaspect>
-		</imagetype>
-		<group name="urlgroup">
-		    <area>0,100%-58,-5,45</area>
-		    <minsize>10,45</minsize>
-		    <shape name="urlshape">
-			<area>5,5,-5,40</area>
-			<minsize>10,40</minsize>
-			<type>roundbox</type>
-			<cornerradius>15</cornerradius>
-			<fill color="#000000" alpha="160" />
-		    </shape>			
-		    <textarea name="buttontext">
-			<area>10,5,-10,40</area>
-			<minsize>10,43</minsize>
-			<align>right,vcenter</align>
-			<font>myverysmall</font>
-			<alpha>230</alpha>
-		    </textarea>
-		    <textarea name="url" from="buttontext" />
-		</group>
-		<textarea name="resolution">
-		    <area>100%-250,5,-10,35</area>
-		    <align>right,vcenter</align>
-		    <font>mysmall</font>
-		    <alpha>210</alpha>
-		</textarea>
-		<textarea name="info" from="resolution" />
-		<statetype name="nodetype">
-		    <area>0,0,100%,100%</area>
-		    <state name="folder">
-			<area>0,0,100%,100%</area>
-			<imagetype name="icon">
-			    <area>10,10,-10,-10</area>
-			    <preserveaspect>true</preserveaspect>
-			    <filename>Images/Graphite/folderopen.png</filename>
-			</imagetype>
-		    </state>
-		    <state name="upfolder">
-			<area>0,0,100%,100%</area>
-			<imagetype name="icon">
-			    <area>10,10,-10,-10</area>
-			    <preserveaspect>true</preserveaspect>
-			    <filename>Images/Graphite/mv_gallery_dir_up.png</filename>
-			</imagetype>
-		    </state>
-		    <state name="executable">
-			<area>10,10,75,85</area>
-			<imagetype name="icon" />
-		    </state>
-		    <state name="file">
-			<area>10,10,75,85</area>
-			<imagetype name="icon" />
-		    </state>
-		</statetype>
-	    </state>
-	    <state name="active" from="inactive" />
-	    <state name="selectedinactive" from="inactive">
-		<area>0,0,100%,360</area>
-		<imagetype name="buttonimage">
-		    <area>10,10,-10,-10</area>
-		    <preserveaspect>true</preserveaspect>
-		</imagetype>
-	    </state>
-	    <state name="selectedactive" from="selectedinactive">
-		<statetype name="status" from="itemsSelectedState" />
-	    </state>
-	</statetype>
-	<statetype name="upscrollarrow">
-	    <area>0,50%-25,20,20</area>
-	    <state type="off">
-	    </state>
-	    <state type="full">
-		<imagetype name="upon">
-		    <filename>Images/uparrow-on.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
-	<statetype name="downscrollarrow">
-	    <area>0,50%+5,20,20</area>
-	    <state type="off">
-	    </state>
-	    <state type="full">
-		<imagetype name="dnon">
-		    <filename>Images/downarrow-on.png</filename>
-		</imagetype>
-	    </state>
-	</statetype>
+        <area>0,0,100%,100%</area>
+        <buttonarea>25,0,100%,100%</buttonarea>
+        <align>vcenter</align>
+        <statetype name="buttonitem">
+            <area>0,0,100%,100%</area>
+            <state name="inactive">
+                <area>0,0,100%,180</area>
+                <imagetype name="buttonimage">
+                    <area>10,10,-10,-10</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <group name="urlgroup">
+                    <area>0,100%-58,-5,45</area>
+                    <minsize>10,45</minsize>
+                    <shape name="urlshape">
+                        <area>5,5,-5,40</area>
+                        <minsize>10,40</minsize>
+                        <type>roundbox</type>
+                        <cornerradius>15</cornerradius>
+                        <fill color="#000000" alpha="160" />
+                    </shape>                    
+                    <textarea name="buttontext">
+                        <area>10,5,-10,40</area>
+                        <minsize>10,43</minsize>
+                        <align>right,vcenter</align>
+                        <font>myverysmall</font>
+                        <alpha>230</alpha>
+                    </textarea>
+                    <textarea name="url" from="buttontext" />
+                </group>
+                <textarea name="resolution">
+                    <area>100%-250,5,-10,35</area>
+                    <align>right,vcenter</align>
+                    <font>mysmall</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <textarea name="info" from="resolution" />
+                <statetype name="nodetype">
+                    <area>0,0,100%,100%</area>
+                    <state name="folder">
+                        <area>0,0,100%,100%</area>
+                        <imagetype name="icon">
+                            <area>10,10,-10,-10</area>
+                            <preserveaspect>true</preserveaspect>
+                            <filename>Images/Graphite/folderopen.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="upfolder">
+                        <area>0,0,100%,100%</area>
+                        <imagetype name="icon">
+                            <area>10,10,-10,-10</area>
+                            <preserveaspect>true</preserveaspect>
+                            <filename>Images/Graphite/mv_gallery_dir_up.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="executable">
+                        <area>10,10,75,85</area>
+                        <imagetype name="icon" />
+                    </state>
+                    <state name="file">
+                        <area>10,10,75,85</area>
+                        <imagetype name="icon" />
+                    </state>
+                </statetype>
+            </state>
+            <state name="active" from="inactive" />
+            <state name="selectedinactive" from="inactive">
+                <area>0,0,100%,360</area>
+                <imagetype name="buttonimage">
+                    <area>10,10,-10,-10</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="selectedactive" from="selectedinactive">
+                <statetype name="status" from="itemsSelectedState" />
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <area>0,50%-25,20,20</area>
+            <state type="off">
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>Images/uparrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <area>0,50%+5,20,20</area>
+            <state type="off">
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>Images/downarrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
     </buttonlist>
 
     <group name="basematchgroup">
-	<area>0, 0, 100%, 70</area>
-	<minsize vanish="true">20,20</minsize>
+        <area>0, 0, 100%, 70</area>
+        <minsize vanish="true">20,20</minsize>
 
-	<shape name="msgShape">
-	    <area>0,0,100%,100%</area>
-	    <minsize vanish="true">20,20</minsize>
-	    <type>roundbox</type>
-	    <cornerradius>5</cornerradius>
-	    <fill color="#301530" alpha="200" />
-	    <line color="#000000" alpha="0" />
-	</shape>
+        <shape name="msgShape">
+            <area>0,0,100%,100%</area>
+            <minsize vanish="true">20,20</minsize>
+            <type>roundbox</type>
+            <cornerradius>5</cornerradius>
+            <fill color="#301530" alpha="200" />
+            <line color="#000000" alpha="0" />
+        </shape>
 
-	<textarea name="resulttext" from="basetextarea">
-	    <area>10,10,-10,-10</area>
-	    <minsize vanish="true">1,1</minsize>
-	    <multiline>no</multiline>
-	    <font>mysmall</font>
-	    <align>center</align>
-	    <template>%1 matches</template>
-	</textarea>
+        <textarea name="resulttext" from="basetextarea">
+            <area>10,10,-10,-10</area>
+            <minsize vanish="true">1,1</minsize>
+            <multiline>no</multiline>
+            <font>mysmall</font>
+            <align>center</align>
+            <template>%1 matches</template>
+        </textarea>
     </group>
 
     <group name="PopupGroup">
-	<area>0,0,100%,100%</area>
+        <area>0,0,100%,100%</area>
 
-	<shape name="dialogbackground" from="basewidgetshape">
-	    <area>0,0,100%,100%</area>
-	</shape>
+        <shape name="dialogbackground" from="basewidgetshape">
+            <area>0,0,100%,100%</area>
+        </shape>
 
-	<textarea name="title" from="basetextarea">
-	    <area>20,20,-20,35</area>
-	    <multiline>no</multiline>
-	    <align>center</align>
-	    <font>mymedium</font>
-	</textarea>
+        <textarea name="title" from="basetextarea">
+            <area>20,20,-20,35</area>
+            <multiline>no</multiline>
+            <align>center</align>
+            <font>mymedium</font>
+        </textarea>
 
-	<!--
-	    Allow messagearea to overlap list,because large messages
-	    go with short lists.
-	-->
-	<textarea name="messagearea" from="basetextarea">
-	    <area>20,10,-20,40%+10</area>
-	    <multiline>yes</multiline>
-	    <align>center</align>
-	</textarea>
+        <!--
+            Allow messagearea to overlap list,because large messages
+            go with short lists.
+        -->
+        <textarea name="messagearea" from="basetextarea">
+            <area>20,10,-20,40%+10</area>
+            <multiline>yes</multiline>
+            <align>center</align>
+        </textarea>
 
-	<buttonlist name="list" from="basepopupbuttonlist">
-	    <area>30,20%+30,-30,-10</area>
-	    <wrapstyle>selection</wrapstyle>
-	</buttonlist>
+        <buttonlist name="list" from="basepopupbuttonlist">
+            <area>30,20%+30,-30,-10</area>
+            <wrapstyle>selection</wrapstyle>
+        </buttonlist>
 
-	<animation trigger="AboutToShow">
-	    <section duration="100">
-		<verticalzoom start="0" end="100" />
-	    </section>
-	</animation>
-	<animation trigger="AboutToHide">
-	    <section duration="100">
-		<verticalzoom start="100" end="0" />
-	    </section>
-	</animation>
+        <animation trigger="AboutToShow">
+            <section duration="100">
+                <verticalzoom start="0" end="100" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="100">
+                <verticalzoom start="100" end="0" />
+            </section>
+        </animation>
     </group>
 
 
     <!-- Global Windows -->
 
     <window name="backgroundwindow">
-	<imagetype name="backgroundimage">
-	    <filename>Backgrounds/background.png</filename>
-	</imagetype>
+        <imagetype name="backgroundimage">
+            <filename>Backgrounds/background.png</filename>
+        </imagetype>
     </window>
 
     <!-- Home -> [Esc]
     -->
     <window name="MythPopupBox">
-	<area>-1,-1,700,850</area>
-	<group name="items" from="PopupGroup" />
+        <area>-1,-1,700,850</area>
+        <group name="items" from="PopupGroup" />
     </window>
 
     <!-- Home -> Manage Recordings -> Upcoming Recordings
          -> <select a show and hit enter>
     -->
     <window name="MythDialogBox">
-	<area>-1,-1,1000,1000</area>
-	<group name="items" from="PopupGroup" />
+        <area>-1,-1,1000,1000</area>
+        <group name="items" from="PopupGroup" />
     </window>
 
     <!-- Home -> Setup -> Theme Chooser -> 'M'(enu)
          -> Refresh Downloadable Themes
     -->
     <window name="MythBusyDialog">
-	<area>-1,700,732,200</area>
+        <area>-1,700,732,200</area>
 
-	<shape name="dialogbackground" from="basewidgetshape">
-	    <area>0,0,100%,100%</area>
-	    <line color="#AA90FF" width="6" alpha="128"/>
-	</shape>
+        <shape name="dialogbackground" from="basewidgetshape">
+            <area>0,0,100%,100%</area>
+            <line color="#AA90FF" width="6" alpha="128"/>
+        </shape>
 
-	<imagetype name="animation">
-	    <position>10,154</position>
-	    <filepattern low="1" high="72">Images/Busy/busy%1.png</filepattern>
-	    <delay>70</delay>
-	</imagetype>
+        <imagetype name="animation">
+            <position>10,154</position>
+            <filepattern low="1" high="72">Images/Busy/busy%1.png</filepattern>
+            <delay>70</delay>
+        </imagetype>
 
-	<textarea name="message" from="basetextarea">
-	    <area>30,20,-30,120</area>
-	    <multiline>yes</multiline>
-	    <align>center</align>
-	</textarea>
+        <textarea name="message" from="basetextarea">
+            <area>30,20,-30,120</area>
+            <multiline>yes</multiline>
+            <align>center</align>
+        </textarea>
     </window>
 
     <!-- mythtv-setup -> Channel Editor -> Icon Download
-	 -> Download all icons...
-or
+         -> Download all icons...
+         or
          Home -> Setup -> Media Settings -> Music Tools -> Scan for New Music
     -->
     <window name="MythProgressDialog">
-	<area>-1,700,900,200</area>
+        <area>-1,700,900,200</area>
 
-	<shape name="dialogbackground" from="basewidgetshape">
-	    <area>0,0,100%,100%</area>
-	    <line color="#AA90FF" width="6" alpha="128"/>
-	</shape>
+        <shape name="dialogbackground" from="basewidgetshape">
+            <area>0,0,100%,100%</area>
+            <line color="#AA90FF" width="6" alpha="128"/>
+        </shape>
 
-	<progressbar name="progressbar" from="baseprogressbar">
-	    <position>150,130</position>
-	</progressbar>
+        <progressbar name="progressbar" from="baseprogressbar">
+            <position>150,130</position>
+        </progressbar>
 
-	<textarea name="message" from="basetextarea">
-	    <area>30,20,-30,110</area>
-	    <multiline>yes</multiline>
-	    <align>center</align>
-	</textarea>
+        <textarea name="message" from="basetextarea">
+            <area>30,20,-30,110</area>
+            <multiline>yes</multiline>
+            <align>center</align>
+        </textarea>
 
-	<textarea name="progresstext" from="message">
-	    <area>20,140,-20,55</area>
-	    <value>0%</value>
-	</textarea>
+        <textarea name="progresstext" from="message">
+            <area>20,140,-20,55</area>
+            <value>0%</value>
+        </textarea>
     </window>
 
 
     <!-- Home -> Manage Recordings -> Schedule Recordings -> Search Lists
-	 -> Time -> 'M'(enu) -> Choose Search Phrase
+         -> Time -> 'M'(enu) -> Choose Search Phrase
     -->
     <window name="MythTimeInputDialog">
         <area>50,50,600,460</area>
 
-	<shape name="dialogbackground" from="basewidgetshape">
-	    <area>0,0,100%,100%</area>
-	</shape>
+        <shape name="dialogbackground" from="basewidgetshape">
+            <area>0,0,100%,100%</area>
+        </shape>
 
         <textarea name="message" from="basetextarea">
             <area>30,20,-30,100</area>
             <font>mymedium</font>
             <align>top,hcenter</align>
-	    <multiline>yes</multiline>
+            <multiline>yes</multiline>
             <value>Select Time</value>
         </textarea>
 
@@ -2239,196 +2239,196 @@ or
         </buttonlist>
 
         <button name="ok" from="varbuttonright">
-	    <value>OK</value>
-	</button>
+            <value>OK</value>
+        </button>
 
-	<animation trigger="AboutToShow">
-	    <section duration="100">
-		<verticalzoom start="0" end="100" />
-	    </section>
-	</animation>
-	<animation trigger="AboutToHide">
-	    <section duration="100">
-		<verticalzoom start="100" end="0" />
-	    </section>
-	</animation>
+        <animation trigger="AboutToShow">
+            <section duration="100">
+                <verticalzoom start="0" end="100" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="100">
+                <verticalzoom start="100" end="0" />
+            </section>
+        </animation>
     </window>
 
     <!-- 'E'(dit) a recording or schedule -> Metadata Options
-	 -> Perform Query <with invalid info>
+         -> Perform Query <with invalid info>
     -->
     <window name="MythConfirmationDialog">
-	<area>-1,-1,800,500</area>
+        <area>-1,-1,800,500</area>
 
-	<shape name="dialogbackground" from="basewidgetshape">
-	    <area>0,0,100%,100%</area>
-	</shape>
+        <shape name="dialogbackground" from="basewidgetshape">
+            <area>0,0,100%,100%</area>
+        </shape>
 
-	<textarea name="message" from="basetextarea">
-	    <area>30,30,-30,-100</area>
-	    <align>allcenter</align>
-	    <multiline>yes</multiline>
-	    <cutdown>no</cutdown>
-	</textarea>
+        <textarea name="message" from="basetextarea">
+            <area>30,30,-30,-100</area>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+            <cutdown>no</cutdown>
+        </textarea>
 
-	<button name="ok" from="varbuttonright">
-	    <value>OK</value>
-	</button>
+        <button name="ok" from="varbuttonright">
+            <value>OK</value>
+        </button>
 
-	<button name="cancel" from="varbuttonleft">
-	    <value>Cancel</value>
-	</button>
+        <button name="cancel" from="varbuttonleft">
+            <value>Cancel</value>
+        </button>
 
-	<animation trigger="AboutToShow">
-	    <section duration="100">
-		<verticalzoom start="0" end="100" />
-	    </section>
-	</animation>
-	<animation trigger="AboutToHide">
-	    <section duration="100">
-		<verticalzoom start="100" end="0" />
-	    </section>
-	</animation>
+        <animation trigger="AboutToShow">
+            <section duration="100">
+                <verticalzoom start="0" end="100" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="100">
+                <verticalzoom start="100" end="0" />
+            </section>
+        </animation>
     </window>
 
     <!-- 'E'(dit) a recording or schedule -> Storage Options
-	 -> "Rec. Group: Create a new recording group"
+         -> "Rec. Group: Create a new recording group"
     -->
     <window name="MythTextInputDialog">
-	<area>-1,-1,700,350</area>
+        <area>-1,-1,700,350</area>
 
-	<shape name="dialogbackground" from="basewidgetshape">
-	    <area>0,0,100%,100%</area>
-	</shape>
+        <shape name="dialogbackground" from="basewidgetshape">
+            <area>0,0,100%,100%</area>
+        </shape>
 
-	<textarea name="message" from="basetextarea">
-	    <area>30,20,-30,110</area>
-	    <font>mysmall</font>
-	    <multiline>yes</multiline>
-	    <align>center</align>
-	</textarea>
+        <textarea name="message" from="basetextarea">
+            <area>30,20,-30,110</area>
+            <font>mysmall</font>
+            <multiline>yes</multiline>
+            <align>center</align>
+        </textarea>
 
-	<textedit name="input" from="basewidetextedit">
-	    <position>50,140</position>
-	</textedit>
+        <textedit name="input" from="basewidetextedit">
+            <position>50,140</position>
+        </textedit>
 
-	<button name="ok" from="varbuttonright">
-	    <value>OK</value>
-	</button>
+        <button name="ok" from="varbuttonright">
+            <value>OK</value>
+        </button>
 
-	<animation trigger="AboutToShow">
-	    <section duration="100">
-		<verticalzoom start="0" end="100" />
-	    </section>
-	</animation>
-	<animation trigger="AboutToHide">
-	    <section duration="100">
-		<verticalzoom start="100" end="0" />
-	    </section>
-	</animation>
+        <animation trigger="AboutToShow">
+            <section duration="100">
+                <verticalzoom start="0" end="100" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="100">
+                <verticalzoom start="100" end="0" />
+            </section>
+        </animation>
     </window>
 
     <!-- Home -> Media Library -> Watch Recordings -> 'S'(earch)
     -->
     <window name="MythSearchListDialog">
-	<area>30,700,480,250</area>
+        <area>30,700,480,250</area>
 
-	<shape name="dialogbackground" from="basewidgetshape">
-	    <area>0,0,100%,100%</area>
-	    <line color="#AA90FF" width="6" alpha="128"/>
-	</shape>
+        <shape name="dialogbackground" from="basewidgetshape">
+            <area>0,0,100%,100%</area>
+            <line color="#AA90FF" width="6" alpha="128"/>
+        </shape>
 
-	<textedit name="searchedit" from="basecentertextedit">
-	    <area>15,20,-15,70</area>
-	</textedit>
+        <textedit name="searchedit" from="basecentertextedit">
+            <area>15,20,-15,70</area>
+        </textedit>
 
-	<button name="nextbutton" from="varbuttonright">
-	    <area>20,100%-80,-20,70</area>
-	    <value>Next</value>
-	</button>
+        <button name="nextbutton" from="varbuttonright">
+            <area>20,100%-80,-20,70</area>
+            <value>Next</value>
+        </button>
 
-	<button name="prevbutton" from="varbuttonleft">
-	    <area>20,100%-80,-20,70</area>
-	    <value>Prev</value>
-	</button>
+        <button name="prevbutton" from="varbuttonleft">
+            <area>20,100%-80,-20,70</area>
+            <value>Prev</value>
+        </button>
 
-	<statetype name="searchstate">
-	    <area>25,100,100%,-100</area>
-	    <state name="found">
-		<area>0,0,100%,100%</area>
-		<textarea name="message" from="basetextarea">
-		    <area>0,0,-25,55</area>
-		    <font>mysmall</font>
-		    <align>center</align>
-		    <value>Results found!</value>
-		</textarea>
-	    </state>
-	    <state name="notfound" from="found">
-		<textarea name="message">
-		    <value>No results found.</value>
-		</textarea>
-	    </state>
-	</statetype>
+        <statetype name="searchstate">
+            <area>25,100,100%,-100</area>
+            <state name="found">
+                <area>0,0,100%,100%</area>
+                <textarea name="message" from="basetextarea">
+                    <area>0,0,-25,55</area>
+                    <font>mysmall</font>
+                    <align>center</align>
+                    <value>Results found!</value>
+                </textarea>
+            </state>
+            <state name="notfound" from="found">
+                <textarea name="message">
+                    <value>No results found.</value>
+                </textarea>
+            </state>
+        </statetype>
 
-	<animation trigger="AboutToShow">
-	    <section duration="100">
-		<verticalzoom start="0" end="100" />
-	    </section>
-	</animation>
-	<animation trigger="AboutToHide">
-	    <section duration="100">
-		<verticalzoom start="100" end="0" />
-	    </section>
-	</animation>
+        <animation trigger="AboutToShow">
+            <section duration="100">
+                <verticalzoom start="0" end="100" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="100">
+                <verticalzoom start="100" end="0" />
+            </section>
+        </animation>
     </window>
 
     <!-- Home -> Manage Recordings -> Schedule Recordings
          -> Search Words -> Stored Searches
     -->
     <window name="MythSearchDialog">
-	<area>-1,-1,640,840</area>
+        <area>-1,-1,640,840</area>
 
-	<group name="dialog">
-	    <area>0,0,100%,100%</area>
+        <group name="dialog">
+            <area>0,0,100%,100%</area>
 
-	    <shape name="dialogbackground" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            <shape name="dialogbackground" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-	    <textarea name="title" from="basetextarea">
-		<area>20,20,-20,100</area>
-		<font>mymedium</font>
-		<align>center</align>
-		<multiline>yes</multiline>
-	    </textarea>
+            <textarea name="title" from="basetextarea">
+                <area>20,20,-20,100</area>
+                <font>mymedium</font>
+                <align>center</align>
+                <multiline>yes</multiline>
+            </textarea>
 
-	    <textedit name="input" from="basetextedit">
-		<area>50,140,-50,70</area>
-	    </textedit>
+            <textedit name="input" from="basetextedit">
+                <area>50,140,-50,70</area>
+            </textedit>
 
-	    <buttonlist name="itemlist" from="basepopupbuttonlist">
-		<area>20,220,-20,-100</area>
-	    </buttonlist>
-	</group>
+            <buttonlist name="itemlist" from="basepopupbuttonlist">
+                <area>20,220,-20,-100</area>
+            </buttonlist>
+        </group>
 
-	<button name="ok" from="varbuttonright">
-	    <value>OK</value>
-	</button>
+        <button name="ok" from="varbuttonright">
+            <value>OK</value>
+        </button>
 
-	<button name="cancel" from="varbuttonleft">
-	    <value>Cancel</value>
-	</button>
+        <button name="cancel" from="varbuttonleft">
+            <value>Cancel</value>
+        </button>
 
-	<animation trigger="AboutToShow">
-	    <section duration="100">
-		<verticalzoom start="0" end="100" />
-	    </section>
-	</animation>
-	<animation trigger="AboutToHide">
-	    <section duration="100">
-		<verticalzoom start="100" end="0" />
-	    </section>
-	</animation>
+        <animation trigger="AboutToShow">
+            <section duration="100">
+                <verticalzoom start="0" end="100" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="100">
+                <verticalzoom start="100" end="0" />
+            </section>
+        </animation>
     </window>
 
     <!-- Start watching a show -->
@@ -2453,147 +2453,147 @@ or
     </window>
 
     <!-- 'E'(dit) a recording or schedule (that has multiple matches)
-	 -> Metadata Options -> [Perform Query] 
+         -> Metadata Options -> [Perform Query] 
     -->
     <window name="MythMetadataResults">
-	<area>530,35,1360,960</area>
+        <area>530,35,1360,960</area>
 
-	<shape name="shape">
-	    <area>0,0,100%,100%</area>
-	    <type>box</type>
-	    <fill color="#000000" alpha="230" />
-	    <line color="#000000" alpha="230" width="-1" />
-	</shape>
+        <shape name="shape">
+            <area>0,0,100%,100%</area>
+            <type>box</type>
+            <fill color="#000000" alpha="230" />
+            <line color="#000000" alpha="230" width="-1" />
+        </shape>
 
-	<buttonlist name="results" from="itemsList">
-	    <area>10,10,-10,-10</area>
-	    <align>vcenter</align>
-	    <statetype name="upscrollarrow">
-		<area>0,50%-22,20,20</area>
-	    </statetype>
-	    <statetype name="downscrollarrow">
-		<area>0,50%+2,20,20</area>
-	    </statetype>
-	    <statetype name="buttonitem">
-		<area>0,0,100%,100%</area>
+        <buttonlist name="results" from="itemsList">
+            <area>10,10,-10,-10</area>
+            <align>vcenter</align>
+            <statetype name="upscrollarrow">
+                <area>0,50%-22,20,20</area>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <area>0,50%+2,20,20</area>
+            </statetype>
+            <statetype name="buttonitem">
+                <area>0,0,100%,100%</area>
 
-		<state name="active">
-		    <area>0,0,100%,180</area>
+                <state name="active">
+                    <area>0,0,100%,180</area>
 
-		    <imagetype name="buttonimage">
-			<area>100%-490,15,-15,-15</area>
-			<preserveaspect>true</preserveaspect>
-		    </imagetype>
+                    <imagetype name="buttonimage">
+                        <area>100%-490,15,-15,-15</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
 
-		    <textarea name="title">
-			<area>20,4,-500,-50</area>
-			<align>center</align>
-			<font>mymediumbold</font>
-			<multiline>yes</multiline>
-			<template>%TITLE%% - |SUBTITLE%</template>
-		    </textarea>
+                    <textarea name="title">
+                        <area>20,4,-500,-50</area>
+                        <align>center</align>
+                        <font>mymediumbold</font>
+                        <multiline>yes</multiline>
+                        <template>%TITLE%% - |SUBTITLE%</template>
+                    </textarea>
 
-		    <textarea name="releasedate" from="basetextarea">
-			<area>15,100%-47,400,50</area>
-			<template>Released %1</template>
-		    </textarea>
-		    <textarea name="userrating" from="basetextarea">
-			<area>430,100%-47,-500,45</area>
-			<multiline>no</multiline>
-			<align>vcenter,right</align>
-			<alpha>210</alpha>
-			<template>User Rating: %1</template>
-		    </textarea>
+                    <textarea name="releasedate" from="basetextarea">
+                        <area>15,100%-47,400,50</area>
+                        <template>Released %1</template>
+                    </textarea>
+                    <textarea name="userrating" from="basetextarea">
+                        <area>430,100%-47,-500,45</area>
+                        <multiline>no</multiline>
+                        <align>vcenter,right</align>
+                        <alpha>210</alpha>
+                        <template>User Rating: %1</template>
+                    </textarea>
 
-		</state>
-		<state name="selectedactive" from="active">
-		    <area>0,0,100%,360</area>
+                </state>
+                <state name="selectedactive" from="active">
+                    <area>0,0,100%,360</area>
 
-		    <statetype name="status" from="itemsSelectedState" />
+                    <statetype name="status" from="itemsSelectedState" />
 
-		    <imagetype name="buttonimage">
-			<area>100%-490,15,-15,-15</area>
-		    </imagetype>
+                    <imagetype name="buttonimage">
+                        <area>100%-490,15,-15,-15</area>
+                    </imagetype>
 
-		    <textarea name="title">
-			<area>20,5,-500,100</area>
-			<font>mylargebold</font>
-			<multiline>yes</multiline>
-		    </textarea>
+                    <textarea name="title">
+                        <area>20,5,-500,100</area>
+                        <font>mylargebold</font>
+                        <multiline>yes</multiline>
+                    </textarea>
 
-		    <textarea name="description" from="basetextarea">
-			<area>30,105,-500,-50</area>
-			<multiline>yes</multiline>
-		    </textarea>
-		</state>
-	    </statetype>
-	</buttonlist>
+                    <textarea name="description" from="basetextarea">
+                        <area>30,105,-500,-50</area>
+                        <multiline>yes</multiline>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
     </window>
     
     <!-- 'E'(dit) a recording or schedule -> Metadata Options
-	 -> Find Coverart Online
+         -> Find Coverart Online
     -->
     <window name="MythArtworkResults">
-	<area>530,35,1360,960</area>
+        <area>530,35,1360,960</area>
 
-	<shape name="layershape">
-	    <area>0,0,100%,100%</area>
-	    <fill style="gradient">
-		<gradient start="#000000" end="#303030" alpha="240"
-			  direction="horizontal"  />
-	    </fill>
-	</shape>
+        <shape name="layershape">
+            <area>0,0,100%,100%</area>
+            <fill style="gradient">
+                <gradient start="#000000" end="#303030" alpha="240"
+                          direction="horizontal"  />
+            </fill>
+        </shape>
 
-	<buttonlist name="results" from="ArtworkList">
-	    <area>20,20,-20,-20</area>
-	</buttonlist>
+        <buttonlist name="results" from="ArtworkList">
+            <area>20,20,-20,-20</area>
+        </buttonlist>
     </window>
 
     <!-- 'E'(dit) a recording or schedule -> Metadata Options
-	 -> Select Local Coverart
+         -> Select Local Coverart
     -->
     <window name="MythFileBrowser">
 
-	<imagetype name="fanart">
-	    <area>0,0,100%,100%</area>
-	    <filename>Backgrounds/</filename>
-	</imagetype>
+        <imagetype name="fanart">
+            <area>0,0,100%,100%</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
 
-	<group name="path" from="baseModeGroup">
-	    <area>70,25,-70,60</area>
-	    <textarea name="fullpath" from="pagemode">
-		<font>mysmall</font>
-	    </textarea>
-	</group>
+        <group name="path" from="baseModeGroup">
+            <area>70,25,-70,60</area>
+            <textarea name="fullpath" from="pagemode">
+                <font>mysmall</font>
+            </textarea>
+        </group>
 
-	<group name="results">
-	    <area>20,80,1150,-30</area>
-	    <buttonlist name="filelist" from="ArtworkList" />
-	</group>
+        <group name="results">
+            <area>20,80,1150,-30</area>
+            <buttonlist name="filelist" from="ArtworkList" />
+        </group>
 
-	<button name="back" from="varbuttoncenter">
-	    <area>1200,200,-10,70</area>
-	    <value>Go up a level</value>
-	</button>
+        <button name="back" from="varbuttoncenter">
+            <area>1200,200,-10,70</area>
+            <value>Go up a level</value>
+        </button>
 
-	<button name="home" from="back">
-	    <position>1200,280</position>
-	    <value>Home</value>
-	</button>
+        <button name="home" from="back">
+            <position>1200,280</position>
+            <value>Home</value>
+        </button>
 
-	<button name="cancel" from="back">
-	    <position>1200,360</position>
-	    <value>Cancel</value>
-	</button>
+        <button name="cancel" from="back">
+            <position>1200,360</position>
+            <value>Cancel</value>
+        </button>
 
-	<button name="ok" from="back">
-	    <position>1200,440</position>
-	    <value>OK</value>
-	</button>
+        <button name="ok" from="back">
+            <position>1200,440</position>
+            <value>OK</value>
+        </button>
 
-	<textedit name="location" from="basewidetextedit">
-	    <area>1200,700,-30,70</area>
-	</textedit>
+        <textedit name="location" from="basewidetextedit">
+            <area>1200,700,-30,70</area>
+        </textedit>
     </window>
 
 </mythuitheme>

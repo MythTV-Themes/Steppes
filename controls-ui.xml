@@ -3,12 +3,12 @@
 <mythuitheme>
 
     <!-- Home -> Setup -> Edit Keys
-	 -> <select one of four key boxes, hit enter>
+         -> <select one of four key boxes, hit enter>
     -->
     <window name="keygrabpopup">
         <area>-1,550,520,250</area>
 
-	<shape name="background" from="basewidgetshape" />
+        <shape name="background" from="basewidgetshape" />
 
         <textarea name="message" from="basetextarea">
             <area>40,20,-40,-110</area>
@@ -29,59 +29,59 @@
     <window name="controls">
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Edit Keys</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Edit Keys</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="dialog">
-	    <area>50%-640,50,1280,-150</area>
+        <group name="dialog">
+            <area>50%-640,50,1280,-150</area>
 
-	    <shape name="background" from="basewidgetshape" />
+            <shape name="background" from="basewidgetshape" />
 
-	    <textarea name="leftdesc" from="basetextarea">
-		<area>20,20,600,40</area>
-		<value>Contexts</value>
-		<align>center</align>
-	    </textarea>
+            <textarea name="leftdesc" from="basetextarea">
+                <area>20,20,600,40</area>
+                <value>Contexts</value>
+                <align>center</align>
+            </textarea>
 
-	    <buttonlist name="leftlist" from="basebuttonlist">
-		<area>20,60,600,-100</area>
-	    </buttonlist>
+            <buttonlist name="leftlist" from="basebuttonlist">
+                <area>20,60,600,-100</area>
+            </buttonlist>
 
-	    <textarea name="rightdesc" from="leftdesc">
-		<area>100%-620,20,600,40</area>
-		<value>Actions</value>
-	    </textarea>
+            <textarea name="rightdesc" from="leftdesc">
+                <area>100%-620,20,600,40</area>
+                <value>Actions</value>
+            </textarea>
 
-	    <buttonlist name="rightlist" from="leftlist">
-		<area>100%-620,60,600,-100</area>
-	    </buttonlist>
+            <buttonlist name="rightlist" from="leftlist">
+                <area>100%-620,60,600,-100</area>
+            </buttonlist>
 
-	    <button name="action_0" from="varbuttoncenter">
-		<area>50,100%-80,280,70</area>
-		<value>None</value>
-	    </button>
-	    <button name="action_1" from="varbuttoncenter">
-		<area>350,100%-80,280,70</area>
-		<value>None</value>
-	    </button>
-	    <button name="action_2" from="varbuttoncenter">
-		<area>650, 100%-80, 280, 70</area>
-		<value>None</value>
-	    </button>
-	    <button name="action_3" from="varbuttoncenter">
-		<area>950, 100%-80, 280, 70</area>
-		<value>None</value>
-	    </button>
+            <button name="action_0" from="varbuttoncenter">
+                <area>50,100%-80,280,70</area>
+                <value>None</value>
+            </button>
+            <button name="action_1" from="varbuttoncenter">
+                <area>350,100%-80,280,70</area>
+                <value>None</value>
+            </button>
+            <button name="action_2" from="varbuttoncenter">
+                <area>650, 100%-80, 280, 70</area>
+                <value>None</value>
+            </button>
+            <button name="action_3" from="varbuttoncenter">
+                <area>950, 100%-80, 280, 70</area>
+                <value>None</value>
+            </button>
 
-	</group>
+        </group>
 
-	<group name="msg" from="baseMsgGroup">
-	    <textarea name="description" from="msgText" />
-	</group>
+        <group name="msg" from="baseMsgGroup">
+            <textarea name="description" from="msgText" />
+        </group>
 
     </window>
 

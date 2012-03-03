@@ -4,78 +4,78 @@
 <mythuitheme>
 
     <group name="VideoExtraGroup">
-	<!--
-	    <area>0,50,1345,100%</area>
-	-->
-	<area>0,50,100%,100%</area>
-	<minsize shrink="short" vanish="true">100%,110</minsize>
+        <!--
+            <area>0,50,1345,100%</area>
+        -->
+        <area>0,50,100%,100%</area>
+        <minsize shrink="short" vanish="true">100%,110</minsize>
 
-	<textarea name="subtitle">
-	    <area>100,0,-30,40</area>
-	    <minsize shrink="short" vanish="true">100%,40</minsize>
-	    <align>left,vcenter</align>
-	    <font>mymedium</font>
-	</textarea>
+        <textarea name="subtitle">
+            <area>100,0,-30,40</area>
+            <minsize shrink="short" vanish="true">100%,40</minsize>
+            <align>left,vcenter</align>
+            <font>mymedium</font>
+        </textarea>
 
-	<textarea name="description">
-	    <area>15,35,-15,100%-135</area>
-	    <align>top,left</align>
-	    <minsize shrink="short" vanish="true">100%,1</minsize>
-	    <font>mysmall</font>
-	    <multiline>yes</multiline>
-	    <cutdown>yes</cutdown>
-	    <template>%|(STARS|) %%DESCRIPTION%</template>
-	</textarea>
+        <textarea name="description">
+            <area>15,35,-15,100%-135</area>
+            <align>top,left</align>
+            <minsize shrink="short" vanish="true">100%,1</minsize>
+            <font>mysmall</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <template>%|(STARS|) %%DESCRIPTION%</template>
+        </textarea>
 
-	<group name="bufferzone">
-	    <area>0,0,100%,100%</area>
-	    <group name="castgroup">
-		<area>10,100%-140,-10,100%-45</area>
-		<minsize vanish="true">100%,10</minsize>
+        <group name="bufferzone">
+            <area>0,0,100%,100%</area>
+            <group name="castgroup">
+                <area>10,100%-140,-10,100%-45</area>
+                <minsize vanish="true">100%,10</minsize>
 
-		<shape name="castshape">
-		    <area>0,0,100%,100%</area>
-		    <minsize vanish="true">100%,10</minsize>
-		    <type>roundbox</type>
-		    <line color="#000000" alpha="0" width="0" />
-		    <fill color="#300530" alpha="180" />
-		    <cornerradius>10</cornerradius>
-		</shape>
+                <shape name="castshape">
+                    <area>0,0,100%,100%</area>
+                    <minsize vanish="true">100%,10</minsize>
+                    <type>roundbox</type>
+                    <line color="#000000" alpha="0" width="0" />
+                    <fill color="#300530" alpha="180" />
+                    <cornerradius>10</cornerradius>
+                </shape>
 
-		<textarea name="cast" from="basetextarea">
-		    <area>10,2,-10,-2</area>
-		    <minsize shrink="short" vanish="true">100%,10</minsize>
-		    <align>bottom,hcenter</align>
-		    <font>myverysmallnarrowgrey</font>
-		    <multiline>yes</multiline>
-		</textarea>
-	    </group>
-	</group>
+                <textarea name="cast" from="basetextarea">
+                    <area>10,2,-10,-2</area>
+                    <minsize shrink="short" vanish="true">100%,10</minsize>
+                    <align>bottom,hcenter</align>
+                    <font>myverysmallnarrowgrey</font>
+                    <multiline>yes</multiline>
+                </textarea>
+            </group>
+        </group>
 
-	<textarea name="rating">
-	    <area>100%-200,100%-40,-15,30</area>
-	    <minsize shrink="short" vanish="true">1,1</minsize>
-	    <align>right,top</align>
-	    <font>myverysmall</font>
-	</textarea>
+        <textarea name="rating">
+            <area>100%-200,100%-40,-15,30</area>
+            <minsize shrink="short" vanish="true">1,1</minsize>
+            <align>right,top</align>
+            <font>myverysmall</font>
+        </textarea>
 
-	<textarea name="length" from="rating">
-	    <area>100%-400,100%-40,200,30</area>
-	</textarea>
+        <textarea name="length" from="rating">
+            <area>100%-400,100%-40,200,30</area>
+        </textarea>
 
-	<textarea name="userrating" from="rating">
-	    <area>10,100%-40,200,30</area>
-	    <align>left,top</align>
-	    <template>User Rating: %1</template>
-	</textarea>
+        <textarea name="userrating" from="rating">
+            <area>10,100%-40,200,30</area>
+            <align>left,top</align>
+            <template>User Rating: %1</template>
+        </textarea>
 
-	<textarea name="director">
-	    <area>420,100%-40,-420,30</area>
-	    <minsize shrink="short" vanish="true">1,1</minsize>
-	    <font>myverysmall</font>
-	    <align>top,hcenter</align>
-	    <template>Directed by %1</template>
-	</textarea>
+        <textarea name="director">
+            <area>420,100%-40,-420,30</area>
+            <minsize shrink="short" vanish="true">1,1</minsize>
+            <font>myverysmall</font>
+            <align>top,hcenter</align>
+            <template>Directed by %1</template>
+        </textarea>
 
     </group>
 

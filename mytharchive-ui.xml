@@ -8,448 +8,448 @@
     <window name="selectdestination">
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Select Destination</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Select Destination</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="dialog">
-	    <area>500,120,-500,600</area>
+        <group name="dialog">
+            <area>500,120,-500,600</area>
 
-	    <shape name="background" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            <shape name="background" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-	    <textarea name="destination" from="labeltext">
-		<position>20,20</position>
-		<value>Select Destination:</value>
-	    </textarea>
+            <textarea name="destination" from="labeltext">
+                <position>20,20</position>
+                <value>Select Destination:</value>
+            </textarea>
 
-	    <buttonlist name="destination_selector" from="basemediumselector">
-		<position>280,20</position>
-	    </buttonlist>
+            <buttonlist name="destination_selector" from="basemediumselector">
+                <position>280,20</position>
+            </buttonlist>
 
-	    <textarea name="freespace_label" from="labeltext">
-		<area>600,20,150,70</area>
-		<value>Free Space:</value>
-	    </textarea>
+            <textarea name="freespace_label" from="labeltext">
+                <area>600,20,150,70</area>
+                <value>Free Space:</value>
+            </textarea>
 
-	    <textarea name="freespace_text" from="basetextarea">
-		<area>770,20,200,70</area>
-	    </textarea>
+            <textarea name="freespace_text" from="basetextarea">
+                <area>770,20,200,70</area>
+            </textarea>
 
-	    <group name="resultgroup">
-		<area>80,90,700,90</area>
-		<minsize vanish="true">1,25</minsize>
+            <group name="resultgroup">
+                <area>80,90,700,90</area>
+                <minsize vanish="true">1,25</minsize>
 
-		<shape name="msgShape">
-		    <area>0,0,100%,100%</area>
-		    <minsize vanish="true">1,25</minsize>
-		    <type>roundbox</type>
-		    <cornerradius>5</cornerradius>
-		    <fill color="#301530" alpha="200" />
-		    <line color="#000000" alpha="0" />
-		</shape>
+                <shape name="msgShape">
+                    <area>0,0,100%,100%</area>
+                    <minsize vanish="true">1,25</minsize>
+                    <type>roundbox</type>
+                    <cornerradius>5</cornerradius>
+                    <fill color="#301530" alpha="200" />
+                    <line color="#000000" alpha="0" />
+                </shape>
 
-		<textarea name="destination_text" from="basetextarea">
-		    <area>10,10,-10,-10</area>
-		    <minsize vanish="true" shrink="short">1,25</minsize>
-		    <multiline>yes</multiline>
-		    <font>mysmall</font>
-		    <align>center</align>
-		</textarea>
-	    </group>
+                <textarea name="destination_text" from="basetextarea">
+                    <area>10,10,-10,-10</area>
+                    <minsize vanish="true" shrink="short">1,25</minsize>
+                    <multiline>yes</multiline>
+                    <font>mysmall</font>
+                    <align>center</align>
+                </textarea>
+            </group>
 
-	    <textedit name="filename_edit" from="basewidetextedit">
-		<position>80,200</position>
-	    </textedit>
+            <textedit name="filename_edit" from="basewidetextedit">
+                <position>80,200</position>
+            </textedit>
 
-	    <button name="find_button" from="varbuttonleft">
-		<area>700,200,-5,70</area>
-		<value>Find</value>
-	    </button>
+            <button name="find_button" from="varbuttonleft">
+                <area>700,200,-5,70</area>
+                <value>Find</value>
+            </button>
 
-	    <checkbox name="makeisoimage_check" from="basecheckbox">
-		<position>280,300</position>
-	    </checkbox>
+            <checkbox name="makeisoimage_check" from="basecheckbox">
+                <position>280,300</position>
+            </checkbox>
 
-	    <textarea name="makeISO" from="labelcheckbox">
-		<position>320,300</position>
-		<value>Make ISO Image</value>
-	    </textarea>
+            <textarea name="makeISO" from="labelcheckbox">
+                <position>320,300</position>
+                <value>Make ISO Image</value>
+            </textarea>
 
-	    <checkbox name="burntodvdr_check" from="basecheckbox">
-		<position>280,370</position>
-	    </checkbox>
+            <checkbox name="burntodvdr_check" from="basecheckbox">
+                <position>280,370</position>
+            </checkbox>
 
-	    <textarea name="burntodvdr_text" from="makeISO">
-		<position>320,370</position>
-		<value>Burn to DVD</value>
-	    </textarea>
+            <textarea name="burntodvdr_text" from="makeISO">
+                <position>320,370</position>
+                <value>Burn to DVD</value>
+            </textarea>
 
-	    <checkbox name="erasedvdrw_check" from="basecheckbox">
-		<position>280,440</position>
-	    </checkbox>
+            <checkbox name="erasedvdrw_check" from="basecheckbox">
+                <position>280,440</position>
+            </checkbox>
 
-	    <textarea name="erasedvdrw_text" from="makeISO">
-		<position>320,440</position>
-		<value>Force Overwrite of DVD-RW Media</value>
-	    </textarea>
+            <textarea name="erasedvdrw_text" from="makeISO">
+                <position>320,440</position>
+                <value>Force Overwrite of DVD-RW Media</value>
+            </textarea>
 
-	    <group name="buttons">
-		<area>50%, 100%-80, 100%, 70</area>
-		<button name="next_button" from="varbuttonleft">
-		    <area>100%-285, 0, 250, 100%</area>
-		    <value>Next</value>
-		</button>
+            <group name="buttons">
+                <area>50%, 100%-80, 100%, 70</area>
+                <button name="next_button" from="varbuttonleft">
+                    <area>100%-285, 0, 250, 100%</area>
+                    <value>Next</value>
+                </button>
 
-		<button name="prev_button" from="varbuttonright">
-		    <area>100%-540, 0, 250, 100%</area>
-		    <value>Prev</value>
-		</button>
-	    </group>
+                <button name="prev_button" from="varbuttonright">
+                    <area>100%-540, 0, 250, 100%</area>
+                    <value>Prev</value>
+                </button>
+            </group>
 
-	    <button name="cancel_button" from="varbuttonleft">
-		<value>Cancel</value>
-	    </button>
+            <button name="cancel_button" from="varbuttonleft">
+                <value>Cancel</value>
+            </button>
 
-	</group>
+        </group>
     </window>
 
     <!-- Home -> Optical Disks -> Archive Files -> Create DVD
-	 -> Next -> Next -> Add Recording
+         -> Next -> Next -> Add Recording
     -->
     <window name="recording_selector">
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Select Recordings</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Select Recordings</value>
+                </textarea>
+            </group>
+        </group>
 
-	<buttonlist name="category_selector" from="groupsList" />
+        <buttonlist name="category_selector" from="groupsList" />
 
-	<buttonlist name="recordinglist" from="episodeList">
-	    <statetype name="buttonitem">
-		<state name="inactive">
-		    <shape name="checkbg">
-			<area>12,15,26,26</area>
-			<fill color="#000000" alpha="200" />
-			<line color="#AAFFFF" alpha="64" width="2" />
-		    </shape>
-		    <statetype name="buttoncheck" from="basebuttoncheck" />
+        <buttonlist name="recordinglist" from="episodeList">
+            <statetype name="buttonitem">
+                <state name="inactive">
+                    <shape name="checkbg">
+                        <area>12,15,26,26</area>
+                        <fill color="#000000" alpha="200" />
+                        <line color="#AAFFFF" alpha="64" width="2" />
+                    </shape>
+                    <statetype name="buttoncheck" from="basebuttoncheck" />
 
-		    <textarea name="filesize_str">
-			<area>1080,100%-40,-20,40</area>
-			<font>mysmallgrey</font>
-			<align>right</align>
-		    </textarea>
+                    <textarea name="filesize_str">
+                        <area>1080,100%-40,-20,40</area>
+                        <font>mysmallgrey</font>
+                        <align>right</align>
+                    </textarea>
 
-		    <textarea name="s00e00" from="filesize_str">
-			<area>950,100%-40,225,40</area>
-		    </textarea>
-		</state>
+                    <textarea name="s00e00" from="filesize_str">
+                        <area>950,100%-40,225,40</area>
+                    </textarea>
+                </state>
 
-		<state name="active" from="inactive" />
+                <state name="active" from="inactive" />
 
-		<state name="selectedinactive">
-		    <area>0,0,100%,340</area>
+                <state name="selectedinactive">
+                    <area>0,0,100%,340</area>
 
-		    <shape name="checkbg">
-			<area>12,15,26,26</area>
-			<fill color="#000000" alpha="200" />
-			<line color="#AAFFFF" alpha="64" width="2" />
-		    </shape>
-		    <statetype name="buttoncheck" from="basebuttoncheck" />
+                    <shape name="checkbg">
+                        <area>12,15,26,26</area>
+                        <fill color="#000000" alpha="200" />
+                        <line color="#AAFFFF" alpha="64" width="2" />
+                    </shape>
+                    <statetype name="buttoncheck" from="basebuttoncheck" />
 
-		    <textarea name="filesize_str">
-			<area>1080,100%-40,-20,40</area>
-			<font>mysmallgrey</font>
-			<align>right</align>
-		    </textarea>
+                    <textarea name="filesize_str">
+                        <area>1080,100%-40,-20,40</area>
+                        <font>mysmallgrey</font>
+                        <align>right</align>
+                    </textarea>
 
-		    <textarea name="s00e00" from="filesize_str">
-			<area>950,100%-40,225,40</area>
-		    </textarea>
+                    <textarea name="s00e00" from="filesize_str">
+                        <area>950,100%-40,225,40</area>
+                    </textarea>
 
-		    <statetype name="cutlist">
-			<area>100%-72,10,64,32</area>
-			<state name="yes">
-			    <imagetype name="yes">
-				<filename>Images/icons/cutlist.png</filename>
-			    </imagetype>
-			</state>
-			<state name="no" />
-		    </statetype>
-		</state>
+                    <statetype name="cutlist">
+                        <area>100%-72,10,64,32</area>
+                        <state name="yes">
+                            <imagetype name="yes">
+                                <filename>Images/icons/cutlist.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="no" />
+                    </statetype>
+                </state>
 
-		<state name="selectedactive" from="selectedinactive">
-		    <statetype name="status" from="itemsSelectedState" />
-		    <statetype name="jobstate">
-			<area>10,0,30,45</area>
-		    </statetype>
-		</state>
-	    </statetype>
-	</buttonlist>
+                <state name="selectedactive" from="selectedinactive">
+                    <statetype name="status" from="itemsSelectedState" />
+                    <statetype name="jobstate">
+                        <area>10,0,30,45</area>
+                    </statetype>
+                </state>
+            </statetype>
+        </buttonlist>
 
-	<button name="ok_button" from="varbuttoncenter">
-	    <area>48,830,434,70</area>
-	    <value>OK</value>
-	</button>
+        <button name="ok_button" from="varbuttoncenter">
+            <area>48,830,434,70</area>
+            <value>OK</value>
+        </button>
 
-	<button name="cancel_button" from="varbuttoncenter">
-	    <area>48,920,434,70</area>
-	    <value>Cancel</value>
-	</button>
-	
+        <button name="cancel_button" from="varbuttoncenter">
+            <area>48,920,434,70</area>
+            <value>Cancel</value>
+        </button>
+        
     </window>
 
     <!-- Home -> Optical Disks -> Archive Files -> Create DVD
-	 -> Next -> Next -> Add File
+         -> Next -> Next -> Add File
     -->
     <window name="file_selector">
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>File Finder</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>File Finder</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="dialog">
-	    <area>100,50,-100,-100</area>
+        <group name="dialog">
+            <area>100,50,-100,-100</area>
 
-	    <shape name="background" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            <shape name="background" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-	    <textedit name="location_edit" from="basewidetextedit">
-		<area>30,20,-420,70</area>
-		<textarea name="text">
-		    <align>left,vcenter</align>
-		</textarea>
-	    </textedit>
+            <textedit name="location_edit" from="basewidetextedit">
+                <area>30,20,-420,70</area>
+                <textarea name="text">
+                    <align>left,vcenter</align>
+                </textarea>
+            </textedit>
 
-	    <group name="navbuttons">
-		<!-- varbuttons auto indent 35, so compensate -->
-		<area>100%-410, 20, -20, 70</area>
+            <group name="navbuttons">
+                <!-- varbuttons auto indent 35, so compensate -->
+                <area>100%-410, 20, -20, 70</area>
 
-		<button name="back_button" from="varbuttonleft">
-		    <area>0, 0, 100%, 100%</area>
-		    <value>Back</value>
-		</button>
-	    
-		<button name="home_button" from="varbuttonright">
-		    <area>0, 0, 100%, 100%</area>
-		    <value>Home</value>
-		</button>
-	    </group>
+                <button name="back_button" from="varbuttonleft">
+                    <area>0, 0, 100%, 100%</area>
+                    <value>Back</value>
+                </button>
+                
+                <button name="home_button" from="varbuttonright">
+                    <area>0, 0, 100%, 100%</area>
+                    <value>Home</value>
+                </button>
+            </group>
 
-	    <buttonlist name="filelist" from="basechecklist">
-		<area>20,100,-20,-90</area>
-		<spacing>2</spacing>
-		<wrapstyle>items</wrapstyle>
+            <buttonlist name="filelist" from="basechecklist">
+                <area>20,100,-20,-90</area>
+                <spacing>2</spacing>
+                <wrapstyle>items</wrapstyle>
 
-		<statetype name="buttonitem">
-		    <state name="active">
-			<imagetype name="buttonimage">
-			    <area>12,15,26,26</area>
-			</imagetype>
-			<textarea name="buttontext">
-			    <area>50,5,-160,-5</area>
-			</textarea>
-			<textarea name="size" from="buttontext">
-			    <area>100%-150,5,-10,-5</area>
-			    <align>right,vcenter</align>
-			</textarea>
-		    </state>
-		    <state name="selectedinactive" from="active" />
-		    <state name="selectedactive" from="selectedinactive">
-			<shape name="background"
-			       from="baseselectedbuttonshape" />
-		    </state>
-		</statetype>
-	    </buttonlist>
+                <statetype name="buttonitem">
+                    <state name="active">
+                        <imagetype name="buttonimage">
+                            <area>12,15,26,26</area>
+                        </imagetype>
+                        <textarea name="buttontext">
+                            <area>50,5,-160,-5</area>
+                        </textarea>
+                        <textarea name="size" from="buttontext">
+                            <area>100%-150,5,-10,-5</area>
+                            <align>right,vcenter</align>
+                        </textarea>
+                    </state>
+                    <state name="selectedinactive" from="active" />
+                    <state name="selectedactive" from="selectedinactive">
+                        <shape name="background"
+                               from="baseselectedbuttonshape" />
+                    </state>
+                </statetype>
+            </buttonlist>
 
-	    <button name="ok_button" from="varbuttonright">
-		<value>OK</value>
-	    </button>
+            <button name="ok_button" from="varbuttonright">
+                <value>OK</value>
+            </button>
 
-	    <button name="cancel_button" from="varbuttonleft">
-		<value>Cancel</value>
-	    </button>
-	    
-	</group>
+            <button name="cancel_button" from="varbuttonleft">
+                <value>Cancel</value>
+            </button>
+            
+        </group>
 
     </window>
 
     <!-- Home -> Optical Disks -> Archive Files -> Create DVD
-	 -> Next -> Next -> Add Video
+         -> Next -> Next -> Add Video
     -->
     <window name="video_selector">
-	<group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-		<textarea name="text">
-		    <value>Select Videos</value>
-		</textarea>
-	    </group>
-	</group>
+        <group name="PageHeading" from="basePageHeading">
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Select Videos</value>
+                </textarea>
+            </group>
+        </group>
 
-	<buttonlist name="category_selector" from="headingList" />
+        <buttonlist name="category_selector" from="headingList" />
 
-	<group name="dialog">
-	    <area>520,120,-100,-100</area>
+        <group name="dialog">
+            <area>520,120,-100,-100</area>
 
-	    <shape name="background" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            <shape name="background" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-	    <textarea name="warning_text" from="basetextarea">
-		<area>50,200,1180,40</area>
-		<align>allcenter</align>
-		<value>No videos available</value>
-	    </textarea>
+            <textarea name="warning_text" from="basetextarea">
+                <area>50,200,1180,40</area>
+                <align>allcenter</align>
+                <value>No videos available</value>
+            </textarea>
 
-	    <buttonlist name="videolist" from="basechecklist">
-		<area>20,20,-20,-100</area>
-		<wrapstyle>items</wrapstyle>
+            <buttonlist name="videolist" from="basechecklist">
+                <area>20,20,-20,-100</area>
+                <wrapstyle>items</wrapstyle>
 
-		<statetype name="buttonitem">
-		    <state name="active">
-			<imagetype name="buttonimage">
-			    <area>12,15,26,26</area>
-			</imagetype>
-			<textarea name="buttontext">
-			    <area>50,5,-160,-5</area>
-			</textarea>
-			<textarea name="size" from="buttontext">
-			    <area>100%-150,5,-10,-5</area>
-			    <align>right,vcenter</align>
-			</textarea>
-		    </state>
-		    <state name="selectedinactive" from="active" />
-		    <state name="selectedactive" from="selectedinactive">
-			<shape name="background"
-			       from="baseselectedbuttonshape" />
-		    </state>
-		</statetype>
-	    </buttonlist>
+                <statetype name="buttonitem">
+                    <state name="active">
+                        <imagetype name="buttonimage">
+                            <area>12,15,26,26</area>
+                        </imagetype>
+                        <textarea name="buttontext">
+                            <area>50,5,-160,-5</area>
+                        </textarea>
+                        <textarea name="size" from="buttontext">
+                            <area>100%-150,5,-10,-5</area>
+                            <align>right,vcenter</align>
+                        </textarea>
+                    </state>
+                    <state name="selectedinactive" from="active" />
+                    <state name="selectedactive" from="selectedinactive">
+                        <shape name="background"
+                               from="baseselectedbuttonshape" />
+                    </state>
+                </statetype>
+            </buttonlist>
 
-	    <button name="ok_button" from="varbuttonright">
-		<value>OK</value>
-	    </button>
+            <button name="ok_button" from="varbuttonright">
+                <value>OK</value>
+            </button>
 
-	    <button name="cancel_button" from="varbuttonleft">
-		<value>Cancel</value>
-	    </button>
-	</group>
+            <button name="cancel_button" from="varbuttonleft">
+                <value>Cancel</value>
+            </button>
+        </group>
 
-	<group name="progdetails" from="guideprogdetails">
-	    <area>40,35,460,765</area>
-	    <group name="titlegroup">
-		<textarea name="videotitle" from="title" />
-	    </group>
-	    <group name="subtitlegroup">
-		<textarea name="subtitle_text" from="subtitle" />
-	    </group>
-	    <group name="wheregroup">
-		<textarea name="filesize" from="channel" />
-		<textarea name="starttime_text" from="timedate" />
-		<textarea name="parentallevel_text" from="originalairdate">
-		    <template>Parental level: %1</template>
-		</textarea>
-	    </group>
-	    <group name="descgroup">
-		<textarea name="videoplot" from="description">
-		    <area>10,10,-10,-10</area>
-		</textarea>
-	    </group>
+        <group name="progdetails" from="guideprogdetails">
+            <area>40,35,460,765</area>
+            <group name="titlegroup">
+                <textarea name="videotitle" from="title" />
+            </group>
+            <group name="subtitlegroup">
+                <textarea name="subtitle_text" from="subtitle" />
+            </group>
+            <group name="wheregroup">
+                <textarea name="filesize" from="channel" />
+                <textarea name="starttime_text" from="timedate" />
+                <textarea name="parentallevel_text" from="originalairdate">
+                    <template>Parental level: %1</template>
+                </textarea>
+            </group>
+            <group name="descgroup">
+                <textarea name="videoplot" from="description">
+                    <area>10,10,-10,-10</area>
+                </textarea>
+            </group>
 
-	    <!-- Work around to get rid of some garbage -->	    
-	    <textarea name="title">
-		<area>0,0,0,0</area>
-	    </textarea>
-	</group>
-	<group name="previewgroup">
-	    <area>48,802,434,255</area>
-	    
-	    <shape name="previewShape">
-		<area>0,0,100%,100%</area>
-		<type>roundbox</type>
-		<cornerradius>5</cornerradius>
-		<fill color="#555555" alpha="255" />
-		<line color="#FFFFFF" alpha="160" width="8" />
-	    </shape>
-	    
-	    <imagetype name="cover_image">
-		<area>59,813,412,230</area>
-		<preserveaspect>true</preserveaspect>
-	    </imagetype>
-	</group>
+            <!-- Work around to get rid of some garbage -->         
+            <textarea name="title">
+                <area>0,0,0,0</area>
+            </textarea>
+        </group>
+        <group name="previewgroup">
+            <area>48,802,434,255</area>
+            
+            <shape name="previewShape">
+                <area>0,0,100%,100%</area>
+                <type>roundbox</type>
+                <cornerradius>5</cornerradius>
+                <fill color="#555555" alpha="255" />
+                <line color="#FFFFFF" alpha="160" width="8" />
+            </shape>
+            
+            <imagetype name="cover_image">
+                <area>59,813,412,230</area>
+                <preserveaspect>true</preserveaspect>
+            </imagetype>
+        </group>
     </window>
 
     <!-- Home -> Optical Disks -> Archive Files -> Archive Utilities
-	 -> Show Log Viewer
+         -> Show Log Viewer
     -->
     <window name="logviewer">
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Log Viewer</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Log Viewer</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="dialog">
-	    <area>50,40,-50,-100</area>
+        <group name="dialog">
+            <area>50,40,-50,-100</area>
 
-	    <shape name="dialogbackground" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-	    </shape>	
+            <shape name="dialogbackground" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>    
 
-	    <buttonlist name="loglist" from="basepopupbuttonlist">
-		<area>50,20,-50,-320</area>
-	    </buttonlist>
+            <buttonlist name="loglist" from="basepopupbuttonlist">
+                <area>50,20,-50,-320</area>
+            </buttonlist>
 
-	    <group name="details">
-		<area>30,100%-300,-30,-120</area>
+            <group name="details">
+                <area>30,100%-300,-30,-120</area>
 
-		<shape name="bottombackground" from="basebackground">
-		    <area>0,0,100%,100%</area>
-		</shape>
-		
-		<textarea name="logitem_text" from="basetextarea">
-		    <area>10,10,-10,-10</area>
-		    <multiline>yes</multiline>
-		</textarea>
-	    </group>
+                <shape name="bottombackground" from="basebackground">
+                    <area>0,0,100%,100%</area>
+                </shape>
+                
+                <textarea name="logitem_text" from="basetextarea">
+                    <area>10,10,-10,-10</area>
+                    <multiline>yes</multiline>
+                </textarea>
+            </group>
 
-	    <group name="buttons">
-		<area>0, 100%-80, 100%, 70</area>
+            <group name="buttons">
+                <area>0, 100%-80, 100%, 70</area>
 
-		<button name="update_button" from="varbuttonright">
-		    <area>50%-380, 0, 250, 100%</area>
-		    <value>Update</value>
-		</button>
+                <button name="update_button" from="varbuttonright">
+                    <area>50%-380, 0, 250, 100%</area>
+                    <value>Update</value>
+                </button>
 
-		<button name="cancel_button" from="varbuttoncenter">
-		    <area>50%-125, 0, 250, 100%</area>
-		    <value>Cancel</value>
-		</button>
+                <button name="cancel_button" from="varbuttoncenter">
+                    <area>50%-125, 0, 250, 100%</area>
+                    <value>Cancel</value>
+                </button>
 
-		<button name="exit_button" from="varbuttonleft">
-		    <area>50%+130, 0, 250, 100%</area>
-		    <value>Exit</value>
-		</button>
-	    </group>
+                <button name="exit_button" from="varbuttonleft">
+                    <area>50%+130, 0, 250, 100%</area>
+                    <value>Exit</value>
+                </button>
+            </group>
 
-	</group>
+        </group>
 
     </window>
 

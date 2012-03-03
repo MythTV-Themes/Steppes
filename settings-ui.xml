@@ -7,47 +7,47 @@
     -->
     <window name="rawsettingseditor">
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="heading" from="text">
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="heading" from="text">
+                </textarea>
+            </group>
+        </group>
 
-	<group name="listgroup">
+        <group name="listgroup">
             <area>70,30,720,960</area>
-	    
-	    <shape name="dialogbackground" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            
+            <shape name="dialogbackground" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-	    <buttonlist name="settings" from="basepopupbuttonlist">
-		<area>20,10,-20,-10</area>
-	    </buttonlist>
-	</group>
+            <buttonlist name="settings" from="basepopupbuttonlist">
+                <area>20,10,-20,-10</area>
+            </buttonlist>
+        </group>
 
-	<group name="inputgroup">
+        <group name="inputgroup">
             <area>900,550,760,300</area>
 
-	    <shape name="dialogbackground" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            <shape name="dialogbackground" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-	    <textarea name="label-text" from="labelcheckbox">
-		<area>20,20,-20,70</area>
-	    </textarea>
+            <textarea name="label-text" from="labelcheckbox">
+                <area>20,20,-20,70</area>
+            </textarea>
 
-	    <textedit name="settingvalue" from="basewidetextedit">
-		<position>80,100</position>
-	    </textedit>
+            <textedit name="settingvalue" from="basewidetextedit">
+                <position>80,100</position>
+            </textedit>
 
-	    <button name="cancel" from="varbuttonleft">
-		<value>Cancel</value>
-	    </button>
+            <button name="cancel" from="varbuttonleft">
+                <value>Cancel</value>
+            </button>
 
-	    <button name="save" from="varbuttonright">
-		<value>Save</value>
-	    </button>
-	</group>
+            <button name="save" from="varbuttonright">
+                <value>Save</value>
+            </button>
+        </group>
     </window>
 
     <!-- Home -> Setup -> Theme Chooser
@@ -56,19 +56,19 @@
 
         <shape name="background">
             <area>0,0,100%,100%</area>
-	    <fill style="gradient">
-		<gradient start="#000000" end="#302040" alpha="255"
-			  direction="diagonal"  />
-	    </fill>
+            <fill style="gradient">
+                <gradient start="#000000" end="#302040" alpha="255"
+                          direction="diagonal"  />
+            </fill>
         </shape>
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Theme Chooser</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Theme Chooser</value>
+                </textarea>
+            </group>
+        </group>
 
         <shape name="preview-shape">
             <area>60,40,1320,760</area>
@@ -113,41 +113,41 @@
             <cutdown>yes</cutdown>
         </textarea>
 
-	<buttonlist name="themes">
+        <buttonlist name="themes">
             <area>1390,40,-45,-100</area>
-	    <arrange>stack</arrange>
-	    <align>left,vcenter</align>
-	    <buttonarea>25,0,100%,100%</buttonarea>
-	    <wrapstyle>selection</wrapstyle>
-	    <spacing>0</spacing>
+            <arrange>stack</arrange>
+            <align>left,vcenter</align>
+            <buttonarea>25,0,100%,100%</buttonarea>
+            <wrapstyle>selection</wrapstyle>
+            <spacing>0</spacing>
 
             <statetype name="buttonitem">
-		<area>0,0,100%,100%</area>
+                <area>0,0,100%,100%</area>
                 <state name="active">
                     <area>0,0,100%,110</area>
 
                     <statetype name="themestatus">
-			<area>0,0,100%,100%</area>
+                        <area>0,0,100%,100%</area>
 
-			<state name="default">
-			    <area>0,0,100%,100%</area>
-			    <shape name="statusborder">
-				<area>17,0,-17,100%</area>
-				<type>roundbox</type>
-				<line color="#00FFFF" width="1" alpha="160" />
-				<fill color="#000000" alpha="150" />
-				<cornerradius>10</cornerradius>
-			    </shape>
-			</state>
-			<state name="normal" from="default" />
-			<state name="uptodate" from="default" />
-			<state name="updateavailable" from="default">
-			    <shape name="statusborder">
-				<area>16,0,-16,100%</area>
-				<line color="#ff9147" width="4" alpha="255" />
-			    </shape>
-			</state>
-		    </statetype>
+                        <state name="default">
+                            <area>0,0,100%,100%</area>
+                            <shape name="statusborder">
+                                <area>17,0,-17,100%</area>
+                                <type>roundbox</type>
+                                <line color="#00FFFF" width="1" alpha="160" />
+                                <fill color="#000000" alpha="150" />
+                                <cornerradius>10</cornerradius>
+                            </shape>
+                        </state>
+                        <state name="normal" from="default" />
+                        <state name="uptodate" from="default" />
+                        <state name="updateavailable" from="default">
+                            <shape name="statusborder">
+                                <area>16,0,-16,100%</area>
+                                <line color="#ff9147" width="4" alpha="255" />
+                            </shape>
+                        </state>
+                    </statetype>
 
                     <imagetype name="buttonimage">
                         <area>22,10,160,90</area>
@@ -158,54 +158,54 @@
                         <area>190,5,-20,-5</area>
                         <align>left,vcenter</align>
                         <font>mymedium</font>
-			<multiline>yes</multiline>
+                        <multiline>yes</multiline>
                         <alpha>210</alpha>
                     </textarea>
-		</state>
+                </state>
 
                 <state name="selectedinactive" from="active" />
 
-		<state name="selectedactive" from="active">
+                <state name="selectedactive" from="active">
                     <statetype name="themestatus">
-			<area>0,0,100%,100%</area>
+                        <area>0,0,100%,100%</area>
 
-			<state name="default">
-			    <area>0,0,100%,100%</area>
-			    <shape name="statusborder">
-				<area>0,0,100%,100%</area>
-				<type>roundbox</type>
-				<line color="#00FFFF" width="7" alpha="160" />
-				<fill color="#000000" alpha="150" />
-				<cornerradius>10</cornerradius>
-			    </shape>
-			</state>
-			<state name="normal" from="default" />
-			<state name="uptodate" from="default" />
-			<state name="updateavailable" from="default">
-			    <shape name="statusborder">
-				<line color="#ff9147" width="7" alpha="255" />
-			    </shape>
-			</state>
-		    </statetype>
+                        <state name="default">
+                            <area>0,0,100%,100%</area>
+                            <shape name="statusborder">
+                                <area>0,0,100%,100%</area>
+                                <type>roundbox</type>
+                                <line color="#00FFFF" width="7" alpha="160" />
+                                <fill color="#000000" alpha="150" />
+                                <cornerradius>10</cornerradius>
+                            </shape>
+                        </state>
+                        <state name="normal" from="default" />
+                        <state name="uptodate" from="default" />
+                        <state name="updateavailable" from="default">
+                            <shape name="statusborder">
+                                <line color="#ff9147" width="7" alpha="255" />
+                            </shape>
+                        </state>
+                    </statetype>
                 </state>
-	    </statetype>
-	    <statetype name="upscrollarrow">
-		<area>0,100%-85,20,20</area>
-		<state type="full">
-		    <imagetype name="upon">
-			<filename>Images/uparrow-on.png</filename>
-		    </imagetype>
-		</state>
-	    </statetype>
-	    <statetype name="downscrollarrow">
-		<area>0,100%-55,20,20</area>
-		<state type="full">
-		    <imagetype name="dnon">
-			<filename>Images/downarrow-on.png</filename>
-		    </imagetype>
-		</state>
-	    </statetype>
-	</buttonlist>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <area>0,100%-85,20,20</area>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename>Images/uparrow-on.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <area>0,100%-55,20,20</area>
+                <state type="full">
+                    <imagetype name="dnon">
+                        <filename>Images/downarrow-on.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
 
 
         <progressbar name="downloadprogressbar" from="baseprogressbar">
@@ -221,25 +221,25 @@
                     <filename />
                 </imagetype>
 
-		<group name="previewname">
-		    <area>480,100,960,60</area>
-		    <minsize>25,25</minsize>
+                <group name="previewname">
+                    <area>480,100,960,60</area>
+                    <minsize>25,25</minsize>
 
-		    <shape name="fullscreennameback">
-			<area>0,0,100%,100%</area>
-			<minsize>25,25</minsize>
-			<fill color="#000000" alpha="220" />
-			<line color="#FFFFFF" alpha="255" width="2" />
-		    </shape>
+                    <shape name="fullscreennameback">
+                        <area>0,0,100%,100%</area>
+                        <minsize>25,25</minsize>
+                        <fill color="#000000" alpha="220" />
+                        <line color="#FFFFFF" alpha="255" width="2" />
+                    </shape>
 
-		    <textarea name="fullscreenname">
-			<area>20,10,-20,-10</area>
-			<minsize>25,25</minsize>
-			<multiline>no</multiline>
-			<font>mymediumyellow</font>
-			<align>center</align>
-		    </textarea>
-		</group>
+                    <textarea name="fullscreenname">
+                        <area>20,10,-20,-10</area>
+                        <minsize>25,25</minsize>
+                        <multiline>no</multiline>
+                        <font>mymediumyellow</font>
+                        <align>center</align>
+                    </textarea>
+                </group>
             </state>
         </statetype>
 

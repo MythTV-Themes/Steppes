@@ -8,123 +8,123 @@
     <window name="exportnative">
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Select Archive Items</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Select Archive Items</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="dialog">
-	    <area>520,50,-100,-100</area>
+        <group name="dialog">
+            <area>520,50,-100,-100</area>
 
-	    <shape name="background" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            <shape name="background" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-	    <textarea name="maxsize" from="basetextarea">
-		<area>50%+310,20,260,30</area>
-		<font>myverysmall</font>
-		<align>left</align>
-	    </textarea>
+            <textarea name="maxsize" from="basetextarea">
+                <area>50%+310,20,260,30</area>
+                <font>myverysmall</font>
+                <align>left</align>
+            </textarea>
 
-	    <textarea name="minsize" from="basetextarea">
-		<area>50%-570,20,260,30</area>
-		<font>myverysmall</font>
-		<align>right</align>
-	    </textarea>
+            <textarea name="minsize" from="basetextarea">
+                <area>50%-570,20,260,30</area>
+                <font>myverysmall</font>
+                <align>right</align>
+            </textarea>
 
-	    <textarea name="currentsize" from="basetextarea">
-		<area>50%-150,45,300,30</area>
-		<font>myverysmall</font>
-		<align>center</align>
-	    </textarea>
+            <textarea name="currentsize" from="basetextarea">
+                <area>50%-150,45,300,30</area>
+                <font>myverysmall</font>
+                <align>center</align>
+            </textarea>
 
-	    <textarea name="currentsize_error" from="currentsize">
-		<font>myverysmallred</font>
-	    </textarea>
+            <textarea name="currentsize_error" from="currentsize">
+                <font>myverysmallred</font>
+            </textarea>
 
-	    <progressbar name="size_bar" from="baseprogressbar">
-		<position>50%-300,25</position>
-	    </progressbar>
+            <progressbar name="size_bar" from="baseprogressbar">
+                <position>50%-300,25</position>
+            </progressbar>
 
 
-	    <textarea name="nofiles" from="basetextarea">
-		<area>500,100,-500,90</area>
-		<align>center</align>
-		<value>No files are selected for archive</value>
-	    </textarea>
+            <textarea name="nofiles" from="basetextarea">
+                <area>500,100,-500,90</area>
+                <align>center</align>
+                <value>No files are selected for archive</value>
+            </textarea>
 
-	    <buttonlist name="archivelist" from="itemsList">
-		<area>20,50,-20,-210</area>
-		<statetype name="buttonitem">
-		    <state name="inactive">
-			<area>0,0,100%,60</area>
-			<textarea name="buttontext" from="basetextarea">
-			    <area>20,7,-20,-7</area>
-			</textarea>
-		    </state>
+            <buttonlist name="archivelist" from="itemsList">
+                <area>20,50,-20,-210</area>
+                <statetype name="buttonitem">
+                    <state name="inactive">
+                        <area>0,0,100%,60</area>
+                        <textarea name="buttontext" from="basetextarea">
+                            <area>20,7,-20,-7</area>
+                        </textarea>
+                    </state>
 
-		    <state name="active" from="inactive" />
-		    
-		    <state name="selectedinactive" from="inactive" />
+                    <state name="active" from="inactive" />
+                    
+                    <state name="selectedinactive" from="inactive" />
 
-		    <state name="selectedactive" from="selectedinactive" >
-			<statetype name="status" from="itemsSelectedState" />
-		    </state>
-		</statetype>
-	    </buttonlist>
+                    <state name="selectedactive" from="selectedinactive" >
+                        <statetype name="status" from="itemsSelectedState" />
+                    </state>
+                </statetype>
+            </buttonlist>
 
-	    <button name="addrecording_button" from="basewidebutton">
-		<position>50%-420,100%-200</position>
-		<value>Add Recording</value>
-	    </button>
+            <button name="addrecording_button" from="basewidebutton">
+                <position>50%-420,100%-200</position>
+                <value>Add Recording</value>
+            </button>
 
-	    <button name="addvideo_button" from="basewidebutton">
-		<position>50%+20,100%-200</position>
-		<value>Add Video</value>
-	    </button>
+            <button name="addvideo_button" from="basewidebutton">
+                <position>50%+20,100%-200</position>
+                <value>Add Video</value>
+            </button>
 
-	    <button name="cancel_button" from="varbuttonleft">
-		<position>100, 100%-80</position>
-		<value>Cancel</value>
-	    </button>
+            <button name="cancel_button" from="varbuttonleft">
+                <position>100, 100%-80</position>
+                <value>Cancel</value>
+            </button>
 
-	    <group name="buttons">
-		<area>50%, 100%-80, 100%, 70</area>
-		<button name="prev_button" from="varbuttonright">
-		    <area>100%-540, 0, 250, 100%</area>
-		    <value>Prev</value>
-		</button>
+            <group name="buttons">
+                <area>50%, 100%-80, 100%, 70</area>
+                <button name="prev_button" from="varbuttonright">
+                    <area>100%-540, 0, 250, 100%</area>
+                    <value>Prev</value>
+                </button>
 
-		<button name="next_button" from="varbuttonleft">
-		    <area>100%-285, 0, 250, 100%</area>
-		    <value>Next</value>
-		</button>
-	    </group>
-	</group>
+                <button name="next_button" from="varbuttonleft">
+                    <area>100%-285, 0, 250, 100%</area>
+                    <value>Next</value>
+                </button>
+            </group>
+        </group>
 
-	<group name="progdetails" from="guideprogdetails">
+        <group name="progdetails" from="guideprogdetails">
 
-	    <group name="titlegroup">
-		<textarea name="progtitle" from="title" />
-	    </group>
-	    <group name="subtitlegroup">
-		<textarea name="progsubtitle" from="subtitle" />
-	    </group>
-	    <group name="wheregroup">
-		<textarea name="filesize" from="channel" />
-		<textarea name="progdatetime" from="timedate" />
-	    </group>
-	    <group name="descgroup">
-		<textarea name="progdescription" from="description" />
-	    </group>
+            <group name="titlegroup">
+                <textarea name="progtitle" from="title" />
+            </group>
+            <group name="subtitlegroup">
+                <textarea name="progsubtitle" from="subtitle" />
+            </group>
+            <group name="wheregroup">
+                <textarea name="filesize" from="channel" />
+                <textarea name="progdatetime" from="timedate" />
+            </group>
+            <group name="descgroup">
+                <textarea name="progdescription" from="description" />
+            </group>
 
-	    <!-- Work around to get rid of some garbage -->	    
-	    <textarea name="title">
-		<area>0,0,0,0</area>
-	    </textarea>
-	</group>
+            <!-- Work around to get rid of some garbage -->         
+            <textarea name="title">
+                <area>0,0,0,0</area>
+            </textarea>
+        </group>
 
     </window>
 
@@ -133,265 +133,265 @@
     <window name="archivefile_selector">
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Select File to Import</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Select File to Import</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="dialog">
-	    <area>520,50,-100,-100</area>
+        <group name="dialog">
+            <area>520,50,-100,-100</area>
 
-	    <shape name="background" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            <shape name="background" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-	    <textedit name="location_edit" from="basewidetextedit">
-		<area>30,20,-420,70</area>
-		<textarea name="text">
-		    <align>left,vcenter</align>
-		</textarea>
-	    </textedit>
+            <textedit name="location_edit" from="basewidetextedit">
+                <area>30,20,-420,70</area>
+                <textarea name="text">
+                    <align>left,vcenter</align>
+                </textarea>
+            </textedit>
 
-	    <group name="navbuttons">
-		<!-- varbuttons auto indent 35, so compensate -->
-		<area>100%-410, 20, -20, 70</area>
+            <group name="navbuttons">
+                <!-- varbuttons auto indent 35, so compensate -->
+                <area>100%-410, 20, -20, 70</area>
 
-		<button name="back_button" from="varbuttonleft">
-		    <area>0, 0, 100%, 100%</area>
-		    <value>Back</value>
-		</button>
-	    
-		<button name="home_button" from="varbuttonright">
-		    <area>0, 0, 100%, 100%</area>
-		    <value>Home</value>
-		</button>
-	    </group>
+                <button name="back_button" from="varbuttonleft">
+                    <area>0, 0, 100%, 100%</area>
+                    <value>Back</value>
+                </button>
+                
+                <button name="home_button" from="varbuttonright">
+                    <area>0, 0, 100%, 100%</area>
+                    <value>Home</value>
+                </button>
+            </group>
 
-	    <buttonlist name="filelist" from="basebuttonlist">
-		<area>20,100,-20,-100</area>
-		<wrapstyle>items</wrapstyle>
+            <buttonlist name="filelist" from="basebuttonlist">
+                <area>20,100,-20,-100</area>
+                <wrapstyle>items</wrapstyle>
 
-		<statetype name="buttonitem">
-		    <state name="active">
-			<imagetype name="buttonimage">
-			    <area>12,15,26,26</area>
-			</imagetype>
-			<textarea name="buttontext">
-			    <area>50,5,-160,-5</area>
-			    <align>left,vcenter</align>
-			</textarea>
-			<textarea name="size" from="buttontext">
-			    <area>100%-150,5,-10,-5</area>
-			    <align>right,vcenter</align>
-			</textarea>
-		    </state>
-		    <state name="selectedinactive" from="active">
-			<shape name="background"
-			       from="baseselectedinactivebuttonshape" />
-		    </state>
-		    <state name="selectedactive" from="selectedinactive">
-			<shape name="background"
-			       from="baseselectedbuttonshape" />
-		    </state>
-		</statetype>
-	    </buttonlist>
+                <statetype name="buttonitem">
+                    <state name="active">
+                        <imagetype name="buttonimage">
+                            <area>12,15,26,26</area>
+                        </imagetype>
+                        <textarea name="buttontext">
+                            <area>50,5,-160,-5</area>
+                            <align>left,vcenter</align>
+                        </textarea>
+                        <textarea name="size" from="buttontext">
+                            <area>100%-150,5,-10,-5</area>
+                            <align>right,vcenter</align>
+                        </textarea>
+                    </state>
+                    <state name="selectedinactive" from="active">
+                        <shape name="background"
+                               from="baseselectedinactivebuttonshape" />
+                    </state>
+                    <state name="selectedactive" from="selectedinactive">
+                        <shape name="background"
+                               from="baseselectedbuttonshape" />
+                    </state>
+                </statetype>
+            </buttonlist>
 
-	    <button name="cancel_button" from="varbuttonleft">
-		<position>100, 100%-80</position>
-		<value>Cancel</value>
-	    </button>
+            <button name="cancel_button" from="varbuttonleft">
+                <position>100, 100%-80</position>
+                <value>Cancel</value>
+            </button>
 
-	    <group name="buttons">
-		<area>50%, 100%-80, 100%, 70</area>
-		<button name="prev_button" from="varbuttonright">
-		    <area>100%-540, 0, 250, 100%</area>
-		    <value>Prev</value>
-		</button>
+            <group name="buttons">
+                <area>50%, 100%-80, 100%, 70</area>
+                <button name="prev_button" from="varbuttonright">
+                    <area>100%-540, 0, 250, 100%</area>
+                    <value>Prev</value>
+                </button>
 
-		<button name="next_button" from="varbuttonleft">
-		    <area>100%-285, 0, 250, 100%</area>
-		    <value>Next</value>
-		</button>
-	    </group>
-	</group>
+                <button name="next_button" from="varbuttonleft">
+                    <area>100%-285, 0, 250, 100%</area>
+                    <value>Next</value>
+                </button>
+            </group>
+        </group>
 
-	<group name="progdetails" from="guideprogdetails">
-	    <group name="titlegroup">
-		<textarea name="title_text" from="title" />
-	    </group>
-	    <group name="subtitlegroup">
-		<textarea name="subtitle_text" from="subtitle" />
-	    </group>
-	    <group name="wheregroup">
-		<textarea name="starttime_text" from="timedate" />
-	    </group>
+        <group name="progdetails" from="guideprogdetails">
+            <group name="titlegroup">
+                <textarea name="title_text" from="title" />
+            </group>
+            <group name="subtitlegroup">
+                <textarea name="subtitle_text" from="subtitle" />
+            </group>
+            <group name="wheregroup">
+                <textarea name="starttime_text" from="timedate" />
+            </group>
 
-            <!-- Work around to get rid of some garbage -->	    
-	    <textarea name="title">
-		<area>0,0,0,0</area>
-	    </textarea>
-	</group>
+            <!-- Work around to get rid of some garbage -->         
+            <textarea name="title">
+                <area>0,0,0,0</area>
+            </textarea>
+        </group>
 
     </window>
 
     <!-- Home -> Optical Disks -> Archive Files -> Import Archive
-	 -> Next
+         -> Next
     -->
     <window name="importnative">
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Select Associated Channel</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Select Associated Channel</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="dialog">
-	    <area>520,60,-100,-210</area>
+        <group name="dialog">
+            <area>520,60,-100,-210</area>
 
-	    <shape name="background" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            <shape name="background" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-	    <group name="archiveinfo">
-		<area>50,60,50%-20,480</area>
+            <group name="archiveinfo">
+                <area>50,60,50%-20,480</area>
 
-		<shape name="background" from="basewidgetshape">
-		    <area>0,0,100%,100%</area>
-		</shape>
+                <shape name="background" from="basewidgetshape">
+                    <area>0,0,100%,100%</area>
+                </shape>
 
-		<textarea name="group_label" from="basetextarea">
-		    <area>20,20,-20,55</area>
-		    <align>center</align>
-		    <font>mymedium</font>
-		    <value>Archived Channel</value>
-		</textarea>
+                <textarea name="group_label" from="basetextarea">
+                    <area>20,20,-20,55</area>
+                    <align>center</align>
+                    <font>mymedium</font>
+                    <value>Archived Channel</value>
+                </textarea>
 
-		<textarea name="chanid_label" from="labeltext">
-		    <position>10,90</position>
-		    <value>Channel ID:</value>
-		</textarea>
+                <textarea name="chanid_label" from="labeltext">
+                    <position>10,90</position>
+                    <value>Channel ID:</value>
+                </textarea>
 
-		<textarea name="chanid" from="basetextarea">
-		    <area>290,90,360,70</area>
-		</textarea>
+                <textarea name="chanid" from="basetextarea">
+                    <area>290,90,360,70</area>
+                </textarea>
 
-		<textarea name="channo_label" from="chanid_label">
-		    <position>10,170</position>
-		    <value>Channel Number:</value>
-		</textarea>
+                <textarea name="channo_label" from="chanid_label">
+                    <position>10,170</position>
+                    <value>Channel Number:</value>
+                </textarea>
 
-		<textarea name="channo" from="chanid">
-		    <position>290,170</position>
-		</textarea>
+                <textarea name="channo" from="chanid">
+                    <position>290,170</position>
+                </textarea>
 
-		<textarea name="callsign_label" from="chanid_label">
-		    <position>10,250</position>
-		    <value>Callsign:</value>
-		</textarea>
+                <textarea name="callsign_label" from="chanid_label">
+                    <position>10,250</position>
+                    <value>Callsign:</value>
+                </textarea>
 
-		<textarea name="callsign" from="chanid">
-		    <position>290,250</position>
-		</textarea>
+                <textarea name="callsign" from="chanid">
+                    <position>290,250</position>
+                </textarea>
 
-		<textarea name="name_label" from="chanid_label">
-		    <position>10,330</position>
-		    <value>Name:</value>
-		</textarea>
+                <textarea name="name_label" from="chanid_label">
+                    <position>10,330</position>
+                    <value>Name:</value>
+                </textarea>
 
-		<textarea name="name" from="chanid">
-		    <position>290,330</position>
-		</textarea>
-	    </group>
+                <textarea name="name" from="chanid">
+                    <position>290,330</position>
+                </textarea>
+            </group>
 
-	    <group name="localinfo" from="archiveinfo">
-		<area>50%+20,60,-50,480</area>
+            <group name="localinfo" from="archiveinfo">
+                <area>50%+20,60,-50,480</area>
 
-		<textarea name="group_label">
-		    <value>Local Channel</value>
-		</textarea>
+                <textarea name="group_label">
+                    <value>Local Channel</value>
+                </textarea>
 
-		<button name="searchchanid_button" from="basewidebutton">
-		    <area>270,90,-30,70</area>
-		</button>
-		<textarea name="local_chanid" from="chanid" />
+                <button name="searchchanid_button" from="basewidebutton">
+                    <area>270,90,-30,70</area>
+                </button>
+                <textarea name="local_chanid" from="chanid" />
 
-		<button name="searchchanno_button" from="searchchanid_button">
-		    <position>270,170</position>
-		</button>
-		<textarea name="local_channo" from="channo" />
+                <button name="searchchanno_button" from="searchchanid_button">
+                    <position>270,170</position>
+                </button>
+                <textarea name="local_channo" from="channo" />
 
-		<button name="searchcallsign_button" from="searchchanid_button">
-		    <position>270,250</position>
-		</button>
-		<textarea name="local_callsign" from="callsign" />
+                <button name="searchcallsign_button" from="searchchanid_button">
+                    <position>270,250</position>
+                </button>
+                <textarea name="local_callsign" from="callsign" />
 
-		<button name="searchname_button" from="searchchanid_button">
-		    <position>270,330</position>
-		</button>
-		<textarea name="local_name" from="name" />
+                <button name="searchname_button" from="searchchanid_button">
+                    <position>270,330</position>
+                </button>
+                <textarea name="local_name" from="name" />
 
-	    </group>
+            </group>
 
-	    <button name="cancel_button" from="varbuttonleft">
-		<position>100, 100%-80</position>
-		<value>Cancel</value>
-	    </button>
+            <button name="cancel_button" from="varbuttonleft">
+                <position>100, 100%-80</position>
+                <value>Cancel</value>
+            </button>
 
-	    <group name="buttons">
-		<area>50%, 100%-80, 100%, 70</area>
-		<button name="prev_button" from="varbuttonright">
-		    <area>100%-540, 0, 250, 100%</area>
-		    <value>Prev</value>
-		</button>
+            <group name="buttons">
+                <area>50%, 100%-80, 100%, 70</area>
+                <button name="prev_button" from="varbuttonright">
+                    <area>100%-540, 0, 250, 100%</area>
+                    <value>Prev</value>
+                </button>
 
-		<button name="finish_button" from="varbuttonleft">
-		    <area>100%-285, 0, 250, 100%</area>
-		    <value>Finish</value>
-		</button>
-	    </group>
-	</group>
+                <button name="finish_button" from="varbuttonleft">
+                    <area>100%-285, 0, 250, 100%</area>
+                    <value>Finish</value>
+                </button>
+            </group>
+        </group>
 
-	<group name="progdetails" from="guideprogdetails">
-	    <area>40,35,460,765</area>
-	    <group name="titlegroup">
-		<textarea name="progtitle" from="title" />
-	    </group>
-	    <group name="subtitlegroup">
-		<textarea name="subtitle_text" from="subtitle" />
-	    </group>
-	    <group name="wheregroup">
-		<textarea name="filesize" from="channel" />
-		<textarea name="progdatetime" from="timedate" />
-	    </group>
-	    <group name="descgroup">
-		<textarea name="progdescription" from="description" />
-	    </group>
+        <group name="progdetails" from="guideprogdetails">
+            <area>40,35,460,765</area>
+            <group name="titlegroup">
+                <textarea name="progtitle" from="title" />
+            </group>
+            <group name="subtitlegroup">
+                <textarea name="subtitle_text" from="subtitle" />
+            </group>
+            <group name="wheregroup">
+                <textarea name="filesize" from="channel" />
+                <textarea name="progdatetime" from="timedate" />
+            </group>
+            <group name="descgroup">
+                <textarea name="progdescription" from="description" />
+            </group>
 
-	    <!-- Work around to get rid of some garbage -->	    
-	    <textarea name="title">
-		<area>0,0,0,0</area>
-	    </textarea>
-	</group>
-	<group name="previewgroup">
-	    <area>48,802,434,255</area>
-	    
-	    <shape name="previewShape">
-		<area>0,0,100%,100%</area>
-		<type>roundbox</type>
-		<cornerradius>5</cornerradius>
-		<fill color="#555555" alpha="255" />
-		<line color="#FFFFFF" alpha="160" width="8" />
-	    </shape>
-	    
-	    <imagetype name="preview_image">
-		<area>59,813,412,230</area>
-		<preserveaspect>true</preserveaspect>
-	    </imagetype>
-	</group>
+            <!-- Work around to get rid of some garbage -->         
+            <textarea name="title">
+                <area>0,0,0,0</area>
+            </textarea>
+        </group>
+        <group name="previewgroup">
+            <area>48,802,434,255</area>
+            
+            <shape name="previewShape">
+                <area>0,0,100%,100%</area>
+                <type>roundbox</type>
+                <cornerradius>5</cornerradius>
+                <fill color="#555555" alpha="255" />
+                <line color="#FFFFFF" alpha="160" width="8" />
+            </shape>
+            
+            <imagetype name="preview_image">
+                <area>59,813,412,230</area>
+                <preserveaspect>true</preserveaspect>
+            </imagetype>
+        </group>
 
     </window>
 

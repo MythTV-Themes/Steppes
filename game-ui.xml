@@ -10,128 +10,128 @@
             <area>0,0,1920,1080</area>
         </imagetype>
 
-	<imagetype name="coverart">
-	    <area>35,25,460,680</area>
-	    <filename />
-	    <preserveaspect>true</preserveaspect>
-	</imagetype>
+        <imagetype name="coverart">
+            <area>35,25,460,680</area>
+            <filename />
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
 
-	<group name="previewgroup">
-	    <area>48,802,434,255</area>
-	    <minsize vanish="yes">100%,100%</minsize>
+        <group name="previewgroup">
+            <area>48,802,434,255</area>
+            <minsize vanish="yes">100%,100%</minsize>
 
-	    <shape name="previewShape">
-		<area>0,0,100%,100%</area>
-		<minsize vanish="yes">100%,100%</minsize>
-		<type>roundbox</type>
-		<cornerradius>5</cornerradius>
-		<fill color="#555555" alpha="255" />
-		<line color="#FFFFFF" alpha="160" width="8" />
-	    </shape>
+            <shape name="previewShape">
+                <area>0,0,100%,100%</area>
+                <minsize vanish="yes">100%,100%</minsize>
+                <type>roundbox</type>
+                <cornerradius>5</cornerradius>
+                <fill color="#555555" alpha="255" />
+                <line color="#FFFFFF" alpha="160" width="8" />
+            </shape>
 
-	    <imagetype name="screenshot">
-		<area>12,12,-12,-12</area>
-		<minsize vanish="yes">100%,100%</minsize>
-		<preserveaspect>true</preserveaspect>
-	    </imagetype>
-	</group>
+            <imagetype name="screenshot">
+                <area>12,12,-12,-12</area>
+                <minsize vanish="yes">100%,100%</minsize>
+                <preserveaspect>true</preserveaspect>
+            </imagetype>
+        </group>
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Games</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Games</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="treegroup">
-	    <area>535,50,-50,520</area>
+        <group name="treegroup">
+            <area>535,50,-50,520</area>
 
-	    <shape name="background" from="baseareashape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            <shape name="background" from="baseareashape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-	    <buttontree name="gametreelist">
-		<area>20,10,-20,-10</area>
-		<numlists>2</numlists>
-		<spacing>10</spacing>
-		<buttonlist name="listtemplate" from="basebuttonlist" />
-	    </buttontree>
-	</group>
+            <buttontree name="gametreelist">
+                <area>20,10,-20,-10</area>
+                <numlists>2</numlists>
+                <spacing>10</spacing>
+                <buttonlist name="listtemplate" from="basebuttonlist" />
+            </buttontree>
+        </group>
 
-	<group name="detailgroup">
-	    <area>535, 590, -50, 400</area>
+        <group name="detailgroup">
+            <area>535, 590, -50, 400</area>
 
-	    <shape name="background" from="baseareashape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            <shape name="background" from="baseareashape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-	    <textarea name="title" from="basetextarea">
-		<area>10,10,-10,50</area>
-		<font>mylarge</font>
-	    </textarea>
+            <textarea name="title" from="basetextarea">
+                <area>10,10,-10,50</area>
+                <font>mylarge</font>
+            </textarea>
 
-	    <textarea name="systemlabel" from="labeltext">
-		<position>10,70</position>
-		<value>System:</value>
-	    </textarea>
+            <textarea name="systemlabel" from="labeltext">
+                <position>10,70</position>
+                <value>System:</value>
+            </textarea>
 
-	    <textarea name="system" from="basetextarea">
-		<area>270,70,330,70</area>
-		<multiline>yes</multiline>
-	    </textarea>
+            <textarea name="system" from="basetextarea">
+                <area>270,70,330,70</area>
+                <multiline>yes</multiline>
+            </textarea>
 
-	    <textarea name="yearlabel" from="systemlabel">
-		<position>10, 150</position>
-		<value>Year:</value>
-	    </textarea>
+            <textarea name="yearlabel" from="systemlabel">
+                <position>10, 150</position>
+                <value>Year:</value>
+            </textarea>
 
-	    <textarea name="year" from="system">
-		<position>270,150</position>
-	    </textarea>
+            <textarea name="year" from="system">
+                <position>270,150</position>
+            </textarea>
 
-	    <textarea name="genrelabel" from="systemlabel">
-		<position>10,230</position>
-		<value>Genre:</value>
-	    </textarea>
+            <textarea name="genrelabel" from="systemlabel">
+                <position>10,230</position>
+                <value>Genre:</value>
+            </textarea>
 
-	    <textarea name="genre" from="system">
-		<position>270,230</position>
-	    </textarea>
+            <textarea name="genre" from="system">
+                <position>270,230</position>
+            </textarea>
 
-	    <textarea name="favoritelabel" from="systemlabel">
-		<position>10,310</position>
-		<value>Favorite:</value>
-	    </textarea>
+            <textarea name="favoritelabel" from="systemlabel">
+                <position>10,310</position>
+                <value>Favorite:</value>
+            </textarea>
 
-	    <statetype name="favorite">
-		<state name="no">
-		    <textarea name="favorite" from="basetextarea">
-			<area>270,310,330,70</area>
-			<value>No</value>
-		    </textarea>
-		</state>
-		<state name="yes" from="no">
-		    <textarea name="favorite">
-			<value>Yes</value>
-		    </textarea>
-		</state>
-	    </statetype>
+            <statetype name="favorite">
+                <state name="no">
+                    <textarea name="favorite" from="basetextarea">
+                        <area>270,310,330,70</area>
+                        <value>No</value>
+                    </textarea>
+                </state>
+                <state name="yes" from="no">
+                    <textarea name="favorite">
+                        <value>Yes</value>
+                    </textarea>
+                </state>
+            </statetype>
 
-	    <group name="descgroup">
-		<area>610,75,-5,-5</area>
+            <group name="descgroup">
+                <area>610,75,-5,-5</area>
 
-		<shape name="background" from="baseareashape">
-		    <area>0,0,100%,100%</area>
-		</shape>
+                <shape name="background" from="baseareashape">
+                    <area>0,0,100%,100%</area>
+                </shape>
 
-		<textarea name="description" from="basetextarea">
-		    <area>10,10,-10,-10</area>
-		    <align>top,left</align>
-		    <multiline>yes</multiline>
-		</textarea>
-	    </group>
-	</group>
+                <textarea name="description" from="basetextarea">
+                    <area>10,10,-10,-10</area>
+                    <align>top,left</align>
+                    <multiline>yes</multiline>
+                </textarea>
+            </group>
+        </group>
 
     </window>
 
@@ -144,154 +144,154 @@
             <area>0,0,1920,1080</area>
         </imagetype>
 
-	<imagetype name="coverart">
-	    <area>35,25,460,680</area>
-	    <filename />
-	    <preserveaspect>true</preserveaspect>
-	</imagetype>
+        <imagetype name="coverart">
+            <area>35,25,460,680</area>
+            <filename />
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
 
-	<group name="previewgroup">
-	    <area>48,802,434,255</area>
-	    <minsize vanish="yes">100%,100%</minsize>
+        <group name="previewgroup">
+            <area>48,802,434,255</area>
+            <minsize vanish="yes">100%,100%</minsize>
 
-	    <shape name="previewShape">
-		<area>0,0,100%,100%</area>
-		<minsize vanish="yes">100%,100%</minsize>
-		<type>roundbox</type>
-		<cornerradius>5</cornerradius>
-		<fill color="#555555" alpha="255" />
-		<line color="#FFFFFF" alpha="160" width="8" />
-	    </shape>
+            <shape name="previewShape">
+                <area>0,0,100%,100%</area>
+                <minsize vanish="yes">100%,100%</minsize>
+                <type>roundbox</type>
+                <cornerradius>5</cornerradius>
+                <fill color="#555555" alpha="255" />
+                <line color="#FFFFFF" alpha="160" width="8" />
+            </shape>
 
-	    <imagetype name="screenshot">
-		<area>12,12,-12,-12</area>
-		<minsize vanish="yes">100%,100%</minsize>
-		<preserveaspect>true</preserveaspect>
-	    </imagetype>
-	</group>
+            <imagetype name="screenshot">
+                <area>12,12,-12,-12</area>
+                <minsize vanish="yes">100%,100%</minsize>
+                <preserveaspect>true</preserveaspect>
+            </imagetype>
+        </group>
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Game Information</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Game Information</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="details">
-	    <area>535,50,-50,-130</area>
+        <group name="details">
+            <area>535,50,-50,-130</area>
 
-	    <shape name="background" from="baseareashape">
-		<area>0,0,100%,100%</area>
-		<fill color="#000000" alpha="150" />
-	    </shape>
+            <shape name="background" from="baseareashape">
+                <area>0,0,100%,100%</area>
+                <fill color="#000000" alpha="150" />
+            </shape>
 
-	    <textarea name="gamename_lbl" from="labeltext">
-		<position>10,20</position>
-		<value>Game:</value>
-	    </textarea>
-	    <textarea name="title" from="basetextarea">
-		<area>270,20,-20,70</area>
-	    </textarea>
+            <textarea name="gamename_lbl" from="labeltext">
+                <position>10,20</position>
+                <value>Game:</value>
+            </textarea>
+            <textarea name="title" from="basetextarea">
+                <area>270,20,-20,70</area>
+            </textarea>
 
-	    <textarea name="gametype_lbl" from="gamename_lbl">
-		<position>10,100</position>
-		<value>Type:</value>
-	    </textarea>
-	    <textarea name="gametype" from="title">
-		<position>270,100</position>
-	    </textarea>
+            <textarea name="gametype_lbl" from="gamename_lbl">
+                <position>10,100</position>
+                <value>Type:</value>
+            </textarea>
+            <textarea name="gametype" from="title">
+                <position>270,100</position>
+            </textarea>
 
-	    <textarea name="romname_lbl" from="gamename_lbl">
-		<position>10,180</position>
-		<value>Filename:</value>
-	    </textarea>
-	    <textarea name="romname" from="title">
-		<position>270,180</position>
-	    </textarea>
+            <textarea name="romname_lbl" from="gamename_lbl">
+                <position>10,180</position>
+                <value>Filename:</value>
+            </textarea>
+            <textarea name="romname" from="title">
+                <position>270,180</position>
+            </textarea>
 
-	    <textarea name="rompath_lbl" from="gamename_lbl">
-		<position>10,260</position>
-		<value>ROM path:</value>
-	    </textarea>
-	    <textarea name="rompath" from="title">
-		<position>270,260</position>
-	    </textarea>
+            <textarea name="rompath_lbl" from="gamename_lbl">
+                <position>10,260</position>
+                <value>ROM path:</value>
+            </textarea>
+            <textarea name="rompath" from="title">
+                <position>270,260</position>
+            </textarea>
 
-	    <textarea name="allsystems_lbl" from="gamename_lbl">
-		<position>10,340</position>
-		<value>System(s):</value>
-	    </textarea>
-	    <textarea name="allsystems" from="title">
-		<area>270,340,400,70</area>
-	    </textarea>
+            <textarea name="allsystems_lbl" from="gamename_lbl">
+                <position>10,340</position>
+                <value>System(s):</value>
+            </textarea>
+            <textarea name="allsystems" from="title">
+                <area>270,340,400,70</area>
+            </textarea>
 
-	    <textarea name="genre_lbl" from="gamename_lbl">
-		<position>10,420</position>
-		<value>Genre:</value>
-	    </textarea>
-	    <textarea name="genre" from="allsystems">
-		<position>270,420</position>
-	    </textarea>
+            <textarea name="genre_lbl" from="gamename_lbl">
+                <position>10,420</position>
+                <value>Genre:</value>
+            </textarea>
+            <textarea name="genre" from="allsystems">
+                <position>270,420</position>
+            </textarea>
 
-	    <textarea name="year_lbl" from="gamename_lbl">
-		<position>10,500</position>
-		<value>Year:</value>
-	    </textarea>
-	    <textarea name="year" from="allsystems">
-		<position>270,500</position>
-	    </textarea>
+            <textarea name="year_lbl" from="gamename_lbl">
+                <position>10,500</position>
+                <value>Year:</value>
+            </textarea>
+            <textarea name="year" from="allsystems">
+                <position>270,500</position>
+            </textarea>
 
-	    <textarea name="country_lbl" from="gamename_lbl">
-		<position>10,580</position>
-		<value>Country:</value>
-	    </textarea>
-	    <textarea name="country" from="allsystems">
-		<position>270,580</position>
-	    </textarea>
+            <textarea name="country_lbl" from="gamename_lbl">
+                <position>10,580</position>
+                <value>Country:</value>
+            </textarea>
+            <textarea name="country" from="allsystems">
+                <position>270,580</position>
+            </textarea>
 
-	    <textarea name="publisher_lbl" from="gamename_lbl">
-		<position>10,660</position>
-		<value>Publisher:</value>
-	    </textarea>
-	    <textarea name="publisher" from="allsystems">
-		<position>270,660</position>
-	    </textarea>
+            <textarea name="publisher_lbl" from="gamename_lbl">
+                <position>10,660</position>
+                <value>Publisher:</value>
+            </textarea>
+            <textarea name="publisher" from="allsystems">
+                <position>270,660</position>
+            </textarea>
 
-	    <textarea name="crc_lbl" from="gamename_lbl">
-		<position>10,740</position>
-		<value>CRC:</value>
-	    </textarea>
-	    <textarea name="crc" from="allsystems">
-		<position>270,740</position>
-	    </textarea>
+            <textarea name="crc_lbl" from="gamename_lbl">
+                <position>10,740</position>
+                <value>CRC:</value>
+            </textarea>
+            <textarea name="crc" from="allsystems">
+                <position>270,740</position>
+            </textarea>
 
-	    <group name="descgroup">
-		<area>700,340,-20,-100</area>
+            <group name="descgroup">
+                <area>700,340,-20,-100</area>
 
-		<shape name="background" from="baseareashape">
-		    <area>0,0,100%,100%</area>
-		    <fill style="gradient">
-			<gradient start="#000000" end="#302040" alpha="128"
-				  direction="diagonal"  />
-		    </fill>
-		</shape>
+                <shape name="background" from="baseareashape">
+                    <area>0,0,100%,100%</area>
+                    <fill style="gradient">
+                        <gradient start="#000000" end="#302040" alpha="128"
+                                  direction="diagonal"  />
+                    </fill>
+                </shape>
 
-		<textarea name="description" from="basetextarea">
-		    <area>10,10,-10,-10</area>
-		    <align>top,left</align>
-		    <multiline>yes</multiline>
-		</textarea>
-	    </group>
+                <textarea name="description" from="basetextarea">
+                    <area>10,10,-10,-10</area>
+                    <align>top,left</align>
+                    <multiline>yes</multiline>
+                </textarea>
+            </group>
 
-	    <button name="play_button" from="varbuttonright">
-		<value>Play</value>
-	    </button>
+            <button name="play_button" from="varbuttonright">
+                <value>Play</value>
+            </button>
 
-	    <button name="done_button" from="varbuttonleft">
-		<value>Done</value>
-	    </button>
-	</group>
+            <button name="done_button" from="varbuttonleft">
+                <value>Done</value>
+            </button>
+        </group>
 
     </window>
 
@@ -303,142 +303,142 @@
             <area>0,0,1920,1080</area>
         </imagetype>
 
-	<imagetype name="coverart">
-	    <area>35,25,460,680</area>
-	    <filename />
-	    <preserveaspect>true</preserveaspect>
-	</imagetype>
+        <imagetype name="coverart">
+            <area>35,25,460,680</area>
+            <filename />
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
 
-	<group name="previewgroup">
-	    <area>48,802,434,255</area>
-	    <minsize vanish="yes">100%,100%</minsize>
+        <group name="previewgroup">
+            <area>48,802,434,255</area>
+            <minsize vanish="yes">100%,100%</minsize>
 
-	    <shape name="previewShape">
-		<area>0,0,100%,100%</area>
-		<minsize vanish="yes">100%,100%</minsize>
-		<type>roundbox</type>
-		<cornerradius>5</cornerradius>
-		<fill color="#555555" alpha="255" />
-		<line color="#FFFFFF" alpha="160" width="8" />
-	    </shape>
+            <shape name="previewShape">
+                <area>0,0,100%,100%</area>
+                <minsize vanish="yes">100%,100%</minsize>
+                <type>roundbox</type>
+                <cornerradius>5</cornerradius>
+                <fill color="#555555" alpha="255" />
+                <line color="#FFFFFF" alpha="160" width="8" />
+            </shape>
 
-	    <imagetype name="screenshot">
-		<area>12,12,-12,-12</area>
-		<minsize vanish="yes">100%,100%</minsize>
-		<preserveaspect>true</preserveaspect>
-	    </imagetype>
-	</group>
+            <imagetype name="screenshot">
+                <area>12,12,-12,-12</area>
+                <minsize vanish="yes">100%,100%</minsize>
+                <preserveaspect>true</preserveaspect>
+            </imagetype>
+        </group>
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Edit Game Information</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Edit Game Information</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="details">
-	    <area>535,50,-50,-130</area>
+        <group name="details">
+            <area>535,50,-50,-130</area>
 
-	    <shape name="background" from="baseareashape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            <shape name="background" from="baseareashape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-	    <textarea name="gamename_label" from="labeltext">
-		<position>10,20</position>
-		<value>Game Name:</value>
-	    </textarea>
-	    <textedit name="title_edit" from="basewidetextedit">
-		<position>270,20</position>
-	    </textedit>
+            <textarea name="gamename_label" from="labeltext">
+                <position>10,20</position>
+                <value>Game Name:</value>
+            </textarea>
+            <textedit name="title_edit" from="basewidetextedit">
+                <position>270,20</position>
+            </textedit>
 
-	    <textarea name="genre_label" from="gamename_label">
-		<position>10,100</position>
-		<value>Genre:</value>
-	    </textarea>
-	    <textedit name="genre_edit" from="title_edit">
-		<position>270,100</position>
-	    </textedit>
+            <textarea name="genre_label" from="gamename_label">
+                <position>10,100</position>
+                <value>Genre:</value>
+            </textarea>
+            <textedit name="genre_edit" from="title_edit">
+                <position>270,100</position>
+            </textedit>
 
-	    <textarea name="year_label" from="gamename_label">
-		<position>10,180</position>
-		<value>Year:</value>
-	    </textarea>
-	    <textedit name="year_edit" from="title_edit">
-		<position>270,180</position>
-	    </textedit>
+            <textarea name="year_label" from="gamename_label">
+                <position>10,180</position>
+                <value>Year:</value>
+            </textarea>
+            <textedit name="year_edit" from="title_edit">
+                <position>270,180</position>
+            </textedit>
 
-	    <textarea name="country_label" from="gamename_label">
-		<position>10,260</position>
-		<value>Country:</value>
-	    </textarea>
-	    <textedit name="country_edit" from="title_edit">
-		<position>270,260</position>
-	    </textedit>
+            <textarea name="country_label" from="gamename_label">
+                <position>10,260</position>
+                <value>Country:</value>
+            </textarea>
+            <textedit name="country_edit" from="title_edit">
+                <position>270,260</position>
+            </textedit>
 
-	    <textarea name="publisher_label" from="gamename_label">
-		<position>10,340</position>
-		<value>Publisher:</value>
-	    </textarea>
-	    <textedit name="publisher_edit" from="title_edit">
-		<position>270,340</position>
-	    </textedit>
+            <textarea name="publisher_label" from="gamename_label">
+                <position>10,340</position>
+                <value>Publisher:</value>
+            </textarea>
+            <textedit name="publisher_edit" from="title_edit">
+                <position>270,340</position>
+            </textedit>
 
-	    <textarea name="plot_label" from="labeltextlarge">
-		<position>10,420</position>
-		<value>Plot:</value>
-	    </textarea>
-	    <textedit name="description_edit" from="basemultilinetextedit">
-		<area>270,420,600,90</area>
-	    </textedit>
+            <textarea name="plot_label" from="labeltextlarge">
+                <position>10,420</position>
+                <value>Plot:</value>
+            </textarea>
+            <textedit name="description_edit" from="basemultilinetextedit">
+                <area>270,420,600,90</area>
+            </textedit>
 
-	    <checkbox name="favorite_check" from="basecheckbox">
-		<position>270,500</position>
-	    </checkbox>
-	    <textarea name="fav_label" from="labelcheckbox">
-		<area>330,500,-20,70</area>
-		<value>Favorite</value>
-	    </textarea>
+            <checkbox name="favorite_check" from="basecheckbox">
+                <position>270,500</position>
+            </checkbox>
+            <textarea name="fav_label" from="labelcheckbox">
+                <area>330,500,-20,70</area>
+                <value>Favorite</value>
+            </textarea>
 
-	    <textarea name="screenshot_label" from="gamename_label">
-		<position>10,580</position>
-		<value>Screenshot:</value>
-	    </textarea>
-	    <button name="screenshot_button" from="basewidebutton">
-		<area>270,580,600,70</area>
-	    </button>
-	    <textarea name="screenshot_text" from="basewidgettext">
-		<area>290,590,580,50</area>
-		<value>/path/to/the/thing.jpg</value>
-		<align>center</align>
-	    </textarea>
+            <textarea name="screenshot_label" from="gamename_label">
+                <position>10,580</position>
+                <value>Screenshot:</value>
+            </textarea>
+            <button name="screenshot_button" from="basewidebutton">
+                <area>270,580,600,70</area>
+            </button>
+            <textarea name="screenshot_text" from="basewidgettext">
+                <area>290,590,580,50</area>
+                <value>/path/to/the/thing.jpg</value>
+                <align>center</align>
+            </textarea>
 
-	    <textarea name="fanart_label" from="gamename_label">
-		<position>10,660</position>
-		<value>Fanart:</value>
-	    </textarea>
-	    <button name="fanart_button" from="screenshot_button">
-		<position>270,660</position>
-	    </button>
-	    <textarea name="fanart_text" from="screenshot_text">
-		<position>290,665</position>
-	    </textarea>
+            <textarea name="fanart_label" from="gamename_label">
+                <position>10,660</position>
+                <value>Fanart:</value>
+            </textarea>
+            <button name="fanart_button" from="screenshot_button">
+                <position>270,660</position>
+            </button>
+            <textarea name="fanart_text" from="screenshot_text">
+                <position>290,665</position>
+            </textarea>
 
-	    <textarea name="coverart_label" from="gamename_label">
-		<position>10,740</position>
-		<value>Boxart:</value>
-	    </textarea>
-	    <button name="coverart_button" from="screenshot_button">
-		<position>270,740</position>
-	    </button>
-	    <textarea name="coverart_text" from="screenshot_text">
-		<position>290,745</position>
-	    </textarea>
+            <textarea name="coverart_label" from="gamename_label">
+                <position>10,740</position>
+                <value>Boxart:</value>
+            </textarea>
+            <button name="coverart_button" from="screenshot_button">
+                <position>270,740</position>
+            </button>
+            <textarea name="coverart_text" from="screenshot_text">
+                <position>290,745</position>
+            </textarea>
 
-	    <button name="done_button" from="varbuttonright">
-		<value>Done</value>
-	    </button>
-	</group>
+            <button name="done_button" from="varbuttonright">
+                <value>Done</value>
+            </button>
+        </group>
 
     </window>
 

@@ -8,64 +8,64 @@
             <filename>Backgrounds/</filename>
         </imagetype>
 
-	<group name="pagedate" from="baseDateHeading" />
+        <group name="pagedate" from="baseDateHeading" />
 
-	<buttonlist name="menu" from="groupsList">
-	    <area>35,30,520,-30</area>
-	    <align>vcenter,left</align>
-	    <scrollstyle>free</scrollstyle>
-	    <wrapstyle>selection</wrapstyle>
+        <buttonlist name="menu" from="groupsList">
+            <area>35,30,520,-30</area>
+            <align>vcenter,left</align>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>selection</wrapstyle>
 
-	    <statetype name="buttonitem">
-		<area>0,0,100%,100%</area>
+            <statetype name="buttonitem">
+                <area>0,0,100%,100%</area>
 
-		<state name="inactive">
-		    <area>20,0,-20,110</area>
-		</state>
+                <state name="inactive">
+                    <area>20,0,-20,110</area>
+                </state>
 
-		<state name="active" from="inactive" />
+                <state name="active" from="inactive" />
 
-		<state name="selectedinactive" from="inactive">
-		    <area>5,0,-5,110</area>
+                <state name="selectedinactive" from="inactive">
+                    <area>5,0,-5,110</area>
 
-		    <textarea name="buttontext">
-			<area>5,5,-5,-5</area>
-		    </textarea>
-		</state>
+                    <textarea name="buttontext">
+                        <area>5,5,-5,-5</area>
+                    </textarea>
+                </state>
 
-		<state name="selectedactive" from="selectedinactive">
-		    <area>0,0,100%,220</area>
+                <state name="selectedactive" from="selectedinactive">
+                    <area>0,0,100%,220</area>
 
-		    <shape name="groupBorder">
-			<area>0,0,100%,100%</area>
-			<type>roundbox</type>
-			<line color="#AAFFFF" alpha="220" width="5" /> 
-			<cornerradius>10</cornerradius>
-		    </shape>
+                    <shape name="groupBorder">
+                        <area>0,0,100%,100%</area>
+                        <type>roundbox</type>
+                        <line color="#AAFFFF" alpha="220" width="5" /> 
+                        <cornerradius>10</cornerradius>
+                    </shape>
 
-		    <shape name="descshape">
-			<area>13,105,-13,-5</area>
-			<type>roundbox</type>
-			<line color="#000000" alpha="0" width="0" />
-			<fill color="#502550" alpha="80" />
-			<cornerradius>10</cornerradius>
-		    </shape>
-		    <textarea name="buttontext">
-			<area>13,5,-13,97</area>
-			<align>center</align>
-			<font>mylargebold</font>
-			<multiline>yes</multiline>
-			<cutdown>yes</cutdown>
-		    </textarea>
-		    <textarea name="description">
-			<area>13,105,-13,-10</area>
-			<font>mysmallbold</font>
-			<align>center</align>
-			<multiline>yes</multiline>
-		    </textarea>
-		</state>
-	    </statetype>
-	</buttonlist>
+                    <shape name="descshape">
+                        <area>13,105,-13,-5</area>
+                        <type>roundbox</type>
+                        <line color="#000000" alpha="0" width="0" />
+                        <fill color="#502550" alpha="80" />
+                        <cornerradius>10</cornerradius>
+                    </shape>
+                    <textarea name="buttontext">
+                        <area>13,5,-13,97</area>
+                        <align>center</align>
+                        <font>mylargebold</font>
+                        <multiline>yes</multiline>
+                        <cutdown>yes</cutdown>
+                    </textarea>
+                    <textarea name="description">
+                        <area>13,105,-13,-10</area>
+                        <font>mysmallbold</font>
+                        <align>center</align>
+                        <multiline>yes</multiline>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
 
     </window>
 </mythuitheme>

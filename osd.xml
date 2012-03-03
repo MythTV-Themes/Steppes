@@ -4,21 +4,21 @@
 <mythuitheme>
 
     <!-- Main -> Media Library -> Watch Recordings -> <start watching>
-	 -> 'M'(enu) -> Playback -> Playback Data
+         -> 'M'(enu) -> Playback -> Playback Data
     -->
     <window name="osd_debug">
         <fontdef name="small" face="CartoGothic Std">
             <pixelsize>30</pixelsize>
-	    <color>#FFFFCC</color>
+            <color>#FFFFCC</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
         <fontdef name="file" from="small">
             <color>#FFFFFF</color>
         </fontdef>
-	<fontdef name="data" from="small">
+        <fontdef name="data" from="small">
             <color>#CCCCFF</color>
-	</fontdef>
+        </fontdef>
 
         <area>50,50,-50,400</area>
         <shape name="background">
@@ -41,143 +41,143 @@
             <align>left,vcenter</align>
         </textarea>
 
-	<group name="group1">
-	    <area>5,60,360,250</area>
+        <group name="group1">
+            <area>5,60,360,250</area>
 
-	    <textarea name="storage">
-		<font>small</font>
-		<area>5,5,150,90</area>
-		<align>right,vcenter</align>
-		<multiline>yes</multiline>
-		<value>Storage to Buffer</value>
-	    </textarea>
-	    <textarea name="storagerate">
-		<font>data</font>
-		<area>170,5,200,90</area>
-		<align>left,vcenter</align>
-		<template>: %1</template>
-	    </textarea>
-	    <textarea name="decoder" from="storage">
-		<position>5,100</position>
-		<value>Buffer to Decoder</value>
-	    </textarea>
-	    <textarea name="decoderrate" from="storagerate">
-		<position>170,100</position>
-	    </textarea>
-	    <textarea name="buffer" from="storage">
-		<position>5,195</position>
-		<value>Available Buffer</value>
-	    </textarea>
-	    <textarea name="bufferavail" from="storagerate">
-		<position>170,195</position>
-		<template>: %BUFFERAVAIL% of %BUFFERSIZE%Mb</template>
-	    </textarea>
-	</group>
+            <textarea name="storage">
+                <font>small</font>
+                <area>5,5,150,90</area>
+                <align>right,vcenter</align>
+                <multiline>yes</multiline>
+                <value>Storage to Buffer</value>
+            </textarea>
+            <textarea name="storagerate">
+                <font>data</font>
+                <area>170,5,200,90</area>
+                <align>left,vcenter</align>
+                <template>: %1</template>
+            </textarea>
+            <textarea name="decoder" from="storage">
+                <position>5,100</position>
+                <value>Buffer to Decoder</value>
+            </textarea>
+            <textarea name="decoderrate" from="storagerate">
+                <position>170,100</position>
+            </textarea>
+            <textarea name="buffer" from="storage">
+                <position>5,195</position>
+                <value>Available Buffer</value>
+            </textarea>
+            <textarea name="bufferavail" from="storagerate">
+                <position>170,195</position>
+                <template>: %BUFFERAVAIL% of %BUFFERSIZE%Mb</template>
+            </textarea>
+        </group>
 
-	<group name="group2">
-	    <area>430,60,410,250</area>
+        <group name="group2">
+            <area>430,60,410,250</area>
 
-	    <textarea name="fps">
-		<font>small</font>
-		<area>5,5,200,90</area>
-		<align>right,vcenter</align>
-		<multiline>yes</multiline>
-		<value>FPS</value>
-	    </textarea>
-	    <textarea name="framerate">
-		<font>data</font>
-		<area>215,5,200,90</area>
-		<align>left,vcenter</align>
-		<template>: %1</template>
-	    </textarea>
-	    <textarea name="sync" from="fps">
-		<position>5,100</position>
-		<value>A/V Sync</value>
-	    </textarea>
-	    <textarea name="avsync" from="framerate">
-		<position>215,100</position>
-		<align>left,vcenter</align>
-	    </textarea>
-	    <textarea name="frames" from="fps">
-		<position>5,195</position>
-		<value>Frames decoded /free</value>
-	    </textarea>
-	    <textarea name="videoframes" from="framerate">
-		<position>215,195</position>
-		<align>left,vcenter</align>
-	    </textarea>
-	</group>
+            <textarea name="fps">
+                <font>small</font>
+                <area>5,5,200,90</area>
+                <align>right,vcenter</align>
+                <multiline>yes</multiline>
+                <value>FPS</value>
+            </textarea>
+            <textarea name="framerate">
+                <font>data</font>
+                <area>215,5,200,90</area>
+                <align>left,vcenter</align>
+                <template>: %1</template>
+            </textarea>
+            <textarea name="sync" from="fps">
+                <position>5,100</position>
+                <value>A/V Sync</value>
+            </textarea>
+            <textarea name="avsync" from="framerate">
+                <position>215,100</position>
+                <align>left,vcenter</align>
+            </textarea>
+            <textarea name="frames" from="fps">
+                <position>5,195</position>
+                <value>Frames decoded /free</value>
+            </textarea>
+            <textarea name="videoframes" from="framerate">
+                <position>215,195</position>
+                <align>left,vcenter</align>
+            </textarea>
+        </group>
 
-	<group name="group3">
-	    <area>850,60,530,250</area>
+        <group name="group3">
+            <area>850,60,530,250</area>
 
-	    <textarea name="cpuload">
-		<font>small</font>
-		<area>5,195,200,90</area>
-		<align>right,vcenter</align>
-		<value>CPUs</value>
-	    </textarea>
-	    <textarea name="load">
-		<font>data</font>
-		<area>215,195,320,90</area>
-		<align>left,vcenter</align>
-		<template>: %1</template>
-	    </textarea>
+            <textarea name="cpuload">
+                <font>small</font>
+                <area>5,195,200,90</area>
+                <align>right,vcenter</align>
+                <value>CPUs</value>
+            </textarea>
+            <textarea name="load">
+                <font>data</font>
+                <area>215,195,320,90</area>
+                <align>left,vcenter</align>
+                <template>: %1</template>
+            </textarea>
 
-	    <textarea name="vidcodec" from="cpuload">
-		<position>5,100</position>
-		<value>Codec/Dec</value>
-	    </textarea>
-	    <textarea name="videocodec" from="load">
-		<position>215,100</position>
-		<template>: %VIDEOCODEC% %VIDEODECODER%</template>
-	    </textarea>
+            <textarea name="vidcodec" from="cpuload">
+                <position>5,100</position>
+                <value>Codec/Dec</value>
+            </textarea>
+            <textarea name="videocodec" from="load">
+                <position>215,100</position>
+                <template>: %VIDEOCODEC% %VIDEODECODER%</template>
+            </textarea>
 
-	    <textarea name="video" from="cpuload">
-		<position>5,5</position>
-		<value>Video</value>
-	    </textarea>
-	    <textarea name="videowidth" from="load">
-		<position>215,5</position>
-		<template>: %VIDEOWIDTH%x%VIDEOHEIGHT%@%VIDEOFRAMERATE%fps</template>
-	    </textarea>
-	</group>
+            <textarea name="video" from="cpuload">
+                <position>5,5</position>
+                <value>Video</value>
+            </textarea>
+            <textarea name="videowidth" from="load">
+                <position>215,5</position>
+                <template>: %VIDEOWIDTH%x%VIDEOHEIGHT%@%VIDEOFRAMERATE%fps</template>
+            </textarea>
+        </group>
 
-	<group name="group4">
-	    <area>1420,60,-5,250</area>
+        <group name="group4">
+            <area>1420,60,-5,250</area>
 
-	    <textarea name="audio">
-		<font>small</font>
-		<area>5,5,200,90</area>
-		<align>right,vcenter</align>
-		<multiline>yes</multiline>
-		<value>Audio</value>
-	    </textarea>
-	    <textarea name="audiocodec">
-		<font>data</font>
-		<area>215,5,300,90</area>
-		<align>left,vcenter</align>
-		<template>: %1</template>
-	    </textarea>
-	    <textarea name="channels" from="audio">
-		<position>5,100</position>
-		<value>Channels</value>
-	    </textarea>
-	    <textarea name="audiochannels" from="audiocodec">
-		<position>215,100</position>
-	    </textarea>
-	    <textarea name="audiorate" from="audio">
-		<position>5,195</position>
-		<value>Sample rate</value>
-	    </textarea>
-	    <textarea name="samplerate" from="audiocodec">
-		<position>215,195</position>
-	    </textarea>
-	</group>
+            <textarea name="audio">
+                <font>small</font>
+                <area>5,5,200,90</area>
+                <align>right,vcenter</align>
+                <multiline>yes</multiline>
+                <value>Audio</value>
+            </textarea>
+            <textarea name="audiocodec">
+                <font>data</font>
+                <area>215,5,300,90</area>
+                <align>left,vcenter</align>
+                <template>: %1</template>
+            </textarea>
+            <textarea name="channels" from="audio">
+                <position>5,100</position>
+                <value>Channels</value>
+            </textarea>
+            <textarea name="audiochannels" from="audiocodec">
+                <position>215,100</position>
+            </textarea>
+            <textarea name="audiorate" from="audio">
+                <position>5,195</position>
+                <value>Sample rate</value>
+            </textarea>
+            <textarea name="samplerate" from="audiocodec">
+                <position>215,195</position>
+            </textarea>
+        </group>
     </window>
 
     <!-- Main -> Media Library -> Watch Recordings -> <start watching>
-	 -> [Return] or [Enter] (to see "Bookmark Saved")
+         -> [Return] or [Enter] (to see "Bookmark Saved")
     -->
     <window name="osd_message">
         <fontdef name="small" face="CartoGothic Std">
@@ -189,31 +189,31 @@
 
         <area>600,860,-600,70</area>
 
-	<group name="msggroup">
-	    <area>0,0,100%,100%</area>
-	    <minsize>20,100%</minsize>
+        <group name="msggroup">
+            <area>0,0,100%,100%</area>
+            <minsize>20,100%</minsize>
 
-	    <shape name="background">
-		<area>0,0,100%,100%</area>
-		<minsize>20,100%</minsize>
-		<type>roundbox</type>
-		<fill color="#000000" alpha="200" />
-		<line color="#55FFFF" alpha="96" width="3" />
-		<cornerradius>10</cornerradius>
-	    </shape>
-	    <textarea name="message_text">
-		<font>small</font>
-		<area>20,15,-20,-15</area>
-		<minsize>20,100%</minsize>
-		<align>center</align>
-	    </textarea>
-	</group>
+            <shape name="background">
+                <area>0,0,100%,100%</area>
+                <minsize>20,100%</minsize>
+                <type>roundbox</type>
+                <fill color="#000000" alpha="200" />
+                <line color="#55FFFF" alpha="96" width="3" />
+                <cornerradius>10</cornerradius>
+            </shape>
+            <textarea name="message_text">
+                <font>small</font>
+                <area>20,15,-20,-15</area>
+                <minsize>20,100%</minsize>
+                <align>center</align>
+            </textarea>
+        </group>
     </window>
 
     <!-- Main -> Media Library -> Watch Recordings -> <start watching>
-	 -> <start typing numbers>
+         -> <start typing numbers>
     -->
-   <window name="osd_input">
+    <window name="osd_input">
         <fontdef name="large" face="CartoGothic Std">
             <pixelsize>34</pixelsize>
             <color>#FFFFFF</color>
@@ -236,7 +236,7 @@
     </window>
 
     <!-- Main -> Media Library -> Watch Recordings -> <start watching>
-	 -> 'I'(nfo)
+         -> 'I'(nfo)
     -->
     <window name="osd_status">
         <fontdef name="small" face="CartoGothic Std">
@@ -266,7 +266,7 @@
             <area>10,5,1700,40</area>
             <align>hcenter,bottom</align>
             <template>%DESCRIPTION%
-		%(|REMAININGTIME|)%%(|BEHINDTIME|)%%VALUE%%UNITS%</template>
+            %(|REMAININGTIME|)%%(|BEHINDTIME|)%%VALUE%%UNITS%</template>
         </textarea>
         <clock name="clock">
             <area>1380,10,330,50</area>
@@ -290,7 +290,7 @@
     </window>
 
     <!-- Main -> Media Library -> Watch Recordings -> <start watching>
-	 -> 'I'(nfo) -> 'I'nfo (again)
+         -> 'I'(nfo) -> 'I'nfo (again)
     -->
     <window name="program_info">
         <fontdef name="small" face="CartoGothic Std">
@@ -305,9 +305,9 @@
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
-	<fontdef name="smallinfo" from="small">
-	    <color>#A0BFFF</color>
-	</fontdef>
+        <fontdef name="smallinfo" from="small">
+            <color>#A0BFFF</color>
+        </fontdef>
         <fontdef name="medium" from="small">
             <pixelsize>34</pixelsize>
         </fontdef>
@@ -332,64 +332,64 @@
             <align>hcenter,top</align>
         </clock>
 
-	<group name="info">
-	    <area>220,3,-220,-3</area>
+        <group name="info">
+            <area>220,3,-220,-3</area>
 
-	    <shape name="infoshape">
-		<area>0,0,100%,100%</area>
-		<type>box</type>
-		<fill color="#000000" alpha="128" />
-	    </shape>
+            <shape name="infoshape">
+                <area>0,0,100%,100%</area>
+                <type>box</type>
+                <fill color="#000000" alpha="128" />
+            </shape>
 
-	    <textarea name="title">
-		<font>large</font>
-		<area>5,5,-5,45</area>
-		<align>left,top</align>
-	    </textarea>
-	    <textarea name="s00e00">
-		<font>smallinfo</font>
-		<area>10,55,100,35</area>
-		<align>left,top</align>
-	    </textarea>
-	    <textarea name="starttime">
-		<font>smallinfo</font>
-		<area>120,55,600,35</area>
-		<align>left,top</align>
-		<template>%STARTDATE%   %STARTTIME% - %ENDTIME%</template>
-	    </textarea>
-	    <textarea name="originalairdate">
-		<font>smallinfo</font>
-		<area>720,55,350,35</area>
-		<align>left,top</align>
-		<template>(%1)</template>
-	    </textarea>
-	    <textarea name="year">
-		<font>smallinfo</font>
-		<area>720,55,350,35</area>
-		<align>left,top</align>
-		<template>(%1)</template>
-	    </textarea>
-	    <textarea name="lenmins">
-		<area>100%-255,55,250,35</area>
-		<font>smallinfo</font>
-		<align>right,top</align>
-	    </textarea>
-	    <textarea name="description">
-		<font>medium</font>
-		<area>5,100,-5,-15</area>
-		<align>left,top</align>
-		<multiline>yes</multiline>
-		<template>%|"SUBTITLE|"% %|(STARS|) %%DESCRIPTION%</template>
-	    </textarea>
-	</group>
+            <textarea name="title">
+                <font>large</font>
+                <area>5,5,-5,45</area>
+                <align>left,top</align>
+            </textarea>
+            <textarea name="s00e00">
+                <font>smallinfo</font>
+                <area>10,55,100,35</area>
+                <align>left,top</align>
+            </textarea>
+            <textarea name="starttime">
+                <font>smallinfo</font>
+                <area>120,55,600,35</area>
+                <align>left,top</align>
+                <template>%STARTDATE%   %STARTTIME% - %ENDTIME%</template>
+            </textarea>
+            <textarea name="originalairdate">
+                <font>smallinfo</font>
+                <area>720,55,350,35</area>
+                <align>left,top</align>
+                <template>(%1)</template>
+            </textarea>
+            <textarea name="year">
+                <font>smallinfo</font>
+                <area>720,55,350,35</area>
+                <align>left,top</align>
+                <template>(%1)</template>
+            </textarea>
+            <textarea name="lenmins">
+                <area>100%-255,55,250,35</area>
+                <font>smallinfo</font>
+                <align>right,top</align>
+            </textarea>
+            <textarea name="description">
+                <font>medium</font>
+                <area>5,100,-5,-15</area>
+                <align>left,top</align>
+                <multiline>yes</multiline>
+                <template>%|"SUBTITLE|"% %|(STARS|) %%DESCRIPTION%</template>
+            </textarea>
+        </group>
 
         <imagetype name="coverart">
             <area>10,10,200,190</area>
-	    <preserveaspect>true</preserveaspect>
+            <preserveaspect>true</preserveaspect>
         </imagetype>
         <imagetype name="iconpath">
             <area>10,205,200,100</area>
-	    <preserveaspect>true</preserveaspect>
+            <preserveaspect>true</preserveaspect>
         </imagetype>
         <textarea name="channum">
             <font>smallnarrow</font>
@@ -400,15 +400,15 @@
             <font>smallnarrow</font>
             <area>10,330,200,60</area>
             <align>center</align>
-	    <multiline>yes</multiline>
+            <multiline>yes</multiline>
         </textarea>
 
         <statetype name="tvstate">
-	    <area>0,0,100%,100%</area>
+            <area>0,0,100%,100%</area>
             <state name="WatchingLiveTV">
-		<area>100%-210,50,-10,62</area>
+                <area>100%-210,50,-10,62</area>
                 <imagetype name="image">
-		    <area>0,0,100%,100%</area>
+                    <area>0,0,100%,100%</area>
                     <filename>Images/Arclight/LiveTV.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
@@ -441,11 +441,11 @@
         </statetype>
 
         <statetype name="audiocodec">
-	    <area>0,0,100%,100%</area>
+            <area>0,0,100%,100%</area>
             <state name="PCM_DVD">
-		<area>100%-210,110,-10,62</area>
+                <area>100%-210,110,-10,62</area>
                 <imagetype name="image">
-		    <area>0,0,100%,100%</area>
+                    <area>0,0,100%,100%</area>
                     <filename>Images/Arclight/PCM.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
@@ -503,11 +503,11 @@
         </statetype>
 
         <statetype name="audiochannels">
-	    <area>0,0,100%,100%</area>
+            <area>0,0,100%,100%</area>
             <state name="1">
-		<area>100%-210,170,-10,62</area>
+                <area>100%-210,170,-10,62</area>
                 <imagetype name="image">
-		<area>0,0,100%,100%</area>
+                    <area>0,0,100%,100%</area>
                     <filename>Images/Arclight/1chan.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
@@ -540,11 +540,11 @@
         </statetype>
 
         <statetype name="videocodec">
-	    <area>0,0,100%,100%</area>
+            <area>0,0,100%,100%</area>
             <state name="MPEG-2">
-		<area>100%-210,230,-10,62</area>
+                <area>100%-210,230,-10,62</area>
                 <imagetype name="image">
-		    <area>0,0,100%,100%</area>
+                    <area>0,0,100%,100%</area>
                     <filename>Images/Arclight/MPEG2.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
@@ -582,11 +582,11 @@
         </statetype>
 
         <statetype name="videodescrip">
-	    <area>0,0,100%,100%</area>
+            <area>0,0,100%,100%</area>
             <state name="SD">
-		<area>100%-210,290,-10,62</area>
+                <area>100%-210,290,-10,62</area>
                 <imagetype name="image">
-		    <area>0,0,100%,100%</area>
+                    <area>0,0,100%,100%</area>
                     <filename>Images/Arclight/SD.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
@@ -624,9 +624,9 @@
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
-	<fontdef name="smallinfo" from="small">
-	    <color>#A0BFFF</color>
-	</fontdef>
+        <fontdef name="smallinfo" from="small">
+            <color>#A0BFFF</color>
+        </fontdef>
         <fontdef name="medium" from="small">
             <pixelsize>34</pixelsize>
         </fontdef>
@@ -651,64 +651,64 @@
             <align>hcenter,top</align>
         </clock>
 
-	<group name="info">
-	    <area>220,3,-3,-3</area>
+        <group name="info">
+            <area>220,3,-3,-3</area>
 
-	    <shape name="infoshape">
-		<area>0,0,100%,100%</area>
-		<type>box</type>
-		<fill color="#000000" alpha="128" />
-	    </shape>
+            <shape name="infoshape">
+                <area>0,0,100%,100%</area>
+                <type>box</type>
+                <fill color="#000000" alpha="128" />
+            </shape>
 
-	    <textarea name="title">
-		<font>large</font>
-		<area>5,5,-5,45</area>
-		<align>left,top</align>
-	    </textarea>
-	    <textarea name="s00e00">
-		<font>smallinfo</font>
-		<area>10,55,100,35</area>
-		<align>left,top</align>
-	    </textarea>
-	    <textarea name="starttime">
-		<font>smallinfo</font>
-		<area>120,55,600,35</area>
-		<align>left,top</align>
-		<template>%STARTDATE%   %STARTTIME% - %ENDTIME%</template>
-	    </textarea>
-	    <textarea name="originalairdate">
-		<font>smallinfo</font>
-		<area>720,55,350,35</area>
-		<align>left,top</align>
-		<template>(%1)</template>
-	    </textarea>
-	    <textarea name="year">
-		<font>smallinfo</font>
-		<area>720,55,350,35</area>
-		<align>left,top</align>
-		<template>(%1)</template>
-	    </textarea>
-	    <textarea name="lenmins">
-		<area>100%-255,55,250,35</area>
-		<font>smallinfo</font>
-		<align>right,top</align>
-	    </textarea>
-	    <textarea name="description">
-		<font>medium</font>
-		<area>5,100,-5,-15</area>
-		<align>left,top</align>
-		<multiline>yes</multiline>
-		<template>%|"SUBTITLE|"% %|(STARS|) %%DESCRIPTION%</template>
-	    </textarea>
-	</group>
+            <textarea name="title">
+                <font>large</font>
+                <area>5,5,-5,45</area>
+                <align>left,top</align>
+            </textarea>
+            <textarea name="s00e00">
+                <font>smallinfo</font>
+                <area>10,55,100,35</area>
+                <align>left,top</align>
+            </textarea>
+            <textarea name="starttime">
+                <font>smallinfo</font>
+                <area>120,55,600,35</area>
+                <align>left,top</align>
+                <template>%STARTDATE%   %STARTTIME% - %ENDTIME%</template>
+            </textarea>
+            <textarea name="originalairdate">
+                <font>smallinfo</font>
+                <area>720,55,350,35</area>
+                <align>left,top</align>
+                <template>(%1)</template>
+            </textarea>
+            <textarea name="year">
+                <font>smallinfo</font>
+                <area>720,55,350,35</area>
+                <align>left,top</align>
+                <template>(%1)</template>
+            </textarea>
+            <textarea name="lenmins">
+                <area>100%-255,55,250,35</area>
+                <font>smallinfo</font>
+                <align>right,top</align>
+            </textarea>
+            <textarea name="description">
+                <font>medium</font>
+                <area>5,100,-5,-15</area>
+                <align>left,top</align>
+                <multiline>yes</multiline>
+                <template>%|"SUBTITLE|"% %|(STARS|) %%DESCRIPTION%</template>
+            </textarea>
+        </group>
 
         <imagetype name="coverart">
             <area>10,10,200,190</area>
-	    <preserveaspect>true</preserveaspect>
+            <preserveaspect>true</preserveaspect>
         </imagetype>
         <imagetype name="iconpath">
             <area>10,205,200,100</area>
-	    <preserveaspect>true</preserveaspect>
+            <preserveaspect>true</preserveaspect>
         </imagetype>
         <textarea name="channum">
             <font>smallnarrow</font>
@@ -719,7 +719,7 @@
             <font>smallnarrow</font>
             <area>10,330,200,60</area>
             <align>center</align>
-	    <multiline>yes</multiline>
+            <multiline>yes</multiline>
         </textarea>
     </window>
 
@@ -765,37 +765,37 @@
 
         <textedit name="callsign">
             <area>400,200,350,70</area>
-	    <statetype name="background">
-		<area>0,0,100%,100%</area>
-		<state name="active">
-		    <area>5,5,-5,-5</area>
-		    <shape name="background">
-			<area>5,5,-5,-5</area>
-			<fill color="#505050" alpha="96" />
-			<line color="#00FFFF" width="1" />
-		    </shape>
-		</state>
-		<state name="selected">
-		    <area>0,0,100%,100%</area>
-		    <shape name="background">
-			<area>0,0,100%,100%</area>
-			<fill color="#202060" alpha="200" />
-			<line color="#00FFFF" width="4" />
-		    </shape>
-		</state>
-	    </statetype>
-	    <imagetype name="cursor">
-		<filename>Images/cursor.png</filename>
-	    </imagetype>
-	    <textarea name="text">
-		<area>15,10,-15,-10</area>
-		<align>left,vcenter</align>
-		<font>small</font>
-	    </textarea>
-	</textedit>
+            <statetype name="background">
+                <area>0,0,100%,100%</area>
+                <state name="active">
+                    <area>5,5,-5,-5</area>
+                    <shape name="background">
+                        <area>5,5,-5,-5</area>
+                        <fill color="#505050" alpha="96" />
+                        <line color="#00FFFF" width="1" />
+                    </shape>
+                </state>
+                <state name="selected">
+                    <area>0,0,100%,100%</area>
+                    <shape name="background">
+                        <area>0,0,100%,100%</area>
+                        <fill color="#202060" alpha="200" />
+                        <line color="#00FFFF" width="4" />
+                    </shape>
+                </state>
+            </statetype>
+            <imagetype name="cursor">
+                <filename>Images/cursor.png</filename>
+            </imagetype>
+            <textarea name="text">
+                <area>15,10,-15,-10</area>
+                <align>left,vcenter</align>
+                <font>small</font>
+            </textarea>
+        </textedit>
 
         <textarea name="channum_label" from="callsign_label">
-	    <position>10,270</position>
+            <position>10,270</position>
             <value>Channel #</value>
         </textarea>
         <textedit name="channum" from="callsign">
@@ -818,83 +818,83 @@
             <position>400,410</position>
         </textedit>
 
-	<!-- Cannot use gradients here.  Cannot use "base" fonts here -->
-	<button name="probe">
-	    <area>35,100%-80,33%-10,60</area>
-	    <minsize>140,60</minsize>
-	    <statetype name="buttonstate">
-		<area>0,0,100%,100%</area>
-		<minsize>140,60</minsize>
-		<state name="active">
-		    <area>0,0,100%,100%</area>
-		    <minsize>140,60</minsize>
-		    <shape name="background">
-			<area>0,0,100%,100%</area>
-			<minsize>140,60</minsize>
-			<fill color="#505050" alpha="96" />
-			<line color="#00FFFF" width="1" />
-		    </shape>
-		    <textarea name="text">
-			<area>20,10,-20,-10</area>
-			<minsize>110,100%</minsize>
-			<align>left,vcenter</align>
-			<font>large</font>
-			<font state="disabled">large</font>
-			<font state="selected">large</font>
-		    </textarea>
-		</state>
-		<state name="selected" from="active">
-		    <shape name="background">
-			<area>0,0,100%,100%</area>
-			<minsize>140,100%</minsize>
-			<fill color="#603060" alpha="96" />
-			<line color="#00FFFF" width="4" />
-		    </shape>
-		    <textarea name="text" />
-		</state>
-		<state name="disabled" from="active">
-		    <shape name="background">
-			<area>0,0,100%,100%</area>
-			<minsize>140,100%</minsize>
-			<fill color="#303030" alpha="255" />
-			<line color="#505050" width="1" />
-		    </shape>
-		    <textarea name="text" />
-		</state>
-		<state name="pushed" from="active">
-		    <shape name="background">
-			<fill color="#808040" alpha="128" />
-		    </shape>
-		</state>
-	    </statetype>
+        <!-- Cannot use gradients here.  Cannot use "base" fonts here -->
+        <button name="probe">
+            <area>35,100%-80,33%-10,60</area>
+            <minsize>140,60</minsize>
+            <statetype name="buttonstate">
+                <area>0,0,100%,100%</area>
+                <minsize>140,60</minsize>
+                <state name="active">
+                    <area>0,0,100%,100%</area>
+                    <minsize>140,60</minsize>
+                    <shape name="background">
+                        <area>0,0,100%,100%</area>
+                        <minsize>140,60</minsize>
+                        <fill color="#505050" alpha="96" />
+                        <line color="#00FFFF" width="1" />
+                    </shape>
+                    <textarea name="text">
+                        <area>20,10,-20,-10</area>
+                        <minsize>110,100%</minsize>
+                        <align>left,vcenter</align>
+                        <font>large</font>
+                        <font state="disabled">large</font>
+                        <font state="selected">large</font>
+                    </textarea>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background">
+                        <area>0,0,100%,100%</area>
+                        <minsize>140,100%</minsize>
+                        <fill color="#603060" alpha="96" />
+                        <line color="#00FFFF" width="4" />
+                    </shape>
+                    <textarea name="text" />
+                </state>
+                <state name="disabled" from="active">
+                    <shape name="background">
+                        <area>0,0,100%,100%</area>
+                        <minsize>140,100%</minsize>
+                        <fill color="#303030" alpha="255" />
+                        <line color="#505050" width="1" />
+                    </shape>
+                    <textarea name="text" />
+                </state>
+                <state name="pushed" from="active">
+                    <shape name="background">
+                        <fill color="#808040" alpha="128" />
+                    </shape>
+                </state>
+            </statetype>
 
             <value>Probe</value>
-	</button>
+        </button>
 
         <button name="ok" from="probe">
-	    <area>50%+5,100%-80,-35,60</area>
-	    <statetype name="buttonstate">
-		<state name="active">
-		    <textarea name="text">
-			<align>right,vcenter</align>
-		    </textarea>
-		</state>
-		<state name="selected">
-		    <textarea name="text">
-			<align>right,vcenter</align>
-		    </textarea>
-		</state>
-		<state name="disabled">
-		    <textarea name="text">
-			<align>right,vcenter</align>
-		    </textarea>
-		</state>
-		<state name="pushed">
-		    <textarea name="text">
-			<align>right,vcenter</align>
-		    </textarea>
-		</state>
-	    </statetype>
+            <area>50%+5,100%-80,-35,60</area>
+            <statetype name="buttonstate">
+                <state name="active">
+                    <textarea name="text">
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selected">
+                    <textarea name="text">
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="disabled">
+                    <textarea name="text">
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="pushed">
+                    <textarea name="text">
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+            </statetype>
 
             <value>OK</value>
         </button>
@@ -902,7 +902,7 @@
     </window>
 
     <!-- Main -> Media Library -> Watch Recordings -> <start watching>
-	 -> 'E'(dit)
+         -> 'E'(dit)
     -->
     <window name="osd_program_editor">
         <fontdef name="small" face="CartoGothic Std">
@@ -1006,68 +1006,68 @@
             <align>center</align>
         </textarea>
 
-	<buttonlist name="list">
-	    <arrange>stack</arrange>
-	    <align>center</align>
-	    <area>15,190,-15,-20</area>
-	    <layout>vertical</layout>
-	    <spacing>2</spacing>
-	    <wrapstyle>selection</wrapstyle>
-	    <buttonarea>15,0,-15,100%</buttonarea>
-	    <statetype name="buttonitem">
-		<area>0,0,100%,90</area>
-		<state name="active">
-		    <area>0,0,100%,90</area>
-		    <shape name="background">
-			<area>7,0,-7,100%</area>
-			<fill color="#505050" alpha="96" />
-			<line color="#00FFFF" width="1" />
-			<type>roundbox</type>
-			<cornerradius>20</cornerradius>
-		    </shape>
-		    <textarea name="buttontext">
-			<area>25,5,-25,-5</area>
-			<cutdown>yes</cutdown>
-			<align>center</align>
-			<multiline>yes</multiline>
-			<font>small</font>
-		    </textarea>
-		    <imagetype name="buttonarrow">
-			<area>100%-22,50%-7,15,15</area>
-			<filename>Images/rightarrow-on.png</filename>
-		    </imagetype>
-		</state>
-		<state name="selectedinactive" from="active">
-		</state>
-		<state name="selectedactive" from="selectedinactive">
-		    <shape name="background">
-			<area>0,0,100%,100%</area>
-			<fill color="#505050" alpha="96" />
-			<line color="#AAFFFF" width="5" />
-			<type>roundbox</type>
-			<cornerradius>20</cornerradius>
-		    </shape>
-		</state>
+        <buttonlist name="list">
+            <arrange>stack</arrange>
+            <align>center</align>
+            <area>15,190,-15,-20</area>
+            <layout>vertical</layout>
+            <spacing>2</spacing>
+            <wrapstyle>selection</wrapstyle>
+            <buttonarea>15,0,-15,100%</buttonarea>
+            <statetype name="buttonitem">
+                <area>0,0,100%,90</area>
+                <state name="active">
+                    <area>0,0,100%,90</area>
+                    <shape name="background">
+                        <area>7,0,-7,100%</area>
+                        <fill color="#505050" alpha="96" />
+                        <line color="#00FFFF" width="1" />
+                        <type>roundbox</type>
+                        <cornerradius>20</cornerradius>
+                    </shape>
+                    <textarea name="buttontext">
+                        <area>25,5,-25,-5</area>
+                        <cutdown>yes</cutdown>
+                        <align>center</align>
+                        <multiline>yes</multiline>
+                        <font>small</font>
+                    </textarea>
+                    <imagetype name="buttonarrow">
+                        <area>100%-22,50%-7,15,15</area>
+                        <filename>Images/rightarrow-on.png</filename>
+                    </imagetype>
+                </state>
+                <state name="selectedinactive" from="active">
+                </state>
+                <state name="selectedactive" from="selectedinactive">
+                    <shape name="background">
+                        <area>0,0,100%,100%</area>
+                        <fill color="#505050" alpha="96" />
+                        <line color="#AAFFFF" width="5" />
+                        <type>roundbox</type>
+                        <cornerradius>20</cornerradius>
+                    </shape>
+                </state>
 
-	    </statetype>
+            </statetype>
 
-	    <statetype name="upscrollarrow">
-		<area>100%-20,50%-25,20,20</area>
-		<state type="full">
-		    <imagetype name="upon">
-			<filename>Images/uparrow-on.png</filename>
-		    </imagetype>
-		</state>
-	    </statetype>
-	    <statetype name="downscrollarrow">
-		<area>100%-20,50%+5,20,20</area>
-		<state type="full">
-		    <imagetype name="dnon">
-			<filename>Images/downarrow-on.png</filename>
-		    </imagetype>
-		</state>
-	    </statetype>
-	</buttonlist>
+            <statetype name="upscrollarrow">
+                <area>100%-20,50%-25,20,20</area>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename>Images/uparrow-on.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <area>100%-20,50%+5,20,20</area>
+                <state type="full">
+                    <imagetype name="dnon">
+                        <filename>Images/downarrow-on.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
     </window>
 
 </mythuitheme>

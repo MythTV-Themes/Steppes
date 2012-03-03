@@ -8,910 +8,910 @@
     <window name="weatherbase">
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="header" from="text" />
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="header" from="text" />
+            </group>
+        </group>
 
-	<group name="msggroup" from="baseMsgGroupWide">
-	    <textarea name="update_text" from="basetextarea">
-		<area>10,100%-110,-10,100</area>
-		<multiline>yes</multiline>
-		<align>center</align>
-		<cutdown>yes</cutdown>
-	    </textarea>
+        <group name="msggroup" from="baseMsgGroupWide">
+            <textarea name="update_text" from="basetextarea">
+                <area>10,100%-110,-10,100</area>
+                <multiline>yes</multiline>
+                <align>center</align>
+                <cutdown>yes</cutdown>
+            </textarea>
 
-	    <textarea name="pause_text">
-		<area>10,5,-10,35</area>
-		<font>mysmall</font>
-		<align>center</align>
-	    </textarea>
-	</group>
+            <textarea name="pause_text">
+                <area>10,5,-10,35</area>
+                <font>mysmall</font>
+                <align>center</align>
+            </textarea>
+        </group>
 
-	<group name="details">
-	    <area>50%-660,100,1320,-300</area>
+        <group name="details">
+            <area>50%-660,100,1320,-300</area>
 
-	    <shape name="background" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-	    </shape>
-	</group>
+            <shape name="background" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
+        </group>
     </window>
 
     <!-- Home -> Information Center -> Weather
     -->
     <window name="Current Conditions">
 
-	<group name="modegroup" from="baseModeGroup">
-	    <area>100,25,-100,60</area>
-	    <textarea name="cclocation" from="pagemode">
-		<align>center</align>
-	    </textarea>
-	</group>
+        <group name="modegroup" from="baseModeGroup">
+            <area>100,25,-100,60</area>
+            <textarea name="cclocation" from="pagemode">
+                <align>center</align>
+            </textarea>
+        </group>
 
-	<group name="msggroup">
-	    <area>52,809,500,240</area>
-	    <textarea name="copyright" from="msgText">
-		<area>10,10,-10,-70</area>	
-	    </textarea>
-	    <textarea name="observation_time" from="basetextarea">
-		<area>10,100%-110,-10,100</area>
-		<multiline>yes</multiline>
-		<align>center</align>
-		<cutdown>yes</cutdown>
-	    </textarea>
-	</group>
+        <group name="msggroup">
+            <area>52,809,500,240</area>
+            <textarea name="copyright" from="msgText">
+                <area>10,10,-10,-70</area>      
+            </textarea>
+            <textarea name="observation_time" from="basetextarea">
+                <area>10,100%-110,-10,100</area>
+                <multiline>yes</multiline>
+                <align>center</align>
+                <cutdown>yes</cutdown>
+            </textarea>
+        </group>
 
-	<group name="details">
-	    <area>50%-660,100,1320,-200</area>
+        <group name="details">
+            <area>50%-660,100,1320,-200</area>
 
-	    <group name="group1">
-		<area>125,75,700,500</area>
+            <group name="group1">
+                <area>125,75,700,500</area>
 
-		<shape name="background">
-		    <area>0,0,100%,100%</area>
-		    <type>box</type>
-		    <fill color="#FFFFFF" alpha="30" />
-		</shape>
+                <shape name="background">
+                    <area>0,0,100%,100%</area>
+                    <type>box</type>
+                    <fill color="#FFFFFF" alpha="30" />
+                </shape>
 
-		<textarea name="humiditylbl" from="labeltext">
-		    <position>20,20</position>
-		    <value>Humidity</value>
-		</textarea>
+                <textarea name="humiditylbl" from="labeltext">
+                    <position>20,20</position>
+                    <value>Humidity</value>
+                </textarea>
 
-		<textarea name="relative_humidity" from="basetextarea">
-		    <area>290,20,300,70</area>
-		    <font>mymedium</font>
-		    <align>left,vcenter</align>
-		    <template>: %1</template>
-		</textarea>
+                <textarea name="relative_humidity" from="basetextarea">
+                    <area>290,20,300,70</area>
+                    <font>mymedium</font>
+                    <align>left,vcenter</align>
+                    <template>: %1</template>
+                </textarea>
 
-		<textarea name="pressurelbl" from="humiditylbl">
-		    <position>20,100</position>
-		    <value>Pressure</value>
-		</textarea>
+                <textarea name="pressurelbl" from="humiditylbl">
+                    <position>20,100</position>
+                    <value>Pressure</value>
+                </textarea>
 
-		<textarea name="pressure" from="relative_humidity">
-		    <position>290,100</position>
-		</textarea>
+                <textarea name="pressure" from="relative_humidity">
+                    <position>290,100</position>
+                </textarea>
 
-		<textarea name="windlbl" from="humiditylbl">
-		    <position>20,180</position>
-		    <value>Wind(Gust)</value>
-		</textarea>
+                <textarea name="windlbl" from="humiditylbl">
+                    <position>20,180</position>
+                    <value>Wind(Gust)</value>
+                </textarea>
 
-		<textarea name="wind_spdgst" from="relative_humidity">
-		    <position>290,180</position>
-		</textarea>
+                <textarea name="wind_spdgst" from="relative_humidity">
+                    <position>290,180</position>
+                </textarea>
 
-		<textarea name="dirlbl" from="humiditylbl">
-		    <position>20,260</position>
-		    <value>Wind Direction</value>
-		</textarea>
+                <textarea name="dirlbl" from="humiditylbl">
+                    <position>20,260</position>
+                    <value>Wind Direction</value>
+                </textarea>
 
-		<textarea name="wind_dir" from="relative_humidity">
-		    <position>290,260</position>
-		</textarea>
+                <textarea name="wind_dir" from="relative_humidity">
+                    <position>290,260</position>
+                </textarea>
 
-		<textarea name="visilbl" from="humiditylbl">
-		    <position>20,340</position>
-		    <value>Visibility</value>
-		</textarea>
+                <textarea name="visilbl" from="humiditylbl">
+                    <position>20,340</position>
+                    <value>Visibility</value>
+                </textarea>
 
-		<textarea name="visibility" from="relative_humidity">
-		    <position>290,340</position>
-		</textarea>
+                <textarea name="visibility" from="relative_humidity">
+                    <position>290,340</position>
+                </textarea>
 
-		<textarea name="apptlbl" from="humiditylbl">
-		    <position>20,410</position>
-		    <value>Feels Like</value>
-		</textarea>
+                <textarea name="apptlbl" from="humiditylbl">
+                    <position>20,410</position>
+                    <value>Feels Like</value>
+                </textarea>
 
-		<textarea name="appt" from="relative_humidity">
-		    <position>290,410</position>
-		</textarea>
-	    </group>
+                <textarea name="appt" from="relative_humidity">
+                    <position>290,410</position>
+                </textarea>
+            </group>
 
-	    <group name="group2">
-		<area>900,75,300,500</area>
+            <group name="group2">
+                <area>900,75,300,500</area>
 
-		<shape name="background">
-		    <area>0,0,100%,100%</area>
-		    <type>box</type>
-		    <fill color="#000000" alpha="96" />
-		</shape>
-		
-		<imagetype name="weather_icon">
-		    <area>10,10,-10,200</area>
-		    <filename>unknown.png</filename>
-		</imagetype>
+                <shape name="background">
+                    <area>0,0,100%,100%</area>
+                    <type>box</type>
+                    <fill color="#000000" alpha="96" />
+                </shape>
+                
+                <imagetype name="weather_icon">
+                    <area>10,10,-10,200</area>
+                    <filename>unknown.png</filename>
+                </imagetype>
 
-		<textarea name="weather" from="basetextarea">
-		    <area>10,210,-10,110</area>
-		    <font>mymedium</font>
-		    <multiline>yes</multiline>
-		    <align>center</align>
-		</textarea>
+                <textarea name="weather" from="basetextarea">
+                    <area>10,210,-10,110</area>
+                    <font>mymedium</font>
+                    <multiline>yes</multiline>
+                    <align>center</align>
+                </textarea>
 
-		<textarea name="temp" from="basetextarea">
-		    <area>10,340,-10,-10</area>
-		    <font>myextralarge</font>
-		    <align>center</align>
-		</textarea>
-	    </group>
+                <textarea name="temp" from="basetextarea">
+                    <area>10,340,-10,-10</area>
+                    <font>myextralarge</font>
+                    <align>center</align>
+                </textarea>
+            </group>
 
-	</group>
+        </group>
     </window>
 
     <!-- Home -> Information Center -> Weather
     -->
     <window name="Three Day Forecast">
 
-	<group name="modegroup" from="baseModeGroup">
-	    <area>100,25,-100,60</area>
-	    <textarea name="3dlocation" from="pagemode">
-		<align>center</align>
-	    </textarea>
-	</group>
+        <group name="modegroup" from="baseModeGroup">
+            <area>100,25,-100,60</area>
+            <textarea name="3dlocation" from="pagemode">
+                <align>center</align>
+            </textarea>
+        </group>
 
-	<group name="msggroup">
-	    <area>52,809,500,240</area>
-	    <textarea name="copyright" from="msgText">
-		<area>10,10,-10,-70</area>	
-	    </textarea>
-	</group>
+        <group name="msggroup">
+            <area>52,809,500,240</area>
+            <textarea name="copyright" from="msgText">
+                <area>10,10,-10,-70</area>      
+            </textarea>
+        </group>
 
-	<group name="details">
-	    <area>50%-660,100,1320,-300</area>
+        <group name="details">
+            <area>50%-660,100,1320,-300</area>
 
-	    <group name="day0">
-		<area>20,20,400,-60</area>
+            <group name="day0">
+                <area>20,20,400,-60</area>
 
-		<shape name="background">
-		    <area>0,0,100%,100%</area>
-		    <type>box</type>
-		    <fill color="#FFFFFF" alpha="20" />
-		</shape>
+                <shape name="background">
+                    <area>0,0,100%,100%</area>
+                    <type>box</type>
+                    <fill color="#FFFFFF" alpha="20" />
+                </shape>
 
-		<textarea name="date-0">
-		    <area>20,10,-20,100</area>
-		    <font>mysmall</font>
-		    <multiline>yes</multiline>
-		    <align>center</align>
-		</textarea>
+                <textarea name="date-0">
+                    <area>20,10,-20,100</area>
+                    <font>mysmall</font>
+                    <multiline>yes</multiline>
+                    <align>center</align>
+                </textarea>
 
-		<imagetype name="icon-0">
-		    <area>10,110,-10,220</area>
-		    <preserveaspect>yes</preserveaspect>
-		</imagetype>
+                <imagetype name="icon-0">
+                    <area>10,110,-10,220</area>
+                    <preserveaspect>yes</preserveaspect>
+                </imagetype>
 
-		<textarea name="low_label" from="labeltext">
-		    <area>10,360,160,55</area>
-		    <value>Low</value>
-		    <align>right,vcenter</align>
-		</textarea>
-		
-		<textarea name="low-0" from="basetextarea">
-		    <area>180,360,-10,55</area>
-		    <font>mylarge</font>
-		    <cutdown>no</cutdown>
-		    <align>left,vcenter</align>
-		</textarea>
-		
-		<textarea name="high_label" from="low_label">
-		    <position>10,410</position>
-		    <value>High</value>
-		</textarea>
-		
-		<textarea name="high-0" from="low-0">
-		    <position>180,410</position>
-		</textarea>
-	    </group>
+                <textarea name="low_label" from="labeltext">
+                    <area>10,360,160,55</area>
+                    <value>Low</value>
+                    <align>right,vcenter</align>
+                </textarea>
+                
+                <textarea name="low-0" from="basetextarea">
+                    <area>180,360,-10,55</area>
+                    <font>mylarge</font>
+                    <cutdown>no</cutdown>
+                    <align>left,vcenter</align>
+                </textarea>
+                
+                <textarea name="high_label" from="low_label">
+                    <position>10,410</position>
+                    <value>High</value>
+                </textarea>
+                
+                <textarea name="high-0" from="low-0">
+                    <position>180,410</position>
+                </textarea>
+            </group>
 
-	    <group name="day1" from="day0">
-		<position>460,20</position>
+            <group name="day1" from="day0">
+                <position>460,20</position>
 
-		<textarea name="date-1" from="date-0" />
-		<imagetype name="icon-1" from="icon-0" />
-		<textarea name="low-1" from="low-0" />
-		<textarea name="high-1" from="high-0" />
+                <textarea name="date-1" from="date-0" />
+                <imagetype name="icon-1" from="icon-0" />
+                <textarea name="low-1" from="low-0" />
+                <textarea name="high-1" from="high-0" />
 
-		<textarea name="date-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<imagetype name="icon-0">
-		    <area>0,0,0,0</area>
-		</imagetype>
-		<textarea name="low-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<textarea name="high-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-	    </group>
+                <textarea name="date-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <imagetype name="icon-0">
+                    <area>0,0,0,0</area>
+                </imagetype>
+                <textarea name="low-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <textarea name="high-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+            </group>
 
-	    <group name="day2" from="day0">
-		<position>900,20</position>
+            <group name="day2" from="day0">
+                <position>900,20</position>
 
-		<textarea name="date-2" from="date-0" />
-		<imagetype name="icon-2" from="icon-0" />
-		<textarea name="low-2" from="low-0" />
-		<textarea name="high-2" from="high-0" />
+                <textarea name="date-2" from="date-0" />
+                <imagetype name="icon-2" from="icon-0" />
+                <textarea name="low-2" from="low-0" />
+                <textarea name="high-2" from="high-0" />
 
-		<textarea name="date-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<imagetype name="icon-0">
-		    <area>0,0,0,0</area>
-		</imagetype>
-		<textarea name="low-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<textarea name="high-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-	    </group>
+                <textarea name="date-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <imagetype name="icon-0">
+                    <area>0,0,0,0</area>
+                </imagetype>
+                <textarea name="low-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <textarea name="high-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+            </group>
 
-	</group>
+        </group>
     </window>
 
     <!-- Home -> Information Center -> Weather
     -->
     <window name="Six Day Forecast">
 
-	<group name="modegroup" from="baseModeGroup">
-	    <area>100,25,-100,60</area>
-	    <textarea name="6dlocation" from="pagemode">
-		<align>center</align>
-	    </textarea>
-	</group>
+        <group name="modegroup" from="baseModeGroup">
+            <area>100,25,-100,60</area>
+            <textarea name="6dlocation" from="pagemode">
+                <align>center</align>
+            </textarea>
+        </group>
 
-	<group name="msggroup">
-	    <area>52,809,500,240</area>
-	    <textarea name="copyright" from="msgText">
-		<area>10,10,-10,-70</area>	
-	    </textarea>
-	</group>
+        <group name="msggroup">
+            <area>52,809,500,240</area>
+            <textarea name="copyright" from="msgText">
+                <area>10,10,-10,-70</area>      
+            </textarea>
+        </group>
 
-	<group name="details">
-	    <area>50%-660,100,1320,-300</area>
+        <group name="details">
+            <area>50%-660,100,1320,-300</area>
 
-	    <group name="day0">
-		<area>10,10,420,320</area>
+            <group name="day0">
+                <area>10,10,420,320</area>
 
-		<shape name="background">
-		    <area>0,0,100%,100%</area>
-		    <type>box</type>
-		    <fill color="#FFFFFF" alpha="20" />
-		</shape>
+                <shape name="background">
+                    <area>0,0,100%,100%</area>
+                    <type>box</type>
+                    <fill color="#FFFFFF" alpha="20" />
+                </shape>
 
-		<textarea name="date-0" from="basetextarea">
-		    <area>10,10,-10,35</area>
-		    <align>allcenter</align>
-		</textarea>
+                <textarea name="date-0" from="basetextarea">
+                    <area>10,10,-10,35</area>
+                    <align>allcenter</align>
+                </textarea>
 
-		<imagetype name="icon-0">
-		    <area>10,55,-10,-60</area>
-		    <preserveaspect>yes</preserveaspect>
-		</imagetype>
+                <imagetype name="icon-0">
+                    <area>10,55,-10,-60</area>
+                    <preserveaspect>yes</preserveaspect>
+                </imagetype>
 
-		<textarea name="high_label" from="labeltext">
-		    <area>5,100%-65,195,35</area>
-		    <align>right,vcenter</align>
-		    <value>High</value>
-		</textarea>
+                <textarea name="high_label" from="labeltext">
+                    <area>5,100%-65,195,35</area>
+                    <align>right,vcenter</align>
+                    <value>High</value>
+                </textarea>
 
-		<textarea name="high-0" from="basetextarea">
-		    <area>220,100%-65,-10,35</area>
-		    <font>mysmall</font>
-		    <align>left,vcenter</align>
-		</textarea>
+                <textarea name="high-0" from="basetextarea">
+                    <area>220,100%-65,-10,35</area>
+                    <font>mysmall</font>
+                    <align>left,vcenter</align>
+                </textarea>
 
-		<textarea name="low_label" from="high_label">
-		    <position>5,100%-35</position>
-		    <value>Low</value>
-		</textarea>
+                <textarea name="low_label" from="high_label">
+                    <position>5,100%-35</position>
+                    <value>Low</value>
+                </textarea>
 
-		<textarea name="low-0" from="high-0">
-		    <position>220,100%-35</position>
-		</textarea>
-	    </group>
+                <textarea name="low-0" from="high-0">
+                    <position>220,100%-35</position>
+                </textarea>
+            </group>
 
-	    <group name="day1" from="day0">
-		<position>450,10</position>
+            <group name="day1" from="day0">
+                <position>450,10</position>
 
-		<textarea name="date-1" from="date-0" />
-		<imagetype name="icon-1" from="icon-0" />
-		<textarea name="high-1" from="high-0" />
-		<textarea name="low-1" from="low-0"/>
+                <textarea name="date-1" from="date-0" />
+                <imagetype name="icon-1" from="icon-0" />
+                <textarea name="high-1" from="high-0" />
+                <textarea name="low-1" from="low-0"/>
 
-		<textarea name="date-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<imagetype name="icon-0">
-		    <area>0,0,0,0</area>
-		</imagetype>
-		<textarea name="high-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<textarea name="low-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-	    </group>
+                <textarea name="date-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <imagetype name="icon-0">
+                    <area>0,0,0,0</area>
+                </imagetype>
+                <textarea name="high-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <textarea name="low-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+            </group>
 
-	    <group name="day2" from="day0">
-		<position>890,10</position>
+            <group name="day2" from="day0">
+                <position>890,10</position>
 
-		<textarea name="date-2" from="date-0" />
-		<imagetype name="icon-2" from="icon-0" />
-		<textarea name="high-2" from="high-0" />
-		<textarea name="low-2" from="low-0"/>
+                <textarea name="date-2" from="date-0" />
+                <imagetype name="icon-2" from="icon-0" />
+                <textarea name="high-2" from="high-0" />
+                <textarea name="low-2" from="low-0"/>
 
-		<textarea name="date-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<imagetype name="icon-0">
-		    <area>0,0,0,0</area>
-		</imagetype>
-		<textarea name="high-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<textarea name="low-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-	    </group>
+                <textarea name="date-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <imagetype name="icon-0">
+                    <area>0,0,0,0</area>
+                </imagetype>
+                <textarea name="high-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <textarea name="low-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+            </group>
 
-	    <group name="day3" from="day0">
-		<position>10,340</position>
+            <group name="day3" from="day0">
+                <position>10,340</position>
 
-		<textarea name="date-3" from="date-0" />
-		<imagetype name="icon-3" from="icon-0" />
-		<textarea name="high-3" from="high-0" />
-		<textarea name="low-3" from="low-0"/>
+                <textarea name="date-3" from="date-0" />
+                <imagetype name="icon-3" from="icon-0" />
+                <textarea name="high-3" from="high-0" />
+                <textarea name="low-3" from="low-0"/>
 
-		<textarea name="date-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<imagetype name="icon-0">
-		    <area>0,0,0,0</area>
-		</imagetype>
-		<textarea name="high-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<textarea name="low-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-	    </group>
+                <textarea name="date-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <imagetype name="icon-0">
+                    <area>0,0,0,0</area>
+                </imagetype>
+                <textarea name="high-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <textarea name="low-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+            </group>
 
-	    <group name="day4" from="day0">
-		<position>450,340</position>
+            <group name="day4" from="day0">
+                <position>450,340</position>
 
-		<textarea name="date-4" from="date-0" />
-		<imagetype name="icon-4" from="icon-0" />
-		<textarea name="high-4" from="high-0" />
-		<textarea name="low-4" from="low-0"/>
+                <textarea name="date-4" from="date-0" />
+                <imagetype name="icon-4" from="icon-0" />
+                <textarea name="high-4" from="high-0" />
+                <textarea name="low-4" from="low-0"/>
 
-		<textarea name="date-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<imagetype name="icon-0">
-		    <area>0,0,0,0</area>
-		</imagetype>
-		<textarea name="high-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<textarea name="low-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-	    </group>
+                <textarea name="date-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <imagetype name="icon-0">
+                    <area>0,0,0,0</area>
+                </imagetype>
+                <textarea name="high-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <textarea name="low-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+            </group>
 
-	    <group name="day5" from="day0">
-		<position>890,340</position>
+            <group name="day5" from="day0">
+                <position>890,340</position>
 
-		<textarea name="date-5" from="date-0" />
-		<imagetype name="icon-5" from="icon-0" />
-		<textarea name="high-5" from="high-0" />
-		<textarea name="low-5" from="low-0"/>
+                <textarea name="date-5" from="date-0" />
+                <imagetype name="icon-5" from="icon-0" />
+                <textarea name="high-5" from="high-0" />
+                <textarea name="low-5" from="low-0"/>
 
-		<textarea name="date-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<imagetype name="icon-0">
-		    <area>0,0,0,0</area>
-		</imagetype>
-		<textarea name="high-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<textarea name="low-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-	    </group>
-	</group>
+                <textarea name="date-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <imagetype name="icon-0">
+                    <area>0,0,0,0</area>
+                </imagetype>
+                <textarea name="high-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <textarea name="low-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+            </group>
+        </group>
     </window>
 
     <!-- Home -> Information Center -> Weather
     -->
     <window name="Static Map">
 
-	<group name="modegroup" from="baseModeGroup">
-	    <area>100,25,-100,60</area>
-	    <textarea name="smdesc" from="pagemode">
-		<align>center</align>
-	    </textarea>
-	</group>
+        <group name="modegroup" from="baseModeGroup">
+            <area>100,25,-100,60</area>
+            <textarea name="smdesc" from="pagemode">
+                <align>center</align>
+            </textarea>
+        </group>
 
-	<group name="msggroup">
-	    <area>52,809,500,240</area>
-	    <textarea name="copyright" from="msgText">
-		<area>10,10,-10,-70</area>	
-	    </textarea>
-	</group>
+        <group name="msggroup">
+            <area>52,809,500,240</area>
+            <textarea name="copyright" from="msgText">
+                <area>10,10,-10,-70</area>      
+            </textarea>
+        </group>
 
-	<group name="details">
-	    <area>50%-660,100,1320,-300</area>
+        <group name="details">
+            <area>50%-660,100,1320,-300</area>
 
-	    <imagetype name="map">
-		<area>10,10,-10,-10</area>
-		<preserveaspect>yes</preserveaspect>
-	    </imagetype>
-	</group>
+            <imagetype name="map">
+                <area>10,10,-10,-10</area>
+                <preserveaspect>yes</preserveaspect>
+            </imagetype>
+        </group>
     </window>
 
     <!-- Home -> Information Center -> Weather
     -->
     <window name="Animated Map">
 
-	<group name="modegroup" from="baseModeGroup">
-	    <area>100,25,-100,60</area>
-	    <textarea name="amdesc" from="pagemode">
-		<align>center</align>
-	    </textarea>
-	</group>
+        <group name="modegroup" from="baseModeGroup">
+            <area>100,25,-100,60</area>
+            <textarea name="amdesc" from="pagemode">
+                <align>center</align>
+            </textarea>
+        </group>
 
-	<group name="msggroup">
-	    <area>52,809,500,240</area>
-	    <textarea name="copyright" from="msgText">
-		<area>10,10,-10,-70</area>	
-	    </textarea>
-	</group>
+        <group name="msggroup">
+            <area>52,809,500,240</area>
+            <textarea name="copyright" from="msgText">
+                <area>10,10,-10,-70</area>      
+            </textarea>
+        </group>
 
-	<group name="details">
-	    <area>50%-660,100,1320,-300</area>
+        <group name="details">
+            <area>50%-660,100,1320,-300</area>
 
-	    <imagetype name="animatedimage">
-		<area>10,10,-10,-10</area>
-		<preserveaspect>yes</preserveaspect>
-	    </imagetype>
-	</group>
+            <imagetype name="animatedimage">
+                <area>10,10,-10,-10</area>
+                <preserveaspect>yes</preserveaspect>
+            </imagetype>
+        </group>
     </window>
 
     <!-- Home -> Information Center -> Weather
     -->
     <window name="Severe Weather Alerts">
 
-	<group name="modegroup" from="baseModeGroup">
-	    <area>100,25,-100,60</area>
-	    <textarea name="swlocation" from="pagemode">
-		<align>center</align>
-	    </textarea>
-	</group>
+        <group name="modegroup" from="baseModeGroup">
+            <area>100,25,-100,60</area>
+            <textarea name="swlocation" from="pagemode">
+                <align>center</align>
+            </textarea>
+        </group>
 
-	<group name="msggroup">
-	    <area>52,809,500,240</area>
-	    <textarea name="copyright" from="msgText">
-		<area>10,10,-10,-70</area>	
-	    </textarea>
-	</group>
+        <group name="msggroup">
+            <area>52,809,500,240</area>
+            <textarea name="copyright" from="msgText">
+                <area>10,10,-10,-70</area>      
+            </textarea>
+        </group>
 
-	<group name="details">
-	    <area>50%-660,100,1320,-300</area>
+        <group name="details">
+            <area>50%-660,100,1320,-300</area>
 
-	    <shape name="background" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            <shape name="background" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-	    <textarea name="alerts" from="basetextarea">
-		<area>50,50,-50,-50</area>
-		<align>center</align>
-		<multiline>yes</multiline>
-		<value>Weather Alerts</value>
-	    </textarea>
-	</group>
+            <textarea name="alerts" from="basetextarea">
+                <area>50,50,-50,-50</area>
+                <align>center</align>
+                <multiline>yes</multiline>
+                <value>Weather Alerts</value>
+            </textarea>
+        </group>
     </window>
 
     <!-- Home -> Information Center -> Weather
     -->
     <window name="18 Hour Forecast">
-	<group name="modegroup" from="baseModeGroup">
-	    <area>100,25,-100,60</area>
-	    <textarea name="18hrlocation" from="pagemode">
-		<align>center</align>
-	    </textarea>
-	</group>
+        <group name="modegroup" from="baseModeGroup">
+            <area>100,25,-100,60</area>
+            <textarea name="18hrlocation" from="pagemode">
+                <align>center</align>
+            </textarea>
+        </group>
 
-	<group name="msggroup">
-	    <area>52,809,500,240</area>
-	    <textarea name="copyright" from="msgText">
-		<area>10,10,-10,-70</area>	
-	    </textarea>
-	</group>
+        <group name="msggroup">
+            <area>52,809,500,240</area>
+            <textarea name="copyright" from="msgText">
+                <area>10,10,-10,-70</area>      
+            </textarea>
+        </group>
 
-	<group name="details">
-	    <area>50%-660,100,1320,-300</area>
+        <group name="details">
+            <area>50%-660,100,1320,-300</area>
 
-	    <group name="time0">
-		<area>10,10,420,320</area>
+            <group name="time0">
+                <area>10,10,420,320</area>
 
-		<shape name="background">
-		    <area>0,0,100%,100%</area>
-		    <type>box</type>
-		    <fill color="#FFFFFF" alpha="20" />
-		</shape>
+                <shape name="background">
+                    <area>0,0,100%,100%</area>
+                    <type>box</type>
+                    <fill color="#FFFFFF" alpha="20" />
+                </shape>
 
-		<textarea name="time-0" from="basetextarea">
-		    <area>10,10,-10,35</area>
-		    <align>allcenter</align>
-		</textarea>
+                <textarea name="time-0" from="basetextarea">
+                    <area>10,10,-10,35</area>
+                    <align>allcenter</align>
+                </textarea>
 
-		<imagetype name="18icon-0">
-		    <area>10,60,-10,-60</area>
-		    <filename>unknown.png</filename>
-		    <preserveaspect>yes</preserveaspect>
-		</imagetype>
+                <imagetype name="18icon-0">
+                    <area>10,60,-10,-60</area>
+                    <filename>unknown.png</filename>
+                    <preserveaspect>yes</preserveaspect>
+                </imagetype>
 
-		<textarea name="temp_label" from="labeltext">
-		    <area>5,100%-65,195,35</area>
-		    <align>right,vcenter</align>
-		    <value>Temp</value>
-		</textarea>
+                <textarea name="temp_label" from="labeltext">
+                    <area>5,100%-65,195,35</area>
+                    <align>right,vcenter</align>
+                    <value>Temp</value>
+                </textarea>
 
-		<textarea name="temp-0" from="basetextarea">
-		    <area>220,100%-65,-10,35</area>
-		    <font>mysmall</font>
-		    <align>left,vcenter</align>
-		</textarea>
+                <textarea name="temp-0" from="basetextarea">
+                    <area>220,100%-65,-10,35</area>
+                    <font>mysmall</font>
+                    <align>left,vcenter</align>
+                </textarea>
 
-		<textarea name="precip_label" from="temp_label">
-		    <position>5,100%-35</position>
-		    <value>Precip</value>
-		</textarea>
+                <textarea name="precip_label" from="temp_label">
+                    <position>5,100%-35</position>
+                    <value>Precip</value>
+                </textarea>
 
-		<textarea name="pop-0" from="temp-0">
-		    <position>220,100%-35</position>
-		    <value>100%</value>
-		</textarea>
-	    </group>
+                <textarea name="pop-0" from="temp-0">
+                    <position>220,100%-35</position>
+                    <value>100%</value>
+                </textarea>
+            </group>
 
-	    <group name="time1" from="time0">
-		<position>450,10</position>
+            <group name="time1" from="time0">
+                <position>450,10</position>
 
-		<textarea name="time-1" from="time-0" />
-		<imagetype name="18icon-1" from="18icon-0" />
-		<textarea name="temp-1" from="temp-0" />
-		<textarea name="pop-1" from="pop-0"/>
+                <textarea name="time-1" from="time-0" />
+                <imagetype name="18icon-1" from="18icon-0" />
+                <textarea name="temp-1" from="temp-0" />
+                <textarea name="pop-1" from="pop-0"/>
 
-		<textarea name="time-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<imagetype name="18icon-0">
-		    <area>0,0,0,0</area>
-		</imagetype>
-		<textarea name="temp-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<textarea name="pop-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-	    </group>
+                <textarea name="time-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <imagetype name="18icon-0">
+                    <area>0,0,0,0</area>
+                </imagetype>
+                <textarea name="temp-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <textarea name="pop-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+            </group>
 
-	    <group name="time2" from="time0">
-		<position>890,10</position>
+            <group name="time2" from="time0">
+                <position>890,10</position>
 
-		<textarea name="time-2" from="time-0" />
-		<imagetype name="18icon-2" from="18icon-0" />
-		<textarea name="temp-2" from="temp-0" />
-		<textarea name="pop-2" from="pop-0"/>
+                <textarea name="time-2" from="time-0" />
+                <imagetype name="18icon-2" from="18icon-0" />
+                <textarea name="temp-2" from="temp-0" />
+                <textarea name="pop-2" from="pop-0"/>
 
-		<textarea name="time-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<imagetype name="18icon-0">
-		    <area>0,0,0,0</area>
-		</imagetype>
-		<textarea name="temp-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<textarea name="pop-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-	    </group>
+                <textarea name="time-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <imagetype name="18icon-0">
+                    <area>0,0,0,0</area>
+                </imagetype>
+                <textarea name="temp-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <textarea name="pop-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+            </group>
 
-	    <group name="time3" from="time0">
-		<position>10,340</position>
+            <group name="time3" from="time0">
+                <position>10,340</position>
 
-		<textarea name="time-3" from="time-0" />
-		<imagetype name="18icon-3" from="18icon-0" />
-		<textarea name="temp-3" from="temp-0" />
-		<textarea name="pop-3" from="pop-0"/>
+                <textarea name="time-3" from="time-0" />
+                <imagetype name="18icon-3" from="18icon-0" />
+                <textarea name="temp-3" from="temp-0" />
+                <textarea name="pop-3" from="pop-0"/>
 
-		<textarea name="time-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<imagetype name="18icon-0">
-		    <area>0,0,0,0</area>
-		</imagetype>
-		<textarea name="temp-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<textarea name="pop-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-	    </group>
+                <textarea name="time-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <imagetype name="18icon-0">
+                    <area>0,0,0,0</area>
+                </imagetype>
+                <textarea name="temp-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <textarea name="pop-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+            </group>
 
-	    <group name="time4" from="time0">
-		<position>450,340</position>
+            <group name="time4" from="time0">
+                <position>450,340</position>
 
-		<textarea name="time-4" from="time-0" />
-		<imagetype name="18icon-4" from="18icon-0" />
-		<textarea name="temp-4" from="temp-0" />
-		<textarea name="pop-4" from="pop-0"/>
+                <textarea name="time-4" from="time-0" />
+                <imagetype name="18icon-4" from="18icon-0" />
+                <textarea name="temp-4" from="temp-0" />
+                <textarea name="pop-4" from="pop-0"/>
 
-		<textarea name="time-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<imagetype name="18icon-0">
-		    <area>0,0,0,0</area>
-		</imagetype>
-		<textarea name="temp-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<textarea name="pop-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-	    </group>
+                <textarea name="time-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <imagetype name="18icon-0">
+                    <area>0,0,0,0</area>
+                </imagetype>
+                <textarea name="temp-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <textarea name="pop-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+            </group>
 
-	    <group name="time5" from="time0">
-		<position>890,340</position>
+            <group name="time5" from="time0">
+                <position>890,340</position>
 
-		<textarea name="time-5" from="time-0" />
-		<imagetype name="18icon-5" from="18icon-0" />
-		<textarea name="temp-5" from="temp-0" />
-		<textarea name="pop-5" from="pop-0"/>
+                <textarea name="time-5" from="time-0" />
+                <imagetype name="18icon-5" from="18icon-0" />
+                <textarea name="temp-5" from="temp-0" />
+                <textarea name="pop-5" from="pop-0"/>
 
-		<textarea name="time-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<imagetype name="18icon-0">
-		    <area>0,0,0,0</area>
-		</imagetype>
-		<textarea name="temp-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-		<textarea name="pop-0">
-		    <area>0,0,0,0</area>
-		</textarea>
-	    </group>
-	</group>
+                <textarea name="time-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <imagetype name="18icon-0">
+                    <area>0,0,0,0</area>
+                </imagetype>
+                <textarea name="temp-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+                <textarea name="pop-0">
+                    <area>0,0,0,0</area>
+                </textarea>
+            </group>
+        </group>
     </window>
 
     <!-- Home -> Setup -> Info Center Settings -> Weather Settings
-	 -> Global Settings
+         -> Global Settings
     -->
     <window name="global-setup">
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Global Weather Settings</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Global Weather Settings</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="dialog">
-	    <area>50%-450,300,900,300</area>
+        <group name="dialog">
+            <area>50%-450,300,900,300</area>
 
-	    <shape name="background" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            <shape name="background" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-	    <spinbox name="timeout_spinbox" from="basespinbox">
-		<position>160,40</position>
-	    </spinbox>
+            <spinbox name="timeout_spinbox" from="basespinbox">
+                <position>160,40</position>
+            </spinbox>
 
-	    <textarea name="timeout_label" from="labelcheckbox">
-		<area>320,40,-20,70</area>
-		<value>Seconds to display each page</value>
-		<align>left,vcenter</align>
-	    </textarea>
+            <textarea name="timeout_label" from="labelcheckbox">
+                <area>320,40,-20,70</area>
+                <value>Seconds to display each page</value>
+                <align>left,vcenter</align>
+            </textarea>
 
-	    <checkbox name="backgroundcheck" from="basecheckbox">
-		<position>270,110</position>
-	    </checkbox>
-	    
-	    <textarea name="background_label" from="timeout_label">
-		<position>320,110</position>
-		<value>Retrieve data in the background</value>
-	    </textarea>
+            <checkbox name="backgroundcheck" from="basecheckbox">
+                <position>270,110</position>
+            </checkbox>
+            
+            <textarea name="background_label" from="timeout_label">
+                <position>320,110</position>
+                <value>Retrieve data in the background</value>
+            </textarea>
 
-	    <button name="finishbutton" from="varbuttonright" />
-	</group>
+            <button name="finishbutton" from="varbuttonright" />
+        </group>
     </window>
 
     <!-- Home -> Setup -> Info Center Settings -> Weather Settings
-	 -> Screen Settings
+         -> Screen Settings
     -->
     <window name="screen-setup">
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Weather Screen Setup</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Weather Screen Setup</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="msggroup" from="baseMsgGroupBanner">
-	    <textarea name="helptxt" from="msgText" />
-	</group>
+        <group name="msggroup" from="baseMsgGroupBanner">
+            <textarea name="helptxt" from="msgText" />
+        </group>
 
-	<group name="dialog">
-	    <area>50%-640,50,1280,-300</area>
+        <group name="dialog">
+            <area>50%-640,50,1280,-300</area>
 
-	    <shape name="background" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            <shape name="background" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-	    <textarea name="inactivehdr" from="basetextarea">
-		<area>20,15,600,40</area>
-		<font>mymedium</font>
-		<align>allcenter</align>
-	    </textarea>
+            <textarea name="inactivehdr" from="basetextarea">
+                <area>20,15,600,40</area>
+                <font>mymedium</font>
+                <align>allcenter</align>
+            </textarea>
 
-	    <buttonlist name="inactivelist" from="basebuttonlist">
-		<align>top,hcenter</align>
-		<area>20,60,600,-20</area>
-	    </buttonlist>
+            <buttonlist name="inactivelist" from="basebuttonlist">
+                <align>top,hcenter</align>
+                <area>20,60,600,-20</area>
+            </buttonlist>
 
-	    <textarea name="activehdr" from="inactivehdr">
-		<position>660,15</position>
-	    </textarea>
+            <textarea name="activehdr" from="inactivehdr">
+                <position>660,15</position>
+            </textarea>
 
-	    <buttonlist name="activelist" from="inactivelist">
-		<position>660,60</position>
-	    </buttonlist>
+            <buttonlist name="activelist" from="inactivelist">
+                <position>660,60</position>
+            </buttonlist>
 
-	    <button name="finishbutton" from="varbuttonright">
-	    </button>
-	</group>
+            <button name="finishbutton" from="varbuttonright">
+            </button>
+        </group>
     </window>
 
     <!-- Home -> Setup -> Info Center Settings -> Weather Settings
-	 -> Source Settings
+         -> Source Settings
     -->
     <window name="source-setup">
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Weather Source Setup</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Weather Source Setup</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="dialog">
-	    <area>50%-660,50,1320,-300</area>
+        <group name="dialog">
+            <area>50%-660,50,1320,-300</area>
 
-	    <shape name="background" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            <shape name="background" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
 
-	    <buttonlist name="srclist" from="basebuttonlist">
-		<area>40,40,600,-120</area>
-	    </buttonlist>
+            <buttonlist name="srclist" from="basebuttonlist">
+                <area>40,40,600,-120</area>
+            </buttonlist>
 
-	    <textarea name="update_label" from="labeltext">
-		<area>700,145,400,100</area>
-		<multiline>yes</multiline>
-		<value>Data Retrieval Interval (minutes):</value>
-	    </textarea>
+            <textarea name="update_label" from="labeltext">
+                <area>700,145,400,100</area>
+                <multiline>yes</multiline>
+                <value>Data Retrieval Interval (minutes):</value>
+            </textarea>
 
-	    <spinbox name="update_spinbox" from="basespinbox">
-		<position>1110,160</position>
-	    </spinbox>
+            <spinbox name="update_spinbox" from="basespinbox">
+                <position>1110,160</position>
+            </spinbox>
 
-	    <textarea name="retrieve_label" from="update_label">
-		<position>700,265</position>
-		<value>Source Update Timeout (seconds):</value>
-	    </textarea>
+            <textarea name="retrieve_label" from="update_label">
+                <position>700,265</position>
+                <value>Source Update Timeout (seconds):</value>
+            </textarea>
 
-	    <spinbox name="retrieve_spinbox" from="basespinbox">
-		<position>1110,280</position>
-	    </spinbox>
+            <spinbox name="retrieve_spinbox" from="basespinbox">
+                <position>1110,280</position>
+            </spinbox>
 
-	    <textarea name="srcinfo" from="basetextarea">
-		<area>700,410,560,105</area>
-		<align>center</align>
-		<multiline>yes</multiline>
-	    </textarea>
+            <textarea name="srcinfo" from="basetextarea">
+                <area>700,410,560,105</area>
+                <align>center</align>
+                <multiline>yes</multiline>
+            </textarea>
 
-	    <button name="finishbutton" from="varbuttonright" />
-	</group>
+            <button name="finishbutton" from="varbuttonright" />
+        </group>
     </window>
 
     <!-- Home -> Setup -> Info Center Settings -> Weather Settings
-	 -> Screen Settings -> select an "Active Screen" -> Change Location
+         -> Screen Settings -> select an "Active Screen" -> Change Location
     -->
     <window name="setup-location">
 
         <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Weather Location Search</value>
-		</textarea>
-	    </group>
-	</group>
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Weather Location Search</value>
+                </textarea>
+            </group>
+        </group>
 
-	<group name="msggroup" from="baseMsgGroupWide">
-	    <textarea name="helptxt" from="msgText">
-		<value>Enter your current location,nearest large town or city. In some countries postal codes are also supported.</value>
-	    </textarea>
-	</group>
+        <group name="msggroup" from="baseMsgGroupWide">
+            <textarea name="helptxt" from="msgText">
+                <value>Enter your current location,nearest large town or city. In some countries postal codes are also supported.</value>
+            </textarea>
+        </group>
 
-	<group name="dialog">
-	    <area>50%-530,50,1060,-300</area>
+        <group name="dialog">
+            <area>50%-530,50,1060,-300</area>
 
-	    <shape name="background" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-	    </shape>
+            <shape name="background" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-	    <textarea name="edit_label" from="labeltext">
-		<position>20,40</position>
-		<value>Enter Location:</value>
-	    </textarea>
+            <textarea name="edit_label" from="labeltext">
+                <position>20,40</position>
+                <value>Enter Location:</value>
+            </textarea>
 
-	    <textedit name="loc-edit" from="basetextedit">
-		<position>290,40</position>
-	    </textedit>
+            <textedit name="loc-edit" from="basetextedit">
+                <position>290,40</position>
+            </textedit>
 
-	    <button name="searchbtn" from="varbuttonleft">
-		<position>800,40</position>
-	    </button>
+            <button name="searchbtn" from="varbuttonleft">
+                <position>800,40</position>
+            </button>
 
-	    <textarea name="numresults" from="basetextarea">
-		<area>100,110,-100,40</area>
-		<align>center</align>
-	    </textarea>
+            <textarea name="numresults" from="basetextarea">
+                <area>100,110,-100,40</area>
+                <align>center</align>
+            </textarea>
 
-	    <textarea name="source" from="basetextarea">
-		<area>270,150,-270,40</area>
-		<align>center</align>
-	    </textarea>
+            <textarea name="source" from="basetextarea">
+                <area>270,150,-270,40</area>
+                <align>center</align>
+            </textarea>
 
-	    <buttonlist name="results" from="basebuttonlist">
-		<area>30,200,-30,-120</area>
-	    </buttonlist>
+            <buttonlist name="results" from="basebuttonlist">
+                <area>30,200,-30,-120</area>
+            </buttonlist>
 
 
-	</group>
+        </group>
     </window>
 
 </mythuitheme>

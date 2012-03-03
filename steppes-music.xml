@@ -4,11 +4,11 @@
 <mythuitheme>
 
     <group name="baseplaystategroup">
-	<area>0,0,25,25</area>
+        <area>0,0,25,25</area>
         <statetype name="trackstate">
             <position>0,0</position>
             <state name="playing">
-	        <position>0,0</position>
+                <position>0,0</position>
                 <imagetype name="playicon">
                     <filename>mm_playicon.png</filename>
                 </imagetype>
@@ -29,140 +29,140 @@
     </group>
 
     <group name="baseactionstategroup">
-	<area>0,0,40,40</area>
+        <area>0,0,40,40</area>
 
-	<button name="prev">
-	    <position>0,0</position>
-	    <statetype name="buttonstate">
-		<position>0,0</position>
-		<state name="pushed">
-		    <imagetype name="background">
-			<filename>prev_button_pushed.png</filename>
-		    </imagetype>
-		</state>
-	    </statetype>
-	</button>
+        <button name="prev">
+            <position>0,0</position>
+            <statetype name="buttonstate">
+                <position>0,0</position>
+                <state name="pushed">
+                    <imagetype name="background">
+                        <filename>prev_button_pushed.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </button>
 
-	<button name="next">
-	    <position>0,0</position>
-	    <statetype name="buttonstate">
-		<position>0,0</position>
-		<state name="pushed">
-		    <imagetype name="background">
-			<filename>next_button_pushed.png</filename>
-		    </imagetype>
-		</state>
-	    </statetype>
-	</button>
+        <button name="next">
+            <position>0,0</position>
+            <statetype name="buttonstate">
+                <position>0,0</position>
+                <state name="pushed">
+                    <imagetype name="background">
+                        <filename>next_button_pushed.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </button>
 
-	<button name="rew">
-	    <position>0,0</position>
-	    <statetype name="buttonstate">
-		<position>0,0</position>
-		<state name="pushed">
-		    <imagetype name="background">
-			<filename>rew_button_pushed.png</filename>
-		    </imagetype>
-		</state>
-	    </statetype>
-	</button>
+        <button name="rew">
+            <position>0,0</position>
+            <statetype name="buttonstate">
+                <position>0,0</position>
+                <state name="pushed">
+                    <imagetype name="background">
+                        <filename>rew_button_pushed.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </button>
 
-	<button name="ff">
-	    <position>0,0</position>
-	    <statetype name="buttonstate">
-		<position>0,0</position>
-		<state name="pushed">
-		    <imagetype name="background">
-			<filename>ff_button_pushed.png</filename>
-		    </imagetype>
-		</state>
-	    </statetype>
-	</button>
+        <button name="ff">
+            <position>0,0</position>
+            <statetype name="buttonstate">
+                <position>0,0</position>
+                <state name="pushed">
+                    <imagetype name="background">
+                        <filename>ff_button_pushed.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </button>
 
     </group>
 
     <group name="baseplayliststatus">
-	<area>40,30,-40,50</area>
+        <area>40,30,-40,50</area>
 
-	<shape name="background" from="basewidgetshape">
-	    <area>0,0,100%,100%</area>
-	</shape>
+        <shape name="background" from="basewidgetshape">
+            <area>0,0,100%,100%</area>
+        </shape>
 
-	<textarea name="playlistposition" from="basetextarea">
-	    <area>50,8,240,40</area>
-	    <align>right,vcenter</align>
-	</textarea>
+        <textarea name="playlistposition" from="basetextarea">
+            <area>50,8,240,40</area>
+            <align>right,vcenter</align>
+        </textarea>
 
-	<progressbar name="playlistprogress" from="baseprogressbar">
-	    <position>300,15</position>
-	</progressbar>
+        <progressbar name="playlistprogress" from="baseprogressbar">
+            <position>300,15</position>
+        </progressbar>
 
-	<textarea name="playlisttime" from="basetextarea">
-	    <area>910,8,300,40</area>
-	    <align>left,vcenter</align>
-	</textarea>
+        <textarea name="playlisttime" from="basetextarea">
+            <area>910,8,300,40</area>
+            <align>left,vcenter</align>
+        </textarea>
 
-	<!-- repeat statetype -->
-	<statetype name="repeatstate">
-	    <area>1230,0,-350,50</area>
-	    <state name="off">
-		<area>0,0,100%,50</area>
-		<textarea name="repeattext" from="basetextarea">
-		    <area>0,5,300,-5</area>
-		    <font>mysmallnarrow</font>
-		    <value>Repeat: Off</value>
-		    <align>center</align>
-		</textarea>
-	    </state>
-	    <state name="track" from="off">
-		<textarea name="repeattext">
-		    <value>Repeat: Track</value>
-		</textarea>
-	    </state>
-	    <state name="all" from="off">
-		<textarea name="repeattext">
-		    <value>Repeat: All</value>
-		</textarea>
-	    </state>
-	</statetype>
+        <!-- repeat statetype -->
+        <statetype name="repeatstate">
+            <area>1230,0,-350,50</area>
+            <state name="off">
+                <area>0,0,100%,50</area>
+                <textarea name="repeattext" from="basetextarea">
+                    <area>0,5,300,-5</area>
+                    <font>mysmallnarrow</font>
+                    <value>Repeat: Off</value>
+                    <align>center</align>
+                </textarea>
+            </state>
+            <state name="track" from="off">
+                <textarea name="repeattext">
+                    <value>Repeat: Track</value>
+                </textarea>
+            </state>
+            <state name="all" from="off">
+                <textarea name="repeattext">
+                    <value>Repeat: All</value>
+                </textarea>
+            </state>
+        </statetype>
 
-	<!-- shuffle statetype -->
-	<statetype name="shufflestate">
-	    <area>100%-340,0,-10,50</area>
-	    <state name="off">
-		<area>0,0,100%,50</area>
-		<textarea name="shuffletext" from="basetextarea">
-		    <area>0,5,350,-5</area>
-		    <font>mysmallnarrow</font>
-		    <align>center</align>
-		    <value>Shuffle: Off</value>
-		</textarea>
-	    </state>
-	    <state name="random" from="off">
-		<textarea name="shuffletext">
-		    <value>Shuffle: Random</value>
-		</textarea>
-	    </state>
-	    <state name="intelligent" from="off">
-		<textarea name="shuffletext">
-		    <value>Shuffle: Intelligent</value>
-		</textarea>
-	    </state>
-	    <state name="album" from="off">
-		<textarea name="shuffletext">
-		    <value>Shuffle: Album</value>
-		</textarea>
-	    </state>
-	    <state name="artist" from="off">
-		<textarea name="shuffletext">
-		    <value>Shuffle: Artist</value>
-		</textarea>
-	    </state>
-	</statetype>
+        <!-- shuffle statetype -->
+        <statetype name="shufflestate">
+            <area>100%-340,0,-10,50</area>
+            <state name="off">
+                <area>0,0,100%,50</area>
+                <textarea name="shuffletext" from="basetextarea">
+                    <area>0,5,350,-5</area>
+                    <font>mysmallnarrow</font>
+                    <align>center</align>
+                    <value>Shuffle: Off</value>
+                </textarea>
+            </state>
+            <state name="random" from="off">
+                <textarea name="shuffletext">
+                    <value>Shuffle: Random</value>
+                </textarea>
+            </state>
+            <state name="intelligent" from="off">
+                <textarea name="shuffletext">
+                    <value>Shuffle: Intelligent</value>
+                </textarea>
+            </state>
+            <state name="album" from="off">
+                <textarea name="shuffletext">
+                    <value>Shuffle: Album</value>
+                </textarea>
+            </state>
+            <state name="artist" from="off">
+                <textarea name="shuffletext">
+                    <value>Shuffle: Artist</value>
+                </textarea>
+            </state>
+        </statetype>
     </group>
 
     <group name="baseplaylistfullstatus" from="baseplayliststatus">
-	<area>30,30,-30,110</area>
+        <area>30,30,-30,110</area>
 
         <imagetype name="coverart">
             <filename>mm_nothumb.png</filename>
@@ -205,157 +205,157 @@
     </group>
 
     <group name="baseplaylist">
-	<area>20,145,-20,275</area>
+        <area>20,145,-20,275</area>
 
-	<textarea name="notracks" from="pagemode">
-	    <area>20,20,-20,-60</area>
-	    <align>center</align>
-	    <font>mymedium</font>
-	    <value>You haven't selected any tracks to play</value>
-	</textarea>
+        <textarea name="notracks" from="pagemode">
+            <area>20,20,-20,-60</area>
+            <align>center</align>
+            <font>mymedium</font>
+            <value>You haven't selected any tracks to play</value>
+        </textarea>
 
         <statetype name="movingtracksstate" from="basemovestate">
             <position>20,50%-12</position>
         </statetype>
 
-	<buttonlist name="currentplaylist">
-	    <arrange>stack</arrange>
-	    <align>vcenter,left</align>
-	    <area>20,0,-20,100%</area>
-	    <buttonarea>20,0,-20,100%</buttonarea>
-	    <scrollstyle>free</scrollstyle>
-	    <wrapstyle>items</wrapstyle>
-	    <spacing>0</spacing>
-	    
-	    <searchposition>-1,790</searchposition>
+        <buttonlist name="currentplaylist">
+            <arrange>stack</arrange>
+            <align>vcenter,left</align>
+            <area>20,0,-20,100%</area>
+            <buttonarea>20,0,-20,100%</buttonarea>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <spacing>0</spacing>
+            
+            <searchposition>-1,790</searchposition>
 
-	    <statetype name="buttonitem">
-		<area>0,20,100%,-60</area>
+            <statetype name="buttonitem">
+                <area>0,20,100%,-60</area>
 
-		<state name="inactive">
+                <state name="inactive">
                     <area>0,0,100%,60</area>
-		    <statetype name="playstate">
-			<area>0,0,100%,100%</area>
-			<state name="default">
-			    <area>0,0,100%,100%</area>
-			    <shape name="statusborder">
-				<area>7,0,-7,100%</area>
-				<type>roundbox</type>
-				<line color="#00FFFF" width="1" alpha="160" />
-				<fill color="#000000" alpha="150" />
-				<cornerradius>10</cornerradius>
-			    </shape>
-			</state>
-			<state name="normal" from="default" />
-			<state name="playing" from="default">
-			    <shape name="statusborder">
-				<line color="#33bf33" width="4" alpha="255" />
-			    </shape>
-			</state>
-			<state name="paused" from="default">
-			    <shape name="statusborder">
-				<line color="#ff9147" width="4" alpha="255" />
-			    </shape>
-			</state>
-			<state name="stopped" from="default">
-			    <shape name="statusborder">
-				<line color="#e43e3e" width="4" alpha="255" />
-			    </shape>
-			</state>
-		    </statetype>
+                    <statetype name="playstate">
+                        <area>0,0,100%,100%</area>
+                        <state name="default">
+                            <area>0,0,100%,100%</area>
+                            <shape name="statusborder">
+                                <area>7,0,-7,100%</area>
+                                <type>roundbox</type>
+                                <line color="#00FFFF" width="1" alpha="160" />
+                                <fill color="#000000" alpha="150" />
+                                <cornerradius>10</cornerradius>
+                            </shape>
+                        </state>
+                        <state name="normal" from="default" />
+                        <state name="playing" from="default">
+                            <shape name="statusborder">
+                                <line color="#33bf33" width="4" alpha="255" />
+                            </shape>
+                        </state>
+                        <state name="paused" from="default">
+                            <shape name="statusborder">
+                                <line color="#ff9147" width="4" alpha="255" />
+                            </shape>
+                        </state>
+                        <state name="stopped" from="default">
+                            <shape name="statusborder">
+                                <line color="#e43e3e" width="4" alpha="255" />
+                            </shape>
+                        </state>
+                    </statetype>
 
-		    <imagetype name="buttonimage">
-			<area>10,10,70,-10</area>
-			<filename>mm_nothumb.png</filename>
-			<preserveaspect>true</preserveaspect>
-		    </imagetype>
+                    <imagetype name="buttonimage">
+                        <area>10,10,70,-10</area>
+                        <filename>mm_nothumb.png</filename>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
 
-		    <textarea name="tracknum" from="basetextarea">
-			<area>90,5,70,-5</area>
-			<align>right,vcenter</align>
-			<font>mymedium</font>
-			<template>%1 -</template>
-		    </textarea>
+                    <textarea name="tracknum" from="basetextarea">
+                        <area>90,5,70,-5</area>
+                        <align>right,vcenter</align>
+                        <font>mymedium</font>
+                        <template>%1 -</template>
+                    </textarea>
 
-		    <textarea name="title" from="basetextarea">
-			<area>170,5,800,-5</area>
-			<align>left,vcenter</align>
-			<font>mymedium</font>
-		    </textarea>
+                    <textarea name="title" from="basetextarea">
+                        <area>170,5,800,-5</area>
+                        <align>left,vcenter</align>
+                        <font>mymedium</font>
+                    </textarea>
 
-		    <textarea name="artist" from="title">
-			<area>980,5,-180,-5</area>
-			<align>left,vcenter</align>
-		    </textarea>
+                    <textarea name="artist" from="title">
+                        <area>980,5,-180,-5</area>
+                        <align>left,vcenter</align>
+                    </textarea>
 
-		    <textarea name="length" from="title">
-			<area>100%-170,5,120,-5</area>
-			<align>right,vcenter</align>
-		    </textarea>
-		</state>
+                    <textarea name="length" from="title">
+                        <area>100%-170,5,120,-5</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
 
-		<state name="active" from="inactive" />
+                <state name="active" from="inactive" />
 
-		<state name="selectedinactive" from="active">
-		    <statetype name="movestate" from="basemovestate">
-			<position>100%-30,50%-7</position>
-		    </statetype>
-		</state>
+                <state name="selectedinactive" from="active">
+                    <statetype name="movestate" from="basemovestate">
+                        <position>100%-30,50%-7</position>
+                    </statetype>
+                </state>
 
-		<state name="selectedactive" from="selectedinactive">
-		    <statetype name="playstate">
-			<area>0,0,100%,100%</area>
-			<state name="default">
-			    <area>0,0,100%,100%</area>
-			    <shape name="statusborder">
-				<area>0,0,100%,100%</area>
-				<type>roundbox</type>
-				<line color="#00FFFF" width="7" alpha="160" />
-				<fill color="#000000" alpha="150" />
-				<cornerradius>10</cornerradius>
-			    </shape>
-			</state>
-			<state name="normal" from="default" />
-			<state name="playing" from="default">
-			    <shape name="statusborder">
-				<line color="#33bf33" width="7" alpha="255" />
-			    </shape>
-			</state>
-			<state name="paused" from="default">
-			    <shape name="statusborder">
-				<line color="#ff9147" width="7" alpha="255" />
-			    </shape>
-			</state>
-			<state name="stopped" from="default">
-			    <shape name="statusborder">
-				<line color="#e43e3e" width="7" alpha="255" />
-			    </shape>
-			</state>
-		    </statetype>
-		</state>
-	    </statetype>
+                <state name="selectedactive" from="selectedinactive">
+                    <statetype name="playstate">
+                        <area>0,0,100%,100%</area>
+                        <state name="default">
+                            <area>0,0,100%,100%</area>
+                            <shape name="statusborder">
+                                <area>0,0,100%,100%</area>
+                                <type>roundbox</type>
+                                <line color="#00FFFF" width="7" alpha="160" />
+                                <fill color="#000000" alpha="150" />
+                                <cornerradius>10</cornerradius>
+                            </shape>
+                        </state>
+                        <state name="normal" from="default" />
+                        <state name="playing" from="default">
+                            <shape name="statusborder">
+                                <line color="#33bf33" width="7" alpha="255" />
+                            </shape>
+                        </state>
+                        <state name="paused" from="default">
+                            <shape name="statusborder">
+                                <line color="#ff9147" width="7" alpha="255" />
+                            </shape>
+                        </state>
+                        <state name="stopped" from="default">
+                            <shape name="statusborder">
+                                <line color="#e43e3e" width="7" alpha="255" />
+                            </shape>
+                        </state>
+                    </statetype>
+                </state>
+            </statetype>
 
-	    <statetype name="upscrollarrow">
-		<area>100%-20,50%-25,20,20</area>
-		<state type="off">
-		</state>
-		<state type="full">
-		    <imagetype name="upon">
-			<filename>Images/uparrow-on.png</filename>
-		    </imagetype>
-		</state>
-	    </statetype>
-	    <statetype name="downscrollarrow">
-		<area>100%-20,50%+5,20,20</area>
-		<state type="off">
-		</state>
-		<state type="full">
-		    <imagetype name="dnon">
-			<filename>Images/downarrow-on.png</filename>
-		    </imagetype>
-		</state>
-	    </statetype>
-	</buttonlist>
+            <statetype name="upscrollarrow">
+                <area>100%-20,50%-25,20,20</area>
+                <state type="off">
+                </state>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename>Images/uparrow-on.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <area>100%-20,50%+5,20,20</area>
+                <state type="off">
+                </state>
+                <state type="full">
+                    <imagetype name="dnon">
+                        <filename>Images/downarrow-on.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
     </group>
 
 </mythuitheme>
