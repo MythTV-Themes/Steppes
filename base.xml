@@ -10,7 +10,7 @@
     <fontdef name="basenarrow" face="Liberation Sans Narrow">
         <color>#F0F0FF</color>
         <pixelsize>1</pixelsize>
-    </fontdef>      
+    </fontdef>
 
     <fontdef name="basegothic" face="CartoGothic Std">
         <color>#FFEAEA</color>
@@ -343,7 +343,7 @@
             <cornerradius>15</cornerradius>
             <fill color="#000000" alpha="255" />
         </shape>
-        
+
         <clock name="datetime">
             <area>25,5,-25,-5</area>
             <minsize>20,100%</minsize>
@@ -374,7 +374,7 @@
                 <cornerradius>15</cornerradius>
                 <fill color="#000000" alpha="255" />
             </shape>
-            
+
             <textarea name="text">
                 <area>25,5,-25,-5</area>
                 <minsize>50,100%</minsize>
@@ -620,7 +620,7 @@
             <area>100%-540, 0, 250, 100%</area>
             <value>Prev</value>
         </button>
-        
+
         <button name="next_button" from="varbuttonleft">
             <area>100%-285, 0, 250, 100%</area>
             <value>Next</value>
@@ -1141,7 +1141,7 @@
         </state>
         <state type="on" from="full" />
     </statetype>
-    
+
     <statetype name="basemovestate">
         <position>15,50</position>
         <state name="off"></state>
@@ -1182,7 +1182,7 @@
     <!-- Base GRID buttonlist -->
     <buttonlist name="basegridlist">
         <area>50,90,-50,-50</area>
-        
+
         <align>center</align>
         <arrange>stack</arrange>
         <layout>grid</layout>
@@ -1246,7 +1246,7 @@
                         <type>roundbox</type>
                         <cornerradius>5</cornerradius>
                         <fill color="#000000" alpha="160" />
-                    </shape>                    
+                    </shape>
 
                     <textarea name="buttontext" from="basetextarea">
                         <area>10,5,-10,-5</area>
@@ -1389,7 +1389,7 @@
             <fill color="#000000" alpha="160" />
             <line color="#FFFFFF" alpha="160" width="1" />
         </shape>
-        
+
         <textarea name="msgText">
             <area>10,5,-10,-5</area>
             <!--
@@ -1586,7 +1586,7 @@
                 <area>0,0,100%,90</area>
                 <shape name="groupBorder">
                     <area>5,0,-5,100%</area>
-                    <line color="#AAFFFF" alpha="160" width="0" /> 
+                    <line color="#AAFFFF" alpha="160" width="0" />
                 </shape>
                 <textarea name="buttontext">
                     <font>mygroupmedium</font>
@@ -1599,7 +1599,7 @@
                 <shape name="groupBorder">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
-                    <line color="#AAFFFF" alpha="220" width="5" /> 
+                    <line color="#AAFFFF" alpha="220" width="5" />
                     <cornerradius>10</cornerradius>
                 </shape>
             </state>
@@ -1632,7 +1632,7 @@
         <area>40,35,460,959</area>
 
         <group name="titlegroup" from="baseMsgGroup">
-            <area>0,0,100%,130</area>
+            <area>0,0,100%,135</area>
 
             <shape name="msgShape">
                 <line color="#00FFFF" alpha="160" width="0" />
@@ -1643,7 +1643,7 @@
         </group>
 
         <group name="subtitlegroup" from="baseMsgGroup">
-            <area>0,135,100%,115</area>
+            <area>0,140,100%,115</area>
 
             <shape name="msgShape">
                 <line color="#00FFFF" alpha="160" width="0" />
@@ -1654,7 +1654,7 @@
         </group>
 
         <group name="wheregroup" from="baseMsgGroup">
-            <area>0,255,100%,125</area>
+            <area>0,260,100%,125</area>
             <shape name="msgShape">
                 <line color="#00FFFF" alpha="160" width="0" />
             </shape>
@@ -1682,8 +1682,8 @@
         </group>
 
         <group name="descgroup" from="baseMsgGroup">
-            <area>0,385,100%,100%</area>
-            
+            <area>0,390,100%,100%</area>
+
             <shape name="msgShape">
                 <line color="#00FFFF" alpha="160" width="0" />
             </shape>
@@ -1748,7 +1748,7 @@
             <font>mysmallsansgrey</font>
             <cutdown>no</cutdown>
         </textarea>
-        
+
         <textarea name="originalairdate">
             <area>520,0,230,35</area>
             <align>center</align>
@@ -1763,7 +1763,7 @@
             <font>mysmallnarrowgrey</font>
             <template>(%1)</template>
         </textarea>
-        
+
         <textarea name="lenmins">
             <area>750,0,150,35</area>
             <align>right,vcenter</align>
@@ -1824,7 +1824,7 @@
             <area>0,0,100%,100%</area>
             <state name="inactive">
                 <area>0,0,100%,85</area>
-                
+
                 <statetype name="status">
                     <area>0,0,100%,100%</area>
 
@@ -1991,7 +1991,7 @@
                         <type>roundbox</type>
                         <cornerradius>15</cornerradius>
                         <fill color="#000000" alpha="160" />
-                    </shape>                    
+                    </shape>
                     <textarea name="buttontext">
                         <area>10,5,-10,40</area>
                         <minsize>10,43</minsize>
@@ -2453,7 +2453,7 @@
     </window>
 
     <!-- 'E'(dit) a recording or schedule (that has multiple matches)
-         -> Metadata Options -> [Perform Query] 
+         -> Metadata Options -> [Perform Query]
     -->
     <window name="MythMetadataResults">
         <area>530,35,1360,960</area>
@@ -2529,7 +2529,7 @@
             </statetype>
         </buttonlist>
     </window>
-    
+
     <!-- 'E'(dit) a recording or schedule -> Metadata Options
          -> Find Coverart Online
     -->

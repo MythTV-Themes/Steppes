@@ -272,7 +272,7 @@
                     </state>
 
                     <state name="active" from="inactive" />
-                    
+
                     <state name="selectedinactive" from="inactive" />
 
                     <state name="selectedactive" from="selectedinactive" >
@@ -417,7 +417,7 @@
 
             <group name="framegroup">
                 <area>320,20,360,229</area>
-                
+
                 <button name="frame_button">
                     <position>0,0</position>
                     <statetype name="buttonstate">
@@ -499,7 +499,7 @@
                     </button>
                 </group>
             </group>
-            
+
             <buttonlist name="thumblist" from="basegridlist">
                 <area>25,320,-25,-25</area>
                 <align>top,left</align>

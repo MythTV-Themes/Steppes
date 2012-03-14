@@ -280,7 +280,7 @@
                 <button name="ok" from="varbuttonright">
                     <value>Save</value>
                 </button>
-                
+
                 <button name="cancel" from="varbuttonleft">
                     <value>Cancel</value>
                 </button>
@@ -346,19 +346,19 @@
                 <buttonarea>20,0,100%,100%</buttonarea>
                 <wrapstyle>selection</wrapstyle>
                 <spacing>0</spacing>
-                
+
                 <textarea name="position">
                     <area>1250,0,150,45</area>
                     <font>mysmall</font>
                 </textarea>
-                
+
                 <statetype name="buttonitem">
                     <area>0,0,1370,100%</area>
                     <minsize>100%,60</minsize>
 
                     <state name="inactive">
                         <area>0,0,1370,60</area>
-                        
+
                         <shape name="statusborder">
                             <area>5,0,-5,100%</area>
                             <minsize>100%,60</minsize>
@@ -388,14 +388,14 @@
                             <area>100%-210,4,120,50</area>
                         </textarea>
                     </state>
-                    
+
                     <state name="active" from="inactive">
                     </state>
-                    
+
                     <state name="selectedinactive" from="inactive">
                         <area>0,0,1370,400</area>
                         <minsize>100%,60</minsize>
-                        
+
                         <shape name="statusborder">
                             <area>0,0,100%,100%</area>
                             <line color="#00ffff" alpha="192" width="5" />
@@ -413,7 +413,7 @@
                                 <multiline>yes</multiline>
                                 <cutdown>yes</cutdown>
                             </textarea>
-                            
+
                             <textarea name="length">
                                 <area>100%-200,100%-35,100%,100%</area>
                                 <minsize shrink="short" vanish="true">100%,35</minsize>
@@ -610,7 +610,7 @@
                 <button name="new" from="varbuttonleft">
                     <value>New Site</value>
                 </button>
-                
+
                 <button name="edit" from="varbuttoncenter">
                     <value>Edit Site</value>
                 </button>
@@ -651,7 +651,7 @@
 
         <buttonlist name="videos" from="itemsList">
             <area>30,30,-30,960</area>
-            
+
             <statetype name="buttonitem">
                 <area>0,0,100%,100%</area>
 
@@ -783,7 +783,7 @@
                         </textarea>
 
                         <textarea name="s##e##" from="length">
-                            <area>100%-300,100%-40,100,30</area> 
+                            <area>100%-300,100%-40,100,30</area>
                         </textarea>
 
                         <textarea name="author" from="length">

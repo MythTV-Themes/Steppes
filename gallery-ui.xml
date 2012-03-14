@@ -74,13 +74,13 @@
 
             <shape name="dialogbackground" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
-            </shape>    
+            </shape>
 
             <textarea name="filter_text" from="labeltext">
                 <position>20,20</position>
                 <value>Directory filter:</value>
             </textarea>
-            
+
             <textedit name="dirfilter_text" from="basetextedit">
                 <position>275,20</position>
             </textedit>
@@ -129,11 +129,11 @@
             <buttonlist name="sort_select" from="baselargeselector">
                 <position>310,310</position>
             </buttonlist>
-            
+
             <button name="done_button" from="varbuttonleft">
                 <value>Done</value>
             </button>
-            
+
             <button name="save_button" from="varbuttonright">
                 <value>Save as default</value>
             </button>

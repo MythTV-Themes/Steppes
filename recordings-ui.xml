@@ -6,7 +6,7 @@
     <!-- Home -> Media Library -> Watch Recordings
     -->
     <window name="watchrecordings">
-        
+
         <imagetype name="fanart">
             <area>0,0,100%,100%</area>
             <filename />
@@ -17,7 +17,7 @@
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
-        
+
         <group name="PageHeading" from="basePageHeading">
             <group name="Heading">
                 <textarea name="text">
@@ -51,7 +51,7 @@
                 <state name="inactive">
 
                     <shape name="stateshape">
-                        <area>45,5,115,32</area> 
+                        <area>45,5,115,32</area>
                         <type>roundbox</type>
                         <fill color="#000000" alpha="96" />
                         <line color="#000000" alpha="255" width="1" />
@@ -135,7 +135,7 @@
                     </textarea>
 
                     <shape name="stateshape">
-                        <area>40,100%-49,494,37</area> 
+                        <area>40,100%-49,494,37</area>
                         <type>roundbox</type>
                         <fill color="#000000" alpha="96" />
                         <line color="#000000" alpha="255" width="1" />
@@ -373,7 +373,7 @@
                 <value>No recordings exist</value>
             </textarea>
             <textarea name="rec_count" from="msgText">
-                <area>10,10,-10,-70</area>      
+                <area>10,10,-10,-70</area>
                 <template>There is/are %n recording(s) in this display group</template>
             </textarea>
             <textarea name="freereport" from="basetextarea">
@@ -402,7 +402,7 @@
                 <preserveaspect>true</preserveaspect>
             </imagetype>
         </group>
-        
+
     </window>
 
     <!-- Home -> Media Library -> Watch Recordings -> 'M'(enu)

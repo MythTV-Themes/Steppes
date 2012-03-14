@@ -56,7 +56,7 @@
                             <gradient start="#603060" end="#000000" alpha="255"
                                       direction="vertical"  />
                         </fill>
-                        <line color="#AAFFFF" alpha="220" width="5" /> 
+                        <line color="#AAFFFF" alpha="220" width="5" />
                         <cornerradius>10</cornerradius>
                     </shape>
                 </state>
@@ -163,7 +163,7 @@
             <textarea name="namelabel" from="labeltext">
                 <position>0,50</position>
             </textarea>
-            
+
             <textedit name="name" from="basewidetextedit">
                 <area>270,50,800,70</area>
             </textedit>
@@ -198,7 +198,7 @@
                 <button name="cancel" from="varbuttonleft">
                     <value>Cancel</value>
                 </button>
-                
+
                 <button name="ok" from="varbuttonright">
                     <value>OK</value>
                 </button>

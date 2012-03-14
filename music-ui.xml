@@ -459,7 +459,7 @@
 
             <shape name="dialogbackground" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
-            </shape>    
+            </shape>
 
 
             <textarea name="categorylbl"  from="labeltext">
@@ -490,13 +490,13 @@
 
                 <shape name="dialogbackground" from="baseselectedwidgetshape">
                     <area>0,0,100%,100%</area>
-                </shape>        
+                </shape>
 
                 <textarea name="matchlbl"  from="labeltext">
                     <position>20,20</position>
                     <value>Match:</value>
                 </textarea>
-                
+
                 <buttonlist name="matchselector" from="baseselector">
                     <position>270,20</position>
                 </buttonlist>
@@ -594,7 +594,7 @@
 
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>
-        </shape>        
+        </shape>
 
         <textarea name="title" from="basetextarea">
             <area>20,20,-20,60</area>
@@ -666,7 +666,7 @@
 
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>
-        </shape>        
+        </shape>
 
         <textarea name="title" from="basetextarea">
             <area>20,20,-20,60</area>
@@ -753,7 +753,7 @@
 
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>
-        </shape>        
+        </shape>
 
         <textarea name="title" from="basetextarea">
             <area>20,20,-20,60</area>
@@ -767,7 +767,7 @@
 
             <shape name="dialogbackground" from="baseselectedwidgetshape">
                 <area>0,0,100%,100%</area>
-            </shape>    
+            </shape>
 
             <buttonlist name="fieldlist" from="basebuttonlist">
                 <area>10, 10, -10, -10</area>
@@ -1068,7 +1068,7 @@
             <statetype name="ratingstate" from="baseratingstate">
                 <position>650,930</position>
             </statetype>
-            
+
 
             <button name="albumartbutton" from="varbuttonright">
                 <area>50%+5,100%-160,-70,70</area>
@@ -1802,7 +1802,7 @@
             </shape>
 
             <textarea name="overall_label" from="labeltext">
-                <position>20,40</position> 
+                <position>20,40</position>
                 <value>Importing CD:</value>
                 <align>top,right</align>
             </textarea>

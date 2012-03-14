@@ -129,7 +129,7 @@
 
             <shape name="dialogbackground" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
-            </shape>    
+            </shape>
 
             <textarea name="categorylabel" from="labeltext">
                 <position>20,20</position>
@@ -194,7 +194,7 @@
 
             <shape name="dialogbackground" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
-            </shape>    
+            </shape>
 
             <textarea name="commandlabel" from="labeltext">
                 <position>20,20</position>

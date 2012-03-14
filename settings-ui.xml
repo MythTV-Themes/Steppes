@@ -15,7 +15,7 @@
 
         <group name="listgroup">
             <area>70,30,720,960</area>
-            
+
             <shape name="dialogbackground" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
             </shape>

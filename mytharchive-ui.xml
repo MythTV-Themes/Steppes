@@ -205,7 +205,7 @@
             <area>48,920,434,70</area>
             <value>Cancel</value>
         </button>
-        
+
     </window>
 
     <!-- Home -> Optical Disks -> Archive Files -> Create DVD
@@ -243,7 +243,7 @@
                     <area>0, 0, 100%, 100%</area>
                     <value>Back</value>
                 </button>
-                
+
                 <button name="home_button" from="varbuttonright">
                     <area>0, 0, 100%, 100%</area>
                     <value>Home</value>
@@ -283,7 +283,7 @@
             <button name="cancel_button" from="varbuttonleft">
                 <value>Cancel</value>
             </button>
-            
+
         </group>
 
     </window>
@@ -370,14 +370,14 @@
                 </textarea>
             </group>
 
-            <!-- Work around to get rid of some garbage -->         
+            <!-- Work around to get rid of some garbage -->
             <textarea name="title">
                 <area>0,0,0,0</area>
             </textarea>
         </group>
         <group name="previewgroup">
             <area>48,802,434,255</area>
-            
+
             <shape name="previewShape">
                 <area>0,0,100%,100%</area>
                 <type>roundbox</type>
@@ -385,7 +385,7 @@
                 <fill color="#555555" alpha="255" />
                 <line color="#FFFFFF" alpha="160" width="8" />
             </shape>
-            
+
             <imagetype name="cover_image">
                 <area>59,813,412,230</area>
                 <preserveaspect>true</preserveaspect>
@@ -411,7 +411,7 @@
 
             <shape name="dialogbackground" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
-            </shape>    
+            </shape>
 
             <buttonlist name="loglist" from="basepopupbuttonlist">
                 <area>50,20,-50,-320</area>
@@ -423,7 +423,7 @@
                 <shape name="bottombackground" from="basebackground">
                     <area>0,0,100%,100%</area>
                 </shape>
-                
+
                 <textarea name="logitem_text" from="basetextarea">
                     <area>10,10,-10,-10</area>
                     <multiline>yes</multiline>

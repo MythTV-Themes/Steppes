@@ -51,7 +51,7 @@
         <group name="msggroup">
             <area>52,809,500,240</area>
             <textarea name="copyright" from="msgText">
-                <area>10,10,-10,-70</area>      
+                <area>10,10,-10,-70</area>
             </textarea>
             <textarea name="observation_time" from="basetextarea">
                 <area>10,100%-110,-10,100</area>
@@ -139,7 +139,7 @@
                     <type>box</type>
                     <fill color="#000000" alpha="96" />
                 </shape>
-                
+
                 <imagetype name="weather_icon">
                     <area>10,10,-10,200</area>
                     <filename>unknown.png</filename>
@@ -176,7 +176,7 @@
         <group name="msggroup">
             <area>52,809,500,240</area>
             <textarea name="copyright" from="msgText">
-                <area>10,10,-10,-70</area>      
+                <area>10,10,-10,-70</area>
             </textarea>
         </group>
 
@@ -209,19 +209,19 @@
                     <value>Low</value>
                     <align>right,vcenter</align>
                 </textarea>
-                
+
                 <textarea name="low-0" from="basetextarea">
                     <area>180,360,-10,55</area>
                     <font>mylarge</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
                 </textarea>
-                
+
                 <textarea name="high_label" from="low_label">
                     <position>10,410</position>
                     <value>High</value>
                 </textarea>
-                
+
                 <textarea name="high-0" from="low-0">
                     <position>180,410</position>
                 </textarea>
@@ -288,7 +288,7 @@
         <group name="msggroup">
             <area>52,809,500,240</area>
             <textarea name="copyright" from="msgText">
-                <area>10,10,-10,-70</area>      
+                <area>10,10,-10,-70</area>
             </textarea>
         </group>
 
@@ -462,7 +462,7 @@
         <group name="msggroup">
             <area>52,809,500,240</area>
             <textarea name="copyright" from="msgText">
-                <area>10,10,-10,-70</area>      
+                <area>10,10,-10,-70</area>
             </textarea>
         </group>
 
@@ -490,7 +490,7 @@
         <group name="msggroup">
             <area>52,809,500,240</area>
             <textarea name="copyright" from="msgText">
-                <area>10,10,-10,-70</area>      
+                <area>10,10,-10,-70</area>
             </textarea>
         </group>
 
@@ -518,7 +518,7 @@
         <group name="msggroup">
             <area>52,809,500,240</area>
             <textarea name="copyright" from="msgText">
-                <area>10,10,-10,-70</area>      
+                <area>10,10,-10,-70</area>
             </textarea>
         </group>
 
@@ -551,7 +551,7 @@
         <group name="msggroup">
             <area>52,809,500,240</area>
             <textarea name="copyright" from="msgText">
-                <area>10,10,-10,-70</area>      
+                <area>10,10,-10,-70</area>
             </textarea>
         </group>
 
@@ -745,7 +745,7 @@
             <checkbox name="backgroundcheck" from="basecheckbox">
                 <position>270,110</position>
             </checkbox>
-            
+
             <textarea name="background_label" from="timeout_label">
                 <position>320,110</position>
                 <value>Retrieve data in the background</value>

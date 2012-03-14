@@ -226,7 +226,7 @@
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
             <spacing>0</spacing>
-            
+
             <searchposition>-1,790</searchposition>
 
             <statetype name="buttonitem">

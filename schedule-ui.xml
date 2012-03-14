@@ -130,7 +130,7 @@
                 </textarea>
             </group>
         </group>
-        
+
         <group name="modegroup" from="baseModeGroup">
             <textarea name="channelgroup" from="pagemode" />
         </group>
@@ -239,7 +239,7 @@
 
         <group name="previewgroup">
             <area>48,802,434,255</area>
-            
+
             <shape name="previewShape">
                 <area>0,0,100%,100%</area>
                 <type>roundbox</type>
@@ -247,7 +247,7 @@
                 <fill color="#555555" alpha="255" />
                 <line color="#FFFFFF" alpha="160" width="8" />
             </shape>
-            
+
             <imagetype name="video">
                 <area>59,813,412,230</area>
                 <preserveaspect>true</preserveaspect>
@@ -354,7 +354,7 @@
             <area>0,0,100%,100%</area>
             <filename />
         </imagetype>
-        
+
         <group name="PageHeading" from="basePageHeading">
             <group name="Heading">
                 <textarea name="text">
@@ -765,7 +765,7 @@
             <area>0,0,100%,100%</area>
             <filename />
         </imagetype>
-        
+
         <group name="PageHeading" from="basePageHeading">
             <group name="Heading">
                 <textarea name="text">
@@ -915,7 +915,7 @@
     <!-- Home -> Manage Recordings -> Schedule Recordings -> Custom Record
     -->
     <window name="customedit">
-        
+
         <group name="PageHeading" from="basePageHeading">
             <group name="Heading">
                 <textarea name="text">
@@ -936,16 +936,16 @@
                 <align>right,vcenter</align>
                 <value>Existing Rules:</value>
             </textarea>
-            
+
             <spinbox name="rules" from="baselargespinbox">
                 <position>300,105</position>
             </spinbox>
-            
+
             <textarea name="titlelabel" from="labeltextlarge">
                 <position>680,105</position>
                 <value>Rule Name:</value>
             </textarea>
-            
+
             <textedit name="title" from="basewidetextedit">
                 <area>940,100,600,100</area>
                 <group name="center">
@@ -954,16 +954,16 @@
                     </textarea>
                 </group>
             </textedit>
-            
+
             <textarea name="sampleslabel" from="labeltextlarge">
                 <area>30,275,260,150</area>
                 <value>Sample Clauses:</value>
             </textarea>
-            
+
             <spinbox name="clauses" from="baselargespinbox">
                 <area>300,275,450,150</area>
             </spinbox>
-            
+
             <group name="clausegroup" from="baseMsgGroup">
                 <area>770,275,-50,150</area>
                 <textarea name="clausetext" from="msgText">
@@ -973,20 +973,20 @@
                     -->
                 </textarea>
             </group>
-            
+
             <textedit name="description" from="basemultilinetextedit">
                 <area>50,445,-50,180</area>
             </textedit>
-            
+
             <textarea name="subtitlelabel" from="sampleslabel">
                 <area>50,645,240,125</area>
                 <value>Additional Tables:</value>
             </textarea>
-            
+
             <textedit name="subtitle" from="description">
                 <area>300,645,-50,125</area>
             </textedit>
-            
+
             <group name="buttons">
                 <area>360, 785, 1100, 70</area>
 
@@ -1007,7 +1007,7 @@
                     <value>Store</value>
                 </button>
             </group>
-        </group>        
+        </group>
     </window>
 
     <!-- Home -> Manage Recordings -> Schedule Recordings
@@ -1481,7 +1481,7 @@
                 </textarea>
             </group>
         </group>
-        
+
         <group name="instructions" from="baseMsgGroup">
             <textarea name="nochanges" from="msgText">
                 <value>You Haven't Scheduled Any Programs To Be Recorded...</value>
@@ -1492,7 +1492,7 @@
         <buttonlist name="conflictlist" from="episodeList">
             <statetype name="buttonitem">
                 <area>0,0,100%,100%</area>
-                
+
                 <state name="inactive">
                     <textarea name="statusbefore">
                         <area>5,5,60,30</area>
@@ -1582,7 +1582,7 @@
                     <statetype name="status" from="itemsSelectedState" />
                 </state>
             </statetype>
-        </buttonlist>   
+        </buttonlist>
 
     </window>
 
