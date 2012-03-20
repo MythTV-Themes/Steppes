@@ -376,7 +376,7 @@
             </textarea>
             <textarea name="description">
                 <font>medium</font>
-                <area>5,90,-5,-15</area>
+                <area>5,90,-5,-5</area>
                 <align>left,top</align>
                 <multiline>yes</multiline>
                 <template>%|"SUBTITLE|"% %|(STARS|) %%DESCRIPTION%</template>
@@ -695,7 +695,7 @@
             </textarea>
             <textarea name="description">
                 <font>medium</font>
-                <area>5,90,-5,-15</area>
+                <area>5,90,-5,-5</area>
                 <align>left,top</align>
                 <multiline>yes</multiline>
                 <template>%|"SUBTITLE|"% %|(STARS|) %%DESCRIPTION%</template>
