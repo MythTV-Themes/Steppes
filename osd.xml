@@ -341,42 +341,42 @@
                 <fill color="#000000" alpha="128" />
             </shape>
 
-            <textarea name="title">
-                <font>large</font>
-                <area>5,5,-5,45</area>
-                <align>left,top</align>
-            </textarea>
             <textarea name="s00e00">
                 <font>smallinfo</font>
-                <area>10,55,100,35</area>
+                <area>10,5,100,35</area>
                 <align>left,top</align>
             </textarea>
             <textarea name="starttime">
                 <font>smallinfo</font>
-                <area>120,55,600,35</area>
+                <area>120,5,600,35</area>
                 <align>left,top</align>
                 <template>%STARTDATE%   %STARTTIME% - %ENDTIME%</template>
             </textarea>
             <textarea name="originalairdate">
                 <font>smallinfo</font>
-                <area>720,55,350,35</area>
+                <area>720,5,350,35</area>
                 <align>left,top</align>
                 <template>(%1)</template>
             </textarea>
             <textarea name="year">
                 <font>smallinfo</font>
-                <area>720,55,350,35</area>
+                <area>720,5,350,35</area>
                 <align>left,top</align>
                 <template>(%1)</template>
             </textarea>
             <textarea name="lenmins">
-                <area>100%-255,55,250,35</area>
+                <area>100%-255,5,250,35</area>
                 <font>smallinfo</font>
                 <align>right,top</align>
             </textarea>
+            <textarea name="title">
+                <font>large</font>
+                <area>5,45,-5,45</area>
+                <align>left,top</align>
+            </textarea>
             <textarea name="description">
                 <font>medium</font>
-                <area>5,100,-5,-15</area>
+                <area>5,90,-5,-15</area>
                 <align>left,top</align>
                 <multiline>yes</multiline>
                 <template>%|"SUBTITLE|"% %|(STARS|) %%DESCRIPTION%</template>
@@ -660,42 +660,42 @@
                 <fill color="#000000" alpha="128" />
             </shape>
 
-            <textarea name="title">
-                <font>large</font>
-                <area>5,5,-5,45</area>
-                <align>left,top</align>
-            </textarea>
             <textarea name="s00e00">
                 <font>smallinfo</font>
-                <area>10,55,100,35</area>
+                <area>10,5,100,35</area>
                 <align>left,top</align>
             </textarea>
             <textarea name="starttime">
                 <font>smallinfo</font>
-                <area>120,55,600,35</area>
+                <area>120,5,600,35</area>
                 <align>left,top</align>
                 <template>%STARTDATE%   %STARTTIME% - %ENDTIME%</template>
             </textarea>
             <textarea name="originalairdate">
                 <font>smallinfo</font>
-                <area>720,55,350,35</area>
+                <area>720,5,350,35</area>
                 <align>left,top</align>
                 <template>(%1)</template>
             </textarea>
             <textarea name="year">
                 <font>smallinfo</font>
-                <area>720,55,350,35</area>
+                <area>720,5,350,35</area>
                 <align>left,top</align>
                 <template>(%1)</template>
             </textarea>
             <textarea name="lenmins">
-                <area>100%-255,55,250,35</area>
+                <area>100%-255,5,250,35</area>
                 <font>smallinfo</font>
                 <align>right,top</align>
             </textarea>
+            <textarea name="title">
+                <font>large</font>
+                <area>5,45,-5,45</area>
+                <align>left,top</align>
+            </textarea>
             <textarea name="description">
                 <font>medium</font>
-                <area>5,100,-5,-15</area>
+                <area>5,90,-5,-15</area>
                 <align>left,top</align>
                 <multiline>yes</multiline>
                 <template>%|"SUBTITLE|"% %|(STARS|) %%DESCRIPTION%</template>
