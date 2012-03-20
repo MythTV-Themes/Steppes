@@ -315,7 +315,7 @@
             <pixelsize>40</pixelsize>
         </fontdef>
 
-        <area>100,470,-100,380</area>
+        <area>100,465,-100,385</area>
 
         <shape name="background">
             <area>0,0,100%,100%</area>
@@ -350,7 +350,7 @@
                 <font>smallinfo</font>
                 <area>120,5,600,35</area>
                 <align>left,top</align>
-                <template>%STARTDATE%   %STARTTIME% - %ENDTIME%</template>
+                <template>%STARTDATE%   %STARTTIME%% - |ENDTIME%</template>
             </textarea>
             <textarea name="originalairdate">
                 <font>smallinfo</font>
@@ -376,7 +376,7 @@
             </textarea>
             <textarea name="description">
                 <font>medium</font>
-                <area>5,90,-5,-5</area>
+                <area>5,90,-5,100%</area>
                 <align>left,top</align>
                 <multiline>yes</multiline>
                 <template>%|"SUBTITLE|"% %|(STARS|) %%DESCRIPTION%</template>
@@ -634,7 +634,7 @@
             <pixelsize>40</pixelsize>
         </fontdef>
 
-        <area>100,470,-100,380</area>
+        <area>100,465,-100,385</area>
 
         <shape name="background">
             <area>0,0,100%,100%</area>
@@ -669,7 +669,7 @@
                 <font>smallinfo</font>
                 <area>120,5,600,35</area>
                 <align>left,top</align>
-                <template>%STARTDATE%   %STARTTIME% - %ENDTIME%</template>
+                <template>%STARTDATE%   %STARTTIME%% - |ENDTIME%</template>
             </textarea>
             <textarea name="originalairdate">
                 <font>smallinfo</font>
@@ -695,7 +695,7 @@
             </textarea>
             <textarea name="description">
                 <font>medium</font>
-                <area>5,90,-5,-5</area>
+                <area>5,90,-5,100%</area>
                 <align>left,top</align>
                 <multiline>yes</multiline>
                 <template>%|"SUBTITLE|"% %|(STARS|) %%DESCRIPTION%</template>
