@@ -125,13 +125,13 @@
                     <area>0,0,100%,340</area>
 
                     <textarea name="filesize_str">
-                        <area>1080,100%-41,-20,40</area>
+                        <area>100%-145,100%-38,-20,35</area>
                         <font>mysmallgrey</font>
                         <align>right,vcenter</align>
                     </textarea>
 
                     <textarea name="s00e00" from="filesize_str">
-                        <area>950,100%-41,225,40</area>
+                        <area>100%-275,100%-38,125,35</area>
                     </textarea>
 
                     <shape name="stateshape">

@@ -1917,7 +1917,7 @@
                 <area>0,0,100%,340</area>
 
                 <group name="progstats" from="programStats">
-                    <area>165,10,100%,40</area>
+                    <area>165,4,100%,40</area>
                 </group>
 
                 <textarea name="titlesubtitle">
