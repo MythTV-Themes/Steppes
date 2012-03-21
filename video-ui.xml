@@ -174,7 +174,7 @@
 
         <group name="msggroup" from="baseMsgGroupLarge">
             <textarea name="novideos" from="msgText">
-                <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>
+                <value>No videos in library, or no files found.  If you have configured a video directory, press MENU and select "Scan for Changes."</value>
             </textarea>
         </group>
 
@@ -359,7 +359,7 @@
             <multiline>yes</multiline>
             <cutdown>no</cutdown>
             <align>center</align>
-            <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>
+            <value>No videos in library, or no files found.  If you have configured a video directory, press MENU and select "Scan for Changes."</value>
         </textarea>
 
         <buttonlist name="videos">
@@ -767,7 +767,7 @@
             <multiline>yes</multiline>
             <cutdown>no</cutdown>
             <align>center</align>
-            <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>
+            <value>No videos in library, or no files found.  If you have configured a video directory, press MENU and select "Scan for Changes."</value>
         </textarea>
 
     </window>
@@ -812,7 +812,7 @@
 
         <group name="msggroup" from="baseMsgGroupLarge">
             <textarea name="novideos" from="msgText">
-                <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>
+                <value>No videos in library, or no files found.  If you have configured a video directory, press MENU and select "Scan for Changes."</value>
             </textarea>
         </group>
 

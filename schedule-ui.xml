@@ -372,7 +372,7 @@
             <area>50%-366,700,732,200</area>
             <font>mymedium</font>
             <value>You Haven't Scheduled Any Programs To Be Recorded.
-            To schedule a recording,exit this screen and
+            To schedule a recording, exit this screen and
             select 'Program Guide' or 'Program Finder'</value>
             <multiline>yes</multiline>
             <align>center</align>
@@ -897,7 +897,7 @@
         <group name="helpmsg" from="baseMsgGroupLarge">
             <textarea name="help" from="msgText">
                 <align>center</align>
-                <value>Press Up/Down from letter list,to navigate to another list.  Press Left/Right from Show or Episode list to navigate to another list.</value>
+                <value>Press Up/Down from letter list, to navigate to another list.  Press Left/Right from Show or Episode list to navigate to another list.</value>
                 <font>myverysmall</font>
             </textarea>
         </group>

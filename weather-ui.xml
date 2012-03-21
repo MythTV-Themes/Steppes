@@ -872,7 +872,7 @@
 
         <group name="msggroup" from="baseMsgGroupWide">
             <textarea name="helptxt" from="msgText">
-                <value>Enter your current location,nearest large town or city. In some countries postal codes are also supported.</value>
+                <value>Enter your current location, nearest large town or city. In some countries postal codes are also supported.</value>
             </textarea>
         </group>
 

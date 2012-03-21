@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
 
 <mythuitheme>
@@ -197,7 +197,7 @@
                 <multiline>yes</multiline>
                 <font>mysmall</font>
                 <align>center</align>
-                <value>Type the URL to an RSS 2.0 media feed below.  If editing an existing feed,modify any of the values you like.  Press "Save" to save/subscribe.\n\nFor new subscriptions,you can simply enter the URL and click "Save."</value>
+                <value>Type the URL to an RSS 2.0 media feed below.  If editing an existing feed, modify any of the values you like.  Press "Save" to save/subscribe.\n\nFor new subscriptions, you can simply enter the URL and click "Save."</value>
             </textarea>
         </group>
 
@@ -313,7 +313,7 @@
             <multiline>yes</multiline>
             <cutdown>no</cutdown>
             <align>center</align>
-            <value>You haven't added any Sites/RSS Feeds yet!  To add a site,press MENU,then choose "Scan/Manage Subscriptions," then "Manage Site Subscriptions."</value>
+            <value>You haven't added any Sites/RSS Feeds yet!  To add a site, press MENU, then choose "Scan/Manage Subscriptions," then "Manage Site Subscriptions."</value>
         </textarea>
 
         <group name="previewgroup">
@@ -646,7 +646,7 @@
             <multiline>yes</multiline>
             <cutdown>no</cutdown>
             <align>center</align>
-            <value>You haven't added any Sites/RSS Feeds yet!  To add a site,press MENU,then choose "Scan/Manage Subscriptions," then "Manage Site Subscriptions."</value>
+            <value>You haven't added any Sites/RSS Feeds yet!  To add a site, press MENU, then choose "Scan/Manage Subscriptions," then "Manage Site Subscriptions."</value>
         </textarea>
 
         <buttonlist name="videos" from="itemsList">
@@ -826,7 +826,7 @@
             <multiline>yes</multiline>
             <cutdown>no</cutdown>
             <align>center</align>
-            <value>You haven't added any Sites/RSS Feeds yet!  To add a site,press MENU,then choose "Scan/Manage Subscriptions," then "Manage Site Subscriptions."</value>
+            <value>You haven't added any Sites/RSS Feeds yet!  To add a site, press MENU, then choose "Scan/Manage Subscriptions," then "Manage Site Subscriptions."</value>
         </textarea>
 
         <buttonlist name="videos" from="basegridlist">
