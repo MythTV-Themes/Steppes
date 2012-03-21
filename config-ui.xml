@@ -412,8 +412,8 @@
             </checkbox>
 
             <textarea name="ac3_text" from="labelcheckbox">
-                <position>320,200</position>
-                <value>My speaker supports Dolby Digital</value>
+                <area>320,200,750,70</area>
+                <value>My audio subsystem supports Dolby Digital</value>
             </textarea>
 
             <checkbox name="dtscheck" from="ac3check">
@@ -422,7 +422,7 @@
 
             <textarea name="dts_text" from="ac3_text">
                 <position>320,280</position>
-                <value>My speaker supports DTS</value>
+                <value>My audio subsystem supports DTS</value>
             </textarea>
 
             <checkbox name="eac3check" from="ac3check">
@@ -431,7 +431,7 @@
 
             <textarea name="eac3_text" from="ac3_text">
                 <position>320,360</position>
-                <value>My speaker supports E-AC-3</value>
+                <value>My audio subsystem supports E-AC-3</value>
             </textarea>
 
             <checkbox name="truehdcheck" from="ac3check">
@@ -440,7 +440,7 @@
 
             <textarea name="truehd_text" from="ac3_text">
                 <position>320,440</position>
-                <value>My speaker supports TrueHD</value>
+                <value>My audio subsystem supports TrueHD</value>
             </textarea>
 
             <checkbox name="dtshdcheck" from="ac3check">
@@ -449,7 +449,7 @@
 
             <textarea name="dtshd_text" from="ac3_text">
                 <position>320,520</position>
-                <value>My speaker supports DTS-HD</value>
+                <value>My audio subsystem supports DTS-HD</value>
             </textarea>
 
             <button name="testspeakers" from="varbuttoncenter">
