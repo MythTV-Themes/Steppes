@@ -87,7 +87,6 @@
                 <area>0, 50, 100%, -50</area>
                 <align>top</align>
                 <statetype name="buttonitem">
-                    <area>0,0,100%,</area>
                     <state name="active">
                         <textarea name="name" from="basetextarea">
                             <area>10,5,560,-5</area>
