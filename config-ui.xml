@@ -385,7 +385,7 @@
         </group>
 
         <group name="dialog">
-            <area>50%-560,50,1120,800</area>
+            <area>50%-560,50,1120,750</area>
 
             <shape name="background" from="basewidgetshape" />
 
@@ -398,62 +398,62 @@
                 <area>280,40,800,70</area>
             </buttonlist>
 
-            <textarea name="speaktext_text" from="auddev_text">
-                <position>20,110</position>
-                <value>Number of Speakers:</value>
-            </textarea>
-
-            <buttonlist name="speakers" from="audiodevices">
-                <position>280,110</position>
-            </buttonlist>
-
             <checkbox name="ac3check" from="basecheckbox">
-                <position>280,200</position>
+                <position>280,120</position>
             </checkbox>
 
             <textarea name="ac3_text" from="labelcheckbox">
-                <area>320,200,750,70</area>
+                <area>320,120,750,70</area>
                 <value>My audio subsystem supports Dolby Digital</value>
             </textarea>
 
             <checkbox name="dtscheck" from="ac3check">
-                <position>280,280</position>
+                <position>280,200</position>
             </checkbox>
 
             <textarea name="dts_text" from="ac3_text">
-                <position>320,280</position>
+                <position>320,200</position>
                 <value>My audio subsystem supports DTS</value>
             </textarea>
 
             <checkbox name="eac3check" from="ac3check">
-                <position>280,360</position>
+                <position>280,280</position>
             </checkbox>
 
             <textarea name="eac3_text" from="ac3_text">
-                <position>320,360</position>
+                <position>320,280</position>
                 <value>My audio subsystem supports E-AC-3</value>
             </textarea>
 
             <checkbox name="truehdcheck" from="ac3check">
-                <position>280,440</position>
+                <position>280,360</position>
             </checkbox>
 
             <textarea name="truehd_text" from="ac3_text">
-                <position>320,440</position>
+                <position>320,360</position>
                 <value>My audio subsystem supports TrueHD</value>
             </textarea>
 
             <checkbox name="dtshdcheck" from="ac3check">
-                <position>280,520</position>
+                <position>280,440</position>
             </checkbox>
 
             <textarea name="dtshd_text" from="ac3_text">
-                <position>320,520</position>
+                <position>320,440</position>
                 <value>My audio subsystem supports DTS-HD</value>
             </textarea>
 
+            <textarea name="speaktext_text" from="auddev_text">
+                <position>20,520</position>
+                <value>Number of Speakers:</value>
+            </textarea>
+
+            <buttonlist name="speakers" from="basemediumselector">
+                <area>280,520,400,70</area>
+            </buttonlist>
+
             <button name="testspeakers" from="varbuttoncenter">
-                <area>280,600,-280,70</area>
+                <area>700,520,-40,70</area>
             </button>
 
             <group name="buttons">
