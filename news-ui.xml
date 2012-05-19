@@ -56,7 +56,7 @@
                             <gradient start="#603060" end="#000000" alpha="255"
                                       direction="vertical"  />
                         </fill>
-                        <line color="#AAFFFF" alpha="220" width="5" />
+                        <line color="#50EFDF" alpha="240" width="5" />
                         <cornerradius>10</cornerradius>
                     </shape>
                 </state>

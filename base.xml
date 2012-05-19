@@ -1163,7 +1163,7 @@
                 <shape name="checkbg">
                     <area>12,15,26,26</area>
                     <fill color="#000000" alpha="200" />
-                    <line color="#AAFFFF" alpha="64" width="2" />
+                    <line color="#50EFDF" alpha="64" width="2" />
                 </shape>
                 <statetype name="buttoncheck" from="basebuttoncheck" />
 
@@ -1476,7 +1476,7 @@
                         <minsize>50,100%</minsize>
                         <type>roundbox</type>
                         <cornerradius>350</cornerradius>
-                        <line color="#AAFFFF" alpha="196" width="3" />
+                        <line color="#50EFDF" alpha="250" width="4" />
                         <fill color="#000000" alpha="160" />
                     </shape>
                     <textarea name="buttontext">
@@ -1491,13 +1491,7 @@
                 </group>
             </state>
 
-            <state name="selectedactive" from="selectedinactive">
-                <group name="areagroup">
-                    <shape name="recGroupShape">
-                        <line color="#AAFFFF" alpha="196" width="4" />
-                    </shape>
-                </group>
-            </state>
+            <state name="selectedactive" from="selectedinactive" />
 
             <state name="inactive" from="selectedinactive">
                 <area>0,0,100%,100%</area>
@@ -1586,7 +1580,7 @@
                 <area>0,0,100%,90</area>
                 <shape name="groupBorder">
                     <area>5,0,-5,100%</area>
-                    <line color="#AAFFFF" alpha="160" width="0" />
+                    <line color="#50EFDF" alpha="250" width="0" />
                 </shape>
                 <textarea name="buttontext">
                     <font>mygroupmedium</font>
@@ -1599,7 +1593,7 @@
                 <shape name="groupBorder">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
-                    <line color="#AAFFFF" alpha="220" width="5" />
+                    <line color="#50EFDF" alpha="250" width="5" />
                     <cornerradius>10</cornerradius>
                 </shape>
             </state>
@@ -1941,7 +1935,7 @@
 
                 <textarea name="description">
                     <align>left</align>
-                    <area>25,125,-25,-55</area>
+                    <area>20,125,-20,-55</area>
                     <font>mysmall</font>
                     <multiline>yes</multiline>
                     <cutdown>yes</cutdown>
@@ -1964,7 +1958,7 @@
                 </textarea>
 
                 <textarea name="description">
-                    <area>25,125,100%,-45</area>
+                    <area>20,125,-20,-45</area>
                 </textarea>
             </state>
         </statetype>

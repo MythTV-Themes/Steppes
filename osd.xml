@@ -384,16 +384,16 @@
         </group>
 
         <imagetype name="coverart">
-            <area>10,10,200,190</area>
+            <area>10,10,200,220</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
         <imagetype name="iconpath">
-            <area>10,205,200,100</area>
+            <area>10,235,200,80</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
         <textarea name="channum">
             <font>smallnarrow</font>
-            <area>10,305,200,35</area>
+            <area>10,315,200,25</area>
             <align>center</align>
         </textarea>
         <textarea name="callsign">
@@ -703,16 +703,16 @@
         </group>
 
         <imagetype name="coverart">
-            <area>10,10,200,190</area>
+            <area>10,10,200,220</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
         <imagetype name="iconpath">
-            <area>10,205,200,100</area>
+            <area>10,235,200,80</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
         <textarea name="channum">
             <font>smallnarrow</font>
-            <area>10,305,200,35</area>
+            <area>10,315,200,25</area>
             <align>center</align>
         </textarea>
         <textarea name="callsign">
@@ -1043,7 +1043,7 @@
                     <shape name="background">
                         <area>0,0,100%,100%</area>
                         <fill color="#505050" alpha="96" />
-                        <line color="#AAFFFF" width="5" />
+                        <line color="#50EFDF" alpha="255" width="5" />
                         <type>roundbox</type>
                         <cornerradius>20</cornerradius>
                     </shape>
