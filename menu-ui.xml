@@ -39,7 +39,7 @@
                     <shape name="groupBorder">
                         <area>0,0,100%,100%</area>
                         <type>roundbox</type>
-                        <line color="#AAFFFF" alpha="220" width="5" />
+                        <line color="#50EFDF" alpha="240" width="5" />
                         <cornerradius>10</cornerradius>
                     </shape>
 

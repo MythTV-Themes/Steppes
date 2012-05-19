@@ -139,7 +139,7 @@
                     <shape name="checkbg">
                         <area>12,15,26,26</area>
                         <fill color="#000000" alpha="200" />
-                        <line color="#AAFFFF" alpha="64" width="2" />
+                        <line color="#50EFDF" alpha="64" width="2" />
                     </shape>
                     <statetype name="buttoncheck" from="basebuttoncheck" />
 
@@ -162,7 +162,7 @@
                     <shape name="checkbg">
                         <area>12,15,26,26</area>
                         <fill color="#000000" alpha="200" />
-                        <line color="#AAFFFF" alpha="64" width="2" />
+                        <line color="#50EFDF" alpha="64" width="2" />
                     </shape>
                     <statetype name="buttoncheck" from="basebuttoncheck" />
 
