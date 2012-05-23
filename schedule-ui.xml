@@ -966,12 +966,7 @@
 
             <group name="clausegroup" from="baseMsgGroup">
                 <area>770,275,-50,150</area>
-                <textarea name="clausetext" from="msgText">
-                    <!--
-                        <font>mysmall</font>
-                        <align>top,left</align>
-                    -->
-                </textarea>
+                <textarea name="clausetext" from="msgText" />
             </group>
 
             <textedit name="description" from="basemultilinetextedit">
@@ -1020,7 +1015,7 @@
         </imagetype>
 
         <group name="formgroup">
-            <area>525,35,540,960</area>
+            <area>525,35,790,960</area>
 
             <shape name="layershape">
                 <area>0,0,100%,100%</area>
@@ -1030,48 +1025,79 @@
                 </fill>
             </shape>
 
+            <textarea name="rule_label" from="labeltextlarge">
+                <area>10,150,270,90</area>
+                <value>Schedule Type:</value>
+            </textarea>
+
             <buttonlist name="rules" from="baselargeselector">
-                <area>20,150,500,90</area>
+                <area>290,150,-30,90</area>
                 <spacing>0</spacing>
                 <scrollstyle>free</scrollstyle>
                 <wrapstyle>items</wrapstyle>
             </buttonlist>
 
-            <button name="schedoptions" from="baselargebutton">
-                <area>20,240,500,90</area>
-                <value>Schedule Options</value>
-                <helptext></helptext>
-            </button>
+            <textarea name="recgroup_label" from="rule_label">
+                <position>10,240</position>
+                <value>Rec. Group:</value>
+            </textarea>
 
-            <button name="storeoptions" from="schedoptions">
-                <position>20,330</position>
-                <value>Storage Options</value>
-                <helptext></helptext>
-            </button>
+            <buttonlist name="recgroup" from="rules">
+                <position>290,240</position>
+            </buttonlist>
 
-            <button name="postprocessing" from="schedoptions">
-                <position>20,420</position>
-                <value>Post Processing</value>
-                <helptext></helptext>
-            </button>
+            <textarea name="playgroup_label" from="rule_label">
+                <position>10,330</position>
+                <value>Play Group:</value>
+            </textarea>
 
-            <button name="schedinfo" from="schedoptions">
-                <position>20,510</position>
-                <value>Schedule Info</value>
-                <helptext></helptext>
-            </button>
+            <buttonlist name="playgroup" from="rules">
+                <position>290,330</position>
+            </buttonlist>
 
-            <button name="preview" from="schedoptions">
-                <position>20,600</position>
-                <value>Preview Schedule</value>
-                <helptext></helptext>
-            </button>
+            <textarea name="startoffset_label" from="rule_label">
+                <area>10,420,270,90</area>
+                <value>Start Offset:</value>
+            </textarea>
 
-            <button name="metadata" from="schedoptions">
-                <position>20,690</position>
-                <value>Metadata Options</value>
+            <spinbox name="startoffset" from="baselargespinbox">
+                <area>290,420,-30,90</area>
+                <template type="negative">%n minute(s) late</template>
+                <template type="zero">Start on time</template>
+                <template type="positive">%n minute(s) early</template>
+            </spinbox>
+
+            <textarea name="endoffset_label" from="rule_label">
+                <position>10,510</position>
+                <align>right,vcenter</align>
+                <value>End Offset:</value>
+            </textarea>
+
+            <spinbox name="endoffset" from="startoffset">
+                <position>290,510</position>
+                <template type="negative">%n minute(s) early</template>
+                <template type="zero">End on time</template>
+                <template type="positive">%n minute(s) late</template>
+            </spinbox>
+
+            <textarea name="newrepeat_label" from="rule_label">
+                <position>10,600</position>
+                <value>Repeats:</value>
+            </textarea>
+
+            <buttonlist name="newrepeat" from="rules">
+                <position>290,600</position>
                 <helptext></helptext>
-            </button>
+            </buttonlist>
+
+            <checkbox name="ruleactive" from="basecheckbox">
+                <position>240,690</position>
+            </checkbox>
+
+            <textarea name="ruleactive_label" from="labelcheckbox">
+                <area>290,690,-20,70</area>
+                <value>Recording Rule is Active</value>
+            </textarea>
 
             <button name="cancel" from="varbuttonleft">
                 <value>Cancel</value>
@@ -1097,10 +1123,10 @@
          -> Program Guide -> 'E'(dit) -> Schedule Options
     -->
     <window name="scheduleoptionseditor">
-        <area>525,35,-30,960</area>
+        <area>100%-820,35,-30,960</area>
 
         <group name="schedulegroup">
-            <area>50%-350,0,700,100%</area>
+            <area>50%-395,0,790,100%</area>
 
             <shape name="layershape">
                 <area>0,0,100%,100%</area>
@@ -1127,12 +1153,12 @@
             </textarea>
 
             <textarea name="priority_label" from="labeltextlarge">
-                <area>10,150,200,90</area>
+                <area>10,150,270,90</area>
                 <value>Priority:</value>
             </textarea>
 
             <spinbox name="priority" from="baselargespinbox">
-                <area>220,150,450,90</area>
+                <area>290,150,-30,90</area>
                 <template type="negative">-%n</template>
                 <template type="zero">Normal</template>
                 <template type="positive">+%n</template>
@@ -1145,7 +1171,7 @@
             </textarea>
 
             <spinbox name="input" from="priority">
-                <position>220,240</position>
+                <position>290,240</position>
             </spinbox>
 
             <textarea name="startoffset_label" from="priority_label">
@@ -1154,7 +1180,7 @@
             </textarea>
 
             <spinbox name="startoffset" from="priority">
-                <position>220,330</position>
+                <position>290,330</position>
                 <template type="negative">%n minute(s) late</template>
                 <template type="zero">Start on time</template>
                 <template type="positive">%n minute(s) early</template>
@@ -1167,7 +1193,7 @@
             </textarea>
 
             <spinbox name="endoffset" from="priority">
-                <position>220,420</position>
+                <position>290,420</position>
                 <template type="negative">%n minute(s) early</template>
                 <template type="zero">End on time</template>
                 <template type="positive">%n minute(s) late</template>
@@ -1179,7 +1205,7 @@
             </textarea>
 
             <spinbox name="dupmethod" from="priority">
-                <position>220,510</position>
+                <position>290,510</position>
             </spinbox>
 
             <textarea name="dupscope_label" from="priority_label">
@@ -1188,27 +1214,18 @@
             </textarea>
 
             <spinbox name="dupscope" from="priority">
-                <position>220,600</position>
+                <position>290,600</position>
             </spinbox>
 
-            <button name="filters" from="baselargebutton">
-                <area>220,690,450,90</area>
-                <value>Schedule filters</value>
-                <helptext></helptext>
-            </button>
-
             <checkbox name="ruleactive" from="basecheckbox">
-                <position>220,800</position>
+                <position>240,710</position>
             </checkbox>
 
             <textarea name="ruleactive_label" from="labelcheckbox">
-                <area>270,800,-20,70</area>
+                <area>290,710,-20,70</area>
                 <value>Recording Rule is Active</value>
             </textarea>
 
-            <button name="back" from="varbuttonright">
-                <value>Done</value>
-            </button>
         </group>
     </window>
 
@@ -1216,10 +1233,10 @@
          -> Program Guide -> 'E'(dit) -> Schedule Options -> Schedule Filters
     -->
     <window name="schedulefiltereditor">
-        <area>525,35,-30,960</area>
+        <area>100%-820,35,-30,960</area>
 
         <group name="schedulegroup">
-            <area>100%-700,0,700,100%</area>
+            <area>50%-395,0,790,100%</area>
 
             <shape name="layershape">
                 <area>0,0,100%,100%</area>
@@ -1246,16 +1263,9 @@
             </textarea>
 
             <buttonlist name="filters" from="basechecklist">
-                <area>30,150,640,610</area>
+                <area>30,150,-30,610</area>
                 <wrapstyle>none</wrapstyle>
             </buttonlist>
-
-            <button name="back" from="varbuttonright">
-                <!--
-                    <position>470,100%-80</position>
-                -->
-                <value>Done</value>
-            </button>
 
         </group>
     </window>
@@ -1264,7 +1274,7 @@
          -> Program Guide -> 'E'(dit) -> Storage Options
     -->
     <window name="storageoptionseditor">
-        <area>525,35,-30,960</area>
+        <area>100%-820,35,-30,960</area>
 
         <group name="schedulegroup">
             <area>50%-395,0,790,100%</area>
@@ -1294,12 +1304,12 @@
             </textarea>
 
             <textarea name="recprofile_label" from="labeltextlarge">
-                <area>10,195,290,90</area>
+                <area>10,195,270,90</area>
                 <value>Rec. Profile:</value>
             </textarea>
 
             <buttonlist name="recprofile" from="baselargeselector">
-                <area>310,195,450,90</area>
+                <area>290,195,-30,90</area>
             </buttonlist>
 
             <textarea name="recgroup_label" from="recprofile_label">
@@ -1308,7 +1318,7 @@
             </textarea>
 
             <buttonlist name="recgroup" from="recprofile">
-                <position>310,285</position>
+                <position>290,285</position>
             </buttonlist>
 
             <textarea name="storagegroup_label" from="recprofile_label">
@@ -1317,7 +1327,7 @@
             </textarea>
 
             <buttonlist name="storagegroup" from="recprofile">
-                <position>310,375</position>
+                <position>290,375</position>
             </buttonlist>
 
             <textarea name="playgroup_label" from="recprofile_label">
@@ -1326,7 +1336,7 @@
             </textarea>
 
             <buttonlist name="playgroup" from="recprofile">
-                <position>310,465</position>
+                <position>290,465</position>
             </buttonlist>
 
             <textarea name="maxepisodes_label" from="recprofile_label">
@@ -1335,7 +1345,7 @@
             </textarea>
 
             <spinbox name="maxepisodes" from="baselargespinbox">
-                <area>310,555,450,90</area>
+                <area>290,555,-30,90</area>
             </spinbox>
 
             <textarea name="maxnewest_label" from="recprofile_label">
@@ -1344,21 +1354,18 @@
             </textarea>
 
             <buttonlist name="maxnewest" from="recprofile">
-                <position>310,645</position>
+                <position>290,645</position>
             </buttonlist>
 
             <checkbox name="autoexpire" from="basecheckbox">
-                <position>270,765</position>
+                <position>240,765</position>
             </checkbox>
 
             <textarea name="allowautoexpire_label" from="labelcheckbox">
-                <area>320,765,-10,70</area>
+                <area>290,765,-10,70</area>
                 <value>Allow Recordings to Auto-Expire</value>
             </textarea>
 
-            <button name="back" from="varbuttonright">
-                <value>Done</value>
-            </button>
         </group>
     </window>
 
@@ -1366,10 +1373,10 @@
          -> Program Guide -> 'E'(dit) -> Post Processing
     -->
     <window name="postproceditor">
-        <area>525,35,-30,960</area>
+        <area>100%-820,35,-30,960</area>
 
         <group name="schedulegroup">
-            <area>50%-355,0,710,100%</area>
+            <area>50%-395,0,790,100%</area>
 
             <shape name="layershape">
                 <area>0,0,100%,100%</area>
@@ -1455,17 +1462,13 @@
             </textarea>
 
             <checkbox name="userjob4" from="basecheckbox">
-                <position>60,780</position>
+                <position>60,770</position>
             </checkbox>
 
             <textarea name="userjob4text" from="autocommflag_label">
-                <position>110,780</position>
+                <position>110,770</position>
                 <value>Run User Job #1</value>
             </textarea>
-
-            <button name="back" from="varbuttonright">
-                <value>Done</value>
-            </button>
         </group>
     </window>
 
@@ -1590,10 +1593,10 @@
          -> Program Guide -> 'E'(dit) -> Metadata Options
     -->
     <window name="metadataoptions">
-        <area>525,35,-30,960</area>
+        <area>100%-820,35,-30,960</area>
 
         <group name="schedulegroup">
-            <area>50%-350,0,700,100%</area>
+             <area>50%-395,0,790,100%</area>
 
             <shape name="layershape">
                 <area>0,0,100%,100%</area>
@@ -1653,37 +1656,33 @@
             </button>
 
             <button name="online_coverart_button" from="basewidebutton">
-                <position>160,500</position>
+                <area>100,500,-100,70</area>
                 <value>Find Coverart Online</value>
             </button>
 
-            <button name="local_coverart_button" from="basewidebutton">
-                <position>160,560</position>
+            <button name="local_coverart_button" from="online_coverart_button">
+                <position>100,560</position>
                 <value>Select Local Coverart</value>
             </button>
 
-            <button name="online_fanart_button" from="basewidebutton">
-                <position>160,620</position>
+            <button name="online_fanart_button" from="online_coverart_button">
+                <position>100,620</position>
                 <value>Find Fanart Online</value>
             </button>
 
-            <button name="local_fanart_button" from="basewidebutton">
-                <position>160,680</position>
+            <button name="local_fanart_button" from="online_coverart_button">
+                <position>100,680</position>
                 <value>Select Local Fanart</value>
             </button>
 
-            <button name="online_banner_button" from="basewidebutton">
-                <position>160,740</position>
+            <button name="online_banner_button" from="online_coverart_button">
+                <position>100,740</position>
                 <value>Find Banners Online</value>
             </button>
 
-            <button name="local_banner_button" from="basewidebutton">
-                <position>160,800</position>
+            <button name="local_banner_button" from="online_coverart_button">
+                <position>100,800</position>
                 <value>Select Local Banner</value>
-            </button>
-
-            <button name="back" from="varbuttonright">
-                <value>Done</value>
             </button>
 
         </group>
