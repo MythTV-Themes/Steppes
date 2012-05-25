@@ -1682,17 +1682,10 @@
                 <line color="#00FFFF" alpha="160" width="0" />
             </shape>
             <textarea name="description" from="msgText">
-                <area>10,10,-10,-85</area>
+                <area>10,10,-10,-10</area>
                 <font>mysmall</font>
                 <align>left,top</align>
                 <template>%|RATING| %%|(STARS|) %%DESCRIPTION%</template>
-            </textarea>
-            <textarea name="template" from="basetextarea">
-                <font>mylabelfont</font>
-                <area>10,100%-75,-10,70</area>
-                <multiline>yes</multiline>
-                <align>bottom,hcenter</align>
-                <template>%Using the '|TEMPLATE|' template%</template>
             </textarea>
         </group>
     </group>

@@ -1025,6 +1025,14 @@
                 </fill>
             </shape>
 
+            <textarea name="template" from="basetextarea">
+                <area>10,40,-10,70</area>
+                <font>mysmall</font>
+                <multiline>yes</multiline>
+                <align>center</align>
+                <template>%Using the '|TEMPLATE|' template%</template>
+            </textarea>
+
             <textarea name="rule_label" from="labeltextlarge">
                 <area>10,150,270,90</area>
                 <value>Schedule Type:</value>
@@ -1099,11 +1107,13 @@
                 <value>Recording Rule is Active</value>
             </textarea>
 
-            <button name="cancel" from="varbuttonleft">
+            <button name="cancel" from="varbuttonright">
+                <area>30, 100%-90, 100%-265, 70</area>
                 <value>Cancel</value>
             </button>
 
-            <button name="save" from="varbuttonright">
+            <button name="save" from="varbuttonleft">
+                <area>100%-255, 100%-90, -30, 70</area>
                 <value>Save</value>
             </button>
         </group>
