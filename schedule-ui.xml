@@ -1025,13 +1025,27 @@
                 </fill>
             </shape>
 
-            <textarea name="template" from="basetextarea">
-                <area>10,40,-10,70</area>
-                <font>mysmall</font>
-                <multiline>yes</multiline>
-                <align>center</align>
-                <template>%Using the '|TEMPLATE|' template%</template>
-            </textarea>
+            <group name="helpgroup">
+                <area>30,10,-30,130</area>
+                <minsize>350,25</minsize>
+
+                <shape name="msgShape">
+                    <area>0,0,100%,100%</area>
+                    <minsize>350,25</minsize>
+                    <type>roundbox</type>
+                    <cornerradius>5</cornerradius>
+                    <fill color="#FFF0F0" alpha="24" />
+                </shape>
+
+                <textarea name="helparea" from="basetextarea">
+                    <area>30,10,-30,-10</area>
+                    <minsize shrink="short">350,25</minsize>
+                    <multiline>yes</multiline>
+                    <font>myverysmall</font>
+                    <align>center</align>
+                    <value>Use [Menu] or [PREVVIEW]/[NEXTVIEW] to cycle through other settings</value>
+                </textarea>
+            </group>
 
             <textarea name="rule_label" from="labeltextlarge">
                 <area>10,150,270,90</area>
@@ -1105,6 +1119,14 @@
             <textarea name="ruleactive_label" from="labelcheckbox">
                 <area>290,690,-20,70</area>
                 <value>Recording Rule is Active</value>
+            </textarea>
+
+            <textarea name="template" from="basetextarea">
+                <area>290,770,-30,-100</area>
+                <font>myverysmall</font>
+                <multiline>yes</multiline>
+                <align>center</align>
+                <template>%Using the '|TEMPLATE|' template%</template>
             </textarea>
 
             <button name="cancel" from="varbuttonright">
