@@ -2116,6 +2116,7 @@
             <wrapstyle>selection</wrapstyle>
         </buttonlist>
 
+<!--
         <animation trigger="AboutToShow">
             <section duration="100">
                 <verticalzoom start="0" end="100" />
@@ -2126,6 +2127,7 @@
                 <verticalzoom start="100" end="0" />
             </section>
         </animation>
+-->
     </group>
 
 
@@ -2236,6 +2238,7 @@
             <value>OK</value>
         </button>
 
+<!--
         <animation trigger="AboutToShow">
             <section duration="100">
                 <verticalzoom start="0" end="100" />
@@ -2246,6 +2249,7 @@
                 <verticalzoom start="100" end="0" />
             </section>
         </animation>
+-->
     </window>
 
     <!-- 'E'(dit) a recording or schedule -> Metadata Options
@@ -2273,6 +2277,7 @@
             <value>Cancel</value>
         </button>
 
+<!--
         <animation trigger="AboutToShow">
             <section duration="100">
                 <verticalzoom start="0" end="100" />
@@ -2283,6 +2288,7 @@
                 <verticalzoom start="100" end="0" />
             </section>
         </animation>
+-->
     </window>
 
     <!-- 'E'(dit) a recording or schedule -> Storage Options
@@ -2310,6 +2316,7 @@
             <value>OK</value>
         </button>
 
+<!--
         <animation trigger="AboutToShow">
             <section duration="100">
                 <verticalzoom start="0" end="100" />
@@ -2320,6 +2327,7 @@
                 <verticalzoom start="100" end="0" />
             </section>
         </animation>
+-->
     </window>
 
     <!-- Home -> Media Library -> Watch Recordings -> 'S'(earch)
@@ -2364,6 +2372,7 @@
             </state>
         </statetype>
 
+<!--
         <animation trigger="AboutToShow">
             <section duration="100">
                 <verticalzoom start="0" end="100" />
@@ -2374,6 +2383,7 @@
                 <verticalzoom start="100" end="0" />
             </section>
         </animation>
+-->
     </window>
 
     <!-- Home -> Manage Recordings -> Schedule Recordings
@@ -2413,6 +2423,7 @@
             <value>Cancel</value>
         </button>
 
+<!--
         <animation trigger="AboutToShow">
             <section duration="100">
                 <verticalzoom start="0" end="100" />
@@ -2423,6 +2434,7 @@
                 <verticalzoom start="100" end="0" />
             </section>
         </animation>
+-->
     </window>
 
     <!-- Start watching a show -->
