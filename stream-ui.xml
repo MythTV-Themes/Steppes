@@ -14,7 +14,7 @@
         </group>
 
         <group name="streamgroup">
-            <area>20,20,-20,375</area>
+            <area>30,30,-30,375</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
@@ -82,15 +82,15 @@
                         <textarea name="station" from="basetextarea">
                             <area>90,5,33%-160,-5</area>
                             <align>left,vcenter</align>
-                            <font>mymedium</font>
+                            <font>mysmall</font>
                         </textarea>
 
-                        <textarea name="channel" from="title">
+                        <textarea name="channel" from="station">
                             <area>33%-100,5,50%-5,-5</area>
                             <align>center</align>
                         </textarea>
 
-                        <textarea name="genre" from="title">
+                        <textarea name="genre" from="station">
                             <area>65%,5,-5,-5</area>
                             <align>center</align>
                         </textarea>
@@ -157,7 +157,7 @@
         </group>
 
         <group name="trackgroup">
-            <area>20,405,-20,375</area>
+            <area>30,415,-30,375</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
