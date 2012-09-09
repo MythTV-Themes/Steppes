@@ -3,31 +3,55 @@
 <mythuitheme>
     <window name="osd_subtitle">
         <!--
-            Define a black background which is used below for 608 and
+            Define a grey background which is used below for 608 and
             text subtitles.  If a background is not used, it is
             recommended to use a 2-pixel outline or shadow in the
             fontdef, in order to provide sufficient contrast.  Note
             that 708 captions providers almost always specify an
             explicit black background.
           -->
-        <shape name="black_background" from="provider">
-          <type>box</type>
-          <fill color="#000000" alpha="128" />
+        <shape name="grey_background" from="provider">
+          <type>roundbox</type>
+          <cornerradius>10</cornerradius>
+          <fill color="#000000" alpha="148" />
         </shape>
+
+        <!--
+            Subtitle type "text" generally comes from external text
+            files like .srt or .txt files.
+           -->
+        <shape name="text" from="grey_background">
+        </shape>
+        <fontdef name="text" face="Liberation Sans" from="provider">
+            <color>#FFFFF0</color>
+            <outlinecolor>#000000</outlinecolor>
+            <outlinesize>2</outlinesize>
+            <outlinealpha>255</outlinealpha>
+        </fontdef>
 
         <!--
             CEA-608 closed captions.  These also apply to CEA-608 VBI
             teletext captions.  A monospaced font should be used.
            -->
 
-        <shape   name="608" from="black_background">
+        <shape name="608" from="grey_background">
         </shape>
+        <fontdef name="608" face="Liberation Sans" from="provider">
+<!--
+        <fontdef name="608" face="FreeMono" from="provider">
+-->
+            <color>#FFFFF0</color>
+            <outlinecolor>#000000</outlinecolor>
+            <outlinesize>2</outlinesize>
+            <outlinealpha>255</outlinealpha>
+        </fontdef>
 
         <!--
             CEA-708 closed captions.  The spec defines 8 different
             font tags, but in practice (at least in the U.S.), only
             tags 0 and 3 are used by broadcasters.
-           -->
 
+            Note: Inherited from the default theme.
+           -->
     </window>
 </mythuitheme>
