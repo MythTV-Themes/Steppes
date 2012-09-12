@@ -50,6 +50,10 @@
 
                 <state name="inactive">
 
+                    <statetype name="status">
+                         <state name="disabled" from="error" />
+                    </statetype>
+
                     <shape name="stateshape">
                         <area>45,5,115,32</area>
                         <type>roundbox</type>
@@ -91,7 +95,8 @@
                         <state name="running">
                             <imagetype name="run">
                                 <area>110,7,56,28</area>
-                                <filename>Images/icons/commflagged.png</filename>                               <alphapulse min="80" max="255" change="2"/>
+                                <filename>Images/icons/commflagged.png</filename>
+                                <alphapulse min="80" max="255" change="2"/>
                             </imagetype>
                         </state>
                         <state name="queued">
@@ -123,6 +128,10 @@
 
                 <state name="selectedinactive">
                     <area>0,0,100%,340</area>
+
+                    <statetype name="status">
+                         <state name="disabled" from="error" />
+                    </statetype>
 
                     <textarea name="filesize_str">
                         <area>100%-145,100%-38,-20,35</area>
@@ -205,7 +214,8 @@
                             <area>0,0,100%,100%</area>
                             <imagetype name="blank">
                                 <area>170,100%-46,56,28</area>
-                                <filename>Images/icons/autoexpire.png</filename>                                <alpha>64</alpha>
+                                <filename>Images/icons/autoexpire.png</filename>
+                                <alpha>64</alpha>
                             </imagetype>
                         </state>
                     </statetype>
@@ -360,7 +370,9 @@
                 </state>
 
                 <state name="selectedactive" from="selectedinactive">
-                    <statetype name="status" from="itemsSelectedState" />
+                    <statetype name="status" from="itemsSelectedState">
+                        <state name="disabled" from="error" />
+                    </statetype>
                 </state>
 
             </statetype>
@@ -730,7 +742,8 @@
                         </state>
                         <state name="processing">
                             <imagetype name="statusimage">
-                                <filename>Images/icons/commflagged.png</filename>                               <alphapulse min="80" max="255" change="2"/>
+                                <filename>Images/icons/commflagged.png</filename>
+                                <alphapulse min="80" max="255" change="2"/>
                             </imagetype>
                         </state>
                         <state name="bookmark">
