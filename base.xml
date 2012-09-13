@@ -2109,6 +2109,7 @@
             <area>20,10,-20,40%+10</area>
             <multiline>yes</multiline>
             <align>center</align>
+            <scroll direction="vertical" />
         </textarea>
 
         <buttonlist name="list" from="basepopupbuttonlist">
