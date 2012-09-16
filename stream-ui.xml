@@ -14,7 +14,7 @@
         </group>
 
         <group name="streamgroup">
-            <area>30,30,-30,375</area>
+            <area>30,30,50%-100,760</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
@@ -31,7 +31,7 @@
             <buttonlist name="streamlist">
                 <arrange>stack</arrange>
                 <align>vcenter,left</align>
-                <area>20,0,-20,100%</area>
+                <area>10,0,-10,100%</area>
                 <buttonarea>20,0,-20,100%</buttonarea>
                 <scrollstyle>free</scrollstyle>
                 <wrapstyle>items</wrapstyle>
@@ -40,9 +40,9 @@
                 <searchposition>-1,400</searchposition>
 
                 <statetype name="buttonitem">
-                    <area>0,20,100%,-60</area>
+                    <area>0,20,100%,100%</area>
                     <state name="inactive">
-                        <area>0,0,100%,60</area>
+                        <area>0,0,100%,120</area>
                         <statetype name="playstate">
                             <area>0,0,100%,100%</area>
                             <state name="default">
@@ -74,30 +74,38 @@
                         </statetype>
 
                         <imagetype name="buttonimage">
-                            <area>10,10,70,-10</area>
+                            <area>15,10,100,-10</area>
                             <filename>mm_icecast.png</filename>
                             <preserveaspect>true</preserveaspect>
                         </imagetype>
 
                         <textarea name="station" from="basetextarea">
-                            <area>90,5,33%-160,-5</area>
-                            <align>left,vcenter</align>
+                            <area>120,10,-10,70</area>
+                            <align>left,top</align>
+                            <multiline>yes</multiline>
                             <font>mysmall</font>
+                            <template>%channel% (%station%)</template>
                         </textarea>
 
-                        <textarea name="channel" from="station">
-                            <area>33%-100,5,50%-5,-5</area>
-                            <align>center</align>
-                        </textarea>
-
-                        <textarea name="genre" from="station">
-                            <area>65%,5,-5,-5</area>
-                            <align>center</align>
+                        <textarea name="genre" from="basetextarea">
+                            <area>125,100%-40,-15,-10</area>
+                            <align>left,bottom</align>
+                            <font>myverysmall</font>
                         </textarea>
                     </state>
 
                     <state name="active" from="inactive" />
-                    <state name="selectedinactive" from="inactive" />
+                    <state name="selectedinactive" from="inactive">
+                        <textarea name="station">
+                            <cutdown>no</cutdown>
+                            <scroll direction="vertical" />
+                        </textarea>
+
+                        <textarea name="genre">
+                            <cutdown>no</cutdown>
+                            <scroll direction="horizontal" />
+                        </textarea>
+                    </state>
 
                     <state name="selectedactive" from="selectedinactive">
                         <statetype name="playstate">
@@ -157,7 +165,7 @@
         </group>
 
         <group name="trackgroup">
-            <area>30,415,-30,375</area>
+            <area>50%-70,30,-30,760</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
@@ -167,7 +175,7 @@
             <buttonlist name="playedtrackslist">
                 <arrange>stack</arrange>
                 <align>vcenter,left</align>
-                <area>20,0,-20,100%</area>
+                <area>10,0,-10,100%</area>
                 <buttonarea>20,0,-20,100%</buttonarea>
                 <scrollstyle>free</scrollstyle>
                 <wrapstyle>items</wrapstyle>
@@ -176,10 +184,10 @@
                 <searchposition>-1,200</searchposition>
 
                 <statetype name="buttonitem">
-                    <area>0,20,100%,-60</area>
+                    <area>0,20,100%,100%</area>
 
                     <state name="inactive">
-                        <area>0,0,100%,60</area>
+                        <area>0,0,100%,90</area>
                         <statetype name="playstate">
                             <area>0,0,100%,100%</area>
                             <state name="default">
@@ -211,33 +219,36 @@
                         </statetype>
 
                         <imagetype name="buttonimage">
-                            <area>10,10,70,-10</area>
+                            <area>100%-85,10,70,-10</area>
                             <filename>mm_icecast.png</filename>
                             <preserveaspect>true</preserveaspect>
                         </imagetype>
 
                         <textarea name="tracknum" from="basetextarea">
-                            <area>90,5,70,-5</area>
-                            <align>right,vcenter</align>
+                            <area>10,10,90,35</area>
+                            <align>right,top</align>
                             <font>mymedium</font>
                             <template>%1 -</template>
                         </textarea>
 
                         <textarea name="title" from="basetextarea">
-                            <area>170,5,800,-5</area>
-                            <align>left,vcenter</align>
+                            <area>110,10,-100,35</area>
+                            <align>left,top</align>
                             <font>mymedium</font>
                         </textarea>
 
-                        <textarea name="artist" from="title">
-                            <area>980,5,-180,-5</area>
-                            <align>left,vcenter</align>
+                        <textarea name="artist" from="basetextarea">
+                            <area>80,40,-220,-10</area>
+                            <align>left,bottom</align>
+                            <font>mysmall</font>
                         </textarea>
 
-                        <textarea name="length" from="title">
-                            <area>100%-170,5,120,-5</area>
-                            <align>right,vcenter</align>
+                        <textarea name="length" from="basetextarea">
+                            <area>100%-210,40,120,-10</area>
+                            <align>right,bottom</align>
+                            <font>mysmall</font>
                         </textarea>
+
                     </state>
 
                     <state name="active" from="inactive" />
@@ -246,6 +257,16 @@
                         <statetype name="movestate" from="basemovestate">
                             <position>100%-30,50%-7</position>
                         </statetype>
+
+                        <textarea name="title">
+                            <cutdown>no</cutdown>
+                            <scroll direction="horizontal" />
+                        </textarea>
+
+                        <textarea name="artist">
+                            <cutdown>no</cutdown>
+                            <scroll direction="horizontal" />
+                        </textarea>
                     </state>
 
                     <state name="selectedactive" from="selectedinactive">
@@ -326,10 +347,15 @@
                 <font>mymedium</font>
             </textarea>
 
+<!--
             <textarea name="channel" from="basetextarea">
                 <area>40,100,-70,40</area>
                 <font>mymedium</font>
                 <template>%STATION% - %CHANNEL%</template>
+            </textarea>
+-->
+            <textarea name="filename" from="basetextarea">
+                <area>40,100,-70,40</area>
             </textarea>
 
             <progressbar name="bufferprogress" from="baseprogressbar">
