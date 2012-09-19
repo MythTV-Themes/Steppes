@@ -528,4 +528,270 @@
         </group>
     </window>
 
+    <window name="languageselection">
+
+        <group name="PageHeading" from="basePageHeading">
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Language Selection</value>
+                </textarea>
+            </group>
+        </group>
+
+
+        <textarea name="countrylabel">
+            <font>baselarge</font>
+            <area>30,30,50%-30,40</area>
+            <value>Country</value>
+            <align>center</align>
+        </textarea>
+
+        <group name="countrygroup">
+            <area>30,75,50%-30,-220</area>
+
+            <shape name="background" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+                <cornerradius>10</cornerradius>
+            </shape>
+
+            <buttonlist name="countries" from="basebuttonlist">
+                <arrange>stack</arrange>
+                <align>vcenter,left</align>
+                <area>10,0,-10,100%</area>
+                <buttonarea>20,0,-20,100%</buttonarea>
+                <scrollstyle>free</scrollstyle>
+                <wrapstyle>items</wrapstyle>
+                <spacing>0</spacing>
+
+                <statetype name="buttonitem">
+                    <state name="active">
+                        <area>0,0,100%,95</area>
+                        <imagetype name="buttonimage">
+                            <area>10,10,90,-10</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                        <textarea name="buttontext">
+                            <area>110,4,-10,50</area>
+                            <font>mymedium</font>
+                            <cutdown>yes</cutdown>
+                            <align>left,top</align>
+                        </textarea>
+                        <textarea name="nativecountry">
+                            <area>120,55,-10,-15</area>
+                            <font>mysmallgrey</font>
+                            <cutdown>yes</cutdown>
+                            <align>left,vcenter</align>
+                        </textarea>
+                    </state>
+                    <state name="inactive" from="active" />
+                    <state name="selectedinactive" from="active">
+                        <shape name="background" from="baseselectedinactivebuttonshape" />
+                    </state>
+                    <state name="selectedactive" from="selectedinactive">
+                        <shape name="background" from="baseselectedbuttonshape" />
+                    </state>
+                </statetype>
+                <helptext>Select the country in which you currently reside</helptext>
+            </buttonlist>
+        </group>
+
+        <textarea name="languagelabel" from="countrylabel">
+            <area>50%+10,30,-30,40</area>
+            <value>Language</value>
+        </textarea>
+
+        <group name="languagegroup">
+            <area>50%+30,75,-30,-220</area>
+
+            <shape name="background" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+                <cornerradius>10</cornerradius>
+            </shape>
+
+            <buttonlist name="languages" from="basebuttonlist">
+                <arrange>stack</arrange>
+                <align>vcenter,left</align>
+                <area>10,0,-10,100%</area>
+                <buttonarea>20,0,-20,100%</buttonarea>
+                <scrollstyle>free</scrollstyle>
+                <wrapstyle>items</wrapstyle>
+                <spacing>0</spacing>
+
+                <statetype name="buttonitem">
+                    <state name="active">
+                        <area>0,0,100%,95</area>
+                        <textarea name="buttontext">
+                            <area>20,4,-10,50</area>
+                            <font>mymedium</font>
+                            <cutdown>yes</cutdown>
+                            <align>left,vcenter</align>
+                        </textarea>
+                        <textarea name="language">
+                            <area>40,55,-10,-15</area>
+                            <font>mysmallgrey</font>
+                            <cutdown>yes</cutdown>
+                            <align>left,vcenter</align>
+                        </textarea>
+                    </state>
+                    <state name="inactive" from="active" />
+                    <state name="selectedinactive" from="active">
+                        <shape name="background" from="baseselectedinactivebuttonshape" />
+                    </state>
+                    <state name="selectedactive" from="selectedinactive">
+                        <shape name="background" from="baseselectedbuttonshape" />
+                    </state>
+                </statetype>
+                <helptext>Select your preferred language</helptext>
+            </buttonlist>
+        </group>
+
+        <group name="helpgroup" from="baseMsgGroup">
+            <area>50%-400,100%-190,800,80</area>
+            <textarea name="helptext" from="msgText" />
+        </group>
+
+        <button name="save" from="varbuttonleft">
+            <area>50%+410, 100%-185, -30, 70</area>
+            <value>Save</value>
+        </button>
+
+        <button name="cancel" from="varbuttonright">
+            <area>30, 100%-185, 50%-425, 70</area>
+            <value>Cancel</value>
+        </button>
+
+    </window>
+
+    <window name="backendselection">
+
+        <group name="PageHeading" from="basePageHeading">
+            <group name="Heading">
+                <textarea name="text">
+                    <value>MythTV Servers</value>
+                </textarea>
+            </group>
+        </group>
+
+        <group name="dialog">
+            <area>50%-500,30,1000,-310</area>
+
+            <shape name="dialogbackground" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+                <cornerradius>10</cornerradius>
+            </shape>
+
+            <buttonlist name="backends" from="basebuttonlist">
+                <area>25,25,-25,-25</area>
+
+                <statetype name="buttonitem">
+                    <state name="active">
+                        <area>0,0,100%,100</area>
+
+                        <textarea name="buttontext">
+                            <area>10,10,450,35</area>
+                            <font>mymedium</font>
+                            <cutdown>yes</cutdown>
+                            <align>left,vcenter</align>
+                        </textarea>
+                        <textarea name="modelname" from="buttontext" /> <!-- Workaround for vanishing buttontext bug -->
+                        <textarea name="protocolversion">
+                            <area>15,50,300,35</area>
+                            <font>mysmallgrey</font>
+                            <cutdown>yes</cutdown>
+                            <align>left,vcenter</align>
+                        </textarea>
+
+                        <textarea name="version">
+                            <area>100%-110,55,100,35</area>
+                            <font>mysmall</font>
+                            <cutdown>yes</cutdown>
+                            <align>right,vcenter</align>
+                        </textarea>
+
+                        <statetype name="connection">
+                            <area>100%-150,5,100,-5</area>
+                            <state name="good">
+                                <area>0,0,100,50</area>
+                            </state>
+                            <state name="protocolmismatch" from="good">
+                                <textarea name="description">
+                                    <area>0,0,100%,100%</area>
+                                    <align>hcenter</align>
+                                    <value>Version Mismatch</value>
+                                    <font>basesmallred</font>
+                                    <multiline>yes</multiline>
+                                </textarea>
+                            </state>
+                            <state name="blocked" from="protocolmismatch">
+                                <textarea name="description">
+                                    <value>Firewall</value>
+                                </textarea>
+                            </state>
+                        </statetype>
+
+                        <statetype name="securitypin">
+                            <area>100%-50,10,40,40</area>
+                            <state name="yes">
+                                <area>0,0,40,40</area>
+                                <shape name="pin">
+                                    <area>0,0,40,40</area>
+                                    <type>roundbox</type>
+                                    <cornerradius>6</cornerradius>
+                                    <fill color="#990000" />
+                                </shape>
+                                <imagetype name="locked">
+                                    <position>6,5</position>
+                                    <filename>shared/secure.png</filename>
+                                </imagetype>
+                            </state>
+                            <state name="no">
+                                <area>0,0,40,40</area>
+                                <shape name="nopin">
+                                    <area>0,0,40,40</area>
+                                    <type>roundbox</type>
+                                    <cornerradius>6</cornerradius>
+                                    <fill color="#009900" />
+                                </shape>
+                                <imagetype name="unlocked">
+                                    <position>2,5</position>
+                                    <filename>shared/unsecure.png</filename>
+                                </imagetype>
+                            </state>
+                        </statetype>
+                    </state>
+
+                    <state name="inactive" from="active" />
+                    <state name="selectedinactive" from="active">
+                        <shape name="background" from="baseselectedinactivebuttonshape" />
+                    </state>
+                    <state name="selectedactive" from="selectedinactive">
+                        <shape name="background" from="baseselectedbuttonshape" />
+                    </state>
+                </statetype>
+                <helptext>Select the server you wish to connect to</helptext>
+            </buttonlist>
+        </group>
+
+        <group name="helpgroup" from="baseMsgGroup">
+            <area>50%-400,100%-280,800,80</area>
+            <textarea name="helptext" from="msgText" />
+        </group>
+
+        <button name="save" from="varbuttonleft">
+            <area>50%+310, 100%-185, -30, 70</area>
+            <value>Save</value>
+        </button>
+
+        <button name="cancel" from="varbuttonright">
+            <area>30, 100%-185, 50%-325, 70</area>
+            <value>Cancel</value>
+        </button>
+
+        <button name="manual" from="varbuttoncenter">
+            <area>30, 100%-185, -30, 70</area>
+            <value>Manual</value>
+        </button>
+
+    </window>
+
 </mythuitheme>
