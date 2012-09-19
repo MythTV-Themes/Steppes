@@ -547,7 +547,7 @@
         </textarea>
 
         <group name="countrygroup">
-            <area>30,75,50%-30,-220</area>
+            <area>30,75,50%-20,-220</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
@@ -571,13 +571,13 @@
                             <preserveaspect>true</preserveaspect>
                         </imagetype>
                         <textarea name="buttontext">
-                            <area>110,4,-10,50</area>
+                            <area>110,4,-5,50</area>
                             <font>mymedium</font>
                             <cutdown>yes</cutdown>
                             <align>left,top</align>
                         </textarea>
                         <textarea name="nativecountry">
-                            <area>120,55,-10,-15</area>
+                            <area>120,55,-5,-15</area>
                             <font>mysmallgrey</font>
                             <cutdown>yes</cutdown>
                             <align>left,vcenter</align>
@@ -586,6 +586,14 @@
                     <state name="inactive" from="active" />
                     <state name="selectedinactive" from="active">
                         <shape name="background" from="baseselectedinactivebuttonshape" />
+                        <textarea name="buttontext">
+                            <cutdown>no</cutdown>
+                            <scroll direction="horizontal" />
+                        </textarea>
+                        <textarea name="nativecountry">
+                            <cutdown>no</cutdown>
+                            <scroll direction="horizontal" />
+                        </textarea>
                     </state>
                     <state name="selectedactive" from="selectedinactive">
                         <shape name="background" from="baseselectedbuttonshape" />
@@ -601,7 +609,7 @@
         </textarea>
 
         <group name="languagegroup">
-            <area>50%+30,75,-30,-220</area>
+            <area>50%+20,75,-30,-220</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
@@ -636,6 +644,14 @@
                     <state name="inactive" from="active" />
                     <state name="selectedinactive" from="active">
                         <shape name="background" from="baseselectedinactivebuttonshape" />
+                        <textarea name="buttontext">
+                            <cutdown>no</cutdown>
+                            <scroll direction="horizontal" />
+                        </textarea>
+                        <textarea name="language">
+                            <cutdown>no</cutdown>
+                            <scroll direction="horizontal" />
+                        </textarea>
                     </state>
                     <state name="selectedactive" from="selectedinactive">
                         <shape name="background" from="baseselectedbuttonshape" />
@@ -791,7 +807,6 @@
             <area>30, 100%-185, -30, 70</area>
             <value>Manual</value>
         </button>
-
     </window>
 
 </mythuitheme>
