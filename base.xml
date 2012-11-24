@@ -1682,10 +1682,22 @@
                 <line color="#00FFFF" alpha="160" width="0" />
             </shape>
             <textarea name="description" from="msgText">
-                <area>10,10,-10,-10</area>
+                <area>10,10,-10,-42</area>
                 <font>mysmall</font>
                 <align>left,top</align>
                 <template>%|RATING| %%|(STARS|) %%DESCRIPTION%</template>
+            </textarea>
+            <textarea name="syndicatedepisode" depends="!s00e00">
+                <area>20,100%-40,-210,32</area>
+                <font>mylabelfont</font>
+                <align>left,bottom</align>
+                <template>%|[SYNDICATEDEPISODE|]%</template>
+            </textarea>
+            <textarea name="parttotal" depends="partnumber">
+                <area>100%-200,100%-40,-20,32</area>
+                <align>right,bottom</align>
+                <font>mylabelfont</font>
+                <template>%Part |PARTNUMBER| of %%PARTTOTAL%</template>
             </textarea>
         </group>
     </group>
@@ -1899,9 +1911,16 @@
                 </group>
 
                 <textarea name="titlesubtitle">
-                    <area>20,100%-42,-20,35</area>
+                    <area>20,100%-42,-160,35</area>
                     <align>left</align>
                     <font>mymedium</font>
+                </textarea>
+
+                <textarea name="syndicatedepisode" depends="!s00e00">
+                    <area>100%-150,100%-40,-20,32</area>
+                    <font>mysmallgrey</font>
+                    <align>right,bottom</align>
+                    <template>%|[SYNDICATEDEPISODE|]%</template>
                 </textarea>
             </state>
 
@@ -1931,6 +1950,9 @@
                     <font>mymediumbold</font>
                     <cutdown>no</cutdown>
                     <scroll direction="horizontal" />
+<!--
+                    <template>%SUBTITLE%%  #|PARTNUMBER|/%%PARTTOTAL%</template>
+-->
                 </textarea>
 
                 <textarea name="description">
@@ -1941,6 +1963,14 @@
                     <cutdown>yes</cutdown>
                     <template>%|RATING| %%|(STARS|) %%DESCRIPTION%</template>
                 </textarea>
+
+                <textarea name="parttotal" depends="partnumber">
+                    <area>684,100%-40,230,32</area>
+                    <align>hcenter,bottom</align>
+                    <font>mylabelfont</font>
+                    <template>%Part |PARTNUMBER| of %%PARTTOTAL%</template>
+                </textarea>
+
             </state>
 
             <state name="selectedactive" from="selectedinactive">
@@ -2109,6 +2139,7 @@
             <area>20,10,-20,40%+10</area>
             <multiline>yes</multiline>
             <align>center</align>
+            <cutdown>no</cutdown>
             <scroll direction="vertical" />
         </textarea>
 

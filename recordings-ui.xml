@@ -110,17 +110,21 @@
                     <statetype name="playlist" from="selectedbox" />
 
                     <textarea name="titlesubtitle">
-                        <area>20,100%-41,-280,35</area>
+                        <area>20,100%-41,-300,35</area>
                     </textarea>
 
                     <textarea name="filesize_str">
-                        <area>100%-145,100%-41,-20,35</area>
+                        <area>100%-145,100%-39,-20,32</area>
                         <font>mysmallgrey</font>
                         <align>right,bottom</align>
                     </textarea>
 
                     <textarea name="s00e00" from="filesize_str">
-                        <area>100%-275,100%-41,125,35</area>
+                        <area>100%-290,100%-39,140,32</area>
+                    </textarea>c
+
+                    <textarea name="syndicatedepisode">
+                        <area>100%-290,100%-40, 140,32</area>
                     </textarea>
                 </state>
 
@@ -134,13 +138,17 @@
                     </statetype>
 
                     <textarea name="filesize_str">
-                        <area>100%-145,100%-38,-20,35</area>
+                        <area>100%-145,100%-39,-20,32</area>
                         <font>mysmallgrey</font>
-                        <align>right,vcenter</align>
+                        <align>right,bottom</align>
                     </textarea>
 
                     <textarea name="s00e00" from="filesize_str">
-                        <area>100%-275,100%-38,125,35</area>
+                        <area>920,100%-39,-150,32</area>
+                    </textarea>
+
+                    <textarea name="syndicatedepisode">
+                        <area>920,100%-40,-150,32</area>
                     </textarea>
 
                     <shape name="stateshape">

@@ -402,8 +402,8 @@
 
                 <state name="selectedinactive">
                     <textarea name="rectypestatus">
-                        <area>100%-700,100%-41,-20,-8</area>
-                        <align>right</align>
+                        <area>30,100%-40,50%-10,32</area>
+                        <align>left,bottom</align>
                         <font>myverysmall</font>
                         <font state="running">myverysmallgreen</font>
                         <font state="disabled">myverysmallgrey</font>
@@ -423,6 +423,11 @@
                         <align>hcenter</align>
                         <template>(%1)</template>
                     </textarea>
+
+                    <textarea name="syndicatedepisode">
+                        <area>920,100%-40,-20,32</area>
+                    </textarea>
+
                 </state>
 
                 <state name="selectedactive" from="selectedinactive">
@@ -804,8 +809,8 @@
 
                 <state name="selectedinactive">
                     <textarea name="rectypestatus">
-                        <area>100%-700,100%-41,-20,-8</area>
-                        <align>right</align>
+                        <area>20,100%-40,-684,32</area>
+                        <align>left,bottom</align>
                         <font>myverysmall</font>
                         <font state="running">myverysmallgreen</font>
                         <font state="disabled">myverysmallgrey</font>
@@ -1596,8 +1601,8 @@
                     </textarea>
 
                     <textarea name="rectypestatus">
-                        <area>100%-700,100%-41,-20,-8</area>
-                        <align>right</align>
+                        <area>30,100%-40,50%-10,32</area>
+                        <align>left,bottom</align>
                         <font>myverysmall</font>
                         <font state="running">myverysmallgreen</font>
                         <font state="disabled">myverysmallgrey</font>
@@ -1606,8 +1611,8 @@
                         <font state="warning">myverysmallorange</font>
                     </textarea>
                     <textarea name="programid" from="basetextarea">
-                        <area>60,280,-25,-10</area>
-                        <align>left</align>
+                        <area>100%-400,100%-40,-170,32</area>
+                        <align>center,bottom</align>
                         <font>myverysmall</font>
                     </textarea>
                 </state> <!-- selectedinactive -->
