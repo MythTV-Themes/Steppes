@@ -299,7 +299,7 @@
                         <textarea name="filename" from="browseable">
                             <area>270,30,-15,40</area>
                             <cutdown>no</cutdown>
-                            <scroll direction="horizontal" />
+                            <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         </textarea>
 
                         <textarea name="cvflbl" from="fillbl">
@@ -552,12 +552,12 @@
                     </shape>
 
                     <textarea name="title">
-                        <scroll direction="horizontal" />
+                        <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         <cutdown>no</cutdown>
                     </textarea>
 
                     <textarea name="subtitle">
-                        <scroll direction="horizontal" />
+                        <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         <cutdown>no</cutdown>
                     </textarea>
 
@@ -952,7 +952,7 @@
 
                         <textarea name="title">
                             <template>%TITLE%</template>
-                            <scroll direction="horizontal" />
+                            <scroll direction="horizontal" returnrate="140" returndelay="4" />
                             <cutdown>no</cutdown>
                         </textarea>
 

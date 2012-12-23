@@ -588,11 +588,11 @@
                         <shape name="background" from="baseselectedinactivebuttonshape" />
                         <textarea name="buttontext">
                             <cutdown>no</cutdown>
-                            <scroll direction="horizontal" />
+                            <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         </textarea>
                         <textarea name="nativecountry">
                             <cutdown>no</cutdown>
-                            <scroll direction="horizontal" />
+                            <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         </textarea>
                     </state>
                     <state name="selectedactive" from="selectedinactive">
@@ -646,11 +646,11 @@
                         <shape name="background" from="baseselectedinactivebuttonshape" />
                         <textarea name="buttontext">
                             <cutdown>no</cutdown>
-                            <scroll direction="horizontal" />
+                            <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         </textarea>
                         <textarea name="language">
                             <cutdown>no</cutdown>
-                            <scroll direction="horizontal" />
+                            <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         </textarea>
                     </state>
                     <state name="selectedactive" from="selectedinactive">

@@ -95,15 +95,17 @@
                     </state>
 
                     <state name="active" from="inactive" />
+
                     <state name="selectedinactive" from="inactive">
                         <textarea name="station">
                             <cutdown>no</cutdown>
-                            <scroll direction="vertical" />
+                            <!-- 15 pixels/sec up, 35 pixels/sec down, 4 second delay -->
+                            <scroll direction="vertical" rate="15" returnrate="35" startdelay="4" returndelay="4"/>
                         </textarea>
 
                         <textarea name="genre">
                             <cutdown>no</cutdown>
-                            <scroll direction="horizontal" />
+                            <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         </textarea>
                     </state>
 
@@ -260,12 +262,12 @@
 
                         <textarea name="title">
                             <cutdown>no</cutdown>
-                            <scroll direction="horizontal" />
+                            <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         </textarea>
 
                         <textarea name="artist">
                             <cutdown>no</cutdown>
-                            <scroll direction="horizontal" />
+                            <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         </textarea>
                     </state>
 

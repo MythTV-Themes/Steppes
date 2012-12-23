@@ -168,7 +168,7 @@
                         <textarea name="storagegroup" from="category">
                             <area>370,30,-280,40</area>
                             <cutdown>no</cutdown>
-                            <scroll direction="horizontal" />
+                            <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         </textarea>
 
                         <textarea name="recordinggroup_label"
