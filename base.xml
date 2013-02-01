@@ -32,6 +32,10 @@
         <color>#DADADA</color>
     </fontdef>
 
+    <fontdef name="mysmallsanslabel" from="mysmallsans">
+        <color>#A0BFFF</color>
+    </fontdef>
+
     <!--  Narrow  -->
 
     <fontdef name="mynarrow" from="basenarrow">
@@ -68,6 +72,10 @@
 
     <fontdef name="mynarrowgrey" from="mynarrow">
         <color>#DADADA</color>
+    </fontdef>
+
+    <fontdef name="mysmallnarrowlabel" from="mysmallnarrow">
+        <color>#A0BFFF</color>
     </fontdef>
 
     <fontdef name="mysmallnarrowgrey" from="mysmallnarrow">
@@ -1464,20 +1472,27 @@
             <area>0,0,400,100%</area>
             <minsize>50,100%</minsize>
 
-            <state name="selectedinactive">
+            <state name="inactive">
                 <area>0,0,100%,100%</area>
                 <minsize>50,100%</minsize>
-                <group name="areagroup">
-                    <area>0,0,100%,100%</area>
+                <shape name="highlighttop">
                     <minsize>50,100%</minsize>
-
+                    <area>0,0,0,0</area>
+                </shape>
+                <shape name="highlightbottom">
+                    <minsize>50,100%</minsize>
+                    <area>0,0,0,0</area>
+                </shape>
+                <group name="areagroup">
+                    <area>0,7,100%,-7</area>
+                    <minsize>50,100%</minsize>
                     <shape name="recGroupShape">
                         <area>0,0,100%,100%</area>
                         <minsize>50,100%</minsize>
                         <type>roundbox</type>
-                        <cornerradius>350</cornerradius>
-                        <line color="#50EFDF" alpha="250" width="4" />
-                        <fill color="#000000" alpha="160" />
+                        <line color="#00FFFF" alpha="96" width="3" />
+                        <fill color="#000000" alpha="144" />
+                        <cornerradius>15</cornerradius>
                     </shape>
                     <textarea name="buttontext">
                         <area>15,5,-15,-5</area>
@@ -1491,25 +1506,40 @@
                 </group>
             </state>
 
-            <state name="selectedactive" from="selectedinactive" />
+            <state name="active" from="inactive" />
 
-            <state name="inactive" from="selectedinactive">
+            <state name="selectedinactive" from="inactive">
                 <area>0,0,100%,100%</area>
+                <minsize>50,100%</minsize>
+                <shape name="highlighttop">
+                    <area>19,5,-19,5</area>
+                    <minsize>10,9</minsize>
+                    <type>roundbox</type>
+                    <cornerradius>2</cornerradius>
+                    <fill color="#50EFDF" alpha="250" />
+                </shape>
+                <shape name="highlightbottom">
+                    <area>19,100%-10,-19,5</area>
+                    <minsize>10,9</minsize>
+                    <type>roundbox</type>
+                    <cornerradius>2</cornerradius>
+                    <fill color="#50EFDF" alpha="250" />
+                </shape>
                 <group name="areagroup">
-                    <area>0,5,100%,-5</area>
+                    <area>0,0,100%,100%</area>
                     <minsize>50,100%</minsize>
                     <shape name="recGroupShape">
                         <area>0,0,100%,100%</area>
                         <minsize>50,100%</minsize>
                         <type>roundbox</type>
-                        <line color="#00FFFF" alpha="96" width="3" />
-                        <fill color="#000000" alpha="144" />
-                        <cornerradius>15</cornerradius>
+                        <cornerradius>350</cornerradius>
+                        <line color="#50EFDF" alpha="250" width="4" />
+                        <fill color="#000000" alpha="160" />
                     </shape>
                 </group>
             </state>
 
-            <state name="active" from="inactive" />
+            <state name="selectedactive" from="selectedinactive" />
 
         </statetype>
 
@@ -1546,13 +1576,6 @@
         <statetype name="buttonitem">
             <area>0,0,100%,100%</area>
 
-            <!--
-                <shape name="Border">
-                <area>0,0,100%,100%</area>
-                <type>box</type>
-                <line color="#00FF00" alpha="255" width="0" />
-                </shape>
-            -->
 
             <state name="inactive">
                 <area>20,0,-20,85</area>
@@ -1708,6 +1731,20 @@
         <state name="default">
             <area>0,0,100%,100%</area>
             <minsize>100%,40</minsize>
+            <shape name="highlightleft">
+                <area>7,6,7,-6</area>
+                <minsize>100%,20</minsize>
+                <type>roundbox</type>
+                <fill color="#00FFFF" alpha="128" />
+                <cornerradius>5</cornerradius>
+            </shape>
+            <shape name="highlightright">
+                <area>100%-13,6,7,-6</area>
+                <minsize>100%,20</minsize>
+                <type>roundbox</type>
+                <fill color="#00FFFF" alpha="128" />
+                <cornerradius>5</cornerradius>
+            </shape>
             <shape name="statusborder">
                 <area>0,0,100%,100%</area>
                 <minsize>100%,40</minsize>
@@ -1719,26 +1756,56 @@
         </state>
         <state name="normal" from="default" />
         <state name="error" from="default">
+            <shape name="highlightleft">
+                <fill color="#e43e3e" alpha="128" />
+            </shape>
+            <shape name="highlightright">
+                <fill color="#e43e3e" alpha="128" />
+            </shape>
             <shape name="statusborder">
-                <line color="#e43e3e" width="6" alpha="255"/>
+                <line color="#e43e3e" width="5" alpha="255"/>
             </shape>
         </state>
         <state name="warning" from="default">
+            <shape name="highlightleft">
+                <fill color="#ff9147" alpha="128" />
+            </shape>
+            <shape name="highlightright">
+                <fill color="#ff9147" alpha="128" />
+            </shape>
             <shape name="statusborder">
                 <line color="#ff9147" width="5" alpha="255"/>
             </shape>
         </state>
         <state name="disabled" from="default">
+            <shape name="highlightleft">
+                <fill color="#feffce" alpha="128" />
+            </shape>
+            <shape name="highlightright">
+                <fill color="#feffce" alpha="128" />
+            </shape>
             <shape name="statusborder">
                 <line color="#feffce" width="5" alpha="160" />
             </shape>
         </state>
         <state name="running" from="default">
+            <shape name="highlightleft">
+                <fill color="#33bf33" alpha="128" />
+            </shape>
+            <shape name="highlightright">
+                <fill color="#33bf33" alpha="128" />
+            </shape>
             <shape name="statusborder">
                 <line color="#33bf33" width="5" alpha="255" />
             </shape>
         </state>
         <state name="marked" from="default">
+            <shape name="highlightleft">
+                <fill color="#FFFF00" alpha="128" />
+            </shape>
+            <shape name="highlightright">
+                <fill color="#FFFF00" alpha="128" />
+            </shape>
             <shape name="statusborder">
                 <line color="#FFFF00" width="5" alpha="255" />
             </shape>
@@ -1751,14 +1818,14 @@
         <textarea name="timedate">
             <area>0,0,530,36</area>
             <align>left,vcenter</align>
-            <font>mysmallsansgrey</font>
+            <font>mysmallsanslabel</font>
             <cutdown>no</cutdown>
         </textarea>
 
         <textarea name="originalairdate">
             <area>520,0,230,35</area>
             <align>center</align>
-            <font>mysmallnarrowgrey</font>
+            <font>mysmallnarrowlabel</font>
             <template>(%1)</template>
             <cutdown>no</cutdown>
         </textarea>
@@ -1766,20 +1833,20 @@
         <textarea name="year">
             <area>520,0,230,35</area>
             <align>center</align>
-            <font>mysmallnarrowgrey</font>
+            <font>mysmallnarrowlabel</font>
             <template>(%1)</template>
         </textarea>
 
         <textarea name="lenmins">
             <area>750,0,150,35</area>
             <align>right,vcenter</align>
-            <font>mysmallnarrowgrey</font>
+            <font>mysmallnarrowlabel</font>
             <template>%1</template>
         </textarea>
 
         <textarea name="channel">
             <area>910,0,-15,40</area>
-            <font>mysmallnarrowgrey</font>
+            <font>mysmallnarrowlabel</font>
             <align>right,vcenter</align>
         </textarea>
     </group>
@@ -1917,7 +1984,7 @@
                 </textarea>
 
                 <textarea name="syndicatedepisode" depends="!s00e00">
-                    <area>100%-150,100%-40,-20,32</area>
+                    <area>100%-155,100%-40,-20,32</area>
                     <font>mysmallgrey</font>
                     <align>right,bottom</align>
                     <template>%|[SYNDICATEDEPISODE|]%</template>
@@ -1965,7 +2032,7 @@
                 </textarea>
 
                 <textarea name="parttotal" depends="partnumber">
-                    <area>684,100%-40,230,32</area>
+                    <area>675,100%-40,230,32</area>
                     <align>hcenter,bottom</align>
                     <font>mylabelfont</font>
                     <template>%Part |PARTNUMBER| of %%PARTTOTAL%</template>

@@ -81,7 +81,6 @@
                 <font>small</font>
                 <area>5,5,200,90</area>
                 <align>right,vcenter</align>
-                <multiline>yes</multiline>
                 <value>FPS</value>
             </textarea>
             <textarea name="framerate">
@@ -100,6 +99,7 @@
             </textarea>
             <textarea name="frames" from="fps">
                 <position>5,195</position>
+                <multiline>yes</multiline>
                 <value>Frames decoded /free</value>
             </textarea>
             <textarea name="videoframes" from="framerate">
@@ -150,7 +150,6 @@
                 <font>small</font>
                 <area>5,5,200,90</area>
                 <align>right,vcenter</align>
-                <multiline>yes</multiline>
                 <value>Audio</value>
             </textarea>
             <textarea name="audiocodec">
@@ -1018,6 +1017,8 @@
                 <area>0,0,100%,90</area>
                 <state name="active">
                     <area>0,0,100%,90</area>
+                    <shape name="highlightleft" />
+                    <shape name="highlightright" />
                     <shape name="background">
                         <area>7,0,-7,100%</area>
                         <fill color="#505050" alpha="96" />
@@ -1033,13 +1034,27 @@
                         <font>small</font>
                     </textarea>
                     <imagetype name="buttonarrow">
-                        <area>100%-22,50%-7,15,15</area>
+                        <area>100%-23,50%-7,15,15</area>
                         <filename>Images/rightarrow-on.png</filename>
                     </imagetype>
                 </state>
                 <state name="selectedinactive" from="active">
                 </state>
                 <state name="selectedactive" from="selectedinactive">
+                    <shape name="highlightleft">
+                        <area>0,20,9,-20</area>
+                        <type>roundbox</type>
+                        <line color="#000000" width="1" alpha="255" />
+                        <fill color="#50EFDF" alpha="255" />
+                        <cornerradius>250</cornerradius>
+                    </shape>
+                    <shape name="highlightright">
+                        <area>100%-9,20,9,-20</area>
+                        <type>roundbox</type>
+                        <line color="#000000" width="1" alpha="255" />
+                        <fill color="#50EFDF" alpha="255" />
+                        <cornerradius>250</cornerradius>
+                    </shape>
                     <shape name="background">
                         <area>0,0,100%,100%</area>
                         <fill color="#505050" alpha="96" />

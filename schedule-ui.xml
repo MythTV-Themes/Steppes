@@ -386,7 +386,7 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="card">
-                        <area>30,6,60,35</area>
+                        <area>30,8,60,35</area>
                         <font>mysmallgrey</font>
                         <font state="running">mysmallgreen</font>
                         <font state="disabled">mysmallgrey</font>
@@ -793,7 +793,7 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="card">
-                        <area>40,6,60,35</area>
+                        <area>40,8,60,35</area>
                         <font>mysmallgrey</font>
                         <font state="running">mysmallgreen</font>
                         <font state="disabled">mysmallgrey</font>
@@ -1300,7 +1300,7 @@
             </textarea>
 
             <buttonlist name="filters" from="basechecklist">
-                <area>30,150,-30,610</area>
+                <area>30,180,-30,-20</area>
                 <wrapstyle>none</wrapstyle>
             </buttonlist>
 
