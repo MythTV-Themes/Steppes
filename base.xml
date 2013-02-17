@@ -1033,6 +1033,7 @@
             </statetype>
             <imagetype name="cursor">
                 <filename>Images/cursor.png</filename>
+                <area>0,0,6,50</area>
             </imagetype>
             <textarea name="text">
                 <area>15,5,-15,-5</area>
