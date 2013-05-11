@@ -58,6 +58,7 @@
                 <position>425, 280</position>
             </textedit>
 
+<!-- removed in f8d29ecf5
             <textarea name="tagencoding_label" from="musiclocation_label">
                 <position>20, 360</position>
                 <value>Tag Encoding:</value>
@@ -65,7 +66,7 @@
             <buttonlist name="tagencoding" from="basewideselector">
                 <position>425, 360</position>
             </buttonlist>
-
+-->
             <checkbox name="musicdefaultupmix" from="basecheckbox">
                 <position>425, 440</position>
             </checkbox>
