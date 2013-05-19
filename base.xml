@@ -1513,24 +1513,24 @@
                 <area>0,0,100%,100%</area>
                 <minsize>50,100%</minsize>
                 <shape name="highlighttop">
-                    <area>19,5,-19,5</area>
+                    <area>22,0,-22,5</area>
                     <minsize>10,9</minsize>
                     <type>roundbox</type>
-                    <cornerradius>2</cornerradius>
+                    <cornerradius>80</cornerradius>
                     <fill color="#50EFDF" alpha="250" />
                 </shape>
                 <shape name="highlightbottom">
-                    <area>19,100%-10,-19,5</area>
+                    <area>22,100%-6,-22,5</area>
                     <minsize>10,9</minsize>
                     <type>roundbox</type>
-                    <cornerradius>2</cornerradius>
+                    <cornerradius>80</cornerradius>
                     <fill color="#50EFDF" alpha="250" />
                 </shape>
                 <group name="areagroup">
                     <area>0,0,100%,100%</area>
                     <minsize>50,100%</minsize>
                     <shape name="recGroupShape">
-                        <area>0,0,100%,100%</area>
+                        <area>0,3,100%,-4</area>
                         <minsize>50,100%</minsize>
                         <type>roundbox</type>
                         <cornerradius>350</cornerradius>
@@ -1733,21 +1733,21 @@
             <area>0,0,100%,100%</area>
             <minsize>100%,40</minsize>
             <shape name="highlightleft">
-                <area>7,6,7,-6</area>
+                <area>1,15,6,-15</area>
                 <minsize>100%,20</minsize>
                 <type>roundbox</type>
-                <fill color="#00FFFF" alpha="128" />
-                <cornerradius>5</cornerradius>
+                <fill color="#00FFFF" alpha="160" />
+                <cornerradius>18</cornerradius>
             </shape>
             <shape name="highlightright">
-                <area>100%-13,6,7,-6</area>
+                <area>100%-7,15,6,-15</area>
                 <minsize>100%,20</minsize>
                 <type>roundbox</type>
-                <fill color="#00FFFF" alpha="128" />
-                <cornerradius>5</cornerradius>
+                <fill color="#00FFFF" alpha="160" />
+                <cornerradius>18</cornerradius>
             </shape>
             <shape name="statusborder">
-                <area>0,0,100%,100%</area>
+                <area>4,0,-4,100%</area>
                 <minsize>100%,40</minsize>
                 <type>roundbox</type>
                 <line color="#00FFFF" width="5" alpha="160" />
@@ -1758,10 +1758,10 @@
         <state name="normal" from="default" />
         <state name="error" from="default">
             <shape name="highlightleft">
-                <fill color="#e43e3e" alpha="128" />
+                <fill color="#e43e3e" alpha="255" />
             </shape>
             <shape name="highlightright">
-                <fill color="#e43e3e" alpha="128" />
+                <fill color="#e43e3e" alpha="255" />
             </shape>
             <shape name="statusborder">
                 <line color="#e43e3e" width="5" alpha="255"/>
@@ -1769,10 +1769,10 @@
         </state>
         <state name="warning" from="default">
             <shape name="highlightleft">
-                <fill color="#ff9147" alpha="128" />
+                <fill color="#ff9147" alpha="255" />
             </shape>
             <shape name="highlightright">
-                <fill color="#ff9147" alpha="128" />
+                <fill color="#ff9147" alpha="255" />
             </shape>
             <shape name="statusborder">
                 <line color="#ff9147" width="5" alpha="255"/>
@@ -1780,10 +1780,10 @@
         </state>
         <state name="disabled" from="default">
             <shape name="highlightleft">
-                <fill color="#feffce" alpha="128" />
+                <fill color="#feffce" alpha="160" />
             </shape>
             <shape name="highlightright">
-                <fill color="#feffce" alpha="128" />
+                <fill color="#feffce" alpha="160" />
             </shape>
             <shape name="statusborder">
                 <line color="#feffce" width="5" alpha="160" />
@@ -1791,10 +1791,10 @@
         </state>
         <state name="running" from="default">
             <shape name="highlightleft">
-                <fill color="#33bf33" alpha="128" />
+                <fill color="#33bf33" alpha="255" />
             </shape>
             <shape name="highlightright">
-                <fill color="#33bf33" alpha="128" />
+                <fill color="#33bf33" alpha="255" />
             </shape>
             <shape name="statusborder">
                 <line color="#33bf33" width="5" alpha="255" />
@@ -1802,10 +1802,10 @@
         </state>
         <state name="marked" from="default">
             <shape name="highlightleft">
-                <fill color="#FFFF00" alpha="128" />
+                <fill color="#FFFF00" alpha="255" />
             </shape>
             <shape name="highlightright">
-                <fill color="#FFFF00" alpha="128" />
+                <fill color="#FFFF00" alpha="255" />
             </shape>
             <shape name="statusborder">
                 <line color="#FFFF00" width="5" alpha="255" />
