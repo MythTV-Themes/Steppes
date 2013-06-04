@@ -1733,21 +1733,21 @@
             <area>0,0,100%,100%</area>
             <minsize>100%,40</minsize>
             <shape name="highlightleft">
-                <area>1,15,6,-15</area>
+                <area>1,20,5,-20</area>
                 <minsize>100%,20</minsize>
                 <type>roundbox</type>
                 <fill color="#00FFFF" alpha="160" />
                 <cornerradius>18</cornerradius>
             </shape>
             <shape name="highlightright">
-                <area>100%-7,15,6,-15</area>
+                <area>100%-6,20,5,-20</area>
                 <minsize>100%,20</minsize>
                 <type>roundbox</type>
                 <fill color="#00FFFF" alpha="160" />
                 <cornerradius>18</cornerradius>
             </shape>
             <shape name="statusborder">
-                <area>4,0,-4,100%</area>
+                <area>3,0,-3,100%</area>
                 <minsize>100%,40</minsize>
                 <type>roundbox</type>
                 <line color="#00FFFF" width="5" alpha="160" />
@@ -2204,7 +2204,7 @@
             go with short lists.
         -->
         <textarea name="messagearea" from="basetextarea">
-            <area>20,10,-20,40%+10</area>
+            <area>20,10,-20,30%+10</area>
             <multiline>yes</multiline>
             <align>center</align>
             <cutdown>no</cutdown>

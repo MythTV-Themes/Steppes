@@ -342,6 +342,23 @@
                                         <filename>mm_compilations.png</filename>
                                     </imagetype>
                                 </state>
+
+                                <!-- Added for commit ea54bba385 -->
+                                <state name="cd">
+                                    <area>0,0,100%,100%</area>
+                                    <imagetype name="cd">
+                                        <area>0,0,100%,100%</area>
+                                        <filename>mm_cd.png</filename>
+                                    </imagetype>
+                                </state>
+                                <state name="directory">
+                                    <area>0,0,100%,100%</area>
+                                    <imagetype name="directory">
+                                        <area>0,0,100%,100%</area>
+                                        <filename>mm_directory.png</filename>
+                                    </imagetype>
+                                </state>
+
                                 <state name="playlists">
                                     <area>0,0,100%,100%</area>
                                     <imagetype name="playlists">
