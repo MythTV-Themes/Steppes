@@ -3,6 +3,59 @@
 
 <mythuitheme>
 
+    <buttonlist name="scheduleList" from="episodeList">
+        <statetype name="buttonitem">
+            <state name="active">
+                <textarea name="card">
+                    <area>30,8,60,35</area>
+                    <font>mysmallgrey</font>
+                    <font state="running">mysmallgreen</font>
+                    <font state="disabled">mysmallgrey</font>
+                    <font state="error">mysmallred</font>
+                    <font state="normal">mysmallblue</font>
+                    <font state="warning">mysmallorange</font>
+                    <align>hcenter</align>
+                    <template>(%1)</template>
+                </textarea>
+            </state>
+
+            <state name="inactive" from="active" />
+
+            <state name="selectedinactive">
+                <textarea name="rectypestatus">
+                    <area>30,100%-40,50%-10,32</area>
+                    <align>left,bottom</align>
+                    <font>myverysmall</font>
+                    <font state="running">myverysmallgreen</font>
+                    <font state="disabled">myverysmallgrey</font>
+                    <font state="error">myverysmallred</font>
+                    <font state="normal">myverysmallblue</font>
+                    <font state="warning">myverysmallorange</font>
+                </textarea>
+
+                <textarea name="card">
+                    <area>30,8,60,35</area>
+                    <font>mysmallgrey</font>
+                    <font state="running">mysmallgreen</font>
+                    <font state="disabled">mysmallgrey</font>
+                    <font state="error">mysmallred</font>
+                    <font state="normal">mysmallblue</font>
+                    <font state="warning">mysmallorange</font>
+                    <align>hcenter</align>
+                    <template>(%1)</template>
+                </textarea>
+
+                <textarea name="syndicatedepisode">
+                    <area>920,100%-40,-20,32</area>
+                </textarea>
+            </state>
+
+            <state name="selectedactive" from="selectedinactive">
+                <statetype name="status" from="itemsSelectedState" />
+            </state>
+        </statetype>
+    </buttonlist>
+
     <group name="prioritygroup">
         <area>0,0,100%,100%</area>
 
