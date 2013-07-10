@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
+
+<mythuitheme>
+
+    <window name="notification" include="steppes-notice.xml">
+        <area>100%-830,20,-30,200</area>
+
+        <shape name="background" from="basewidgetshape">
+            <area>0,0,100%,100%</area>
+	     <line color="#00FFFF" width="3" />
+        </shape>
+
+	<group name="info" from="notice-info" />
+    </window>
+
+    <window name="notification-image" include="steppes-notice.xml">
+        <area>100%-1000,20,-30,200</area>
+
+        <shape name="background" from="basewidgetshape">
+            <area>0,0,100%,100%</area>
+	     <line color="#00FFFF" width="3" />
+        </shape>
+
+        <imagetype name="image">
+            <filename>damaged.png</filename>
+            <area>10,10,170,180</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+	<group name="info" from="notice-info">
+	    <area>170,0,100%,100%</area>
+	</group>
+    </window>
+
+    <window name="notification-full" include="steppes-notice.xml">
+        <area>0,0,100%,100%</area>
+
+        <shape name="background" from="basewidgetshape">
+            <area>0,0,100%,100%</area>
+	    <line color="#00000" width="0" />
+        </shape>
+
+        <imagetype name="image">
+            <filename>Backgrounds/background.png</filename>
+            <area>-1,-1,100%,100%</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+	<group name="info" from="notice-info">
+	    <area>100,650,-100,200</area>
+            <shape name="background" from="basewidgetshape">
+		<area>0,0,100%,100%</area>
+		<line color="#00FFFF" width="3" />
+            </shape>
+	</group>
+
+    </window>
+
+</mythuitheme>

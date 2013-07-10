@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
+
+<mythuitheme>
+
+    <group name="notice-info">
+        <area>0,0,100%,100%</area>
+
+        <shape name="background" from="basewidgetshape">
+	    <area>0,0,0,0</area>
+	</shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>20,5,-20,41</area>
+            <font>mylarge</font>
+	    <scroll direction="horizontal" returnrate="140" returndelay="4" />
+	    <cutdown>no</cutdown>
+        </textarea>
+
+        <textarea name="origin" from="basetextarea">
+	    <area>25,50,-25,33</area>
+            <font>mysmall</font>
+	    <scroll direction="horizontal" returnrate="140" returndelay="4" />
+	    <cutdown>no</cutdown>
+        </textarea>
+
+	<group name="descgroup" depends="progress">
+            <area>25,90,-25,-80</area>
+	    <shape name="descshape">
+		<area>0,0,100%,100%</area>
+                <fill color="#FFF0F0" alpha="24" />
+	    </shape>
+            <textarea name="description" from="basetextarea">
+		<area>0,0,100%,100%</area>
+		<font>myverysmall</font>
+		<scroll direction="horizontal" returnrate="140"
+			returndelay="4" />
+		<cutdown>no</cutdown>
+            </textarea>
+	</group>
+
+        <progressbar name="progress" from="baseprogressbar">
+            <area>30,100%-70,100%,10</area>
+        </progressbar>
+
+        <textarea name="progress_text" from="basetextarea" depends="progress">
+            <area>640,100%-75,100,35</area>
+            <font>myverysmall</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+	<group name="largedescgroup" depends="!progress">
+            <area>25,85,-25,-45</area>
+	    
+            <textarea name="description_noprogress" from="basetextarea">
+		<area>0,0,100%,100%</area>
+		<shape name="descshape">
+		    <area>0,0,100%,100%</area>
+                    <fill color="#FFF0F0" alpha="24" />
+		</shape>
+		<font>myverysmall</font>
+		<multiline>yes</multiline>
+		<align>left,top</align>
+		<template>%DESCRIPTION%</template>
+		<scroll direction="vertical" rate="15" returnrate="35"
+			startdelay="4" returndelay="4"/>
+		<cutdown>no</cutdown>
+            </textarea>
+	</group>
+
+        <textarea name="extra" from="basetextarea">
+            <area>30,100%-45,-30,33</area>
+            <font>mysmallnarrowlabel</font>
+	    <scroll direction="horizontal" returnrate="140" returndelay="4" />
+	    <cutdown>no</cutdown>
+        </textarea>
+    </group>
+
+</mythuitheme>
