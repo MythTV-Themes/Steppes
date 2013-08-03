@@ -10,16 +10,17 @@
 	    <area>0,0,0,0</area>
 	</shape>
 
-        <textarea name="title" from="basetextarea">
-            <area>20,5,-20,41</area>
-            <font>mylarge</font>
+        <textarea name="origin" from="basetextarea">
+	    <area>25,5,-25,33</area>
+	    <align>center</align>
+            <font>mysmallyellow</font>
 	    <scroll direction="horizontal" returnrate="140" returndelay="4" />
 	    <cutdown>no</cutdown>
         </textarea>
 
-        <textarea name="origin" from="basetextarea">
-	    <area>25,50,-25,33</area>
-            <font>mysmall</font>
+        <textarea name="title" from="basetextarea">
+            <area>20,40,-20,41</area>
+            <font>mylarge</font>
 	    <scroll direction="horizontal" returnrate="140" returndelay="4" />
 	    <cutdown>no</cutdown>
         </textarea>
@@ -31,7 +32,7 @@
                 <fill color="#FFF0F0" alpha="24" />
 	    </shape>
             <textarea name="description" from="basetextarea">
-		<area>0,0,100%,100%</area>
+		<area>5,5,-5,-5</area>
 		<font>myverysmall</font>
 		<scroll direction="horizontal" returnrate="140"
 			returndelay="4" />

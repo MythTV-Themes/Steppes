@@ -1425,7 +1425,7 @@
                         <font state="disabled">mysmallnarrowgrey</font>
                         <font state="error">mysmallnarrowred</font>
                         <font state="normal">mysmallnarrowblue</font>
-                        <font state="warning">mysmallnarrowyellow</font>
+                        <font state="warning">mysmallnarroworange</font>
                         <align>right,vcenter</align>
                         <template>(%1)</template>
                     </textarea>
@@ -1443,7 +1443,7 @@
                             <font state="disabled">mysmallnarrowgrey</font>
                             <font state="error">mysmallnarrowred</font>
                             <font state="normal">mysmallnarrowblue</font>
-                            <font state="warning">mysmallnarrowyellow</font>
+                            <font state="warning">mysmallnarroworange</font>
                             <template>(%1)</template>
                         -->
                         <align>left,vcenter</align>
@@ -1460,7 +1460,7 @@
                         <font state="disabled">mysmallnarrowgrey</font>
                         <font state="error">mysmallnarrowred</font>
                         <font state="normal">mysmallnarrowblue</font>
-                        <font state="warning">mysmallnarrowyellow</font>
+                        <font state="warning">mysmallnarroworange</font>
                         <align>right,vcenter</align>
                         <template>(%1)</template>
                     </textarea>
@@ -1478,7 +1478,7 @@
                             <font state="disabled">mysmallnarrowgrey</font>
                             <font state="error">mysmallnarrowred</font>
                             <font state="normal">mysmallnarrowblue</font>
-                            <font state="warning">mysmallnarrowyellow</font>
+                            <font state="warning">mysmallnarroworange</font>
                             <template>(%1)</template>
                         -->
                         <align>left,vcenter</align>
