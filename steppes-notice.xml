@@ -52,13 +52,12 @@
 
 	<group name="largedescgroup" depends="!progress">
             <area>25,85,-25,-45</area>
-	    
-            <textarea name="description_noprogress" from="basetextarea">
+	    <shape name="descshape">
 		<area>0,0,100%,100%</area>
-		<shape name="descshape">
-		    <area>0,0,100%,100%</area>
-                    <fill color="#FFF0F0" alpha="24" />
-		</shape>
+                <fill color="#FFF0F0" alpha="24" />
+	    </shape>
+            <textarea name="description_noprogress" from="basetextarea">
+		<area>5,5,-5,-5</area>
 		<font>myverysmall</font>
 		<multiline>yes</multiline>
 		<align>left,top</align>
