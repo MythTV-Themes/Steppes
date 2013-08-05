@@ -36,7 +36,7 @@
         </statetype>
 
         <statetype name="errorstate">
-            <area>0,0,100%,100%</area>
+            <area>10,10,170,180</area>
             <state name="ok"/>
             <state name="error">
                 <area>0,0,100%,100%</area>
@@ -98,7 +98,7 @@
         </statetype>
 
         <statetype name="errorstate">
-            <area>0,0,100%,100%</area>
+            <area>105,100%-450,190,200</area>
             <state name="ok"/>
             <state name="error">
                 <area>0,0,100%,100%</area>
@@ -131,12 +131,12 @@
 
         <imagetype name="image" depends="!mediastate&amp;!errorstate">
             <filename>Backgrounds/background.png</filename>
-            <area>-1,-1,100%,100%</area>
+            <area>60,60,-60,-260</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
 	<group name="info" from="notice-info">
-	    <area>100,650,-100,200</area>
+	    <area>200,100%-250,-200,200</area>
             <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
 		<line color="#00FFFF" width="3" />
