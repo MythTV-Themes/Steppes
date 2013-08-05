@@ -136,7 +136,7 @@
         </imagetype>
 
 	<group name="info" from="notice-info">
-	    <area>100,100%-250,-100,200</area>
+	    <area>200,100%-250,-200,200</area>
             <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
 		<line color="#00FFFF" width="3" />
