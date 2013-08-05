@@ -98,7 +98,7 @@
         </statetype>
 
         <statetype name="errorstate">
-            <area>60,100%-450,190,200</area>
+            <area>105,100%-450,190,200</area>
             <state name="ok"/>
             <state name="error">
                 <area>0,0,100%,100%</area>
