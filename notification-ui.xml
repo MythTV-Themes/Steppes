@@ -36,7 +36,7 @@
         </statetype>
 
         <statetype name="errorstate">
-            <area>10,10,170,180</area>
+            <area>10,10,170,170</area>
             <state name="ok"/>
             <state name="error">
                 <area>0,0,100%,100%</area>
@@ -62,6 +62,14 @@
 		    <area>10,10,170,180</area>
                 </imagetype>
             </state>
+	    <state name="busy">
+		<area>0,0,100%,100%</area>
+		<imagetype name="animation">
+                    <area>20,20,140,150</area>
+		    <filepattern low="1" high="72">Images/Busy/busy%1.png</filepattern>
+		    <delay>70</delay>
+		</imagetype>
+	    </state>
         </statetype>
 
         <imagetype name="image" depends="!mediastate&amp;!errorstate">
@@ -127,6 +135,14 @@
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
+	    <state name="busy">
+		<area>0,0,100%,100%</area>
+		<imagetype name="animation">
+                    <area>20,20,140,150</area>
+		    <filepattern low="1" high="72">Images/Busy/busy%1.png</filepattern>
+		    <delay>70</delay>
+		</imagetype>
+	    </state>
         </statetype>
 
         <imagetype name="image" depends="!mediastate&amp;!errorstate">
