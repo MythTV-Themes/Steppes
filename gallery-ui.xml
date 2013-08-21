@@ -14,7 +14,7 @@
         <group name="PageHeading" from="basePageHeading">
             <group name="Heading">
                 <textarea name="text">
-                    <value>Video Gallery</value>
+                    <value>Image Gallery</value>
                 </textarea>
             </group>
         </group>
