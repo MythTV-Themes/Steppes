@@ -689,7 +689,7 @@
                 <position>510,180</position>
             </spinbox>
 
-            <textarea name="description_label" from="labeltextedit">
+            <textarea name="description_label" from="labeltext">
                 <area>15,250,175,70</area>
                 <value>Description:</value>
             </textarea>
