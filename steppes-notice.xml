@@ -26,7 +26,7 @@
         </textarea>
 
 	<group name="descgroup" depends="progress">
-            <area>25,90,-25,-80</area>
+            <area>25,90,-25,72</area>
 	    <shape name="descshape">
 		<area>0,0,100%,100%</area>
                 <fill color="#FFF0F0" alpha="24" />
@@ -51,7 +51,7 @@
         </textarea>
 
 	<group name="largedescgroup" depends="!progress">
-            <area>25,85,-25,-45</area>
+            <area>25,85,-25,72</area>
 	    <shape name="descshape">
 		<area>0,0,100%,100%</area>
                 <fill color="#FFF0F0" alpha="24" />
@@ -69,7 +69,7 @@
 	</group>
 
         <textarea name="extra" from="basetextarea">
-            <area>30,100%-45,-30,33</area>
+            <area>30,100%-43,-30,33</area>
             <font>mysmallnarrowlabel</font>
 	    <scroll direction="horizontal" returnrate="140" returndelay="4" />
 	    <cutdown>no</cutdown>
