@@ -390,16 +390,12 @@
             <area>10,235,200,80</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
-        <textarea name="channum">
-            <font>smallnarrow</font>
-            <area>10,315,200,25</area>
-            <align>center</align>
-        </textarea>
         <textarea name="callsign">
             <font>smallnarrow</font>
-            <area>10,330,200,60</area>
-            <align>center</align>
+            <area>10,315,200,-10</area>
+            <align>bottom,hcenter</align>
             <multiline>yes</multiline>
+	    <template>%channum% %callsign%</template>
         </textarea>
 
         <statetype name="tvstate">
@@ -709,16 +705,12 @@
             <area>10,235,200,80</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
-        <textarea name="channum">
-            <font>smallnarrow</font>
-            <area>10,315,200,25</area>
-            <align>center</align>
-        </textarea>
         <textarea name="callsign">
             <font>smallnarrow</font>
-            <area>10,330,200,60</area>
-            <align>center</align>
+            <area>10,315,200,-10</area>
+            <align>bottom,hcenter</align>
             <multiline>yes</multiline>
+	    <template>%channum% %callsign%</template>
         </textarea>
     </window>
 
