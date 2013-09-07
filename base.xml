@@ -255,7 +255,6 @@
         <color>#DADADA</color>
     </fontdef>
 
-
     <fontdef name="mysmallblack" from="mysmall">
         <color>#000000</color>
     </fontdef>
@@ -2006,7 +2005,7 @@
 
                 <textarea name="syndicatedepisode" depends="!s00e00">
                     <area>100%-155,100%-40,-20,32</area>
-                    <font>mysmallgrey</font>
+                    <font>mysmallnarrowgrey</font>
                     <align>right,bottom</align>
                     <template>%|[SYNDICATEDEPISODE|]%</template>
                 </textarea>
