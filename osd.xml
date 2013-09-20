@@ -393,9 +393,9 @@
         <textarea name="callsign">
             <font>smallnarrow</font>
             <area>10,315,200,-10</area>
-            <align>bottom,hcenter</align>
+            <align>center</align>
             <multiline>yes</multiline>
-	    <template>%channum% %callsign%</template>
+            <template>%channum% %callsign%</template>
         </textarea>
 
         <statetype name="tvstate">
@@ -708,9 +708,9 @@
         <textarea name="callsign">
             <font>smallnarrow</font>
             <area>10,315,200,-10</area>
-            <align>bottom,hcenter</align>
+            <align>center</align>
             <multiline>yes</multiline>
-	    <template>%channum% %callsign%</template>
+            <template>%channum% %callsign%</template>
         </textarea>
     </window>
 
