@@ -7,38 +7,38 @@
         <area>0,0,100%,100%</area>
 
         <shape name="background" from="basewidgetshape">
-	    <area>0,0,0,0</area>
-	</shape>
+            <area>0,0,0,0</area>
+        </shape>
 
         <textarea name="origin" from="basetextarea">
-	    <area>25,5,-25,33</area>
-	    <align>center</align>
+            <area>25,5,-25,33</area>
+            <align>center</align>
             <font>mysmallyellow</font>
-	    <scroll direction="horizontal" returnrate="140" returndelay="4" />
-	    <cutdown>no</cutdown>
+            <scroll direction="horizontal" returnrate="140" returndelay="4" />
+            <cutdown>no</cutdown>
         </textarea>
 
         <textarea name="title" from="basetextarea">
             <area>20,40,-20,41</area>
             <font>mylarge</font>
-	    <scroll direction="horizontal" returnrate="140" returndelay="4" />
-	    <cutdown>no</cutdown>
+            <scroll direction="horizontal" returnrate="140" returndelay="4" />
+            <cutdown>no</cutdown>
         </textarea>
 
-	<group name="descgroup" depends="progress">
+        <group name="descgroup" depends="progress">
             <area>25,90,-25,36</area>
-	    <shape name="descshape">
-		<area>0,0,100%,100%</area>
+            <shape name="descshape">
+                <area>0,0,100%,100%</area>
                 <fill color="#FFF0F0" alpha="24" />
-	    </shape>
+            </shape>
             <textarea name="description" from="basetextarea">
-		<area>5,5,-5,-5</area>
-		<font>myverysmall</font>
-		<scroll direction="horizontal" returnrate="140"
-			returndelay="4" />
-		<cutdown>no</cutdown>
+                <area>5,5,-5,-5</area>
+                <font>myverysmall</font>
+                <scroll direction="horizontal" returnrate="140"
+                        returndelay="4" />
+                <cutdown>no</cutdown>
             </textarea>
-	</group>
+        </group>
 
         <progressbar name="progress" from="baseprogressbar">
             <area>30,100%-66,100%,10</area>
@@ -50,29 +50,29 @@
             <align>left,vcenter</align>
         </textarea>
 
-	<group name="largedescgroup" depends="!progress">
+        <group name="largedescgroup" depends="!progress">
             <area>25,85,-25,72</area>
-	    <shape name="descshape">
-		<area>0,0,100%,100%</area>
+            <shape name="descshape">
+                <area>0,0,100%,100%</area>
                 <fill color="#FFF0F0" alpha="24" />
-	    </shape>
+            </shape>
             <textarea name="description_noprogress" from="basetextarea">
-		<area>5,5,-5,-5</area>
-		<font>myverysmall</font>
-		<multiline>yes</multiline>
-		<align>left,top</align>
-		<template>%DESCRIPTION%</template>
-		<scroll direction="vertical" rate="15" returnrate="35"
-			startdelay="4" returndelay="4"/>
-		<cutdown>no</cutdown>
+                <area>5,5,-5,-5</area>
+                <font>myverysmall</font>
+                <multiline>yes</multiline>
+                <align>left,top</align>
+                <template>%DESCRIPTION%</template>
+                <scroll direction="vertical" rate="15" returnrate="35"
+                        startdelay="4" returndelay="4"/>
+                <cutdown>no</cutdown>
             </textarea>
-	</group>
+        </group>
 
         <textarea name="extra" from="basetextarea">
             <area>30,100%-43,-30,33</area>
             <font>mysmallnarrowlabel</font>
-	    <scroll direction="horizontal" returnrate="140" returndelay="4" />
-	    <cutdown>no</cutdown>
+            <scroll direction="horizontal" returnrate="140" returndelay="4" />
+            <cutdown>no</cutdown>
         </textarea>
     </group>
 
