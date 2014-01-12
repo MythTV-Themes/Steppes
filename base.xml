@@ -2205,51 +2205,54 @@
     </group>
 
     <group name="PopupGroup">
-        <area>0,0,100%,100%</area>
+        <area>-1,-1,1350,1000</area>
+
+        <minsize shrink="short">100%,60</minsize>
 
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>
+            <minsize shrink="short">100%,60</minsize>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>20,20,-20,35</area>
+            <area>20,30,-20,35</area>
+            <minsize shrink="short" >100%,60</minsize>
             <multiline>no</multiline>
-            <align>center</align>
+            <align>top,hcenter</align>
             <font>mymedium</font>
         </textarea>
 
-        <!--
-            Allow messagearea to overlap list, because large messages
-            go with short lists.
-        -->
-        <textarea name="messagearea" from="basetextarea">
-            <area>20,10,-20,30%+10</area>
-            <multiline>yes</multiline>
-            <align>center</align>
-            <cutdown>no</cutdown>
-            <!-- 15 pixels/sec up, 35 pixels/sec down, 4 second delay -->
-            <scroll direction="vertical" rate="15" returnrate="35" startdelay="4" returndelay="4"/>
-        </textarea>
+        <group name="PopupGroupMessage">
 
-        <buttonlist name="list" from="basepopupbuttonlist">
-            <area>30,20%+30,-30,-10</area>
-            <wrapstyle>selection</wrapstyle>
-        </buttonlist>
+            <area>20,90,-20,-30</area>
+            <minsize shrink="short">100%,60</minsize>
 
-<!--
-        <animation trigger="AboutToShow">
-            <section duration="100">
-                <verticalzoom start="0" end="100" />
-            </section>
-        </animation>
-        <animation trigger="AboutToHide">
-            <section duration="100">
-                <verticalzoom start="100" end="0" />
-            </section>
-        </animation>
--->
+            <shape name="textbackground">
+                <area>15,0,45%+5,100%</area>
+                <minsize shrink="short">100%,60</minsize>
+                <type>roundbox</type>
+                <fill color="#FFFFFF" alpha="32" />
+                <cornerradius>10</cornerradius>
+            </shape>
+
+            <textarea name="messagearea" from="basetextarea">
+                <area>20,5,45%,-20</area>
+                <minsize shrink="short">100%,60</minsize>
+                <multiline>yes</multiline>
+                <align>top,hcenter</align>
+                <cutdown>no</cutdown>
+                <!-- 15 pixels/sec up, 35 pixels/sec down, 4 second delay -->
+                <scroll direction="vertical" rate="15" returnrate="45" startdelay="4" returndelay="4"/>
+            </textarea>
+
+            <buttonlist name="list" from="basepopupbuttonlist">
+                <area>45%+30,10,-10,-10</area>
+                <minsize shrink="short" initiator="yes">100%,60</minsize>
+                <align>top,hcenter</align>
+                <wrapstyle>selection</wrapstyle>
+            </buttonlist>
+        </group>
     </group>
-
 
     <!-- Global Windows -->
 
@@ -2262,7 +2265,7 @@
     <!-- Home -> [Esc]
     -->
     <window name="MythPopupBox">
-        <area>-1,-1,700,850</area>
+        <area>-1,-1,1300,1000</area>
         <group name="items" from="PopupGroup" />
     </window>
 
@@ -2270,9 +2273,22 @@
          -> <select a show and hit enter>
     -->
     <window name="MythDialogBox">
-        <area>-1,-1,1000,1000</area>
-        <group name="items" from="PopupGroup" />
+        <area>-1,-1,1380,1000</area>
+        <group name="items" from="PopupGroup">
+            <group name="PopupGroupMessage">
+                <shape name="textbackground">
+                    <area>20,0,50%,100%</area>
+                </shape>
+                <textarea name="messagearea">
+                    <area>20,5,50%,-10</area>
+                </textarea>
+                <buttonlist name="list">
+                    <area>50%+30,10,-10,-10</area>
+                </buttonlist>
+            </group>
+        </group>
     </window>
+
 
     <!-- Home -> Setup -> Theme Chooser -> 'M'(enu)
          -> Refresh Downloadable Themes
