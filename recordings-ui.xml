@@ -425,22 +425,16 @@
 
     </window>
 
-    <!-- Home -> Media Library -> Watch Recordings -> 'M'(enu)
-         -> Change Group Filter
+    <!-- Home -> Media Library -> Watch Recordings -> Select show
+         -> 'M'(enu) -> Storage Options -> Change Recording Group
     -->
     <window name="groupselector">
         <area>-1,-1,1380,1000</area>
         <group name="items" from="PopupGroup">
             <group name="PopupGroupMessage">
-                <shape name="textbackground">
-                    <area>20,0,25%,100%</area>
-                </shape>
-                <textarea name="label" from="messagearea">
-                    <area>20,5,25%,-10</area>
-                </textarea>
-                <buttonlist name="groups" from="list">
-                    <area>25%+30,10,-10,-10</area>
-                </buttonlist>
+                <shape name="textbackground" />
+                <textarea name="label" from="messagearea" />
+                <buttonlist name="groups" from="list" />
             </group>
         </group>
     </window>
