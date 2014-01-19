@@ -340,16 +340,11 @@
                 <fill color="#000000" alpha="128" />
             </shape>
 
-            <textarea name="s00e00">
-                <font>smallinfo</font>
-                <area>10,5,100,35</area>
-                <align>left,top</align>
-            </textarea>
             <textarea name="starttime">
                 <font>smallinfo</font>
-                <area>120,5,600,35</area>
+                <area>10,5,710,35</area>
                 <align>left,top</align>
-                <template>%STARTDATE%   %STARTTIME%% - |ENDTIME%</template>
+                <template>%s00e00%   %STARTDATE%   %STARTTIME%% - |ENDTIME%</template>
             </textarea>
             <textarea name="originalairdate">
                 <font>smallinfo</font>
@@ -655,16 +650,11 @@
                 <fill color="#000000" alpha="128" />
             </shape>
 
-            <textarea name="s00e00">
-                <font>smallinfo</font>
-                <area>10,5,100,35</area>
-                <align>left,top</align>
-            </textarea>
             <textarea name="starttime">
                 <font>smallinfo</font>
-                <area>120,5,600,35</area>
+                <area>10,5,710,35</area>
                 <align>left,top</align>
-                <template>%STARTDATE%   %STARTTIME%% - |ENDTIME%</template>
+                <template>%s00e00%   %STARTDATE%   %STARTTIME%% - |ENDTIME%</template>
             </textarea>
             <textarea name="originalairdate">
                 <font>smallinfo</font>
