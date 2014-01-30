@@ -147,10 +147,7 @@
 
         <imagetype name="image" depends="!mediastate&amp;!errorstate">
             <filename>Backgrounds/background.png</filename>
-            <!--
-                <area>60,60,-60,-260</area>
-            -->
-            <area>30,30,-30,-30</area>
+            <area>15,15,-15,-15</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
