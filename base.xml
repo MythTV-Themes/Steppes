@@ -2205,7 +2205,7 @@
     </group>
 
     <group name="PopupGroup">
-        <area>-1,-1,1350,1000</area>
+        <area>-1,-1,1350,960</area>
 
         <minsize shrink="short">100%,60</minsize>
 
@@ -2214,6 +2214,7 @@
             <minsize shrink="short">100%,60</minsize>
         </shape>
 
+<!--
         <textarea name="title" from="basetextarea">
             <area>20,30,-20,35</area>
             <minsize shrink="short" >100%,60</minsize>
@@ -2221,10 +2222,11 @@
             <align>top,hcenter</align>
             <font>mymedium</font>
         </textarea>
+-->
 
         <group name="PopupGroupMessage">
-
-            <area>20,90,-20,-30</area>
+            <!-- set y=90 if using title -->
+            <area>20,30,-20,-30</area>
             <minsize shrink="short">100%,60</minsize>
 
             <shape name="textbackground">
@@ -2265,7 +2267,7 @@
     <!-- Home -> [Esc]
     -->
     <window name="MythPopupBox">
-        <area>-1,-1,1300,1000</area>
+        <area>-1,-1,1300,960</area>
         <group name="items" from="PopupGroup" />
     </window>
 
@@ -2273,7 +2275,7 @@
          -> <select a show and hit enter>
     -->
     <window name="MythDialogBox">
-        <area>-1,-1,1380,1000</area>
+        <area>-1,-1,1380,960</area>
         <group name="items" from="PopupGroup">
             <group name="PopupGroupMessage">
                 <shape name="textbackground">
