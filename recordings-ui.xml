@@ -496,8 +496,6 @@
                     <position>0,0</position>
                 </checkbox>
 
-                <!-- checkbox offset is 50, so use 50 on the left,
-                     and 100 on the right -->
                 <textarea name="title_label" from="labelcheckbox">
                     <area>50,0,-50,70</area>
                     <value>Show Program Titles</value>

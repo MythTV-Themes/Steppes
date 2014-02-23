@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+
+<mythuitheme>
+
+    <window name="gallery">
+
+        <imagetype name="fanart">
+            <area>0,0,100%,100%</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <group name="PageHeading" from="basePageHeading">
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Image Gallery</value>
+                </textarea>
+            </group>
+        </group>
+
+
+        <group name="posgroup" from="baseModeGroup">
+            <area>50,25,250,45</area>
+            <textarea name="position" from="pagemode">
+                <align>center</align>
+                <font>mysmall</font>
+                <extraleading>1</extraleading>
+                <cutdown>left</cutdown>
+            </textarea>
+        </group>
+
+        <group name="crumbgroup" from="baseModeGroup">
+            <area>300,25,-30,45</area>
+            <textarea name="breadcrumbs" from="pagemode">
+                <align>left,vcenter</align>
+                <font>mysmall</font>
+                <extraleading>1</extraleading>
+                <cutdown>left</cutdown>
+            </textarea>
+        </group>
+
+        <textarea name="thumbprogresstext" from="basetextarea">
+            <area>950,85,100,20</area>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <buttonlist name="images" from="basegridlist">
+            <spacing>2</spacing>
+
+            <statetype name="upscrollarrow">
+                <area>40,100%-15,15,15</area>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <area>60,100%-15,15,15</area>
+            </statetype>
+        </buttonlist>
+
+        <!-- shows a message when no images are available
+             in the current directory -->
+         <textarea name="noimages" from="msgText">
+             <font>mymedium</font>
+         </textarea>
+
+    </window> <!-- gallery -->
+
+
+
+    <!-- Configuration dialog. This is currently
+         used by the MythImage plugin only -->
+    <window name="galleryconfig">
+
+        <group name="PageHeading" from="basePageHeading">
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Gallery Settings</value>
+                </textarea>
+            </group>
+        </group>
+
+        <group name="dialog">
+            <area>50%-600,80,1200,670</area>
+
+            <shape name="background" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
+
+            <textarea name="sortorder_label" from="labeltext">
+                <area>20,40,520,70</area>
+                <value>Sorting order of the shown images:</value>
+            </textarea>
+            <buttonlist name="sortorder" from="basewideselector">
+                <position>550,40</position>
+            </buttonlist>
+
+            <textarea name="slideshowtime_label" from="sortorder_label">
+                <position>20, 120</position>
+                <value>Time to display each image during a slideshow (ms):</value>
+            </textarea>
+            <spinbox name="slideshowtime" from="basespinbox">
+                <position>550, 120</position>
+            </spinbox>
+
+            <textarea name="transitiontime_label" from="sortorder_label">
+                <position>20, 200</position>
+                <value>Duration of an image transition (ms):</value>
+            </textarea>
+            <spinbox name="transitiontime" from="basespinbox">
+                <position>550, 200</position>
+            </spinbox>
+
+            <textarea name="transitiontype_label" from="sortorder_label">
+                <position>20, 280</position>
+                <value>Type of transition between two images:</value>
+            </textarea>
+            <buttonlist name="transitiontype" from="basemediumselector">
+                <position>550, 280</position>
+            </buttonlist>
+
+            <textarea name="showhiddenfiles_label" from="sortorder_label">
+                <position>20, 360</position>
+                <value>Show files that are marked as hidden:</value>
+            </textarea>
+            <checkbox name="showhiddenfiles" from="basecheckbox">
+                <position>550, 360</position>
+            </checkbox>
+
+            <textarea name="cleardatabase_label" from="sortorder_label">
+                <position>20, 440</position>
+                <value>Clear database contents (Resync required):</value>
+            </textarea>
+            <checkbox name="musicdefaultupmix" from="basecheckbox">
+                <position>550, 440</position>
+            </checkbox>
+
+<!--
+            <shape name="description_separator">
+                <area>180,550,920,1</area>
+                <type>box</type>
+                <line color="#AAAAAA" alpha="150" width="1" />
+            </shape>
+-->
+            <button name="save" from="varbuttonright">
+                <value>Save</value>
+            </button>
+            <button name="cancel" from="varbuttonleft">
+                <value>Cancel</value>
+            </button>
+        </group>
+
+    </window> <!-- galleryconfig -->
+
+
+
+    <!-- Slideshow window which shows the a single image only or a slideshow.
+         This is currently used by the MythImage plugin only -->
+    <window name="slideshow">
+
+        <!-- the background behind the images (black) -->
+        <shape name="background_shape">
+            <area>0,0,100%,100%</area>
+            <fill color="#000000" alpha="255" />
+        </shape>
+
+        <!-- this is the image that shown in the foreground.
+             when fading is enabled this image is faded out. -->
+        <imagetype name="first_image">
+            <area>50%-716,50%-536,1432,1072</area>
+            <preserveaspect>yes</preserveaspect>
+        </imagetype>
+
+        <!-- this is the image that shown in the background
+             when fading is enabled this image is faded in. -->
+        <imagetype name="second_image">
+            <area>50%-716,50%-536,1432,1072</area>
+            <preserveaspect>yes</preserveaspect>
+        </imagetype>
+
+
+        <!-- shows some information if required -->
+       <textarea name="status">
+           <area>50%-300,100%-185,600,85</area>
+           <minsize>50%,50%</minsize>
+           <shape name="msgShape">
+               <area>0,0,100%,100%</area>
+               <minsize>50%,50%</minsize>
+               <type>roundbox</type>
+               <cornerradius>5</cornerradius>
+               <fill color="#000000" alpha="160" />
+               <line color="#FFFFFF" alpha="160" width="1" />
+           </shape>
+
+           <textarea name="status_text">
+               <area>10,5,-10,-5</area>
+               <minsize>50%,50%</minsize>
+               <align>center</align>
+               <multiline>yes</multiline>
+               <cutdown>yes</cutdown>
+               <font>mysmallnarrow</font>
+                <value>Image Loading...</value>
+           </textarea>
+       </textarea>
+
+
+        <!-- This list shows all the file information -->
+        <!-- Not optimized for Steppes yet -->
+        <buttonlist name="infolist">
+            <area>315,180,650,348</area>
+            <layout>vertical</layout>
+            <spacing>5</spacing>
+            <wrapstyle>selection</wrapstyle>
+            <buttonarea>0,0,100%,97%</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <shape name="buttonbackground">
+                        <area>0,0,650,40</area>
+                        <fill style="gradient">
+                            <gradient start="#505050" end="#000000" alpha="200" direction="vertical"  />
+                        </fill>
+                    </shape>
+                    <textarea name="name" from="basetextarea">
+                        <area>8,5,250,30</area>
+                    </textarea>
+                    <textarea name="value" from="basetextarea">
+                        <area>270,5,370,30</area>
+                    </textarea>
+                </state>
+                <state name="inactive" from="active"/>
+                <state name="selectedactive" from="active">
+                    <shape name="buttonbackground">
+                        <area>0,0,650,40</area>
+                        <fill style="gradient">
+                            <gradient start="#52CA38" end="#349838" alpha="255" />
+                        </fill>
+                    </shape>
+                </state>
+                <state name="selectedinactive" from="active">
+                    <shape name="buttonbackground">
+                        <area>0,0,650,40</area>
+                        <fill style="gradient">
+                            <gradient start="#52CA38" end="#349838" alpha="100" />
+                        </fill>
+                    </shape>
+                </state>
+            </statetype>
+        </buttonlist>
+
+    </window>
+
+</mythuitheme>
