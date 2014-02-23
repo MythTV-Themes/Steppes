@@ -2342,13 +2342,13 @@
         </shape>
 
         <imagetype name="animation">
-            <position>10,154</position>
+            <area>20,20,140,-20</area>
             <filepattern low="1" high="72">Images/Busy/busy%1.png</filepattern>
             <delay>70</delay>
         </imagetype>
 
         <textarea name="message" from="basetextarea">
-            <area>30,20,-30,120</area>
+            <area>170,20,-30,-20</area>
             <multiline>yes</multiline>
             <align>center</align>
         </textarea>
