@@ -48,13 +48,61 @@
             Note: Inherited from the default theme.
            -->
         <shape name="708_0" from="grey_background" />
+        <fontdef name="708_0" face="Liberation Sans" from="provider">
+            <color>#FFFFF0</color>
+            <outlinecolor>#000000</outlinecolor>
+            <outlinesize>2</outlinesize>
+            <outlinealpha>255</outlinealpha>
+        </fontdef>
         <shape name="708_1" from="grey_background" />
+        <fontdef name="708_1" face="Liberation Sans" from="provider">
+            <color>#FFFFF0</color>
+            <outlinecolor>#000000</outlinecolor>
+            <outlinesize>2</outlinesize>
+            <outlinealpha>255</outlinealpha>
+        </fontdef>
         <shape name="708_2" from="grey_background" />
+        <fontdef name="708_2" face="Liberation Sans" from="provider">
+            <color>#FFFFF0</color>
+            <outlinecolor>#000000</outlinecolor>
+            <outlinesize>2</outlinesize>
+            <outlinealpha>255</outlinealpha>
+        </fontdef>
         <shape name="708_3" from="grey_background" />
+        <fontdef name="708_3" face="Liberation Sans" from="provider">
+            <color>#FFFFF0</color>
+            <outlinecolor>#000000</outlinecolor>
+            <outlinesize>2</outlinesize>
+            <outlinealpha>255</outlinealpha>
+        </fontdef>
         <shape name="708_4" from="grey_background" />
+        <fontdef name="708_4" face="Liberation Sans" from="provider">
+            <color>#FFFFF0</color>
+            <outlinecolor>#000000</outlinecolor>
+            <outlinesize>2</outlinesize>
+            <outlinealpha>255</outlinealpha>
+        </fontdef>
         <shape name="708_5" from="grey_background" />
+        <fontdef name="708_5" face="Liberation Sans" from="provider">
+            <color>#FFFFF0</color>
+            <outlinecolor>#000000</outlinecolor>
+            <outlinesize>2</outlinesize>
+            <outlinealpha>255</outlinealpha>
+        </fontdef>
         <shape name="708_6" from="grey_background" />
+        <fontdef name="708_6" face="Liberation Sans" from="provider">
+            <color>#FFFFF0</color>
+            <outlinecolor>#000000</outlinecolor>
+            <outlinesize>2</outlinesize>
+            <outlinealpha>255</outlinealpha>
+        </fontdef>
         <shape name="708_7" from="grey_background" />
+        <fontdef name="708_7" face="Liberation Sans" from="provider">
+            <color>#FFFFF0</color>
+            <outlinecolor>#000000</outlinecolor>
+            <outlinesize>2</outlinesize>
+            <outlinealpha>255</outlinealpha>
+        </fontdef>
 
     </window>
 </mythuitheme>
