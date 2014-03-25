@@ -21,17 +21,28 @@
 
         <group name="progdetails" from="guideprogdetails" />
 
+        <!-- changes made to Correct how the "channellist" synchronizes with
+        the "guidegrid" when a user selects a channel group with less than
+        <guidegrid><channels>n</channels></guidegrid> channels
+        -->
         <buttonlist name="channellist">
-            <arrange>spread</arrange>
+            <!--
+                <arrange>spread</arrange>
+            -->
             <area>520,130,195,864</area>
             <buttonarea>0,0,100%,100%</buttonarea>
             <spacing>0</spacing>
             <statetype name="buttonitem">
-                <area>0,0,200,95</area>
+                <!-- 
+                "channellist height == 864
+                guidegrid channels == 9
+                864 / 9 == 96 versus the default 95
+                -->
+                <area>0,0,200,96</area>
                 <state name="active">
-                    <area>0,0,100%,95</area>
+                    <area>0,0,100%,96</area>
                     <shape name="background">
-                        <area>0,0,195,95</area>
+                        <area>0,0,195,96</area>
                         <fill color="#CCCCCC" alpha="28" />
                     </shape>
                     <imagetype name="channelicon">
@@ -39,7 +50,7 @@
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>85,0,110,95</area>
+                        <area>85,0,110,96</area>
                         <font>myverysmallnarrow</font>
                         <multiline>true</multiline>
                         <cutdown>yes</cutdown>
