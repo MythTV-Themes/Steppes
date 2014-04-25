@@ -772,7 +772,12 @@
                     <shape name="background" from="baseselectedwidgetshape">
                     </shape>
                 </state>
-                <state name="disabled" />
+                <state name="disabled" from="active">
+                    <shape name="checkbg">
+                        <fill color="#DDDDDD" alpha="200" />
+                        <line color="#33FFFF" alpha="96" width="1" />
+                    </shape>
+                </state>
             </statetype>
 
             <statetype name="checkstate">
@@ -1077,6 +1082,39 @@
         </group>
     </textedit>
 
+    <buttonlist name="baseinfobuttonlist">
+        <arrange>stack</arrange>
+        <align>center</align>
+        <area>0,20,600,720</area>
+        <layout>vertical</layout>
+        <spacing>0</spacing>
+        <buttonarea>20,0,-20,100%</buttonarea>
+        <statetype name="buttonitem">
+            <area>0,0,100%,30</area>
+            <state name="active">
+                <area>0,0,100%,30</area>
+                <shape name="bullet">
+                    <type>ellipse</type>
+                    <area>10,10,10,10</area>
+                    <fill color="#FFFFFF" />
+                </shape>
+                <textarea name="buttontext">
+                    <area>30,0,100%,100%</area>
+                    <multiline>no</multiline>
+                    <cutdown>yes</cutdown>
+                    <align>vcenter</align>
+                    <font>mysmallnarrow</font>
+                </textarea>
+                <imagetype name="buttonarrow">
+                    <area>100%-24,50%-7,15,15</area>
+                    <filename>Images/rightarrow-on.png</filename>
+                </imagetype>
+            </state>
+            <state name="selectedinactive" from="active" />
+            <state name="selectedactive" from="selectedinactive" />
+        </statetype>
+    </buttonlist>
+
     <!-- Base definition of a generic button list -->
     <buttonlist name="basebuttonlist">
         <arrange>stack</arrange>
@@ -1183,10 +1221,21 @@
                     <area>50,5,-5,-5</area>
                 </textarea>
             </state>
-            <state name="selectedinactive" from="active" />
-            <state name="selectedactive" from="selectedinactive">
+            <state name="selectedactive" from="active">
                 <shape name="background"
                        from="baseselectedbuttonshape" />
+            </state>
+            <state name="inactive" from="active" />
+            <state name="selectedinactive" from="inactive" />
+            <state name="disabled" from="active">
+                <shape name="checkbg">
+                    <area>12,15,26,26</area>
+                    <fill color="#DDDDDD" alpha="200" />
+                    <line color="#50EFDF" alpha="32" width="2" />
+                </shape>
+                <textarea name="buttontext" from="basetextarea">
+                    <font>mysmallgrey</font>
+                </textarea>
             </state>
         </statetype>
     </buttonlist>
