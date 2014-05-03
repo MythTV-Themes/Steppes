@@ -22,16 +22,15 @@
         <group name="progdetails" from="guideprogdetails" />
 
         <buttonlist name="channellist">
-            <arrange>spread</arrange>
             <area>520,130,195,864</area>
             <buttonarea>0,0,100%,100%</buttonarea>
             <spacing>0</spacing>
             <statetype name="buttonitem">
-                <area>0,0,200,95</area>
+                <area>0,0,200,96</area>
                 <state name="active">
-                    <area>0,0,100%,95</area>
+                    <area>0,0,100%,96</area>
                     <shape name="background">
-                        <area>0,0,195,95</area>
+                        <area>0,0,195,96</area>
                         <fill color="#CCCCCC" alpha="28" />
                     </shape>
                     <imagetype name="channelicon">
@@ -39,7 +38,7 @@
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>85,0,110,95</area>
+                        <area>85,0,110,96</area>
                         <font>myverysmallnarrow</font>
                         <multiline>true</multiline>
                         <cutdown>yes</cutdown>
@@ -140,16 +139,15 @@
         </group>
 
         <buttonlist name="channellist">
-            <arrange>spread</arrange>
             <area>520,130,195,864</area>
             <buttonarea>0,0,100%,100%</buttonarea>
             <spacing>0</spacing>
             <statetype name="buttonitem">
-                <area>0,0,200,95</area>
+                <area>0,0,200,96</area>
                 <state name="active">
-                    <area>0,0,100%,95</area>
+                    <area>0,0,100%,96</area>
                     <shape name="background">
-                        <area>0,0,195,95</area>
+                        <area>0,0,195,96</area>
                         <fill color="#CCCCCC" alpha="28" />
                     </shape>
                     <imagetype name="channelicon">
@@ -157,7 +155,7 @@
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>85,0,110,95</area>
+                        <area>85,0,110,96</area>
                         <font>myverysmallnarrow</font>
                         <multiline>true</multiline>
                         <cutdown>yes</cutdown>
