@@ -774,7 +774,6 @@
                 </state>
                 <state name="disabled" from="active">
                     <shape name="checkbg">
-                        <fill color="#DDDDDD" alpha="200" />
                         <line color="#33FFFF" alpha="96" width="1" />
                     </shape>
                 </state>
@@ -798,6 +797,7 @@
                         <filename>Images/check.png</filename>
                     </imagetype>
                 </state>
+                <state name="disabled" from="half" />
             </statetype>
         </group>
     </checkbox>
@@ -852,6 +852,15 @@
                     <cornerradius>20</cornerradius>
                 </shape>
                 <textarea name="buttontext" />
+            </state>
+            <state name="disabled" from="active">
+                <shape name="background" from="baseinactivebuttonshape">
+                    <type>roundbox</type>
+                    <cornerradius>20</cornerradius>
+                </shape>
+                <textarea name="buttontext">
+                    <font>mysmallnarrowlightgrey</font>
+                </textarea>
             </state>
         </statetype>
         <statetype name="upscrollarrow">
@@ -926,11 +935,12 @@
             </state>
             <state name="disabled" from="active">
                 <shape name="background" from="baseinactivebuttonshape">
-                    <area>0,0,100%,100%</area>
                     <type>roundbox</type>
                     <cornerradius>20</cornerradius>
                 </shape>
-                <textarea name="text" />
+                <textarea name="buttontext">
+                    <font>mysmallnarrowlightgrey</font>
+                </textarea>
             </state>
             <state name="inactive" from="disabled" />
         </statetype>
@@ -1112,6 +1122,14 @@
             </state>
             <state name="selectedinactive" from="active" />
             <state name="selectedactive" from="selectedinactive" />
+            <state name="disabled" from="active">
+                <shape name="bullet">
+                    <fill color="#FFFFFF" alpha="128" />
+                </shape>
+                <textarea name="buttontext">
+                    <font>mysmallnarrowlightgrey</font>
+                </textarea>
+            </state>
         </statetype>
     </buttonlist>
 
@@ -1143,7 +1161,15 @@
             <state name="selectedactive" from="selectedinactive">
                 <shape name="background" from="baseselectedbuttonshape" />
             </state>
-
+            <state name="disabled" from="active">
+                <shape name="background" from="baseinactivebuttonshape">
+                    <type>roundbox</type>
+                    <cornerradius>20</cornerradius>
+                </shape>
+                <textarea name="buttontext">
+                    <font>mysmallnarrowlightgrey</font>
+                </textarea>
+            </state>
         </statetype>
 
         <statetype name="upscrollarrow">
@@ -1234,7 +1260,7 @@
                     <line color="#50EFDF" alpha="32" width="2" />
                 </shape>
                 <textarea name="buttontext" from="basetextarea">
-                    <font>mysmallgrey</font>
+                    <font>mysmalllightgrey</font>
                 </textarea>
             </state>
         </statetype>
@@ -1396,6 +1422,22 @@
                 -->
                 <imagetype name="buttonimage" />
                 <statetype name="nodetype" />
+            </state>
+
+            <state name="disabled" from="inactive">
+                <shape name="statusborder">
+                    <line color="#00FFFF" width="1" alpha="64" />
+                    <fill color="#000000" alpha="64" />
+                </shape>
+                <group name="textgroup">
+                    <shape name="shadow">
+                        <fill color="#000000" alpha="64" />
+                    </shape>
+
+                    <textarea name="buttontext" from="basetextarea">
+                        <font>myverysmalllightgrey</font>
+                    </textarea>
+                </group>
             </state>
 
         </statetype>
