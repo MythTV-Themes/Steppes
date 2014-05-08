@@ -84,21 +84,21 @@
         </imagetype>
 
         <textarea name="name" from="basetextarea">
-            <area>80,810,1000,55</area>
+            <area>80,800,1000,55</area>
             <font>mylarge</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
 
         <textarea name="resolution" from="basetextarea">
-            <area>1100,810,200,55</area>
+            <area>1100,800,200,55</area>
             <font>mysmall</font>
             <align>right,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
 
         <textarea name="aspect" from="basetextarea">
-            <area>1300,810,80,55</area>
+            <area>1300,800,80,55</area>
             <multiline>no</multiline>
             <font>mysmall</font>
             <align>right,vcenter</align>
@@ -106,11 +106,13 @@
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>80,875,1260,-70</area>
+            <area>80,860,1260,140</area>
             <multiline>yes</multiline>
             <font>mysmall</font>
             <align>left,top</align>
             <cutdown>yes</cutdown>
+            <template>%description%           %errata%</template>
+            <scroll direction="vertical" rate="15" returnrate="45" startdelay="4" returndelay="4"/>
         </textarea>
 
         <buttonlist name="themes">
