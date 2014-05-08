@@ -111,7 +111,7 @@
             <font>mysmall</font>
             <align>left,top</align>
             <cutdown>yes</cutdown>
-            <template>%description%           %errata%</template>
+            <template>%description%\n      Errata: %errata%</template>
             <scroll direction="vertical" rate="15" returnrate="45" startdelay="4" returndelay="4"/>
         </textarea>
 
