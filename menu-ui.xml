@@ -24,7 +24,6 @@
                     <shape name="groupBorder">
                         <cornerradius>15</cornerradius>
                     </shape>
-
                 </state>
 
                 <state name="active" from="inactive" />
@@ -44,7 +43,7 @@
                         <area>0,0,100%,100%</area>
                         <type>roundbox</type>
                         <line color="#50EFDF" alpha="240" width="5" />
-                        <cornerradius>30</cornerradius>
+                        <cornerradius>15</cornerradius>
                     </shape>
 
                     <shape name="descshape">
@@ -52,7 +51,7 @@
                         <type>roundbox</type>
                         <line color="#000000" alpha="0" width="0" />
                         <fill color="#502550" alpha="80" />
-                        <cornerradius>30</cornerradius>
+                        <cornerradius>15</cornerradius>
                     </shape>
                     <textarea name="buttontext">
                         <area>13,5,-13,97</area>
