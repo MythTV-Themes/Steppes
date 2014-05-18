@@ -2107,10 +2107,10 @@
                 <statetype name="jobstate">
                     <area>2,0,30,45</area>
                     <state name="recording">
-                        <imagetype name="pulse">
-                            <position>12,10</position>
-                            <filename>Images/icons/recording.png</filename>
-                            <alphapulse min="48" max="255" change="2"/>
+                        <imagetype name="animation">
+                            <area>13,10,32,32</area>
+                            <filepattern low="1" high="30">Images/Recording/recording.%1.png</filepattern>
+                            <delay>70</delay>
                         </imagetype>
                     </state>
                     <state name="transcoding" from="recording">
