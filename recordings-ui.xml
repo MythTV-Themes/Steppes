@@ -93,10 +93,10 @@
                             </imagetype>
                         </state>
                         <state name="running">
-                            <imagetype name="run">
+                            <imagetype name="animation">
                                 <area>110,7,56,28</area>
-                                <filename>Images/icons/commflagged.png</filename>
-                                <alphapulse min="80" max="255" change="2"/>
+                                <filepattern low="1" high="62">Images/Commflag/flagging.%1.png</filepattern>
+                                <delay>70</delay>
                             </imagetype>
                         </state>
                         <state name="queued">
@@ -125,6 +125,7 @@
 
                     <textarea name="syndicatedepisode">
                         <area>100%-300,100%-40,150,32</area>
+                        <font>mysmallgrey</font>
                     </textarea>
                 </state>
 
@@ -195,10 +196,10 @@
                         </state>
                         <state name="running">
                             <area>0,0,100%,100%</area>
-                            <imagetype name="run">
+                            <imagetype name="animation">
                                 <area>110,100%-46,56,28</area>
-                                <filename>Images/icons/commflagged.png</filename>
-                                <alphapulse min="80" max="255" change="2"/>
+                                <filepattern low="1" high="62">Images/Commflag/flagging.%1.png</filepattern>
+                                <delay>70</delay>
                             </imagetype>
                         </state>
                         <state name="queued">
