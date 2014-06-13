@@ -8,10 +8,10 @@
 
         <shape name="background" from="basewidgetshape">
             <area>0,0,100%,100%</area>
-	     <line color="#00FFFF" width="3" />
+             <line color="#00FFFF" width="3" />
         </shape>
 
-	<group name="info" from="notice-info" />
+        <group name="info" from="notice-info" />
     </window>
 
     <window name="notification-image" include="steppes-notice.xml">
@@ -19,7 +19,7 @@
 
         <shape name="background" from="basewidgetshape">
             <area>0,0,100%,100%</area>
-	     <line color="#00FFFF" width="3" />
+             <line color="#00FFFF" width="3" />
         </shape>
 
         <statetype name="mediastate">
@@ -30,7 +30,7 @@
                 <imagetype name="imageartwork">
                     <!-- Artist: Vargas21 http://www.iconarchive.com/show/aquave-metal-icons-by-vargas21/Music-icon.html -->
                     <filename>noartwork.png</filename>
-		    <area>10,10,170,180</area>
+                    <area>10,10,170,180</area>
                 </imagetype>
             </state>
         </statetype>
@@ -43,7 +43,7 @@
                 <imagetype name="imageerror">
                     <!-- Artist: Kyo-Tux http://www.iconarchive.com/show/phuzion-icons-by-kyo-tux/Sign-Error-icon.html -->
                     <filename>error.png</filename>
-		    <area>10,10,170,180</area>
+                    <area>10,10,170,180</area>
                 </imagetype>
             </state>
             <state name="check">
@@ -51,7 +51,7 @@
                 <imagetype name="imageerror">
                     <!-- Artist: Kyo-Tux http://www.iconarchive.com/show/phuzion-icons-by-kyo-tux/Sign-Select-icon.html -->
                     <filename>check.png</filename>
-		    <area>10,10,170,180</area>
+                    <area>10,10,170,180</area>
                 </imagetype>
             </state>
             <state name="warning">
@@ -59,17 +59,17 @@
                 <imagetype name="imageerror">
                     <!-- Artist: Kyo-Tux http://www.iconarchive.com/show/phuzion-icons-by-kyo-tux/Sign-Alert-icon.html -->
                     <filename>warning.png</filename>
-		    <area>10,10,170,180</area>
+                    <area>10,10,170,180</area>
                 </imagetype>
             </state>
-	    <state name="busy">
-		<area>0,0,100%,100%</area>
-		<imagetype name="animation">
+            <state name="busy">
+                <area>0,0,100%,100%</area>
+                <imagetype name="animation">
                     <area>20,20,140,150</area>
-		    <filepattern low="1" high="72">Images/Busy/busy%1.png</filepattern>
-		    <delay>70</delay>
-		</imagetype>
-	    </state>
+                    <filepattern low="1" high="72">Images/Busy/busy%1.png</filepattern>
+                    <delay>70</delay>
+                </imagetype>
+            </state>
         </statetype>
 
         <imagetype name="image" depends="!mediastate&amp;!errorstate">
@@ -78,9 +78,9 @@
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
-	<group name="info" from="notice-info">
-	    <area>170,0,100%,100%</area>
-	</group>
+        <group name="info" from="notice-info">
+            <area>170,0,100%,100%</area>
+        </group>
     </window>
 
     <window name="notification-full" include="steppes-notice.xml">
@@ -88,7 +88,7 @@
 
         <shape name="background" from="basewidgetshape">
             <area>0,0,100%,100%</area>
-	    <line color="#00000" width="0" />
+            <line alpha="0" width="0" />
         </shape>
 
         <statetype name="mediastate">
@@ -113,7 +113,7 @@
                 <imagetype name="imageerror">
                     <!-- Artist: Kyo-Tux http://www.iconarchive.com/show/phuzion-icons-by-kyo-tux/Sign-Error-icon.html -->
                     <filename>error.png</filename>
-		    <area>10,10,170,180</area>
+                    <area>10,10,170,180</area>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
@@ -122,7 +122,7 @@
                 <imagetype name="imageerror">
                     <!-- Artist: Kyo-Tux http://www.iconarchive.com/show/phuzion-icons-by-kyo-tux/Sign-Select-icon.html -->
                     <filename>check.png</filename>
-		    <area>10,10,170,180</area>
+                    <area>10,10,170,180</area>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
@@ -131,18 +131,18 @@
                 <imagetype name="imageerror">
                     <!-- Artist: Kyo-Tux http://www.iconarchive.com/show/phuzion-icons-by-kyo-tux/Sign-Alert-icon.html -->
                     <filename>warning.png</filename>
-		    <area>10,10,170,180</area>
+                    <area>10,10,170,180</area>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
-	    <state name="busy">
-		<area>0,0,100%,100%</area>
-		<imagetype name="animation">
+            <state name="busy">
+                <area>0,0,100%,100%</area>
+                <imagetype name="animation">
                     <area>20,20,140,150</area>
-		    <filepattern low="1" high="72">Images/Busy/busy%1.png</filepattern>
-		    <delay>70</delay>
-		</imagetype>
-	    </state>
+                    <filepattern low="1" high="72">Images/Busy/busy%1.png</filepattern>
+                    <delay>70</delay>
+                </imagetype>
+            </state>
         </statetype>
 
         <imagetype name="image" depends="!mediastate&amp;!errorstate">
@@ -151,13 +151,13 @@
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
-	<group name="info" from="notice-info">
-	    <area>200,100%-250,-200,200</area>
+        <group name="info" from="notice-info">
+            <area>200,100%-250,-200,200</area>
             <shape name="background" from="basewidgetshape">
-		<area>0,0,100%,100%</area>
-		<line color="#00FFFF" width="3" />
+                <area>0,0,100%,100%</area>
+                <line color="#00FFFF" width="3" />
             </shape>
-	</group>
+        </group>
 
     </window>
 

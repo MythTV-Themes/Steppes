@@ -265,7 +265,7 @@
                         <shape name="infoshape">
                             <area>0, 0, 100%, 100%</area>
                             <type>roundbox</type>
-                            <line color="#000000" alpha="0" width="0" />
+                            <line alpha="0" width="0" />
                             <fill color="#502550" alpha="80" />
                             <cornerradius>10</cornerradius>
                         </shape>

@@ -58,7 +58,7 @@
 
             <shape name="dialogbackground" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
-                <line color="#000000" alpha="0" width="0" />
+                <line alpha="0" width="0" />
             </shape>
 
             <textarea name="categorylabel" from="labeltext">
@@ -78,7 +78,7 @@
 
             <shape name="dialogbackground" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
-                <line color="#000000" alpha="0" width="0" />
+                <line alpha="0" width="0" />
             </shape>
 
             <buttonlist name="bookmarklist" from="basechecklist">

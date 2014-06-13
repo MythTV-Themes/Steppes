@@ -37,7 +37,7 @@
                     <area>0,0,100%,100%</area>
                     <minsize vanish="true">100%,10</minsize>
                     <type>roundbox</type>
-                    <line color="#000000" alpha="0" width="0" />
+                    <line alpha="0" width="0" />
                     <fill color="#300530" alpha="180" />
                     <cornerradius>10</cornerradius>
                 </shape>
