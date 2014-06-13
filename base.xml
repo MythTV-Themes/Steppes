@@ -1720,7 +1720,7 @@
                 <shape name="groupBorder">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
-                    <line color="#00FFFF" alpha="160" width="0" />
+                    <line color="#00FFFF" alpha="160" width="1" />
                     <fill color="#000000" alpha="160" />
                     <cornerradius>15</cornerradius>
                 </shape>
@@ -1740,7 +1740,7 @@
                 <area>0,0,100%,90</area>
                 <shape name="groupBorder">
                     <area>5,0,-5,100%</area>
-                    <line color="#50EFDF" alpha="250" width="0" />
+                    <line color="#50EFDF" alpha="250" width="1" />
                 </shape>
                 <textarea name="buttontext">
                     <font>mygroupmedium</font>
@@ -1789,7 +1789,7 @@
             <area>0,0,100%,135</area>
 
             <shape name="msgShape">
-                <line color="#00FFFF" alpha="160" width="0" />
+                <line color="#00FFFF" alpha="160" width="1" />
             </shape>
             <textarea name="title" from="msgText">
                 <font>mymediumbold</font>
@@ -1800,7 +1800,7 @@
             <area>0,140,100%,115</area>
 
             <shape name="msgShape">
-                <line color="#00FFFF" alpha="160" width="0" />
+                <line color="#00FFFF" alpha="160" width="1" />
             </shape>
             <textarea name="subtitle" from="msgText">
                 <font>mysmallbold</font>
@@ -1810,7 +1810,7 @@
         <group name="wheregroup" from="baseMsgGroup">
             <area>0,260,100%,125</area>
             <shape name="msgShape">
-                <line color="#00FFFF" alpha="160" width="0" />
+                <line color="#00FFFF" alpha="160" width="1" />
             </shape>
             <textarea name="channel" from="msgText">
                 <area>10,5,-10,40</area>
@@ -1839,7 +1839,7 @@
             <area>0,390,100%,100%</area>
 
             <shape name="msgShape">
-                <line color="#00FFFF" alpha="160" width="0" />
+                <line color="#00FFFF" alpha="160" width="1" />
             </shape>
             <textarea name="description" from="msgText">
                 <area>10,10,-10,-42</area>

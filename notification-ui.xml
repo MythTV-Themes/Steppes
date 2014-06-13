@@ -88,7 +88,7 @@
 
         <shape name="background" from="basewidgetshape">
             <area>0,0,100%,100%</area>
-            <line color="#00000" width="0" />
+            <line alpha="0" width="0" />
         </shape>
 
         <statetype name="mediastate">
