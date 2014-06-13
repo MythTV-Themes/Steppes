@@ -49,7 +49,6 @@
                     <shape name="descshape">
                         <area>13,105,-13,-5</area>
                         <type>roundbox</type>
-                        <line color="#000000" alpha="0" width="0" />
                         <fill color="#502550" alpha="80" />
                         <cornerradius>15</cornerradius>
                     </shape>

@@ -910,7 +910,7 @@
                 <minsize vanish="true" shrink="short">100%,60</minsize>
                 <type>roundbox</type>
                 <cornerradius>15</cornerradius>
-                <line color="#00FFFF" alpha="160" width="0" />
+                <line color="#00FFFF" alpha="160" width="1" />
                 <fill color="#000000" alpha="160" />
             </shape>
 
