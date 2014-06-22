@@ -155,6 +155,11 @@
 
     <!-- Normal -->
 
+    <fontdef name="mydesc" from="basegothic">
+        <color>#F0F0FF</color>
+        <pixelsize>30</pixelsize>
+    </fontdef>
+
     <fontdef name="mysmall" from="basegothic">
         <color>#F0F0FF</color>
         <pixelsize>29</pixelsize>
@@ -2133,7 +2138,7 @@
                 </textarea>
 
                 <textarea name="syndicatedepisode" depends="!s00e00">
-                    <area>100%-155,100%-40,-20,32</area>
+                    <area>100%-155,100%-40,-20,33</area>
                     <font>mysmallnarrowgrey</font>
                     <align>right,bottom</align>
                     <template>%|[SYNDICATEDEPISODE|]%</template>
@@ -2174,7 +2179,7 @@
                 <textarea name="description">
                     <align>left</align>
                     <area>20,125,-20,-55</area>
-                    <font>mysmall</font>
+                    <font>mydesc</font>
                     <multiline>yes</multiline>
                     <cutdown>yes</cutdown>
                     <template>%|RATING| %%|(STARS|) %%DESCRIPTION%</template>
