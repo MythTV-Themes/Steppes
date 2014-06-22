@@ -149,7 +149,7 @@
                     </textarea>
 
                     <textarea name="syndicatedepisode">
-                        <area>100%-300,100%-40,-150,32</area>
+                        <area>100%-300,100%-40,-150,33</area>
                     </textarea>
 
                     <shape name="stateshape">
