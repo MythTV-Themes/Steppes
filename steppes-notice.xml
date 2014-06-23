@@ -32,7 +32,7 @@
                 <fill color="#FFF0F0" alpha="24" />
             </shape>
             <textarea name="description" from="basetextarea">
-                <area>5,5,-5,-5</area>
+                <area>5,4,-5,-4</area>
                 <font>myverysmall</font>
                 <scroll direction="horizontal" returnrate="140"
                         returndelay="4" />

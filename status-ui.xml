@@ -101,21 +101,17 @@
             </group>
         </group>
 
-        <group name="statusgroup">
-            <area>100,100,-100,-100</area>
-
-            <shape name="background" from="basewidgetshape">
-                <area>0,0,100%,100%</area>
-            </shape>
+        <group name="statusgroup" from="baseMsgGroupBanner">
 
             <statetype name="backendstatus">
                 <area>10,10,-10,-10</area>
                 <state name="idle">
                     <area>0,0,100%,100%</area>
                     <textarea name="status">
-                        <area>20,20,-20,-20</area>
+                        <area>5,5,-5,-5</area>
                         <align>center</align>
                         <font>mylargebold</font>
+                        <multiline>yes</multiline>
                         <value>Backend is idle</value>
                     </textarea>
                 </state>
@@ -135,6 +131,34 @@
                     </textarea>
                 </state>
             </statetype>
+        </group>
+
+        <group name="recordingstatus">
+            <area>50%-660,50,1320,-250</area>
+
+            <textarea name="nextrecordingheading">
+                <area>20,20,-20,40</area>
+                <font>mylabelfontmedium</font>
+                <align>hcenter,bottom</align>
+                <value>Next recording:</value>
+            </textarea>
+            <textarea name="nextrecording">
+                <area>20,70,-20,-100</area>
+                <multiline>yes</multiline>
+                <font>mydesc</font>
+                <align>hcenter</align>
+            </textarea>
+            <!--
+                scheduled recordings conflict warning
+            -->
+            <textarea name="conflicts">
+                <area>20,100%-80,-20,80</area>
+                <font>mymediumyellow</font>
+                <align>hcenter,bottom</align>
+                <multiline>yes</multiline>
+                <value>WARNING: There are conflicting scheduled recordings!</value>
+            </textarea>
+
         </group>
     </window>
 

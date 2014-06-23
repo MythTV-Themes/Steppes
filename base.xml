@@ -193,6 +193,10 @@
         <pixelsize>34</pixelsize>
     </fontdef>
 
+    <fontdef name="mylabelfontmedium" from="mymedium">
+        <color>#A0BFFF</color>
+    </fontdef>
+
     <fontdef name="mymediumbold" from="mymedium">
         <pixelsize>34</pixelsize>
         <weight>bold</weight>

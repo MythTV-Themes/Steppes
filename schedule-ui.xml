@@ -60,7 +60,7 @@
         </textarea>
 
         <buttonlist name="timelist">
-            <area>714,98,-30,30</area>
+            <area>714,95,-30,35</area>
             <layout>horizontal</layout>
             <arrange>spread</arrange>
             <buttonarea>0,0,100%,100%</buttonarea>
@@ -76,7 +76,7 @@
                         <fill color="#FFFFFF" alpha="60" />
                     </shape>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>10,3,-10,-3</area>
+                        <area>10,2,-10,-3</area>
                         <font>mysmall</font>
                         <align>center</align>
                     </textarea>
