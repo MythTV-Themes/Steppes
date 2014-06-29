@@ -15,9 +15,7 @@
         </group>
 
         <group name="helpgroup" from="baseMsgGroupTall">
-            <textarea name="justhelptext" from="msgText">
-                <align>top,left</align>
-            </textarea>
+            <textarea name="justhelptext" from="msgText" />
         </group>
 
         <buttonlist name="category" from="groupsList">
