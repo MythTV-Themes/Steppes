@@ -1558,7 +1558,7 @@
     </group>
 
     <group name="baseMsgGroupLarge" from="baseMsgGroup">
-        <area>52,809,426,240</area>
+        <area>50,805,430,250</area>
     </group>
 
     <group name="baseMsgGroupTall" from="baseMsgGroup">
@@ -1612,17 +1612,17 @@
 
         <statetype name="buttonitem">
             <area>0,0,400,100%</area>
-            <minsize>50,100%</minsize>
+            <minsize>40,100%</minsize>
 
             <state name="inactive">
                 <area>0,0,100%,100%</area>
-                <minsize>50,100%</minsize>
+                <minsize>40,100%</minsize>
                 <group name="areagroup">
                     <area>0,7,100%,-7</area>
-                    <minsize>50,100%</minsize>
+                    <minsize>40,100%</minsize>
                     <shape name="recGroupShape">
                         <area>0,0,100%,100%</area>
-                        <minsize>50,100%</minsize>
+                        <minsize>40,100%</minsize>
                         <type>roundbox</type>
                         <line color="#00FFFF" alpha="96" width="3" />
                         <fill color="#000000" alpha="144" />
@@ -1630,7 +1630,7 @@
                     </shape>
                     <textarea name="buttontext">
                         <area>15,5,-15,-5</area>
-                        <minsize>50,100%</minsize>
+                        <minsize>40,100%</minsize>
                         <extraleading>4</extraleading>
                         <align>center</align>
                         <cutdown>yes</cutdown>
@@ -1638,31 +1638,21 @@
                         <alpha>255</alpha>
                     </textarea>
                 </group>
-                <shape name="highlighttop">
-<!--
-                    <minsize>50,100%</minsize>
-                    <area>0,0,0,0</area>
--->
-                </shape>
-                <shape name="highlightbottom">
-<!--
-                    <minsize>50,100%</minsize>
-                    <area>0,0,0,0</area>
--->
-                </shape>
+                <shape name="highlighttop" />
+                <shape name="highlightbottom" />
             </state>
 
             <state name="active" from="inactive" />
 
             <state name="selectedinactive" from="inactive">
                 <area>0,0,100%,100%</area>
-                <minsize>50,100%</minsize>
+                <minsize>40,100%</minsize>
                 <group name="areagroup">
-                    <area>0,0,100%,100%</area>
-                    <minsize>50,100%</minsize>
+                    <area>0,2,100%,-2</area>
+                    <minsize>40,100%</minsize>
                     <shape name="recGroupShape">
                         <area>0,4,100%,-5</area>
-                        <minsize>50,100%</minsize>
+                        <minsize>40,100%</minsize>
                         <type>roundbox</type>
                         <cornerradius>350</cornerradius>
                         <line color="#50EFDF" alpha="250" width="4" />
@@ -1713,7 +1703,7 @@
     <buttonlist name="groupsList">
         <arrange>stack</arrange>
         <align>bottom,left</align>
-        <area>35,0,460,800</area>
+        <area>35,0,460,795</area>
         <buttonarea>20,0,-20,100%</buttonarea>
         <scrollstyle>center</scrollstyle>
         <wrapstyle>items</wrapstyle>
@@ -1735,7 +1725,7 @@
                 </shape>
 
                 <textarea name="buttontext">
-                    <area>10,5,-10,-5</area>
+                    <area>10,3,-10,-3</area>
                     <align>center</align>
                     <font>mygroupsmall</font>
                     <multiline>yes</multiline>
@@ -1746,18 +1736,15 @@
             <state name="active" from="inactive" />
 
             <state name="selectedinactive" from="inactive">
-                <area>0,0,100%,90</area>
+                <area>0,0,100%,85</area>
                 <shape name="groupBorder">
                     <area>5,0,-5,100%</area>
                     <line color="#50EFDF" alpha="250" width="1" />
                 </shape>
-                <textarea name="buttontext">
-                    <font>mygroupmedium</font>
-                </textarea>
             </state>
 
             <state name="selectedactive" from="selectedinactive">
-                <area>0,0,100%,90</area>
+                <area>0,0,100%,85</area>
 
                 <shape name="groupBorder">
                     <area>0,0,100%,100%</area>
@@ -1878,7 +1865,7 @@
             <area>0,0,100%,100%</area>
             <minsize>100%,40</minsize>
             <shape name="statusborder">
-                <area>4,0,-5,100%</area>
+                <area>6,0,-6,100%</area>
                 <minsize>100%,40</minsize>
                 <type>roundbox</type>
                 <line color="#00FFFF" width="5" alpha="160" />
@@ -1893,7 +1880,7 @@
                 <cornerradius>10</cornerradius>
             </shape>
             <shape name="highlightright">
-                <area>100%-6,20,5,-20</area>
+                <area>100%-5,20,5,-20</area>
                 <minsize>100%,20</minsize>
                 <type>roundbox</type>
                 <fill color="#00FFFF" alpha="160" />
@@ -2062,6 +2049,7 @@
                     <state name="normal" from="default" />
                     <state name="error" from="default">
                         <shape name="statusborder">
+                            <area>6,0,-6,100%</area>
                             <line color="#e43e3e" width="4" alpha="255" />
                         </shape>
                         <shape name="highlightleft" />
@@ -2069,6 +2057,7 @@
                     </state>
                     <state name="warning" from="default">
                         <shape name="statusborder">
+                            <area>6,0,-6,100%</area>
                             <line color="#ff9147" width="4" alpha="255" />
                         </shape>
                         <shape name="highlightleft" />
@@ -2076,13 +2065,15 @@
                     </state>
                     <state name="disabled" from="warning">
                         <shape name="statusborder">
-                            <line color="#feffce" width="2" alpha="160" />
+                            <area>6,0,-6,100%</area>
+                            <line color="#feffce" width="4" alpha="160" />
                         </shape>
                         <shape name="highlightleft" />
                         <shape name="highlightright" />
                     </state>
                     <state name="running" from="warning">
                         <shape name="statusborder">
+                            <area>6,0,-6,100%</area>
                             <line color="#33bf33" width="4" alpha="255" />
                         </shape>
                         <shape name="highlightleft" />
@@ -2090,7 +2081,8 @@
                     </state>
                     <state name="marked" from="warning">
                         <shape name="statusborder">
-                            <line color="#FFFF00" width="3" alpha="160" />
+                            <area>6,0,-6,100%</area>
+                            <line color="#FFFF00" width="4" alpha="160" />
                         </shape>
                         <shape name="highlightleft" />
                         <shape name="highlightright" />
