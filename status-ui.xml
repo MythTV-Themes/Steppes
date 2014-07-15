@@ -218,6 +218,21 @@
         </textarea>
         <buttonlist name="currentrecording" from="nextrecording">
             <area>60,660,-60,340</area>
+             <statetype name="buttonitem">
+                 <state name="selectedinactive" from="active">
+                     <statetype name="status">
+                         <state name="default">
+                             <shape name="statusborder">
+                                 <area>6,0,-6,100%</area>
+                                 <line color="#33bf33" width="4" alpha="255" />
+                             </shape>
+                         </state>
+                     </statetype>
+                     <textarea name="card">
+                         <font>mysmallgreen</font>
+                     </textarea>
+                 </state>
+             </statetype>
         </buttonlist>
 
         <group name="conflics">
