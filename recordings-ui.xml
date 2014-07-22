@@ -605,7 +605,7 @@
          -> 'M'(enu) -> Recording Options -> Change Recording Metadata
     -->
     <window name="editmetadata">
-        <area>-1,-1,1000,900</area>
+        <area>50%-600,80,1200,900</area>
 
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>
@@ -619,7 +619,7 @@
         </textarea>
 
         <group name="helpgroup">
-            <area>70,70,-70,200</area>
+            <area>60,70,-60,160</area>
             <minsize>50,25</minsize>
 
             <shape name="msgShape">
@@ -635,14 +635,14 @@
                 <area>10,10,-10,-10</area>
                 <minsize shrink="short">50,25</minsize>
                 <multiline>yes</multiline>
-                <font>mysmall</font>
+                <font>myverysmall</font>
                 <align>center</align>
                 <value>Using the text areas below, you can change the recording title, subtitle, and description.\n\nOnce you have completed your modifications, click the "Save" button.</value>
             </textarea>
         </group>
 
         <group name="datagroup">
-            <area>60,300,-60,-100</area>
+            <area>60,260,-60,-100</area>
 
             <textarea name="title_label" from="labeltext">
                 <area>15,0,175,70</area>
@@ -650,7 +650,7 @@
             </textarea>
 
             <textedit name="title" from="basetextedit">
-                <position>200,0</position>
+                <area>200,0,-40,70</area>
             </textedit>
 
             <textarea name="subtitle_label" from="title_label">
@@ -658,7 +658,7 @@
                 <value>Subtitle:</value>
             </textarea>
 
-            <textedit name="subtitle" from="basetextedit">
+            <textedit name="subtitle" from="title">
                 <position>200,60</position>
             </textedit>
 
@@ -667,7 +667,7 @@
                 <value>Inetref:</value>
             </textarea>
 
-            <textedit name="inetref" from="basetextedit">
+            <textedit name="inetref" from="title">
                 <position>200,120</position>
             </textedit>
 
@@ -701,6 +701,10 @@
 
         <button name="ok" from="varbuttonright">
             <value>Save</value>
+        </button>
+
+        <button name="query_button" from="varbuttonleft">
+            <value>Search</value>
         </button>
 
     </window>
