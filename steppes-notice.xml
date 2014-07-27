@@ -20,7 +20,7 @@
 
         <textarea name="title" from="basetextarea">
             <area>20,40,-20,41</area>
-            <font>mylarge</font>
+            <font>mymedium</font>
             <scroll direction="horizontal" returnrate="140" returndelay="4" />
             <cutdown>no</cutdown>
         </textarea>

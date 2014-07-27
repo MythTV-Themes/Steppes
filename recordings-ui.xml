@@ -434,7 +434,12 @@
             <group name="PopupGroupMessage">
                 <shape name="textbackground" />
                 <textarea name="label" from="messagearea" />
-                <buttonlist name="groups" from="list" />
+                <buttonlist name="groups" from="basepopupbuttonlist">
+                    <area>45%+30,10,-10,-10</area>
+                    <minsize shrink="short" initiator="yes">100%,60</minsize>
+                    <align>top,hcenter</align>
+                    <wrapstyle>selection</wrapstyle>
+                </buttonlist>
             </group>
         </group>
     </window>
