@@ -1154,8 +1154,6 @@
         <statetype name="buttonitem">
             <area>0,0,100%,60</area>
             <state name="active">
-                <!-- Width needs to have <buttonarea>
-                     subtracted from it -->
                 <area>0,0,100%,60</area>
                 <shape name="background" from="basebuttonshape" />
                 <textarea name="buttontext" from="basewidgettext" />
@@ -2344,21 +2342,9 @@
             <minsize shrink="short">100%,60</minsize>
         </shape>
 
-<!--
-        <textarea name="title" from="basetextarea">
-            <area>20,30,-20,35</area>
-            <minsize shrink="short" >100%,60</minsize>
-            <multiline>no</multiline>
-            <align>top,hcenter</align>
-            <font>mymedium</font>
-        </textarea>
--->
-
         <group name="PopupGroupMessage">
-            <!-- set y=90 if using title -->
             <area>20,30,-20,-30</area>
             <minsize shrink="short">100%,60</minsize>
-
             <shape name="textbackground">
                 <area>15,0,45%+5,100%</area>
                 <minsize shrink="short">100%,60</minsize>
@@ -2377,12 +2363,14 @@
                 <scroll direction="vertical" rate="15" returnrate="45" startdelay="4" returndelay="4"/>
             </textarea>
 
+<!--  The name changes when inherited, so it cannot be defined here!
             <buttonlist name="list" from="basepopupbuttonlist">
                 <area>45%+30,10,-10,-10</area>
                 <minsize shrink="short" initiator="yes">100%,60</minsize>
                 <align>top,hcenter</align>
                 <wrapstyle>selection</wrapstyle>
             </buttonlist>
+-->
         </group>
     </group>
 
@@ -2398,7 +2386,17 @@
     -->
     <window name="MythPopupBox">
         <area>-1,-1,1300,960</area>
-        <group name="items" from="PopupGroup" />
+        <group name="items" from="PopupGroup">
+            <textarea name="title" />   <!-- unused? -->
+            <group name="PopupGroupMessage">
+                <buttonlist name="list" from="basepopupbuttonlist">
+                    <area>45%+30,10,-10,-10</area>
+                    <minsize shrink="short" initiator="yes">100%,60</minsize>
+                    <align>top,hcenter</align>
+                    <wrapstyle>selection</wrapstyle>
+                </buttonlist>
+            </group>
+        </group>
     </window>
 
     <!-- Home -> Manage Recordings -> Upcoming Recordings
@@ -2414,8 +2412,11 @@
                 <textarea name="messagearea">
                     <area>20,5,50%,-10</area>
                 </textarea>
-                <buttonlist name="list">
+                <buttonlist name="list" from="basepopupbuttonlist">
                     <area>50%+30,10,-10,-10</area>
+                    <minsize shrink="short" initiator="yes">100%,60</minsize>
+                    <align>top,hcenter</align>
+                    <wrapstyle>selection</wrapstyle>
                 </buttonlist>
             </group>
         </group>
