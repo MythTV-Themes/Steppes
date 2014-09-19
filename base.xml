@@ -711,53 +711,29 @@
         <area>0,0,100%,100%</area>
 
         <scrollbar name="scrollbar">
-            <area>0,20,100%,100%-20</area>
-            <hidedelay>3000</hidedelay>
+            <area>0,0,100%,100%</area>
+            <hidedelay>0</hidedelay>
             <layout>vertical</layout>
+
+            <shape name="shadow">
+                <area>0,0,100%,100%</area>
+                <type>roundbox</type>
+                <fill color="#000000" alpha="64" />
+                <cornerradius>10</cornerradius>
+            </shape>
             <shape name="bar">
-                <area>8,4,-8,-4</area>
+                <area>4,4,-4,-4</area>
                 <line color="#FFFFFF" alpha="255" width="2" />
                 <fill color="#000000" />
             </shape>
             <shape name="slider">
-                <area>5,0,-5,40</area>
+                <area>1,3,-1,40</area>
                 <type>roundbox</type>
                 <line color="#000000" alpha="255" width="2" />
-                <fill color="#AA90FF" />
+                <fill color="#BB90FF" />
                 <cornerradius>12</cornerradius>
             </shape>
         </scrollbar>
-
-        <statetype name="upscrollarrow">
-            <area>0,0,20,20</area>
-            <state type="off">
-                <!--
-                    <imagetype name="upoff">
-                    <filename>Images/uparrow-off.png</filename>
-                    </imagetype>
-                -->
-            </state>
-            <state type="full">
-                <imagetype name="upon">
-                    <filename>Images/uparrow-on.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-        <statetype name="downscrollarrow">
-            <area>0,100%-20,20,20</area>
-            <state type="off">
-                <!--
-                    <imagetype name="dnoff">
-                    <filename>Images/downarrow-off.png</filename>
-                    </imagetype>
-                -->
-            </state>
-            <state type="full">
-                <imagetype name="dnon">
-                    <filename>Images/downarrow-on.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
     </group>
 
     <!-- Base definition of checkbox -->
@@ -1991,38 +1967,10 @@
         <spacing>0</spacing>
 
         <showscrollbar>yes</showscrollbar>
-        <!--
-            <group name="bar" from="basescrollgroup">
-            <area>0, 255, 20, 340</area>
-            </group>
-        -->
-        <statetype name="upscrollarrow">
-            <area>0,100%-60,20,20</area>
-            <state type="off">
-                <imagetype name="upoff">
-                    <filename>Images/uparrow-off.png</filename>
-                </imagetype>
-            </state>
-            <state type="full">
-                <imagetype name="upon">
-                    <filename>Images/uparrow-on.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-        <statetype name="downscrollarrow">
-            <area>0,100%-30,20,20</area>
-            <state type="off">
-                <imagetype name="dnoff">
-                    <filename>Images/downarrow-off.png</filename>
-                </imagetype>
-            </state>
-            <state type="full">
-                <imagetype name="dnon">
-                    <filename>Images/downarrow-on.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
 
+        <group name="bar" from="basescrollgroup">
+            <area>10, 40, 12, -35</area>
+        </group>
 
         <statetype name="buttonitem">
             <area>0,0,100%,100%</area>
