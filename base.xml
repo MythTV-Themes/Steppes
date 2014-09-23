@@ -1586,17 +1586,17 @@
 
         <statetype name="buttonitem">
             <area>0,0,400,100%</area>
-            <minsize>40,100%</minsize>
+            <minsize>30,100%</minsize>
 
             <state name="inactive">
                 <area>0,0,100%,100%</area>
-                <minsize>40,100%</minsize>
+                <minsize>30,100%</minsize>
                 <group name="areagroup">
                     <area>0,7,100%,-7</area>
-                    <minsize>40,100%</minsize>
+                    <minsize>30,100%</minsize>
                     <shape name="recGroupShape">
                         <area>0,0,100%,100%</area>
-                        <minsize>40,100%</minsize>
+                        <minsize>30,100%</minsize>
                         <type>roundbox</type>
                         <line color="#00FFFF" alpha="96" width="3" />
                         <fill color="#000000" alpha="144" />
@@ -1604,7 +1604,7 @@
                     </shape>
                     <textarea name="buttontext">
                         <area>15,5,-15,-5</area>
-                        <minsize>40,100%</minsize>
+                        <minsize>30,100%</minsize>
                         <extraleading>4</extraleading>
                         <align>center</align>
                         <cutdown>yes</cutdown>
@@ -1620,15 +1620,14 @@
 
             <state name="selectedinactive" from="inactive">
                 <area>0,0,100%,100%</area>
-                <minsize>40,100%</minsize>
+                <minsize>30,100%</minsize>
                 <group name="areagroup">
                     <area>0,2,100%,-2</area>
-                    <minsize>40,100%</minsize>
+                    <minsize>30,100%</minsize>
                     <shape name="recGroupShape">
                         <area>0,4,100%,-5</area>
-                        <minsize>40,100%</minsize>
+                        <minsize>30,100%</minsize>
                         <type>roundbox</type>
-                        <cornerradius>350</cornerradius>
                         <line color="#50EFDF" alpha="250" width="4" />
                         <fill color="#000000" alpha="160" />
                     </shape>
