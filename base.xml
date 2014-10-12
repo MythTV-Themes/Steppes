@@ -1255,93 +1255,96 @@
         <align>center</align>
         <arrange>stack</arrange>
         <layout>grid</layout>
-        <spacing>10</spacing>
+        <spacing>2</spacing>
         <scrollstyle>free</scrollstyle>
         <wrapstyle>flowing</wrapstyle>
 
-        <buttonarea>0,0,100%,100%-35</buttonarea>
+        <buttonarea>30,0,100%,100%-35</buttonarea>
+
         <statetype name="buttonitem">
             <area>0,0,100%,100%</area>
-            <state name="inactive">
-                <area>0,0,300,300</area>
 
-                <!-- Item background -->
+            <state name="selectedactive">
+                <area>-15,-15,330,330</area>
+
                 <shape name="statusborder">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
-                    <line color="#00FFFF" width="1" alpha="160" />
-                    <fill color="#000000" alpha="144" />
+                    <fill color="#555555" alpha="255" />
                     <cornerradius>10</cornerradius>
                 </shape>
 
-                <imagetype name="thumbimage1">
-                    <area>10,10,100,100</area>
-                    <preserveaspect>false</preserveaspect>
-                </imagetype>
-                <imagetype name="thumbimage2">
-                    <area>110,10,100,100</area>
-                    <preserveaspect>false</preserveaspect>
-                </imagetype>
-                <imagetype name="thumbimage3">
-                    <area>10,110,100,100</area>
-                    <preserveaspect>false</preserveaspect>
-                </imagetype>
-                <imagetype name="thumbimage4">
-                    <area>110,110,100,100</area>
-                    <preserveaspect>false</preserveaspect>
-                </imagetype>
-
-
                 <imagetype name="buttonimage">
-                    <area>12,12,278,278</area>
+                    <area>8,8,314,314</area>
                     <filename />
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
 
-                <statetype name="nodetype">
-                    <position>100%-85,5</position>
-                    <state name="subfolder">
-                        <imagetype name="icon">
-                            <area>0,0,80,80</area>
-                            <filename>Images/Graphite/folderclosed.png</filename>
-                            <preserveaspect>yes</preserveaspect>
-                        </imagetype>
-                    </state>
-                    <state name="upfolder">
-                        <imagetype name="icon">
-                            <area>0,0,80,80</area>
-                            <filename>Images/Graphite/mv_gallery_dir_up.png</filename>
-                            <preserveaspect>yes</preserveaspect>
-                        </imagetype>
-                    </state>
-                </statetype>
+                <group name="contents">
+                    <area>15,15,300,300</area>
 
-                <!-- show how many images / directories are in this directory -->
-                <textarea name="childcount" from="basetextarea">
-                    <area>100%-103,13,80,80</area>
-                    <font>myverysmallyellow</font>
-                    <align>right,vcenter</align>
-                </textarea>
+                    <imagetype name="thumbimage1">
+                        <area>10,10,100,100</area>
+                        <preserveaspect>false</preserveaspect>
+                    </imagetype>
+                    <imagetype name="thumbimage2">
+                        <area>110,10,100,100</area>
+                        <preserveaspect>false</preserveaspect>
+                    </imagetype>
+                    <imagetype name="thumbimage3">
+                        <area>10,110,100,100</area>
+                        <preserveaspect>false</preserveaspect>
+                    </imagetype>
+                    <imagetype name="thumbimage4">
+                        <area>110,110,100,100</area>
+                        <preserveaspect>false</preserveaspect>
+                    </imagetype>
 
-                <statetype name="buttoncheck" from="selectedbox">
-                    <position>3,3</position>
-                    <state type="full" from="yes" />
-                </statetype>
+                    <statetype name="nodetype">
+                        <position>100%-85,5</position>
+                        <state name="subfolder">
+                            <imagetype name="icon">
+                                <area>0,0,80,80</area>
+                                <filename>Images/Graphite/folderclosed.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <area>0,0,80,80</area>
+                                <filename>Images/Graphite/mv_gallery_dir_up.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                    </statetype>
 
-                <!-- Shows an indication if a file or folder is hidden
-                     or not. It will be marked and darkened -->
-                <statetype name="buttonstate">
-                    <position>0,0</position>
-                    <state name="hidden">
-                        <shape name="hidden_background_shape">
-                            <area>1,1,162,122</area>
-                            <type>box</type>
-                            <line color="#000000" alpha="0" width="1" />
-                            <fill color="#000000" alpha="210" />
-                        </shape>
-                    </state>
-                    <state name="visible" />
-                </statetype>
+                    <!-- show how many images / directories are in this directory -->
+                    <textarea name="childcount" from="basetextarea">
+                        <area>100%-103,13,80,80</area>
+                        <font>myverysmallyellow</font>
+                        <align>right,vcenter</align>
+                    </textarea>
+
+                    <statetype name="buttoncheck" from="selectedbox">
+                        <position>3,3</position>
+                        <state type="full" from="yes" />
+                    </statetype>
+
+                    <!-- Shows an indication if a file or folder is hidden
+                         or not. It will be marked and darkened -->
+                    <statetype name="buttonstate">
+                        <position>0,0</position>
+                        <state name="hidden">
+                            <shape name="hidden_background_shape">
+                                <area>1,1,162,122</area>
+                                <type>box</type>
+                                <line color="#000000" alpha="0" width="1" />
+                                <fill color="#000000" alpha="210" />
+                            </shape>
+                        </state>
+                        <state name="visible" />
+                    </statetype>
+                </group> <!-- contents -->
 
                 <group name="textgroup">
                     <area>10,10,-5,-5</area>
@@ -1363,53 +1366,85 @@
                         <multiline>yes</multiline>
                     </textarea>
                 </group>
+
+                <shape name="highlighttop">
+                    <area>22,0,-22,4</area>
+                    <minsize>10,9</minsize>
+                    <type>ellipse</type>
+                    <fill color="#00FFFF" alpha="250" />
+                </shape>
+                <shape name="highlightbottom">
+                    <area>22,100%-4,-22,4</area>
+                    <minsize>10,9</minsize>
+                    <type>ellipse</type>
+                    <fill color="#00FFFF" alpha="250" />
+                </shape>
+                <shape name="highlightleft">
+                    <area>0,20,4,-20</area>
+                    <minsize>100%,20</minsize>
+                    <type>ellipse</type>
+                    <fill color="#00FFFF" alpha="250" />
+                </shape>
+                <shape name="highlightright">
+                    <area>100%-4,20,4,-20</area>
+                    <minsize>100%,20</minsize>
+                    <type>ellipse</type>
+                    <fill color="#00FFFF" alpha="250" />
+                </shape>
+            </state>
+
+            <state name="selectedinactive" from="selectedactive">
+                <shape name="statusborder">
+                    <line color="#00FFFF" width="2" alpha="224" />
+                    <fill color="#555555" alpha="255" />
+                </shape>
+                <imagetype name="buttonimage" />
+                <statetype name="nodetype" />
+
+                <shape name="highlighttop">
+                    <area>0,0,0,0</area>
+                </shape>
+                <shape name="highlightbottom">
+                    <area>0,0,0,0</area>
+                </shape>
+                <shape name="highlightleft">
+                    <area>0,0,0,0</area>
+                </shape>
+                <shape name="highlightright">
+                    <area>0,0,0,0</area>
+                </shape>
+            </state>
+
+
+            <state name="inactive" from="selectedinactive">
+                <area>0,0,300,300</area>
+
+                <!-- Item background -->
+                <shape name="statusborder">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <line color="#00FFFF" width="1" alpha="224" />
+                    <fill color="#000000" alpha="192" />
+                    <cornerradius>10</cornerradius>
+                </shape>
+
+                <imagetype name="buttonimage">
+                    <area>12,12,278,278</area>
+                    <filename />
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+
+                <group name="contents">
+                    <area>0,0,100%,100%</area>
+                </group>
             </state> <!-- inactive -->
 
             <state name="active" from="inactive" />
 
-            <state name="selectedinactive" from="active">
-                <area>-20,-20,340,340</area>
-                <shape name="statusborder">
-                    <area>0,0,100%,100%</area>
-                    <type>roundbox</type>
-                    <line color="#00FFFF" width="1" alpha="160" />
-                    <fill color="#000000" alpha="200" />
-                    <cornerradius>10</cornerradius>
-                </shape>
-
-                <statetype name="nodetype">
-                    <position>100%-90,10</position>
-                    <state name="subfolder">
-                        <imagetype name="icon">
-                            <area>0,0,80,80</area>
-                            <filename>Images/Graphite/folderopen.png</filename>
-                        </imagetype>
-                    </state>
-                    <state name="upfolder" from="subfolder">
-                        <imagetype name="icon">
-                            <filename>Images/Graphite/mv_gallery_dir_up_open.png</filename>
-                        </imagetype>
-                    </state>
-                </statetype>
-
-            </state>
-
-            <state name="selectedactive" from="selectedinactive">
-                <shape name="statusborder">
-                    <line color="#00FFFF" width="5" alpha="160" />
-                    <fill color="#000000" alpha="240" />
-                </shape>
-                <!--
-                    <group name="imagegroup" />
-                -->
-                <imagetype name="buttonimage" />
-                <statetype name="nodetype" />
-            </state>
-
             <state name="disabled" from="inactive">
                 <shape name="statusborder">
                     <line color="#00FFFF" width="1" alpha="64" />
-                    <fill color="#000000" alpha="64" />
+                    <fill color="#000000" alpha="96" />
                 </shape>
                 <group name="textgroup">
                     <shape name="shadow">
@@ -1423,24 +1458,10 @@
             </state>
 
         </statetype>
-        <statetype name="upscrollarrow">
-            <area>50%-18,100%-15,15,15</area>
-            <state type="off" />
-            <state type="full">
-                <imagetype name="upon">
-                    <filename>Images/uparrow-on.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-        <statetype name="downscrollarrow">
-            <area>50%+2,100%-15,15,15</area>
-            <state type="off" />
-            <state type="full">
-                <imagetype name="dnon">
-                    <filename>Images/downarrow-on.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
+
+        <group name="bar" from="basescrollgroup">
+            <area>0, 30, 12, -60</area>
+        </group>
     </buttonlist>  <!-- name="basegridlist" -->
 
     <!-- Base definition of a progressbar -->
@@ -1509,7 +1530,7 @@
             -->
             <type>roundbox</type>
             <cornerradius>5</cornerradius>
-            <fill color="#000000" alpha="160" />
+            <fill color="#000000" alpha="192" />
             <line color="#FFFFFF" alpha="160" width="1" />
         </shape>
 
@@ -1821,11 +1842,14 @@
                 <line color="#00FFFF" alpha="160" width="1" />
             </shape>
             <textarea name="description" from="msgText">
-                <area>10,10,-10,-42</area>
-                <font>mysmall</font>
+                <area>10,10,-10,-10</area>
+                <font>myverysmall</font>
                 <align>left,top</align>
-                <template>%|RATING| %%|(STARS|) %%DESCRIPTION%</template>
+                <template>%|RATING| %%|(STARS|) %%DESCRIPTION%%\n\n    Part |PARTNUMBER| of %%PARTTOTAL%</template>
+                <scroll direction="vertical" rate="7" returnrate="105"
+                        startdelay="10" returndelay="10"/>
             </textarea>
+<!--
             <textarea name="syndicatedepisode" depends="!s00e00">
                 <area>20,100%-40,-210,32</area>
                 <font>mylabelfont</font>
@@ -1838,6 +1862,7 @@
                 <font>mylabelfont</font>
                 <template>%Part |PARTNUMBER| of %%PARTTOTAL%</template>
             </textarea>
+-->
         </group>
     </group>
 
