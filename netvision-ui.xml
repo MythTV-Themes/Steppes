@@ -820,8 +820,154 @@
             </group>
         </group>
 
+        <group name="progdetails" from="guideprogdetails">
+            <group name="wheregroup">
+                <textarea name="s##e##">
+                    <area>10,40,190,40</area>
+                    <align>left,vcenter</align>
+                    <font>myverysmallnarrow</font>
+                </textarea>
+                <textarea name="date">
+                    <font>myverysmallnarrow</font>
+                    <align>right,vcenter</align>
+                    <area>200,80,-10,40</area>
+                    <template>%1</template>
+                </textarea>
+                <textarea name="length">
+                    <area>5,80,90,40</area>
+                    <align>vcenter</align>
+                    <font>mysverymallnarrow</font>
+                </textarea>
+
+                <textarea name="filesize_str">
+                    <area>190,5,-10,40</area>
+                    <font>myverysmallnarrow</font>
+                    <align>right,vcenter</align>
+                </textarea>
+                <textarea name="rating">
+                    <area>200,40,-10,40</area>
+                    <font>myverysmallnarrow</font>
+                    <align>right,vcenter</align>
+                    <template>User Rating: %1</template>
+                </textarea>
+
+<!--
+                <statetype name="videolevel" from="basevideolevel">
+                    <position>10,45</position>
+                </statetype>
+-->
+                <textarea name="resolution">
+                    <area>10,5,180,40</area>
+                    <align>vcenter</align>
+                    <font>myverysmallnarrow</font>
+                </textarea>
+            </group>
+            <group name="descgroup">
+                <textarea name="description">
+                    <template>%|RATING| %%|(STARS|) %%DESCRIPTION%%\n\nPart |PARTNUMBER| of %%PARTTOTAL%%\n\nAuthor: |AUTHOR%</template>
+                </textarea>
+            </group>
+        </group>
+
+        <buttonlist name="videos" from="basegridlist">
+            <area>520,40,-30,-70</area>
+
+            <statetype name="buttonitem">
+                <area>0,0,100%,100%</area>
+
+                <state name="selectedactive">
+                    <area>-15,-15,360,340</area>
+
+                    <imagetype name="buttonimage">
+                        <area>8,8,344,324</area>
+                    </imagetype>
+
+                    <group name="contents">
+                        <area>15,15,330,330</area>
+
+                        <statetype name="watchedstate">
+                            <area>3,3,28,14</area>
+                            <state name="yes">
+                                <imagetype name="yes">
+                                    <filename>Images/icons/watched.png</filename>
+                                </imagetype>
+                            </state>
+                            <state name="no">
+                                <imagetype name="blank">
+                                    <filename>Images/icons/watched.png</filename>
+                                    <alpha>64</alpha>
+                                </imagetype>
+                            </state>
+                        </statetype>
+                    </group>
+                </state>
+
+                <state name="selectedinactive" from="selectedactive">
+                    <shape name="statusborder">
+                        <line color="#00FFFF" width="2" alpha="160" />
+                        <fill color="#555555" alpha="255" />
+                    </shape>
+                    <imagetype name="buttonimage" />
+                    <statetype name="nodetype" />
+
+                    <shape name="highlighttop">
+                        <area>0,0,0,0</area>
+                    </shape>
+                    <shape name="highlightbottom">
+                        <area>0,0,0,0</area>
+                    </shape>
+                    <shape name="highlightleft">
+                        <area>0,0,0,0</area>
+                    </shape>
+                    <shape name="highlightright">
+                        <area>0,0,0,0</area>
+                    </shape>
+                </state>
+
+
+                <state name="inactive" from="selectedinactive">
+                    <area>0,0,330,310</area>
+
+                    <!-- Item background -->
+                    <shape name="statusborder">
+                        <area>0,0,100%,100%</area>
+                        <type>roundbox</type>
+                        <line color="#00FFFF" width="1" alpha="160" />
+                        <fill color="#000000" alpha="224" />
+                        <cornerradius>10</cornerradius>
+                    </shape>
+
+                    <imagetype name="buttonimage">
+                        <area>12,12,308,288</area>
+                    </imagetype>
+
+                    <group name="contents">
+                        <area>0,0,100%,100%</area>
+                    </group>
+                </state> <!-- inactive -->
+
+                <state name="active" from="inactive" />
+
+                <state name="disabled" from="inactive">
+                    <shape name="statusborder">
+                        <line color="#00FFFF" width="1" alpha="64" />
+                        <fill color="#000000" alpha="96" />
+                    </shape>
+                    <group name="textgroup">
+                        <shape name="shadow">
+                            <fill color="#000000" alpha="64" />
+                        </shape>
+
+                        <textarea name="buttontext" from="basetextarea">
+                            <font>myverysmalllightgrey</font>
+                        </textarea>
+                    </group>
+                </state>
+            </statetype>
+        </buttonlist>
+
         <textarea name="nosites">
-            <area>20,25%,-20,-400</area>
+            <area>520,40,-30,-70</area>
             <font>mylargebold</font>
             <multiline>yes</multiline>
             <cutdown>no</cutdown>
@@ -829,103 +975,7 @@
             <value>You haven't added any Sites/RSS Feeds yet!  To add a site, press MENU, then choose "Scan/Manage Subscriptions," then "Manage Site Subscriptions."</value>
         </textarea>
 
-        <buttonlist name="videos" from="basegridlist">
-            <area>30,10,-30,-100</area>
-            <scrollstyle>groupcenter</scrollstyle>
-            <wrapstyle>items</wrapstyle>
-
-            <statetype name="buttonitem">
-                <state name="selectedinactive" from="active">
-
-                    <area>-140,-140,560,560</area>
-
-                    <shape name="statusborder" />
-
-                    <group name="imagegroup">
-                        <area>15,15,284,270</area>
-                        <minsize>0,0</minsize>
-                        <imagetype name="buttonimage">
-                            <area>4,4,-4,-4</area>
-                            <minsize>0,0</minsize>
-                            <filename />
-                            <preserveaspect>true</preserveaspect>
-                        </imagetype>
-                    </group>
-
-                    <statetype name="nodetype">
-                        <position>100%-100,10</position>
-                    </statetype>
-
-                    <textarea name="date" from="basetextarea">
-                        <area>300,50,-15,35</area>
-                        <font>mysmallnarrow</font>
-                        <align>right</align>
-                    </textarea>
-
-                    <textarea name="filesize_str" from="date">
-                        <position>300,85</position>
-                    </textarea>
-
-                    <textarea name="resolution" from="date">
-                        <position>300,120</position>
-                    </textarea>
-
-                    <textarea name="length" from="date">
-                        <position>300,155</position>
-                    </textarea>
-
-                    <textarea name="s##e##" from="date">
-                        <position>300,190</position>
-                    </textarea>
-
-                    <textarea name="rating" from="date">
-                        <area>300,225,-15,70</area>
-                        <multiline>yes</multiline>
-                        <template>User Rating: %1</template>
-                    </textarea>
-
-                    <group name="textgroup">
-                        <area>0,0,0,0</area>
-                        <shape name="shadow">
-                            <area>0,0,0,0</area>
-                        </shape>
-                        <textarea name="buttontext">
-                            <area>0,0,0,0</area>
-                        </textarea>
-                    </group>
-
-                    <textarea name="title">
-                        <area>15,285,-15,125</area>
-                        <multiline>yes</multiline>
-                        <font>mymediumlightgrey</font>
-                    </textarea>
-
-                    <textarea name="description">
-                        <area>15,415,-15,-45</area>
-                        <multiline>yes</multiline>
-                        <font>myverysmallnarrow</font>
-                    </textarea>
-
-                    <textarea name="author" from="date">
-                        <area>15,100%-45,-15,35</area>
-                        <align>top,hcenter</align>
-                        <template>By: %1</template>
-                    </textarea>
-
-                </state>
-
-                <state name="selectedactive" from="selectedinactive">
-                    <shape name="statusborder">
-                        <line color="#00FFFF" width="5" alpha="160" />
-                        <fill color="#000000" alpha="240" />
-                    </shape>
-
-                    <group name="imagegroup" />
-                    <statetype name="nodetype" />
-                </state>
-
-            </statetype>
-        </buttonlist>
     </window>
+
 
 </mythuitheme>

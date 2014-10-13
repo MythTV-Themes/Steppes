@@ -1783,7 +1783,7 @@
     </buttonlist>
 
     <group name="guideprogdetails">
-        <area>40,35,460,959</area>
+        <area>40,35,460,970</area>
 
         <group name="titlegroup" from="baseMsgGroup">
             <area>0,0,100%,135</area>
@@ -1845,7 +1845,7 @@
                 <area>10,10,-10,-10</area>
                 <font>myverysmall</font>
                 <align>left,top</align>
-                <template>%|RATING| %%|(STARS|) %%DESCRIPTION%%\n\n    Part |PARTNUMBER| of %%PARTTOTAL%</template>
+                <template>%|RATING| %%|(STARS|) %%DESCRIPTION%%\n\nPart |PARTNUMBER| of %%PARTTOTAL%</template>
                 <scroll direction="vertical" rate="7" returnrate="105"
                         startdelay="10" returndelay="10"/>
             </textarea>
