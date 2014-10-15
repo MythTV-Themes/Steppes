@@ -695,19 +695,46 @@
                         <area>15,15,330,330</area>
 
                         <statetype name="watchedstate">
-                            <area>3,3,28,14</area>
                             <state name="yes">
+                                <area>290,0,34,34</area>
                                 <imagetype name="yes">
+                                    <area>0,0,100%,100%</area>
                                     <filename>Images/icons/watched.png</filename>
+                                    <preserveaspect>yes</preserveaspect>
                                 </imagetype>
                             </state>
                             <state name="no">
+                                <area>290,0,34,34</area>
                                 <imagetype name="blank">
+                                    <area>0,0,100%,100%</area>
                                     <filename>Images/icons/watched.png</filename>
+                                    <preserveaspect>yes</preserveaspect>
                                     <alpha>64</alpha>
                                 </imagetype>
                             </state>
                         </statetype>
+                    </group>
+
+                    <group name="episodegroup">
+                        <area>5,5,200,50</area>
+                        <minsize vanish="true">20,20</minsize>
+
+                        <shape name="shadow">
+                            <area>5,5,-5,-5</area>
+                            <minsize vanish="true">5,5</minsize>
+                            <type>roundbox</type>
+                            <cornerradius>5</cornerradius>
+                            <fill color="#000000" alpha="160" />
+                        </shape>
+
+                        <textarea name="s##e##" from="basetextarea">
+                            <area>10,5,-10,-5</area>
+                            <align>top,left</align>
+                            <minsize shrink="short"
+                                     vanish="true">5,5</minsize>
+                            <font>myverysmall</font>
+                            <multiline>yes</multiline>
+                        </textarea>
                     </group>
                 </state>
 

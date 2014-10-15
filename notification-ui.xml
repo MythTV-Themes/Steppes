@@ -4,7 +4,7 @@
 <mythuitheme>
 
     <window name="notification" include="steppes-notice.xml">
-        <area>100%-850,20,-50,200</area>
+        <area>100%-950,20,-50,200</area>
 
         <shape name="background" from="basewidgetshape">
             <area>0,0,100%,100%</area>
