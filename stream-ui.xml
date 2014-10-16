@@ -110,6 +110,58 @@
                             <cutdown>no</cutdown>
                             <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         </textarea>
+                        <statetype name="playstate">
+                            <area>0,0,100%,100%</area>
+                            <state name="default">
+                                <area>0,0,100%,100%</area>
+                                <shape name="highlightleft">
+                                    <area>0,20,4,-20</area>
+                                    <minsize>100%,20</minsize>
+                                    <type>ellipse</type>
+                                    <fill color="#00FFFF" alpha="160" />
+                                </shape>
+                                <shape name="highlightright">
+                                    <area>100%-4,20,4,-20</area>
+                                    <minsize>100%,20</minsize>
+                                    <type>ellipse</type>
+                                    <fill color="#00FFFF" alpha="160" />
+                                </shape>
+                            </state>
+                            <state name="normal" from="default" />
+                            <state name="playing" from="default">
+                                <shape name="statusborder">
+                                    <line color="#33bf33" width="3" alpha="255" />
+                                </shape>
+                                <shape name="highlightleft">
+                                    <fill color="#33bf33" alpha="255" />
+                                </shape>
+                                <shape name="highlightright">
+                                    <fill color="#33bf33" alpha="255" />
+                                </shape>
+                            </state>
+                            <state name="paused" from="playing">
+                                <shape name="statusborder">
+                                    <line color="#ff9147" width="3" alpha="255" />
+                                </shape>
+                                <shape name="highlightleft">
+                                    <fill color="#ff9147" alpha="255" />
+                                </shape>
+                                <shape name="highlightright">
+                                    <fill color="#ff9147" alpha="255" />
+                                </shape>
+                            </state>
+                            <state name="stopped" from="playing">
+                                <shape name="statusborder">
+                                    <line color="#e43e3e" width="3" alpha="255" />
+                                </shape>
+                                <shape name="highlightleft">
+                                    <fill color="#e43e3e" alpha="255" />
+                                </shape>
+                                <shape name="highlightright">
+                                    <fill color="#e43e3e" alpha="255" />
+                                </shape>
+                            </state>
+                        </statetype>
                     </state>
 
                     <state name="selectedactive" from="selectedinactive">
@@ -123,18 +175,6 @@
                                     <line color="#00FFFF" width="4" alpha="160" />
                                     <fill color="#000000" alpha="150" />
                                     <cornerradius>10</cornerradius>
-                                </shape>
-                                <shape name="highlightleft">
-                                    <area>0,20,4,-20</area>
-                                    <minsize>100%,20</minsize>
-                                    <type>ellipse</type>
-                                    <fill color="#00FFFF" alpha="160" />
-                                </shape>
-                                <shape name="highlightright">
-                                    <area>100%-4,20,4,-20</area>
-                                    <minsize>100%,20</minsize>
-                                    <type>ellipse</type>
-                                    <fill color="#00FFFF" alpha="160" />
                                 </shape>
                             </state>
                             <state name="normal" from="default" />
@@ -305,6 +345,67 @@
                             <cutdown>no</cutdown>
                             <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         </textarea>
+                        <statetype name="playstate">
+                            <area>0,0,100%,100%</area>
+                            <state name="default">
+                                <area>0,0,100%,100%</area>
+                                <shape name="statusborder">
+                                    <area>9,0,-9,100%</area>
+                                    <type>roundbox</type>
+                                    <line color="#00FFFF" width="1" alpha="160" />
+                                    <fill color="#000000" alpha="150" />
+                                    <cornerradius>10</cornerradius>
+                                </shape>
+                                <shape name="highlightleft">
+                                    <area>0,20,4,-20</area>
+                                    <minsize>100%,20</minsize>
+                                    <type>ellipse</type>
+                                    <fill color="#00FFFF" alpha="160" />
+                                </shape>
+                                <shape name="highlightright">
+                                    <area>100%-4,20,4,-20</area>
+                                    <minsize>100%,20</minsize>
+                                    <type>ellipse</type>
+                                    <fill color="#00FFFF" alpha="160" />
+                                </shape>
+
+                            </state>
+                            <state name="normal" from="default" />
+                            <state name="playing" from="default">
+                                <shape name="statusborder">
+                                    <area>7,0,-7,100%</area>
+                                    <line color="#33bf33" width="3" alpha="255" />
+                                </shape>
+                                <shape name="highlightleft">
+                                    <fill color="#33bf33" alpha="255" />
+                                </shape>
+                                <shape name="highlightright">
+                                    <fill color="#33bf33" alpha="255" />
+                                </shape>
+                            </state>
+                            <state name="paused" from="playing">
+                                <shape name="statusborder">
+                                    <line color="#ff9147" width="3" alpha="255" />
+                                </shape>
+                                <shape name="highlightleft">
+                                    <fill color="#ff9147" alpha="255" />
+                                </shape>
+                                <shape name="highlightright">
+                                    <fill color="#ff9147" alpha="255" />
+                                </shape>
+                            </state>
+                            <state name="stopped" from="playing">
+                                <shape name="statusborder">
+                                    <line color="#e43e3e" width="3" alpha="255" />
+                                </shape>
+                                <shape name="highlightleft">
+                                    <fill color="#e43e3e" alpha="255" />
+                                </shape>
+                                <shape name="highlightright">
+                                    <fill color="#e43e3e" alpha="255" />
+                                </shape>
+                            </state>
+                        </statetype>
                     </state>
 
                     <state name="selectedactive" from="selectedinactive">
