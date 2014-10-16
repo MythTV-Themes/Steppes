@@ -1368,25 +1368,25 @@
                 </group>
 
                 <shape name="highlighttop">
-                    <area>22,0,-22,4</area>
+                    <area>22,1,-22,4</area>
                     <minsize>10,9</minsize>
                     <type>ellipse</type>
                     <fill color="#00FFFF" alpha="250" />
                 </shape>
                 <shape name="highlightbottom">
-                    <area>22,100%-4,-22,4</area>
+                    <area>22,100%-5,-22,4</area>
                     <minsize>10,9</minsize>
                     <type>ellipse</type>
                     <fill color="#00FFFF" alpha="250" />
                 </shape>
                 <shape name="highlightleft">
-                    <area>0,20,4,-20</area>
+                    <area>1,20,4,-20</area>
                     <minsize>100%,20</minsize>
                     <type>ellipse</type>
                     <fill color="#00FFFF" alpha="250" />
                 </shape>
                 <shape name="highlightright">
-                    <area>100%-4,20,4,-20</area>
+                    <area>100%-5,20,4,-20</area>
                     <minsize>100%,20</minsize>
                     <type>ellipse</type>
                     <fill color="#00FFFF" alpha="250" />
