@@ -1667,7 +1667,6 @@
             </state>
 
             <state name="selectedactive" from="selectedinactive" />
-
         </statetype>
 
         <statetype name="upscrollarrow">
@@ -1735,7 +1734,14 @@
                 <textarea name="buttontext">
                     <area>12,3,-12,-3</area>
                 </textarea>
+            </state>
 
+            <state name="selectedactive" from="selectedinactive">
+                <shape name="groupBorder">
+                    <area>6,0,-6,100%</area>
+                    <type>roundbox</type>
+                    <line color="#50EFDF" alpha="250" width="4" />
+                </shape>
                 <shape name="highlightleft">
                     <area>0,20,4,-20</area>
                     <minsize>100%,20</minsize>
@@ -1747,14 +1753,6 @@
                     <minsize>100%,20</minsize>
                     <type>ellipse</type>
                     <fill color="#00FFFF" alpha="160" />
-                </shape>
-            </state>
-
-            <state name="selectedactive" from="selectedinactive">
-                <shape name="groupBorder">
-                    <area>6,0,-6,100%</area>
-                    <type>roundbox</type>
-                    <line color="#50EFDF" alpha="250" width="4" />
                 </shape>
             </state>
         </statetype>
