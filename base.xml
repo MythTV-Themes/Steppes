@@ -2484,17 +2484,27 @@
          -> Perform Query <with invalid info>
     -->
     <window name="MythConfirmationDialog">
-        <area>-1,-1,800,500</area>
-
+        <area>-1,-1,1300,500</area>
+<!--
+        <minsize shrink="short">200,200</minsize>
+-->
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>
+<!--
+            <minsize shrink="short">200,200</minsize>
+-->
         </shape>
 
         <textarea name="message" from="basetextarea">
             <area>30,30,-30,-100</area>
+<!--
+            <minsize shrink="short">200,200</minsize>
+-->
             <align>allcenter</align>
             <multiline>yes</multiline>
             <cutdown>no</cutdown>
+            <scroll direction="vertical" rate="10" returnrate="70"
+                    startdelay="7" returndelay="7"/>
         </textarea>
 
         <button name="ok" from="varbuttonright">
