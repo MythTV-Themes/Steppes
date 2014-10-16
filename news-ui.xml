@@ -21,42 +21,33 @@
             <buttonarea>25,0,100%,100%</buttonarea>
 
             <statetype name="buttonitem">
-                <area>0,0,1300,700</area>
+                <area>0,0,100%,100%</area>
 
                 <state name="inactive">
-                    <area>0,0,460,85</area>
+                    <area>20,0,420,85</area>
+                </state>
 
-                    <shape name="groupBorder">
-                        <area>5,0,-5,100%</area>
-                    </shape>
-                    <textarea name="buttontext">
-                        <area>20,5,-20,-5</area>
-                    </textarea>
+                <state name="selectedinactive">
+                    <area>0,0,460,85</area>
                 </state>
 
                 <state name="active" from="inactive">
-                    <area>0,0,100%,55</area>
-                </state>
-
-                <state name="selectedinactive" from="inactive">
+                    <area>10,0,-10,55</area>
                     <shape name="groupBorder">
-                        <fill style="gradient">
-                            <gradient start="#603060" end="#000000" alpha="255"
-                                      direction="vertical"  />
-                        </fill>
+                        <area>0,0,100%,100%</area>
                     </shape>
                 </state>
 
-                <state name="selectedactive" from="selectedinactive">
+                <state name="selectedactive" from="active">
                     <area>0,0,100%,55</area>
                     <shape name="groupBorder">
-                        <area>0,0,100%,100%</area>
+                        <area>6,0,-6,100%</area>
                         <type>roundbox</type>
                         <fill style="gradient">
                             <gradient start="#603060" end="#000000" alpha="255"
                                       direction="vertical"  />
                         </fill>
-                        <line color="#50EFDF" alpha="240" width="5" />
+                        <line color="#50EFDF" alpha="240" width="4" />
                         <cornerradius>10</cornerradius>
                     </shape>
                 </state>
@@ -81,7 +72,7 @@
                     <area>100%-460,0,460,85</area>
                 </state>
                 <state name="selectedinactive">
-                    <area>100%-460,0,460,85</area>
+                    <area>100%-470,0,480,85</area>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
@@ -154,7 +145,7 @@
         </group>
 
         <group name="dialog">
-            <area>50%-670,120,1240,500</area>
+            <area>50%-670,120,1340,500</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
@@ -165,7 +156,7 @@
             </textarea>
 
             <textedit name="name" from="basewidetextedit">
-                <area>270,50,800,70</area>
+                <area>270,50,-60,70</area>
             </textedit>
 
             <textarea name="urllabel" from="namelabel">
