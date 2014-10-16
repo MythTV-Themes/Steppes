@@ -67,6 +67,13 @@
                     </textarea>
                 </state>
             </statetype>
+            <!-- loosen up the scroll arrows -->
+            <statetype name="upscrollarrow">
+                <position>100%-20,100%-110</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>100%-20,100%-80</position>
+            </statetype>
         </buttonlist>
 
     </window>
