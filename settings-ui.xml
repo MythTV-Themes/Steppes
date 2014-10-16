@@ -142,13 +142,15 @@
                                 <fill color="#000000" alpha="150" />
                                 <cornerradius>10</cornerradius>
                             </shape>
+                            <shape name="highlightleft" />
+                            <shape name="highlightright" />
                         </state>
                         <state name="normal" from="default" />
                         <state name="uptodate" from="default" />
                         <state name="updateavailable" from="default">
                             <shape name="statusborder">
                                 <area>16,0,-16,100%</area>
-                                <line color="#ff9147" width="4" alpha="255" />
+                                <line color="#ff9147" width="3" alpha="255" />
                             </shape>
                         </state>
                     </statetype>
@@ -159,9 +161,9 @@
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>190,5,-20,-5</area>
+                        <area>190,5,-26,-5</area>
                         <align>left,vcenter</align>
-                        <font>mymedium</font>
+                        <font>mysmall</font>
                         <multiline>yes</multiline>
                         <alpha>210</alpha>
                     </textarea>
@@ -176,18 +178,36 @@
                         <state name="default">
                             <area>0,0,100%,100%</area>
                             <shape name="statusborder">
-                                <area>0,0,100%,100%</area>
+                                <area>6,0,-6,100%</area>
                                 <type>roundbox</type>
-                                <line color="#00FFFF" width="7" alpha="160" />
+                                <line color="#00FFFF" width="4" alpha="160" />
                                 <fill color="#000000" alpha="150" />
                                 <cornerradius>10</cornerradius>
+                            </shape>
+                            <shape name="highlightleft">
+                                <area>0,20,4,-20</area>
+                                <minsize>100%,20</minsize>
+                                <type>ellipse</type>
+                                <fill color="#00FFFF" alpha="160" />
+                            </shape>
+                            <shape name="highlightright">
+                                <area>100%-4,20,4,-20</area>
+                                <minsize>100%,20</minsize>
+                                <type>ellipse</type>
+                                <fill color="#00FFFF" alpha="160" />
                             </shape>
                         </state>
                         <state name="normal" from="default" />
                         <state name="uptodate" from="default" />
                         <state name="updateavailable" from="default">
                             <shape name="statusborder">
-                                <line color="#ff9147" width="7" alpha="255" />
+                                <line color="#ff9147" width="4" alpha="255" />
+                            </shape>
+                            <shape name="highlightleft">
+                                <fill color="#ff9147" alpha="255" />
+                            </shape>
+                            <shape name="highlightright">
+                                <fill color="#ff9147" alpha="255" />
                             </shape>
                         </state>
                     </statetype>
