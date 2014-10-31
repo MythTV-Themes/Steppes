@@ -18,7 +18,6 @@
             </group>
         </group>
 
-
         <group name="posgroup" from="baseModeGroup">
             <area>50,25,250,45</area>
             <textarea name="position" from="pagemode">
@@ -57,9 +56,24 @@
 
         <!-- shows a message when no images are available
              in the current directory -->
-         <textarea name="noimages" from="msgText">
-             <font>mymedium</font>
-         </textarea>
+         <group name="noimagesgroup" from="baseFloatingMsg" depends="noimages">
+             <group name="msggroup">
+                 <textarea name="noimages" from="message_text"/>
+             </group>
+         </group>
+
+         <group name="syncgroup" from="baseFloatingMsg" depends="syncprogresstext">
+             <group name="msggroup">
+                 <textarea name="syncprogresstext" from="message_text"/>
+             </group>
+         </group>
+
+         <group name="thumbgroup" from="baseFloatingMsg" depends="thumbprogresstext">
+             <area>600,750,-600,70</area>
+             <group name="msggroup">
+                 <textarea name="thumbprogresstext" from="message_text"/>
+             </group>
+         </group>
 
     </window> <!-- gallery -->
 
@@ -99,6 +113,7 @@
             <spinbox name="slideshowtime" from="basespinbox">
                 <position>550, 120</position>
             </spinbox>
+
 
             <textarea name="transitiontime_label" from="sortorder_label">
                 <position>20, 200</position>
@@ -164,14 +179,14 @@
         <!-- this is the image that shown in the foreground.
              when fading is enabled this image is faded out. -->
         <imagetype name="first_image">
-            <area>50%-716,50%-536,1432,1072</area>
+            <area>10,10,-10,-10</area>
             <preserveaspect>yes</preserveaspect>
         </imagetype>
 
         <!-- this is the image that shown in the background
              when fading is enabled this image is faded in. -->
         <imagetype name="second_image">
-            <area>50%-716,50%-536,1432,1072</area>
+            <area>10,10,-10,-10</area>
             <preserveaspect>yes</preserveaspect>
         </imagetype>
 

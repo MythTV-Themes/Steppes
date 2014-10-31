@@ -1320,9 +1320,9 @@
 
                     <!-- show how many images / directories are in this directory -->
                     <textarea name="childcount" from="basetextarea">
-                        <area>100%-103,13,80,80</area>
+                        <area>100%-83,13,80,80</area>
                         <font>myverysmallyellow</font>
-                        <align>right,vcenter</align>
+                        <align>center</align>
                     </textarea>
 
                     <statetype name="buttoncheck" from="selectedbox">
@@ -1570,6 +1570,27 @@
         <area>300,100%-210,-300,120</area>
     </group>
 
+    <group name="baseFloatingMsg">
+        <area>600,860,-600,90</area>
+
+        <group name="msggroup">
+            <area>0,0,100%,100%</area>
+
+            <shape name="background">
+                <area>0,0,100%,100%</area>
+                <type>roundbox</type>
+                <fill color="#000000" alpha="148" />
+                <line color="#55FFFF" alpha="96" width="3" />
+                <cornerradius>10</cornerradius>
+            </shape>
+            <textarea name="message_text">
+                <area>10,5,-10,-5</area>
+                <font>mymedium</font>
+                <align>center</align>
+                <multiline>yes</multiline>
+            </textarea>
+        </group>
+    </group>
 
     <!-- Common page elements -->
     <group name="baseModeGroup">
