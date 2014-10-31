@@ -26,7 +26,7 @@
         </group>
 
         <group name="inputgroup">
-            <area>30,100%-280,-30,170</area>
+            <area>30,100%-280,-30,175</area>
 
             <shape name="dialogbackground" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
@@ -36,17 +36,17 @@
                 <area>20,10,-250,70</area>
             </textarea>
 
-            <textedit name="settingvalue" from="basewidetextedit">
-                <area>40,80,-220,70</area>
+            <textedit name="settingvalue" from="basemultilinetextedit">
+                <area>40,75,-220,90</area>
             </textedit>
 
             <button name="save" from="varbuttoncenter">
-                <area>100%-210,80,-10,70</area>
+                <area>100%-210,90,-10,70</area>
                 <value>Save</value>
             </button>
 
             <button name="cancel" from="varbuttoncenter">
-                <area>100%-210,10,-10,70</area>
+                <area>100%-210,15,-10,70</area>
                 <value>Cancel</value>
             </button>
 
