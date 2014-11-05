@@ -2461,7 +2461,7 @@
          -> Time -> 'M'(enu) -> Choose Search Phrase
     -->
     <window name="MythTimeInputDialog">
-        <area>50,50,600,460</area>
+        <area>30,50,500,460</area>
 
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>
@@ -2476,11 +2476,11 @@
         </textarea>
 
         <buttonlist name="dates" from="baselargeselector">
-            <position>100,130</position>
+            <position>50,130</position>
         </buttonlist>
 
         <buttonlist name="times" from="baselargeselector">
-            <position>100,230</position>
+            <position>50,230</position>
         </buttonlist>
 
         <button name="ok" from="varbuttonright">
