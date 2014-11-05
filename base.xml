@@ -1799,7 +1799,7 @@
             </state>
         </statetype>
 
-        <searchposition>520,700</searchposition>
+        <searchposition>520,100</searchposition>
 
     </buttonlist>
 
@@ -2573,7 +2573,7 @@
     <!-- Home -> Media Library -> Watch Recordings -> 'S'(earch)
     -->
     <window name="MythSearchListDialog">
-        <area>30,700,480,250</area>
+        <area>30,100,480,250</area>
 
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>
