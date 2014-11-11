@@ -1868,7 +1868,7 @@
                 <align>left,top</align>
                 <template>%|RATING| %%|(STARS|) %%DESCRIPTION%%\n\nPart |PARTNUMBER| of %%PARTTOTAL%</template>
                 <scroll direction="vertical" rate="7" returnrate="105"
-                        startdelay="10" returndelay="10"/>
+                        startdelay="15" returndelay="15"/>
             </textarea>
 <!--
             <textarea name="syndicatedepisode" depends="!s00e00">
