@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+
+<mythuitheme>
+    <window name="settingssetup">
+        <group name="PageHeading" from="basePageHeading">
+            <group name="Heading">
+                <textarea name="title" from="text"/>
+            </group>
+        </group>
+
+        <group name="groupheading" from="baseModeGroup">
+            <area>30,25,-30,45</area>
+            <textarea name="grouphelp" from="pagemode">
+                <align>center</align>
+                <font>mysmall</font>
+                <extraleading>1</extraleading>
+                <cutdown>left</cutdown>
+            </textarea>
+        </group>
+
+        <buttonlist name="settingslist" from2="basebuttonlist">
+            <area>70,90,100%-70,100%-200</area>
+            <layout>vertical</layout>
+            <wrapstyle>selection</wrapstyle>
+            <arrange>stack</arrange>
+            <spacing>6</spacing>
+            <buttonarea>0,0,100%,100%</buttonarea>
+            <statetype name="buttonitem">
+                <area>0,0,100%,70</area>
+                <state name="active">
+                    <area>0,0,100%,100%</area>
+                    <minsize>40,100%</minsize>
+                    <group name="labels">
+                        <area>0,0,560,100%</area>
+
+                        <shape name="background">
+                            <area>0,0,100%,100%</area>
+                            <type>roundbox</type>
+                            <cornerradius>15</cornerradius>
+                            <fill color="#000000" alpha="64" />
+                        </shape>
+
+                        <textarea name="buttontext" from="labeltextlarge" >
+                            <area>10,0,100%-10,70</area>
+                            <cutdown>no</cutdown>
+                            <align>right,vcenter</align>
+                            <scroll direction="horizontal" returnrate="140" returndelay="4" />
+                            <template>%1:</template>
+                        </textarea>
+                    </group>
+                    <group name="widgets">
+                        <area>580,0,100%,100%</area>
+                        <minsize>30,100%</minsize>
+
+                        <shape name="background" from="basebuttonshape">
+                            <minsize>30,100%</minsize>
+                            <type>roundbox</type>
+                            <cornerradius>5</cornerradius>
+                        </shape>
+
+                        <statetype name="widgettype">
+                            <area>0,0,100%,100%</area>
+                            <minsize>30,100%</minsize>
+                            <state name="standard">
+                                <area>0,0,100%,100%</area>
+                                <minsize>30,100%</minsize>
+                            </state>
+                            <state name="group">
+                                <area>0,0,100%,100%</area>
+                                <minsize>30,100%</minsize>
+                            </state>
+                            <state name="button">
+                                <area>0,0,100%,100%</area>
+                                <minsize>30,100%</minsize>
+                                <textarea name="label">
+                                    <area>0,0,100%,100%</area>
+                                    <minsize>30,100%</minsize>
+                                    <font>basesmall</font>
+                                    <align>vcenter</align>
+                                    <value>Execute</value>
+                                </textarea>
+                            </state>
+                            <state name="checkbox">
+                                <area>24,15,40,40</area>
+                                <minsize>30,100%</minsize>
+                                <shape name="checkbg">
+                                    <area>6,6,-6,-6</area>
+                                    <fill color="#000000" alpha="200" />
+                                    <line color="#33FFFF" alpha="128" width="2" />
+                                </shape>
+                            </state>
+                            <state name="textedit">
+                                <area>0,0,100%,100%</area>
+                                <minsize>30,100%</minsize>
+                            </state>
+                            <state name="filebrowser" from="textedit">
+                                <imagetype name="filebrowserimage">
+                                    <area>6,26,20,20</area>
+                                    <minsize>30,100%</minsize>
+                                </imagetype>
+                            </state>
+                            <state name="spinbox" from="textedit">
+                                <imagetype name="arrow1">
+                                    <area>10,10,20,20</area>
+                                    <minsize>30,100%</minsize>
+                                    <filename>Images/uparrow-on.png</filename>
+                                </imagetype>
+                                <imagetype name="arrow2">
+                                    <area>10,35,20,20</area>
+                                    <minsize>30,100%</minsize>
+                                    <filename>Images/downarrow-on.png</filename>
+                                </imagetype>
+                            </state>
+                            <state name="combobox" from="textedit">
+                                <imagetype name="arrow">
+                                    <area>10,26,20,20</area>
+                                    <minsize>30,100%</minsize>
+                                    <filename>Images/downarrow-on.png</filename>
+                                </imagetype>
+                            </state>
+                        </statetype>
+                        <!-- we can not put more than one textarea with the same name
+                             The textarea can no be in a custom state
+                             We can not put the textarea in a state from statetype neither
+                             Which mean we can not theme them differently according to the statetype
+                        -->
+                        <textarea name="value">
+                            <area>40,0,100%-20,100%</area>
+                            <minsize>30,100%</minsize>
+                            <font>basesmall</font>
+                            <cutdown>yes</cutdown>
+                            <align>left,vcenter</align>
+                        </textarea>
+
+                        <statetype name="buttoncheck" from="basebuttoncheck">
+                            <position>34,24</position>
+                        </statetype>
+
+                        <imagetype name="buttonarrow">
+                            <position>10,24</position>
+                            <minsize>30,100%</minsize>
+                            <filename>Images/rightarrow-on.png</filename>
+                        </imagetype>
+                    </group>
+                </state>
+                <state name="selectedactive" from="active">
+                    <group name="widgets">
+                        <shape name="background" from="baseselectedbuttonshape">
+                            <minsize>30,100%</minsize>
+                            <type>roundbox</type>
+                            <cornerradius>5</cornerradius>
+                        </shape>
+                    </group>
+                </state>
+                <state name="disabledactive" from="selectedactive">
+                    <group name="widgets">
+                        <shape name="background" from="baseinactivebuttonshape">
+                            <minsize>30,100%</minsize>
+                        </shape>
+                    </group>
+                </state>
+                <state name="disabledinactive" from="disabledactive">
+                </state>
+                <state name="selectedinactive" from="active">
+                    <group name="widgets">
+                        <shape name="background" from="baseselectedinactivebuttonshape">
+                            <minsize>30,100%</minsize>
+                        </shape>
+                    </group>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <group name="help" from="baseMsgGroup">
+            <area>150,100%-210,-150,120</area>
+            <textarea name="selectedsettinghelp" from="msgText" />
+        </group>
+
+    </window>
+</mythuitheme>
