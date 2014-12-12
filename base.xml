@@ -2175,7 +2175,9 @@
                     <area>20,125,-20,-55</area>
                     <font>mydesc</font>
                     <multiline>yes</multiline>
-                    <cutdown>yes</cutdown>
+                    <scroll direction="vertical" rate="10" returnrate="70"
+                            startdelay="17" returndelay="17"/>
+                    <cutdown>no</cutdown>
                     <template>%|RATING| %%|(STARS|) %%DESCRIPTION%</template>
                 </textarea>
 
@@ -2738,7 +2740,7 @@
          -> Metadata Options -> [Perform Query]
     -->
     <window name="MythMetadataResults">
-        <area>530,35,1360,960</area>
+        <area>60,35,-60,960</area>
 
         <shape name="shape">
             <area>0,0,100%,100%</area>
@@ -2798,8 +2800,11 @@
                     </textarea>
 
                     <textarea name="description" from="basetextarea">
-                        <area>30,105,-500,-50</area>
+                        <area>30,105,-500,-45</area>
                         <multiline>yes</multiline>
+                        <scroll direction="vertical" rate="10" returnrate="70"
+                                startdelay="17" returndelay="17"/>
+                        <cutdown>no</cutdown>
                     </textarea>
                 </state>
             </statetype>
