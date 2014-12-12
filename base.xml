@@ -2362,6 +2362,37 @@
         </imagetype>
     </window>
 
+    <window name="MythSpinBoxDialog">
+        <area>50%-550,80,1200,-80</area>
+        <group name="popup" from="PopupGroup">
+            <area>0,0,100%,100%</area>
+            <group name="PopupGroupMessage">
+                <shape name="textbackground">
+                    <area>15,0,50%+5,100%</area>
+                </shape>
+                <textarea name="message" from="messagearea">
+                    <area>20,5,50%,-20</area>
+                    <minsize shrink="short">100%,120</minsize>
+                </textarea>
+                <spinbox name="input" from="basespinbox">
+                    <area>50%+30,0,-10,70</area>
+                    <minsize shrink="short" initiator="yes">100%,60</minsize>
+                    <align>top,hcenter</align>
+                </spinbox>
+                <group name="buttongroup">
+                    <area>50%+30,80,-10,80</area>
+                    <button name="ok" from="varbuttonright">
+                        <value>OK</value>
+                    </button>
+
+                    <button name="cancel" from="varbuttonleft">
+                        <value>Cancel</value>
+                    </button>
+                </group>
+            </group>
+        </group>
+    </window>
+
     <!-- Home -> [Esc]
     -->
     <window name="MythPopupBox">
