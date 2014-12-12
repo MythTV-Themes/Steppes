@@ -704,12 +704,12 @@
             </textedit>
         </group>
 
-        <button name="ok" from="varbuttonright">
-            <value>Save</value>
-        </button>
-
         <button name="query_button" from="varbuttonleft">
             <value>Search</value>
+        </button>
+
+        <button name="ok" from="varbuttonright">
+            <value>Save</value>
         </button>
 
     </window>
