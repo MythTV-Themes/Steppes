@@ -2347,14 +2347,121 @@
 
 <!--  The name changes when inherited, so it cannot be defined here!
             <buttonlist name="list" from="basepopupbuttonlist">
-                <area>45%+30,10,-10,-10</area>
-                <minsize shrink="short" initiator="yes">100%,60</minsize>
-                <align>top,hcenter</align>
-                <wrapstyle>selection</wrapstyle>
+            ...
             </buttonlist>
 -->
         </group>
     </group>
+
+    <buttonlist name="baseVarLinesButtonlist">
+        <arrange>stack</arrange>
+        <align>top,hcenter</align>
+        <spacing>3</spacing>
+        <scrollstyle>free</scrollstyle>
+        <wrapstyle>selection</wrapstyle>
+        <layout>vertical</layout>
+
+        <area>630,10,-10,-10</area>
+        <minsize shrink="short" initiator="yes">100%,60</minsize>
+        <buttonarea>20,0,-20,100%</buttonarea>
+
+        <statetype name="buttonitem">
+
+            <area>20,0,620,220</area>
+
+            <state name="selectedactive">
+                <area>0,0,100%,100%</area>
+                <minsize shrink="short">100%,40</minsize>
+
+                <shape name="buttonShape"
+                       from="baseselectedbuttonshape">
+                    <area>0,0,100%,100%</area>
+                    <minsize shrink="short">100%,40</minsize>
+                </shape>
+
+                <textarea name="buttontext">
+                    <area>10,7,-10,-7</area>
+                    <minsize shrink="short">100%,40</minsize>
+                    <align>hcenter</align>
+                    <multiline>yes</multiline>
+                    <cutdown>no</cutdown>
+                    <font>mysmallnarrow</font>
+                </textarea>
+
+            </state>
+
+            <state name="selectedinactive" from="selectedactive">
+                <shape name="buttonShape"
+                       from="baseselectedinactivebuttonshape">
+                    <area>0,0,100%,100%</area>
+                    <minsize shrink="short">100%,40</minsize>
+                </shape>
+            </state>
+
+            <state name="active">
+                <area>3,0,-3,100%</area>
+                <minsize shrink="short">100%,40</minsize>
+
+                <shape name="buttonShape"
+                       from="basebuttonshape">
+                    <area>0,0,100%,100%</area>
+                    <minsize shrink="short">100%,40</minsize>
+                </shape>
+
+                <textarea name="buttontext">
+                    <area>7,7,-7,-7</area>
+                    <minsize shrink="short">100%,40</minsize>
+                    <align>hcenter</align>
+                    <multiline>yes</multiline>
+                    <cutdown>no</cutdown>
+                    <font>mysmallnarrow</font>
+                </textarea>
+
+            </state>
+
+            <state name="inactive" from="active">
+                <shape name="buttonShape" from="baseinactivebuttonshape">
+                    <area>0,0,100%,100%</area>
+                    <minsize shrink="short">100%,40</minsize>
+                </shape>
+            </state>
+
+            <state name="disabled" from="active">
+                <shape name="buttonShape" from="baseinactivebuttonshape">
+                    <area>0,0,100%,100%</area>
+                    <minsize shrink="short">100%,40</minsize>
+                </shape>
+                <textarea name="buttontext">
+                    <font>mysmallnarrowlightgrey</font>
+                </textarea>
+            </state>
+
+        </statetype>
+
+        <statetype name="upscrollarrow">
+            <area>100%-20,50%-30,20,20</area>
+            <state type="off">
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>Images/uparrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <area>100%-20,50%,20,20</area>
+            <state type="off">
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>Images/downarrow-on.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+
+    </buttonlist>
+
+
 
     <!-- Global Windows -->
 
@@ -2402,12 +2509,7 @@
         <group name="items" from="PopupGroup">
             <textarea name="title" />   <!-- unused? -->
             <group name="PopupGroupMessage">
-                <buttonlist name="list" from="basepopupbuttonlist">
-                    <area>45%+30,10,-10,-10</area>
-                    <minsize shrink="short" initiator="yes">100%,60</minsize>
-                    <align>top,hcenter</align>
-                    <wrapstyle>selection</wrapstyle>
-                </buttonlist>
+                <buttonlist name="list" from="baseVarLinesButtonlist" />
             </group>
         </group>
     </window>
@@ -2416,21 +2518,11 @@
          -> <select a show and hit enter>
     -->
     <window name="MythDialogBox">
-        <area>-1,-1,1380,960</area>
+        <area>-1,-1,1300,960</area>
         <group name="items" from="PopupGroup">
+            <textarea name="title" />   <!-- unused? -->
             <group name="PopupGroupMessage">
-                <shape name="textbackground">
-                    <area>20,0,50%,100%</area>
-                </shape>
-                <textarea name="messagearea">
-                    <area>20,5,50%,-10</area>
-                </textarea>
-                <buttonlist name="list" from="basepopupbuttonlist">
-                    <area>50%+30,10,-10,-10</area>
-                    <minsize shrink="short" initiator="yes">100%,60</minsize>
-                    <align>top,hcenter</align>
-                    <wrapstyle>selection</wrapstyle>
-                </buttonlist>
+                <buttonlist name="list" from="baseVarLinesButtonlist" />
             </group>
         </group>
     </window>
