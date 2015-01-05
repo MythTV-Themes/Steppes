@@ -121,7 +121,7 @@
 
                     <textarea name="s00e00" from="filesize_str">
                         <area>100%-300,100%-39,150,32</area>
-                    </textarea>c
+                    </textarea>
 
                     <textarea name="syndicatedepisode">
                         <area>100%-300,100%-40,150,32</area>
