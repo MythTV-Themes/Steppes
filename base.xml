@@ -2388,6 +2388,10 @@
                     <font>mysmallnarrow</font>
                 </textarea>
 
+                <imagetype name="buttonarrow">
+                    <area>100%-24,20,15,15</area>
+                    <filename>Images/rightarrow-on.png</filename>
+                </imagetype>
             </state>
 
             <state name="selectedinactive" from="selectedactive">
@@ -2417,6 +2421,10 @@
                     <font>mysmallnarrow</font>
                 </textarea>
 
+                <imagetype name="buttonarrow">
+                    <area>100%-21,20,15,15</area>
+                    <filename>Images/rightarrow-on.png</filename>
+                </imagetype>
             </state>
 
             <state name="inactive" from="active">
