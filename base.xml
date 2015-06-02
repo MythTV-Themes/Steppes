@@ -4,22 +4,23 @@
 
     <fontdef name="basesans" face="Liberation Sans">
         <color>#F0F0FF</color>
-        <pixelsize>1</pixelsize>
+        <pixelsize>10</pixelsize>
     </fontdef>
 
     <fontdef name="basenarrow" face="Liberation Sans Narrow">
         <color>#F0F0FF</color>
-        <pixelsize>1</pixelsize>
+        <pixelsize>10</pixelsize>
+        <stretch>condensed</stretch>
     </fontdef>
 
     <fontdef name="basegothic" face="CartoGothic Std">
         <color>#FFEAEA</color>
-        <pixelsize>1</pixelsize>
+        <pixelsize>10</pixelsize>
     </fontdef>
 
     <fontdef name="basemono" face="Liberation Mono">
         <color>#F0F0FF</color>
-        <pixelsize>1</pixelsize>
+        <pixelsize>10</pixelsize>
     </fontdef>
 
     <!--  Sans  -->
