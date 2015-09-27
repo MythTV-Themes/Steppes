@@ -109,19 +109,19 @@
         </group>
 
         <group name="group3">
-            <area>850,60,530,250</area>
+            <area>850,60,550,250</area>
 
             <textarea name="cpuload">
                 <font>small</font>
                 <area>5,195,200,90</area>
                 <align>right,vcenter</align>
-                <value>CPUs</value>
+                <value>CPUs :</value>
             </textarea>
             <textarea name="load">
                 <font>data</font>
-                <area>215,195,320,90</area>
+                <area>215,195,330,90</area>
                 <align>left,vcenter</align>
-                <template>: %1</template>
+                <multiline>yes</multiline>
             </textarea>
 
             <textarea name="vidcodec" from="cpuload">
