@@ -825,7 +825,7 @@
         </imagetype>
 
         <group name="posgroup" from="baseModeGroup">
-            <area>550,25,200,45</area>
+            <area>550,25,220,45</area>
             <textarea name="position" from="pagemode">
                 <align>center</align>
                 <font>mysmall</font>
@@ -835,7 +835,7 @@
         </group>
 
         <group name="crumbgroup" from="baseModeGroup">
-            <area>750,25,-20,45</area>
+            <area>770,25,-20,45</area>
             <textarea name="breadcrumbs" from="pagemode">
                 <align>left,vcenter</align>
                 <font>mysmall</font>
