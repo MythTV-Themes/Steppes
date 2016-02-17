@@ -117,41 +117,67 @@
         </group>
 
         <group name="dialog">
-            <area>50%-500,150,1000,-400</area>
+            <area>50%-500,100,1000,-300</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
             </shape>
 
+
             <textarea name="resumemode_label" from="labeltext">
                 <area>20,40,400,70</area>
-                <value>Resume mode:</value>
+                <value>Resume mode (Playlist):</value>
             </textarea>
             <buttonlist name="resumemode" from="basemediumselector">
                 <position>425,40</position>
             </buttonlist>
 
-            <textarea name="exitaction_label" from="resumemode_label">
-                <position>20, 120</position>
-                <value>Action on exit:</value>
+            <textarea name="resumemodeeditor_label" from="labeltext">
+                <area>20,120,400,70</area>
+                <value>Resume mode (Playlist Editor):</value>
             </textarea>
-            <buttonlist name="exitaction" from="basemediumselector">
+            <buttonlist name="resumemodeeditor" from="basemediumselector">
                 <position>425, 120</position>
             </buttonlist>
 
+            <textarea name="resumemoderadio_label" from="labeltext">
+                <area>20,200,400,70</area>
+                <value>Resume mode (Radio):</value>
+            </textarea>
+            <buttonlist name="resumemoderadio" from="basemediumselector">
+                <position>425,200</position>
+            </buttonlist>
+
+
+            <textarea name="exitaction_label" from="labeltext">
+                <area>20,280,400,70</area>
+                <value>Action on exit:</value>
+            </textarea>
+            <buttonlist name="exitaction" from="basemediumselector">
+                <position>425, 280</position>
+            </buttonlist>
+
+            <textarea name="jumpaction_label" from="labeltext">
+                <area>20,360,400,70</area>
+                <value>Action on jumppoint:</value>
+            </textarea>
+            <buttonlist name="jumpaction" from="basemediumselector">
+                <position>425,360</position>
+            </buttonlist>
+
             <checkbox name="autolookupcd" from="basecheckbox">
-                <position>425, 200</position>
+                <position>425, 440</position>
             </checkbox>
             <textarea name="autolookupcd_label" from="labelcheckbox">
-                <area>475, 200,-10,70</area>
+                <area>475, 440,-10,70</area>
                 <value>Automatically lookup CDs</value>
             </textarea>
 
             <checkbox name="autoplaycd" from="basecheckbox">
-                <position>425, 280</position>
+                <position>425, 510</position>
             </checkbox>
             <textarea name="autoplaycd_label" from="autolookupcd_label">
-                <position>475, 280</position>
+                <position>475, 510</position>
                 <value>Automatically Play CDs</value>
             </textarea>
 

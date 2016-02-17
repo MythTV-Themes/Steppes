@@ -7,7 +7,13 @@
 
         <group name="PageHeading" from="basePageHeading">
             <group name="Heading">
-                <textarea name="text">
+                <textarea name="channel">
+                    <area>25,5,-25,-5</area>
+                    <minsize>50,100%</minsize>
+                    <align>center</align>
+                    <font>mymediumlightgrey</font>
+                    <cutdown>no</cutdown>
+                    <template>%BROADCASTER| - %%CHANNEL%</template>
                     <value>Radio Stream</value>
                 </textarea>
             </group>
@@ -516,13 +522,6 @@
                 <font>mymedium</font>
             </textarea>
 
-<!--
-            <textarea name="channel" from="basetextarea">
-                <area>40,100,-70,40</area>
-                <font>mymedium</font>
-                <template>%STATION% - %CHANNEL%</template>
-            </textarea>
--->
             <textarea name="filename" from="basetextarea">
                 <area>40,100,-70,40</area>
             </textarea>

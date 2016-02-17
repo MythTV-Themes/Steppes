@@ -262,6 +262,11 @@
                                 <line color="#e43e3e" width="4" alpha="255" />
                             </shape>
                         </state>
+                        <state name="unavailable">
+                            <shape name="statusborder">
+                                <line color="#9e9e00" width="4" alpha="192" />
+                            </shape>
+                        </state>
                     </statetype>
 
                     <imagetype name="buttonimage">
