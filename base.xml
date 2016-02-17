@@ -47,6 +47,10 @@
         <pixelsize>29</pixelsize>
     </fontdef>
 
+    <fontdef name="mysmallnarrowbold" from="mysmallnarrow">
+        <weight>bold</weight>
+    </fontdef>
+
     <fontdef name="mymediumnarrow" from="basenarrow">
         <pixelsize>35</pixelsize>
     </fontdef>
@@ -1091,22 +1095,37 @@
                 <shape name="bullet">
                     <type>ellipse</type>
                     <area>10,10,10,10</area>
-                    <fill color="#FFFFFF" />
+                    <fill color="#DDDDDD" />
                 </shape>
                 <textarea name="buttontext">
                     <area>30,0,100%,100%</area>
                     <multiline>no</multiline>
                     <cutdown>yes</cutdown>
                     <align>vcenter</align>
-                    <font>mysmallnarrow</font>
+                    <font>mysmallnarrowgrey</font>
                 </textarea>
                 <imagetype name="buttonarrow">
                     <area>100%-24,50%-7,15,15</area>
                     <filename>Images/rightarrow-on.png</filename>
                 </imagetype>
             </state>
-            <state name="selectedinactive" from="active" />
-            <state name="selectedactive" from="selectedinactive" />
+            <state name="selectedinactive" from="active">
+                <shape name="bullet">
+                    <fill color="#00EEEE" alpha="192" />
+                </shape>
+                <textarea name="buttontext">
+                    <font>mysmallnarrowblue</font>
+                </textarea>
+            </state>
+            <state name="selectedactive" from="selectedinactive">
+                <shape name="bullet">
+                    <area>9,9,12,12</area>
+                    <fill color="#FFFFFF" alpha="255" />
+                </shape>
+                <textarea name="buttontext">
+                    <font>mysmallnarrowbold</font>
+                </textarea>
+            </state>
             <state name="disabled" from="active">
                 <shape name="bullet">
                     <fill color="#FFFFFF" alpha="128" />

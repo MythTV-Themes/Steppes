@@ -363,4 +363,70 @@
         </buttonlist>
     </group>
 
+    <group name="baseinfogroup">
+        <area>500,802,-50,-100</area>
+
+        <shape name="background" from="basewidgetshape">
+            <area>0,0,100%,100%</area>
+        </shape>
+
+        <group name="playstategroup" from="baseplaystategroup">
+            <area>15,20,25,25</area>
+        </group>
+
+        <textarea name="title" from="basetextarea">
+            <area>40,15,-70,45</area>
+            <font>mylarge</font>
+        </textarea>
+
+        <textarea name="artist" from="basetextarea">
+            <area>40,60,-70,40</area>
+            <font>mymedium</font>
+        </textarea>
+
+        <textarea name="filename" from="artist" depends="!artist" />
+
+        <textarea name="album" from="basetextarea">
+            <area>40,100,-70,40</area>
+            <font>mymedium</font>
+        </textarea>
+
+        <statetype name="ratingstate" from="baseratingstate">
+            <position>30,100%-35</position>
+        </statetype>
+
+        <textarea name="info" from="basetextarea">
+            <area>240,100%-45,280,-10</area>
+            <font>mysmallnarrow</font>
+            <align>center</align>
+        </textarea>
+
+        <group name="actionstategroup" from="baseactionstategroup">
+            <area>100%-60,80,-10,-40</area>
+        </group>
+    </group>
+
+    <group name="basemusicinfogroup" from="baseinfogroup">
+        <progressbar name="progress" from="baseprogressbar">
+            <position>100%-850,100%-35</position>
+        </progressbar>
+
+        <textarea name="time" from="basetextarea">
+            <area>100%-230,100%-40,-20,-10</area>
+            <font>mysmall</font>
+        </textarea>
+
+    </group>
+
+    <group name="basestreaminfogroup" from="baseinfogroup">
+        <progressbar name="bufferprogress" from="baseprogressbar">
+            <position>100%-850,100%-35</position>
+        </progressbar>
+
+        <textarea name="bufferstatus" from="basetextarea">
+            <area>100%-230,100%-40,-20,-10</area>
+            <font>mysmall</font>
+        </textarea>
+    </group>
+
 </mythuitheme>

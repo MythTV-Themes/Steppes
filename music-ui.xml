@@ -123,56 +123,7 @@
 
         <group name="playliststatus" from="baseplayliststatus" />
 
-        <group name="infogroup">
-            <area>500,802,-50,-100</area>
-
-            <shape name="background" from="basewidgetshape">
-                <area>0,0,100%,100%</area>
-            </shape>
-
-            <group name="playstategroup" from="baseplaystategroup">
-                <area>15,20,25,25</area>
-            </group>
-
-            <textarea name="title" from="basetextarea">
-                <area>40,15,-70,45</area>
-                <font>mylarge</font>
-            </textarea>
-
-            <textarea name="artist" from="basetextarea">
-                <area>40,60,-70,40</area>
-                <font>mymedium</font>
-            </textarea>
-
-            <textarea name="album" from="basetextarea">
-                <area>40,100,-70,40</area>
-                <font>mymedium</font>
-            </textarea>
-
-            <statetype name="ratingstate" from="baseratingstate">
-                <position>30,100%-35</position>
-            </statetype>
-
-            <progressbar name="progress" from="baseprogressbar">
-                <position>100%-830,100%-35</position>
-            </progressbar>
-
-            <textarea name="time" from="basetextarea">
-                <area>100%-230,100%-40,-20,-10</area>
-                <font>mysmall</font>
-            </textarea>
-
-            <textarea name="info" from="basetextarea">
-                <area>240,100%-45,280,-10</area>
-                <font>mysmallnarrow</font>
-                <align>center</align>
-            </textarea>
-
-            <group name="actionstategroup" from="baseactionstategroup">
-                <area>100%-60,80,-10,-40</area>
-            </group>
-
-        </group>
+        <group name="infogroup" from="basemusicinfogroup" />
 
         <group name="previewgroup">
             <area>48,802,434,255</area>
@@ -182,7 +133,6 @@
                 <type>roundbox</type>
                 <cornerradius>5</cornerradius>
                 <fill color="#555555" alpha="255" />
-                <line color="#FFFFFF" alpha="160" width="8" />
             </shape>
 
             <video name="visualizer">
@@ -495,6 +445,240 @@
             <area>0,0,100%,100%</area>
         </video>
     </window>
+
+    <!-- Home -> Media Library -> Listen to Music -> 'M'
+         -> Lyrics
+    -->
+    <window name="trackslyricsview">
+
+        <group name="PageHeading" from="basePageHeading">
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Track Lyrics</value>
+                </textarea>
+            </group>
+        </group>
+
+        <group name="lyricsgroup">
+            <area>20,30,-20,-285</area>
+
+            <shape name="background" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
+
+            <buttonlist name="lyrics_list" from="baseinfobuttonlist">
+                <area>10,10,-10,-10</area>
+            </buttonlist>
+
+        </group>
+
+
+        <group name="loadinggroup">
+            <area>50%-366,200,732,200</area>
+
+            <statetype name="loading_state">
+                <area>0,0,100%,100%</area>
+                <state name="off"></state>
+                <state name="on">
+                    <area>0,0,100%,100%</area>
+                    <shape name="dialogbackground" from="basewidgetshape">
+                        <area>0,0,100%,100%</area>
+                        <line color="#AA90FF" width="6" alpha="128"/>
+                    </shape>
+                    <imagetype name="loadinganimation">
+                        <area>20,20,140,-20</area>
+                        <filepattern low="1" high="72">Images/Busy/busy%1.png</filepattern>
+                        <delay>70</delay>
+                    </imagetype>
+                </state>
+            </statetype>
+
+            <textarea name="status_text" from="basetextarea">
+                <area>170,20,-30,-20</area>
+                <multiline>yes</multiline>
+                <align>center</align>
+            </textarea>
+        </group>
+
+        <group name="trackinfopanel" from="basemusicinfogroup" />
+
+        <group name="previewgroup">
+            <area>48,802,434,255</area>
+
+            <shape name="previewShape">
+                <area>0,0,100%,100%</area>
+                <type>roundbox</type>
+                <cornerradius>5</cornerradius>
+                <fill color="#555555" alpha="255" />
+            </shape>
+
+            <video name="visualizer">
+                <area>12,12,-12,-12</area>
+            </video>
+        </group>
+
+    </window>
+
+    <!-- Home -> Media Library -> Listen to Radio Stream -> 'M'
+         -> Lyrics
+    -->
+    <window name="streamlyricsview">
+        <group name="PageHeading" from="basePageHeading">
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Track Lyrics</value>
+                </textarea>
+            </group>
+        </group>
+
+        <group name="lyricsgroup">
+            <area>20,30,-20,-285</area>
+
+            <shape name="background" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
+
+            <buttonlist name="lyrics_list" from="baseinfobuttonlist">
+                <area>10,10,-10,-10</area>
+            </buttonlist>
+
+        </group>
+
+
+        <group name="loadinggroup">
+            <area>50%-366,200,732,200</area>
+
+            <statetype name="loading_state">
+                <area>0,0,100%,100%</area>
+                <state name="off"></state>
+                <state name="on">
+                    <area>0,0,100%,100%</area>
+                    <shape name="dialogbackground" from="basewidgetshape">
+                        <area>0,0,100%,100%</area>
+                        <line color="#AA90FF" width="6" alpha="128"/>
+                    </shape>
+                    <imagetype name="loadinganimation">
+                        <area>20,20,140,-20</area>
+                        <filepattern low="1" high="72">Images/Busy/busy%1.png</filepattern>
+                        <delay>70</delay>
+                    </imagetype>
+                </state>
+            </statetype>
+
+            <textarea name="status_text" from="basetextarea">
+                <area>170,20,-30,-20</area>
+                <multiline>yes</multiline>
+                <align>center</align>
+            </textarea>
+        </group>
+
+        <group name="streaminfopanel" from="basestreaminfogroup" />
+
+        <group name="previewgroup">
+            <area>48,802,434,255</area>
+
+            <shape name="previewShape">
+                <area>0,0,100%,100%</area>
+                <type>roundbox</type>
+                <cornerradius>5</cornerradius>
+                <fill color="#555555" alpha="255" />
+            </shape>
+
+            <video name="visualizer">
+                <area>12,12,-12,-12</area>
+            </video>
+        </group>
+
+    </window>
+
+    <!-- Home -> Media Library -> Listen to Music -> 'M'
+         -> Lyrics -> 'M' -> Edit Lyrics
+    -->
+    <window name="editlyrics">
+
+        <group name="PageHeading" from="basePageHeading">
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Add/Edit Lyrics</value>
+                </textarea>
+            </group>
+        </group>
+
+        <group name="dialog">
+            <area>30,30,-30,-100</area>
+
+            <shape name="dialogbackground" from="basewidgetshape">
+                <area>0,0,100%,100%</area>
+            </shape>
+
+            <textarea name="grabberlabel" from="labeltextlarge">
+                <area>60,25,270,70</area>
+                <value>Grabber:</value>
+            </textarea>
+
+            <textedit name="grabberedit" from="basetextedit">
+                <position>340,25</position>
+            </textedit>
+
+            <checkbox name="syncronizedcheck" from="basecheckbox">
+                <position>900,25</position>
+            </checkbox>
+
+            <textarea name="syncroniszed_label" from="labelcheckbox">
+                <area>950,25,-20,70</area>
+                <value>Syncronized</value>
+            </textarea>
+
+            <textarea name="titlelabel" from="labeltextlarge">
+                <area>60,100,270,70</area>
+                <value>Title:</value>
+            </textarea>
+
+            <textedit name="titleedit" from="basewidetextedit">
+                <area>340,100,-100,70</area>
+            </textedit>
+
+            <textarea name="artistlabel" from="labeltext">
+                <area>60,175,270,70</area>
+                <value>Artist:</value>
+            </textarea>
+
+            <textedit name="artistedit" from="titleedit">
+                <position>340,175</position>
+            </textedit>
+
+            <textarea name="albumlabel" from="labeltext">
+                <area>60,250,270,70</area>
+                <value>Album:</value>
+            </textarea>
+
+            <textedit name="albumedit" from="titleedit">
+                <position>340,250</position>
+            </textedit>
+
+            <textarea name="lyricslabel" from="labeltext">
+                <area>60,325,270,70</area>
+                <align>left</align>
+                <value>Lyrics:</value>
+            </textarea>
+
+            <textedit name="lyricsedit" from="basemultilinetextedit">
+                <area>100,380,-50,480</area>
+            </textedit>
+
+            <button name="cancelbutton" from="varbuttonright">
+                <area>30, 100%-80, 100%-265, 70</area>
+                <value>Cancel</value>
+            </button>
+
+            <button name="okbutton" from="varbuttonleft">
+                <area>100%-255, 100%-80, -30, 70</area>
+                <value>Save</value>
+            </button>
+        </group>
+    </window>
+
+
 
     <!-- Used in the visualiser screen to show some track details
          after a track change -->
