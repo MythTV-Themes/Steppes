@@ -520,6 +520,8 @@
 
     </window>
 
+    <!-- Home -> Media Library -> Listen to Radio Stream -> 'E'
+    -->
     <window name="editstreammetadata">
 
         <group name="PageHeading" from="basePageHeading">
@@ -531,84 +533,138 @@
         </group>
 
         <group name="dialog">
-            <area>50%-640,200,1280,700</area>
+            <area>30,30,-30,-100</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
             </shape>
 
-            <textarea name="station_label" from="labeltext">
-                <position>10,40</position>
-                <value>Station:</value>
+            <textarea name="broadcasterlabel" from="labeltext">
+                <position>10,20</position>
+                <value>Broadcaster:</value>
             </textarea>
 
-            <textedit name="stationedit" from="basewidetextedit">
-                <position>280,40</position>
+            <textedit name="broadcasteredit" from="basewidetextedit">
+                <area>280,20,-30,70</area>
             </textedit>
 
-            <button name="searchbutton" from="varbuttonleft">
-                <area>890,40,-10,70</area>
-                <value>Search</value>
-            </button>
-
-            <textarea name="channel_label" from="station_label">
-                <position>20,120</position>
+            <textarea name="channel_label" from="broadcasterlabel">
+                <position>20,90</position>
                 <value>Channel:</value>
             </textarea>
 
-            <textedit name="channeledit" from="stationedit">
-                <position>280,120</position>
+            <textedit name="channeledit" from="broadcasteredit">
+                <position>280,90</position>
             </textedit>
 
-            <textarea name="url_label" from="station_label">
-                <position>20,200</position>
-                <value>URL:</value>
+            <textarea name="descriptionlabel" from="broadcasterlabel">
+                <position>20,160</position>
+                <value>Description:</value>
             </textarea>
-
-            <textedit name="urledit" from="stationedit">
-                <position>280,200</position>
+            <textedit name="descriptionedit" from="broadcasteredit">
+                <position>280,160</position>
             </textedit>
 
-            <textarea name="logourl_label" from="station_label">
-                <position>20,280</position>
-                <value>Logo URL:</value>
+            <textarea name="urllabel" from="broadcasterlabel">
+                <position>20,230</position>
+                <value>URL 1:</value>
             </textarea>
-
-            <textedit name="logourledit" from="stationedit">
-                <position>280,280</position>
+            <textedit name="url1edit" from="descriptionedit">
+                <position>280,230</position>
             </textedit>
 
-            <textarea name="genre_label" from="station_label">
-                <position>20,360</position>
-                <value>Genres:</value>
+            <textarea name="url2label" from="broadcasterlabel">
+                <position>20,300</position>
+                <value>URL 2:</value>
             </textarea>
-
-            <textedit name="genreedit" from="stationedit">
-                <position>280,360</position>
+            <textedit name="url2edit" from="descriptionedit">
+                <position>280,300</position>
             </textedit>
 
-            <textarea name="format_label" from="station_label">
+            <textarea name="url3label" from="broadcasterlabel">
+                <position>20,370</position>
+                <value>URL 3:</value>
+            </textarea>
+            <textedit name="url3edit" from="descriptionedit">
+                <position>280,370</position>
+            </textedit>
+
+            <textarea name="url4label" from="broadcasterlabel">
                 <position>20,440</position>
-                <value>Metadata Format:</value>
+                <value>URL 4:</value>
             </textarea>
-
-            <textedit name="formatedit" from="stationedit">
+            <textedit name="url4edit" from="descriptionedit">
                 <position>280,440</position>
             </textedit>
 
-            <button name="cancelbutton" from="varbuttonright">
-                <area>10, 100%-80, 50%-10, -10</area>
-                <value>Cancel</value>
-            </button>
+            <textarea name="url5label" from="broadcasterlabel">
+                <position>20,510</position>
+                <value>URL 5:</value>
+            </textarea>
+            <textedit name="url5edit" from="descriptionedit">
+                <position>280,510</position>
+            </textedit>
 
-            <button name="savebutton" from="varbuttonleft">
-                <area>50%+10, 100%-80, -20, -10</area>
-                <value>Save</value>
+            <textarea name="logourllabel" from="broadcasterlabel">
+                <position>20,580</position>
+                <value>Logo URL:</value>
+            </textarea>
+            <textedit name="logourledit" from="descriptionedit">
+                <position>280,580</position>
+            </textedit>
+
+            <textarea name="genrelabel" from="broadcasterlabel">
+                <position>20,650</position>
+                <value>Genres:</value>
+            </textarea>
+            <textedit name="genreedit" from="descriptionedit">
+                <position>280,650</position>
+            </textedit>
+
+            <textarea name="formatlabel" from="broadcasterlabel">
+                <position>20,720</position>
+                <value>Metadata Format:</value>
+            </textarea>
+            <textedit name="formatedit" from="descriptionedit">
+                <position>280,720</position>
+            </textedit>
+
+            <textarea name="countrylabel" from="broadcasterlabel">
+                <position>20,790</position>
+                <value>Country:</value>
+            </textarea>
+            <textedit name="countryedit" from="basewidetextedit">
+                <position>280,790</position>
+            </textedit>
+
+            <textarea name="languagelabel" from="broadcasterlabel">
+                <position>960,790</position>
+                <value>Language:</value>
+            </textarea>
+            <textedit name="languageedit" from="basewidetextedit">
+                <position>1230,790</position>
+            </textedit>
+
+            <group name="buttongroup">
+                <area>50, 100%-80, 60%, 70</area>
+                <button name="cancelbutton" from="prev_button">
+                    <value>Cancel</value>
+                </button>
+                <button name="savebutton" from="next_button">
+                    <value>Save</value>
+                </button>
+            </group>
+
+            <button name="searchbutton" from="varbuttonleft">
+                <area>70%,100%-80,-10,70</area>
+                <value>Search</value>
             </button>
 
         </group>
     </window>
 
+    <!-- Home -> Media Library -> Listen to Radio Stream -> 'E' -> [Search]
+    -->
     <window name="searchstream">
 
         <group name="PageHeading" from="basePageHeading">
@@ -626,40 +682,58 @@
                 <area>0,0,100%,100%</area>
             </shape>
 
-            <textarea name="station_label" from="labeltext">
+            <textarea name="broadcasterlabel" from="labeltext">
                 <position>10,40</position>
-                <value>Station:</value>
+                <value>Broadcaster:</value>
             </textarea>
 
-            <buttonlist name="stationlist" from="basewideselector">
+            <buttonlist name="broadcasterlist" from="basewideselector">
                 <position>280,40</position>
             </buttonlist>
 
-            <textarea name="genre_label" from="station_label">
-                <position>20,120</position>
-                <value>URL:</value>
+            <textarea name="countrylabel" from="broadcasterlabel">
+                <position>20,110</position>
+                <value>Country:</value>
             </textarea>
 
-            <buttonlist name="genrelist" from="stationlist">
-                <position>280,120</position>
+            <buttonlist name="countrylist" from="basewideselector">
+                <position>280,110</position>
             </buttonlist>
 
-            <textarea name="channel_label" from="station_label">
-                <position>20,200</position>
+            <textarea name="languagelabel" from="broadcasterlabel">
+                <position>20,180</position>
+                <value>Language:</value>
+            </textarea>
+
+            <buttonlist name="languagelist" from="basewideselector">
+                <position>280,180</position>
+            </buttonlist>
+
+            <textarea name="genrelabel" from="broadcasterlabel">
+                <position>20,250</position>
+                <value>Genre:</value>
+            </textarea>
+
+            <buttonlist name="genrelist" from="broadcasterlist">
+                <position>280,250</position>
+            </buttonlist>
+
+            <textarea name="channellabel" from="broadcasterlabel">
+                <position>20,320</position>
                 <value>Channel:</value>
             </textarea>
 
             <textedit name="channeledit" from="basewidetextedit">
-                <position>280,200</position>
+                <position>280,320</position>
             </textedit>
 
             <group name="matches" from="basematchgroup">
-                <area>1000, 200, 400, 70</area>
+                <area>1000, 180, 400, 70</area>
                 <textarea name="matchestext" from="resulttext" />
             </group>
 
             <buttonlist name="streamlist" from="basebuttonlist">
-                <area>5,280,-5,-10</area>
+                <area>5,390,-5,-10</area>
                 <align>top,hcenter</align>
                 <spacing>1</spacing>
                 <buttonarea>30,0,-30,100%</buttonarea>
@@ -674,9 +748,9 @@
                             <filename>mm_icecast.png</filename>
                             <preserveaspect>true</preserveaspect>
                         </imagetype>
-                        <textarea name="station" from="buttontext">
+                        <textarea name="broadcaster" from="buttontext">
                             <area>105,5,50%-10,-5</area>
-                            <template>%STATION% - %Channel%</template>
+                            <template>%BROADCASTER% - %Channel%</template>
                             <align>left,vcenter</align>
                         </textarea>
                         <textarea name="genre" from="buttontext">

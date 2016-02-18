@@ -424,7 +424,9 @@
         </progressbar>
 
         <textarea name="bufferstatus" from="basetextarea">
-            <area>100%-230,100%-40,-20,-10</area>
+            <area>100%-230,100%-80,-10,-10</area>
+            <align>left,bottom</align>
+            <multiline>yes</multiline>
             <font>mysmall</font>
         </textarea>
     </group>
