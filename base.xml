@@ -1868,7 +1868,7 @@
                 <template>(%1)</template>
             </textarea>
 
-            <textarea name="year" from="msgText">
+            <textarea name="year" from="msgText" depends="!originalairdate">
                 <area>5,77,-5,40</area>
                 <font>mysmallnarrow</font>
                 <template>(%1)</template>
@@ -2010,7 +2010,7 @@
             <cutdown>no</cutdown>
         </textarea>
 
-        <textarea name="year">
+        <textarea name="year" depends="!originalairdate">
             <area>520,0,230,35</area>
             <align>center</align>
             <font>mysmallnarrowlabel</font>

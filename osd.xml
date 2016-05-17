@@ -353,7 +353,7 @@
                 <align>left,top</align>
                 <template>(%1)</template>
             </textarea>
-            <textarea name="year">
+            <textarea name="year" depends="!originalairdate">
                 <font>smallinfo</font>
                 <area>720,5,350,35</area>
                 <align>left,top</align>
@@ -664,7 +664,7 @@
                 <align>left,top</align>
                 <template>(%1)</template>
             </textarea>
-            <textarea name="year">
+            <textarea name="year" depends="!originalairdate">
                 <font>smallinfo</font>
                 <area>720,5,350,35</area>
                 <align>left,top</align>
