@@ -2101,14 +2101,14 @@
                 <multiline>yes</multiline>
             </textarea>
 
-            <progressbar name="overall_progress" from="baseprogressbar">
-                <position>160,150</position>
-            </progressbar>
-
             <textarea name="overallpct" from="basetextarea">
                 <area>160,200,600,55</area>
                 <align>hcenter</align>
             </textarea>
+
+            <progressbar name="overall_progress" from="baseprogressbar">
+                <position>160,150</position>
+            </progressbar>
 
             <textarea name="track_label" from="overall_label">
                 <position>20,320</position>

@@ -38,13 +38,17 @@
             </textarea>
         </group>
 
-        <textarea name="thumbprogresstext" from="basetextarea">
-            <area>950,85,100,20</area>
-            <align>right,vcenter</align>
-        </textarea>
-
-        <buttonlist name="images" from="basegridlist">
+        <!-- 8x4 -->
+        <buttonlist name="images0" from="basegridlist">
             <spacing>2</spacing>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,210,220</area>
+                </state>
+                <state name="selectedactive">
+                    <area>-15,-15,240,250</area>
+                </state>
+            </statetype>
 
             <statetype name="upscrollarrow">
                 <area>40,100%-15,15,15</area>
@@ -54,17 +58,50 @@
             </statetype>
         </buttonlist>
 
+        <!-- 6x3 -->
+        <buttonlist name="images1" from="images0">
+            <spacing>2</spacing>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,290,290</area>
+                </state>
+                <state name="selectedactive">
+                    <area>-15,-15,320,320</area>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <!-- 4x2 -->
+        <buttonlist name="images2" from="images0">
+            <spacing>2</spacing>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,430,440</area>
+                </state>
+                <state name="selectedactive">
+                    <area>-15,-15,460,470</area>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <!-- 3x1 -->
+        <buttonlist name="images3" from="images0">
+            <spacing>2</spacing>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,585,900</area>
+                </state>
+                <state name="selectedactive">
+                    <area>-15,-15,615,930</area>
+                </state>
+            </statetype>
+        </buttonlist>
+
         <!-- shows a message when no images are available
              in the current directory -->
-         <group name="noimagesgroup" from="baseFloatingMsg" depends="noimages">
+         <group name="noimagesgroup" from="baseFloatingMsg" depends="noimages&amp;!scanprogresstext">
              <group name="msggroup">
                  <textarea name="noimages" from="message_text"/>
-             </group>
-         </group>
-
-         <group name="syncgroup" from="baseFloatingMsg" depends="syncprogresstext">
-             <group name="msggroup">
-                 <textarea name="syncprogresstext" from="message_text"/>
              </group>
          </group>
 
@@ -74,6 +111,30 @@
                  <textarea name="thumbprogresstext" from="message_text"/>
              </group>
          </group>
+
+        <group name="infolistgroup" from="basevaluelistgroup" depends="infolist">
+            <buttonlist name="infolist" from="valuelist" />
+        </group>
+
+        <group name="progressgroup"  depends="scanprogresstext">
+            <area>50%-400,100%-250,660,120</area>
+
+            <shape name="background" depends="scanprogresstext">
+                <area>0,0,100%,100%</area>
+                <type>roundbox</type>
+                <line color="#00FFFF" width="1" alpha="192" />
+                <fill color="#000000" alpha="196" />
+            </shape>
+
+            <progressbar name="scanprogressbar" from="baseprogressbar">
+                <position>30,30%</position>
+            </progressbar>
+            <textarea name="scanprogresstext" from="basetextarea">
+                <area>30,50%+15,-30,40</area>
+                <align>center</align>
+                <template>Scanning %1</template>
+            </textarea>
+        </group>
 
     </window> <!-- gallery -->
 
@@ -176,88 +237,30 @@
             <fill color="#000000" alpha="255" />
         </shape>
 
-        <!-- this is the image that shown in the foreground.
-             when fading is enabled this image is faded out. -->
-        <imagetype name="first_image">
+        <!-- image -->
+        <imagetype name="image">
             <area>10,10,-10,-10</area>
             <preserveaspect>yes</preserveaspect>
         </imagetype>
 
-        <!-- this is the image that shown in the background
-             when fading is enabled this image is faded in. -->
-        <imagetype name="second_image">
-            <area>10,10,-10,-10</area>
-            <preserveaspect>yes</preserveaspect>
-        </imagetype>
+        <!-- Represents "Show Captions" state for use as a dependancy by
+             other widgets Set = Hide; empty = Show -->
+        <textarea name="hidecaptions" from="basetextarea">
+            <area>0,0,0,0</area>
+        </textarea>
 
+        <group name="statusgroup" from="baseFloatingMinMsg" depends="status&amp;!hidecaptions">">
+            <area>600,860,-600,90</area>
+            <group name="msggroup">
+                <area>0,0,100%,100%</area>
+                <!-- End/Loading/Failed to load status -->
+               <textarea name="status" from="message_text"/>
+            </group>
+        </group>
 
-        <!-- shows some information if required -->
-       <textarea name="status">
-           <area>50%-300,100%-185,600,85</area>
-           <minsize>50%,50%</minsize>
-           <shape name="msgShape">
-               <area>0,0,100%,100%</area>
-               <minsize>50%,50%</minsize>
-               <type>roundbox</type>
-               <cornerradius>5</cornerradius>
-               <fill color="#000000" alpha="160" />
-               <line color="#FFFFFF" alpha="160" width="1" />
-           </shape>
-
-           <textarea name="status_text">
-               <area>10,5,-10,-5</area>
-               <minsize>50%,50%</minsize>
-               <align>center</align>
-               <multiline>yes</multiline>
-               <cutdown>yes</cutdown>
-               <font>mysmallnarrow</font>
-                <value>Image Loading...</value>
-           </textarea>
-       </textarea>
-
-
-        <!-- This list shows all the file information -->
-        <!-- Not optimized for Steppes yet -->
-        <buttonlist name="infolist">
-            <area>315,180,650,348</area>
-            <layout>vertical</layout>
-            <spacing>5</spacing>
-            <wrapstyle>selection</wrapstyle>
-            <buttonarea>0,0,100%,97%</buttonarea>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <shape name="buttonbackground">
-                        <area>0,0,650,40</area>
-                        <fill style="gradient">
-                            <gradient start="#505050" end="#000000" alpha="200" direction="vertical"  />
-                        </fill>
-                    </shape>
-                    <textarea name="name" from="basetextarea">
-                        <area>8,5,250,30</area>
-                    </textarea>
-                    <textarea name="value" from="basetextarea">
-                        <area>270,5,370,30</area>
-                    </textarea>
-                </state>
-                <state name="inactive" from="active"/>
-                <state name="selectedactive" from="active">
-                    <shape name="buttonbackground">
-                        <area>0,0,650,40</area>
-                        <fill style="gradient">
-                            <gradient start="#52CA38" end="#349838" alpha="255" />
-                        </fill>
-                    </shape>
-                </state>
-                <state name="selectedinactive" from="active">
-                    <shape name="buttonbackground">
-                        <area>0,0,650,40</area>
-                        <fill style="gradient">
-                            <gradient start="#52CA38" end="#349838" alpha="100" />
-                        </fill>
-                    </shape>
-                </state>
-            </statetype>
-        </buttonlist>
+        <group name="infolistgroup" from="basevaluelistgroup" depends="infolist">
+            <buttonlist name="infolist" from="valuelist" />
+        </group>
 
     </window>
 

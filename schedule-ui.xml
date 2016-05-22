@@ -950,11 +950,13 @@
                 <value>Active filters</value>
             </textarea>
 
-            <buttonlist name="activefilters" from="baseinfobuttonlist">
+            <buttonlist name="activefilters" from="basebulletbuttonlist">
                 <area>30,110,-30,-60</area>
                 <align>top,hcenter</align>
-                <minsize vanish="true" shrink="short" initiator="yes">500,60</minsize>
                 <wrapstyle>none</wrapstyle>
+                <statetype name="buttonitem">
+                    <state name="selectedinactive" from="active" />
+                </statetype>
             </buttonlist>
         </group>
 
