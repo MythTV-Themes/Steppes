@@ -31,7 +31,10 @@
                     <area>0,0,100%,96</area>
                     <shape name="background">
                         <area>0,0,195,96</area>
-                        <fill color="#CCCCCC" alpha="28" />
+                        <fill style="gradient">
+                            <gradient start="#222222" end="#AAAAAA" alpha="255"
+                                      direction="diagonal"  />
+                        </fill>
                     </shape>
                     <imagetype name="channelicon">
                         <area>5,8,80,80</area>
