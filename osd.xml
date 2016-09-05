@@ -301,7 +301,7 @@
         <fontdef name="smallnarrow" face="Liberation Sans Narrow">
             <pixelsize>26</pixelsize>
             <stretch>condensed</stretch>
-            <color>#FFFFFF</color>
+            <color>#000000</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
@@ -320,7 +320,7 @@
         <shape name="background">
             <area>0,0,100%,100%</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="128" />
+            <fill color="#DDCCDD" alpha="115" />
             <line color="#55FFFF" alpha="96" width="2" />
             <cornerradius>10</cornerradius>
         </shape>
@@ -612,7 +612,7 @@
         <fontdef name="smallnarrow" face="Liberation Sans Narrow">
             <pixelsize>26</pixelsize>
             <stretch>condensed</stretch>
-            <color>#FFFFFF</color>
+            <color>#000000</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
@@ -631,7 +631,7 @@
         <shape name="background">
             <area>0,0,100%,100%</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="128" />
+            <fill color="#DDCCDD" alpha="115" />
             <line color="#55FFFF" alpha="96" width="2" />
             <cornerradius>10</cornerradius>
         </shape>
