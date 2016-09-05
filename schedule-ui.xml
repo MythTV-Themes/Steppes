@@ -32,7 +32,7 @@
                     <shape name="background">
                         <area>0,0,195,96</area>
                         <fill style="gradient">
-                            <gradient start="#222222" end="#AAAAAA" alpha="255"
+                            <gradient start="#221122" end="#AA99AA" alpha="255"
                                       direction="diagonal"  />
                         </fill>
                     </shape>
