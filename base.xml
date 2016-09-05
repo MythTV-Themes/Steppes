@@ -151,6 +151,10 @@
         <color>#DDDDDD</color>
     </fontdef>
 
+    <fontdef name="myverysmallnarrowlabel" from="myverysmallnarrow">
+        <color>#A0BFFF</color>
+    </fontdef>
+
     <!-- Monospace -->
 
     <fontdef name="mysmallmono" from="basemono">
@@ -1165,24 +1169,21 @@
         </statetype>
     </buttonlist>
 
-    <!-- two line per element -->
     <buttonlist name="basevaluebuttonlist">
         <arrange>stack</arrange>
         <align>top</align>
         <area>0,20,600,720</area>
         <layout>vertical</layout>
         <spacing>5</spacing>
-        <buttonarea>20,0,-20,100%</buttonarea>
-
-        <minsize vanish="true" shrink="short" initiator="yes">500,60</minsize>
+        <buttonarea>20,0,-25,100%</buttonarea>
 
         <statetype name="buttonitem">
-            <area>0,0,100%,120</area>
+            <area>0,0,100%,180</area>
             <minsize shrink="short">100%,5</minsize>
 
             <state name="active">
                 <area>0,0,100%,120</area>
-                <minsize shrink="short">100%,5</minsize>
+                <minsize shrink="short">100%,6</minsize>
                 <shape name="background">
                     <!-- work around a stack / minsize display bug by using
                          empty image to help spacing -->
@@ -1190,36 +1191,31 @@
                     <minsize shrink="short">100%,5</minsize>
                 </shape>
                 <textarea name="name" from="basetextarea">
-                    <area>5,3,25%,-3</area>
+                    <area>5,3,30%,-3</area>
                     <minsize shrink="short">100%,5</minsize>
                     <multiline>yes</multiline>
                     <cutdown>no</cutdown>
                     <align>top,right</align>
-                    <font>myverysmallnarrowgrey</font>
+                    <font>myverysmallnarrowlabel</font>
                 </textarea>
-                <textarea name="value" from="name">
-                    <area>26%,3,-5,-3</area>
+                <textarea name="sep">
+                    <area>31%,3,10,-3</area>
                     <minsize shrink="short">100%,5</minsize>
-                    <template>: %1</template>
                     <align>top,left</align>
-                </textarea>
-            </state>
-            <state name="selectedinactive" from="active">
-                <textarea name="name">
-                    <font>myverysmallnarrowblue</font>
+                    <value>:</value>
+                    <font>myverysmallnarrowlabel</font>
                 </textarea>
                 <textarea name="value">
-                    <font>myverysmallnarrowblue</font>
+                    <area>31%+15,3,-10,-3</area>
+                    <minsize shrink="short">100%,5</minsize>
+                    <multiline>yes</multiline>
+                    <cutdown>no</cutdown>
+                    <align>top,left</align>
+                    <font>myverysmallnarrow</font>
                 </textarea>
             </state>
-            <state name="selectedactive" from="selectedinactive">
-                <textarea name="name">
-                    <font>myverysmallnarrowbold</font>
-                </textarea>
-                <textarea name="value">
-                    <font>myverysmallnarrowbold</font>
-                </textarea>
-            </state>
+            <state name="selectedactive" from="active" />
+            <state name="selectedinactive" from="active" />
             <state name="disabled" from="active">
                 <textarea name="name">
                     <font>myverysmallnarrowlightgrey</font>
@@ -1229,19 +1225,21 @@
                 </textarea>
             </state>
         </statetype>
+
+        <group name="bar" from="basescrollgroup">
+            <area>100%-20,30,15,-30</area>
+        </group>
     </buttonlist>
 
     <group name="basevaluelistgroup">
         <area>100%-720,20,-30,-20</area>
-        <minsize vanish="true">500,90</minsize>
 
         <shape name="background">
-            <area>0,0,100%,100%</area>
-            <minsize vanish="true" shrink="short">100%,90</minsize>
+            <area>10,0,100%,100%</area>
             <type>roundbox</type>
             <cornerradius>15</cornerradius>
             <line color="#00FFFF" alpha="240" width="1" />
-            <fill color="#000000" alpha="240" />
+            <fill color="#000000" alpha="128" />
         </shape>
 
         <buttonlist name="valuelist" from="basevaluebuttonlist">
