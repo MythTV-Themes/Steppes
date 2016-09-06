@@ -1178,7 +1178,7 @@
         <buttonarea>20,0,-25,100%</buttonarea>
 
         <statetype name="buttonitem">
-            <area>0,0,100%,240</area>
+            <area>0,0,100%,300</area>
             <minsize shrink="short">100%,5</minsize>
 
             <state name="active">
@@ -1196,14 +1196,14 @@
                     <multiline>yes</multiline>
                     <cutdown>no</cutdown>
                     <align>top,right</align>
-                    <font>myverysmallnarrowlabel</font>
+                    <font>mysmallnarrowlabel</font>
                 </textarea>
                 <textarea name="sep">
                     <area>31%,3,10,-3</area>
                     <minsize shrink="short">100%,5</minsize>
                     <align>top,left</align>
                     <value>:</value>
-                    <font>myverysmallnarrowlabel</font>
+                    <font>mysmallnarrowlabel</font>
                 </textarea>
                 <textarea name="value">
                     <area>31%+15,3,-10,-3</area>
@@ -1211,7 +1211,7 @@
                     <multiline>yes</multiline>
                     <cutdown>no</cutdown>
                     <align>top,left</align>
-                    <font>myverysmallnarrow</font>
+                    <font>mysmallnarrow</font>
                 </textarea>
             </state>
             <state name="selectedactive" from="active" />
