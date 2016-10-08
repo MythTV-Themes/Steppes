@@ -250,7 +250,6 @@
         <shape name="background">
             <area>0,0,100%,100%</area>
             <fill color="#000000" alpha="148" />
-            <line color="#55FFFF" alpha="96" width="2" />
         </shape>
 
         <textarea name="title">
@@ -311,25 +310,43 @@
             <pixelsize>40</pixelsize>
         </fontdef>
 
-        <area>100,465,-100,385</area>
+        <area>50%-860,465,1720,385</area>
 
         <shape name="backgroundtop">
-            <area>0,0,100%,275</area>
+            <area>0,0,220,232</area>
             <fill style="gradient">
-                <gradient start="#000000" end="#DDCCDD" alpha="180"
+                <gradient start="#999999" end="#000000" alpha="160"
+                          direction="vertical"  />
+            </fill>
+        </shape>
+        <shape name="backgroundmiddle">
+            <area>0,232,220,43</area>
+            <fill style="gradient">
+                <gradient start="#000000" end="#999999" alpha="224"
                           direction="vertical"  />
             </fill>
         </shape>
         <shape name="backgroundbottom">
-            <area>0,275,100%,100%</area>
+            <area>0,275,220,110</area>
             <fill style="gradient">
-                <gradient start="#DDCCDD" end="#000000" alpha="180"
+                <gradient start="#999999" end="#000000" alpha="224"
                           direction="vertical"  />
             </fill>
         </shape>
-        <shape name="background">
-            <area>0,0,100%,100%</area>
-            <line color="#55FFFF" alpha="96" width="2" />
+
+        <shape name="backgroundrighttop">
+            <area>100%-220,0,100%,275</area>
+            <fill style="gradient">
+                <gradient start="#000000" end="#AAAAAA" alpha="160"
+                          direction="vertical"  />
+            </fill>
+        </shape>
+        <shape name="backgroundrightbottom">
+            <area>100%-220,275,100%,100%</area>
+            <fill style="gradient">
+                <gradient start="#AAAAAA" end="#000000" alpha="160"
+                          direction="vertical"  />
+            </fill>
         </shape>
 
         <clock name="clock">
@@ -340,12 +357,12 @@
         </clock>
 
         <group name="info">
-            <area>220,3,-220,-3</area>
+            <area>220,0,-220,100%</area>
 
             <shape name="infoshape">
                 <area>0,0,100%,100%</area>
                 <type>box</type>
-                <fill color="#000000" alpha="128" />
+                <fill color="#000000" alpha="208" />
             </shape>
 
             <textarea name="starttime">
@@ -386,7 +403,7 @@
         </group>
 
         <imagetype name="coverart">
-            <area>10,10,200,220</area>
+            <area>5,5,210,222</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
         <imagetype name="iconpath">
@@ -631,25 +648,28 @@
             <pixelsize>40</pixelsize>
         </fontdef>
 
-        <area>100,465,-100,385</area>
+        <area>50%-860,465,1720,385</area>
 
         <shape name="backgroundtop">
-            <area>0,0,100%,275</area>
+            <area>0,0,220,232</area>
             <fill style="gradient">
-                <gradient start="#000000" end="#DDCCDD" alpha="180"
+                <gradient start="#999999" end="#000000" alpha="160"
+                          direction="vertical"  />
+            </fill>
+        </shape>
+        <shape name="backgroundmiddle">
+            <area>0,232,220,43</area>
+            <fill style="gradient">
+                <gradient start="#000000" end="#999999" alpha="224"
                           direction="vertical"  />
             </fill>
         </shape>
         <shape name="backgroundbottom">
-            <area>0,275,100%,100%</area>
+            <area>0,275,220,110</area>
             <fill style="gradient">
-                <gradient start="#DDCCDD" end="#000000" alpha="180"
+                <gradient start="#999999" end="#000000" alpha="224"
                           direction="vertical"  />
             </fill>
-        </shape>
-        <shape name="background">
-            <area>0,0,100%,100%</area>
-            <line color="#55FFFF" alpha="96" width="2" />
         </shape>
 
         <clock name="clock">
@@ -660,12 +680,12 @@
         </clock>
 
         <group name="info">
-            <area>220,3,-3,-3</area>
+            <area>220,0,100%,100%</area>
 
             <shape name="infoshape">
                 <area>0,0,100%,100%</area>
                 <type>box</type>
-                <fill color="#000000" alpha="128" />
+                <fill color="#000000" alpha="208" />
             </shape>
 
             <textarea name="starttime">
@@ -706,7 +726,7 @@
         </group>
 
         <imagetype name="coverart">
-            <area>10,10,200,220</area>
+            <area>5,5,210,222</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
         <imagetype name="iconpath">
