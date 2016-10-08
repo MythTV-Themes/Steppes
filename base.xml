@@ -1238,7 +1238,9 @@
             <area>10,0,100%,100%</area>
             <type>roundbox</type>
             <cornerradius>15</cornerradius>
+<!--
             <line color="#00FFFF" alpha="240" width="1" />
+-->
             <fill color="#000000" alpha="128" />
         </shape>
 
@@ -2341,8 +2343,8 @@
                 </textarea>
 
                 <textarea name="description">
-                    <align>left</align>
                     <area>20,125,-20,-55</area>
+                    <align>left</align>
                     <font>mydesc</font>
                     <multiline>yes</multiline>
                     <scroll direction="vertical" rate="10" returnrate="70"
