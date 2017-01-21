@@ -2305,7 +2305,7 @@
 
                 <textarea name="syndicatedepisode" depends="!s00e00">
                     <area>100%-155,100%-40,-20,33</area>
-                    <font>mysmallnarrowgrey</font>
+                    <font>mysmallgrey</font>
                     <align>right,bottom</align>
                     <template>%|[SYNDICATEDEPISODE|]%</template>
                 </textarea>
