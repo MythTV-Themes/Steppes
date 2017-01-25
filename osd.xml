@@ -25,7 +25,6 @@
             <area>0,0,100%,100%</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="148" />
-            <line color="#55FFFF" alpha="96" width="2" />
             <cornerradius>10</cornerradius>
         </shape>
 
@@ -197,7 +196,6 @@
                 <minsize>20,100%</minsize>
                 <type>roundbox</type>
                 <fill color="#000000" alpha="148" />
-                <line color="#55FFFF" alpha="96" width="3" />
                 <cornerradius>10</cornerradius>
             </shape>
             <textarea name="message_text">
@@ -224,7 +222,6 @@
             <area>0,0,100%,100%</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="148" />
-            <line color="#55FFFF" alpha="96" width="2" />
             <cornerradius>10</cornerradius>
         </shape>
         <textarea name="osd_number_entry">
@@ -761,7 +758,6 @@
             <area>0,0,100%,100%</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="148" />
-            <line color="#55FFFF" alpha="96" width="2" />
             <cornerradius>10</cornerradius>
         </shape>
 
@@ -937,7 +933,6 @@
             <area>0,0,100%,100%</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="148" />
-            <line color="#55FFFF" alpha="96" width="2" />
             <cornerradius>10</cornerradius>
         </shape>
 
@@ -1015,7 +1010,9 @@
             <area>0,0,100%,100%</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="200" />
+<!--
             <line color="#55FFFF" alpha="96" width="2" />
+-->
             <cornerradius>10</cornerradius>
         </shape>
         <textarea name="messagearea">
