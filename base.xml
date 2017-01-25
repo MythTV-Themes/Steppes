@@ -427,7 +427,6 @@
             <gradient start="#000000" end="#302040" alpha="255"
                       direction="diagonal"  />
         </fill>
-        <line color="#00FFFF" width="1" />
     </shape>
 
     <shape name="baseareashape">
