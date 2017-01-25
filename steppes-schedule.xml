@@ -6,8 +6,19 @@
     <buttonlist name="scheduleList" from="episodeList">
         <statetype name="buttonitem">
             <state name="active">
-                <textarea name="card">
-                    <area>30,8,60,35</area>
+                <textarea name="card" depends="!inputname">
+                    <area>15,8,145,35</area>
+                    <font>mysmallgrey</font>
+                    <font state="running">mysmallgreen</font>
+                    <font state="disabled">mysmallgrey</font>
+                    <font state="error">mysmallred</font>
+                    <font state="normal">mysmallblue</font>
+                    <font state="warning">mysmallorange</font>
+                    <align>hcenter</align>
+                    <template>(%1)</template>
+                </textarea>
+                <textarea name="inputname">
+                    <area>15,8,145,35</area>
                     <font>mysmallgrey</font>
                     <font state="running">mysmallgreen</font>
                     <font state="disabled">mysmallgrey</font>
@@ -33,8 +44,19 @@
                     <font state="warning">myverysmallorange</font>
                 </textarea>
 
-                <textarea name="card">
-                    <area>30,8,60,35</area>
+                <textarea name="card" depends="!inputname">
+                    <area>15,8,145,35</area>
+                    <font>mysmallgrey</font>
+                    <font state="running">mysmallgreen</font>
+                    <font state="disabled">mysmallgrey</font>
+                    <font state="error">mysmallred</font>
+                    <font state="normal">mysmallblue</font>
+                    <font state="warning">mysmallorange</font>
+                    <align>hcenter</align>
+                    <template>(%1)</template>
+                </textarea>
+                <textarea name="inputname">
+                    <area>15,8,145,35</area>
                     <font>mysmallgrey</font>
                     <font state="running">mysmallgreen</font>
                     <font state="disabled">mysmallgrey</font>
