@@ -26,19 +26,19 @@
         <buttonlist name="log" from="itemsList">
             <statetype name="buttonitem">
                 <area>0,0,100%,100%</area>
-                <minsize>100%,40</minsize>
+                <minsize>100%,50</minsize>
                 <state name="inactive">
                     <area>0,0,100%,340</area>
-                    <minsize>100%,40</minsize>
+                    <minsize>100%,50</minsize>
                     <statetype name="status">
                         <area>0,0,100%,100%</area>
-                        <minsize>100%,40</minsize>
+                        <minsize>100%,50</minsize>
                         <state name="default">
                             <area>0,0,100%,100%</area>
                             <minsize>100%,40</minsize>
                             <shape name="statusborder">
-                                <area>6,0,-6,100%</area>
-                                <minsize>100%,40</minsize>
+                                <area>9,0,-9,100%</area>
+                                <minsize>100%,50</minsize>
                             </shape>
                         </state>
                         <state name="normal" from="default" />
