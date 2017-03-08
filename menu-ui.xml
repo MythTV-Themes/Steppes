@@ -22,14 +22,14 @@
                 <state name="inactive">
                     <area>20,0,-20,110</area>
                     <shape name="groupBorder">
-                        <cornerradius>15</cornerradius>
+                        <cornerradius>10</cornerradius>
                     </shape>
                 </state>
 
                 <state name="active" from="inactive" />
 
                 <state name="selectedinactive" from="inactive">
-                    <area>5,0,-5,110</area>
+                    <area>0,0,100%,110</area>
 
                     <textarea name="buttontext">
                         <area>5,5,-5,-5</area>
@@ -40,17 +40,38 @@
                     <area>0,0,100%,220</area>
 
                     <shape name="groupBorder">
-                        <area>0,0,100%,100%</area>
-                        <type>roundbox</type>
-                        <line color="#50EFDF" alpha="240" width="5" />
-                        <cornerradius>15</cornerradius>
+                        <area>10,0,-10,100%</area>
                     </shape>
 
-                    <shape name="descshape">
-                        <area>13,105,-13,-5</area>
+                    <shape name="highlightleft">
+                        <area>0,30,4,-30</area>
+                        <minsize>100%,20</minsize>
+                        <type>ellipse</type>
+                        <fill color="#50EFDF" />
+                    </shape>
+                    <shape name="highlightright">
+                        <area>100%-4,30,4,-30</area>
+                        <minsize>100%,20</minsize>
+                        <type>ellipse</type>
+                        <fill color="#50EFDF" />
+                    </shape>
+                    <shape name="desctop">
+                        <area>13,105,-13,55</area>
                         <type>roundbox</type>
-                        <fill color="#502550" alpha="80" />
-                        <cornerradius>15</cornerradius>
+                        <cornerradius>1</cornerradius>
+                        <fill style="gradient">
+                            <gradient start="#000000" end="#AA99AA" alpha="224"
+                                      direction="vertical"  />
+                        </fill>
+                    </shape>
+                    <shape name="descbottom">
+                        <area>13,160,-13,55</area>
+                        <type>roundbox</type>
+                        <cornerradius>1</cornerradius>
+                        <fill style="gradient">
+                            <gradient start="#AA99AA" end="#000000" alpha="224"
+                                      direction="vertical"  />
+                        </fill>
                     </shape>
                     <textarea name="buttontext">
                         <area>13,5,-13,97</area>
