@@ -742,7 +742,11 @@
                         <line color="#00FFFF" width="2" alpha="160" />
                         <fill color="#555555" alpha="255" />
                     </shape>
-                    <group name="contents" />
+                    <group name="contents">
+                        <imagetype name="buttonimage">
+                            <alpha>164</alpha>
+                        </imagetype>
+                    </group>
                     <shape name="highlighttop">
                         <area>0,0,0,0</area>
                     </shape>

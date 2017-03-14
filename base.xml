@@ -1576,6 +1576,10 @@
 
                 <group name="contents">
                     <area>0,0,100%,100%</area>
+                    <imagetype name="buttonimage">
+                        <alpha>164</alpha>
+                    </imagetype>
+
                 </group>
 
             </state> <!-- inactive -->
