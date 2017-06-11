@@ -9,18 +9,8 @@
             </group>
         </group>
 
-        <group name="groupheading" from="baseModeGroup">
-            <area>30,25,-30,45</area>
-            <textarea name="grouphelp" from="pagemode">
-                <align>center</align>
-                <font>mysmall</font>
-                <extraleading>1</extraleading>
-                <cutdown>left</cutdown>
-            </textarea>
-        </group>
-
         <buttonlist name="settingslist" from2="basebuttonlist">
-            <area>70,90,100%-70,100%-200</area>
+            <area>70,50,100%-70,100%-260</area>
             <layout>vertical</layout>
             <wrapstyle>selection</wrapstyle>
             <arrange>stack</arrange>
@@ -32,7 +22,7 @@
                     <area>0,0,100%,100%</area>
                     <minsize>40,100%</minsize>
                     <group name="labels">
-                        <area>0,0,560,100%</area>
+                        <area>30,0,560,100%</area>
 
                         <shape name="background">
                             <area>0,0,100%,100%</area>
@@ -50,11 +40,11 @@
                         </textarea>
                     </group>
                     <group name="widgets">
-                        <area>580,0,100%,100%</area>
+                        <area>610,0,100%,100%</area>
                         <minsize>30,100%</minsize>
 
                         <shape name="background" from="basebuttonshape">
-                            <minsize>30,100%</minsize>
+                            <minsize>50,100%</minsize>
                             <type>roundbox</type>
                             <cornerradius>5</cornerradius>
                         </shape>
@@ -62,23 +52,23 @@
                         <statetype name="widgettype">
                             <area>0,0,100%,100%</area>
                             <minsize>30,100%</minsize>
-                            <state name="standard">
-                                <area>0,0,100%,100%</area>
-                                <minsize>30,100%</minsize>
-                            </state>
                             <state name="group">
                                 <area>0,0,100%,100%</area>
                                 <minsize>30,100%</minsize>
                             </state>
-                            <state name="button">
-                                <area>0,0,100%,100%</area>
-                                <minsize>30,100%</minsize>
+                            <state name="standard" from="group">
+                                <imagetype name="buttonarrow">
+                                    <position>10,24</position>
+                                    <minsize>30,100%</minsize>
+                                    <filename>Images/rightarrow-on.png</filename>
+                                </imagetype>
+                            </state>
+                            <state name="button" from="group">
                                 <textarea name="label">
                                     <area>0,0,100%,100%</area>
                                     <minsize>30,100%</minsize>
                                     <font>basesmall</font>
                                     <align>vcenter</align>
-                                    <value>Execute</value>
                                 </textarea>
                             </state>
                             <state name="checkbox">
@@ -90,17 +80,14 @@
                                     <line color="#33FFFF" alpha="128" width="2" />
                                 </shape>
                             </state>
-                            <state name="textedit">
-                                <area>0,0,100%,100%</area>
-                                <minsize>30,100%</minsize>
-                            </state>
-                            <state name="filebrowser" from="textedit">
+                            <state name="textedit" from="group" />
+                            <state name="filebrowser" from="group">
                                 <imagetype name="filebrowserimage">
                                     <area>6,26,20,20</area>
                                     <minsize>30,100%</minsize>
                                 </imagetype>
                             </state>
-                            <state name="spinbox" from="textedit">
+                            <state name="spinbox" from="group">
                                 <imagetype name="arrow1">
                                     <area>10,10,20,20</area>
                                     <minsize>30,100%</minsize>
@@ -112,7 +99,7 @@
                                     <filename>Images/downarrow-on.png</filename>
                                 </imagetype>
                             </state>
-                            <state name="combobox" from="textedit">
+                            <state name="combobox" from="group">
                                 <imagetype name="arrow">
                                     <area>10,26,20,20</area>
                                     <minsize>30,100%</minsize>
@@ -121,7 +108,7 @@
                             </state>
                         </statetype>
                         <!-- we can not put more than one textarea with the same name
-                             The textarea can no be in a custom state
+                             The textarea can not be in a custom state
                              We can not put the textarea in a state from statetype neither
                              Which mean we can not theme them differently according to the statetype
                         -->
@@ -157,7 +144,28 @@
                     <group name="widgets">
                         <shape name="background" from="baseinactivebuttonshape">
                             <minsize>30,100%</minsize>
+                            <alpha>128</alpha>
                         </shape>
+
+                        <statetype name="widgettype">
+                            <state name="spinbox">
+                                <imagetype name="arrow1">
+                                    <alpha>128</alpha>
+                                </imagetype>
+                                <imagetype name="arrow2">
+                                    <alpha>128</alpha>
+                                </imagetype>
+                            </state>
+                            <state name="combobox">
+                                <imagetype name="arrow">
+                                    <alpha>128</alpha>
+                                </imagetype>
+                            </state>
+                        </statetype>
+
+                        <imagetype name="buttonarrow">
+                            <alpha>128</alpha>
+                        </imagetype>
                     </group>
                 </state>
                 <state name="disabledinactive" from="disabledactive">
@@ -166,15 +174,25 @@
                     <group name="widgets">
                         <shape name="background" from="baseselectedinactivebuttonshape">
                             <minsize>30,100%</minsize>
+                            <alpha>128</alpha>
                         </shape>
                     </group>
                 </state>
             </statetype>
+
+            <group name="bar" from="basescrollgroup">
+                <area>10,15,15,-30</area>
+            </group>
         </buttonlist>
 
+        <group name="pagehelp" from="baseMsgGroup" depends="grouphelp">
+            <area>150,100%-260,-150,90</area>
+            <textarea name="grouphelp" from="msgText"/>
+        </group>
+
         <group name="help" from="baseMsgGroup">
-            <area>150,100%-210,-150,120</area>
-            <textarea name="selectedsettinghelp" from="msgText" />
+            <area>150,100%-170,-150,90</area>
+            <textarea name="selectedsettinghelp" from="msgText"/>
         </group>
 
     </window>
