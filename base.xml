@@ -1993,30 +1993,8 @@
     <group name="guideprogdetails">
         <area>40,35,460,970</area>
 
-        <group name="titlegroup" from="baseMsgGroup">
-            <area>0,0,100%,135</area>
-
-            <shape name="msgShape">
-                <line color="#00FFFF" alpha="160" width="1" />
-            </shape>
-            <textarea name="title" from="msgText">
-                <font>mymediumbold</font>
-            </textarea>
-        </group>
-
-        <group name="subtitlegroup" from="baseMsgGroup">
-            <area>0,140,100%,115</area>
-
-            <shape name="msgShape">
-                <line color="#00FFFF" alpha="160" width="1" />
-            </shape>
-            <textarea name="subtitle" from="msgText">
-                <font>mysmallbold</font>
-            </textarea>
-        </group>
-
         <group name="wheregroup" from="baseMsgGroup">
-            <area>0,260,100%,125</area>
+            <area>0,0,100%,125</area>
             <shape name="msgShape">
                 <line color="#00FFFF" alpha="160" width="1" />
             </shape>
@@ -2043,7 +2021,28 @@
             </textarea>
         </group>
 
-        <group name="descgroup" from="baseMsgGroup">
+        <group name="titlegroup" from="baseMsgGroup">
+            <area>0,130,100%,135</area>
+
+            <shape name="msgShape">
+                <line color="#00FFFF" alpha="160" width="1" />
+            </shape>
+            <textarea name="title" from="msgText">
+                <font>mymediumbold</font>
+            </textarea>
+        </group>
+
+        <group name="subtitlegroup" from="baseMsgGroup" depends="subtitle">
+            <area>0,270,100%,115</area>
+            <shape name="msgShape">
+                <line color="#00FFFF" alpha="160" width="1" />
+            </shape>
+            <textarea name="subtitle" from="msgText">
+                <font>mysmallbold</font>
+            </textarea>
+        </group>
+
+        <group name="descgroup0" from="baseMsgGroup" depends="subtitle">
             <area>0,390,100%,100%</area>
 
             <shape name="msgShape">
@@ -2058,20 +2057,22 @@
                         startdelay="15" returndelay="15"/>
                 <cutdown>no</cutdown>
             </textarea>
-<!--
-            <textarea name="syndicatedepisode" depends="!s00e00">
-                <area>20,100%-40,-210,32</area>
-                <font>mylabelfont</font>
-                <align>left,bottom</align>
-                <template>%|[SYNDICATEDEPISODE|]%</template>
+        </group>
+        <group name="descgroup1" from="baseMsgGroup" depends="!subtitle">
+            <area>0,270,100%,100%</area>
+
+            <shape name="msgShape">
+                <line color="#00FFFF" alpha="160" width="1" />
+            </shape>
+            <textarea name="description0" from="msgText">
+                <area>10,10,-10,-10</area>
+                <font>myverysmall</font>
+                <align>left,top</align>
+                <template>%|RATING| %%|(STARS|) %%DESCRIPTION%%\n\nPart |PARTNUMBER| of %%PARTTOTAL%</template>
+                <scroll direction="vertical" rate="7" returnrate="105"
+                        startdelay="15" returndelay="15"/>
+                <cutdown>no</cutdown>
             </textarea>
-            <textarea name="parttotal">
-                <area>100%-200,100%-40,-20,32</area>
-                <align>right,bottom</align>
-                <font>mylabelfont</font>
-                <template>%Part |PARTNUMBER| of %%PARTTOTAL%</template>
-            </textarea>
--->
         </group>
     </group>
 
@@ -2371,8 +2372,18 @@
 -->
                 </textarea>
 
-                <textarea name="description">
+                <textarea name="description" depends="subtitle">
                     <area>20,125,-20,-55</area>
+                    <align>left</align>
+                    <font>mydesc</font>
+                    <multiline>yes</multiline>
+                    <scroll direction="vertical" rate="10" returnrate="70"
+                            startdelay="17" returndelay="17"/>
+                    <cutdown>no</cutdown>
+                    <template>%|RATING| %%|(STARS|) %%DESCRIPTION%</template>
+                </textarea>
+                <textarea name="description0" depends="!subtitle">
+                    <area>20,88,-20,-55</area>
                     <align>left</align>
                     <font>mydesc</font>
                     <multiline>yes</multiline>
@@ -2405,8 +2416,11 @@
                     <position>60,88</position>
                 </textarea>
 
-                <textarea name="description">
+                <textarea name="description" depends="subtitle">
                     <area>20,125,-20,-45</area>
+                </textarea>
+                <textarea name="description0" depends="!subtitle">
+                    <area>20,60,-20,-45</area>
                 </textarea>
             </state>
         </statetype>
