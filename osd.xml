@@ -311,6 +311,9 @@
             <color>#FFFFFF</color>
             <stretch>condensed</stretch>
         </fontdef>
+        <fontdef name="descfont" from="small">
+            <pixelsize>32</pixelsize>
+        </fontdef>
         <fontdef name="smallinfo" from="small">
             <color>#A0BFFF</color>
         </fontdef>
@@ -321,7 +324,7 @@
             <pixelsize>40</pixelsize>
         </fontdef>
 
-        <area>50%-860,465,1720,385</area>
+        <area>50%-860,450,1720,400</area>
 
         <shape name="backgroundtop">
             <area>0,0,220,232</area>
@@ -338,7 +341,7 @@
             </fill>
         </shape>
         <shape name="backgroundbottom">
-            <area>0,275,220,110</area>
+            <area>0,275,220,100%</area>
             <fill style="gradient">
                 <gradient start="#999999" end="#000000" alpha="224"
                           direction="vertical"  />
@@ -405,7 +408,7 @@
                 <align>left,top</align>
             </textarea>
             <textarea name="description">
-                <font>medium</font>
+                <font>descfont</font>
                 <area>5,90,-5,100%</area>
                 <align>left,top</align>
                 <multiline>yes</multiline>
@@ -728,7 +731,7 @@
                 <align>left,top</align>
             </textarea>
             <textarea name="description">
-                <font>medium</font>
+                <font>small</font>
                 <area>5,90,-5,100%</area>
                 <align>left,top</align>
                 <multiline>yes</multiline>
