@@ -807,4 +807,174 @@
         </button>
     </window>
 
+    <window name="channelscanner">
+        <group name="PageHeading" from="basePageHeading">
+            <group name="Heading">
+                <textarea name="title" from="text">
+                    <value>Scanning</value>
+                </textarea>
+            </group>
+        </group>
+
+        <group name="scangroup">
+            <area>50,40,-50,-110</area>
+
+            <shape name="background">
+                <area>0,0,100%,100%</area>
+                <type>roundbox</type>
+                <cornerradius>10</cornerradius>
+                <fill color="#000000" alpha="90" />
+            </shape>
+
+            <group name="basegroup">
+                <area>10, 250, 50%-20, 140</area>
+                <textarea name="base_label" from="basetextarea">
+                    <area>5,33,200,-5</area>
+                    <multiline>yes</multiline>
+                    <cutdown>no</cutdown>
+                    <align>top,right</align>
+                    <font>mysmallnarrowlabel</font>
+                </textarea>
+                <textarea name="base_sep">
+                    <area>210,33,10,-5</area>
+                    <align>top,left</align>
+                    <value>:</value>
+                    <font>mysmallnarrowlabel</font>
+                </textarea>
+                <textarea name="base_text">
+                    <area>220,33,-5,-5</area>
+                    <multiline>yes</multiline>
+                    <cutdown>no</cutdown>
+                    <align>top,left</align>
+                    <font>mysmallnarrow</font>
+                </textarea>
+            </group>
+
+            <group name="statusgroup" from="basegroup">
+                <area>10, 50, 50%-20, 90</area>
+                <shape name="shadow">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <cornerradius>10</cornerradius>
+                    <fill color="#FFFFFF" alpha="30" />
+                </shape>
+                <textarea name="status_label" from="base_label">
+                    <value>Status</value>
+                </textarea>
+                <textarea name="status" from="base_text" />
+            </group>
+
+            <group name="lockgroup" from="basegroup">
+                <area>10, 150, 50%-20, 90</area>
+                <shape name="shadow">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <cornerradius>10</cornerradius>
+                    <fill color="#FFFFFF" alpha="30" />
+                </shape>
+                <textarea name="signallock_label" from="base_label">
+                    <value>Lock</value>
+                </textarea>
+                <textarea name="signallock" from="base_text" />
+            </group>
+
+            <group name="progressgroup" from="basegroup">
+                <position>10, 250</position>
+                <shape name="shadow">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <cornerradius>10</cornerradius>
+                    <fill color="#FFFFFF" alpha="30" />
+                </shape>
+                <progressbar name="scanprogress" from="baseprogressbar">
+                    <position>15,5</position>
+                </progressbar>
+                <textarea name="progress_label" from="base_label">
+                    <value>Scan Progress</value>
+                </textarea>
+                <textarea name="progresstext" from="base_text">
+                    <area>225,33,70,-3</area>
+                </textarea>
+                <textarea name="scanprogresstext" from="base_text">
+                    <area>300,33,-5,-3</area>
+                </textarea>
+            </group>
+
+            <group name="signalnoisegroup" from="basegroup">
+                <position>10, 400</position>
+                <shape name="shadow">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <cornerradius>10</cornerradius>
+                    <fill color="#FFFFFF" alpha="30" />
+                </shape>
+                <progressbar name="signalnoise"  from="baseprogressbar">
+                    <position>15,5</position>
+                </progressbar>
+                <textarea name="signal_label" from="base_label">
+                    <value>Signal / Noise</value>
+                </textarea>
+                <textarea name="signalnoisetext" from="base_text" />
+            </group>
+
+            <group name="signalstrengthgroup" from="basegroup">
+                <position>10, 550</position>
+                <shape name="shadow">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <cornerradius>10</cornerradius>
+                    <fill color="#FFFFFF" alpha="30" />
+                </shape>
+                <progressbar name="signalstrength" from="baseprogressbar">
+                    <position>15,5</position>
+                </progressbar>
+                <textarea name="signal_label" from="base_label">
+                    <value>Signal Strength</value>
+                </textarea>
+                <textarea name="signalstrengthtext" from="base_text" />
+            </group>
+
+            <group name="rotatorgroup" from="basegroup" depends="rotorprogress">
+                <position>10, 700</position>
+                <shape name="shadow">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <cornerradius>10</cornerradius>
+                    <fill color="#FFFFFF" alpha="30" />
+                </shape>
+                <progressbar name="rotatorprogress" from="baseprogressbar">
+                    <position>15,5</position>
+                </progressbar>
+                <textarea name="rotator_label" from="base_label">
+                    <value>Rotor Movement</value>
+                </textarea>
+                <textarea name="rotatortext" from="base_text" />
+            </group>
+
+            <group name="loggroup">
+                <area>50%,20,-20,-20</area>
+
+                <shape name="background">
+                    <area>10,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <cornerradius>15</cornerradius>
+                    <fill color="#000000" alpha="128" />
+                </shape>
+
+                <buttonlist name="log" from="baseinfobuttonlist">
+                    <align>top</align>
+                    <area>5,5,-5,-5</area>
+                    <group name="bar" from="basescrollgroup">
+                        <area>100%-20,30,15,-30</area>
+                    </group>
+                </buttonlist>
+            </group>
+
+            <button name="exit" from="varbuttonleft">
+                <value>Exit</value>
+            </button>
+        </group>
+
+    </window>
+
 </mythuitheme>
