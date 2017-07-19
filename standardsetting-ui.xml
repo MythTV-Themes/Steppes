@@ -9,8 +9,30 @@
             </group>
         </group>
 
+        <group name="pagehelp" depends="grouphelp">
+            <area>150,50,-150,90</area>
+            <minsize>300, 90</minsize>
+
+            <shape name="pagehelpshape">
+                <area>0,0,100%,100%</area>
+                <minsize>50,100%</minsize>
+                <type>roundbox</type>
+                <cornerradius>15</cornerradius>
+                <fill color="#000000" alpha="255" />
+            </shape>
+
+            <textarea name="grouphelp">
+                <area>25,5,-25,-5</area>
+                <minsize>50,100%</minsize>
+                <align>center</align>
+                <font>mysmalllightgrey</font>
+                <multiline>yes</multiline>
+                <cutdown>no</cutdown>
+            </textarea>
+        </group>
+
         <buttonlist name="settingslist" from2="basebuttonlist">
-            <area>70,50,100%-70,100%-260</area>
+            <area>70,180,100%-70,100%-200</area>
             <layout>vertical</layout>
             <wrapstyle>selection</wrapstyle>
             <arrange>stack</arrange>
@@ -185,14 +207,27 @@
             </group>
         </buttonlist>
 
-        <group name="pagehelp" from="baseMsgGroup" depends="grouphelp">
-            <area>150,100%-260,-150,90</area>
-            <textarea name="grouphelp" from="msgText"/>
-        </group>
+        <group name="help" depends="selectedsettinghelp">
+            <area>50,100%-190,-50,90</area>
+            <minsize>300, 90</minsize>
 
-        <group name="help" from="baseMsgGroup">
-            <area>150,100%-170,-150,90</area>
-            <textarea name="selectedsettinghelp" from="msgText"/>
+            <shape name="helpshape">
+                <area>0,0,100%,100%</area>
+                <minsize>50,100%</minsize>
+                <type>roundbox</type>
+                <cornerradius>5</cornerradius>
+                <fill color="#000000" alpha="192" />
+                <line color="#FFFFFF" alpha="160" width="1" />
+            </shape>
+
+            <textarea name="selectedsettinghelp">
+                <area>25,5,-25,-5</area>
+                <minsize>50,100%</minsize>
+                <align>center</align>
+                <font>mysmalllightgrey</font>
+                <multiline>yes</multiline>
+                <cutdown>no</cutdown>
+            </textarea>
         </group>
 
     </window>
