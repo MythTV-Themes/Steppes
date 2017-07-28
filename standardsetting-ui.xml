@@ -231,4 +231,42 @@
         </group>
 
     </window>
+
+    <window name="terminal">
+        <group name="PageHeading" from="basePageHeading">
+            <group name="Heading">
+                <textarea name="title" from="text">
+                    <value>Terminal</value>
+                </textarea>
+            </group>
+        </group>
+
+        <group name="listgroup">
+            <area>40,50,-40,-120</area>
+
+            <shape name="background">
+                <area>0,0,100%,100%</area>
+                <type>roundbox</type>
+                <cornerradius>15</cornerradius>
+                <fill color="#000000" alpha="64" />
+            </shape>
+
+            <buttonlist name="output" from="baseinfobuttonlist">
+                <area>50,10,-50,-100</area>
+                <align>top,left</align>
+                <showscrollbar>yes</showscrollbar>
+                <group name="bar" from="basescrollgroup">
+                    <area>5, 35, 12, -40</area>
+                </group>
+            </buttonlist>
+            <textedit name="textedit" from="basewidetextedit">
+                <area>100,100%-100,50%+100,70</area>
+            </textedit>
+            <button name="enter" from="varbuttonleft">
+                 <area>50%+150,100%-100,-70,70</area>
+                <value>Enter</value>
+            </button>
+        </group>
+    </window>
+
 </mythuitheme>
