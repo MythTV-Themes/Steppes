@@ -44,7 +44,7 @@
                     <area>0,0,100%,100%</area>
                     <minsize>40,100%</minsize>
                     <group name="labels">
-                        <area>30,0,560,100%</area>
+                        <area>30,0,580,100%</area>
 
                         <shape name="background">
                             <area>0,0,100%,100%</area>
@@ -65,14 +65,18 @@
                         <area>610,0,100%,100%</area>
                         <minsize>30,100%</minsize>
 
-                        <shape name="background" from="basebuttonshape">
+                        <group name="backgroundoff">
+                            <area>30,0,100%,100%</area>
                             <minsize>50,100%</minsize>
-                            <type>roundbox</type>
-                            <cornerradius>5</cornerradius>
-                        </shape>
+                            <shape name="background" from="basebuttonshape">
+                                <minsize>50,100%</minsize>
+                                <type>roundbox</type>
+                                <cornerradius>5</cornerradius>
+                            </shape>
+                        </group>
 
                         <statetype name="widgettype">
-                            <area>0,0,100%,100%</area>
+                            <area>30,0,100%,100%</area>
                             <minsize>30,100%</minsize>
                             <state name="group">
                                 <area>0,0,100%,100%</area>
@@ -80,9 +84,9 @@
                             </state>
                             <state name="standard" from="group">
                                 <imagetype name="buttonarrow">
-                                    <position>10,24</position>
-                                    <minsize>30,100%</minsize>
-                                    <filename>Images/rightarrow-on.png</filename>
+                                    <area>30,20,40,-20</area>
+                                    <minsize>100,100%</minsize>
+                                    <filename>Images/Music/ff_button_on.png</filename>
                                 </imagetype>
                             </state>
                             <state name="button" from="group">
@@ -135,7 +139,7 @@
                              Which mean we can not theme them differently according to the statetype
                         -->
                         <textarea name="value">
-                            <area>40,0,100%-20,100%</area>
+                            <area>70,0,100%-20,100%</area>
                             <minsize>30,100%</minsize>
                             <font>basesmall</font>
                             <cutdown>yes</cutdown>
@@ -143,7 +147,7 @@
                         </textarea>
 
                         <statetype name="buttoncheck" from="basebuttoncheck">
-                            <position>34,24</position>
+                            <position>64,24</position>
                         </statetype>
 
                         <imagetype name="buttonarrow">
@@ -208,7 +212,7 @@
         </buttonlist>
 
         <group name="help" depends="selectedsettinghelp">
-            <area>50,100%-190,-50,90</area>
+            <area>50,100%-200,-50,-80</area>
             <minsize>300, 90</minsize>
 
             <shape name="helpshape">
