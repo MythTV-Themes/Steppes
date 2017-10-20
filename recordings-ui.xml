@@ -46,6 +46,8 @@
         </buttonlist>
 
         <buttonlist name="recordings" from="episodeList">
+            <triggerevent context="Global" action="MENU">RIGHT</triggerevent>
+
             <statetype name="buttonitem">
 
                 <state name="inactive">

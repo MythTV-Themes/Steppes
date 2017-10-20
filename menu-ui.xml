@@ -15,6 +15,7 @@
             <align>vcenter,left</align>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>selection</wrapstyle>
+            <triggerevent context="Global" action="SELECT">RIGHT</triggerevent>
 
             <statetype name="buttonitem">
                 <area>0,0,100%,100%</area>
