@@ -727,7 +727,7 @@
 
     </window>
 
-    <!-- Home -> Manage Recordings -> Previously Recorded
+    <!-- Home -> Manage Recordings -> Prev Rec (Deprecated)
     -->
     <window name="programlist">
 
@@ -755,6 +755,36 @@
         </group>
 
         <buttonlist name="proglist" from="scheduleList" />
+    </window>
+
+    <!-- Home -> Manage Recordings -> Previously Recorded
+    -->
+    <window name="prevreclist">
+        <imagetype name="fanart">
+            <area>0,0,100%,100%</area>
+            <filename />
+        </imagetype>
+
+        <group name="PageHeading" from="basePageHeading">
+            <group name="Heading">
+                <textarea name="text">
+                    <value>Previously Recorded </value>
+                </textarea>
+            </group>
+        </group>
+
+        <group name="instructions" from="baseMsgGroup">
+            <area>40,825,450,235</area>
+            <textarea name="help2text" from="msgText" />
+        </group>
+
+        <group name="viewgroup" from="baseModeGroup">
+            <!-- e.g. "Reverse Time" -->
+            <textarea name="curview" from="pagemode" />
+        </group>
+
+        <buttonlist name="titles" from="groupsList" />
+        <buttonlist name="shows" from="scheduleList" />
     </window>
 
     <!-- Home -> Media Library -> Watch Recordings
