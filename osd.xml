@@ -404,7 +404,7 @@
             </textarea>
             <textarea name="title">
                 <font>large</font>
-                <area>20,45,-5,45</area>
+                <area>5,45,-5,45</area>
                 <align>left,top</align>
             </textarea>
             <textarea name="description">
@@ -727,7 +727,7 @@
             </textarea>
             <textarea name="title">
                 <font>large</font>
-                <area>20,45,-5,45</area>
+                <area>5,45,-5,45</area>
                 <align>left,top</align>
             </textarea>
             <textarea name="description">
