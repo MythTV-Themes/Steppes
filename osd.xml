@@ -310,21 +310,21 @@
         <area>50%-860,465,1720,385</area>
 
         <shape name="backgroundtop">
-            <area>0,0,220,232</area>
+            <area>0,0,220,247</area>
             <fill style="gradient">
                 <gradient start="#999999" end="#000000" alpha="160"
                           direction="vertical"  />
             </fill>
         </shape>
         <shape name="backgroundmiddle">
-            <area>0,232,220,43</area>
+            <area>0,247,220,43</area>
             <fill style="gradient">
                 <gradient start="#000000" end="#999999" alpha="224"
                           direction="vertical"  />
             </fill>
         </shape>
         <shape name="backgroundbottom">
-            <area>0,275,220,110</area>
+            <area>0,290,220,100%</area>
             <fill style="gradient">
                 <gradient start="#999999" end="#000000" alpha="224"
                           direction="vertical"  />
@@ -400,16 +400,16 @@
         </group>
 
         <imagetype name="coverart">
-            <area>5,5,210,222</area>
+            <area>5,5,210,237</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
         <imagetype name="iconpath">
-            <area>10,235,200,80</area>
+            <area>10,250,200,80</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
         <textarea name="callsign">
             <font>verysmall</font>
-            <area>10,315,200,-10</area>
+            <area>10,330,200,-10</area>
             <align>center</align>
             <multiline>yes</multiline>
             <template>%channum% %callsign%</template>

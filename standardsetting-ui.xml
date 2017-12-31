@@ -32,8 +32,7 @@
                     <area>0,0,100%,100%</area>
                     <minsize>40,100%</minsize>
                     <group name="labels">
-                        <area>0,0,560,100%</area>
-
+                        <area>30,0,680,100%</area>
                         <shape name="background">
                             <area>0,0,100%,100%</area>
                             <type>roundbox</type>
@@ -50,7 +49,7 @@
                         </textarea>
                     </group>
                     <group name="widgets">
-                        <area>580,0,100%,100%</area>
+                        <area>710,0,100%,100%</area>
                         <minsize>30,100%</minsize>
 
                         <shape name="background" from="basebuttonshape">

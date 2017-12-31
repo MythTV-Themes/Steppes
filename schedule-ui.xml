@@ -707,7 +707,7 @@
 
     </window>
 
-    <!-- Home -> Manage Recordings -> Previously Recorded
+    <!-- Home -> Manage Recordings -> Prev Rec
     -->
     <window name="programlist">
 
@@ -743,7 +743,7 @@
     <window name="programdetails">
 
         <group name="PageHeading" from="basePageHeading">
-            <group name="Heading">
+pp            <group name="Heading">
                 <textarea name="text">
                     <value>Program Details</value>
                 </textarea>
