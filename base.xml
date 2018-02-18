@@ -2165,7 +2165,7 @@
         <area>0,0,100%,100%</area>
 
         <textarea name="timedate">
-            <area>0,0,530,36</area>
+            <area>0,0,510,36</area>
             <align>left,vcenter</align>
             <font>mysmallsanslabel</font>
             <cutdown>no</cutdown>
@@ -2324,7 +2324,7 @@
                 </statetype>
 
                 <group name="progstats" from="programStats">
-                    <area>165,4,100%,40</area>
+                    <area>200,4,100%,40</area>
                 </group>
 
                 <textarea name="titlesubtitle">
@@ -2347,7 +2347,7 @@
                 <area>0,0,100%,340</area>
 
                 <group name="progstats" from="programStats">
-                    <area>165,4,100%,40</area>
+                    <area>200,4,100%,40</area>
                 </group>
 
                 <textarea name="titlesubtitle">
