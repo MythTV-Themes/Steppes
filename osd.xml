@@ -1120,4 +1120,624 @@
         </buttonlist>
     </window>
 
+    <window name="osd_navigation">
+        <fontdef name="verysmall" face="Liberation Sans">
+            <pixelsize>19</pixelsize>
+            <weight>bold</weight>
+            <color>#FFFFFF</color>
+            <shadowoffset>1,1</shadowoffset>
+            <shadowcolor>#000000</shadowcolor>
+        </fontdef>
+
+        <area>50%-860,850,1720,120</area>
+
+        <shape name="background">
+            <area>0,0,100%,100%</area>
+            <fill color="#000000" alpha="148" />
+        </shape>
+
+        <group name="nav">
+            <area>50%-720,15,1440,-15</area>
+
+            <shape name="foreground">
+                <area>0,0,100%,100%</area>
+                <fill color="#FFFFFF" alpha="24" />
+            </shape>
+
+<!--
+            <button name="more">
+                <area>5,0,120,80</area>
+                <statetype name="buttonstate">
+                    <state name="active">
+                        <area>0,0,100%,100%</area>
+                        <shape name="highlight" />
+                        <imagetype name="icon">
+                            <area>50%-16,100%-35,32,32</area>
+                            <filename>more_button.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="selected" from="active">
+                        <textarea name="text">
+                            <area>0,0,100%,35</area>
+                            <align>center</align>
+                            <font>verysmall</font>
+                            <value>More Actions</value>
+                        </textarea>
+
+                        <shape name="highlight">
+                            <area>50%-20,100%-39,40,40</area>
+                            <line color="#00FFFF" alpha="250" width="2" />
+                            <type>box</type>
+                        </shape>
+                        <imagetype name="icon" />
+                    </state>
+                    <state name="disabled" from="active" />
+                    <state name="pushed" from="selected" />
+                </statetype>
+            </button>
+-->
+            <group name="grp0">
+                <area>0, 0, 100%, -20</area>
+
+                <button name="MENU">
+                    <area>0,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>menu_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Menu</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="INFO">
+                    <area>60,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>info_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Information</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="JUMPRWND">
+                    <area>180,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>dbl_left_arrow_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Jump Back</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="SEEKRWND">
+                    <area>240,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>left_arrow_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Seek Back</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="PLAY">
+                    <area>300,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>play_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Play</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="PAUSE">
+                    <area>300,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>pause_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Pause</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="SEEKFFWD">
+                    <area>360,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>right_arrow_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Seek Forward</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="JUMPFWD">
+                    <area>420,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>dbl_right_arrow_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Jump Forward</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="RWNDSTICKY">
+                    <area>480,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>rew_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Rewind</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="FFWDSTICKY">
+                    <area>540,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>ff_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Fast Forward</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="MUTE">
+                    <area>660,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>unmuted_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Mute</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="unmute">
+                    <area>660,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>muted_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Unmute</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="NEXTCC">
+                    <area>720,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>cc_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Captions</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="TOGGLEFILL">
+                    <area>840,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>fill_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Fill</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="TOGGLEASPECT">
+                    <area>900,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>aspect_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Aspect Ratio</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="JUMPSTART">
+                    <area>1020,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>jump_start_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Jump to Start</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="SETBOOKMARK">
+                    <area>1080,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>bookmark_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Bookmark</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="JUMPBKMRK">
+                    <area>1140,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>jump_bookmark_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Jump to Bookmark</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+            </group>
+        </group>
+    </window>
 </mythuitheme>
