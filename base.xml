@@ -1796,6 +1796,7 @@
         <scrollstyle>free</scrollstyle>
         <wrapstyle>items</wrapstyle>
         <layout>horizontal</layout>
+        <focusorder>2</focusorder>
 
         <area>560,40,-25,60</area>
         <buttonarea>25,0,-25,100%</buttonarea>
@@ -1832,7 +1833,13 @@
                 <shape name="highlightbottom" />
             </state>
 
-            <state name="active" from="inactive" />
+            <state name="active" from="inactive">
+                <group name="areagroup">
+                    <shape name="recGroupShape">
+                        <line color="#ff9147" alpha="250" width="2" />
+                    </shape>
+                </group>
+            </state>
 
             <state name="selectedinactive" from="inactive">
                 <area>0,0,100%,100%</area>
@@ -1862,7 +1869,19 @@
                 </shape>
             </state>
 
-            <state name="selectedactive" from="selectedinactive" />
+            <state name="selectedactive" from="selectedinactive">
+                <group name="areagroup">
+                    <shape name="recGroupShape">
+                        <line color="#ff9147" alpha="250" width="4" />
+                    </shape>
+                </group>
+                <shape name="highlighttop">
+                    <fill color="#ff9147" alpha="250" />
+                </shape>
+                <shape name="highlightbottom">
+                    <fill color="#ff9147" alpha="250" />
+                </shape>
+            </state>
 
         </statetype>
 
