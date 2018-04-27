@@ -1129,7 +1129,7 @@
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
 
-        <area>50%-860,850,1720,120</area>
+        <area>50%-860,650,1720,120</area>
 
         <shape name="background">
             <area>0,0,100%,100%</area>
@@ -1137,7 +1137,7 @@
         </shape>
 
         <group name="nav">
-            <area>50%-720,15,1440,-15</area>
+            <area>50%-780,15,1560,-15</area>
 
             <shape name="foreground">
                 <area>0,0,100%,100%</area>
@@ -1396,7 +1396,7 @@
                     </statetype>
                 </button>
 
-                <button name="JUMPFWD">
+                <button name="JUMPFFWD">
                     <area>420,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
@@ -1428,7 +1428,7 @@
                 </button>
 
                 <button name="RWNDSTICKY">
-                    <area>480,0,300,80</area>
+                    <area>540,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
@@ -1458,8 +1458,72 @@
                     </statetype>
                 </button>
 
+                <button name="PLAY#">
+                    <area>600,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>play_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Play</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+<!-- This does not currently "toggle" with PLAY#
+                <button name="PAUSE#">
+                    <area>600,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-35,32,32</area>
+                                <filename>pause_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,35</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Pause</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-39,40,40</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+-->
+
                 <button name="FFWDSTICKY">
-                    <area>540,0,300,80</area>
+                    <area>660,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
@@ -1490,7 +1554,7 @@
                 </button>
 
                 <button name="MUTE">
-                    <area>660,0,300,80</area>
+                    <area>780,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
@@ -1521,7 +1585,7 @@
                 </button>
 
                 <button name="unmute">
-                    <area>660,0,300,80</area>
+                    <area>780,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
@@ -1552,7 +1616,7 @@
                 </button>
 
                 <button name="NEXTCC">
-                    <area>720,0,300,80</area>
+                    <area>840,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
@@ -1583,7 +1647,7 @@
                 </button>
 
                 <button name="TOGGLEFILL">
-                    <area>840,0,300,80</area>
+                    <area>960,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
@@ -1614,7 +1678,7 @@
                 </button>
 
                 <button name="TOGGLEASPECT">
-                    <area>900,0,300,80</area>
+                    <area>1020,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
@@ -1645,7 +1709,7 @@
                 </button>
 
                 <button name="JUMPSTART">
-                    <area>1020,0,300,80</area>
+                    <area>1140,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
@@ -1676,7 +1740,7 @@
                 </button>
 
                 <button name="SETBOOKMARK">
-                    <area>1080,0,300,80</area>
+                    <area>1200,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
@@ -1707,7 +1771,7 @@
                 </button>
 
                 <button name="JUMPBKMRK">
-                    <area>1140,0,300,80</area>
+                    <area>1260,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
