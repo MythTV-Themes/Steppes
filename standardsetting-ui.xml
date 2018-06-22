@@ -44,7 +44,7 @@
                     <area>0,0,100%,100%</area>
                     <minsize>40,100%</minsize>
                     <group name="labels">
-                        <area>30,0,680,100%</area>
+                        <area>30,0,800,100%</area>
 
                         <shape name="background">
                             <area>0,0,100%,100%</area>
@@ -62,7 +62,7 @@
                         </textarea>
                     </group>
                     <group name="widgets">
-                        <area>710,0,100%,100%</area>
+                        <area>830,0,100%,100%</area>
                         <minsize>30,100%</minsize>
 
                         <group name="backgroundoff">
