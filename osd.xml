@@ -1180,6 +1180,7 @@
                 <area>0, 0, 100%, -20</area>
 
                 <button name="MENU">
+                    <focusorder>2</focusorder>
                     <area>0,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
@@ -1211,6 +1212,7 @@
                 </button>
 
                 <button name="INFO">
+                    <focusorder>2</focusorder>
                     <area>60,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
@@ -1242,6 +1244,7 @@
                 </button>
 
                 <button name="JUMPRWND">
+                    <focusorder>2</focusorder>
                     <area>180,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
@@ -1273,6 +1276,7 @@
                 </button>
 
                 <button name="SEEKRWND">
+                    <focusorder>2</focusorder>
                     <area>240,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
