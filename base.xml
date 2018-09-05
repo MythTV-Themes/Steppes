@@ -1085,6 +1085,76 @@
         </group>
     </textedit>
 
+    <!-- Popup dialog to enter into a spin box -->
+    <window name="SpinBoxEntryDialog">
+        <area>50%-700,50%-300,1400,280</area>
+
+        <shape name="background" from="basebuttonshape">
+            <type>roundbox</type>
+            <fill style="gradient">
+                <gradient start="#000000" end="#505050" alpha="255"
+                          direction="vertical"  />
+            </fill>
+            <line color="#AA90FF" width="6" alpha="128"/>
+        </shape>
+
+        <textarea name="title" from="basewidgettext">
+            <area>20,5,-20,70</area>
+            <multiline>yes</multiline>
+            <align>center</align>
+            <value>You may enter a value here or cancel to continue using the Spinbox.</value>
+        </textarea>
+
+        <group name="dialog">
+            <area>5,75,-5,-5</area>
+
+            <group name="spin">
+                <area>10,10,-420,-10</area>
+
+                <textedit name="entry" from="basewidetextedit">
+                    <area>10,10,-10,70</area>
+                </textedit>
+
+                <group name="help">
+                    <area>10,100,-20,60</area>
+                    <minsize>300, 60</minsize>
+
+                    <shape name="pagehelpshape">
+                        <area>0,0,100%,100%</area>
+                        <minsize>50,100%</minsize>
+                        <type>roundbox</type>
+                        <cornerradius>15</cornerradius>
+                        <fill color="#000000" alpha="255" />
+                    </shape>
+
+                    <textarea name="rules">
+                        <area>25,5,-25,-5</area>
+                        <minsize>50,100%</minsize>
+                        <align>center</align>
+                        <font>mysmalllightgrey</font>
+                        <multiline>no</multiline>
+                        <cutdown>no</cutdown>
+                        <template>Values from %LOW% to %HIGH% in increments of %STEP%</template>
+                    </textarea>
+                </group>
+            </group>
+
+            <group name="buttons">
+                <area>100%-400,10,-10,-10</area>
+
+                <button name="cancel" from="varbuttoncenter">
+                    <area>0,20,100%,70</area>
+                    <value>Cancel</value>
+                </button>
+
+                <button name="ok" from="varbuttoncenter">
+                    <area>0,100%-90,100%,70</area>
+                    <value>OK</value>
+                </button>
+            </group>
+        </group>
+    </window>
+
     <buttonlist name="baseinfobuttonlist">
         <arrange>stack</arrange>
         <align>center</align>
