@@ -2,15 +2,25 @@
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
 <mythuitheme>
 
-    <fontdef name="basesans" face="Liberation Sans">
+    <fontdef name="basesans" face="Myriad Pro">
         <color>#F0F0FF</color>
         <pixelsize>10</pixelsize>
     </fontdef>
 
-    <fontdef name="basenarrow" face="Liberation Sans Narrow">
+    <fontdef name="basenarrow" face="Myriad Pro SemiCond">
         <color>#F0F0FF</color>
         <pixelsize>10</pixelsize>
-        <stretch>condensed</stretch>
+    </fontdef>
+
+    <fontdef name="basenarrowbold" face="Myriad Pro SemiCond">
+        <color>#F0F0FF</color>
+        <pixelsize>10</pixelsize>
+        <weight>bold</weight>
+    </fontdef>
+
+    <fontdef name="basenarrowlight" face="Myriad Pro Light Cond">
+        <color>#F0F0FF</color>
+        <pixelsize>10</pixelsize>
     </fontdef>
 
     <fontdef name="basegothic" face="CartoGothic Std">
@@ -18,7 +28,7 @@
         <pixelsize>10</pixelsize>
     </fontdef>
 
-    <fontdef name="basemono" face="Liberation Mono">
+    <fontdef name="basemono" face="Ubuntu Mono">
         <color>#F0F0FF</color>
         <pixelsize>10</pixelsize>
     </fontdef>
@@ -29,30 +39,32 @@
         <pixelsize>28</pixelsize>
     </fontdef>
 
+    <fontdef name="mysmall" from="mysmallsans" />
+
     <fontdef name="mysmallsansgrey" from="mysmallsans">
         <color>#DADADA</color>
-    </fontdef>
-
-    <fontdef name="mysmallsanslabel" from="mysmallsans">
-        <color>#A0BFFF</color>
     </fontdef>
 
     <!--  Narrow  -->
 
     <fontdef name="mynarrow" from="basenarrow">
-        <pixelsize>30</pixelsize>
+        <pixelsize>28</pixelsize>
+    </fontdef>
+
+    <fontdef name="mynarrowbold" from="basenarrowbold">
+        <pixelsize>28</pixelsize>
     </fontdef>
 
     <fontdef name="mysmallnarrow" from="basenarrow">
-        <pixelsize>29</pixelsize>
+        <pixelsize>28</pixelsize>
     </fontdef>
 
-    <fontdef name="mysmallnarrowbold" from="mysmallnarrow">
-        <weight>bold</weight>
+    <fontdef name="mysmallnarrowbold" from="basenarrowbold">
+        <pixelsize>28</pixelsize>
     </fontdef>
 
-    <fontdef name="mymediumnarrow" from="basenarrow">
-        <pixelsize>35</pixelsize>
+    <fontdef name="mymediumnarrow" from="basenarrowlight">
+        <pixelsize>30</pixelsize>
     </fontdef>
 
     <fontdef name="mylargenarrow" from="basenarrow">
@@ -77,6 +89,14 @@
 
     <fontdef name="mynarrowgrey" from="mynarrow">
         <color>#DADADA</color>
+    </fontdef>
+
+    <fontdef name="mynarrowlabel" from="mynarrowbold">
+        <color>#A0BFFF</color>
+    </fontdef>
+
+    <fontdef name="mysmalllabel" from="mysmall">
+        <color>#A0BFFF</color>
     </fontdef>
 
     <fontdef name="mysmallnarrowlabel" from="mysmallnarrow">
@@ -159,20 +179,22 @@
 
     <fontdef name="mysmallmono" from="basemono">
         <color>#F0F0FF</color>
-        <pixelsize>29</pixelsize>
+        <pixelsize>28</pixelsize>
     </fontdef>
 
     <!-- Normal -->
 
-    <fontdef name="mydesc" from="basegothic">
+    <fontdef name="mydesc" from="basesans">
         <color>#F0F0FF</color>
         <pixelsize>29</pixelsize>
     </fontdef>
 
+<!--
     <fontdef name="mysmall" from="basegothic">
         <color>#F0F0FF</color>
         <pixelsize>29</pixelsize>
     </fontdef>
+-->
 
     <fontdef name="mysmallbold" from="mysmall">
         <weight>bold</weight>
@@ -199,7 +221,7 @@
     </fontdef>
 
     <fontdef name="mymedium" from="basegothic">
-        <pixelsize>34</pixelsize>
+        <pixelsize>32</pixelsize>
     </fontdef>
 
     <fontdef name="mylabelfontmedium" from="mymedium">
@@ -207,7 +229,7 @@
     </fontdef>
 
     <fontdef name="mymediumbold" from="mymedium">
-        <pixelsize>34</pixelsize>
+        <pixelsize>32</pixelsize>
         <weight>bold</weight>
     </fontdef>
 
@@ -249,7 +271,7 @@
     </fontdef>
 
     <fontdef name="myextralarge" from="basegothic">
-        <pixelsize>44</pixelsize>
+        <pixelsize>42</pixelsize>
     </fontdef>
 
     <fontdef name="myextralargebold" from="myextralarge">
@@ -263,7 +285,6 @@
     <fontdef name="mylargelightgrey" from="mylarge">
         <color>#F0F0F0</color>
     </fontdef>
-
 
     <fontdef name="mysmalllightgrey" from="mysmall">
         <color>#F0F0F0</color>
@@ -427,7 +448,7 @@
             <gradient start="#000000" end="#302040" alpha="255"
                       direction="diagonal"  />
         </fill>
-        <line color="#00FFFF" width="1" />
+        <line color="#00FFFF" width="2" />
     </shape>
 
     <shape name="baseareashape">
@@ -438,7 +459,7 @@
             <gradient start="#000000" end="#302040" alpha="196"
                       direction="diagonal"  />
         </fill>
-        <line color="#00FFFF" width="1" />
+        <line color="#00FFFF" width="2" />
     </shape>
 
     <shape name="baseselectedwidgetshape" from="basewidgetshape">
@@ -457,7 +478,7 @@
             <gradient start="#505050" end="#000000" alpha="255"
                       direction="vertical"  />
         </fill>
-        <line color="#00FFFF" width="1" />
+        <line color="#00FFFF" width="2" />
     </shape>
 
     <shape name="baseinactivebuttonshape">
@@ -466,7 +487,7 @@
             <gradient start="#303030" end="#000000" alpha="255"
                       direction="vertical"  />
         </fill>
-        <line color="#505050" width="1" />
+        <line color="#505050" width="2" />
     </shape>
 
     <shape name="basepushedbuttonshape">
@@ -475,7 +496,7 @@
             <gradient start="#000000" end="#505050" alpha="225"
                       direction="vertical"  />
         </fill>
-        <line color="#00FFFF" width="1" />
+        <line color="#00FFFF" width="2" />
     </shape>
 
     <shape name="baseselectedinactivebuttonshape">
@@ -484,7 +505,7 @@
             <gradient start="#603060" end="#000000" alpha="255"
                       direction="vertical"  />
         </fill>
-        <line color="#00FFFF" width="1" />
+        <line color="#00FFFF" width="2" />
     </shape>
 
     <shape name="baseselectedbuttonshape">
@@ -497,7 +518,7 @@
     </shape>
 
     <textarea name="basewidgettext">
-        <area>15,10,-15,-10</area>
+        <area>15,8,-15,-10</area>
         <multiline>yes</multiline>
         <cutdown>yes</cutdown>
         <align>center</align>
@@ -566,7 +587,7 @@
                     <minsize>150,100%</minsize>
                 </shape>
                 <textarea name="text" from="basewidgettext">
-                    <area>20,10,-20,-10</area>
+                    <area>20,8,-20,-10</area>
                     <minsize>110,100%</minsize>
                     <align>left,vcenter</align>
                     <multiline>no</multiline>
@@ -767,7 +788,7 @@
                 </state>
                 <state name="disabled" from="active">
                     <shape name="checkbg">
-                        <line color="#33FFFF" alpha="96" width="1" />
+                        <line color="#33FFFF" alpha="96" width="2" />
                     </shape>
                 </state>
             </statetype>
@@ -835,7 +856,7 @@
                     <cornerradius>15</cornerradius>
                 </shape>
                 <textarea name="buttontext" from="basewidgettext">
-                    <area>30,10,-30,-10</area>
+                    <area>30,8,-30,-10</area>
                 </textarea>
             </state>
             <state name="selectedinactive" from="active" />
@@ -915,7 +936,7 @@
                     <cornerradius>15</cornerradius>
                 </shape>
                 <textarea name="buttontext" from="basewidgettext">
-                    <area>30,10,-30,-10</area>
+                    <area>30,8,-30,-10</area>
                 </textarea>
             </state>
             <state name="selectedinactive" from="active" />
@@ -999,7 +1020,7 @@
 
     <textarea name="labeltextlarge">
         <area>0,0,250,90</area>
-        <font>mylabelfont</font>
+        <font>mylabelfontmedium</font>
         <multiline>yes</multiline>
         <align>right,vcenter</align>
     </textarea>
@@ -1266,14 +1287,14 @@
                     <multiline>yes</multiline>
                     <cutdown>no</cutdown>
                     <align>top,right</align>
-                    <font>mysmallnarrowlabel</font>
+                    <font>mynarrowlabel</font>
                 </textarea>
                 <textarea name="sep">
                     <area>31%,3,10,-3</area>
                     <minsize shrink="short">100%,5</minsize>
                     <align>top,left</align>
                     <value>:</value>
-                    <font>mysmallnarrowlabel</font>
+                    <font>mynarrowlabel</font>
                 </textarea>
                 <textarea name="value">
                     <area>31%+15,3,-10,-3</area>
@@ -1281,17 +1302,17 @@
                     <multiline>yes</multiline>
                     <cutdown>no</cutdown>
                     <align>top,left</align>
-                    <font>mysmallnarrow</font>
+                    <font>mynarrow</font>
                 </textarea>
             </state>
             <state name="selectedactive" from="active" />
             <state name="selectedinactive" from="active" />
             <state name="disabled" from="active">
                 <textarea name="name">
-                    <font>myverysmallnarrowlightgrey</font>
+                    <font>mysmallnarrowlightgrey</font>
                 </textarea>
                 <textarea name="value">
-                    <font>myverysmallnarrowlightgrey</font>
+                    <font>mysmallnarrowlightgrey</font>
                 </textarea>
             </state>
         </statetype>
@@ -1309,7 +1330,7 @@
             <type>roundbox</type>
             <cornerradius>15</cornerradius>
 <!--
-            <line color="#00FFFF" alpha="240" width="1" />
+            <line color="#00FFFF" alpha="240" width="2" />
 -->
             <fill color="#000000" alpha="128" />
         </shape>
@@ -1513,7 +1534,7 @@
                             <shape name="hidden_background_shape">
                                 <area>1,1,162,122</area>
                                 <type>box</type>
-                                <line color="#000000" alpha="0" width="1" />
+                                <line color="#000000" alpha="0" width="2" />
                                 <fill color="#000000" alpha="210" />
                             </shape>
                         </state>
@@ -1640,7 +1661,7 @@
                 <shape name="statusborder">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
-                    <line color="#00FFFF" width="1" alpha="224" />
+                    <line color="#00FFFF" width="2" alpha="224" />
                     <fill color="#000000" alpha="192" />
                     <cornerradius>10</cornerradius>
                 </shape>
@@ -1660,7 +1681,7 @@
             <state name="disabled" from="inactive">
                 <area>0,0,100%,100%</area>
                 <shape name="statusborder">
-                    <line color="#00FFFF" width="1" alpha="64" />
+                    <line color="#00FFFF" width="2" alpha="64" />
                     <fill color="#000000" alpha="96" />
                 </shape>
 
@@ -1752,7 +1773,7 @@
             <type>roundbox</type>
             <cornerradius>5</cornerradius>
             <fill color="#000000" alpha="192" />
-            <line color="#FFFFFF" alpha="160" width="1" />
+            <line color="#FFFFFF" alpha="160" width="2" />
         </shape>
 
         <textarea name="msgText">
@@ -1994,7 +2015,7 @@
                 <shape name="groupBorder">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
-                    <line color="#00FFFF" alpha="160" width="1" />
+                    <line color="#00FFFF" alpha="160" width="2" />
                     <fill color="#000000" alpha="160" />
                     <cornerradius>15</cornerradius>
                 </shape>
@@ -2014,7 +2035,7 @@
                 <area>0,0,100%,85</area>
                 <shape name="groupBorder">
                     <area>9,0,-9,100%</area>
-                    <line color="#50EFDF" alpha="250" width="1" />
+                    <line color="#50EFDF" alpha="250" width="2" />
                 </shape>
 
                 <textarea name="buttontext">
@@ -2085,7 +2106,7 @@
         <group name="wheregroup" from="baseMsgGroup">
             <area>0,0,100%,125</area>
             <shape name="msgShape">
-                <line color="#00FFFF" alpha="160" width="1" />
+                <line color="#00FFFF" alpha="160" width="2" />
             </shape>
             <textarea name="channel" from="msgText">
                 <area>10,5,-10,40</area>
@@ -2114,7 +2135,7 @@
             <area>0,130,100%,135</area>
 
             <shape name="msgShape">
-                <line color="#00FFFF" alpha="160" width="1" />
+                <line color="#00FFFF" alpha="160" width="2" />
             </shape>
             <textarea name="title" from="msgText">
                 <font>mymediumbold</font>
@@ -2124,7 +2145,7 @@
         <group name="subtitlegroup" from="baseMsgGroup" depends="subtitle">
             <area>0,270,100%,115</area>
             <shape name="msgShape">
-                <line color="#00FFFF" alpha="160" width="1" />
+                <line color="#00FFFF" alpha="160" width="2" />
             </shape>
             <textarea name="subtitle" from="msgText">
                 <font>mysmallbold</font>
@@ -2135,7 +2156,7 @@
             <area>0,390,100%,100%</area>
 
             <shape name="msgShape">
-                <line color="#00FFFF" alpha="160" width="1" />
+                <line color="#00FFFF" alpha="160" width="2" />
             </shape>
             <textarea name="description" from="msgText">
                 <area>10,10,-10,-10</area>
@@ -2151,7 +2172,7 @@
             <area>0,270,100%,100%</area>
 
             <shape name="msgShape">
-                <line color="#00FFFF" alpha="160" width="1" />
+                <line color="#00FFFF" alpha="160" width="2" />
             </shape>
             <textarea name="description0" from="msgText">
                 <area>10,10,-10,-10</area>
@@ -2175,7 +2196,7 @@
                 <area>9,0,-9,100%</area>
                 <minsize>100%,50</minsize>
                 <type>roundbox</type>
-                <line color="#00FFFF" width="1" alpha="160" />
+                <line color="#00FFFF" width="2" alpha="160" />
                 <fill color="#000000" alpha="160" />
                 <cornerradius>10</cornerradius>
             </shape>
@@ -2195,7 +2216,7 @@
         <state name="normal" from="default" />
         <state name="error" from="default">
             <shape name="statusborder">
-                <line color="#e43e3e" width="1" alpha="255"/>
+                <line color="#e43e3e" width="2" alpha="255"/>
             </shape>
             <shape name="highlightleft">
                 <fill color="#e43e3e" alpha="255" />
@@ -2206,7 +2227,7 @@
         </state>
         <state name="warning" from="default">
             <shape name="statusborder">
-                <line color="#ff9147" width="1" alpha="255"/>
+                <line color="#ff9147" width="2" alpha="255"/>
             </shape>
             <shape name="highlightleft">
                 <fill color="#ff9147" alpha="255" />
@@ -2217,7 +2238,7 @@
         </state>
         <state name="disabled" from="default">
             <shape name="statusborder">
-                <line color="#feffce" width="1" alpha="255" />
+                <line color="#feffce" width="2" alpha="255" />
             </shape>
             <shape name="highlightleft">
                 <fill color="#feffce" alpha="160" />
@@ -2228,7 +2249,7 @@
         </state>
         <state name="running" from="default">
             <shape name="statusborder">
-                <line color="#33bf33" width="1" alpha="255" />
+                <line color="#33bf33" width="2" alpha="255" />
             </shape>
             <shape name="highlightleft">
                 <fill color="#33bf33" alpha="255" />
@@ -2239,7 +2260,7 @@
         </state>
         <state name="marked" from="default">
             <shape name="statusborder">
-                <line color="#FFFF00" width="1" alpha="255" />
+                <line color="#FFFF00" width="2" alpha="255" />
             </shape>
             <shape name="highlightleft">
                 <fill color="#FFFF00" alpha="255" />
@@ -2254,14 +2275,14 @@
         <area>0,0,100%,100%</area>
 
         <textarea name="timedate">
-            <area>0,0,510,36</area>
+            <area>0,0,470,36</area>
             <align>left,vcenter</align>
-            <font>mysmallsanslabel</font>
+            <font>mysmallnarrowlabel</font>
             <cutdown>no</cutdown>
         </textarea>
 
         <textarea name="originalairdate">
-            <area>520,0,230,35</area>
+            <area>480,0,230,35</area>
             <align>center</align>
             <font>mysmallnarrowlabel</font>
             <template>(%1)</template>
@@ -2269,21 +2290,21 @@
         </textarea>
 
         <textarea name="year" depends="!originalairdate">
-            <area>520,0,230,35</area>
+            <area>480,0,230,35</area>
             <align>center</align>
             <font>mysmallnarrowlabel</font>
             <template>(%1)</template>
         </textarea>
 
         <textarea name="lenmins">
-            <area>750,0,150,35</area>
+            <area>720,0,150,35</area>
             <align>right,vcenter</align>
             <font>mysmallnarrowlabel</font>
             <template>%1</template>
         </textarea>
 
         <textarea name="channel">
-            <area>910,0,-15,40</area>
+            <area>875,0,-15,40</area>
             <font>mysmallnarrowlabel</font>
             <align>right,vcenter</align>
         </textarea>
@@ -2315,7 +2336,7 @@
                         <shape name="statusborder">
                             <area>9,0,-9,100%</area>
                             <type>roundbox</type>
-                            <line color="#00FFFF" width="1" alpha="160" />
+                            <line color="#00FFFF" width="2" alpha="160" />
                             <fill color="#000000" alpha="160" />
                             <cornerradius>10</cornerradius>
                         </shape>
@@ -2323,7 +2344,7 @@
                     <state name="normal" from="default" />
                     <state name="error" from="default">
                         <shape name="statusborder">
-                            <line color="#e43e3e" width="1" alpha="255" />
+                            <line color="#e43e3e" width="2" alpha="255" />
                         </shape>
                         <shape name="highlightleft">
                             <area>7,20,5,-20</area>
@@ -2340,40 +2361,40 @@
                     </state>
                     <state name="warning" from="error">
                         <shape name="statusborder">
-                            <line color="#ff9147" width="1" alpha="255" />
+                            <line color="#ff9147" width="2" alpha="255" />
                         </shape>
                         <shape name="highlightleft">
-                            <fill color="#ff9147" width="1" alpha="255" />
+                            <fill color="#ff9147" width="2" alpha="255" />
                         </shape>
                         <shape name="highlightright">
-                            <fill color="#ff9147" width="1" alpha="255" />
+                            <fill color="#ff9147" width="2" alpha="255" />
                         </shape>
                     </state>
                     <state name="disabled" from="normal">
                         <shape name="statusborder">
-                            <line color="#feffce" width="1" alpha="160" />
+                            <line color="#feffce" width="2" alpha="160" />
                         </shape>
                     </state>
                     <state name="running" from="error">
                         <shape name="statusborder">
-                            <line color="#33bf33" width="1" alpha="255" />
+                            <line color="#33bf33" width="2" alpha="255" />
                         </shape>
                         <shape name="highlightleft">
-                            <fill color="#33bf33" width="1" alpha="255" />
+                            <fill color="#33bf33" width="2" alpha="255" />
                         </shape>
                         <shape name="highlightright">
-                            <fill color="#33bf33" width="1" alpha="255" />
+                            <fill color="#33bf33" width="2" alpha="255" />
                         </shape>
                     </state>
                     <state name="marked" from="running">
                         <shape name="statusborder">
-                            <line color="#FFFF00" width="1" alpha="160" />
+                            <line color="#FFFF00" width="2" alpha="160" />
                         </shape>
                         <shape name="highlightleft">
-                            <fill color="#FFFF00" width="1" alpha="160" />
+                            <fill color="#FFFF00" width="2" alpha="160" />
                         </shape>
                         <shape name="highlightright">
-                            <fill color="#FFFF00" width="1" alpha="160" />
+                            <fill color="#FFFF00" width="2" alpha="160" />
                         </shape>
                     </state>
                 </statetype>
@@ -2635,6 +2656,7 @@
             <textarea name="messagearea" from="basetextarea">
                 <area>20,5,45%,-20</area>
                 <minsize shrink="short">100%,60</minsize>
+                <font>mymedium</font>
                 <multiline>yes</multiline>
                 <align>top,hcenter</align>
                 <cutdown>no</cutdown>

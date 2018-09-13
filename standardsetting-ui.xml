@@ -36,10 +36,10 @@
             <layout>vertical</layout>
             <wrapstyle>selection</wrapstyle>
             <arrange>stack</arrange>
-            <spacing>6</spacing>
+            <spacing>4</spacing>
             <buttonarea>0,0,100%,100%</buttonarea>
             <statetype name="buttonitem">
-                <area>0,0,100%,70</area>
+                <area>0,0,100%,80</area>
                 <state name="active">
                     <area>0,0,100%,100%</area>
                     <minsize>40,100%</minsize>
@@ -54,7 +54,7 @@
                         </shape>
 
                         <textarea name="buttontext" from="labeltextlarge" >
-                            <area>10,0,100%-10,70</area>
+                            <area>10,0,100%-10,100%</area>
                             <cutdown>no</cutdown>
                             <align>right,vcenter</align>
                             <scroll direction="horizontal" returnrate="140" returndelay="4" />
@@ -93,7 +93,7 @@
                                 <textarea name="label">
                                     <area>0,0,100%,100%</area>
                                     <minsize>30,100%</minsize>
-                                    <font>basesmall</font>
+                                    <font>mysmall</font>
                                     <align>vcenter</align>
                                 </textarea>
                             </state>
@@ -141,7 +141,7 @@
                         <textarea name="value">
                             <area>70,0,100%-20,100%</area>
                             <minsize>30,100%</minsize>
-                            <font>basesmall</font>
+                            <font>mysmall</font>
                             <cutdown>yes</cutdown>
                             <align>left,vcenter</align>
                         </textarea>
