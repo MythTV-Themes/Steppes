@@ -806,23 +806,23 @@
                 <statetype name="buttonitem">
                     <state name="active">
                         <textarea name="name">
-                             <area>5,3,20%,-3</area>
+                             <area>5,3,22%,-3</area>
                         </textarea>
                         <textarea name="sep">
-                            <area>21%,3,15,-3</area>
+                            <area>23%,3,15,-3</area>
                         </textarea>
                          <textarea name="value">
-                             <area>21%+15,3,-10,-3</area>
+                             <area>23%+15,3,-10,-3</area>
                          </textarea>
                     </state>
                     <state name="selectedinactive" from="active" />
                     <state name="selectedactive" from="selectedinactive" />
                     <state name="disabled" from="active">
                         <textarea name="name">
-                            <font>myverysmallnarrowlightgrey</font>
+                            <font>mysmallnarrowlightgrey</font>
                         </textarea>
                         <textarea name="value">
-                            <font>myverysmallnarrowlightgrey</font>
+                            <font>mysmallnarrowlightgrey</font>
                         </textarea>
                     </state>
                 </statetype>

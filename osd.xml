@@ -306,10 +306,9 @@
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
-        <fontdef name="verysmall" face="Liberation Sans Narrow">
+        <fontdef name="verysmall" face="Myriad Pro Cond">
             <pixelsize>25</pixelsize>
             <color>#FFFFFF</color>
-            <stretch>condensed</stretch>
         </fontdef>
         <fontdef name="descfont" from="small">
             <pixelsize>32</pixelsize>
@@ -647,7 +646,7 @@
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
-        <fontdef name="verysmall" face="Liberation Sans Narrow">
+        <fontdef name="verysmall" face="Myriad Pro Cond">
             <pixelsize>25</pixelsize>
             <color>#FFFFFF</color>
             <stretch>condensed</stretch>
@@ -1121,7 +1120,7 @@
     </window>
 
     <window name="osd_navigation">
-        <fontdef name="verysmall" face="Liberation Sans">
+        <fontdef name="verysmall" face="Myriad Pro Cond">
             <pixelsize>19</pixelsize>
             <weight>bold</weight>
             <color>#FFFFFF</color>
