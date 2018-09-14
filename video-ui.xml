@@ -271,7 +271,7 @@
                         <textarea name="browselbl" from="labeltext">
                             <area>10,0,250,35</area>
                             <value>Browsable:</value>
-                            <font>mylabelfontsmall</font>
+                            <font>mysmalllabel</font>
                         </textarea>
 
                         <textarea name="browseable">

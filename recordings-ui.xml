@@ -112,7 +112,7 @@
                     <statetype name="playlist" from="selectedbox" />
 
                     <textarea name="titlesubtitle">
-                        <area>20,100%-41,-300,35</area>
+                        <area>20,100%-41,-300,36</area>
                     </textarea>
 
                     <textarea name="filesize_str">

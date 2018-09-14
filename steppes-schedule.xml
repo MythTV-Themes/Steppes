@@ -206,7 +206,7 @@
                         <textarea name="category_label" from="labeltext">
                             <area>10,0,350,35</area>
                             <value>Category:</value>
-                            <font>mylabelfontsmall</font>
+                            <font>mysmalllabel</font>
                         </textarea>
 
                         <textarea name="category">

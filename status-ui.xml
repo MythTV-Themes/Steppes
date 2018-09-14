@@ -120,7 +120,7 @@
                             <area>5,5,-5,-5</area>
                             <minsize>50,100%</minsize>
                             <align>center</align>
-                            <font>mymediumlightgrey</font>
+                            <font>mymediumsemibold</font>
                             <value>Backend is idle</value>
                         </textarea>
                     </state>
@@ -149,7 +149,7 @@
 
         <textarea name="nextrecordingheading">
             <area>80,45,-80,40</area>
-            <font>mylabelfontmedium</font>
+            <font>mymediumlabel</font>
             <align>left,vcenter</align>
             <value>Upcoming Recording(s):</value>
         </textarea>

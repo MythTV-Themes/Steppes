@@ -2,105 +2,173 @@
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
 <mythuitheme>
 
-    <fontdef name="basesans" face="Myriad Pro">
+<!--
+'Myriad Pro':
+ Semibold(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Bold SemiCondensed(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Bold(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Condensed(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Light(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Semibold Condensed(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Semibold SemiCondensed(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ SemiCondensed(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Regular(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+-->
+
+    <!--  Sans  -->
+    <!-- Small -->
+    <fontdef name="mysmall" face="Myriad Pro">
         <color>#F0F0FF</color>
-        <pixelsize>10</pixelsize>
+        <pixelsize>29</pixelsize>
     </fontdef>
 
-    <fontdef name="basenarrow" face="Myriad Pro SemiCond">
+    <fontdef name="mysmallbold" face="Myriad Pro">
         <color>#F0F0FF</color>
-        <pixelsize>10</pixelsize>
-    </fontdef>
-
-    <fontdef name="basenarrowbold" face="Myriad Pro SemiCond">
-        <color>#F0F0FF</color>
-        <pixelsize>10</pixelsize>
+        <pixelsize>29</pixelsize>
         <weight>bold</weight>
     </fontdef>
 
-    <fontdef name="basenarrowlight" face="Myriad Pro Light Cond">
+    <fontdef name="mysmallsemibold" face="Myriad Pro">
         <color>#F0F0FF</color>
-        <pixelsize>10</pixelsize>
+        <pixelsize>29</pixelsize>
+        <weight>semibold</weight>
     </fontdef>
 
-    <fontdef name="basegothic" face="CartoGothic Std">
-        <color>#FFEAEA</color>
-        <pixelsize>10</pixelsize>
-    </fontdef>
-
-    <fontdef name="basemono" face="Ubuntu Mono">
+    <fontdef name="mysmallnarrow" face="Myriad Pro">
         <color>#F0F0FF</color>
-        <pixelsize>10</pixelsize>
+        <pixelsize>29</pixelsize>
+        <stretch>SemiCondensed</stretch>
     </fontdef>
 
-    <!--  Sans  -->
-
-    <fontdef name="mysmallsans" from="basesans">
-        <pixelsize>28</pixelsize>
+    <fontdef name="mysmallnarrowbold" face="Myriad Pro">
+        <color>#F0F0FF</color>
+        <pixelsize>29</pixelsize>
+        <stretch>SemiCondensed</stretch>
+        <weight>bold</weight>
     </fontdef>
 
-    <fontdef name="mysmall" from="mysmallsans" />
+    <fontdef name="mysmallnarrowsemibold" face="Myriad Pro">
+        <color>#F0F0FF</color>
+        <pixelsize>29</pixelsize>
+        <stretch>SemiCondensed</stretch>
+        <weight>SemiBold</weight>
+    </fontdef>
 
-    <fontdef name="mysmallsansgrey" from="mysmallsans">
+    <fontdef name="mysmalllight" face="Myriad Pro">
+        <color>#F0F0FF</color>
+        <pixelsize>29</pixelsize>
+        <weight>light</weight>
+    </fontdef>
+
+    <fontdef name="mysmallnarrowlight" face="Myriad Pro">
+        <color>#F0F0FF</color>
+        <pixelsize>29</pixelsize>
+        <stretch>SemiCondensed</stretch>
+        <weight>light</weight>
+    </fontdef>
+
+    <!-- Very small -->
+    <fontdef name="myverysmall" from="mysmall">
+        <pixelsize>26</pixelsize>
+    </fontdef>
+
+    <fontdef name="myverysmallbold" from="mysmallbold">
+        <pixelsize>26</pixelsize>
+    </fontdef>
+
+    <fontdef name="myverysmallnarrow" from="mysmallnarrow">
+        <pixelsize>26</pixelsize>
+    </fontdef>
+
+    <fontdef name="myverysmallnarrowbold" from="mysmallnarrowbold">
+        <pixelsize>26</pixelsize>
+    </fontdef>
+
+    <fontdef name="myverysmallnarrowlight" from="mysmallnarrowlight">
+        <pixelsize>26</pixelsize>
+    </fontdef>
+
+    <!-- Medium -->
+    <fontdef name="mymedium" from="mysmall">
+        <pixelsize>32</pixelsize>
+    </fontdef>
+
+    <fontdef name="mymediumbold" from="mysmallbold">
+        <pixelsize>32</pixelsize>
+    </fontdef>
+
+    <fontdef name="mymediumsemibold" from="mysmallsemibold">
+        <pixelsize>32</pixelsize>
+    </fontdef>
+
+    <fontdef name="mymediumlight" from="mysmalllight">
+        <pixelsize>32</pixelsize>
+    </fontdef>
+
+    <fontdef name="mymediumnarrow" from="mysmallnarrow">
+        <pixelsize>32</pixelsize>
+    </fontdef>
+
+    <fontdef name="mymediumnarrowbold" from="mysmallnarrowbold">
+        <pixelsize>32</pixelsize>
+    </fontdef>
+
+    <fontdef name="mymediumnarrowlight" from="mysmallnarrowlight">
+        <pixelsize>32</pixelsize>
+    </fontdef>
+
+    <!-- Large -->
+    <fontdef name="mylarge" from="mysmall">
+        <pixelsize>42</pixelsize>
+    </fontdef>
+
+    <fontdef name="mylargenarrow" from="mysmallnarrow">
+        <pixelsize>42</pixelsize>
+    </fontdef>
+
+    <fontdef name="mylargebold" from="mysmallbold">
+        <pixelsize>42</pixelsize>
+    </fontdef>
+
+    <!-- Colors -->
+    <fontdef name="mydesc" from="mysmall">
+        <color>#F0F0FF</color>
+    </fontdef>
+
+    <fontdef name="mysmallgrey" from="mysmall">
         <color>#DADADA</color>
     </fontdef>
 
-    <!--  Narrow  -->
-
-    <fontdef name="mynarrow" from="basenarrow">
-        <pixelsize>28</pixelsize>
-    </fontdef>
-
-    <fontdef name="mynarrowbold" from="basenarrowbold">
-        <pixelsize>28</pixelsize>
-    </fontdef>
-
-    <fontdef name="mysmallnarrow" from="basenarrow">
-        <pixelsize>28</pixelsize>
-    </fontdef>
-
-    <fontdef name="mysmallnarrowbold" from="basenarrowbold">
-        <pixelsize>28</pixelsize>
-    </fontdef>
-
-    <fontdef name="mymediumnarrow" from="basenarrowlight">
-        <pixelsize>30</pixelsize>
-    </fontdef>
-
-    <fontdef name="mylargenarrow" from="basenarrow">
-        <pixelsize>40</pixelsize>
-    </fontdef>
-
-    <!--
-        <fontdef name="mysmallnarrowoutline" from="mysmallnarrow">
-        <color>#F5F5F5</color>
-        <outlinecolor>#000000</outlinecolor>
-        <outlinesize>2</outlinesize>
-        <weight>bold</weight>
-        </fontdef>
-    -->
-    <fontdef name="mymediumnarrowbold" from="mymediumnarrow">
-        <weight>bold</weight>
-    </fontdef>
-
-    <fontdef name="mymediumnarrowlightgrey" from="mymediumnarrow">
+    <fontdef name="mysmalllightgrey" from="mysmall">
         <color>#A0A0A0</color>
     </fontdef>
 
-    <fontdef name="mynarrowgrey" from="mynarrow">
-        <color>#DADADA</color>
+    <fontdef name="mysmallgreen" from="mysmall">
+        <color>#33bf33</color>
     </fontdef>
 
-    <fontdef name="mynarrowlabel" from="mynarrowbold">
-        <color>#A0BFFF</color>
+    <fontdef name="mysmallred" from="mysmall">
+        <color>#E43E3E</color>
     </fontdef>
 
-    <fontdef name="mysmalllabel" from="mysmall">
-        <color>#A0BFFF</color>
+    <fontdef name="mysmallblue" from="mysmall">
+        <color>#00EEEE</color>
     </fontdef>
 
-    <fontdef name="mysmallnarrowlabel" from="mysmallnarrow">
-        <color>#A0BFFF</color>
+    <fontdef name="mysmallpurple" from="mysmall">
+        <color>#9999cc</color>
+    </fontdef>
+
+    <fontdef name="mysmallyellow" from="mysmall">
+        <color>#FFFF00</color>
+    </fontdef>
+
+    <fontdef name="mysmallorange" from="mysmall">
+        <color>#ff9147</color>
+    </fontdef>
+
+    <fontdef name="mysmallblack" from="mysmall">
+        <color>#000000</color>
     </fontdef>
 
     <fontdef name="mysmallnarrowgrey" from="mysmallnarrow">
@@ -139,248 +207,54 @@
         <color>#000000</color>
     </fontdef>
 
-    <fontdef name="myverysmallnarrow" from="basenarrow">
-        <pixelsize>26</pixelsize>
-    </fontdef>
 
-    <fontdef name="myverysmallnarrowgreen" from="myverysmallnarrow">
-        <color>#3EAE09</color>
-    </fontdef>
 
-    <fontdef name="myverysmallnarrowred" from="myverysmallnarrow">
-        <color>#D40101</color>
-    </fontdef>
-
-    <fontdef name="myverysmallnarrowyellow" from="myverysmallnarrow">
-        <color>#FFFF00</color>
-    </fontdef>
-
-    <fontdef name="myverysmallnarroworange" from="myverysmallnarrow">
-        <color>#ff9147</color>
-    </fontdef>
-
-    <fontdef name="myverysmallnarrowblue" from="myverysmallnarrow">
-        <color>#00EEEE</color>
-    </fontdef>
-
-    <fontdef name="myverysmallnarrowpurple" from="myverysmallnarrow">
-        <color>#9999cc</color>
-    </fontdef>
-
-    <fontdef name="myverysmallnarrowgrey" from="myverysmallnarrow">
-        <color>#DDDDDD</color>
-    </fontdef>
-
-    <fontdef name="myverysmallnarrowlabel" from="myverysmallnarrow">
-        <color>#A0BFFF</color>
-    </fontdef>
-
-    <!-- Monospace -->
-
-    <fontdef name="mysmallmono" from="basemono">
-        <color>#F0F0FF</color>
-        <pixelsize>28</pixelsize>
-    </fontdef>
-
-    <!-- Normal -->
-
-    <fontdef name="mydesc" from="basesans">
-        <color>#F0F0FF</color>
+    <!-- Gothic -->
+    <!-- Small -->>
+    <fontdef name="mysmallgoth" face="CartoGothic Std">
+        <color>#FFEAEA</color>
         <pixelsize>29</pixelsize>
     </fontdef>
 
-<!--
-    <fontdef name="mysmall" from="basegothic">
+    <fontdef name="mysmallnarrowgoth" face="CartoGothic Std">
+        <color>#FFEAEA</color>
+        <pixelsize>29</pixelsize>
+        <stretch>SemiCondensed</stretch>
+    </fontdef>
+
+    <!-- Medium -->>
+    <fontdef name="mymediumgoth" from="mysmallgoth">
+        <pixelsize>32</pixelsize>
+    </fontdef>
+
+    <fontdef name="mymediumnarrowgoth" from="mysmallnarrowgoth">
+        <color>#FFEAEA</color>
+    </fontdef>
+
+    <!-- Colors -->
+    <fontdef name="mysmalllabel" from="mysmallsemibold">
+        <color>#A0BFFF</color>
+    </fontdef>
+
+    <fontdef name="mysmallsemiboldlabel" from="mysmallbold">
+        <color>#A0BFFF</color>
+    </fontdef>
+
+    <fontdef name="mysmallnarrowlabel" from="mysmallnarrowsemibold">
+        <color>#A0BFFF</color>
+    </fontdef>
+
+    <fontdef name="mymediumlabel" from="mysmallsemibold">
+        <color>#A0BFFF</color>
+        <pixelsize>32</pixelsize>
+    </fontdef>
+
+    <!-- Mono -->
+    <!-- Small -->
+    <fontdef name="mysmallmono" face="Ubuntu Mono">
         <color>#F0F0FF</color>
         <pixelsize>29</pixelsize>
     </fontdef>
--->
-
-    <fontdef name="mysmallbold" from="mysmall">
-        <weight>bold</weight>
-    </fontdef>
-
-    <fontdef name="myverysmall" from="mysmall">
-        <pixelsize>26</pixelsize>
-    </fontdef>
-
-    <fontdef name="mylabelfont" from="mysmall">
-        <color>#A0BFFF</color>
-    </fontdef>
-
-    <fontdef name="mylabelfontsmall" from="myverysmall">
-        <color>#A0BFFF</color>
-    </fontdef>
-
-    <fontdef name="mygroupsmall" from="basegothic">
-        <pixelsize>31</pixelsize>
-    </fontdef>
-
-    <fontdef name="mygroupmedium" from="basegothic">
-        <pixelsize>32</pixelsize>
-    </fontdef>
-
-    <fontdef name="mymedium" from="basegothic">
-        <pixelsize>32</pixelsize>
-    </fontdef>
-
-    <fontdef name="mylabelfontmedium" from="mymedium">
-        <color>#A0BFFF</color>
-    </fontdef>
-
-    <fontdef name="mymediumbold" from="mymedium">
-        <pixelsize>32</pixelsize>
-        <weight>bold</weight>
-    </fontdef>
-
-    <fontdef name="mymediumlightgrey" from="mymedium">
-        <!--        <color>#F0F0F0</color> -->
-        <color>#F0F0F0</color>
-    </fontdef>
-
-    <fontdef name="mymediumgrey" from="mymedium">
-        <color>#DDDDDD</color>
-    </fontdef>
-
-    <fontdef name="mymediumblack" from="mymedium">
-        <color>#000000</color>
-    </fontdef>
-
-    <fontdef name="mymediumgreen" from="mymedium">
-        <color>#3EFF3E</color>
-    </fontdef>
-
-    <fontdef name="mymediumyellow" from="mymedium">
-        <color>#FFFF00</color>
-    </fontdef>
-
-    <fontdef name="mymediumorange" from="mymedium">
-        <color>#ff9147</color>
-    </fontdef>
-
-    <fontdef name="mymediumred" from="mymedium">
-        <color>#E43E3E</color>
-    </fontdef>
-
-    <fontdef name="mylarge" from="basegothic">
-        <pixelsize>40</pixelsize>
-    </fontdef>
-
-    <fontdef name="mylargebold" from="mylarge">
-        <weight>bold</weight>
-    </fontdef>
-
-    <fontdef name="myextralarge" from="basegothic">
-        <pixelsize>42</pixelsize>
-    </fontdef>
-
-    <fontdef name="myextralargebold" from="myextralarge">
-        <weight>bold</weight>
-    </fontdef>
-
-    <fontdef name="myextralargeboldgrey" from="myextralargebold">
-        <color>#F0F0F0</color>
-    </fontdef>
-
-    <fontdef name="mylargelightgrey" from="mylarge">
-        <color>#F0F0F0</color>
-    </fontdef>
-
-    <fontdef name="mysmalllightgrey" from="mysmall">
-        <color>#F0F0F0</color>
-    </fontdef>
-
-    <fontdef name="mysmallgrey" from="mysmall">
-        <color>#DADADA</color>
-    </fontdef>
-
-    <fontdef name="mysmallblack" from="mysmall">
-        <color>#000000</color>
-    </fontdef>
-
-    <fontdef name="mysmallgreen" from="mysmall">
-        <color>#33bf33</color>
-    </fontdef>
-
-    <fontdef name="mysmallred" from="mysmall">
-        <color>#E43E3E</color>
-    </fontdef>
-
-    <fontdef name="mysmallorange" from="mysmall">
-        <color>#ff9147</color>
-    </fontdef>
-
-    <fontdef name="mysmallblue" from="mysmall">
-        <color>#00EEEE</color>
-    </fontdef>
-
-    <fontdef name="mysmallpurple" from="mysmall">
-        <color>#9999cc</color>
-    </fontdef>
-
-    <fontdef name="mysmallyellow" from="mysmall">
-        <color>#FFFF00</color>
-    </fontdef>
-
-    <fontdef name="mysmallboldgreen" from="mysmallgreen">
-        <weight>bold</weight>
-    </fontdef>
-
-    <fontdef name="mysmallboldred" from="mysmallred">
-        <weight>bold</weight>
-    </fontdef>
-
-    <fontdef name="mysmallboldblue" from="mysmallblue">
-        <weight>bold</weight>
-    </fontdef>
-
-    <fontdef name="myverysmalllightgrey" from="myverysmall">
-        <color>#F0F0F0</color>
-    </fontdef>
-
-    <fontdef name="myverysmallgrey" from="myverysmall">
-        <color>#DDDDDD</color>
-    </fontdef>
-
-    <fontdef name="myverysmallblack" from="myverysmall">
-        <color>#000000</color>
-    </fontdef>
-
-    <fontdef name="myverysmallgreen" from="myverysmall">
-        <color>#3EAE09</color>
-    </fontdef>
-
-    <fontdef name="myverysmallred" from="myverysmall">
-        <color>#D40101</color>
-    </fontdef>
-
-    <fontdef name="myverysmallyellow" from="myverysmall">
-        <color>#FFFF00</color>
-    </fontdef>
-
-    <fontdef name="myverysmallorange" from="myverysmall">
-        <color>#ff9147</color>
-    </fontdef>
-
-    <fontdef name="myverysmallblue" from="myverysmall">
-        <!--
-            <color>#0492A7</color>
-        -->
-        <color>#00EEEE</color>
-    </fontdef>
-
-    <fontdef name="myverysmallboldgreen" from="myverysmallgreen">
-        <weight>bold</weight>
-    </fontdef>
-
-    <fontdef name="myverysmallboldred" from="myverysmallred">
-        <weight>bold</weight>
-    </fontdef>
-
-    <fontdef name="myverysmallboldblue" from="myverysmallblue">
-        <weight>bold</weight>
-    </fontdef>
-
 
     <group name="baseDateHeading">
         <area>100%-530,1010,500,50</area>
@@ -397,7 +271,7 @@
         <clock name="datetime">
             <area>25,5,-25,-5</area>
             <minsize>20,100%</minsize>
-            <font>mysmalllightgrey</font>
+            <font>mysmallsemibold</font>
             <template>%DATE%   %TIME%</template>
             <align>right,vcenter</align>
             <cutdown>true</cutdown>
@@ -429,7 +303,7 @@
                 <area>25,5,-25,-5</area>
                 <minsize>50,100%</minsize>
                 <align>center</align>
-                <font>mymediumlightgrey</font>
+                <font>mymedium</font>
                 <cutdown>no</cutdown>
             </textarea>
         </group>
@@ -1012,7 +886,7 @@
 
     <textarea name="labeltext">
         <area>0,0,250,70</area>
-        <font>mylabelfont</font>
+        <font>mysmalllabel</font>
         <extraleading>-1</extraleading>
         <multiline>yes</multiline>
         <align>right,vcenter</align>
@@ -1020,7 +894,7 @@
 
     <textarea name="labeltextlarge">
         <area>0,0,250,90</area>
-        <font>mylabelfontmedium</font>
+        <font>mymediumlabel</font>
         <multiline>yes</multiline>
         <align>right,vcenter</align>
     </textarea>
@@ -1287,14 +1161,14 @@
                     <multiline>yes</multiline>
                     <cutdown>no</cutdown>
                     <align>top,right</align>
-                    <font>mynarrowlabel</font>
+                    <font>mysmallsemiboldlabel</font>
                 </textarea>
                 <textarea name="sep">
                     <area>31%,3,10,-3</area>
                     <minsize shrink="short">100%,5</minsize>
                     <align>top,left</align>
                     <value>:</value>
-                    <font>mynarrowlabel</font>
+                    <font>mysmallsemiboldlabel</font>
                 </textarea>
                 <textarea name="value">
                     <area>31%+15,3,-10,-3</area>
@@ -1302,17 +1176,17 @@
                     <multiline>yes</multiline>
                     <cutdown>no</cutdown>
                     <align>top,left</align>
-                    <font>mynarrow</font>
+                    <font>mysmallsemibold</font>
                 </textarea>
             </state>
             <state name="selectedactive" from="active" />
             <state name="selectedinactive" from="active" />
             <state name="disabled" from="active">
                 <textarea name="name">
-                    <font>mysmallnarrowlightgrey</font>
+                    <font>mysmall</font>
                 </textarea>
                 <textarea name="value">
-                    <font>mysmallnarrowlightgrey</font>
+                    <font>mysmall</font>
                 </textarea>
             </state>
         </statetype>
@@ -1876,7 +1750,7 @@
             <area>30,5,-30,-5</area>
             <minsize vanish="yes">20,40</minsize>
             <align>center</align>
-            <font>mymediumlightgrey</font>
+            <font>mymediumsemibold</font>
         </textarea>
     </group>
 
@@ -1916,7 +1790,7 @@
                         <extraleading>4</extraleading>
                         <align>center</align>
                         <cutdown>yes</cutdown>
-                        <font>mysmall</font>
+                        <font>mysmallsemibold</font>
                         <alpha>255</alpha>
                     </textarea>
                 </group>
@@ -2023,7 +1897,7 @@
                 <textarea name="buttontext">
                     <area>10,3,-10,-3</area>
                     <align>center</align>
-                    <font>mygroupsmall</font>
+                    <font>mymediumgoth</font>
                     <multiline>yes</multiline>
                     <cutdown>yes</cutdown>
                 </textarea>
@@ -2438,7 +2312,7 @@
                 </group>
 
                 <textarea name="titlesubtitle">
-                    <area>20,100%-42,-160,35</area>
+                    <area>20,100%-42,-160,36</area>
                     <align>left</align>
                     <font>mymedium</font>
                 </textarea>
@@ -2465,14 +2339,14 @@
                 </textarea>
 
                 <textarea name="title">
-                    <area>20,45,-15,44</area>
+                    <area>20,45,-15,48</area>
                     <align>left</align>
                     <font>mylargebold</font>
                     <cutdown>no</cutdown>
                     <scroll direction="horizontal" returnrate="140" returndelay="4" />
                 </textarea>
                 <textarea name="subtitle">
-                    <area>60,88,-15,38</area>
+                    <area>60,88,-15,36</area>
                     <align>left</align>
                     <font>mymediumbold</font>
                     <cutdown>no</cutdown>
@@ -2506,7 +2380,7 @@
                 <textarea name="parttotal">
                     <area>675,100%-40,230,32</area>
                     <align>hcenter,bottom</align>
-                    <font>mylabelfont</font>
+                    <font>mysmalllabel</font>
                     <template>%Part |PARTNUMBER| of %%PARTTOTAL%</template>
                 </textarea>
 

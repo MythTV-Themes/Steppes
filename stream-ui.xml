@@ -11,7 +11,7 @@
                     <area>25,5,-25,-5</area>
                     <minsize>50,100%</minsize>
                     <align>center</align>
-                    <font>mymediumlightgrey</font>
+                    <font>mymediumsemibold</font>
                     <cutdown>no</cutdown>
                     <template>%BROADCASTER| - %%CHANNEL%</template>
                     <value>Radio Stream</value>
