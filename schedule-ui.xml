@@ -789,10 +789,10 @@
                     <state name="selectedactive" from="selectedinactive" />
                     <state name="disabled" from="active">
                         <textarea name="name">
-                            <font>mysmallnarrowlightgrey</font>
+                            <font>mysmalllightgrey</font>
                         </textarea>
                         <textarea name="value">
-                            <font>mysmallnarrowlightgrey</font>
+                            <font>mysmalllightgrey</font>
                         </textarea>
                     </state>
                 </statetype>
@@ -1009,7 +1009,7 @@
             <textarea name="header">
                 <area>60,60,-30,35</area>
                 <minsize vanish="true" shrink="short">100%,60</minsize>
-                <font>mylabelfont</font>
+                <font>mysmalllabel</font>
                 <multiline>yes</multiline>
                 <align>top</align>
                 <cutdown>no</cutdown>
@@ -1053,7 +1053,7 @@
                     <area>30,10,-30,-10</area>
                     <minsize shrink="short">350,25</minsize>
                     <multiline>yes</multiline>
-                    <font>myverysmall</font>
+                    <font>mysmall</font>
                     <align>center</align>
                     <value>Use [Menu] or [PREVVIEW]/[NEXTVIEW] to cycle through other settings</value>
                 </textarea>
