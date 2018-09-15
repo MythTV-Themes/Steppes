@@ -3,68 +3,81 @@
 <mythuitheme>
 
 <!--
-'Myriad Pro':
- Semibold(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
- Bold SemiCondensed(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+'Titillium':
+ Black(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
  Bold(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
- Condensed(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Bold Italic(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Bold Upright(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
  Light(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
- Semibold Condensed(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
- Semibold SemiCondensed(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
- SemiCondensed(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Light Italic(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Light Upright(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
  Regular(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Regular Italic(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Regular Upright(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Semibold(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Semibold Italic(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Semibold Upright(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Thin(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Thin Italic(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Thin Upright(6 7 8 9 10
+-->
+
+<!--
+'CartoGothic Std':
+ Bold(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
+ Book(6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72)
 -->
 
     <!--  Sans  -->
     <!-- Small -->
-    <fontdef name="mysmall" face="Myriad Pro">
+    <fontdef name="mysmall" face="CartoGothic Std">
         <color>#F0F0FF</color>
         <pixelsize>29</pixelsize>
     </fontdef>
 
-    <fontdef name="mysmallbold" face="Myriad Pro">
-        <color>#F0F0FF</color>
+    <fontdef name="mysmallbold" face="CartoGothic Std">
+        <color>#EEDDFF</color>
         <pixelsize>29</pixelsize>
         <weight>bold</weight>
     </fontdef>
 
-    <fontdef name="mysmallsemibold" face="Myriad Pro">
+    <fontdef name="mysmallsemibold" face="Titillium">
         <color>#F0F0FF</color>
         <pixelsize>29</pixelsize>
-        <weight>semibold</weight>
+        <weight>4</weight>
     </fontdef>
 
-    <fontdef name="mysmallnarrow" face="Myriad Pro">
+    <fontdef name="mysmallnarrow" face="Titillium">
         <color>#F0F0FF</color>
         <pixelsize>29</pixelsize>
-        <stretch>SemiCondensed</stretch>
+        <stretch>4</stretch>
     </fontdef>
 
-    <fontdef name="mysmallnarrowbold" face="Myriad Pro">
+    <fontdef name="mysmallnarrowbold" face="Titillium">
         <color>#F0F0FF</color>
         <pixelsize>29</pixelsize>
-        <stretch>SemiCondensed</stretch>
-        <weight>bold</weight>
+        <stretch>4</stretch>
+        <weight>4</weight>
     </fontdef>
 
-    <fontdef name="mysmallnarrowsemibold" face="Myriad Pro">
+    <fontdef name="mysmallnarrowsemibold" face="Titillium">
         <color>#F0F0FF</color>
         <pixelsize>29</pixelsize>
-        <stretch>SemiCondensed</stretch>
-        <weight>SemiBold</weight>
+        <stretch>4</stretch>
+        <weight>4</weight>
     </fontdef>
 
-    <fontdef name="mysmalllight" face="Myriad Pro">
+    <fontdef name="mysmalllight" face="Titillium">
         <color>#F0F0FF</color>
         <pixelsize>29</pixelsize>
-        <weight>light</weight>
+        <weight>1</weight>
     </fontdef>
 
-    <fontdef name="mysmallnarrowlight" face="Myriad Pro">
+    <fontdef name="mysmallnarrowlight" face="Titillium">
         <color>#F0F0FF</color>
         <pixelsize>29</pixelsize>
-        <stretch>SemiCondensed</stretch>
-        <weight>light</weight>
+        <stretch>4</stretch>
+        <weight>1</weight>
     </fontdef>
 
     <!-- Very small -->
@@ -90,10 +103,12 @@
 
     <!-- Medium -->
     <fontdef name="mymedium" from="mysmall">
+        <color>#EEDDFF</color>
         <pixelsize>32</pixelsize>
     </fontdef>
 
     <fontdef name="mymediumbold" from="mysmallbold">
+        <color>#EEDDFF</color>
         <pixelsize>32</pixelsize>
     </fontdef>
 
@@ -127,6 +142,7 @@
     </fontdef>
 
     <fontdef name="mylargebold" from="mysmallbold">
+        <color>#EEDDFF</color>
         <pixelsize>42</pixelsize>
     </fontdef>
 
@@ -171,6 +187,44 @@
         <color>#000000</color>
     </fontdef>
 
+    <!-- myverysmall colors -->
+    <fontdef name="myverysmallgrey" from="myverysmall">
+        <color>#999999</color>
+    </fontdef>
+
+    <fontdef name="myverysmalllightgrey" from="myverysmall">
+        <color>#A0A0A0</color>
+    </fontdef>
+
+    <fontdef name="myverysmallgreen" from="myverysmall">
+        <color>#33bf33</color>
+    </fontdef>
+
+    <fontdef name="myverysmallred" from="myverysmall">
+        <color>#E43E3E</color>
+    </fontdef>
+
+    <fontdef name="myverysmallblue" from="myverysmall">
+        <color>#00EEEE</color>
+    </fontdef>
+
+    <fontdef name="myverysmallpurple" from="myverysmall">
+        <color>#9999cc</color>
+    </fontdef>
+
+    <fontdef name="myverysmallyellow" from="myverysmall">
+        <color>#FFFF00</color>
+    </fontdef>
+
+    <fontdef name="myverysmallorange" from="myverysmall">
+        <color>#ff9147</color>
+    </fontdef>
+
+    <fontdef name="myverysmallblack" from="myverysmall">
+        <color>#000000</color>
+    </fontdef>
+
+    <!-- mysmallnarrow colors -->
     <fontdef name="mysmallnarrowgrey" from="mysmallnarrow">
         <color>#DADADA</color>
     </fontdef>
@@ -207,28 +261,41 @@
         <color>#000000</color>
     </fontdef>
 
-
-
-    <!-- Gothic -->
-    <!-- Small -->>
-    <fontdef name="mysmallgoth" face="CartoGothic Std">
-        <color>#FFEAEA</color>
-        <pixelsize>29</pixelsize>
+    <!-- mymedium colors -->
+    <fontdef name="mymediumgrey" from="mymedium">
+        <color>#DADADA</color>
     </fontdef>
 
-    <fontdef name="mysmallnarrowgoth" face="CartoGothic Std">
-        <color>#FFEAEA</color>
-        <pixelsize>29</pixelsize>
-        <stretch>SemiCondensed</stretch>
+    <fontdef name="mymediumlightgrey" from="mymedium">
+        <color>#A0A0A0</color>
     </fontdef>
 
-    <!-- Medium -->>
-    <fontdef name="mymediumgoth" from="mysmallgoth">
-        <pixelsize>32</pixelsize>
+    <fontdef name="mymediumgreen" from="mymedium">
+        <color>#33bf33</color>
     </fontdef>
 
-    <fontdef name="mymediumnarrowgoth" from="mysmallnarrowgoth">
-        <color>#FFEAEA</color>
+    <fontdef name="mymediumred" from="mymedium">
+        <color>#E43E3E</color>
+    </fontdef>
+
+    <fontdef name="mymediumblue" from="mymedium">
+        <color>#00EEEE</color>
+    </fontdef>
+
+    <fontdef name="mymediumpurple" from="mymedium">
+        <color>#9999cc</color>
+    </fontdef>
+
+    <fontdef name="mymediumyellow" from="mymedium">
+        <color>#FFFF00</color>
+    </fontdef>
+
+    <fontdef name="mymediumorange" from="mymedium">
+        <color>#ff9147</color>
+    </fontdef>
+
+    <fontdef name="mymediumblack" from="mymedium">
+        <color>#000000</color>
     </fontdef>
 
     <!-- Colors -->
@@ -879,7 +946,7 @@
     <!-- Base definition of a textarea -->
     <textarea name="basetextarea">
         <area>0,0,100,55</area>
-        <font>mysmall</font>
+        <font>mymedium</font>
         <multiline>no</multiline>
         <align>left,vcenter</align>
     </textarea>
@@ -1897,7 +1964,7 @@
                 <textarea name="buttontext">
                     <area>10,3,-10,-3</area>
                     <align>center</align>
-                    <font>mymediumgoth</font>
+                    <font>mymedium</font>
                     <multiline>yes</multiline>
                     <cutdown>yes</cutdown>
                 </textarea>
@@ -2149,14 +2216,14 @@
         <area>0,0,100%,100%</area>
 
         <textarea name="timedate">
-            <area>0,0,470,36</area>
+            <area>0,0,450,36</area>
             <align>left,vcenter</align>
             <font>mysmallnarrowlabel</font>
             <cutdown>no</cutdown>
         </textarea>
 
         <textarea name="originalairdate">
-            <area>480,0,230,35</area>
+            <area>460,0,230,35</area>
             <align>center</align>
             <font>mysmallnarrowlabel</font>
             <template>(%1)</template>
@@ -2164,21 +2231,21 @@
         </textarea>
 
         <textarea name="year" depends="!originalairdate">
-            <area>480,0,230,35</area>
+            <area>460,0,230,35</area>
             <align>center</align>
             <font>mysmallnarrowlabel</font>
             <template>(%1)</template>
         </textarea>
 
         <textarea name="lenmins">
-            <area>720,0,150,35</area>
+            <area>700,0,150,35</area>
             <align>right,vcenter</align>
             <font>mysmallnarrowlabel</font>
             <template>%1</template>
         </textarea>
 
         <textarea name="channel">
-            <area>875,0,-15,40</area>
+            <area>855,0,-15,40</area>
             <font>mysmallnarrowlabel</font>
             <align>right,vcenter</align>
         </textarea>

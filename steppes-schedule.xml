@@ -36,7 +36,7 @@
                 <textarea name="rectypestatus">
                     <area>30,100%-40,50%-10,32</area>
                     <align>left,bottom</align>
-                    <font>myverysmall</font>
+                    <font>myverysmallpurple</font>
                     <font state="running">myverysmallgreen</font>
                     <font state="disabled">myverysmallgrey</font>
                     <font state="error">myverysmallred</font>
@@ -144,7 +144,7 @@
                             <area>15,3,-15,-3</area>
                             <minsize>50,100%</minsize>
                             <align>center</align>
-                            <font>myverysmall</font>
+                            <font>myverysmallpurple</font>
                             <font state="running">myverysmallgreen</font>
                             <font state="disabled">myverysmallgrey</font>
                             <font state="error">myverysmallred</font>

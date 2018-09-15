@@ -249,6 +249,12 @@
          -> 'I'(nfo)
     -->
     <window name="osd_status">
+        <fontdef name="title" face="CartoGothic Std">
+            <pixelsize>30</pixelsize>
+            <color>#EEDDFF</color>
+            <shadowoffset>1,1</shadowoffset>
+            <shadowcolor>#000000</shadowcolor>
+        </fontdef>
         <fontdef name="small" face="CartoGothic Std">
             <pixelsize>30</pixelsize>
             <color>#FFFFFF</color>
@@ -264,7 +270,7 @@
         </shape>
 
         <textarea name="title">
-            <font>small</font>
+            <font>title</font>
             <area>10,10,600,40</area>
             <align>left,top</align>
         </textarea>
@@ -306,7 +312,7 @@
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
-        <fontdef name="verysmall" face="Myriad Pro Cond">
+        <fontdef name="verysmall" from="small">
             <pixelsize>25</pixelsize>
             <color>#FFFFFF</color>
         </fontdef>
@@ -319,7 +325,8 @@
         <fontdef name="medium" from="small">
             <pixelsize>34</pixelsize>
         </fontdef>
-        <fontdef name="large" from="small">
+        <fontdef name="title" from="small">
+            <color>#EEDDFF</color>
             <pixelsize>40</pixelsize>
         </fontdef>
 
@@ -402,7 +409,7 @@
                 <align>right,top</align>
             </textarea>
             <textarea name="title">
-                <font>large</font>
+                <font>title</font>
                 <area>5,45,-5,45</area>
                 <align>left,top</align>
             </textarea>
@@ -646,7 +653,7 @@
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
-        <fontdef name="verysmall" face="Myriad Pro Cond">
+        <fontdef name="verysmall" from="small">
             <pixelsize>25</pixelsize>
             <color>#FFFFFF</color>
             <stretch>condensed</stretch>
@@ -657,7 +664,8 @@
         <fontdef name="medium" from="small">
             <pixelsize>34</pixelsize>
         </fontdef>
-        <fontdef name="large" from="small">
+        <fontdef name="title" from="small">
+            <color>#EEDDFF</color>
             <pixelsize>40</pixelsize>
         </fontdef>
 
@@ -725,7 +733,7 @@
                 <align>right,top</align>
             </textarea>
             <textarea name="title">
-                <font>large</font>
+                <font>title</font>
                 <area>5,45,-5,45</area>
                 <align>left,top</align>
             </textarea>
@@ -764,7 +772,8 @@
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
-        <fontdef name="large" from="small">
+        <fontdef name="title" from="small">
+            <color>#EEDDFF</color>
             <pixelsize>34</pixelsize>
         </fontdef>
 
@@ -779,7 +788,7 @@
         </shape>
 
         <textarea name="title">
-            <font>large</font>
+            <font>title</font>
             <area>10,10,-10,70</area>
             <align>center</align>
         </textarea>
@@ -870,9 +879,9 @@
                         <area>20,10,-20,-10</area>
                         <minsize>110,100%</minsize>
                         <align>left,vcenter</align>
-                        <font>large</font>
-                        <font state="disabled">large</font>
-                        <font state="selected">large</font>
+                        <font>title</font>
+                        <font state="disabled">title</font>
+                        <font state="selected">title</font>
                     </textarea>
                 </state>
                 <state name="selected" from="active">
@@ -937,6 +946,12 @@
          -> 'E'(dit)
     -->
     <window name="osd_program_editor">
+        <fontdef name="title" face="CartoGothic Std">
+            <pixelsize>30</pixelsize>
+            <color>#EEDDFF</color>
+            <shadowoffset>1,1</shadowoffset>
+            <shadowcolor>#000000</shadowcolor>
+        </fontdef>
         <fontdef name="small" face="CartoGothic Std">
             <pixelsize>30</pixelsize>
             <color>#FFFFFF</color>
@@ -957,21 +972,22 @@
         <textarea name="title">
             <area>10,5,600,40</area>
             <align>left,top</align>
-            <font>small</font>
+            <font>title</font>
         </textarea>
-        <textarea name="seekamount" from="title">
+        <textarea name="seekamount">
             <area>1380,5,330,40</area>
             <align>right,top</align>
+            <font>small</font>
         </textarea>
-        <textarea name="timedisplay" from="title">
+        <textarea name="timedisplay" from="seekamount">
             <area>500,70,-500,40</area>
             <align>hcenter,bottom</align>
         </textarea>
-        <textarea name="cutindicator" from="title">
+        <textarea name="cutindicator" from="seekamount">
             <area>10,70,300,40</area>
             <align>left,bottom</align>
         </textarea>
-        <textarea name="framedisplay" from="title">
+        <textarea name="framedisplay" from="seekamount">
             <area>1380,70,330,40</area>
             <align>right,bottom</align>
         </textarea>
@@ -1120,7 +1136,7 @@
     </window>
 
     <window name="osd_navigation">
-        <fontdef name="verysmall" face="Myriad Pro Cond">
+        <fontdef name="verysmall" face="CartoGothic Std">
             <pixelsize>19</pixelsize>
             <weight>bold</weight>
             <color>#FFFFFF</color>
