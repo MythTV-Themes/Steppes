@@ -8,7 +8,7 @@
     -->
     <window name="osd_debug">
         <fontdef name="small" face="CartoGothic Std">
-            <pixelsize>30</pixelsize>
+            <pixelsize>28</pixelsize>
             <color>#FFFFCC</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>

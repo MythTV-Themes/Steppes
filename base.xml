@@ -134,16 +134,16 @@
 
     <!-- Large -->
     <fontdef name="mylarge" from="mysmall">
-        <pixelsize>42</pixelsize>
+        <pixelsize>40</pixelsize>
     </fontdef>
 
     <fontdef name="mylargenarrow" from="mysmallnarrow">
-        <pixelsize>42</pixelsize>
+        <pixelsize>40</pixelsize>
     </fontdef>
 
     <fontdef name="mylargebold" from="mysmallbold">
         <color>#EEDDFF</color>
-        <pixelsize>42</pixelsize>
+        <pixelsize>40</pixelsize>
     </fontdef>
 
     <!-- Colors -->
