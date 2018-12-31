@@ -84,7 +84,7 @@
                 </textarea>
 
                 <textarea name="relative_humidity" from="basetextarea">
-                    <area>290,20,300,70</area>
+                    <area>290,20,300,80</area>
                     <font>mymedium</font>
                     <align>left,vcenter</align>
                     <template>: %1</template>
@@ -597,7 +597,7 @@
                 </shape>
 
                 <textarea name="time-0" from="basetextarea">
-                    <area>10,10,-10,35</area>
+                    <area>10,5,-10,40</area>
                     <align>allcenter</align>
                 </textarea>
 
@@ -608,24 +608,24 @@
                 </imagetype>
 
                 <textarea name="temp_label" from="labeltext">
-                    <area>5,100%-65,195,35</area>
+                    <area>5,100%-70,195,40</area>
                     <align>right,vcenter</align>
                     <value>Temp</value>
                 </textarea>
 
                 <textarea name="temp-0" from="basetextarea">
-                    <area>220,100%-65,-10,35</area>
+                    <area>220,100%-70,-10,40</area>
                     <font>mysmall</font>
                     <align>left,vcenter</align>
                 </textarea>
 
                 <textarea name="precip_label" from="temp_label">
-                    <position>5,100%-35</position>
+                    <position>5,100%-40</position>
                     <value>Precip</value>
                 </textarea>
 
                 <textarea name="pop-0" from="temp-0">
-                    <position>220,100%-35</position>
+                    <position>220,100%-40</position>
                     <value>100%</value>
                 </textarea>
             </group>
@@ -766,7 +766,7 @@
             </spinbox>
 
             <textarea name="timeout_label" from="labelcheckbox">
-                <area>320,40,-20,70</area>
+                <area>320,40,-20,80</area>
                 <value>Seconds to display each page</value>
                 <align>left,vcenter</align>
             </textarea>
@@ -851,7 +851,6 @@
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
             </shape>
-
 
             <buttonlist name="srclist" from="basebuttonlist">
                 <area>40,40,600,-120</area>

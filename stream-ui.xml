@@ -89,7 +89,7 @@
                         </imagetype>
 
                         <textarea name="station" from="basetextarea">
-                            <area>120,10,-10,70</area>
+                            <area>120,10,-10,80</area>
                             <align>left,top</align>
                             <multiline>yes</multiline>
                             <font>mysmall</font>
@@ -309,26 +309,26 @@
                         </imagetype>
 
                         <textarea name="tracknum" from="basetextarea">
-                            <area>12,10,90,35</area>
+                            <area>12,5,90,40</area>
                             <align>right,top</align>
                             <font>mymedium</font>
                             <template>%1 -</template>
                         </textarea>
 
                         <textarea name="title" from="basetextarea">
-                            <area>110,10,-100,35</area>
+                            <area>110,5,-100,40</area>
                             <align>left,top</align>
                             <font>mymedium</font>
                         </textarea>
 
                         <textarea name="artist" from="basetextarea">
-                            <area>80,40,-220,-10</area>
+                            <area>80,40,-220,-5</area>
                             <align>left,bottom</align>
                             <font>mysmall</font>
                         </textarea>
 
                         <textarea name="length" from="basetextarea">
-                            <area>100%-210,40,120,-10</area>
+                            <area>100%-210,40,120,-5</area>
                             <align>right,bottom</align>
                             <font>mysmall</font>
                         </textarea>
@@ -533,120 +533,121 @@
         </group>
 
         <group name="dialog">
-            <area>30,30,-30,-100</area>
+            <area>30,10,-30,-85</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
             </shape>
 
             <textarea name="broadcasterlabel" from="labeltext">
-                <position>10,20</position>
+                <position>10,10</position>
                 <value>Broadcaster:</value>
             </textarea>
 
             <textedit name="broadcasteredit" from="basewidetextedit">
-                <area>280,20,-30,70</area>
+                <area>280,10,-30,90</area>
             </textedit>
 
             <textarea name="channel_label" from="broadcasterlabel">
-                <position>20,90</position>
+                <position>20,100</position>
                 <value>Channel:</value>
             </textarea>
 
             <textedit name="channeledit" from="broadcasteredit">
-                <position>280,90</position>
+                <position>280,100</position>
             </textedit>
 
             <textarea name="descriptionlabel" from="broadcasterlabel">
-                <position>20,160</position>
+                <position>20,190</position>
                 <value>Description:</value>
             </textarea>
             <textedit name="descriptionedit" from="broadcasteredit">
-                <position>280,160</position>
+                <position>280,190</position>
             </textedit>
 
             <textarea name="urllabel" from="broadcasterlabel">
-                <position>20,230</position>
+                <position>20,280</position>
                 <value>URL 1:</value>
             </textarea>
             <textedit name="url1edit" from="descriptionedit">
-                <position>280,230</position>
+                <position>280,280</position>
             </textedit>
 
             <textarea name="url2label" from="broadcasterlabel">
-                <position>20,300</position>
+                <position>20,370</position>
                 <value>URL 2:</value>
             </textarea>
             <textedit name="url2edit" from="descriptionedit">
-                <position>280,300</position>
+                <area>280,370,50%-100,90</area>
             </textedit>
 
             <textarea name="url3label" from="broadcasterlabel">
-                <position>20,370</position>
+                <position>50%-100,370</position>
                 <value>URL 3:</value>
             </textarea>
             <textedit name="url3edit" from="descriptionedit">
-                <position>280,370</position>
+                <area>50%+150,370,-30,90</area>
             </textedit>
 
-            <textarea name="url4label" from="broadcasterlabel">
-                <position>20,440</position>
+            <textarea name="url4label" from="url2label">
+                <position>20,460</position>
                 <value>URL 4:</value>
             </textarea>
-            <textedit name="url4edit" from="descriptionedit">
-                <position>280,440</position>
+            <textedit name="url4edit" from="url2edit">
+                <position>280,460</position>
             </textedit>
 
-            <textarea name="url5label" from="broadcasterlabel">
-                <position>20,510</position>
+            <textarea name="url5label" from="url3label">
+                <position>50%-100,460</position>
                 <value>URL 5:</value>
             </textarea>
-            <textedit name="url5edit" from="descriptionedit">
-                <position>280,510</position>
+
+            <textedit name="url5edit" from="url3edit">
+                <position>50%+150,460</position>
             </textedit>
 
             <textarea name="logourllabel" from="broadcasterlabel">
-                <position>20,580</position>
+                <position>20,550</position>
                 <value>Logo URL:</value>
             </textarea>
             <textedit name="logourledit" from="descriptionedit">
-                <position>280,580</position>
+                <position>280,550</position>
             </textedit>
 
             <textarea name="genrelabel" from="broadcasterlabel">
-                <position>20,650</position>
+                <position>20,640</position>
                 <value>Genres:</value>
             </textarea>
             <textedit name="genreedit" from="descriptionedit">
-                <position>280,650</position>
+                <position>280,640</position>
             </textedit>
 
             <textarea name="formatlabel" from="broadcasterlabel">
-                <position>20,720</position>
+                <position>20,730</position>
                 <value>Metadata Format:</value>
             </textarea>
             <textedit name="formatedit" from="descriptionedit">
-                <position>280,720</position>
+                <position>280,730</position>
             </textedit>
 
             <textarea name="countrylabel" from="broadcasterlabel">
-                <position>20,790</position>
+                <position>20,820</position>
                 <value>Country:</value>
             </textarea>
             <textedit name="countryedit" from="basewidetextedit">
-                <position>280,790</position>
+                <position>280,820</position>
             </textedit>
 
             <textarea name="languagelabel" from="broadcasterlabel">
-                <position>960,790</position>
+                <position>960,820</position>
                 <value>Language:</value>
             </textarea>
             <textedit name="languageedit" from="basewidetextedit">
-                <position>1230,790</position>
+                <position>1230,820</position>
             </textedit>
 
             <group name="buttongroup">
-                <area>50, 100%-80, 60%, 70</area>
+                <area>50, 100%-85, 60%, 80</area>
                 <button name="cancelbutton" from="prev_button">
                     <value>Cancel</value>
                 </button>
@@ -656,7 +657,7 @@
             </group>
 
             <button name="searchbutton" from="varbuttonleft">
-                <area>70%,100%-80,-10,70</area>
+                <area>70%,100%-85,-10,80</area>
                 <value>Search</value>
             </button>
 
@@ -676,19 +677,19 @@
         </group>
 
         <group name="dialog">
-            <area>20,20,-30,-90</area>
+            <area>50%-700,20,1400,-90</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
             </shape>
 
             <textarea name="broadcasterlabel" from="labeltext">
-                <position>10,40</position>
+                <position>10,20</position>
                 <value>Broadcaster:</value>
             </textarea>
 
             <buttonlist name="broadcasterlist" from="basewideselector">
-                <position>280,40</position>
+                <position>280,20</position>
             </buttonlist>
 
             <textarea name="countrylabel" from="broadcasterlabel">
@@ -701,39 +702,39 @@
             </buttonlist>
 
             <textarea name="languagelabel" from="broadcasterlabel">
-                <position>20,180</position>
+                <position>20,200</position>
                 <value>Language:</value>
             </textarea>
 
             <buttonlist name="languagelist" from="basewideselector">
-                <position>280,180</position>
+                <position>280,200</position>
             </buttonlist>
 
             <textarea name="genrelabel" from="broadcasterlabel">
-                <position>20,250</position>
+                <position>20,290</position>
                 <value>Genre:</value>
             </textarea>
 
             <buttonlist name="genrelist" from="broadcasterlist">
-                <position>280,250</position>
+                <position>280,290</position>
             </buttonlist>
 
             <textarea name="channellabel" from="broadcasterlabel">
-                <position>20,320</position>
+                <position>20,380</position>
                 <value>Channel:</value>
             </textarea>
 
             <textedit name="channeledit" from="basewidetextedit">
-                <position>280,320</position>
+                <position>280,380</position>
             </textedit>
 
             <group name="matches" from="basematchgroup">
-                <area>1000, 180, 400, 70</area>
+                <area>1000, 290, 400, 90</area>
                 <textarea name="matchestext" from="resulttext" />
             </group>
 
             <buttonlist name="streamlist" from="basebuttonlist">
-                <area>5,390,-5,-10</area>
+                <area>5,470,-5,100%</area>
                 <align>top,hcenter</align>
                 <spacing>1</spacing>
                 <buttonarea>30,0,-30,100%</buttonarea>
@@ -749,12 +750,12 @@
                             <preserveaspect>true</preserveaspect>
                         </imagetype>
                         <textarea name="broadcaster" from="buttontext">
-                            <area>105,5,50%-10,-5</area>
+                            <area>105,5,-300,-5</area>
                             <template>%BROADCASTER% - %Channel%</template>
                             <align>left,vcenter</align>
                         </textarea>
                         <textarea name="genre" from="buttontext">
-                            <area>50%+10,5,-5,-5</area>
+                            <area>100%-300,5,-5,-5</area>
                             <align>left,vcenter</align>
                         </textarea>
                     </state>

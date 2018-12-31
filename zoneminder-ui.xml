@@ -33,10 +33,10 @@
 
         <!-- Required, but undesired -->
         <textarea name="date_text">
-            <area>0, 0, 0, 0</area>
+            <area>0,0,0,0</area>
         </textarea>
         <textarea name="time_text">
-            <area>0, 0, 0, 0</area>
+            <area>0,0,0,0</area>
         </textarea>
 
         <group name="details">
@@ -84,7 +84,7 @@
             </textarea>
 
             <buttonlist name="monitor_list" from="basebuttonlist">
-                <area>0, 50, 100%, -50</area>
+                <area>0,50,100%,-50</area>
                 <align>top</align>
                 <statetype name="buttonitem">
                     <state name="active">
@@ -133,7 +133,7 @@
             </shape>
 
             <textarea name="label1" from="labeltext">
-                <position>10, 20</position>
+                <position>10,20</position>
                 <value>Select Camera:</value>
             </textarea>
             <buttonlist name="camera_selector" from="basemediumselector">
@@ -149,7 +149,7 @@
             </buttonlist>
 
             <group name="posgroup" from="baseModeGroup">
-                <area>1320,20,-50,70</area>
+                <area>1320,20,-50,80</area>
                 <textarea name="eventno_text" from="pagemode">
                     <align>center</align>
                     <font>mysmall</font>
@@ -185,7 +185,7 @@
                 </textarea>
 
                 <buttonlist name="layout1_eventlist" from="basebuttonlist">
-                    <area>0, 50, 100%, -10</area>
+                    <area>0,50,100%,-10</area>
                     <align>top</align>
                     <statetype name="buttonitem">
                         <state name="active">
@@ -219,7 +219,7 @@
                 <area>60,100,-60,-90</area>
 
                 <buttonlist name="layout2_eventlist" from="basebuttonlist">
-                    <area>200, 50, -200, -10</area>
+                    <area>200,50,-200,-10</area>
                     <statetype name="buttonitem">
                         <area>0,0,100%,100%</area>
                         <state name="active">
@@ -235,12 +235,12 @@
                                 <value>Name</value>
                             </textarea>
                             <textarea name="buttontext" from="basetextarea">
-                                <area>810,20,-20,70</area>
+                                <area>810,20,-20,80</area>
                                 <multiline>yes</multiline>
                             </textarea>
                         </state>
                         <state name="selectedinactive" from="active">
-                            <area>0,0, 100%, 400</area>
+                            <area>0,0,100%,400</area>
                             <shape name="background" from="baseselectedinactivebuttonshape" />
                             <imagetype name="buttonimage">
                                 <area>15,15,540,370</area>
@@ -282,16 +282,16 @@
                 <area>60,180,-60,-110</area>
 
                 <buttonlist name="layout3_eventlist" from="basegridlist">
-                    <area>0, 0, 100%, 100%</area>
+                    <area>0,0,100%,100%</area>
                 </buttonlist>
             </group>
 
 
             <button name="play_button" from="varbuttonleft">
-                <area>50%+10,100%-80,-20,70</area>
+                <area>50%+10,100%-90,-20,80</area>
             </button>
             <button name="delete_button" from="varbuttonright">
-                <area>20,100%-80,50%-10,70</area>
+                <area>20,100%-90,50%-10,80</area>
             </button>
 
         </group>
@@ -351,18 +351,18 @@
             </shape>
 
             <textarea name="label1" from="labeltext">
-                <position>10, 10</position>
+                <position>10,10</position>
                 <value>Event:</value>
             </textarea>
             <textarea name="event_text" from="basetextarea">
-                <area>270,10,-10,70</area>
+                <area>270,10,-10,80</area>
                 <align>left,vcenter</align>
                 <multiline>yes</multiline>
                 <value>Event Name (1/123)</value>
             </textarea>
 
             <textarea name="label2" from="label1">
-                <position>10, 90</position>
+                <position>10,90</position>
                 <value>Camera:</value>
             </textarea>
             <textarea name="camera_text" from="event_text">
@@ -389,19 +389,19 @@
             </textarea>
 
             <button name="play_button" from="varbuttoncenter">
-                <area>10, 360, 50%-10, 70</area>
+                <area>10,360,50%-10,70</area>
                 <value>Test</value>
             </button>
             <button name="delete_button" from="varbuttoncenter">
-                <area>10, 440, 50%-10, 70</area>
+                <area>10,440,50%-10,70</area>
                 <value>Record</value>
             </button>
             <button name="prev_button" from="varbuttoncenter">
-                <area>50%+10, 360, -10, 70</area>
+                <area>50%+10,360,-10,70</area>
                 <value>Cancel</value>
             </button>
             <button name="next_button" from="varbuttoncenter">
-                <area>50%+10, 440, -10, 70</area>
+                <area>50%+10,440,-10,70</area>
                 <value>Store</value>
             </button>
         </group>
@@ -439,7 +439,7 @@
         </checkbox>
 
         <textarea name="enable_text" from="labelcheckbox">
-            <area>100,330,-50,70</area>
+            <area>100,330,-50,80</area>
             <value>Enabled</value>
         </textarea>
 

@@ -19,7 +19,7 @@
         </progressbar>
 
         <group name="statusgroup">
-            <area>630,100%-80,-20,45</area>
+            <area>630,100%-80,-20,50</area>
             <minsize vanish="true">1,55</minsize>
 
             <shape name="msgShape">
@@ -32,7 +32,7 @@
             </shape>
 
             <textarea name="status" from="basetextarea">
-                <area>5,5,-5,-5</area>
+                <area>2,2,-2,-2</area>
                 <minsize vanish="true">1,55</minsize>
                 <multiline>yes</multiline>
                 <font>mysmall</font>
@@ -62,13 +62,13 @@
             </shape>
 
             <textarea name="categorylabel" from="labeltext">
-                <area>20,5,500,35</area>
+                <area>20,5,500,40</area>
                 <align>left,vcenter</align>
                 <value>Category:</value>
             </textarea>
 
             <buttonlist name="grouplist" from="headingList">
-                <area>30,40,-10,60</area>
+                <area>30,45,-10,60</area>
                 <align>left,top</align>
             </buttonlist>
         </group>
@@ -190,7 +190,7 @@
         </group>
 
         <group name="dialog">
-            <area>50%-400,220,800,400</area>
+            <area>50%-400,220,800,420</area>
 
             <shape name="dialogbackground" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
@@ -213,10 +213,10 @@
             </textedit>
 
             <checkbox name="enablepluginscheck" from="basecheckbox">
-                <position>280,180</position>
+                <position>280,190</position>
             </checkbox>
             <textarea name="pluginlabel" from="labelcheckbox">
-                <area>330,180,-10,70</area>
+                <area>330,190,-10,90</area>
                 <value>Enable plugins</value>
             </textarea>
 

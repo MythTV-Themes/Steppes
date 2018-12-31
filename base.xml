@@ -459,8 +459,9 @@
     </shape>
 
     <textarea name="basewidgettext">
-        <area>15,8,-15,-10</area>
+        <area>15,7,-15,-9</area>
         <multiline>yes</multiline>
+        <extraleading>-2</extraleading>
         <cutdown>yes</cutdown>
         <align>center</align>
         <font>mysmallnarrow</font>
@@ -474,9 +475,9 @@
 
     <!-- Base definition of a button -->
     <button name="basebutton">
-        <area>0,0,150,70</area>
+        <area>0,0,150,90</area>
         <group name="center">
-            <area>0,6,100%,-6</area>
+            <area>0,3,100%,-3</area>
             <statetype name="buttonstate">
                 <area>0,0,100%,100%</area>
                 <state name="active">
@@ -499,12 +500,12 @@
 
     <!--
         <button name="basemediumbutton" from="basebutton">
-        <area>0,0,200,70</area>
+        <area>0,0,200,90</area>
         </button>
     -->
 
     <button name="basewidebutton" from="basebutton">
-        <area>0,0,400,70</area>
+        <area>0,0,400,90</area>
     </button>
 
     <button name="baselargebutton" from="basebutton">
@@ -515,7 +516,7 @@
     </button>
 
     <button name="varbuttonleft">
-        <area>70,100%-80,-70,70</area>
+        <area>70,100%-90,-70,80</area>
         <minsize>150,60</minsize>
         <statetype name="buttonstate">
             <area>0,5,100%,-5</area>
@@ -606,31 +607,31 @@
     </button>
 
     <group name="twobuttons">
-        <area>50%, 100%-80, 100%, 70</area>
+        <area>50%,100%-90,100%,80</area>
         <button name="prev_button" from="varbuttonright">
-            <area>100%-540, 0, 250, 100%</area>
+            <area>100%-540,0,250,100%</area>
             <value>Prev</value>
         </button>
 
         <button name="next_button" from="varbuttonleft">
-            <area>100%-285, 0, 250, 100%</area>
+            <area>100%-285,0,250,100%</area>
             <value>Next</value>
         </button>
     </group>
 
     <group name="fourbuttons">
-        <area>0, 100%-80, 100%, 70</area>
+        <area>0,100%-90,100%,80</area>
         <button name="button1" from="varbuttoncenter">
-            <area>0, 0, 25%, 100%</area>
+            <area>0,0,25%,100%</area>
         </button>
         <button name="button2" from="varbuttoncenter">
-            <area>25%, 0, 33%, 100%</area>
+            <area>25%,0,33%,100%</area>
         </button>
         <button name="button3" from="varbuttoncenter">
-            <area>50%, 0, 50%, 100%</area>
+            <area>50%,0,50%,100%</area>
         </button>
         <button name="button4" from="varbuttoncenter">
-            <area>75%, 0, 100%, 100%</area>
+            <area>75%,0,100%,100%</area>
         </button>
     </group>
 
@@ -708,16 +709,16 @@
 
     <!-- Base definition of checkbox -->
     <checkbox name="basecheckbox">
-        <area>0,0,40,70</area>
+        <area>0,0,40,90</area>
         <group name="center">
             <area>0,15,100%,-15</area>
 
             <statetype name="background">
-                <area>0,0,100%,100%</area>
+                <area>0,5,100%,-5</area>
                 <state name="active">
                     <area>0,0,100%,100%</area>
                     <shape name="checkbg">
-                        <area>6,6,-6,-6</area>
+                        <area>6,11,-6,-11</area>
                         <fill color="#000000" alpha="200" />
                         <line color="#33FFFF" alpha="128" width="2" />
                     </shape>
@@ -740,7 +741,7 @@
                 <state type="half">
                     <area>0,0,100%,100%</area>
                     <imagetype name="background">
-                        <area>6,6,-6,-6</area>
+                        <area>6,11,-6,-11</area>
                         <filename>Images/check.png</filename>
                         <alpha>64</alpha>
                     </imagetype>
@@ -748,7 +749,7 @@
                 <state type="full">
                     <area>0,0,100%,100%</area>
                     <imagetype name="mark">
-                        <area>6,6,-6,-6</area>
+                        <area>6,11,-6,-11</area>
                         <filename>Images/check.png</filename>
                     </imagetype>
                 </state>
@@ -783,7 +784,7 @@
 
     <!-- Base definition of a spinbox -->
     <spinbox name="basespinbox">
-        <area>0,0,150,70</area>
+        <area>0,0,150,90</area>
         <layout>horizontal</layout>
         <buttonarea>0,6,100%,-6</buttonarea>
         <wrapstyle>items</wrapstyle>
@@ -797,7 +798,7 @@
                     <cornerradius>15</cornerradius>
                 </shape>
                 <textarea name="buttontext" from="basewidgettext">
-                    <area>30,8,-30,-10</area>
+                    <area>20,3,-20,-5</area>
                 </textarea>
             </state>
             <state name="selectedinactive" from="active" />
@@ -848,24 +849,24 @@
 
     <!-- Base definition of a wide spinbox (room for strings) -->
     <spinbox name="baselargespinbox" from="basespinbox">
-        <area>0,0,400,90</area>
+        <area>0,0,400,96</area>
         <buttonarea>0,0,100%,100%</buttonarea>
     </spinbox>
 
     <!-- Base definition of a list in wide 'spinbox' configuration -->
     <spinbox name="basewidespinbox" from="basespinbox">
-        <area>0,0,600,70</area>
+        <area>0,0,600,90</area>
     </spinbox>
 
     <spinbox name="basemediumspinbox" from="basespinbox">
-        <area>0,0,300,70</area>
+        <area>0,0,300,90</area>
     </spinbox>
 
     <!-- Base definition of a list in 'selector' configuration -->
     <buttonlist name="baseselector">
-        <area>0,0,150,70</area>
+        <area>0,0,150,90</area>
         <layout>horizontal</layout>
-        <buttonarea>0,6,100%,-6</buttonarea>
+        <buttonarea>0,5,100%,-5</buttonarea>
         <wrapstyle>items</wrapstyle>
 
         <statetype name="buttonitem">
@@ -877,7 +878,7 @@
                     <cornerradius>15</cornerradius>
                 </shape>
                 <textarea name="buttontext" from="basewidgettext">
-                    <area>30,8,-30,-10</area>
+                    <area>20,2,-20,-5</area>
                 </textarea>
             </state>
             <state name="selectedinactive" from="active" />
@@ -929,33 +930,33 @@
 
     <!-- Base definition of a list in dual-line 'selector' configuration -->
     <buttonlist name="baselargeselector" from="baseselector">
-        <area>0,0,400,90</area>
+        <area>0,0,400,96</area>
         <buttonarea>0,0,100%,100%</buttonarea>
     </buttonlist>
 
     <!-- Base definition of a list in wide 'selector' configuration -->
     <buttonlist name="basewideselector" from="baseselector">
-        <area>0,0,600,70</area>
+        <area>0,0,600,90</area>
     </buttonlist>
 
     <!-- Base definition of a list in wide 'selector' configuration -->
     <buttonlist name="basemediumselector" from="baseselector">
-        <area>0,0,300,70</area>
+        <area>0,0,300,90</area>
     </buttonlist>
 
     <!-- Base definition of a textarea -->
     <textarea name="basetextarea">
-        <area>0,0,100,55</area>
+        <area>0,0,100,40</area>
         <font>mymedium</font>
         <multiline>no</multiline>
         <align>left,vcenter</align>
     </textarea>
 
     <textarea name="labeltext">
-        <area>0,0,250,70</area>
+        <area>0,0,250,90</area>
         <font>mysmalllabel</font>
-        <extraleading>-1</extraleading>
         <multiline>yes</multiline>
+        <extraleading>-2</extraleading>
         <align>right,vcenter</align>
     </textarea>
 
@@ -963,6 +964,7 @@
         <area>0,0,250,90</area>
         <font>mymediumlabel</font>
         <multiline>yes</multiline>
+        <extraleading>-2</extraleading>
         <align>right,vcenter</align>
     </textarea>
 
@@ -971,12 +973,12 @@
     </textarea>
 
     <textarea name="labelcheckbox" from="labeltext">
-        <area>0,0,600,70</area>
+        <area>0,0,600,90</area>
         <align>left,vcenter</align>
     </textarea>
 
     <textedit name="basetextedit">
-        <area>0,0,500,70</area>
+        <area>0,0,500,90</area>
         <group name="center">
             <area>0,7,100%,-7</area>
             <statetype name="background">
@@ -1018,7 +1020,7 @@
 
     <!-- Base definition of a textedit with centered text-->
     <textedit name="basecentertextedit" from="basetextedit">
-        <area>0,0,500,70</area>
+        <area>0,0,500,90</area>
         <group name="center">
             <textarea name="text">
                 <align>center</align>
@@ -1027,11 +1029,11 @@
     </textedit>
 
     <textedit name="basenarrowtextedit" from="basetextedit">
-        <area>0,0,300,70</area>
+        <area>0,0,300,90</area>
     </textedit>
 
     <textedit name="basewidetextedit" from="basecentertextedit">
-        <area>0,0,600,70</area>
+        <area>0,0,600,90</area>
     </textedit>
 
     <!-- Base definition of a multiline textedit -->
@@ -1042,6 +1044,7 @@
             <area>0,0,100%,100%</area>
             <textarea name="text">
                 <multiline>true</multiline>
+                <extraleading>-2</extraleading>
                 <align>top,left</align>
             </textarea>
         </group>
@@ -1049,7 +1052,7 @@
 
     <!-- Popup dialog to enter into a spin box -->
     <window name="SpinBoxEntryDialog">
-        <area>50%-700,50%-300,1400,280</area>
+        <area>50%-700,50%-300,1400,300</area>
 
         <shape name="background" from="basebuttonshape">
             <type>roundbox</type>
@@ -1061,8 +1064,9 @@
         </shape>
 
         <textarea name="title" from="basewidgettext">
-            <area>20,5,-20,70</area>
+            <area>15,5,-15,90</area>
             <multiline>yes</multiline>
+            <extraleading>-2</extraleading>
             <align>center</align>
             <value>You may enter a value here or cancel to continue using the Spinbox.</value>
         </textarea>
@@ -1074,27 +1078,27 @@
                 <area>10,10,-420,-10</area>
 
                 <textedit name="entry" from="basewidetextedit">
-                    <area>10,10,-10,70</area>
+                    <area>30,10,-10,90</area>
                 </textedit>
 
                 <group name="help">
-                    <area>10,100,-20,60</area>
-                    <minsize>300, 60</minsize>
+                    <area>30,110,-30,80</area>
+                    <minsize>300,60</minsize>
 
                     <shape name="pagehelpshape">
                         <area>0,0,100%,100%</area>
-                        <minsize>50,100%</minsize>
+                        <minsize>20,100%</minsize>
                         <type>roundbox</type>
                         <cornerradius>15</cornerradius>
                         <fill color="#000000" alpha="255" />
                     </shape>
 
                     <textarea name="rules">
-                        <area>25,5,-25,-5</area>
+                        <area>15,0,-15,100%</area>
                         <minsize>50,100%</minsize>
                         <align>center</align>
                         <font>mysmalllightgrey</font>
-                        <multiline>no</multiline>
+                        <multiline>yes</multiline>
                         <cutdown>no</cutdown>
                         <template>Values from %LOW% to %HIGH% in increments of %STEP%</template>
                     </textarea>
@@ -1105,12 +1109,12 @@
                 <area>100%-400,10,-10,-10</area>
 
                 <button name="cancel" from="varbuttoncenter">
-                    <area>0,20,100%,70</area>
+                    <area>0,15,100%,80</area>
                     <value>Cancel</value>
                 </button>
 
                 <button name="ok" from="varbuttoncenter">
-                    <area>0,100%-90,100%,70</area>
+                    <area>0,100%-90,100%,80</area>
                     <value>OK</value>
                 </button>
             </group>
@@ -1128,11 +1132,11 @@
         <minsize vanish="true" shrink="short" initiator="yes">500,60</minsize>
 
         <statetype name="buttonitem">
-            <area>0,0,100%,30</area>
+            <area>0,0,100%,36</area>
             <state name="active">
-                <area>0,0,100%,30</area>
+                <area>0,0,100%,36</area>
                 <textarea name="buttontext">
-                    <area>10,0,100%,100%</area>
+                    <area>15,0,100%,100%</area>
                     <multiline>no</multiline>
                     <cutdown>yes</cutdown>
                     <align>vcenter</align>
@@ -1170,7 +1174,7 @@
                     <fill color="#DDDDDD" />
                 </shape>
                 <textarea name="buttontext">
-                    <area>30,0,100%,100%</area>
+                    <area>20,0,100%,100%</area>
                 </textarea>
             </state>
             <state name="selectedinactive" from="active">
@@ -1226,6 +1230,7 @@
                     <area>5,3,30%,-3</area>
                     <minsize shrink="short">100%,5</minsize>
                     <multiline>yes</multiline>
+                    <extraleading>-2</extraleading>
                     <cutdown>no</cutdown>
                     <align>top,right</align>
                     <font>mysmallsemiboldlabel</font>
@@ -1241,6 +1246,7 @@
                     <area>31%+15,3,-10,-3</area>
                     <minsize shrink="short">100%,5</minsize>
                     <multiline>yes</multiline>
+                    <extraleading>-2</extraleading>
                     <cutdown>no</cutdown>
                     <align>top,left</align>
                     <font>mysmallsemibold</font>
@@ -1501,6 +1507,7 @@
                         <minsize shrink="short" vanish="true">5,5</minsize>
                         <font>myverysmall</font>
                         <multiline>yes</multiline>
+                        <extraleading>-2</extraleading>
                     </textarea>
                 </group>
 
@@ -1642,7 +1649,7 @@
         </statetype>
 
         <group name="bar" from="basescrollgroup">
-            <area>0, 30, 12, -60</area>
+            <area>0,30,12,-60</area>
         </group>
     </buttonlist>  <!-- name="basegridlist" -->
 
@@ -1718,12 +1725,13 @@
         </shape>
 
         <textarea name="msgText">
-            <area>10,5,-10,-5</area>
+            <area>5,1,-5,-1</area>
             <!--
                 <minsize vanish="true" shrink="short">100%,100%</minsize>
             -->
             <align>center</align>
             <multiline>yes</multiline>
+            <extraleading>-2</extraleading>
             <cutdown>yes</cutdown>
             <font>mysmallnarrow</font>
             <font state="running">mysmallnarrowgreen</font>
@@ -1754,7 +1762,7 @@
     </group>
 
     <group name="baseFloatingMsg">
-        <area>600,860,-600,90</area>
+        <area>600,860,-600,96</area>
 
         <group name="msggroup">
             <area>0,0,100%,100%</area>
@@ -1771,12 +1779,13 @@
                 <font>mymedium</font>
                 <align>center</align>
                 <multiline>yes</multiline>
+                <extraleading>-2</extraleading>
             </textarea>
         </group>
     </group>
 
     <group name="baseFloatingMinMsg">
-        <area>600,860,-600,90</area>
+        <area>600,860,-600,96</area>
 
         <group name="msggroup">
             <area>0,0,100%,100%</area>
@@ -1791,7 +1800,7 @@
                 <cornerradius>10</cornerradius>
             </shape>
             <textarea name="message_text">
-                <area>20,15,-20,-15</area>
+                <area>15,15,-15,-15</area>
                 <minsize>20,100%</minsize>
                 <font>mymedium</font>
                 <align>center</align>
@@ -1814,7 +1823,7 @@
         </shape>
 
         <textarea name="pagemode">
-            <area>30,5,-30,-5</area>
+            <area>20,5,-20,-5</area>
             <minsize vanish="yes">20,40</minsize>
             <align>center</align>
             <font>mymediumsemibold</font>
@@ -1852,7 +1861,7 @@
                         <cornerradius>15</cornerradius>
                     </shape>
                     <textarea name="buttontext">
-                        <area>15,5,-15,-5</area>
+                        <area>15,2,-15,-2</area>
                         <minsize>30,100%</minsize>
                         <extraleading>4</extraleading>
                         <align>center</align>
@@ -1962,10 +1971,11 @@
                 </shape>
 
                 <textarea name="buttontext">
-                    <area>10,3,-10,-3</area>
+                    <area>10,1,-10,-1</area>
                     <align>center</align>
                     <font>mymedium</font>
                     <multiline>yes</multiline>
+                    <extraleading>-3</extraleading>
                     <cutdown>yes</cutdown>
                 </textarea>
             </state>
@@ -1980,7 +1990,7 @@
                 </shape>
 
                 <textarea name="buttontext">
-                    <area>12,3,-12,-3</area>
+                    <area>12,1,-12,-1</area>
                 </textarea>
 
                 <shape name="highlightleft">
@@ -2045,35 +2055,35 @@
         <area>40,35,460,970</area>
 
         <group name="wheregroup" from="baseMsgGroup">
-            <area>0,0,100%,125</area>
+            <area>0,0,100%,126</area>
             <shape name="msgShape">
                 <line color="#00FFFF" alpha="160" width="2" />
             </shape>
             <textarea name="channel" from="msgText">
-                <area>10,5,-10,40</area>
+                <area>10,5,-10,42</area>
                 <font>mysmallnarrow</font>
             </textarea>
 
             <textarea name="timedate" from="msgText">
-                <area>5,40,-5,40</area>
+                <area>5,40,-5,42</area>
                 <font>mysmallnarrow</font>
             </textarea>
 
             <textarea name="originalairdate" from="msgText">
-                <area>5,77,-5,40</area>
+                <area>5,77,-5,42</area>
                 <font>mysmallnarrow</font>
                 <template>(%1)</template>
             </textarea>
 
             <textarea name="year" from="msgText" depends="!originalairdate">
-                <area>5,77,-5,40</area>
+                <area>5,77,-5,42</area>
                 <font>mysmallnarrow</font>
                 <template>(%1)</template>
             </textarea>
         </group>
 
         <group name="titlegroup" from="baseMsgGroup">
-            <area>0,130,100%,135</area>
+            <area>0,128,100%,139</area>
 
             <shape name="msgShape">
                 <line color="#00FFFF" alpha="160" width="2" />
@@ -2084,7 +2094,7 @@
         </group>
 
         <group name="subtitlegroup" from="baseMsgGroup" depends="subtitle">
-            <area>0,270,100%,115</area>
+            <area>0,269,100%,119</area>
             <shape name="msgShape">
                 <line color="#00FFFF" alpha="160" width="2" />
             </shape>
@@ -2216,14 +2226,14 @@
         <area>0,0,100%,100%</area>
 
         <textarea name="timedate">
-            <area>0,0,450,36</area>
+            <area>0,0,500,100%</area>
             <align>left,vcenter</align>
             <font>mysmallnarrowlabel</font>
             <cutdown>no</cutdown>
         </textarea>
 
         <textarea name="originalairdate">
-            <area>460,0,230,35</area>
+            <area>510,0,250,100%</area>
             <align>center</align>
             <font>mysmallnarrowlabel</font>
             <template>(%1)</template>
@@ -2231,21 +2241,21 @@
         </textarea>
 
         <textarea name="year" depends="!originalairdate">
-            <area>460,0,230,35</area>
+            <area>510,0,250,100%</area>
             <align>center</align>
             <font>mysmallnarrowlabel</font>
             <template>(%1)</template>
         </textarea>
 
         <textarea name="lenmins">
-            <area>700,0,150,35</area>
+            <area>750,0,170,100%</area>
             <align>right,vcenter</align>
             <font>mysmallnarrowlabel</font>
             <template>%1</template>
         </textarea>
 
         <textarea name="channel">
-            <area>855,0,-15,40</area>
+            <area>730,0,-15,100%</area>
             <font>mysmallnarrowlabel</font>
             <align>right,vcenter</align>
         </textarea>
@@ -2261,7 +2271,7 @@
 
         <showscrollbar>yes</showscrollbar>
         <group name="bar" from="basescrollgroup">
-            <area>10, 70, 12, -35</area>
+            <area>10,70,12,-35</area>
         </group>
 
         <statetype name="buttonitem">
@@ -2288,13 +2298,13 @@
                             <line color="#e43e3e" width="2" alpha="255" />
                         </shape>
                         <shape name="highlightleft">
-                            <area>7,20,5,-20</area>
+                            <area>6,20,6,-20</area>
                             <minsize>100%,20</minsize>
                             <type>ellipse</type>
                             <fill color="#e43e3e" alpha="255" />
                         </shape>
                         <shape name="highlightright">
-                            <area>100%-12,20,5,-20</area>
+                            <area>100%-12,20,6,-20</area>
                             <minsize>100%,20</minsize>
                             <type>ellipse</type>
                             <fill color="#e43e3e" alpha="255" />
@@ -2375,17 +2385,17 @@
                 </statetype>
 
                 <group name="progstats" from="programStats">
-                    <area>200,4,100%,40</area>
+                    <area>175,4,100%,42</area>
                 </group>
 
                 <textarea name="titlesubtitle">
-                    <area>20,100%-42,-160,36</area>
+                    <area>20,100%-42,-170,42</area>
                     <align>left</align>
                     <font>mymedium</font>
                 </textarea>
 
                 <textarea name="syndicatedepisode" depends="!s00e00">
-                    <area>100%-155,100%-40,-20,33</area>
+                    <area>100%-310,100%-42,-15,42</area>
                     <font>mysmallgrey</font>
                     <align>right,bottom</align>
                     <template>%|[SYNDICATEDEPISODE|]%</template>
@@ -2398,7 +2408,7 @@
                 <area>0,0,100%,340</area>
 
                 <group name="progstats" from="programStats">
-                    <area>200,4,100%,40</area>
+                    <area>175,4,100%,42</area>
                 </group>
 
                 <textarea name="titlesubtitle">
@@ -2413,7 +2423,7 @@
                     <scroll direction="horizontal" returnrate="140" returndelay="4" />
                 </textarea>
                 <textarea name="subtitle">
-                    <area>60,88,-15,36</area>
+                    <area>60,88,-15,42</area>
                     <align>left</align>
                     <font>mymediumbold</font>
                     <cutdown>no</cutdown>
@@ -2428,6 +2438,7 @@
                     <align>left</align>
                     <font>mydesc</font>
                     <multiline>yes</multiline>
+                    <extraleading>-2</extraleading>
                     <scroll direction="vertical" rate="10" returnrate="70"
                             startdelay="17" returndelay="17"/>
                     <cutdown>no</cutdown>
@@ -2438,6 +2449,7 @@
                     <align>left</align>
                     <font>mydesc</font>
                     <multiline>yes</multiline>
+                    <extraleading>-2</extraleading>
                     <scroll direction="vertical" rate="10" returnrate="70"
                             startdelay="17" returndelay="17"/>
                     <cutdown>no</cutdown>
@@ -2445,7 +2457,7 @@
                 </textarea>
 
                 <textarea name="parttotal">
-                    <area>675,100%-40,230,32</area>
+                    <area>675,100%-40,230,35</area>
                     <align>hcenter,bottom</align>
                     <font>mysmalllabel</font>
                     <template>%Part |PARTNUMBER| of %%PARTTOTAL%</template>
@@ -2551,7 +2563,7 @@
     </buttonlist>
 
     <group name="basematchgroup">
-        <area>0, 0, 100%, 70</area>
+        <area>0,0,100%,70</area>
         <minsize vanish="true">20,20</minsize>
 
         <shape name="msgShape">
@@ -2599,6 +2611,7 @@
                 <minsize shrink="short">100%,60</minsize>
                 <font>mymedium</font>
                 <multiline>yes</multiline>
+                <extraleading>-2</extraleading>
                 <align>top,hcenter</align>
                 <cutdown>no</cutdown>
                 <!-- 15 pixels/sec up, 35 pixels/sec down, 4 second delay -->
@@ -2644,6 +2657,7 @@
                     <minsize shrink="short">100%,40</minsize>
                     <align>hcenter</align>
                     <multiline>yes</multiline>
+                    <extraleading>-2</extraleading>
                     <cutdown>no</cutdown>
                     <font>mysmallnarrow</font>
                 </textarea>
@@ -2677,6 +2691,7 @@
                     <minsize shrink="short">100%,40</minsize>
                     <align>hcenter</align>
                     <multiline>yes</multiline>
+                    <extraleading>-2</extraleading>
                     <cutdown>no</cutdown>
                     <font>mysmallnarrow</font>
                 </textarea>
@@ -2748,16 +2763,16 @@
                     <area>15,0,50%+5,100%</area>
                 </shape>
                 <textarea name="message" from="messagearea">
-                    <area>20,5,50%,-20</area>
+                    <area>15,5,50%,-15</area>
                     <minsize shrink="short">100%,120</minsize>
                 </textarea>
                 <spinbox name="input" from="basespinbox">
-                    <area>50%+30,0,-10,70</area>
+                    <area>50%+30,0,-10,90</area>
                     <minsize shrink="short" initiator="yes">100%,60</minsize>
                     <align>top,hcenter</align>
                 </spinbox>
                 <group name="buttongroup">
-                    <area>50%+30,80,-10,80</area>
+                    <area>50%+30,80,-10,90</area>
                     <button name="ok" from="varbuttonright">
                         <value>OK</value>
                     </button>
@@ -2816,6 +2831,7 @@
         <textarea name="message" from="basetextarea">
             <area>170,20,-30,-20</area>
             <multiline>yes</multiline>
+            <extraleading>-2</extraleading>
             <align>center</align>
         </textarea>
     </window>
@@ -2840,6 +2856,7 @@
         <textarea name="message" from="basetextarea">
             <area>30,20,-30,110</area>
             <multiline>yes</multiline>
+            <extraleading>-2</extraleading>
             <align>center</align>
         </textarea>
 
@@ -2861,19 +2878,20 @@
         </shape>
 
         <textarea name="message" from="basetextarea">
-            <area>30,20,-30,100</area>
+            <area>20,20,-20,100</area>
             <font>mymedium</font>
             <align>top,hcenter</align>
             <multiline>yes</multiline>
+            <extraleading>-2</extraleading>
             <value>Select Time</value>
         </textarea>
 
         <buttonlist name="dates" from="baselargeselector">
-            <position>50,130</position>
+            <area>50,130,-50,96</area>
         </buttonlist>
 
         <buttonlist name="times" from="baselargeselector">
-            <position>50,230</position>
+            <area>50,230,-50,96</area>
         </buttonlist>
 
         <button name="ok" from="varbuttonright">
@@ -2908,7 +2926,7 @@
                     <area>15,0,55%+5,100%</area>
                 </shape>
                 <textarea name="message" from="messagearea">
-                    <area>20,5,55%,-20</area>
+                    <area>15,5,55%,-15</area>
                 </textarea>
                 <group name="buttongroup">
                     <area>55%+30,10,-10,80</area>
@@ -2935,14 +2953,15 @@
         </shape>
 
         <textarea name="message" from="basetextarea">
-            <area>30,20,-30,110</area>
+            <area>20,20,-20,110</area>
             <font>mysmall</font>
             <multiline>yes</multiline>
+            <extraleading>-2</extraleading>
             <align>center</align>
         </textarea>
 
         <textedit name="input" from="basemultilinetextedit">
-            <area>30,140,-30,140</area>
+            <area>20,140,-20,140</area>
             <group name="center">
                 <textarea name="text">
                     <align>center</align>
@@ -2971,7 +2990,7 @@
     <!-- Home -> Media Library -> Watch Recordings -> 'S'(earch)
     -->
     <window name="MythSearchListDialog">
-        <area>30,100,480,250</area>
+        <area>30,100,580,250</area>
 
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>
@@ -2979,16 +2998,16 @@
         </shape>
 
         <textedit name="searchedit" from="basecentertextedit">
-            <area>15,20,-15,70</area>
+            <area>15,20,-15,90</area>
         </textedit>
 
         <button name="nextbutton" from="varbuttonright">
-            <area>20,100%-80,-20,70</area>
+            <area>20,100%-90,-20,80</area>
             <value>Next</value>
         </button>
 
         <button name="prevbutton" from="varbuttonleft">
-            <area>20,100%-80,-20,70</area>
+            <area>20,100%-90,-20,80</area>
             <value>Prev</value>
         </button>
 
@@ -2997,7 +3016,7 @@
             <state name="found">
                 <area>0,0,100%,100%</area>
                 <textarea name="message" from="basetextarea">
-                    <area>0,0,-25,55</area>
+                    <area>0,0,-20,55</area>
                     <font>mysmall</font>
                     <align>center</align>
                     <value>Results found!</value>
@@ -3038,14 +3057,15 @@
             </shape>
 
             <textarea name="title" from="basetextarea">
-                <area>20,20,-20,100</area>
+                <area>15,10,-15,100</area>
                 <font>mymedium</font>
                 <align>center</align>
                 <multiline>yes</multiline>
+                <extraleading>-2</extraleading>
             </textarea>
 
             <textedit name="input" from="basetextedit">
-                <area>50,140,-50,70</area>
+                <area>50,120,-50,90</area>
             </textedit>
 
             <buttonlist name="itemlist" from="basepopupbuttonlist">
@@ -3124,10 +3144,11 @@
                     </imagetype>
 
                     <textarea name="title">
-                        <area>20,4,-500,-50</area>
+                        <area>15,4,-500,-50</area>
                         <align>center</align>
                         <font>mymediumbold</font>
                         <multiline>yes</multiline>
+                        <extraleading>-2</extraleading>
                         <template>%TITLE%% - |SUBTITLE%</template>
                     </textarea>
 
@@ -3154,14 +3175,16 @@
                     </imagetype>
 
                     <textarea name="title">
-                        <area>20,5,-500,100</area>
+                        <area>15,5,-500,100</area>
                         <font>mylargebold</font>
                         <multiline>yes</multiline>
+                        <extraleading>-2</extraleading>
                     </textarea>
 
                     <textarea name="description" from="basetextarea">
-                        <area>30,105,-500,-45</area>
+                        <area>25,105,-500,-45</area>
                         <multiline>yes</multiline>
+                        <extraleading>-2</extraleading>
                         <scroll direction="vertical" rate="10" returnrate="70"
                                 startdelay="17" returndelay="17"/>
                         <cutdown>no</cutdown>
@@ -3213,7 +3236,7 @@
         </group>
 
         <button name="back" from="varbuttoncenter">
-            <area>1200,200,-10,70</area>
+            <area>1200,200,-10,80</area>
             <value>Go up a level</value>
         </button>
 
@@ -3233,7 +3256,7 @@
         </button>
 
         <textedit name="location" from="basewidetextedit">
-            <area>1200,700,-30,70</area>
+            <area>1200,700,-30,90</area>
         </textedit>
     </window>
 

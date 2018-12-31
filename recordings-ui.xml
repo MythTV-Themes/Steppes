@@ -112,21 +112,21 @@
                     <statetype name="playlist" from="selectedbox" />
 
                     <textarea name="titlesubtitle">
-                        <area>20,100%-41,-300,36</area>
+                        <area>20,100%-41,-300,42</area>
                     </textarea>
 
                     <textarea name="filesize_str">
-                        <area>100%-145,100%-39,-20,32</area>
+                        <area>100%-155,100%-39,-15,36</area>
                         <font>mysmallgrey</font>
                         <align>right,bottom</align>
                     </textarea>
 
                     <textarea name="s00e00" from="filesize_str">
-                        <area>100%-300,100%-39,150,32</area>
+                        <area>100%-310,100%-39,155,36</area>
                     </textarea>
 
-                    <textarea name="syndicatedepisode">
-                        <area>100%-300,100%-40,150,32</area>
+                    <textarea name="syndicatedepisode" depends="!s00e00">
+                        <area>100%-310,100%-40,155,36</area>
                         <font>mysmallgrey</font>
                     </textarea>
                 </state>
@@ -141,17 +141,17 @@
                     </statetype>
 
                     <textarea name="filesize_str">
-                        <area>100%-145,100%-39,-20,32</area>
+                        <area>100%-155,100%-39,-15,36</area>
                         <font>mysmallgrey</font>
                         <align>right,bottom</align>
                     </textarea>
 
                     <textarea name="s00e00" from="filesize_str">
-                        <area>100%-300,100%-39,-150,32</area>
+                        <area>100%-310,100%-39,-155,36</area>
                     </textarea>
 
-                    <textarea name="syndicatedepisode">
-                        <area>100%-400,100%-40,-150,33</area>
+                    <textarea name="syndicatedepisode" depends="!s00e00">
+                        <area>100%-310,100%-40,-155,36</area>
                     </textarea>
 
                     <shape name="stateshape">
@@ -396,12 +396,14 @@
                 <value>No recordings exist</value>
             </textarea>
             <textarea name="rec_count" from="msgText">
-                <area>10,10,-10,-70</area>
+                <area>10,5,-10,-90</area>
                 <template>There is/are %n recording(s) in this display group</template>
             </textarea>
             <textarea name="freereport" from="basetextarea">
-                <area>10,100%-75,-10,70</area>
+                <area>10,100%-90,-10,-3</area>
+                <font>mysmall</font>
                 <multiline>yes</multiline>
+                <extraleading>-2</extraleading>
                 <align>bottom,hcenter</align>
             </textarea>
         </group>
@@ -490,6 +492,7 @@
                     <area>30,10,-30,-10</area>
                     <minsize shrink="short">350,25</minsize>
                     <multiline>yes</multiline>
+                    <extraleading>-2</extraleading>
                     <font>mysmall</font>
                     <align>center</align>
                     <value>Enable and disable the checkboxes below to filter the way recordings are displayed.</value>
@@ -504,7 +507,7 @@
                 </checkbox>
 
                 <textarea name="title_label" from="labelcheckbox">
-                    <area>50,0,-50,70</area>
+                    <area>50,0,-50,80</area>
                     <value>Show Program Titles</value>
                 </textarea>
 
@@ -582,11 +585,12 @@
             <font>mymedium</font>
             <align>center</align>
             <multiline>yes</multiline>
+            <extraleading>-2</extraleading>
             <value>Change Group Password</value>
         </textarea>
 
         <textarea name="oldlabel" from="labeltext">
-            <area>20,100,170,70</area>
+            <area>20,100,170,80</area>
             <value>Old:</value>
         </textarea>
 
@@ -626,7 +630,7 @@
         </textarea>
 
         <group name="helpgroup">
-            <area>60,70,-60,160</area>
+            <area>20,70,-20,160</area>
             <minsize>50,25</minsize>
 
             <shape name="msgShape">
@@ -642,6 +646,7 @@
                 <area>10,10,-10,-10</area>
                 <minsize shrink="short">50,25</minsize>
                 <multiline>yes</multiline>
+                <extraleading>-2</extraleading>
                 <font>myverysmall</font>
                 <align>center</align>
                 <value>Using the text areas below, you can change the recording title, subtitle, and description.\n\nOnce you have completed your modifications, click the "Save" button.</value>
@@ -649,60 +654,60 @@
         </group>
 
         <group name="datagroup">
-            <area>60,260,-60,-100</area>
+            <area>60,250,-60,-90</area>
 
             <textarea name="title_label" from="labeltext">
-                <area>15,0,175,70</area>
+                <area>15,0,175,90</area>
                 <value>Title:</value>
             </textarea>
 
             <textedit name="title" from="basetextedit">
-                <area>200,0,-40,70</area>
+                <area>200,0,-20,90</area>
             </textedit>
 
             <textarea name="subtitle_label" from="title_label">
-                <position>15,60</position>
+                <position>15,90</position>
                 <value>Subtitle:</value>
             </textarea>
 
             <textedit name="subtitle" from="title">
-                <position>200,60</position>
+                <position>200,90</position>
             </textedit>
 
             <textarea name="inetref_label" from="title_label">
-                <position>15,120</position>
+                <position>15,180</position>
                 <value>Inetref:</value>
             </textarea>
 
             <textedit name="inetref" from="title">
-                <position>200,120</position>
+                <position>200,180</position>
             </textedit>
 
             <textarea name="season_label" from="labeltext">
-                <area>15,180,175,70</area>
+                <area>5,270,185,80</area>
                 <value>Season:</value>
             </textarea>
 
             <spinbox name="season" from="basespinbox">
-                <position>200,180</position>
+                <position>200,270</position>
             </spinbox>
 
             <textarea name="episode_label" from="season_label">
-                <position>325,180</position>
+                <position>400,270</position>
                 <value>Episode:</value>
             </textarea>
 
             <spinbox name="episode" from="basespinbox">
-                <position>510,180</position>
+                <position>585,270</position>
             </spinbox>
 
             <textarea name="description_label" from="labeltext">
-                <area>15,250,175,70</area>
+                <area>15,360,175,90</area>
                 <value>Description:</value>
             </textarea>
 
             <textedit name="description" from="basemultilinetextedit">
-                <area>40,300,-40,-20</area>
+                <area>200,360,-20,-20</area>
             </textedit>
         </group>
 
@@ -839,6 +844,7 @@
                     <textarea name="buttontext">
                         <area>90,5,-15,-5</area>
                         <multiline>yes</multiline>
+                        <extraleading>-2</extraleading>
                         <font>mysmall</font>
                         <align>left,vcenter</align>
                     </textarea>

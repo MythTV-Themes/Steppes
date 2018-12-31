@@ -106,7 +106,7 @@
          </group>
 
          <group name="thumbgroup" from="baseFloatingMsg" depends="thumbprogresstext">
-             <area>600,750,-600,70</area>
+             <area>600,750,-600,80</area>
              <group name="msggroup">
                  <textarea name="thumbprogresstext" from="message_text"/>
              </group>
@@ -153,14 +153,14 @@
         </group>
 
         <group name="dialog">
-            <area>50%-600,80,1200,670</area>
+            <area>50%-600,80,1200,720</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
             </shape>
 
             <textarea name="sortorder_label" from="labeltext">
-                <area>20,40,520,70</area>
+                <area>20,40,520,90</area>
                 <value>Sorting order of the shown images:</value>
             </textarea>
             <buttonlist name="sortorder" from="basewideselector">
@@ -168,44 +168,44 @@
             </buttonlist>
 
             <textarea name="slideshowtime_label" from="sortorder_label">
-                <position>20, 120</position>
+                <position>20,130</position>
                 <value>Time to display each image during a slideshow (ms):</value>
             </textarea>
             <spinbox name="slideshowtime" from="basespinbox">
-                <position>550, 120</position>
+                <position>550,130</position>
             </spinbox>
 
 
             <textarea name="transitiontime_label" from="sortorder_label">
-                <position>20, 200</position>
+                <position>20,220</position>
                 <value>Duration of an image transition (ms):</value>
             </textarea>
             <spinbox name="transitiontime" from="basespinbox">
-                <position>550, 200</position>
+                <position>550,220</position>
             </spinbox>
 
             <textarea name="transitiontype_label" from="sortorder_label">
-                <position>20, 280</position>
+                <position>20,310</position>
                 <value>Type of transition between two images:</value>
             </textarea>
             <buttonlist name="transitiontype" from="basemediumselector">
-                <position>550, 280</position>
+                <position>550,310</position>
             </buttonlist>
 
             <textarea name="showhiddenfiles_label" from="sortorder_label">
-                <position>20, 360</position>
+                <position>20,400</position>
                 <value>Show files that are marked as hidden:</value>
             </textarea>
             <checkbox name="showhiddenfiles" from="basecheckbox">
-                <position>550, 360</position>
+                <position>550,400</position>
             </checkbox>
 
             <textarea name="cleardatabase_label" from="sortorder_label">
-                <position>20, 440</position>
+                <position>20,490</position>
                 <value>Clear database contents (Resync required):</value>
             </textarea>
             <checkbox name="musicdefaultupmix" from="basecheckbox">
-                <position>550, 440</position>
+                <position>550,490</position>
             </checkbox>
 
 <!--

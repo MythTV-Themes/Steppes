@@ -21,7 +21,7 @@
                 <area>0,0,100%,100%</area>
 
                 <state name="inactive">
-                    <area>20,0,-20,110</area>
+                    <area>20,0,-20,115</area>
                     <shape name="groupBorder">
                         <cornerradius>10</cornerradius>
                     </shape>
@@ -38,7 +38,7 @@
                 </state>
 
                 <state name="selectedactive" from="selectedinactive">
-                    <area>0,0,100%,220</area>
+                    <area>0,0,100%,230</area>
 
                     <shape name="groupBorder">
                         <area>10,0,-10,100%</area>
@@ -57,7 +57,7 @@
                         <fill color="#50EFDF" />
                     </shape>
                     <shape name="desctop">
-                        <area>13,105,-13,55</area>
+                        <area>13,115,-13,55</area>
                         <type>roundbox</type>
                         <cornerradius>1</cornerradius>
                         <fill style="gradient">
@@ -67,7 +67,7 @@
                         <alpha>192</alpha>
                     </shape>
                     <shape name="descbottom">
-                        <area>13,160,-13,55</area>
+                        <area>13,170,-13,-5</area>
                         <type>roundbox</type>
                         <cornerradius>1</cornerradius>
                         <fill style="gradient">
@@ -76,18 +76,18 @@
                         </fill>
                         <alpha>192</alpha>
                     </shape>
+                    <textarea name="description">
+                        <area>13,125,-13,-10</area>
+                        <font>mysmallbold</font>
+                        <align>center</align>
+                        <multiline>yes</multiline>
+                    </textarea>
                     <textarea name="buttontext">
-                        <area>13,5,-13,97</area>
+                        <area>13,0,-13,125</area>
                         <align>center</align>
                         <font>mylargebold</font>
                         <multiline>yes</multiline>
                         <cutdown>yes</cutdown>
-                    </textarea>
-                    <textarea name="description">
-                        <area>13,105,-13,-10</area>
-                        <font>mysmallbold</font>
-                        <align>center</align>
-                        <multiline>yes</multiline>
                     </textarea>
                 </state>
             </statetype>

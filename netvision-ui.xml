@@ -54,11 +54,11 @@
                         <area>0,0,-40,110</area>
 
                         <imagetype name="buttonimage">
-                            <area>10,10,140,90</area>
+                            <area>20,20,120,70</area>
                             <preserveaspect>true</preserveaspect>
                         </imagetype>
                         <textarea name="buttontext">
-                            <area>155,5,-10,-5</area>
+                            <area>155,3,-10,-3</area>
                             <align>left,vcenter</align>
                             <font>mymedium</font>
                             <multiline>yes</multiline>
@@ -98,36 +98,36 @@
                 <area>20,45,-20,-20</area>
 
                 <statetype name="buttonitem">
-                    <area>0,0,100%,110</area>
+                    <area>0,0,100%,120</area>
 
                     <state name="inactive">
                         <!-- Width needs to have <buttonarea>
                              subtracted from it -->
-                        <area>0,0,-40,110</area>
+                        <area>0,0,-40,120</area>
 
                         <imagetype name="buttonimage">
                             <area>10,10,200,-10</area>
                             <preserveaspect>true</preserveaspect>
                         </imagetype>
                         <textarea name="title" from="basetextarea">
-                            <area>215,5,-260,35</area>
+                            <area>215,2,-260,40</area>
                             <font>mymedium</font>
                             <align>left,top</align>
                             <cutdown>yes</cutdown>
                         </textarea>
                         <textarea name="date">
-                            <area>100%-250,6,-15,35</area>
+                            <area>100%-250,2,-15,40</area>
                             <align>right,top</align>
                             <font>mysmallnarrowgrey</font>
                         </textarea>
                         <textarea name="description" from="basetextarea">
-                            <area>205,35,-120,-5</area>
+                            <area>205,55,-120,-2</area>
                             <align>left,top</align>
                             <multiline>yes</multiline>
                             <cutdown>yes</cutdown>
                         </textarea>
                         <textarea name="length" from="date">
-                            <area>100%-110,100%-38,-15,35</area>
+                            <area>100%-110,100%-42,-15,40</area>
                         </textarea>
 
                     </state>
@@ -147,7 +147,7 @@
                             <area>30,150,-30,-40</area>
                         </textarea>
                         <textarea name="author" from="date">
-                            <area>110,100%-45,-110,-10</area>
+                            <area>110,100%-45,-110,-2</area>
                             <align>bottom,hcenter</align>
                             <template>Author: %1</template>
                         </textarea>
@@ -165,7 +165,7 @@
          -> New Site
     -->
     <window name="rsseditpopup">
-        <area>-1,50,1500,850</area>
+        <area>50%-690,50,1380,900</area>
 
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>
@@ -192,7 +192,7 @@
             </shape>
 
             <textarea name="helparea" from="basetextarea">
-                <area>5,5,-5,-5</area>
+                <area>2,2,-2,-2</area>
                 <minsize shrink="short">50,25</minsize>
                 <multiline>yes</multiline>
                 <font>mysmall</font>
@@ -202,7 +202,7 @@
         </group>
 
         <group name="dialog">
-            <area>20,300,-20,-20</area>
+            <area>20,280,-20,-20</area>
 
             <textarea name="title_label" from="labeltext">
                 <position>0,0</position>
@@ -210,42 +210,42 @@
             </textarea>
 
             <textedit name="title" from="basewidetextedit">
-                <area>270,0,1000,70</area>
+                <area>270,0,1000,90</area>
             </textedit>
 
             <textarea name="url_text" from="title_label">
-                <position>0,70</position>
+                <position>0,90</position>
                 <value>URL:</value>
             </textarea>
 
             <textedit name="url" from="title">
-                <position>270,70</position>
+                <position>270,90</position>
             </textedit>
 
             <textarea name="author_text" from="title_label">
-                <position>0,140</position>
+                <position>0,180</position>
                 <value>Author:</value>
             </textarea>
 
             <textedit name="author" from="title">
-                <position>270,140</position>
+                <position>270,180</position>
             </textedit>
 
             <textarea name="desc_text" from="title_label">
-                <position>0,210</position>
+                <position>0,270</position>
                 <value>Description:</value>
             </textarea>
 
             <textedit name="description" from="title">
-                <position>270,210</position>
+                <position>270,270</position>
             </textedit>
 
             <checkbox name="download" from="basecheckbox">
-                <position>270,280</position>
+                <position>270,360</position>
             </checkbox>
 
             <textarea name="download_label" from="labelcheckbox">
-                <position>320,280</position>
+                <position>320,360</position>
                 <value>Download video from this feed automatically</value>
             </textarea>
 
@@ -270,12 +270,12 @@
             </group>
 
             <button name="preview_browse" from="varbuttonleft">
-                <position>937,280</position>
+                <position>937,360</position>
                 <value>Select to change image...</value>
             </button>
 
             <group name="buttongroup">
-                <area>270,100%-80,1000,70</area>
+                <area>270,100%-90,1000,80</area>
 
                 <button name="ok" from="varbuttonright">
                     <value>Save</value>
@@ -380,7 +380,7 @@
                         </textarea>
 
                         <textarea name="date" from="basetextarea">
-                            <area>100%-80,4,-15,50</area>
+                            <area>100%-220,4,-5,50</area>
                             <font>mysmallnarrowgrey</font>
                             <align>right,vcenter</align>
                         </textarea>
@@ -605,7 +605,7 @@
             </buttonlist>
 
             <group name="buttons">
-                <area>400, 100%-80, -400, 100%</area>
+                <area>400, 100%-90, -400, 100%</area>
 
                 <button name="new" from="varbuttonleft">
                     <value>New Site</value>
@@ -879,7 +879,7 @@
                     <area>-15,-15,360,340</area>
 
                     <imagetype name="buttonimage">
-                        <area>8,8,344,324</area>
+                        <area>8,8,324,284</area>
                     </imagetype>
 
                     <group name="contents">

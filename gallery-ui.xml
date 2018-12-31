@@ -78,21 +78,21 @@
             </textedit>
 
             <textarea name="type_filter" from="labeltext">
-                <position>20,90</position>
+                <position>20,110</position>
                 <value>Type filter:</value>
             </textarea>
 
             <buttonlist name="typefilter_select" from="basemediumselector">
-                <position>270,90</position>
+                <position>270,110</position>
             </buttonlist>
 
             <button name="check_button" from="varbuttonleft">
-                <position>580,90</position>
+                <position>580,110</position>
                 <value>Check Filter</value>
             </button>
 
             <group name="resultgroup">
-                <area>200,160,600,140</area>
+                <area>200,200,600,140</area>
                 <minsize>50,25</minsize>
 
                 <shape name="msgShape">
@@ -105,7 +105,7 @@
                 </shape>
 
                 <textarea name="numimages_text" from="basetextarea">
-                    <area>10,10,-10,-10</area>
+                    <area>5,5,-5,-5</area>
                     <minsize shrink="short">50,25</minsize>
                     <multiline>yes</multiline>
                     <font>mysmall</font>
@@ -114,12 +114,12 @@
             </group>
 
             <textarea name="sort_text" from="labeltextlarge">
-                <position>60,310</position>
+                <position>60,340</position>
                 <value>Sort by:</value>
             </textarea>
 
             <buttonlist name="sort_select" from="baselargeselector">
-                <position>310,310</position>
+                <position>310,340</position>
             </buttonlist>
 
             <button name="done_button" from="varbuttonleft">

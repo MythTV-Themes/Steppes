@@ -79,7 +79,7 @@
 
 
         <textarea name="title" from="basetextarea">
-            <area>350,15,-15,95</area>
+            <area>350,15,-15,90</area>
             <multiline>yes</multiline>
             <font>mylarge</font>
             <align>center</align>
@@ -98,23 +98,23 @@
         </textarea>
 
         <textarea name="rating" from="basetextarea">
-            <area>480,530,770,35</area>
+            <area>480,530,230,40</area>
         </textarea>
 
         <textarea name="year" from="basetextarea">
-            <area>710,530,200,35</area>
+            <area>710,530,200,40</area>
             <template>Year: %1</template>
             <align>top,hcenter</align>
         </textarea>
 
         <textarea name="userrating" from="basetextarea">
-            <area>940,530,-40,35</area>
+            <area>940,530,-40,40</area>
             <align>right,top</align>
             <template>User Rating: %1</template>
         </textarea>
 
         <textarea name="length" from="basetextarea">
-            <area>480,570,200,35</area>
+            <area>480,570,230,40</area>
             <align>top,left</align>
         </textarea>
 
@@ -140,7 +140,7 @@
         </textarea>
 
         <group name="buttons">
-            <area>475,100%-80,-100,100%</area>
+            <area>475,100%-90,-100,100%</area>
 
             <button name="done_button" from="varbuttonleft">
                 <value>Done</value>
@@ -1054,7 +1054,7 @@
                 <area>0,0,100%,100%</area>
             </shape>
 
-            <textarea name="extension_text" from="labeltext">
+            <textarea name="extension_text" from="labeltextlarge">
                 <position>10,50</position>
                 <value>Extension:</value>
             </textarea>
@@ -1063,30 +1063,30 @@
                 <position>270,50</position>
             </buttonlist>
 
-            <textarea name="command_text" from="labeltext">
-                <position>10,130</position>
+            <textarea name="command_text" from="labeltextlarge">
+                <position>10,140</position>
                 <value>Command:</value>
             </textarea>
 
             <textedit name="command" from="basetextedit">
-                <position>270,130</position>
+                <position>270,140</position>
             </textedit>
 
             <checkbox name="default_check" from="basecheckbox">
-                <position>270,210</position>
+                <position>270,230</position>
             </checkbox>
 
             <textarea name="default_text" from="labelcheckbox">
-                <area>320,210,-10,70</area>
+                <area>320,230,-10,90</area>
                 <value>Use default player</value>
             </textarea>
 
             <checkbox name="ignore_check" from="basecheckbox">
-                <position>270,290</position>
+                <position>270,320</position>
             </checkbox>
 
             <textarea name="ignore_text" from="default_text">
-                <position>320,290</position>
+                <position>320,320</position>
                 <value>Ignore</value>
             </textarea>
 
@@ -1151,12 +1151,12 @@
             </shape>
 
             <textarea name="title_label" from="labeltext">
-                <area>20,20,160,70</area>
+                <area>20,20,160,80</area>
                 <value>Title:</value>
             </textarea>
 
             <textedit name="title_edit" from="basecentertextedit">
-                <area>190,20,600,70</area>
+                <area>190,20,600,80</area>
             </textedit>
 
             <textarea name="subtitle_label" from="title_label">
@@ -1183,7 +1183,7 @@
             </textarea>
 
             <textedit name="inetref_edit" from="basecentertextedit">
-                <area>960,20,400,70</area>
+                <area>960,20,400,80</area>
             </textedit>
 
             <textarea name="rating_label" from="title_label">
@@ -1214,18 +1214,18 @@
             </textedit>
 
             <!-- Category -->
-            <textarea name="category_text" from="labeltext">
-                <area>10,360,150,70</area>
+            <textarea name="category_text" from="labeltextlarge">
+                <area>10,360,150,90</area>
                 <value>Category:</value>
             </textarea>
 
             <buttonlist name="category_select" from="baseselector">
-                <area>170,360,430,70</area>
+                <area>170,360,430,90</area>
             </buttonlist>
 
             <!-- Season -->
-            <textarea name="season_text" from="labeltext">
-                <area>10,430,150,70</area>
+            <textarea name="season_text" from="labeltextlarge">
+                <area>10,430,150,90</area>
                 <value>Season:</value>
             </textarea>
 
@@ -1265,12 +1265,12 @@
 
             <!-- User rating -->
             <textarea name="userrating_text" from="labeltext">
-                <area>910,360,240,70</area>
+                <area>910,360,240,90</area>
                 <value>User Rating:</value>
             </textarea>
 
             <spinbox name="userrating_spin" from="basespinbox">
-                <area>1160,360,200,70</area>
+                <area>1160,360,200,90</area>
             </spinbox>
 
             <!-- Parental level -->
@@ -1280,17 +1280,17 @@
             </textarea>
 
             <buttonlist name="level_select" from="baseselector">
-                <area>1160,430,200,70</area>
+                <area>1160,430,200,90</area>
             </buttonlist>
 
             <!-- Homepage -->
             <textarea name="homepage_label" from="labeltext">
-                <area>20,500,190,70</area>
+                <area>20,500,190,90</area>
                 <value>Homepage:</value>
             </textarea>
 
             <textedit name="homepage_edit" from="basetextedit">
-                <area>220,500,-20,70</area>
+                <area>220,500,-20,90</area>
             </textedit>
 
             <!-- Player -->
@@ -1300,7 +1300,7 @@
             </textarea>
 
             <textedit name="player_edit" from="basecentertextedit">
-                <area>220,570,400,70</area>
+                <area>220,570,400,80</area>
             </textedit>
 
             <!-- Play next... -->
@@ -1315,16 +1315,16 @@
 
             <!-- Trailer -->
             <textarea name="trailer_label" from="homepage_label">
-                <area>20,650,240,70</area>
+                <area>20,650,240,80</area>
                 <value>Trailer:</value>
             </textarea>
 
             <button name="trailer_button" from="basewidebutton">
-                <area>270,650,850,70</area>
+                <area>270,650,850,80</area>
             </button>
 
             <textarea name="trailer_text" from="labelbutton">
-                <area>325,650,780,70</area>
+                <area>325,650,780,80</area>
                 <value>Find local trailers</value>
                 <align>center</align>
             </textarea>
@@ -1336,16 +1336,16 @@
             </textarea>
 
             <button name="net_banner_button" from="basebutton">
-                <area>270,710,290,70</area>
+                <area>270,710,290,80</area>
                 <value>Get Banner</value>
             </button>
 
             <button name="banner_button" from="basewidebutton">
-                <area>560,710,800,70</area>
+                <area>560,710,800,80</area>
             </button>
 
             <textarea name="banner_text" from="labelbutton">
-                <area>580,710,780,70</area>
+                <area>580,710,780,80</area>
                 <align>center</align>
                 <cutdown>yes</cutdown>
                 <value>Find local banner</value>
@@ -1472,30 +1472,30 @@
             </textedit>
 
             <textarea name="category_text" from="labeltextlarge">
-                <position>40,90</position>
+                <position>40,120</position>
                 <value>Category :</value>
             </textarea>
 
             <buttonlist name="category_select" from="baselargeselector">
-                <position>295,90</position>
+                <position>295,120</position>
             </buttonlist>
 
             <textarea name="genre_text" from="category_text">
-                <position>40,190</position>
+                <position>40,210</position>
                 <value>Genre :</value>
             </textarea>
 
             <buttonlist name="genre_select" from="baselargeselector">
-                <position>295,190</position>
+                <position>295,210</position>
             </buttonlist>
 
             <textarea name="country_text" from="category_text">
-                <position>40,295</position>
+                <position>40,300</position>
                 <value>Country :</value>
             </textarea>
 
             <buttonlist name="country_select" from="baselargeselector">
-                <position>295,290</position>
+                <position>295,300</position>
             </buttonlist>
 
             <textarea name="cast_text" from="category_text">
@@ -1508,48 +1508,48 @@
             </buttonlist>
 
             <textarea name="year_text" from="category_text">
-                <position>40,490</position>
+                <position>40,480</position>
                 <value>Year :</value>
             </textarea>
 
             <buttonlist name="year_select" from="baselargeselector">
-                <position>295,490</position>
+                <position>295,480</position>
             </buttonlist>
 
             <textarea name="runtime_text" from="category_text">
-                <position>40,590</position>
+                <position>40,570</position>
                 <value>Runtime :</value>
             </textarea>
 
             <buttonlist name="runtime_select" from="baselargeselector">
-                <position>295,590</position>
+                <position>295,570</position>
             </buttonlist>
 
             <textarea name="userrating_text" from="category_text">
-                <position>650,90</position>
+                <position>650,120</position>
                 <value>User Rating :</value>
             </textarea>
 
             <buttonlist name="userrating_select" from="baselargeselector">
-                <position>900,90</position>
+                <position>900,120</position>
             </buttonlist>
 
             <textarea name="browse_text" from="category_text">
-                <position>650,190</position>
+                <position>650,210</position>
                 <value>Browse :</value>
             </textarea>
 
             <buttonlist name="browse_select" from="baselargeselector">
-                <position>900,190</position>
+                <position>900,210</position>
             </buttonlist>
 
             <textarea name="inetref_text" from="category_text">
-                <position>650,290</position>
+                <position>650,300</position>
                 <value>InetRef :</value>
             </textarea>
 
             <buttonlist name="inetref_select" from="baselargeselector">
-                <position>900,290</position>
+                <position>900,300</position>
             </buttonlist>
 
             <textarea name="coverfile_text" from="category_text">
@@ -1562,21 +1562,21 @@
             </buttonlist>
 
             <textarea name="orderby_text" from="category_text">
-                <position>650,490</position>
+                <position>650,480</position>
                 <value>Sort by :</value>
             </textarea>
 
             <buttonlist name="orderby_select" from="baselargeselector">
-                <position>900,490</position>
+                <position>900,480</position>
             </buttonlist>
 
             <textarea name="watched_text" from="category_text">
-                <position>650,590</position>
+                <position>650,570</position>
                 <value>Watched :</value>
             </textarea>
 
             <buttonlist name="watched_select" from="baselargeselector">
-                <position>900,590</position>
+                <position>900,570</position>
             </buttonlist>
 
             <group name="resultgroup">
@@ -1602,7 +1602,7 @@
             </group>
 
             <group name="buttons">
-                <area>295, 100%-80, 1005, 100%</area>
+                <area>295, 100%-90, 1005, 100%</area>
 
                 <button name="save_button" from="varbuttonleft">
                     <value>Save as default</value>
@@ -1632,7 +1632,7 @@
         </group>
 
         <group name="dialog">
-            <area>50%-500,100,1000,650</area>
+            <area>50%-550,60,1100,700</area>
 
             <shape name="dialogbackground" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
@@ -1648,56 +1648,56 @@
             </textedit>
 
             <textarea name="dvd_text" from="default_text">
-                <position>20,90</position>
+                <position>20,110</position>
                 <value>DVD Player:</value>
             </textarea>
 
             <textedit name="dvdplayer" from="basewidetextedit">
-                <position>280,90</position>
+                <position>280,110</position>
             </textedit>
 
             <textarea name="dvddrive_text" from="labeltext">
-                <position>20,160</position>
+                <position>20,200</position>
                 <value>DVD Drive:</value>
             </textarea>
 
             <textedit name="dvddrive" from="basewidetextedit">
-                <position>280,160</position>
+                <position>280,200</position>
             </textedit>
 
             <textarea name="bluraymount_text" from="default_text">
-                <position>20,230</position>
+                <position>20,290</position>
                 <value>Blu-ray Mount:</value>
             </textarea>
 
             <textedit name="bluraymount" from="basewidetextedit">
-                <position>280,230</position>
+                <position>280,290</position>
             </textedit>
 
             <textarea name="blureg_text" from="labeltextlarge">
-                <position>20,300</position>
+                <position>20,380</position>
                 <value>Blu-ray Region:</value>
             </textarea>
 
             <buttonlist name="blurayregionlist" from="baselargeselector">
-                <area>280,300,600,90</area>
+                <area>280,380,600,90</area>
             </buttonlist>
 
             <checkbox name="altcheck" from="basecheckbox">
-                <position>280,420</position>
+                <position>280,470</position>
             </checkbox>
 
             <textarea name="altcheck_text" from="labelcheckbox">
-                <position>330,420</position>
+                <position>330,470</position>
                 <value>Enable Alternate Player</value>
             </textarea>
 
             <textedit name="altplayer" from="basewidetextedit">
-                <position>280,460</position>
+                <position>280,560</position>
             </textedit>
 
             <group name="buttons">
-                <area>245, 100%-80, 670, 100%</area>
+                <area>245, 100%-90, 670, 100%</area>
                 <button name="cancel" from="varbuttonleft">
                     <value>Cancel</value>
                 </button>
@@ -1726,7 +1726,7 @@
         </group>
 
         <group name="dialog">
-            <area>50%-450,220,900,450</area>
+            <area>50%-450,220,900,500</area>
 
             <shape name="background" from="basewidgetshape" />
 
@@ -1735,39 +1735,39 @@
             </checkbox>
 
             <textarea name="autometacheck_text" from="labelcheckbox">
-                <area>90,40,-20,70</area>
+                <area>90,40,-20,90</area>
                 <value>Perform metadata update after video scan</value>
             </textarea>
 
             <checkbox name="unknownfilecheck" from="basecheckbox">
-                <position>40,110</position>
+                <position>40,130</position>
             </checkbox>
 
             <textarea name="unknownfilecheck_text" from="autometacheck_text">
-                <position>90,110</position>
+                <position>90,130</position>
                 <value>Display unknown file types</value>
             </textarea>
 
             <checkbox name="treeloadsmetacheck" from="basecheckbox">
-                <position>40,180</position>
+                <position>40,220</position>
             </checkbox>
 
             <textarea name="treeloadsmetacheck_text" from="autometacheck_text">
-                <position>90,180</position>
+                <position>90,220</position>
                 <value>Enable metadata in file browse mode</value>
             </textarea>
 
             <checkbox name="randomtrailercheck" from="basecheckbox">
-                <position>40,250</position>
+                <position>40,310</position>
             </checkbox>
 
             <textarea name="trailercheck_text" from="autometacheck_text">
-                <position>90,250</position>
+                <position>90,310</position>
                 <value>Enable Random Trailer Playback</value>
             </textarea>
 
             <spinbox name="trailernum" from="basespinbox">
-                <position>500,240</position>
+                <position>500,400</position>
             </spinbox>
 
             <button name="cancel" from="varbuttonleft">

@@ -192,7 +192,7 @@
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
 
-        <area>600,860,-600,70</area>
+        <area>600,860,-600,80</area>
 
         <group name="msggroup">
             <area>0,0,100%,100%</area>
@@ -789,7 +789,7 @@
 
         <textarea name="title">
             <font>title</font>
-            <area>10,10,-10,70</area>
+            <area>10,10,-10,80</area>
             <align>center</align>
         </textarea>
 
@@ -800,12 +800,12 @@
         </textarea>
 
         <textarea name="callsign_label" from="labeltext">
-            <area>10,200,380,70</area>
+            <area>10,200,380,80</area>
             <value>Callsign:</value>
         </textarea>
 
         <textedit name="callsign">
-            <area>400,200,350,70</area>
+            <area>400,200,350,80</area>
             <statetype name="background">
                 <area>0,0,100%,100%</area>
                 <state name="active">
@@ -861,7 +861,7 @@
 
         <!-- Cannot use gradients here.  Cannot use "base" fonts here -->
         <button name="probe">
-            <area>35,100%-80,33%-10,60</area>
+            <area>35,100%-90,33%-10,60</area>
             <minsize>140,60</minsize>
             <statetype name="buttonstate">
                 <area>0,0,100%,100%</area>
@@ -913,7 +913,7 @@
         </button>
 
         <button name="ok" from="probe">
-            <area>50%+5,100%-80,-35,60</area>
+            <area>50%+5,100%-90,-35,60</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <textarea name="text">
@@ -1081,7 +1081,7 @@
                     <shape name="highlightleft" />
                     <shape name="highlightright" />
                     <textarea name="buttontext">
-                        <area>25,5,-25,-5</area>
+                        <area>20,2,-20,-2</area>
                         <cutdown>yes</cutdown>
                         <align>center</align>
                         <multiline>yes</multiline>

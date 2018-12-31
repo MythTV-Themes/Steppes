@@ -60,7 +60,7 @@
         </group>
 
         <group name="detailgroup">
-            <area>535, 590, -50, 400</area>
+            <area>535, 570, -50, 420</area>
 
             <shape name="background" from="baseareashape">
                 <area>0,0,100%,100%</area>
@@ -72,17 +72,17 @@
             </textarea>
 
             <textarea name="systemlabel" from="labeltext">
-                <position>10,70</position>
+                <position>10,60</position>
                 <value>System:</value>
             </textarea>
 
             <textarea name="system" from="basetextarea">
-                <area>270,70,330,70</area>
+                <area>270,60,330,90</area>
                 <multiline>yes</multiline>
             </textarea>
 
             <textarea name="yearlabel" from="systemlabel">
-                <position>10, 150</position>
+                <position>10,150</position>
                 <value>Year:</value>
             </textarea>
 
@@ -91,23 +91,23 @@
             </textarea>
 
             <textarea name="genrelabel" from="systemlabel">
-                <position>10,230</position>
+                <position>10,240</position>
                 <value>Genre:</value>
             </textarea>
 
             <textarea name="genre" from="system">
-                <position>270,230</position>
+                <position>270,240</position>
             </textarea>
 
             <textarea name="favoritelabel" from="systemlabel">
-                <position>10,310</position>
+                <position>10,330</position>
                 <value>Favorite:</value>
             </textarea>
 
             <statetype name="favorite">
                 <state name="no">
                     <textarea name="favorite" from="basetextarea">
-                        <area>270,310,330,70</area>
+                        <area>270,330,330,90</area>
                         <value>No</value>
                     </textarea>
                 </state>
@@ -179,7 +179,7 @@
         </group>
 
         <group name="details">
-            <area>535,50,-50,-130</area>
+            <area>535,30,-50,-130</area>
 
             <shape name="background" from="baseareashape">
                 <area>0,0,100%,100%</area>
@@ -187,11 +187,11 @@
             </shape>
 
             <textarea name="gamename_lbl" from="labeltext">
-                <position>10,20</position>
+                <position>10,10</position>
                 <value>Game:</value>
             </textarea>
             <textarea name="title" from="basetextarea">
-                <area>270,20,-20,70</area>
+                <area>270,10,-20,90</area>
             </textarea>
 
             <textarea name="gametype_lbl" from="gamename_lbl">
@@ -203,67 +203,67 @@
             </textarea>
 
             <textarea name="romname_lbl" from="gamename_lbl">
-                <position>10,180</position>
+                <position>10,190</position>
                 <value>Filename:</value>
             </textarea>
             <textarea name="romname" from="title">
-                <position>270,180</position>
+                <position>270,190</position>
             </textarea>
 
             <textarea name="rompath_lbl" from="gamename_lbl">
-                <position>10,260</position>
+                <position>10,280</position>
                 <value>ROM path:</value>
             </textarea>
             <textarea name="rompath" from="title">
-                <position>270,260</position>
+                <position>270,280</position>
             </textarea>
 
             <textarea name="allsystems_lbl" from="gamename_lbl">
-                <position>10,340</position>
+                <position>10,370</position>
                 <value>System(s):</value>
             </textarea>
             <textarea name="allsystems" from="title">
-                <area>270,340,400,70</area>
+                <area>270,370,400,90</area>
             </textarea>
 
             <textarea name="genre_lbl" from="gamename_lbl">
-                <position>10,420</position>
+                <position>10,460</position>
                 <value>Genre:</value>
             </textarea>
             <textarea name="genre" from="allsystems">
-                <position>270,420</position>
+                <position>270,460</position>
             </textarea>
 
             <textarea name="year_lbl" from="gamename_lbl">
-                <position>10,500</position>
+                <position>10,550</position>
                 <value>Year:</value>
             </textarea>
             <textarea name="year" from="allsystems">
-                <position>270,500</position>
+                <position>270,550</position>
             </textarea>
 
             <textarea name="country_lbl" from="gamename_lbl">
-                <position>10,580</position>
+                <position>10,640</position>
                 <value>Country:</value>
             </textarea>
             <textarea name="country" from="allsystems">
-                <position>270,580</position>
+                <position>270,640</position>
             </textarea>
 
             <textarea name="publisher_lbl" from="gamename_lbl">
-                <position>10,660</position>
+                <position>10,730</position>
                 <value>Publisher:</value>
             </textarea>
             <textarea name="publisher" from="allsystems">
-                <position>270,660</position>
+                <position>270,730</position>
             </textarea>
 
             <textarea name="crc_lbl" from="gamename_lbl">
-                <position>10,740</position>
+                <position>10,820</position>
                 <value>CRC:</value>
             </textarea>
             <textarea name="crc" from="allsystems">
-                <position>270,740</position>
+                <position>270,820</position>
             </textarea>
 
             <group name="descgroup">
@@ -278,7 +278,7 @@
                 </shape>
 
                 <textarea name="description" from="basetextarea">
-                    <area>10,10,-10,-10</area>
+                    <area>5,5,-5,-5</area>
                     <align>top,left</align>
                     <multiline>yes</multiline>
                 </textarea>
@@ -338,18 +338,18 @@
         </group>
 
         <group name="details">
-            <area>535,50,-50,-130</area>
+            <area>535,20,-50,-130</area>
 
             <shape name="background" from="baseareashape">
                 <area>0,0,100%,100%</area>
             </shape>
 
             <textarea name="gamename_label" from="labeltext">
-                <position>10,20</position>
+                <position>10,10</position>
                 <value>Game Name:</value>
             </textarea>
             <textedit name="title_edit" from="basewidetextedit">
-                <position>270,20</position>
+                <position>270,10</position>
             </textedit>
 
             <textarea name="genre_label" from="gamename_label">
@@ -361,78 +361,78 @@
             </textedit>
 
             <textarea name="year_label" from="gamename_label">
-                <position>10,180</position>
+                <position>10,190</position>
                 <value>Year:</value>
             </textarea>
             <textedit name="year_edit" from="title_edit">
-                <position>270,180</position>
+                <position>270,190</position>
             </textedit>
 
             <textarea name="country_label" from="gamename_label">
-                <position>10,260</position>
+                <position>10,280</position>
                 <value>Country:</value>
             </textarea>
             <textedit name="country_edit" from="title_edit">
-                <position>270,260</position>
+                <position>270,280</position>
             </textedit>
 
             <textarea name="publisher_label" from="gamename_label">
-                <position>10,340</position>
+                <position>10,370</position>
                 <value>Publisher:</value>
             </textarea>
             <textedit name="publisher_edit" from="title_edit">
-                <position>270,340</position>
+                <position>270,370</position>
             </textedit>
 
             <textarea name="plot_label" from="labeltextlarge">
-                <position>10,420</position>
+                <position>10,460</position>
                 <value>Plot:</value>
             </textarea>
             <textedit name="description_edit" from="basemultilinetextedit">
-                <area>270,420,600,90</area>
+                <area>270,460,600,90</area>
             </textedit>
 
             <checkbox name="favorite_check" from="basecheckbox">
-                <position>270,500</position>
+                <position>270,550</position>
             </checkbox>
             <textarea name="fav_label" from="labelcheckbox">
-                <area>330,500,-20,70</area>
+                <area>330,550,-20,90</area>
                 <value>Favorite</value>
             </textarea>
 
             <textarea name="screenshot_label" from="gamename_label">
-                <position>10,580</position>
+                <position>10,640</position>
                 <value>Screenshot:</value>
             </textarea>
             <button name="screenshot_button" from="basewidebutton">
-                <area>270,580,600,70</area>
+                <area>270,640,600,90</area>
             </button>
             <textarea name="screenshot_text" from="basewidgettext">
-                <area>290,590,580,50</area>
+                <area>290,645,580,50</area>
                 <value>/path/to/the/thing.jpg</value>
                 <align>center</align>
             </textarea>
 
             <textarea name="fanart_label" from="gamename_label">
-                <position>10,660</position>
+                <position>10,730</position>
                 <value>Fanart:</value>
             </textarea>
             <button name="fanart_button" from="screenshot_button">
-                <position>270,660</position>
+                <position>270,730</position>
             </button>
             <textarea name="fanart_text" from="screenshot_text">
-                <position>290,665</position>
+                <position>290,735</position>
             </textarea>
 
             <textarea name="coverart_label" from="gamename_label">
-                <position>10,740</position>
+                <position>10,820</position>
                 <value>Boxart:</value>
             </textarea>
             <button name="coverart_button" from="screenshot_button">
-                <position>270,740</position>
+                <position>270,820</position>
             </button>
             <textarea name="coverart_text" from="screenshot_text">
-                <position>290,745</position>
+                <position>290,825</position>
             </textarea>
 
             <button name="done_button" from="varbuttonright">

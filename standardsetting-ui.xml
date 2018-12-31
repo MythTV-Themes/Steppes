@@ -10,7 +10,7 @@
         </group>
 
         <group name="pagehelp" depends="grouphelp">
-            <area>150,50,-150,90</area>
+            <area>150,30,-150,90</area>
             <minsize>300, 90</minsize>
 
             <shape name="pagehelpshape">
@@ -32,14 +32,14 @@
         </group>
 
         <buttonlist name="settingslist" from2="basebuttonlist">
-            <area>70,180,100%-70,100%-200</area>
+            <area>70,130,-70,-170</area>
             <layout>vertical</layout>
             <wrapstyle>selection</wrapstyle>
             <arrange>stack</arrange>
             <spacing>4</spacing>
             <buttonarea>0,0,100%,100%</buttonarea>
             <statetype name="buttonitem">
-                <area>0,0,100%,80</area>
+                <area>0,0,100%,92</area>
                 <state name="active">
                     <area>0,0,100%,100%</area>
                     <minsize>40,100%</minsize>
@@ -54,7 +54,7 @@
                         </shape>
 
                         <textarea name="buttontext" from="labeltextlarge" >
-                            <area>10,0,100%-10,100%</area>
+                            <area>10,0,-5,100%</area>
                             <cutdown>no</cutdown>
                             <align>right,vcenter</align>
                             <scroll direction="horizontal" returnrate="140" returndelay="4" />
@@ -98,7 +98,7 @@
                                 </textarea>
                             </state>
                             <state name="checkbox">
-                                <area>24,15,40,40</area>
+                                <area>24,25,40,40</area>
                                 <minsize>30,100%</minsize>
                                 <shape name="checkbg">
                                     <area>6,6,-6,-6</area>
@@ -115,19 +115,19 @@
                             </state>
                             <state name="spinbox" from="group">
                                 <imagetype name="arrow1">
-                                    <area>10,10,20,20</area>
+                                    <area>10,20,20,20</area>
                                     <minsize>30,100%</minsize>
                                     <filename>Images/uparrow-on.png</filename>
                                 </imagetype>
                                 <imagetype name="arrow2">
-                                    <area>10,35,20,20</area>
+                                    <area>10,45,20,20</area>
                                     <minsize>30,100%</minsize>
                                     <filename>Images/downarrow-on.png</filename>
                                 </imagetype>
                             </state>
                             <state name="combobox" from="group">
                                 <imagetype name="arrow">
-                                    <area>10,26,20,20</area>
+                                    <area>10,36,20,20</area>
                                     <minsize>30,100%</minsize>
                                     <filename>Images/downarrow-on.png</filename>
                                 </imagetype>
@@ -147,11 +147,11 @@
                         </textarea>
 
                         <statetype name="buttoncheck" from="basebuttoncheck">
-                            <position>64,24</position>
+                            <position>64,34</position>
                         </statetype>
 
                         <imagetype name="buttonarrow">
-                            <position>10,24</position>
+                            <position>10,34</position>
                             <minsize>30,100%</minsize>
                             <filename>Images/rightarrow-on.png</filename>
                         </imagetype>
@@ -212,7 +212,7 @@
         </buttonlist>
 
         <group name="help" depends="selectedsettinghelp">
-            <area>50,100%-200,-50,-80</area>
+            <area>40,100%-170,-40,-80</area>
             <minsize>300, 90</minsize>
 
             <shape name="helpshape">
@@ -225,7 +225,7 @@
             </shape>
 
             <textarea name="selectedsettinghelp">
-                <area>25,5,-25,-5</area>
+                <area>25,0,-25,100%</area>
                 <minsize>50,100%</minsize>
                 <align>center</align>
                 <font>mysmalllightgrey</font>
@@ -264,10 +264,10 @@
                 </group>
             </buttonlist>
             <textedit name="textedit" from="basewidetextedit">
-                <area>100,100%-100,50%+100,70</area>
+                <area>100,100%-100,50%+100,80</area>
             </textedit>
             <button name="enter" from="varbuttonleft">
-                 <area>50%+150,100%-100,-70,70</area>
+                 <area>50%+150,100%-100,-70,80</area>
                 <value>Enter</value>
             </button>
         </group>

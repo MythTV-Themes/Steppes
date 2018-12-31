@@ -61,19 +61,19 @@
             </buttonlist>
 
             <button name="action_0" from="varbuttoncenter">
-                <area>50,100%-80,280,70</area>
+                <area>50,100%-90,280,80</area>
                 <value>None</value>
             </button>
             <button name="action_1" from="varbuttoncenter">
-                <area>350,100%-80,280,70</area>
+                <area>350,100%-90,280,80</area>
                 <value>None</value>
             </button>
             <button name="action_2" from="varbuttoncenter">
-                <area>650, 100%-80, 280, 70</area>
+                <area>650,100%-90,280,80</area>
                 <value>None</value>
             </button>
             <button name="action_3" from="varbuttoncenter">
-                <area>950, 100%-80, 280, 70</area>
+                <area>950,100%-90,280,80</area>
                 <value>None</value>
             </button>
 

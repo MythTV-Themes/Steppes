@@ -16,7 +16,7 @@
         </group>
 
         <group name="dialog">
-            <area>500,120,-500,600</area>
+            <area>380,120,-380,600</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
@@ -32,16 +32,16 @@
             </buttonlist>
 
             <textarea name="freespace_label" from="labeltext">
-                <area>600,20,150,70</area>
+                <area>600,20,200,90</area>
                 <value>Free Space:</value>
             </textarea>
 
             <textarea name="freespace_text" from="basetextarea">
-                <area>770,20,200,70</area>
+                <area>810,20,200,90</area>
             </textarea>
 
             <group name="resultgroup">
-                <area>80,90,700,90</area>
+                <area>80,100,700,100</area>
                 <minsize vanish="true">1,25</minsize>
 
                 <shape name="msgShape">
@@ -54,7 +54,7 @@
                 </shape>
 
                 <textarea name="destination_text" from="basetextarea">
-                    <area>10,10,-10,-10</area>
+                    <area>5,2,-5,-2</area>
                     <minsize vanish="true" shrink="short">1,25</minsize>
                     <multiline>yes</multiline>
                     <font>mysmall</font>
@@ -63,11 +63,11 @@
             </group>
 
             <textedit name="filename_edit" from="basewidetextedit">
-                <position>80,200</position>
+                <position>80,210</position>
             </textedit>
 
             <button name="find_button" from="varbuttonleft">
-                <area>700,200,-5,70</area>
+                <area>700,210,-5,90</area>
                 <value>Find</value>
             </button>
 
@@ -81,25 +81,25 @@
             </textarea>
 
             <checkbox name="burntodvdr_check" from="basecheckbox">
-                <position>280,370</position>
+                <position>280,390</position>
             </checkbox>
 
             <textarea name="burntodvdr_text" from="makeISO">
-                <position>320,370</position>
+                <position>320,390</position>
                 <value>Burn to DVD</value>
             </textarea>
 
             <checkbox name="erasedvdrw_check" from="basecheckbox">
-                <position>280,440</position>
+                <position>280,480</position>
             </checkbox>
 
             <textarea name="erasedvdrw_text" from="makeISO">
-                <position>320,440</position>
+                <position>320,480</position>
                 <value>Force Overwrite of DVD-RW Media</value>
             </textarea>
 
             <group name="buttons">
-                <area>50%, 100%-80, 100%, 70</area>
+                <area>50%, 100%-100, 100%, 90</area>
                 <button name="next_button" from="varbuttonleft">
                     <area>100%-285, 0, 250, 100%</area>
                     <value>Next</value>
@@ -197,12 +197,12 @@
         </buttonlist>
 
         <button name="ok_button" from="varbuttoncenter">
-            <area>48,830,434,70</area>
+            <area>48,830,434,80</area>
             <value>OK</value>
         </button>
 
         <button name="cancel_button" from="varbuttoncenter">
-            <area>48,920,434,70</area>
+            <area>48,920,434,80</area>
             <value>Cancel</value>
         </button>
 
@@ -229,7 +229,7 @@
             </shape>
 
             <textedit name="location_edit" from="basewidetextedit">
-                <area>30,20,-420,70</area>
+                <area>30,20,-420,80</area>
                 <textarea name="text">
                     <align>left,vcenter</align>
                 </textarea>
@@ -431,7 +431,7 @@
             </group>
 
             <group name="buttons">
-                <area>0, 100%-80, 100%, 70</area>
+                <area>0, 100%-90, 100%, 70</area>
 
                 <button name="update_button" from="varbuttonright">
                     <area>50%-380, 0, 250, 100%</area>

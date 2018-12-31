@@ -191,14 +191,15 @@
         </statetype>
 
         <textarea name="title" from="basetextarea">
-            <area>140,100%-45,-250,35</area>
+            <area>140,100%-50,-250,40</area>
             <font>mymedium</font>
+            <align>left,vcenter</align>
             <template>Now Playing: %TITLE% by %ARTIST% on %ALBUM%</template>
         </textarea>
 
         <textarea name="time" from="basetextarea">
-            <area>100%-240,100%-45,-15,-5</area>
-            <align>right</align>
+            <area>100%-240,100%-50,-15,40</area>
+            <align>right,vcenter</align>
             <font>mysmall</font>
         </textarea>
 
@@ -276,25 +277,25 @@
                     </imagetype>
 
                     <textarea name="tracknum" from="basetextarea">
-                        <area>90,5,70,-5</area>
+                        <area>90,2,70,-2</area>
                         <align>right,vcenter</align>
                         <font>mymedium</font>
                         <template>%1 -</template>
                     </textarea>
 
                     <textarea name="title" from="basetextarea">
-                        <area>170,5,800,-5</area>
+                        <area>170,2,800,-2</area>
                         <align>left,vcenter</align>
                         <font>mymedium</font>
                     </textarea>
 
                     <textarea name="artist" from="title">
-                        <area>980,5,-180,-5</area>
+                        <area>980,2,-180,-2</area>
                         <align>left,vcenter</align>
                     </textarea>
 
                     <textarea name="length" from="title">
-                        <area>100%-170,5,120,-5</area>
+                        <area>100%-170,2,120,-2</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
@@ -412,7 +413,7 @@
         </progressbar>
 
         <textarea name="time" from="basetextarea">
-            <area>100%-230,100%-40,-20,-10</area>
+            <area>100%-230,100%-42,-20,35</area>
             <font>mysmall</font>
         </textarea>
 
@@ -424,7 +425,7 @@
         </progressbar>
 
         <textarea name="bufferstatus" from="basetextarea">
-            <area>100%-230,100%-80,-10,-10</area>
+            <area>100%-230,100%-80,-10,35</area>
             <align>left,bottom</align>
             <multiline>yes</multiline>
             <font>mysmall</font>
