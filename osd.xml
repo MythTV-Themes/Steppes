@@ -1137,14 +1137,14 @@
 
     <window name="osd_navigation">
         <fontdef name="verysmall" face="CartoGothic Std">
-            <pixelsize>19</pixelsize>
+            <pixelsize>26</pixelsize>
             <weight>bold</weight>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
 
-        <area>50%-860,650,1720,120</area>
+        <area>50%-860,630,1720,140</area>
 
         <shape name="background">
             <area>0,0,100%,100%</area>
@@ -1167,13 +1167,13 @@
                         <area>0,0,100%,100%</area>
                         <shape name="highlight" />
                         <imagetype name="icon">
-                            <area>50%-16,100%-35,32,32</area>
+                            <area>50%-16,100%-35,36,36</area>
                             <filename>more_button.png</filename>
                         </imagetype>
                     </state>
                     <state name="selected" from="active">
                         <textarea name="text">
-                            <area>0,0,100%,35</area>
+                            <area>0,0,100%,38</area>
                             <align>center</align>
                             <font>verysmall</font>
                             <value>More Actions</value>
@@ -1192,7 +1192,7 @@
             </button>
 -->
             <group name="grp0">
-                <area>0, 0, 100%, -20</area>
+                <area>0,0,100%,-20</area>
 
                 <button name="MENU">
                     <focusorder>2</focusorder>
@@ -1202,20 +1202,20 @@
                             <area>0,0,100%,100%</area>
                             <shape name="highlight" />
                             <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>menu_button.png</filename>
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/menu_button.png</filename>
                             </imagetype>
                         </state>
                         <state name="selected" from="active">
                             <textarea name="text">
-                                <area>0,0,100%,35</area>
+                                <area>0,0,100%,38</area>
                                 <align>center</align>
                                 <font>verysmall</font>
                                 <value>Menu</value>
                             </textarea>
 
                             <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
+                                <area>50%-20,100%-43,44,44</area>
                                 <line color="#00FFFF" alpha="250" width="2" />
                                 <type>box</type>
                             </shape>
@@ -1234,20 +1234,52 @@
                             <area>0,0,100%,100%</area>
                             <shape name="highlight" />
                             <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>info_button.png</filename>
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/info_button.png</filename>
                             </imagetype>
                         </state>
                         <state name="selected" from="active">
                             <textarea name="text">
-                                <area>0,0,100%,35</area>
+                                <area>0,0,100%,38</area>
                                 <align>center</align>
                                 <font>verysmall</font>
                                 <value>Information</value>
                             </textarea>
 
                             <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
+                                <area>50%-20,100%-43,44,44</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="RWNDSTICKY">
+                    <focusorder>2</focusorder>
+                    <area>180,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/rew_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,38</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Rewind</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-43,44,44</area>
                                 <line color="#00FFFF" alpha="250" width="2" />
                                 <type>box</type>
                             </shape>
@@ -1260,26 +1292,26 @@
 
                 <button name="JUMPRWND">
                     <focusorder>2</focusorder>
-                    <area>180,0,300,80</area>
+                    <area>240,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
                             <shape name="highlight" />
                             <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>dbl_left_arrow_button.png</filename>
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/dbl_left_arrow_button.png</filename>
                             </imagetype>
                         </state>
                         <state name="selected" from="active">
                             <textarea name="text">
-                                <area>0,0,100%,35</area>
+                                <area>0,0,100%,38</area>
                                 <align>center</align>
                                 <font>verysmall</font>
                                 <value>Jump Back</value>
                             </textarea>
 
                             <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
+                                <area>50%-20,100%-43,44,44</area>
                                 <line color="#00FFFF" alpha="250" width="2" />
                                 <type>box</type>
                             </shape>
@@ -1292,26 +1324,26 @@
 
                 <button name="SEEKRWND">
                     <focusorder>2</focusorder>
-                    <area>240,0,300,80</area>
+                    <area>300,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
                             <shape name="highlight" />
                             <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>left_arrow_button.png</filename>
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/left_arrow_button.png</filename>
                             </imagetype>
                         </state>
                         <state name="selected" from="active">
                             <textarea name="text">
-                                <area>0,0,100%,35</area>
+                                <area>0,0,100%,38</area>
                                 <align>center</align>
                                 <font>verysmall</font>
                                 <value>Seek Back</value>
                             </textarea>
 
                             <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
+                                <area>50%-20,100%-43,44,44</area>
                                 <line color="#00FFFF" alpha="250" width="2" />
                                 <type>box</type>
                             </shape>
@@ -1323,26 +1355,26 @@
                 </button>
 
                 <button name="PLAY">
-                    <area>300,0,300,80</area>
+                    <area>360,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
                             <shape name="highlight" />
                             <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>play_button.png</filename>
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/play_button.png</filename>
                             </imagetype>
                         </state>
                         <state name="selected" from="active">
                             <textarea name="text">
-                                <area>0,0,100%,35</area>
+                                <area>0,0,100%,38</area>
                                 <align>center</align>
                                 <font>verysmall</font>
                                 <value>Play</value>
                             </textarea>
 
                             <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
+                                <area>50%-20,100%-43,44,44</area>
                                 <line color="#00FFFF" alpha="250" width="2" />
                                 <type>box</type>
                             </shape>
@@ -1354,26 +1386,26 @@
                 </button>
 
                 <button name="PAUSE">
-                    <area>300,0,300,80</area>
+                    <area>360,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
                             <shape name="highlight" />
                             <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>pause_button.png</filename>
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/pause_button.png</filename>
                             </imagetype>
                         </state>
                         <state name="selected" from="active">
                             <textarea name="text">
-                                <area>0,0,100%,35</area>
+                                <area>0,0,100%,38</area>
                                 <align>center</align>
                                 <font>verysmall</font>
                                 <value>Pause</value>
                             </textarea>
 
                             <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
+                                <area>50%-20,100%-43,44,44</area>
                                 <line color="#00FFFF" alpha="250" width="2" />
                                 <type>box</type>
                             </shape>
@@ -1385,26 +1417,26 @@
                 </button>
 
                 <button name="SEEKFFWD">
-                    <area>360,0,300,80</area>
+                    <area>420,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
                             <shape name="highlight" />
                             <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>right_arrow_button.png</filename>
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/right_arrow_button.png</filename>
                             </imagetype>
                         </state>
                         <state name="selected" from="active">
                             <textarea name="text">
-                                <area>0,0,100%,35</area>
+                                <area>0,0,100%,38</area>
                                 <align>center</align>
                                 <font>verysmall</font>
                                 <value>Seek Forward</value>
                             </textarea>
 
                             <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
+                                <area>50%-20,100%-43,44,44</area>
                                 <line color="#00FFFF" alpha="250" width="2" />
                                 <type>box</type>
                             </shape>
@@ -1416,26 +1448,26 @@
                 </button>
 
                 <button name="JUMPFFWD">
-                    <area>420,0,300,80</area>
+                    <area>480,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
                             <shape name="highlight" />
                             <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>dbl_right_arrow_button.png</filename>
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/dbl_right_arrow_button.png</filename>
                             </imagetype>
                         </state>
                         <state name="selected" from="active">
                             <textarea name="text">
-                                <area>0,0,100%,35</area>
+                                <area>0,0,100%,38</area>
                                 <align>center</align>
                                 <font>verysmall</font>
                                 <value>Jump Forward</value>
                             </textarea>
 
                             <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
+                                <area>50%-20,100%-43,44,44</area>
                                 <line color="#00FFFF" alpha="250" width="2" />
                                 <type>box</type>
                             </shape>
@@ -1446,122 +1478,27 @@
                     </statetype>
                 </button>
 
-                <button name="RWNDSTICKY">
+                <button name="FFWDSTICKY">
                     <area>540,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
                             <shape name="highlight" />
                             <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>rew_button.png</filename>
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/ff_button.png</filename>
                             </imagetype>
                         </state>
                         <state name="selected" from="active">
                             <textarea name="text">
-                                <area>0,0,100%,35</area>
-                                <align>center</align>
-                                <font>verysmall</font>
-                                <value>Rewind</value>
-                            </textarea>
-
-                            <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
-                                <line color="#00FFFF" alpha="250" width="2" />
-                                <type>box</type>
-                            </shape>
-                            <imagetype name="icon" />
-                        </state>
-                        <state name="disabled" from="active" />
-                        <state name="pushed" from="selected" />
-                    </statetype>
-                </button>
-
-                <button name="PLAY#">
-                    <area>600,0,300,80</area>
-                    <statetype name="buttonstate">
-                        <state name="active">
-                            <area>0,0,100%,100%</area>
-                            <shape name="highlight" />
-                            <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>play_button.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="selected" from="active">
-                            <textarea name="text">
-                                <area>0,0,100%,35</area>
-                                <align>center</align>
-                                <font>verysmall</font>
-                                <value>Play</value>
-                            </textarea>
-
-                            <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
-                                <line color="#00FFFF" alpha="250" width="2" />
-                                <type>box</type>
-                            </shape>
-                            <imagetype name="icon" />
-                        </state>
-                        <state name="disabled" from="active" />
-                        <state name="pushed" from="selected" />
-                    </statetype>
-                </button>
-
-<!-- This does not currently "toggle" with PLAY#
-                <button name="PAUSE#">
-                    <area>600,0,300,80</area>
-                    <statetype name="buttonstate">
-                        <state name="active">
-                            <area>0,0,100%,100%</area>
-                            <shape name="highlight" />
-                            <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>pause_button.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="selected" from="active">
-                            <textarea name="text">
-                                <area>0,0,100%,35</area>
-                                <align>center</align>
-                                <font>verysmall</font>
-                                <value>Pause</value>
-                            </textarea>
-
-                            <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
-                                <line color="#00FFFF" alpha="250" width="2" />
-                                <type>box</type>
-                            </shape>
-                            <imagetype name="icon" />
-                        </state>
-                        <state name="disabled" from="active" />
-                        <state name="pushed" from="selected" />
-                    </statetype>
-                </button>
--->
-
-                <button name="FFWDSTICKY">
-                    <area>660,0,300,80</area>
-                    <statetype name="buttonstate">
-                        <state name="active">
-                            <area>0,0,100%,100%</area>
-                            <shape name="highlight" />
-                            <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>ff_button.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="selected" from="active">
-                            <textarea name="text">
-                                <area>0,0,100%,35</area>
+                                <area>0,0,100%,38</area>
                                 <align>center</align>
                                 <font>verysmall</font>
                                 <value>Fast Forward</value>
                             </textarea>
 
                             <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
+                                <area>50%-20,100%-43,44,44</area>
                                 <line color="#00FFFF" alpha="250" width="2" />
                                 <type>box</type>
                             </shape>
@@ -1573,26 +1510,26 @@
                 </button>
 
                 <button name="MUTE">
-                    <area>780,0,300,80</area>
+                    <area>660,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
                             <shape name="highlight" />
                             <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>unmuted_button.png</filename>
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/unmuted_button.png</filename>
                             </imagetype>
                         </state>
                         <state name="selected" from="active">
                             <textarea name="text">
-                                <area>0,0,100%,35</area>
+                                <area>0,0,100%,38</area>
                                 <align>center</align>
                                 <font>verysmall</font>
                                 <value>Mute</value>
                             </textarea>
 
                             <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
+                                <area>50%-20,100%-43,44,44</area>
                                 <line color="#00FFFF" alpha="250" width="2" />
                                 <type>box</type>
                             </shape>
@@ -1604,26 +1541,26 @@
                 </button>
 
                 <button name="unmute">
-                    <area>780,0,300,80</area>
+                    <area>660,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
                             <shape name="highlight" />
                             <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>muted_button.png</filename>
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/muted_button.png</filename>
                             </imagetype>
                         </state>
                         <state name="selected" from="active">
                             <textarea name="text">
-                                <area>0,0,100%,35</area>
+                                <area>0,0,100%,38</area>
                                 <align>center</align>
                                 <font>verysmall</font>
                                 <value>Unmute</value>
                             </textarea>
 
                             <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
+                                <area>50%-20,100%-43,44,44</area>
                                 <line color="#00FFFF" alpha="250" width="2" />
                                 <type>box</type>
                             </shape>
@@ -1635,26 +1572,57 @@
                 </button>
 
                 <button name="NEXTCC">
-                    <area>840,0,300,80</area>
+                    <area>720,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
                             <shape name="highlight" />
                             <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>cc_button.png</filename>
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/cc_button.png</filename>
                             </imagetype>
                         </state>
                         <state name="selected" from="active">
                             <textarea name="text">
-                                <area>0,0,100%,35</area>
+                                <area>0,0,100%,38</area>
                                 <align>center</align>
                                 <font>verysmall</font>
                                 <value>Captions</value>
                             </textarea>
 
                             <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
+                                <area>50%-20,100%-43,44,44</area>
+                                <line color="#00FFFF" alpha="250" width="2" />
+                                <type>box</type>
+                            </shape>
+                            <imagetype name="icon" />
+                        </state>
+                        <state name="disabled" from="active" />
+                        <state name="pushed" from="selected" />
+                    </statetype>
+                </button>
+
+                <button name="BOTTOMLINEMOVE">
+                    <area>840,0,300,80</area>
+                    <statetype name="buttonstate">
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <shape name="highlight" />
+                            <imagetype name="icon">
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/move_bottomline_button.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="selected" from="active">
+                            <textarea name="text">
+                                <area>0,0,100%,38</area>
+                                <align>center</align>
+                                <font>verysmall</font>
+                                <value>Move BottomLine</value>
+                            </textarea>
+
+                            <shape name="highlight">
+                                <area>50%-20,100%-43,44,44</area>
                                 <line color="#00FFFF" alpha="250" width="2" />
                                 <type>box</type>
                             </shape>
@@ -1666,26 +1634,26 @@
                 </button>
 
                 <button name="TOGGLEFILL">
-                    <area>960,0,300,80</area>
+                    <area>900,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
                             <shape name="highlight" />
                             <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>fill_button.png</filename>
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/fill_button.png</filename>
                             </imagetype>
                         </state>
                         <state name="selected" from="active">
                             <textarea name="text">
-                                <area>0,0,100%,35</area>
+                                <area>0,0,100%,38</area>
                                 <align>center</align>
                                 <font>verysmall</font>
                                 <value>Fill</value>
                             </textarea>
 
                             <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
+                                <area>50%-20,100%-43,44,44</area>
                                 <line color="#00FFFF" alpha="250" width="2" />
                                 <type>box</type>
                             </shape>
@@ -1697,26 +1665,26 @@
                 </button>
 
                 <button name="TOGGLEASPECT">
-                    <area>1020,0,300,80</area>
+                    <area>960,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
                             <shape name="highlight" />
                             <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>aspect_button.png</filename>
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/aspect_button.png</filename>
                             </imagetype>
                         </state>
                         <state name="selected" from="active">
                             <textarea name="text">
-                                <area>0,0,100%,35</area>
+                                <area>0,0,100%,38</area>
                                 <align>center</align>
                                 <font>verysmall</font>
                                 <value>Aspect Ratio</value>
                             </textarea>
 
                             <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
+                                <area>50%-20,100%-43,44,44</area>
                                 <line color="#00FFFF" alpha="250" width="2" />
                                 <type>box</type>
                             </shape>
@@ -1728,26 +1696,26 @@
                 </button>
 
                 <button name="JUMPSTART">
-                    <area>1140,0,300,80</area>
+                    <area>1080,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
                             <shape name="highlight" />
                             <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>jump_start_button.png</filename>
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/jump_start_button.png</filename>
                             </imagetype>
                         </state>
                         <state name="selected" from="active">
                             <textarea name="text">
-                                <area>0,0,100%,35</area>
+                                <area>0,0,100%,38</area>
                                 <align>center</align>
                                 <font>verysmall</font>
                                 <value>Jump to Start</value>
                             </textarea>
 
                             <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
+                                <area>50%-20,100%-43,44,44</area>
                                 <line color="#00FFFF" alpha="250" width="2" />
                                 <type>box</type>
                             </shape>
@@ -1759,26 +1727,26 @@
                 </button>
 
                 <button name="SETBOOKMARK">
-                    <area>1200,0,300,80</area>
+                    <area>1140,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
                             <shape name="highlight" />
                             <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>bookmark_button.png</filename>
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/bookmark_button.png</filename>
                             </imagetype>
                         </state>
                         <state name="selected" from="active">
                             <textarea name="text">
-                                <area>0,0,100%,35</area>
+                                <area>0,0,100%,38</area>
                                 <align>center</align>
                                 <font>verysmall</font>
                                 <value>Bookmark</value>
                             </textarea>
 
                             <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
+                                <area>50%-20,100%-43,44,44</area>
                                 <line color="#00FFFF" alpha="250" width="2" />
                                 <type>box</type>
                             </shape>
@@ -1790,26 +1758,26 @@
                 </button>
 
                 <button name="JUMPBKMRK">
-                    <area>1260,0,300,80</area>
+                    <area>1200,0,300,80</area>
                     <statetype name="buttonstate">
                         <state name="active">
                             <area>0,0,100%,100%</area>
                             <shape name="highlight" />
                             <imagetype name="icon">
-                                <area>50%-16,100%-35,32,32</area>
-                                <filename>jump_bookmark_button.png</filename>
+                                <area>50%-16,100%-39,36,36</area>
+                                <filename>Images/osd/jump_bookmark_button.png</filename>
                             </imagetype>
                         </state>
                         <state name="selected" from="active">
                             <textarea name="text">
-                                <area>0,0,100%,35</area>
+                                <area>0,0,100%,38</area>
                                 <align>center</align>
                                 <font>verysmall</font>
                                 <value>Jump to Bookmark</value>
                             </textarea>
 
                             <shape name="highlight">
-                                <area>50%-20,100%-39,40,40</area>
+                                <area>50%-20,100%-43,44,44</area>
                                 <line color="#00FFFF" alpha="250" width="2" />
                                 <type>box</type>
                             </shape>
