@@ -20,14 +20,14 @@
         </group>
 
         <group name="dialog">
-            <area>50%-625,40,1250,-230</area>
+            <area>50%-675,40,1350,-230</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
             </shape>
 
             <textarea name="musiclocation_label" from="labeltext">
-                <area>20,40,400,90</area>
+                <area>20,40,400,105</area>
                 <value>Directory to hold music:</value>
             </textarea>
             <textedit name="musiclocation" from="basewidetextedit">
@@ -35,27 +35,27 @@
             </textedit>
 
             <textarea name="musiccddevice_label" from="musiclocation_label">
-                <position>20,130</position>
+                <position>20,145</position>
                 <value>CD device:</value>
             </textarea>
             <textedit name="musiccddevice" from="musiclocation">
-                <position>425, 130</position>
+                <position>425,145</position>
             </textedit>
 
             <textarea name="musicaudiodevice_label" from="musiclocation_label">
-                <position>20, 210</position>
+                <position>20,250</position>
                 <value>Audio device:</value>
             </textarea>
             <textedit name="musicaudiodevice" from="musiclocation">
-                <position>425, 210</position>
+                <position>425,250</position>
             </textedit>
 
             <textarea name="nonid3filenameformat_label" from="musiclocation_label">
-                <position>20, 300</position>
+                <position>20,355</position>
                 <value>Filename Format:</value>
             </textarea>
             <textedit name="nonid3filenameformat" from="musiclocation">
-                <position>425, 300</position>
+                <position>425,355</position>
             </textedit>
 
 <!-- removed in f8d29ecf5
@@ -68,26 +68,26 @@
             </buttonlist>
 -->
             <checkbox name="musicdefaultupmix" from="basecheckbox">
-                <position>425, 390</position>
+                <position>425,460</position>
             </checkbox>
             <textarea name="musicdefaultupmix_label" from="labelcheckbox">
-                <position>475, 390</position>
+                <position>475,460</position>
                 <value>Convert stereo to 5.1 sound</value>
             </textarea>
 
             <checkbox name="ignoreid3tags" from="basecheckbox">
-                <position>425,480</position>
+                <position>425,565</position>
             </checkbox>
             <textarea name="ignoreid3tags_label" from="labelcheckbox">
-                <position>475, 480</position>
+                <position>475,565</position>
                 <value>Ignore ID3 Tags</value>
             </textarea>
 
             <checkbox name="allowtagwriting" from="basecheckbox">
-                <position>425,570</position>
+                <position>425,670</position>
             </checkbox>
             <textarea name="allowtagwriting_label" from="labelcheckbox">
-                <position>475,570</position>
+                <position>475,670</position>
                 <value>Allow metadata to be written to tags</value>
             </textarea>
 
@@ -117,7 +117,7 @@
         </group>
 
         <group name="dialog">
-            <area>50%-500,70,1000,-230</area>
+            <area>50%-650,70,1300,-230</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
@@ -125,7 +125,7 @@
 
 
             <textarea name="resumemode_label" from="labeltext">
-                <area>20,40,400,90</area>
+                <area>20,40,400,105</area>
                 <value>Resume mode (Playlist):</value>
             </textarea>
             <buttonlist name="resumemode" from="basemediumselector">
@@ -133,51 +133,51 @@
             </buttonlist>
 
             <textarea name="resumemodeeditor_label" from="labeltext">
-                <area>20,130,400,90</area>
+                <area>20,145,400,105</area>
                 <value>Resume mode (Playlist Editor):</value>
             </textarea>
             <buttonlist name="resumemodeeditor" from="basemediumselector">
-                <position>425,130</position>
+                <position>425,145</position>
             </buttonlist>
 
             <textarea name="resumemoderadio_label" from="labeltext">
-                <area>20,220,400,90</area>
+                <area>20,250,400,105</area>
                 <value>Resume mode (Radio):</value>
             </textarea>
             <buttonlist name="resumemoderadio" from="basemediumselector">
-                <position>425,220</position>
+                <position>425,250</position>
             </buttonlist>
 
 
             <textarea name="exitaction_label" from="labeltext">
-                <area>20,310,400,90</area>
+                <area>20,355,400,105</area>
                 <value>Action on exit:</value>
             </textarea>
             <buttonlist name="exitaction" from="basemediumselector">
-                <position>425, 310</position>
+                <position>425,355</position>
             </buttonlist>
 
             <textarea name="jumpaction_label" from="labeltext">
-                <area>20,400,400,90</area>
+                <area>20,460,400,105</area>
                 <value>Action on jumppoint:</value>
             </textarea>
             <buttonlist name="jumpaction" from="basemediumselector">
-                <position>425,400</position>
+                <position>425,460</position>
             </buttonlist>
 
             <checkbox name="autolookupcd" from="basecheckbox">
-                <position>425,490</position>
+                <position>775,40</position>
             </checkbox>
             <textarea name="autolookupcd_label" from="labelcheckbox">
-                <area>475,490,-10,80</area>
+                <area>825,40,-5,105</area>
                 <value>Automatically lookup CDs</value>
             </textarea>
 
             <checkbox name="autoplaycd" from="basecheckbox">
-                <position>425,580</position>
+                <position>775,145</position>
             </checkbox>
             <textarea name="autoplaycd_label" from="autolookupcd_label">
-                <position>475,580</position>
+                <position>825,145</position>
                 <value>Automatically Play CDs</value>
             </textarea>
 
@@ -214,7 +214,7 @@
             </shape>
 
             <textarea name="ratingweight_label" from="labeltext">
-                <area>20,40,400,90</area>
+                <area>20,40,400,105</area>
                 <value>Rating Weight:</value>
             </textarea>
             <spinbox name="ratingweight" from="basespinbox">
@@ -222,27 +222,27 @@
             </spinbox>
 
             <textarea name="playcountweight_label" from="ratingweight_label">
-                <position>20,130</position>
+                <position>20,145</position>
                 <value>Play Count Weight:</value>
             </textarea>
             <spinbox name="playcountweight" from="basespinbox">
-                <position>425,130</position>
+                <position>425,145</position>
             </spinbox>
 
             <textarea name="lastplayweight_label" from="ratingweight_label">
-                <position>20, 220</position>
+                <position>20, 250</position>
                 <value>Last Play Weight:</value>
             </textarea>
             <spinbox name="lastplayweight" from="basespinbox">
-                <position>425,220</position>
+                <position>425,250</position>
             </spinbox>
 
             <textarea name="randomweight_label" from="ratingweight_label">
-                <position>20, 310</position>
+                <position>20, 355</position>
                 <value>Random Weight:</value>
             </textarea>
             <spinbox name="randomweight" from="basespinbox">
-                <position>425,310</position>
+                <position>425,355</position>
             </spinbox>
 
             <button name="save" from="varbuttonright">
@@ -271,74 +271,74 @@
         </group>
 
         <group name="dialog">
-            <area>50%-690,40,1380,-220</area>
+            <area>50%-700,100,1400,-320</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
             </shape>
 
             <textarea name="paranoialevel_label" from="labeltext">
-                <area>20,40,400,90</area>
+                <area>20,40,400,105</area>
                 <value>Paranoia Level:</value>
             </textarea>
             <buttonlist name="paranoialevel" from="basemediumselector">
-                <position>425, 40</position>
+                <position>425,40</position>
             </buttonlist>
 
             <textarea name="encoding_label" from="paranoialevel_label">
-                <position>20, 130</position>
+                <position>20,145</position>
                 <value>Encoding Type:</value>
             </textarea>
             <buttonlist name="encodertype" from="basemediumselector">
-                <position>425, 130</position>
+                <position>425,145</position>
             </buttonlist>
 
             <textarea name="defaultripquality_label" from="paranoialevel_label">
-                <position>20, 220</position>
+                <position>20,250</position>
                 <value>Default Rip Quality:</value>
             </textarea>
             <buttonlist name="defaultripquality" from="basemediumselector">
-                <position>425, 220</position>
+                <position>425,250</position>
             </buttonlist>
 
             <textarea name="filenametemplate_label" from="paranoialevel_label">
-                <position>20,310</position>
+                <position>20,355</position>
                 <value>File storage location:</value>
             </textarea>
             <textedit name="filenametemplate" from="basewidetextedit">
-                <position>425,310</position>
+                <position>425,355</position>
             </textedit>
 
             <checkbox name="nowhitespace" from="basecheckbox">
-                <position>425,400</position>
+                <position>775,40</position>
             </checkbox>
             <textarea name="nowhitespace_label" from="labelcheckbox">
-                <position>475,400</position>
+                <position>825,40</position>
                 <value>Replace space with underscore</value>
             </textarea>
 
             <checkbox name="mp3usevbr" from="basecheckbox">
-                <position>425,490</position>
+                <position>775,145</position>
             </checkbox>
             <textarea name="mp3usevbr_label" from="labelcheckbox">
-                <position>475,490</position>
+                <position>825,145</position>
                 <value>Use variable bitrates</value>
             </textarea>
 
             <checkbox name="ejectcd" from="basecheckbox">
-                <position>425,580</position>
+                <position>775,250</position>
             </checkbox>
             <textarea name="ejectcd_label" from="labelcheckbox">
-                <position>475,580</position>
+                <position>825,250</position>
                 <value>Automatically eject CDs after ripping</value>
             </textarea>
 
             <textarea name="postcdripscript_label" from="paranoialevel_label">
-                <position>20,670</position>
+                <position>20,460</position>
                 <value>Script Path:</value>
             </textarea>
             <textedit name="postcdripscript" from="basewidetextedit">
-                <position>425,670</position>
+                <position>425,460</position>
             </textedit>
 
             <button name="save" from="varbuttonright">
@@ -382,7 +382,7 @@
             </textarea>
 
             <textarea name="cdwriterdevice_label" from="labeltext">
-                <area>20,130,400,90</area>
+                <area>20,130,400,105</area>
                 <value>CD-Writer Device:</value>
             </textarea>
             <textedit name="cdwriterdevice" from="basewidetextedit">
@@ -448,14 +448,14 @@
         </group>
 
         <group name="dialog">
-            <area>50%-450,150,900,-400</area>
+            <area>50%-450,100,900,-350</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
             </shape>
 
             <textarea name="scalewidth_label" from="labeltext">
-                <area>20,40,400,90</area>
+                <area>20,40,400,105</area>
                 <value>Width for Visual Scaling:</value>
             </textarea>
             <spinbox name="scalewidth" from="basespinbox">
@@ -463,26 +463,26 @@
             </spinbox>
 
             <textarea name="scaleheight_label" from="scalewidth_label">
-                <position>20,130</position>
+                <position>20,145</position>
                 <value>Height for Visual Scaling:</value>
             </textarea>
             <spinbox name="scaleheight" from="basespinbox">
-                <position>425,130</position>
+                <position>425,145</position>
             </spinbox>
 
             <checkbox name="cycleonsongchange" from="basecheckbox">
                 <position>220,260</position>
             </checkbox>
             <textarea name="cycleonsongchange_label" from="labelcheckbox">
-                <area>270,260,-20,90</area>
+                <area>270,260,-20,105</area>
                 <value>Change Visualizer on each song</value>
             </textarea>
 
             <checkbox name="randomizeorder" from="basecheckbox">
-                <position>220,350</position>
+                <position>220,365</position>
             </checkbox>
             <textarea name="randomizeorder_label" from="cycleonsongchange_label">
-                <position>270,350</position>
+                <position>270,365</position>
                 <value>Randomize Visualizer order</value>
             </textarea>
 

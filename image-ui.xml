@@ -138,8 +138,6 @@
 
     </window> <!-- gallery -->
 
-
-
     <!-- Configuration dialog. This is currently
          used by the MythImage plugin only -->
     <window name="galleryconfig">

@@ -64,7 +64,7 @@
         </textarea>
 
         <textarea name="userrating" from="rating">
-            <area>10,100%-40,200,30</area>
+            <area>10,100%-40,400,30</area>
             <align>left,top</align>
             <template>User Rating: %1</template>
         </textarea>

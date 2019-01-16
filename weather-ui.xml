@@ -755,7 +755,7 @@
         </group>
 
         <group name="dialog">
-            <area>50%-450,300,900,300</area>
+            <area>50%-450,300,900,350</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
@@ -766,17 +766,17 @@
             </spinbox>
 
             <textarea name="timeout_label" from="labelcheckbox">
-                <area>320,40,-20,80</area>
+                <area>320,40,-20,105</area>
                 <value>Seconds to display each page</value>
                 <align>left,vcenter</align>
             </textarea>
 
             <checkbox name="backgroundcheck" from="basecheckbox">
-                <position>270,110</position>
+                <position>270,145</position>
             </checkbox>
 
             <textarea name="background_label" from="timeout_label">
-                <position>320,110</position>
+                <position>320,145</position>
                 <value>Retrieve data in the background</value>
             </textarea>
 
@@ -863,16 +863,16 @@
             </textarea>
 
             <spinbox name="update_spinbox" from="basespinbox">
-                <position>1110,160</position>
+                <position>1110,145</position>
             </spinbox>
 
             <textarea name="retrieve_label" from="update_label">
-                <position>700,265</position>
+                <position>700,250</position>
                 <value>Source Update Timeout (seconds):</value>
             </textarea>
 
             <spinbox name="retrieve_spinbox" from="basespinbox">
-                <position>1110,280</position>
+                <position>1110,250</position>
             </spinbox>
 
             <textarea name="srcinfo" from="basetextarea">
@@ -921,21 +921,21 @@
             </textedit>
 
             <button name="searchbtn" from="varbuttonleft">
-                <position>800,40</position>
+                <position>800,55</position>
             </button>
 
             <textarea name="numresults" from="basetextarea">
-                <area>100,110,-100,40</area>
+                <area>100,145,-100,40</area>
                 <align>center</align>
             </textarea>
 
             <textarea name="source" from="basetextarea">
-                <area>270,150,-270,40</area>
+                <area>270,195,-270,40</area>
                 <align>center</align>
             </textarea>
 
             <buttonlist name="results" from="basebuttonlist">
-                <area>30,200,-30,-120</area>
+                <area>30,235,-30,-120</area>
             </buttonlist>
 
 

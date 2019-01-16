@@ -162,7 +162,7 @@
 
             <buttonlist name="channels" from="basebuttonlist">
                 <!-- arrows space is 25, so to balance use -60 -->
-                <area>35,10,-35,660</area>
+                <area>35,0,-35,660</area>
                 <buttonarea>25,0,-25,100%</buttonarea>
 
                 <statetype name="buttonitem">
@@ -175,11 +175,11 @@
                             <preserveaspect>true</preserveaspect>
                         </imagetype>
                         <textarea name="channum" from="basetextarea">
-                            <area>100,10,100,40</area>
+                            <area>80,10,130,40</area>
                             <align>center</align>
                         </textarea>
                         <textarea name="name" from="channum">
-                            <area>200,10,-420,40</area>
+                            <area>210,10,-420,40</area>
                         </textarea>
                         <textarea name="sourcename" from="name">
                             <area>100%-400,10,380,40</area>
@@ -198,7 +198,7 @@
             </buttonlist>
 
             <group name="optiongroup">
-                <area>100,670,-200,720</area>
+                <area>100,645,-180,790</area>
 
                 <textarea name="sortlabel" from="labeltext">
                     <position>0,0</position>
@@ -210,25 +210,25 @@
                 </buttonlist>
 
                 <textarea name="sourcelabel" from="sortlabel">
-                    <position>0,90</position>
+                    <position>0,105</position>
                     <value>Video Source:</value>
                 </textarea>
 
                 <buttonlist name="source" from="sorting">
-                    <position>250,90</position>
+                    <position>250,105</position>
                 </buttonlist>
 
                 <button name="delete" from="varbuttonleft">
-                    <position>860,95</position>
+                    <position>860,105</position>
                     <value>Delete</value>
                 </button>
 
                 <checkbox name="nochannum" from="basecheckbox">
-                    <position>150,180</position>
+                    <position>150,210</position>
                 </checkbox>
 
                 <textarea name="nochannumlabel" from="labelcheckbox">
-                    <position>200,180</position>
+                    <position>200,210</position>
                     <value>Hide Channels without channel number.</value>
                 </textarea>
 
@@ -238,12 +238,12 @@
                 </button>
 
                 <button name="importicons" from="scan">
-                    <position>1100,90</position>
+                    <position>1100,105</position>
                     <value>Icon Download</value>
                 </button>
 
                 <button name="edittransport" from="scan">
-                    <position>1100,180</position>
+                    <position>1100,210</position>
                     <value>Edit Transports</value>
                 </button>
             </group>
@@ -266,7 +266,7 @@
         </group>
 
         <group name="dialog">
-            <area>50%-620,150,1240,600</area>
+            <area>50%-620,100,1240,-300</area>
 
             <shape name="background" from="basewidgetshape" />
 
@@ -338,22 +338,22 @@
         </group>
 
         <group name="dialog">
-            <area>50%-250,150,500,600</area>
+            <area>50%-250,100,540,600</area>
 
             <shape name="background" from="basewidgetshape" />
 
             <button name="submit" from="baselargebutton">
-                <position>50%-200,120</position>
+                <area>50%-230,120,460,105</area>
                 <value>Submit your hardware profile</value>
             </button>
 
             <button name="view" from="submit">
-                <position>50%-200,220</position>
+                <position>50%-230,225</position>
                 <value>View your hardware profile</value>
             </button>
 
             <button name="delete" from="submit">
-                <position>50%-200,320</position>
+                <position>50%-230,330</position>
                 <value>Delete your hardware profile</value>
             </button>
 
@@ -385,87 +385,87 @@
         </group>
 
         <group name="dialog">
-            <area>50%-560,50,1120,800</area>
+            <area>50%-560,25,1120,830</area>
 
             <shape name="background" from="basewidgetshape" />
 
             <textarea name="auddev_text" from="labeltext">
-                <position>20,35</position>
+                <position>20,15</position>
                 <value>Audio Device:</value>
             </textarea>
 
             <buttonlist name="audiodevices" from="basewideselector">
-                <area>280,35,800,90</area>
+                <area>280,15,800,105</area>
             </buttonlist>
 
             <checkbox name="ac3check" from="basecheckbox">
-                <position>280,125</position>
+                <position>280,120</position>
             </checkbox>
 
             <textarea name="ac3_text" from="labelcheckbox">
-                <area>320,125,750,90</area>
+                <area>320,120,750,105</area>
                 <value>My audio subsystem supports Dolby Digital</value>
             </textarea>
 
             <checkbox name="dtscheck" from="ac3check">
-                <position>280,215</position>
+                <position>280,225</position>
             </checkbox>
 
             <textarea name="dts_text" from="ac3_text">
-                <position>320,215</position>
+                <position>320,225</position>
                 <value>My audio subsystem supports DTS</value>
             </textarea>
 
             <checkbox name="eac3check" from="ac3check">
-                <position>280,305</position>
+                <position>280,330</position>
             </checkbox>
 
             <textarea name="eac3_text" from="ac3_text">
-                <position>320,305</position>
+                <position>320,330</position>
                 <value>My audio subsystem supports E-AC-3</value>
             </textarea>
 
             <checkbox name="truehdcheck" from="ac3check">
-                <position>280,395</position>
+                <position>280,435</position>
             </checkbox>
 
             <textarea name="truehd_text" from="ac3_text">
-                <position>320,395</position>
+                <position>320,435</position>
                 <value>My audio subsystem supports TrueHD</value>
             </textarea>
 
             <checkbox name="dtshdcheck" from="ac3check">
-                <position>280,485</position>
+                <position>280,540</position>
             </checkbox>
 
             <textarea name="dtshd_text" from="ac3_text">
-                <position>320,485</position>
+                <position>320,540</position>
                 <value>My audio subsystem supports DTS-HD</value>
             </textarea>
 
             <textarea name="speaktext_text" from="auddev_text">
-                <position>20,575</position>
+                <position>20,645</position>
                 <value>Number of Speakers:</value>
             </textarea>
 
             <buttonlist name="speakers" from="basemediumselector">
-                <area>280,575,400,90</area>
+                <area>280,645,400,105</area>
             </buttonlist>
 
             <button name="testspeakers" from="varbuttoncenter">
-                <area>700,575,-40,90</area>
+                <area>700,645,-40,105</area>
             </button>
 
             <group name="buttons">
-                <area>0, 100%-90, 100%, 80</area>
+                <area>0,100%-90,100%,80</area>
 
                 <button name="previous" from="varbuttonright">
-                    <area>100%-540, 0, 250, 100%</area>
+                    <area>100%-540,0,250,100%</area>
                     <value>Prev</value>
                 </button>
 
                 <button name="next" from="varbuttonleft">
-                    <area>100%-285, 0, 250, 100%</area>
+                    <area>100%-285,0,250,100%</area>
                     <value>Next</value>
                 </button>
             </group>
@@ -489,38 +489,38 @@
         </group>
 
         <group name="dialog">
-            <area>530,150,835,460</area>
+            <area>50%-500,150,1000,500</area>
 
             <shape name="background" from="basewidgetshape" />
 
             <textarea name="prof_text" from="labeltextlarge">
-                <area>40,40,350,90</area>
+                <area>40,40,450,105</area>
                 <value>Video Playback Profile:</value>
             </textarea>
 
             <buttonlist name="playbackprofiles" from="baselargeselector">
-                <area>400,40,-30,96</area>
+                <area>500,40,-30,105</area>
             </buttonlist>
 
             <button name="testsd" from="baselargebutton">
-                <area>400,170,-30,90</area>
+                <area>500,170,-30,105</area>
                 <value>Test Standard Definition</value>
             </button>
 
             <button name="testhd" from="baselargebutton">
-                <area>400,260,-30,90</area>
+                <area>500,275,-30,105</area>
                 <value>Test High Definition</value>
             </button>
 
             <group name="buttons">
-                <area>380, 100%-90, 440, 80</area>
+                <area>380,100%-100,440,85</area>
 
                 <button name="previous" from="varbuttonright">
-                    <area>0, 0, 215, 100%</area>
+                    <area>0,0,215,100%</area>
                     <value>Prev</value>
                 </button>
                 <button name="next" from="varbuttonleft">
-                    <area>220, 0, -5, 100%</area>
+                    <area>220,0,-5,100%</area>
                     <value>Finish</value>
                 </button>
             </group>
@@ -666,12 +666,12 @@
         </group>
 
         <button name="save" from="varbuttonleft">
-            <area>50%+410, 100%-195, -30, 80</area>
+            <area>50%+410,100%-195,-30,80</area>
             <value>Save</value>
         </button>
 
         <button name="cancel" from="varbuttonright">
-            <area>30, 100%-195, 50%-425, 80</area>
+            <area>30,100%-195,50%-425,80</area>
             <value>Cancel</value>
         </button>
 
@@ -829,7 +829,7 @@
             </shape>
 
             <group name="basegroup">
-                <area>10, 250, 50%-20, 140</area>
+                <area>10,250,50%-20,140</area>
                 <textarea name="base_label" from="basetextarea">
                     <area>5,33,200,-5</area>
                     <multiline>yes</multiline>
@@ -855,7 +855,7 @@
             </group>
 
             <group name="statusgroup" from="basegroup">
-                <area>10, 50, 50%-20, 90</area>
+                <area>10,50,50%-20,90</area>
                 <shape name="shadow">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
@@ -869,7 +869,7 @@
             </group>
 
             <group name="lockgroup" from="basegroup">
-                <area>10, 150, 50%-20, 90</area>
+                <area>10,150,50%-20,90</area>
                 <shape name="shadow">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
@@ -883,7 +883,7 @@
             </group>
 
             <group name="progressgroup" from="basegroup">
-                <position>10, 250</position>
+                <position>10,250</position>
                 <shape name="shadow">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
@@ -897,15 +897,15 @@
                     <value>Scan Progress</value>
                 </textarea>
                 <textarea name="progresstext" from="base_text">
-                    <area>225,33,70,-3</area>
+                    <area>225,33,100,-3</area>
                 </textarea>
                 <textarea name="scanprogresstext" from="base_text">
-                    <area>300,33,-5,-3</area>
+                    <area>325,33,-5,-3</area>
                 </textarea>
             </group>
 
             <group name="signalnoisegroup" from="basegroup">
-                <position>10, 400</position>
+                <position>10,400</position>
                 <shape name="shadow">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
@@ -922,7 +922,7 @@
             </group>
 
             <group name="signalstrengthgroup" from="basegroup">
-                <position>10, 550</position>
+                <position>10,550</position>
                 <shape name="shadow">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
@@ -939,7 +939,7 @@
             </group>
 
             <group name="rotatorgroup" from="basegroup" depends="rotorprogress">
-                <position>10, 700</position>
+                <position>10,700</position>
                 <shape name="shadow">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>

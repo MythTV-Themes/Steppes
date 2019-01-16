@@ -199,19 +199,19 @@
 
 
             <textarea name="maxsize" from="basetextarea">
-                <area>50%+310,20,260,30</area>
+                <area>50%+310,20,260,35</area>
                 <font>myverysmall</font>
                 <align>left</align>
             </textarea>
 
             <textarea name="minsize" from="basetextarea">
-                <area>50%-570,20,260,30</area>
+                <area>50%-570,20,260,35</area>
                 <font>myverysmall</font>
                 <align>right</align>
             </textarea>
 
             <textarea name="currentsize" from="basetextarea">
-                <area>50%-150,45,300,30</area>
+                <area>50%-150,45,300,35</area>
                 <font>myverysmall</font>
                 <align>center</align>
             </textarea>
@@ -225,7 +225,7 @@
             </progressbar>
 
             <textarea name="nofiles" from="basetextarea">
-                <area>500,100,-500,90</area>
+                <area>500,100,-500,105</area>
                 <align>center</align>
                 <value>No files are selected for archive</value>
             </textarea>

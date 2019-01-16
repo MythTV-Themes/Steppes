@@ -33,7 +33,7 @@
                     <area>0,0,100%,110</area>
 
                     <textarea name="buttontext">
-                        <area>5,5,-5,-5</area>
+                        <area>7,3,-7,-3</area>
                     </textarea>
                 </state>
 
@@ -57,7 +57,7 @@
                         <fill color="#50EFDF" />
                     </shape>
                     <shape name="desctop">
-                        <area>13,115,-13,55</area>
+                        <area>13,100%-110,-13,55</area>
                         <type>roundbox</type>
                         <cornerradius>1</cornerradius>
                         <fill style="gradient">
@@ -67,7 +67,7 @@
                         <alpha>192</alpha>
                     </shape>
                     <shape name="descbottom">
-                        <area>13,170,-13,-5</area>
+                        <area>13,100%-55,-13,-3</area>
                         <type>roundbox</type>
                         <cornerradius>1</cornerradius>
                         <fill style="gradient">
@@ -77,13 +77,13 @@
                         <alpha>192</alpha>
                     </shape>
                     <textarea name="description">
-                        <area>13,125,-13,-10</area>
+                        <area>10,100%-110,-10,-3</area>
                         <font>mysmallbold</font>
                         <align>center</align>
                         <multiline>yes</multiline>
                     </textarea>
                     <textarea name="buttontext">
-                        <area>13,0,-13,125</area>
+                        <area>8,0,-8,-110</area>
                         <align>center</align>
                         <font>mylargebold</font>
                         <multiline>yes</multiline>

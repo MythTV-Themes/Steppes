@@ -42,7 +42,7 @@
             <shape name="background" from="basewidgetshape" />
 
             <textarea name="leftdesc" from="basetextarea">
-                <area>20,20,600,40</area>
+                <area>20,20,600,45</area>
                 <value>Contexts</value>
                 <align>center</align>
             </textarea>
@@ -52,7 +52,7 @@
             </buttonlist>
 
             <textarea name="rightdesc" from="leftdesc">
-                <area>100%-620,20,600,40</area>
+                <area>100%-620,20,600,45</area>
                 <value>Actions</value>
             </textarea>
 

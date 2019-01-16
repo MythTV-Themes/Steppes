@@ -5,9 +5,9 @@
 
     <buttonlist name="scheduleList" from="episodeList">
         <statetype name="buttonitem">
-            <state name="active">
+            <state name="inactive">
                 <textarea name="card" depends="!inputname">
-                    <area>15,6,180,42</area>
+                    <area>15,6,180,45</area>
                     <font>mysmallgrey</font>
                     <font state="running">mysmallgreen</font>
                     <font state="disabled">mysmallgrey</font>
@@ -18,7 +18,7 @@
                     <template>(%1)</template>
                 </textarea>
                 <textarea name="inputname">
-                    <area>15,6,180,42</area>
+                    <area>15,6,180,45</area>
                     <font>mysmallgrey</font>
                     <font state="running">mysmallgreen</font>
                     <font state="disabled">mysmallgrey</font>
@@ -28,9 +28,11 @@
                     <align>hcenter</align>
                     <template>(%1)</template>
                 </textarea>
-            </state>
 
-            <state name="inactive" from="active" />
+                <textarea name="filesize_str">
+                    <area>0,0,0,0</area>
+                </textarea>
+            </state>
 
             <state name="selectedinactive">
                 <textarea name="rectypestatus">
@@ -45,7 +47,7 @@
                 </textarea>
 
                 <textarea name="card" depends="!inputname">
-                    <area>15,6,180,42</area>
+                    <area>15,6,180,45</area>
                     <font>mysmallgrey</font>
                     <font state="running">mysmallgreen</font>
                     <font state="disabled">mysmallgrey</font>
@@ -56,7 +58,7 @@
                     <template>(%1)</template>
                 </textarea>
                 <textarea name="inputname">
-                    <area>15,6,180,42</area>
+                    <area>15,6,180,45</area>
                     <font>mysmallgrey</font>
                     <font state="running">mysmallgreen</font>
                     <font state="disabled">mysmallgrey</font>
@@ -67,14 +69,28 @@
                     <template>(%1)</template>
                 </textarea>
 
-                <textarea name="syndicatedepisode">
-                    <area>100%-310,100%-45,-15,42</area>
+                <textarea name="filesize_str">
+                    <area>0,0,0,0</area>
                 </textarea>
             </state>
 
-            <state name="selectedactive" from="selectedinactive">
-                <statetype name="status" from="itemsSelectedState" />
+            <state name="active" from="inactive">
+                <area>0,0,100%,85</area>
+                <group name="progstats" from="programStatsActive">
+                    <area>175,4,100%,42</area>
+                </group>
             </state>
+
+            <state name="selectedactive" from="selectedinactive">
+                <area>0,0,100%,340</area>
+
+                <statetype name="status" from="itemsSelectedState" />
+
+                <group name="progstats" from="programStatsActive">
+                    <area>175,4,100%,42</area>
+                </group>
+            </state>
+
         </statetype>
     </buttonlist>
 
@@ -87,6 +103,7 @@
         </imagetype>
 
         <group name="msggroup" from="baseMsgGroup">
+            <area>35,945,490,-30</area>
             <textarea name="keyinstr" from="msgText">
                 <font>mysmall</font>
                 <value>(1) Title (2) Priority (4) Type</value>
@@ -96,40 +113,40 @@
 
         <buttonlist name="programs" from="episodeList">
             <area>30,60,-30,870</area>
-            <buttonarea>25,0,100%,100%</buttonarea>
+            <buttonarea>0,0,-25,100%</buttonarea>
             <statetype name="buttonitem">
                 <area>0,0,100%,100%</area>
 
                 <state name="inactive">
 
                     <textarea name="recpriority">
-                        <area>5,10,60,42</area>
+                        <area>5,10,100,45</area>
                         <align>right</align>
                         <font>mysmallgrey</font>
                     </textarea>
 
                     <textarea name="recpriorityB">
-                        <area>70,10,100,42</area>
+                        <area>105,10,110,45</area>
                         <align>right</align>
                         <font>mysmallgrey</font>
                         <template>(%1) +</template>
                     </textarea>
 
                     <textarea name="rectypepriority">
-                        <area>170,10,60,42</area>
+                        <area>215,10,100,45</area>
                         <align>right</align>
                         <font>mysmallgrey</font>
                     </textarea>
 
                     <textarea name="finalpriority">
-                        <area>235,10,100,42</area>
+                        <area>315,10,100,45</area>
                         <align>left</align>
                         <font>mysmallgrey</font>
                         <template>= %1</template>
                     </textarea>
 
                     <group name="rectypeGroup">
-                        <area>325,7,600,36</area>
+                        <area>350,7,600,45</area>
                         <minsize>50,100%</minsize>
 
                         <shape name="rectypeShape">
@@ -153,8 +170,46 @@
                         </textarea>
                     </group>
 
-                    <group name="progstats" from="programStats">
-                        <area>910,4,100%,42</area>
+                    <group name="progstats" from="programStatsInactive">
+                        <area>950,4,100%,45</area>
+
+                        <textarea name="lastrecorded">
+                            <area>0,0,-305,100%</area>
+                            <align>center</align>
+                            <font>mysmallgrey</font>
+                            <template>(Last: %1)</template>
+                        </textarea>
+
+                        <textarea name="lenmins">
+                            <area>0,0,0,0</area>
+                        </textarea>
+
+                        <textarea name="channel">
+                            <area>100%-300,0,-15,100%</area>
+                            <font>mysmallnarrowgrey</font>
+                            <align>right,vcenter</align>
+                        </textarea>
+                    </group>
+
+                    <textarea name="titlesubtitle">
+                        <area>15,100%-50,-155,45</area>
+                        <align>left</align>
+                        <font>mymedium</font>
+                    </textarea>
+
+                    <textarea name="s00e00">
+                        <area>0,0,0,0</area>
+                    </textarea>
+
+                    <textarea name="filesize_str">
+                        <area>0,0,0,0</area>
+                    </textarea>
+                </state>
+
+                <state name="active" from="inactive">
+                    <area>0,0,100%,100</area>
+                    <group name="progstats" from="programStatsActive">
+                        <area>910,4,100%,45</area>
 
                         <textarea name="timedate">
                             <area>0,0,0,0</area>
@@ -179,27 +234,25 @@
                     </group>
                 </state>
 
-                <state name="active" from="inactive" />
-
                 <state name="selectedinactive" from="inactive">
-                    <area>0,0,100%,320</area>
+                    <area>0,0,100%,400</area>
 
                     <textarea name="titlesubtitle">
                         <area>0,0,0,0</area>
                     </textarea>
 
                     <textarea name="description" depends="subtitle">
-                        <area>25,88,-25,-110</area>
+                        <area>20,160,-25,-150</area>
                     </textarea>
                     <textarea name="description0" depends="!subtitle">
-                        <area>25,88,-25,-110</area>
+                        <area>20,110,-25,-150</area>
                     </textarea>
 
                     <group name="details">
-                        <area>8,100%-104,-8,-12</area>
+                        <area>8,100%-150,-8,-10</area>
 
                         <shape name="infoshape">
-                            <area>0, 0, 100%, 100%</area>
+                            <area>0,0,100%,100%</area>
                             <type>roundbox</type>
                             <line alpha="0" width="0" />
                             <fill color="#502550" alpha="80" />
@@ -207,13 +260,13 @@
                         </shape>
 
                         <textarea name="category_label" from="labeltext">
-                            <area>10,0,350,42</area>
+                            <area>10,0,350,45</area>
                             <value>Category:</value>
                             <font>mysmalllabel</font>
                         </textarea>
 
                         <textarea name="category">
-                            <area>370,0,360,42</area>
+                            <area>370,0,360,45</area>
                             <align>left,vcenter</align>
                             <font>myverysmall</font>
                         </textarea>
@@ -230,41 +283,64 @@
 
                         <textarea name="scheduleinfo"
                                   from="category">
-                            <area>100%-275,0,-20,-5</area>
+                            <area>100%-330,0,-15,-5</area>
                             <align>right,top</align>
                             <multiline>yes</multiline>
                         </textarea>
 
-
                         <textarea name="storagegroup_label"
                                   from="category_label">
-                            <position>10,30</position>
+                            <position>10,50</position>
                             <value>Storage Group:</value>
                         </textarea>
 
                         <textarea name="storagegroup" from="category">
-                            <area>370,30,-280,42</area>
+                            <area>370,50,-280,45</area>
                             <cutdown>no</cutdown>
                             <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         </textarea>
 
                         <textarea name="recordinggroup_label"
                                   from="category_label">
-                            <position>10,60</position>
+                            <position>10,100</position>
                             <value>Recording Group:</value>
                         </textarea>
 
                         <textarea name="recordinggroup"
                                   from="storagegroup">
-                            <position>370,60</position>
+                            <position>370,100</position>
                         </textarea>
                     </group>
                 </state>
 
                 <state name="selectedactive" from="selectedinactive">
                     <statetype name="status" from="itemsSelectedState" />
-                </state>
 
+                    <group name="progstats" from="programStatsActive">
+                        <area>910,4,100%,45</area>
+
+                        <textarea name="timedate">
+                            <area>0,0,0,0</area>
+                        </textarea>
+
+                        <textarea name="lastrecorded">
+                            <area>0,0,-305,100%</area>
+                            <align>center</align>
+                            <font>mysmallgrey</font>
+                            <template>(Last: %1)</template>
+                        </textarea>
+
+                        <textarea name="lenmins">
+                            <area>0,0,0,0</area>
+                        </textarea>
+
+                        <textarea name="channel">
+                            <area>100%-300,0,-15,100%</area>
+                            <font>mysmallnarrowgrey</font>
+                            <align>right,vcenter</align>
+                        </textarea>
+                    </group>
+                </state>
             </statetype>
         </buttonlist>
     </group>

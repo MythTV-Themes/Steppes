@@ -46,16 +46,8 @@
         </buttonlist>
 
         <buttonlist name="recordings" from="episodeList">
-            <triggerevent context="Global" action="MENU">RIGHT</triggerevent>
-
             <statetype name="buttonitem">
-
                 <state name="inactive">
-
-                    <statetype name="status">
-                         <state name="disabled" from="error" />
-                    </statetype>
-
                     <shape name="stateshape">
                         <area>45,5,115,32</area>
                         <type>roundbox</type>
@@ -108,51 +100,24 @@
                             </imagetype>
                         </state>
                     </statetype>
-
-                    <statetype name="playlist" from="selectedbox" />
-
-                    <textarea name="titlesubtitle">
-                        <area>20,100%-41,-300,42</area>
-                    </textarea>
-
-                    <textarea name="filesize_str">
-                        <area>100%-155,100%-39,-15,36</area>
-                        <font>mysmallgrey</font>
-                        <align>right,bottom</align>
-                    </textarea>
-
-                    <textarea name="s00e00" from="filesize_str">
-                        <area>100%-310,100%-39,155,36</area>
-                    </textarea>
-
-                    <textarea name="syndicatedepisode" depends="!s00e00">
-                        <area>100%-310,100%-40,155,36</area>
-                        <font>mysmallgrey</font>
-                    </textarea>
                 </state>
 
-                <state name="active" from="inactive" />
+                <state name="active" from="inactive">
+                    <area>0,0,100%,85</area>
+                    <group name="progstats" from="programStatsActive">
+                        <area>175,4,100%,42</area>
+                    </group>
+                </state>
 
                 <state name="selectedinactive">
                     <area>0,0,100%,340</area>
 
-                    <statetype name="status">
-                         <state name="disabled" from="error" />
+                    <statetype name="status" from="itemsNotSelectedState">
                     </statetype>
 
-                    <textarea name="filesize_str">
-                        <area>100%-155,100%-39,-15,36</area>
-                        <font>mysmallgrey</font>
-                        <align>right,bottom</align>
-                    </textarea>
-
-                    <textarea name="s00e00" from="filesize_str">
-                        <area>100%-310,100%-39,-155,36</area>
-                    </textarea>
-
-                    <textarea name="syndicatedepisode" depends="!s00e00">
-                        <area>100%-310,100%-40,-155,36</area>
-                    </textarea>
+                    <group name="progstats" from="programStatsInactive">
+                        <area>175,4,100%,42</area>
+                    </group>
 
                     <shape name="stateshape">
                         <area>40,100%-43,494,37</area>
@@ -375,19 +340,18 @@
                             </imagetype>
                         </state>
                     </statetype>
-
-                    <statetype name="playlist" from="selectedbox" />
-
                 </state>
 
                 <state name="selectedactive" from="selectedinactive">
+                    <area>0,0,100%,340</area>
                     <statetype name="status" from="itemsSelectedState">
-                        <state name="disabled" from="error" />
                     </statetype>
+
+                    <group name="progstats" from="programStatsActive">
+                        <area>175,4,100%,42</area>
+                    </group>
                 </state>
-
             </statetype>
-
         </buttonlist>
 
         <group name="msggroup" from="baseMsgGroupLarge">
@@ -452,7 +416,7 @@
          -> Change Group View
     -->
     <window name="changeview">
-        <area>-1,-1,650,910</area>
+        <area>-1,-1,1000,1000</area>
 
         <group name="popup">
             <area>0,0,100%,100%</area>
@@ -466,7 +430,7 @@
             </button>
 
             <group name="titlegroup">
-                <area>40,20,-40,45</area>
+                <area>40,15,-40,55</area>
                 <textarea name="wintitle" from="basetextarea">
                     <area>10,0,-10,100%</area>
                     <minsize initiator="no">350,45</minsize>
@@ -477,7 +441,7 @@
             </group>
 
             <group name="helpgroup">
-                <area>30,90,-30,130</area>
+                <area>30,70,-30,130</area>
                 <minsize>350,25</minsize>
 
                 <shape name="msgShape">
@@ -500,68 +464,68 @@
             </group>
 
             <group name="checkgroup">
-                <area>75,250,-75,-100</area>
+                <area>75,220,-75,-100</area>
 
                 <checkbox name="titles" from="basecheckbox">
                     <position>0,0</position>
                 </checkbox>
 
                 <textarea name="title_label" from="labelcheckbox">
-                    <area>50,0,-50,80</area>
+                    <area>50,0,-50,105</area>
                     <value>Show Program Titles</value>
                 </textarea>
 
                 <checkbox name="categories" from="titles">
-                    <position>0,80</position>
+                    <position>0,105</position>
                 </checkbox>
 
                 <textarea name="cat_text" from="title_label">
-                    <position>50,80</position>
+                    <position>50,105</position>
                     <value>Show Program Categories</value>
                 </textarea>
 
                 <checkbox name="recgroups" from="titles">
-                    <position>0,160</position>
+                    <position>0,210</position>
                 </checkbox>
 
                 <textarea name="group_text" from="title_label">
-                    <position>50,160</position>
+                    <position>50,210</position>
                     <value>Show Recording Groups</value>
                 </textarea>
 
                 <checkbox name="watchlist" from="titles">
-                    <position>0,240</position>
+                    <position>0,315</position>
                 </checkbox>
 
                 <textarea name="watchlist_text" from="title_label">
-                    <position>50,240</position>
+                    <position>50,315</position>
                     <value>Show Watch List</value>
                 </textarea>
 
                 <checkbox name="searches" from="titles">
-                    <position>0,320</position>
+                    <position>0,420</position>
                 </checkbox>
 
                 <textarea name="search_text" from="title_label">
-                    <position>50,320</position>
+                    <position>50,420</position>
                     <value>Show Searches</value>
                 </textarea>
 
                 <checkbox name="livetv" from="titles">
-                    <position>0,400</position>
+                    <position>0,525</position>
                 </checkbox>
 
                 <textarea name="livetv_text" from="title_label">
-                    <position>50,400</position>
+                    <position>50,525</position>
                     <value>Show Live TV</value>
                 </textarea>
 
                 <checkbox name="watched" from="titles">
-                    <position>0,480</position>
+                    <position>0,630</position>
                 </checkbox>
 
                 <textarea name="watched_text" from="title_label">
-                    <position>50,480</position>
+                    <position>50,630</position>
                     <value>Show Watched Programs</value>
                 </textarea>
             </group>
@@ -574,14 +538,14 @@
          -> Change Group Password
     -->
     <window name="passwordchanger">
-        <area>-1,-1,750,320</area>
+        <area>-1,-1,1000,340</area>
 
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>
         </shape>
 
         <textarea name="label" from="basetextarea">
-            <area>50,10,-50,80</area>
+            <area>50,10,-50,105</area>
             <font>mymedium</font>
             <align>center</align>
             <multiline>yes</multiline>
@@ -590,21 +554,21 @@
         </textarea>
 
         <textarea name="oldlabel" from="labeltext">
-            <area>20,100,170,80</area>
+            <area>20,110,170,105</area>
             <value>Old:</value>
         </textarea>
 
         <textedit name="oldpassword" from="basetextedit">
-            <position>195,100</position>
+            <position>195,110</position>
         </textedit>
 
         <textarea name="newlabel" from="oldlabel">
-            <position>20,160</position>
+            <position>20,215</position>
             <value>New:</value>
         </textarea>
 
         <textedit name="newpassword" from="basetextedit">
-            <position>195,160</position>
+            <position>195,215</position>
         </textedit>
 
         <button name="ok" from="varbuttonright">
@@ -616,14 +580,14 @@
          -> 'M'(enu) -> Recording Options -> Change Recording Metadata
     -->
     <window name="editmetadata">
-        <area>50%-600,80,1200,900</area>
+        <area>50%-600,60,1400,1000</area>
 
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>
         </shape>
 
         <textarea name="wintitle" from="basetextarea">
-            <area>90,20,-90,45</area>
+            <area>90,15,-90,55</area>
             <font>mymedium</font>
             <align>center</align>
             <value>Edit Recording Metadata</value>
@@ -657,57 +621,57 @@
             <area>60,250,-60,-90</area>
 
             <textarea name="title_label" from="labeltext">
-                <area>15,0,175,90</area>
+                <area>15,0,225,105</area>
                 <value>Title:</value>
             </textarea>
 
             <textedit name="title" from="basetextedit">
-                <area>200,0,-20,90</area>
+                <area>250,0,-20,105</area>
             </textedit>
 
             <textarea name="subtitle_label" from="title_label">
-                <position>15,90</position>
+                <position>15,105</position>
                 <value>Subtitle:</value>
             </textarea>
 
             <textedit name="subtitle" from="title">
-                <position>200,90</position>
+                <position>250,105</position>
             </textedit>
 
             <textarea name="inetref_label" from="title_label">
-                <position>15,180</position>
+                <position>15,210</position>
                 <value>Inetref:</value>
             </textarea>
 
             <textedit name="inetref" from="title">
-                <position>200,180</position>
+                <position>250,210</position>
             </textedit>
 
             <textarea name="season_label" from="labeltext">
-                <area>5,270,185,80</area>
+                <area>5,315,225,105</area>
                 <value>Season:</value>
             </textarea>
 
             <spinbox name="season" from="basespinbox">
-                <position>200,270</position>
+                <position>250,315</position>
             </spinbox>
 
             <textarea name="episode_label" from="season_label">
-                <position>400,270</position>
+                <position>450,315</position>
                 <value>Episode:</value>
             </textarea>
 
             <spinbox name="episode" from="basespinbox">
-                <position>585,270</position>
+                <position>695,315</position>
             </spinbox>
 
             <textarea name="description_label" from="labeltext">
-                <area>15,360,175,90</area>
+                <area>15,420,225,90</area>
                 <value>Description:</value>
             </textarea>
 
             <textedit name="description" from="basemultilinetextedit">
-                <area>200,360,-20,-20</area>
+                <area>250,420,-20,-20</area>
             </textedit>
         </group>
 
@@ -724,7 +688,7 @@
     <!-- Home -> Media Library -> Watch Recordings -> '1'
     -->
     <window name="iconhelp">
-        <area>-1,-1,1050,1020</area>
+        <area>-1,-1,1150,1020</area>
 
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>

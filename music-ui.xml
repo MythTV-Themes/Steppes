@@ -36,7 +36,7 @@
                         </imagetype>
 
                         <textarea name="tracknum" from="basetextarea">
-                            <area>200,10,90,50</area>
+                            <area>200,10,90,60</area>
                             <font>mylarge</font>
                             <align>right,vcenter</align>
                             <template>%1 -</template>
@@ -48,11 +48,11 @@
                         </textarea>
 
                         <textarea name="artist" from="basetextarea">
-                            <area>300,65,-410,40</area>
+                            <area>300,65,-410,45</area>
                         </textarea>
 
                         <textarea name="album" from="basetextarea">
-                            <area>300,110,-410,40</area>
+                            <area>300,110,-410,45</area>
                         </textarea>
 
                         <statetype name="ratingstate" from="baseratingstate">
@@ -387,27 +387,27 @@
         <group name="playliststatus" from="baseplaylistfullstatus" />
 
         <group name="searchgroup">
-            <area>20,420,-30,-90</area>
+            <area>20,390,-30,-90</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
             </shape>
 
             <buttonlist name="field_list" from="basemediumselector">
-                <position>60,30</position>
+                <position>60,20</position>
             </buttonlist>
 
             <textedit name="criteria_edit" from="basewidetextedit">
-                <position>380,32</position>
+                <position>380,20</position>
             </textedit>
 
             <group name="matches" from="basematchgroup">
-                <area>1000,32,400,70</area>
+                <area>1000,20,400,105</area>
                 <textarea name="matches_text" from="resulttext" />
             </group>
 
             <buttonlist name="tracks_list" from="basebuttonlist">
-                <area>5,100,-5,-10</area>
+                <area>5,125,-5,-10</area>
                 <searchposition>1300,250</searchposition>
 
                 <statetype name="buttonitem">
@@ -613,58 +613,58 @@
             </shape>
 
             <textarea name="grabberlabel" from="labeltextlarge">
-                <area>60,20,270,90</area>
+                <area>60,10,270,105</area>
                 <value>Grabber:</value>
             </textarea>
 
             <textedit name="grabberedit" from="basetextedit">
-                <position>340,20</position>
+                <position>340,10</position>
             </textedit>
 
             <checkbox name="syncronizedcheck" from="basecheckbox">
-                <position>900,20</position>
+                <position>900,10</position>
             </checkbox>
 
             <textarea name="syncroniszed_label" from="labelcheckbox">
-                <area>950,20,-20,90</area>
+                <area>950,10,-20,105</area>
                 <value>Syncronized</value>
             </textarea>
 
             <textarea name="titlelabel" from="labeltextlarge">
-                <area>60,100,270,90</area>
+                <area>60,115,270,105</area>
                 <value>Title:</value>
             </textarea>
 
             <textedit name="titleedit" from="basewidetextedit">
-                <area>340,100,-100,90</area>
+                <area>340,115,-100,105</area>
             </textedit>
 
             <textarea name="artistlabel" from="labeltext">
-                <area>60,175,270,90</area>
+                <area>60,220,270,105</area>
                 <value>Artist:</value>
             </textarea>
 
             <textedit name="artistedit" from="titleedit">
-                <position>340,175</position>
+                <position>340,220</position>
             </textedit>
 
             <textarea name="albumlabel" from="labeltext">
-                <area>60,250,270,90</area>
+                <area>60,325,270,105</area>
                 <value>Album:</value>
             </textarea>
 
             <textedit name="albumedit" from="titleedit">
-                <position>340,250</position>
+                <position>340,325</position>
             </textedit>
 
             <textarea name="lyricslabel" from="labeltext">
-                <area>60,325,270,90</area>
+                <area>60,430,-60,55</area>
                 <align>left</align>
                 <value>Lyrics:</value>
             </textarea>
 
             <textedit name="lyricsedit" from="basemultilinetextedit">
-                <area>100,380,-50,480</area>
+                <area>100,485,-50,-100</area>
             </textedit>
 
             <button name="cancelbutton" from="varbuttonright">
@@ -752,30 +752,30 @@
 
 
             <textarea name="categorylbl"  from="labeltext">
-                <position>10,20</position>
+                <position>10,10</position>
                 <value>Category:</value>
             </textarea>
 
             <buttonlist name="categoryselector" from="basewideselector">
-                <position>270,20</position>
+                <position>270,10</position>
             </buttonlist>
 
             <button name="categorybutton" from="varbuttonleft">
-                <position>880,25</position>
+                <position>880,15</position>
                 <value>Edit</value>
             </button>
 
             <textarea name="titlelbl"  from="categorylbl">
-                <position>20,110</position>
+                <position>20,115</position>
                 <value>Title:</value>
             </textarea>
 
             <textedit name="titleedit" from="basetextedit">
-                <position>270,110</position>
+                <position>270,115</position>
             </textedit>
 
             <group name="rulegroup">
-                <area>5,200,-5,-200</area>
+                <area>5,220,-5,-200</area>
 
                 <shape name="dialogbackground" from="baseselectedwidgetshape">
                     <area>0,0,100%,100%</area>
@@ -824,21 +824,21 @@
             </group>
 
             <textarea name="orderbylbl" from="categorylbl">
-                <position>10,100%-190</position>
+                <position>10,100%-195</position>
                 <value>Order By:</value>
             </textarea>
 
             <buttonlist name="orderbyselector" from="basewideselector">
-                <area>270,100%-190,400,90</area>
+                <area>270,100%-195,400,105</area>
             </buttonlist>
 
             <button name="orderbybutton" from="varbuttonleft">
-                <position>680,100%-185</position>
+                <position>680,100%-190</position>
                 <value>Edit</value>
             </button>
 
             <textarea name="limitlbl"  from="categorylbl">
-                <position>10,100%-100</position>
+                <position>10,100%-105</position>
                 <value>Limit:</value>
             </textarea>
 
@@ -879,7 +879,7 @@
          -> 'E'(dit) -> 'M'(enu) -> Add Criteria
     -->
     <window name="criteriaroweditor">
-        <area>-1,-1,900,550</area>
+        <area>-1,-1,900,580</area>
 
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>
@@ -897,49 +897,50 @@
         </buttonlist>
 
         <buttonlist name="operatorselector" from="basewideselector">
-            <position>40,180</position>
+            <position>40,205</position>
         </buttonlist>
 
         <textedit name="value1edit" from="basewidetextedit">
-            <position>40,260</position>
+            <position>40,310</position>
         </textedit>
 
         <buttonlist name="value1selector" from="basewideselector">
-            <position>40,260</position>
+            <position>40,310</position>
         </buttonlist>
 
         <spinbox name="value1spinbox" from="basewidespinbox">
-            <position>40,260</position>
+            <position>40,310</position>
         </spinbox>
 
         <button name="value1button" from="varbuttonleft">
-            <position>650,265</position>
+            <position>650,320</position>
             <value>Edit</value>
         </button>
 
         <textedit name="value2edit" from="basewidetextedit">
-            <position>40,340</position>
+            <position>40,415</position>
         </textedit>
 
         <buttonlist name="value2selector" from="basewideselector">
-            <position>40,340</position>
+            <position>40,415</position>
         </buttonlist>
 
         <spinbox name="value2spinbox" from="basewidespinbox">
-            <position>40,340</position>
+            <position>40,415</position>
         </spinbox>
 
         <button name="value2button" from="varbuttonleft">
-            <position>650,340</position>
+            <position>650,415</position>
             <value>Edit</value>
         </button>
 
         <button name="savebutton" from="varbuttonright">
-            <area>100,100%-90,500,80</area>
+            <area>100,100%-100,500,90</area>
             <value>Save</value>
         </button>
 
         <button name="cancelbutton" from="varbuttonleft">
+            <area>70,100%-100,-70,85</area>
             <value>Cancel</value>
         </button>
 
@@ -1100,36 +1101,36 @@
             <area>520,90,500,-10</area>
 
             <buttonlist name="fieldselector" from="basemediumselector">
-                <position>100,10</position>
+                <position>100,5</position>
             </buttonlist>
 
             <button name="addbutton" from="varbuttoncenter">
-                <area>20,100,210,80</area>
+                <area>20,110,210,85</area>
                 <value>Add</value>
             </button>
 
             <button name="deletebutton" from="addbutton">
-                <position>250,100</position>
+                <position>250,110</position>
                 <value>Delete</value>
             </button>
 
             <button name="moveupbutton" from="addbutton">
-                <position>20,180</position>
+                <position>20,200</position>
                 <value>Move Up</value>
             </button>
 
             <button name="movedownbutton" from="addbutton">
-                <position>250,180</position>
+                <position>250,200</position>
                 <value>Move Down</value>
             </button>
 
             <button name="ascendingbutton" from="addbutton">
-                <position>20,260</position>
+                <position>20,290</position>
                 <value>Ascending</value>
             </button>
 
             <button name="descendingbutton" from="addbutton">
-                <position>250,260</position>
+                <position>250,290</position>
                 <value>Descending</value>
             </button>
 
@@ -1167,7 +1168,7 @@
         </group>
 
         <group name="dialog">
-            <area>150,30,-150,-100</area>
+            <area>50%-690,30,1380,-100</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
@@ -1233,28 +1234,28 @@
         </group>
 
         <group name="dialog">
-            <area>50%-650,90,1300,-170</area>
+            <area>50%-650,50,1300,-170</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
             </shape>
 
             <textarea name="artist_label" from="labeltext">
-                <position>10,20</position>
+                <position>10,10</position>
                 <value>Artist:</value>
             </textarea>
 
             <textedit name="artistedit" from="basewidetextedit">
-                <area>270,20,700,90</area>
+                <area>270,10,700,90</area>
             </textedit>
 
             <imagetype name="artisticon">
-                <area>980,20,90,90</area>
+                <area>980,10,90,90</area>
                 <filename>mm_artists.png</filename>
             </imagetype>
 
             <button name="searchartistbutton" from="varbuttonright">
-                <area>970,25,300,80</area>
+                <area>970,15,300,80</area>
                 <value>Search</value>
             </button>
 
@@ -1263,99 +1264,99 @@
             </checkbox>
 
             <textarea name="compilation_label" from="labelcheckbox">
-                <area>230,130,-20,45</area>
+                <area>230,135,-20,50</area>
                 <value>Compilation</value>
             </textarea>
 
             <textarea name="compilation_artist_label" from="artist_label">
-                <position>10,160</position>
+                <position>10,180</position>
                 <value>Artist:</value>
             </textarea>
 
             <textedit name="compartistedit" from="artistedit">
-                <position>270,160</position>
+                <position>270,180</position>
             </textedit>
 
             <button name="searchcompartistbutton" from="searchartistbutton">
-                <position>970,165</position>
+                <position>970,185</position>
             </button>
 
             <textarea name="album_label" from="artist_label">
-                <position>10,240</position>
+                <position>10,260</position>
                 <value>Album:</value>
             </textarea>
 
             <textedit name="albumedit" from="artistedit">
-                <position>270,240</position>
+                <position>270,260</position>
             </textedit>
 
             <button name="searchalbumbutton" from="searchartistbutton">
-                <position>970,245</position>
+                <position>970,265</position>
             </button>
 
             <imagetype name="albumicon">
-                <area>980,240,90,90</area>
+                <area>980,260,90,90</area>
                 <filename>mm_albums.png</filename>
             </imagetype>
 
             <textarea name="title_text" from="artist_label">
-                <position>10,340</position>
+                <position>10,360</position>
                 <value>Title:</value>
             </textarea>
 
             <textedit name="titleedit" from="artistedit">
-                <position>270,340</position>
+                <position>270,360</position>
             </textedit>
 
             <textarea name="track_label" from="labeltext">
-                <position>10,430</position>
+                <position>10,450</position>
                 <value>Track No.:</value>
             </textarea>
 
             <spinbox name="tracknumspin" from="basespinbox">
-                <position>270,430</position>
+                <position>270,450</position>
                 <template type="zero">N/A</template>
             </spinbox>
 
             <textarea name="genre_label" from="artist_label">
-                <position>10,520</position>
+                <position>10,550</position>
                 <value>Genre:</value>
             </textarea>
 
             <textedit name="genreedit" from="artistedit">
-                <position>270,520</position>
+                <position>270,550</position>
             </textedit>
 
             <button name="searchgenrebutton" from="searchcompartistbutton">
-                <position>970,525</position>
+                <position>970,555</position>
             </button>
 
             <imagetype name="genreicon">
-                <area>980,520,90,90</area>
+                <area>980,550,90,90</area>
                 <filename>mm_genres.png</filename>
             </imagetype>
 
             <textarea name="year_label" from="track_label">
-                <position>10,620</position>
+                <position>10,640</position>
                 <value>Year:</value>
             </textarea>
 
             <spinbox name="yearspin" from="basespinbox">
-                <position>270,620</position>
+                <position>270,640</position>
                 <template type="zero">N/A</template>
             </spinbox>
 
             <textarea name="rating_label" from="labeltext">
-                <area>400,620,310,80</area>
+                <area>400,645,310,80</area>
                 <value>Rating:</value>
             </textarea>
 
             <spinbox name="ratingspin" from="basespinbox">
-                <position>720,620</position>
+                <position>720,640</position>
             </spinbox>
 
             <statetype name="ratingstate" from="baseratingstate">
-                <position>880,650</position>
+                <position>880,670</position>
             </statetype>
 
             <button name="albumartbutton" from="varbuttoncenter">
@@ -1388,85 +1389,88 @@
             </group>
         </group>
 
-        <shape name="preview-shape">
-            <area>60,40,1320,760</area>
-            <type>roundbox</type>
-            <fill color="#000000" />
-            <cornerradius>20</cornerradius>
-        </shape>
+        <group name="dialog">
+            <area>10,10,-10,-70</area>
 
-        <imagetype name="coverartimage">
-            <area>80,60,1280,720</area>
-            <filename />
-            <preserveaspect>true</preserveaspect>
-        </imagetype>
+            <shape name="preview-shape">
+                <area>60,40,1320,760</area>
+                <type>roundbox</type>
+                <fill color="#000000" />
+                <cornerradius>20</cornerradius>
+            </shape>
 
-        <textarea name="imagefilenametext" from="basetextarea">
-            <area>80,810,1260,55</area>
-            <multiline>no</multiline>
-            <font>mylarge</font>
-            <align>left,vcenter</align>
-            <cutdown>yes</cutdown>
-        </textarea>
+            <imagetype name="coverartimage">
+                <area>80,60,1280,720</area>
+                <filename />
+                <preserveaspect>true</preserveaspect>
+            </imagetype>
 
-        <textarea name="imagetypetext" from="basetextarea">
-            <area>80,865,420,45</area>
-            <multiline>no</multiline>
-            <font>mysmall</font>
-            <align>left,vcenter</align>
-            <cutdown>yes</cutdown>
-        </textarea>
+            <textarea name="imagefilenametext" from="basetextarea">
+                <area>80,810,1260,55</area>
+                <multiline>no</multiline>
+                <font>mylarge</font>
+                <align>left,vcenter</align>
+                <cutdown>yes</cutdown>
+            </textarea>
 
-        <buttonlist name="coverartlist" from="ArtworkList">
-            <area>1400,40,-50,-80</area>
-            <align>left,vcenter</align>
-            <statetype name="buttonitem">
-                <state name="inactive">
-                    <area>0,0,100%,110</area>
-                    <statetype name="locationstate">
-                        <area>10,10,30,30</area>
-                        <state name="file">
-                            <imagetype name="locationimage">
-                                <area>0,0,30,30</area>
-                                <filename>mm_folder.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="tag" from="file">
-                            <imagetype name="locationimage">
-                                <filename>mm_music_tag.png</filename>
-                            </imagetype>
-                        </state>
-                    </statetype>
-                    <imagetype name="buttonimage">
-                        <area>10,10,-10,-10</area>
-                    </imagetype>
-                </state>
+            <textarea name="imagetypetext" from="basetextarea">
+                <area>80,865,420,45</area>
+                <multiline>no</multiline>
+                <font>mysmall</font>
+                <align>left,vcenter</align>
+                <cutdown>yes</cutdown>
+            </textarea>
 
-                <state name="active" from="inactive" />
+            <buttonlist name="coverartlist" from="ArtworkList">
+                <area>1400,40,-50,-80</area>
+                <align>left,vcenter</align>
+                <statetype name="buttonitem">
+                    <state name="inactive">
+                        <area>0,0,100%,110</area>
+                        <statetype name="locationstate">
+                            <area>10,10,30,30</area>
+                            <state name="file">
+                                <imagetype name="locationimage">
+                                    <area>0,0,30,30</area>
+                                    <filename>mm_folder.png</filename>
+                                </imagetype>
+                            </state>
+                            <state name="tag" from="file">
+                                <imagetype name="locationimage">
+                                    <filename>mm_music_tag.png</filename>
+                                </imagetype>
+                            </state>
+                        </statetype>
+                        <imagetype name="buttonimage">
+                            <area>10,10,-10,-10</area>
+                        </imagetype>
+                    </state>
 
-                <state name="selectedinactive" from="inactive">
-                    <area>0,0,100%,190</area>
-                    <imagetype name="buttonimage">
-                        <area>10,10,-10,-10</area>
-                    </imagetype>
-                </state>
+                    <state name="active" from="inactive" />
 
-                <state name="selectedactive" from="selectedinactive">
-                    <statetype name="status" from="itemsSelectedState" />
-                </state>
-            </statetype>
-        </buttonlist>
+                    <state name="selectedinactive" from="inactive">
+                        <area>0,0,100%,190</area>
+                        <imagetype name="buttonimage">
+                            <area>10,10,-10,-10</area>
+                        </imagetype>
+                    </state>
 
-        <button name="metadatabutton" from="varbuttoncenter">
-            <area>80,920,600,70</area>
-            <value>Metadata</value>
-        </button>
+                    <state name="selectedactive" from="selectedinactive">
+                        <statetype name="status" from="itemsSelectedState" />
+                    </state>
+                </statetype>
+            </buttonlist>
 
-        <button name="donebutton" from="varbuttoncenter">
-            <area>80,1000,600,70</area>
-            <value>Done</value>
-        </button>
+            <button name="metadatabutton" from="varbuttonleft">
+                <position>70,100%-100</position>
+                <value>Metadata</value>
+            </button>
 
+            <button name="donebutton" from="varbuttonright">
+                <position>70,100%-100</position>
+                <value>Done</value>
+            </button>
+        </group>
     </window>
 
     <!-- Home -> Media Library -> Listen to Music -> 'I'(nfo)
@@ -1485,116 +1489,116 @@
         </imagetype>
 
         <textarea name="titlelbl" from="labeltext">
-            <position>20,30</position>
+            <position>20,10</position>
             <value>Title:</value>
         </textarea>
 
         <textarea name="title" from="basetextarea">
-            <area>280,30,565,90</area>
+            <area>280,10,565,105</area>
             <align>left,vcenter</align>
             <multiline>yes</multiline>
         </textarea>
 
         <textarea name="artistlbl" from="titlelbl">
-            <position>20,120</position>
+            <position>20,115</position>
             <value>Artist:</value>
         </textarea>
 
         <textarea name="artist" from="title">
-            <position>280,120</position>
+            <position>280,115</position>
         </textarea>
 
         <textarea name="albumlbl" from="titlelbl">
-            <position>20,210</position>
+            <position>20,220</position>
             <value>Album:</value>
         </textarea>
 
         <textarea name="album" from="title">
-            <position>280,210</position>
+            <position>280,220</position>
         </textarea>
 
         <textarea name="genrelbl" from="titlelbl">
-            <position>20,300</position>
+            <position>20,325</position>
             <value>Genre:</value>
         </textarea>
 
         <textarea name="genre" from="title">
-            <position>280,300</position>
+            <position>280,325</position>
         </textarea>
 
         <textarea name="tracknumlbl" from="titlelbl">
-            <area>20,390,250,45</area>
+            <area>20,430,250,50</area>
             <value>Track No.:</value>
         </textarea>
 
         <textarea name="tracknum" from="title">
-            <area>280,390,250,45</area>
+            <area>280,430,250,50</area>
         </textarea>
 
         <textarea name="lenlbl" from="tracknumlbl">
-            <area>310,390,200,45</area>
+            <area>310,430,200,50</area>
             <value>Length:</value>
         </textarea>
 
         <textarea name="length" from="tracknum">
-            <position>520,390</position>
+            <position>520,430</position>
         </textarea>
 
         <textarea name="yearlbl" from="tracknumlbl">
-            <position>20,435</position>
+            <position>20,480</position>
             <value>Year:</value>
         </textarea>
 
         <textarea name="year" from="tracknum">
-            <area>280,435,565,45</area>
+            <area>280,480,565,50</area>
         </textarea>
 
         <textarea name="ratinglbl" from="tracknumlbl">
-            <position>20,480</position>
+            <position>20,530</position>
             <value>Rating:</value>
         </textarea>
 
         <statetype name="rating_state" from="baseratingstate">
-            <position>280,490</position>
+            <position>280,545</position>
         </statetype>
 
         <textarea name="dateaddedlbl" from="yearlbl">
-            <position>20,525</position>
+            <position>20,580</position>
             <value>Date Added:</value>
         </textarea>
 
         <textarea name="dateadded" from="year">
-            <position>280,525</position>
+            <position>280,580</position>
             <value>Last Value</value>
         </textarea>
 
         <textarea name="lastplaylbl" from="yearlbl">
-            <position>20,570</position>
+            <position>20,630</position>
             <value>Last Played:</value>
         </textarea>
 
         <textarea name="lastplayed" from="year">
-            <position>280,570</position>
+            <position>280,630</position>
             <value>Last Value</value>
         </textarea>
 
         <textarea name="playcountlbl" from="yearlbl">
-            <position>20,615</position>
+            <position>20,680</position>
             <value>Played:</value>
         </textarea>
 
         <textarea name="playcount" from="year">
-            <position>280,615</position>
+            <position>280,680</position>
             <template>%playcount% times</template>
         </textarea>
 
-        <textarea name="filenamelbl" from="titlelbl">
-            <position>20,700</position>
+        <textarea name="filenamelbl" from="yearlbl">
+            <position>20,735</position>
             <value>Filename:</value>
         </textarea>
 
         <textarea name="filename" from="title">
-            <area>280,700,-20,90</area>
+            <area>280,730,-20,105</area>
             <multiline>yes</multiline>
         </textarea>
     </window>
@@ -1660,157 +1664,158 @@
         </group>
 
         <group name="dialog">
-            <area>200,40,-200,-100</area>
+            <area>200,10,-200,-100</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
             </shape>
 
             <textarea name="location_label" from="labeltext">
-                <position>20,20</position>
+                <position>20,10</position>
                 <value>Location:</value>
             </textarea>
 
             <textedit name="location" from="basewidetextedit">
-                <area>280,20,900,90</area>
+                <area>280,10,900,105</area>
             </textedit>
 
             <button name="directoryfinder" from="varbuttonleft">
-                <position>1190,25</position>
+                <position>1190,30</position>
                 <value>Search</value>
             </button>
 
             <button name="scan" from="varbuttonleft">
-                <area>280,115,900,80</area>
+                <area>280,115,900,85</area>
                 <value>Look Up</value>
             </button>
 
             <button name="coverart" from="varbuttonright">
-                <area>280,115,900,80</area>
+                <area>280,115,900,85</area>
                 <value>Cover Art</value>
             </button>
 
             <textarea name="filename_label" from="labeltext">
-                <position>20,200</position>
+                <position>20,220</position>
                 <value>Filename:</value>
                 <align>right,top</align>
             </textarea>
 
             <textarea name="filename" from="basetextarea">
-                <area>280,200,-20,90</area>
+                <area>280,220,-20,105</area>
                 <align>left,top</align>
                 <multiline>yes</multiline>
             </textarea>
 
             <checkbox name="compilation" from="basecheckbox">
-                <position>300,300</position>
+                <position>300,325</position>
             </checkbox>
 
             <textarea name="compilation_label" from="labelcheckbox">
-                <position>340,300</position>
+                <position>340,325</position>
                 <value>Compilation</value>
             </textarea>
 
             <textarea name="compilation_artist_label" from="labeltext">
-                <area>20,390,250,45</area>
+                <area>20,430,250,50</area>
                 <value>Comp. Artist:</value>
             </textarea>
 
             <textarea name="compartist" from="basetextarea">
-                <area>280,390,-20,45</area>
+                <area>280,430,-20,50</area>
                 <align>left,vcenter</align>
             </textarea>
 
             <textarea name="artist_label" from="compilation_artist_label">
-                <position>20,435</position>
+                <position>20,480</position>
                 <value>Artist:</value>
                 <align>right,vcenter</align>
             </textarea>
 
             <textarea name="artist" from="compartist">
-                <position>280,435</position>
+                <position>280,480</position>
             </textarea>
 
             <textarea name="album_label" from="artist_label">
-                <position>20,480</position>
+                <position>20,530</position>
                 <value>Album:</value>
             </textarea>
 
             <textarea name="album" from="artist">
-                <position>280,480</position>
+                <position>280,530</position>
             </textarea>
 
             <textarea name="title_text" from="artist_label">
-                <position>20,525</position>
+                <position>20,580</position>
                 <value>Title:</value>
             </textarea>
 
             <textarea name="title" from="artist">
-                <position>280,525</position>
+                <position>280,580</position>
             </textarea>
 
             <textarea name="genre_label" from="artist_label">
-                <position>20,570</position>
+                <position>20,630</position>
                 <value>Genre:</value>
             </textarea>
 
             <textarea name="genre" from="artist">
-                <position>280,570</position>
+                <position>280,630</position>
             </textarea>
 
             <textarea name="year_label" from="artist_label">
-                <position>20,615</position>
+                <position>20,680</position>
                 <value>Year:</value>
             </textarea>
 
             <textarea name="year" from="artist">
-                <position>280,615</position>
+                <position>280,680</position>
             </textarea>
 
             <textarea name="track_label" from="artist_label">
-                <position>20,660</position>
+                <position>20,730</position>
                 <value>Track No.:</value>
             </textarea>
 
             <textarea name="track" from="artist">
-                <position>280,660</position>
+                <position>280,730</position>
             </textarea>
 
 
             <button name="prev" from="basebuttonprev">
-                <position>270,730</position>
+                <position>270,780</position>
             </button>
 
             <textarea name="position" from="basetextarea">
-                <area>330,740,200,45</area>
+                <area>330,790,200,45</area>
                 <align>hcenter</align>
             </textarea>
 
             <button name="next" from="basebuttonnext">
-                <position>530,730</position>
+                <position>530,780</position>
             </button>
 
             <textarea name="status" from="position">
-                <area>270,800,320,45</area>
+                <area>240,840,380,50</area>
                 <value>Already in database</value>
             </textarea>
 
             <button name="play" from="varbuttoncenter">
-                <area>700,730,300,80</area>
+                <area>700,780,300,85</area>
                 <value>Play</value>
             </button>
 
             <button name="add" from="play">
-                <position>700,810</position>
+                <position>1000,780</position>
                 <value>Add</value>
             </button>
+
             <button name="nextnew" from="play">
-                <position>1000,730</position>
+                <position>700,875</position>
                 <value>Next New</value>
             </button>
 
             <button name="addallnew" from="play">
-                <position>1000,810</position>
+                <position>1000,875</position>
                 <value>Add All New</value>
             </button>
 
@@ -1916,84 +1921,84 @@
         </group>
 
         <group name="dialog">
-            <area>200,40,-200,-100</area>
+            <area>200,20,-200,-100</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
             </shape>
 
             <textarea name="quality_label" from="labeltext">
-                <position>20,20</position>
+                <position>20,10</position>
                 <value>Quality:</value>
             </textarea>
 
             <buttonlist name="quality" from="basemediumselector">
-                <position>270,20</position>
+                <position>270,10</position>
             </buttonlist>
 
             <checkbox name="compilation" from="basecheckbox">
-                <position>590,20</position>
+                <position>590,10</position>
             </checkbox>
 
             <textarea name="comp_label" from="labelcheckbox">
-                <area>630,20,200,90</area>
+                <area>630,10,200,105</area>
                 <value>Multi-Artist</value>
             </textarea>
 
             <button name="switch" from="varbuttonleft">
-                <area>830,20,300,90</area>
+                <area>930,10,300,105</area>
                 <value>Switch Titles</value>
             </button>
 
             <textarea name="artist_label" from="labeltext">
-                <position>20,110</position>
+                <position>20,115</position>
                 <value>Artist:</value>
             </textarea>
 
             <textedit name="artist" from="basetextedit">
-                <area>270,110,555,90</area>
+                <area>270,115,555,90</area>
             </textedit>
 
             <button name="searchartist" from="varbuttonleft">
-                <area>830,110,230,90</area>
+                <area>830,115,230,90</area>
                 <value>Search</value>
             </button>
 
             <textarea name="album_label" from="artist_label">
-                <position>20,200</position>
+                <position>20,225</position>
                 <value>Album:</value>
             </textarea>
 
             <textedit name="album" from="artist">
-                <position>270,200</position>
+                <position>270,225</position>
             </textedit>
 
             <button name="searchalbum" from="varbuttonleft">
-                <area>830,200,230,90</area>
+                <area>830,225,230,90</area>
                 <value>Search</value>
             </button>
 
             <textarea name="genre_text" from="artist_label">
-                <position>20,290</position>
+                <position>20,330</position>
                 <value>Genre:</value>
             </textarea>
 
             <textedit name="genre" from="artist">
-                <position>270,290</position>
+                <position>270,330</position>
             </textedit>
 
             <button name="searchgenre" from="varbuttonleft">
-                <area>830,290,230,90</area>
+                <area>830,330,230,90</area>
                 <value>Search</value>
             </button>
 
             <textarea name="year_label" from="artist_label">
-                <position>20,380</position>
+                <position>20,435</position>
                 <value>Year:</value>
             </textarea>
 
             <textedit name="year" from="artist">
-                <position>270,380</position>
+                <position>270,435</position>
             </textedit>
 
             <button name="scan" from="varbuttoncenter">
@@ -2007,7 +2012,7 @@
             </button>
 
             <group name="trackgroup">
-                <area>40,470,-40,-20</area>
+                <area>30,540,-30,-10</area>
 
                 <shape name="trackshape">
                     <area>0,0,100%,100%</area>

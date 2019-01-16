@@ -354,14 +354,15 @@
 
                 <statetype name="buttonitem">
                     <area>0,0,1370,100%</area>
-                    <minsize>100%,60</minsize>
+                    <minsize>100%,70</minsize>
 
                     <state name="inactive">
-                        <area>0,0,1370,60</area>
+                        <area>0,0,1370,70</area>
+                        <minsize>100%,70</minsize>
 
                         <shape name="statusborder">
                             <area>5,0,-5,100%</area>
-                            <minsize>100%,60</minsize>
+                            <minsize>100%,70</minsize>
                             <type>roundbox</type>
                             <line color="#9e9e9e" alpha="255" width="1" />
                             <fill color="#000000" alpha="144" />
@@ -374,19 +375,17 @@
                         </imagetype>
 
                         <textarea name="buttontext">
-                            <area>80,4,-230,50</area>
+                            <area>80,2,-230,66</area>
                             <align>left,vcenter</align>
                             <font>mylarge</font>
                         </textarea>
 
                         <textarea name="date" from="basetextarea">
-                            <area>100%-220,4,-5,50</area>
+                            <area>100%-320,2,-5,66</area>
                             <font>mysmallnarrowgrey</font>
                             <align>right,vcenter</align>
                         </textarea>
-                        <textarea name="s##e##" from="date">
-                            <area>100%-210,4,120,50</area>
-                        </textarea>
+
                     </state>
 
                     <state name="active" from="inactive">
@@ -394,50 +393,58 @@
 
                     <state name="selectedinactive" from="inactive">
                         <area>0,0,1370,400</area>
-                        <minsize>100%,60</minsize>
+                        <minsize>100%,70</minsize>
 
                         <shape name="statusborder">
                             <area>0,0,100%,100%</area>
                             <line color="#00ffff" alpha="192" width="5" />
                         </shape>
 
+
                         <group name="detailgroup">
-                            <area>10,50,-10,-10</area>
+                            <area>5,50,-5,-10</area>
                             <minsize vanish="true">100%,110</minsize>
+
+                            <textarea name="s##e##">
+                                <area>100%-320,0,-5,50</area>
+                                <minsize shrink="short" vanish="true">100%,60</minsize>
+                                <font>mysmallnarrowgrey</font>
+                                <align>right,vcenter</align>
+                            </textarea>
 
                             <textarea name="description">
                                 <area>15,45,-15,-45</area>
                                 <align>left</align>
-                                <minsize shrink="short" vanish="true">100%,200</minsize>
+                                <minsize shrink="short" vanish="true">100%,60</minsize>
                                 <font>mysmall</font>
                                 <multiline>yes</multiline>
                                 <cutdown>yes</cutdown>
                             </textarea>
 
                             <textarea name="length">
-                                <area>100%-200,100%-35,100%,100%</area>
+                                <area>100%-200,100%-40,100%,100%</area>
                                 <minsize shrink="short" vanish="true">100%,35</minsize>
                                 <align>right,bottom</align>
                                 <font>mysmall</font>
                             </textarea>
 
                             <textarea name="resolution" from="length">
-                                <area>0,100%-35,200,100%</area>
+                                <area>0,100%-40,200,100%</area>
                                 <align>left,bottom</align>
                             </textarea>
 
                             <textarea name="filesize_str" from="length">
-                                <area>100%-400,100%-35,200,100%</area>
+                                <area>100%-350,100%-40,200,100%</area>
                             </textarea>
 
                             <textarea name="rating" from="length">
-                                <area>210,100%-35,50%-150,100%</area>
+                                <area>190,100%-40,50%-90,100%</area>
                                 <align>bottom,hcenter</align>
                                 <template>User Rating: %1</template>
                             </textarea>
 
                             <textarea name="author" from="rating">
-                                <area>50%-50,100%-35,-400,100%</area>
+                                <area>50%-90,100%-40,-300,100%</area>
                                 <template>By: %1</template>
                             </textarea>
 
@@ -783,7 +790,7 @@
                         </textarea>
 
                         <textarea name="s##e##" from="length">
-                            <area>100%-300,100%-40,100,30</area>
+                            <area>100%-400,100%-40,200,30</area>
                         </textarea>
 
                         <textarea name="author" from="length">
@@ -821,6 +828,7 @@
         </group>
 
         <group name="progdetails" from="guideprogdetails">
+            <area>40,35,460,970</area>
             <group name="wheregroup">
                 <textarea name="s##e##">
                     <area>10,40,190,40</area>

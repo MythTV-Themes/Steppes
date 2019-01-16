@@ -47,7 +47,7 @@
                 </shape>
 
                 <textarea name="recording_label" from="basetextarea">
-                    <area>20,5,-20,90</area>
+                    <area>20,5,-20,105</area>
                     <font>mymediumbold</font>
                     <align>bottom,hcenter</align>
                     <multiline>yes</multiline>
@@ -55,7 +55,7 @@
                 </textarea>
 
                 <textarea name="recording_text" from="basetextarea">
-                    <area>15,120,-15,-20</area>
+                    <area>15,110,-15,-20</area>
                     <align>top,left</align>
                     <multiline>yes</multiline>
                     <value>Retrieving Recording Status...</value>
@@ -72,7 +72,7 @@
                 </shape>
 
                 <textarea name="scheduled_label" from="basetextarea">
-                    <area>20,5,-20,90</area>
+                    <area>20,5,-20,105</area>
                     <font>mymediumbold</font>
                     <align>bottom,hcenter</align>
                     <multiline>yes</multiline>
@@ -80,7 +80,7 @@
                 </textarea>
 
                 <textarea name="scheduled_text" from="basetextarea">
-                    <area>15,120,-15,-20</area>
+                    <area>15,110,-15,-20</area>
                     <align>top,left</align>
                     <multiline>yes</multiline>
                     <value>Retrieving Scheduled Recordings...</value>

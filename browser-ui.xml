@@ -62,13 +62,13 @@
             </shape>
 
             <textarea name="categorylabel" from="labeltext">
-                <area>20,5,500,40</area>
+                <area>20,5,500,50</area>
                 <align>left,vcenter</align>
                 <value>Category:</value>
             </textarea>
 
             <buttonlist name="grouplist" from="headingList">
-                <area>30,45,-10,60</area>
+                <area>30,50,-10,60</area>
                 <align>left,top</align>
             </buttonlist>
         </group>
@@ -205,18 +205,18 @@
             </textedit>
 
             <textarea name="zoomlabel" from="commandlabel">
-                <position>20,100</position>
+                <position>20,125</position>
                 <value>Text Size:</value>
             </textarea>
             <textedit name="zoom" from="command">
-                <position>280,100</position>
+                <position>280,125</position>
             </textedit>
 
             <checkbox name="enablepluginscheck" from="basecheckbox">
-                <position>280,190</position>
+                <position>280,230</position>
             </checkbox>
             <textarea name="pluginlabel" from="labelcheckbox">
-                <area>330,190,-10,90</area>
+                <area>330,230,-10,90</area>
                 <value>Enable plugins</value>
             </textarea>
 

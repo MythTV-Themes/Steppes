@@ -24,11 +24,11 @@
                 <area>0,0,100%,100%</area>
 
                 <state name="inactive">
-                    <area>20,0,420,85</area>
+                    <area>20,0,420,105</area>
                 </state>
 
                 <state name="selectedinactive">
-                    <area>0,0,460,85</area>
+                    <area>0,0,460,105</area>
                 </state>
 
                 <state name="active" from="inactive">
@@ -69,10 +69,10 @@
                 <area>0,0,1300,700</area>
 
                 <state name="inactive">
-                    <area>100%-460,0,460,85</area>
+                    <area>100%-460,0,460,105</area>
                 </state>
                 <state name="selectedinactive">
-                    <area>100%-470,0,480,85</area>
+                    <area>100%-470,0,480,105</area>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
@@ -97,9 +97,9 @@
             </textarea>
 
             <textarea name="title" from="basetextarea">
-                <area>20,5,-20,120</area>
+                <area>20,5,-20,60</area>
                 <font>mylarge</font>
-                <multiline>yes</multiline>
+                <multiline>no</multiline>
             </textarea>
 
             <imagetype name="thumbnail">
@@ -108,12 +108,13 @@
             </imagetype>
 
             <textarea name="description" from="basetextarea">
-                <area>30,130,-30,-45</area>
+                <area>20,55,-200,-45</area>
                 <multiline>yes</multiline>
             </textarea>
 
             <textarea name="updated" from="basetextarea">
-                <area>100%-600,100%-40,-20,35</area>
+                <area>100%-650,100%-50,-10,45</area>
+                <font>mysmall</font>
                 <align>right,vcenter</align>
             </textarea>
 
@@ -145,7 +146,7 @@
         </group>
 
         <group name="dialog">
-            <area>50%-670,120,1340,500</area>
+            <area>50%-670,120,1340,600</area>
 
             <shape name="background" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
@@ -156,31 +157,31 @@
             </textarea>
 
             <textedit name="name" from="basewidetextedit">
-                <area>270,50,-60,80</area>
+                <area>270,50,-60,105</area>
             </textedit>
 
             <textarea name="urllabel" from="namelabel">
-                <position>0,120</position>
+                <position>0,155</position>
             </textarea>
 
             <textedit name="url" from="name">
-                <position>270,120</position>
+                <position>270,155</position>
             </textedit>
 
             <textarea name="iconlabel" from="namelabel">
-                <position>0,190</position>
+                <position>0,260</position>
             </textarea>
 
             <textedit name="icon" from="name">
-                <position>270,190</position>
+                <position>270,260</position>
             </textedit>
 
             <checkbox name="podcast_check" from="basecheckbox">
-                <position>270,260</position>
+                <position>270,365</position>
             </checkbox>
 
             <textarea name="podcastlabel" from="labelcheckbox">
-                <position>320,260</position>
+                <position>320,365</position>
             </textarea>
 
             <group name="buttons">

@@ -11,7 +11,7 @@
         </shape>
 
         <textarea name="origin" from="basetextarea">
-            <area>20,2,-20,38</area>
+            <area>20,2,-20,40</area>
             <align>center</align>
             <font>mysmallyellow</font>
             <scroll direction="horizontal" returnrate="140" returndelay="4" />
@@ -19,20 +19,20 @@
         </textarea>
 
         <textarea name="title" from="basetextarea">
-            <area>20,40,-20,48</area>
+            <area>20,40,-20,50</area>
             <font>mymedium</font>
             <scroll direction="horizontal" returnrate="140" returndelay="4" />
             <cutdown>no</cutdown>
         </textarea>
 
         <group name="descgroup" depends="progress">
-            <area>20,90,-20,42</area>
+            <area>20,90,-20,50</area>
             <shape name="descshape">
                 <area>0,0,100%,100%</area>
                 <fill color="#FFF0F0" alpha="24" />
             </shape>
             <textarea name="description" from="basetextarea">
-                <area>3,2,-3,-2</area>
+                <area>3,1,-3,-1</area>
                 <font>myverysmall</font>
                 <scroll direction="horizontal" returnrate="140"
                         returndelay="4" />
@@ -45,19 +45,19 @@
         </progressbar>
 
         <textarea name="progress_text" from="basetextarea" depends="progress">
-            <area>640,100%-72,100,42</area>
+            <area>640,100%-72,100,50</area>
             <font>myverysmall</font>
             <align>left,vcenter</align>
         </textarea>
 
         <group name="largedescgroup" depends="!progress">
-            <area>20,85,-28,90</area>
+            <area>20,85,-28,105</area>
             <shape name="descshape">
                 <area>0,0,100%,100%</area>
                 <fill color="#FFF0F0" alpha="24" />
             </shape>
             <textarea name="description_noprogress" from="basetextarea">
-                <area>2,2,-2,-2</area>
+                <area>2,1,-2,-1</area>
                 <font>myverysmall</font>
                 <multiline>yes</multiline>
                 <align>left,top</align>
@@ -69,7 +69,7 @@
         </group>
 
         <textarea name="extra" from="basetextarea">
-            <area>30,100%-43,-30,40</area>
+            <area>30,100%-55,-30,50</area>
             <font>mysmallnarrowlabel</font>
             <scroll direction="horizontal" returnrate="140" returndelay="4" />
             <cutdown>no</cutdown>

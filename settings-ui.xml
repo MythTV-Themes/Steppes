@@ -33,11 +33,11 @@
             </shape>
 
             <textarea name="label-text" from="labelcheckbox">
-                <area>20,10,-250,80</area>
+                <area>20,3,-250,80</area>
             </textarea>
 
             <textedit name="settingvalue" from="basemultilinetextedit">
-                <area>40,75,-220,90</area>
+                <area>40,65,-220,105</area>
             </textedit>
 
             <button name="save" from="varbuttoncenter">
@@ -87,7 +87,7 @@
         </imagetype>
 
         <textarea name="name" from="basetextarea">
-            <area>80,800,1000,55</area>
+            <area>80,800,1000,60</area>
             <font>mylarge</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
@@ -109,8 +109,9 @@
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>80,860,1260,140</area>
+            <area>80,850,1260,150</area>
             <multiline>yes</multiline>
+            <cutdown>no</cutdown>
             <font>mysmall</font>
             <align>left,top</align>
             <template>%description%\n      Errata: %errata%</template>

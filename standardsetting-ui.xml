@@ -22,7 +22,7 @@
             </shape>
 
             <textarea name="grouphelp">
-                <area>25,5,-25,-5</area>
+                <area>20,2,-20,-2</area>
                 <minsize>50,100%</minsize>
                 <align>center</align>
                 <font>mysmalllightgrey</font>
@@ -39,7 +39,7 @@
             <spacing>4</spacing>
             <buttonarea>0,0,100%,100%</buttonarea>
             <statetype name="buttonitem">
-                <area>0,0,100%,92</area>
+                <area>0,0,100%,105</area>
                 <state name="active">
                     <area>0,0,100%,100%</area>
                     <minsize>40,100%</minsize>
@@ -98,7 +98,7 @@
                                 </textarea>
                             </state>
                             <state name="checkbox">
-                                <area>24,25,40,40</area>
+                                <area>24,35,40,40</area>
                                 <minsize>30,100%</minsize>
                                 <shape name="checkbg">
                                     <area>6,6,-6,-6</area>
@@ -120,14 +120,14 @@
                                     <filename>Images/uparrow-on.png</filename>
                                 </imagetype>
                                 <imagetype name="arrow2">
-                                    <area>10,45,20,20</area>
+                                    <area>10,50,20,20</area>
                                     <minsize>30,100%</minsize>
                                     <filename>Images/downarrow-on.png</filename>
                                 </imagetype>
                             </state>
                             <state name="combobox" from="group">
                                 <imagetype name="arrow">
-                                    <area>10,36,20,20</area>
+                                    <area>10,45,20,20</area>
                                     <minsize>30,100%</minsize>
                                     <filename>Images/downarrow-on.png</filename>
                                 </imagetype>
@@ -147,11 +147,11 @@
                         </textarea>
 
                         <statetype name="buttoncheck" from="basebuttoncheck">
-                            <position>64,34</position>
+                            <position>64,45</position>
                         </statetype>
 
                         <imagetype name="buttonarrow">
-                            <position>10,34</position>
+                            <position>10,45</position>
                             <minsize>30,100%</minsize>
                             <filename>Images/rightarrow-on.png</filename>
                         </imagetype>
@@ -225,7 +225,7 @@
             </shape>
 
             <textarea name="selectedsettinghelp">
-                <area>25,0,-25,100%</area>
+                <area>20,0,-20,100%</area>
                 <minsize>50,100%</minsize>
                 <align>center</align>
                 <font>mysmalllightgrey</font>

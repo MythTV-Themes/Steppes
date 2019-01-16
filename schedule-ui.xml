@@ -296,7 +296,7 @@
             </shape>
 
             <textarea name="titlelabel" from="labeltext">
-                <area>20,35,310,90</area>
+                <area>20,35,310,105</area>
                 <value>Title (Optional):</value>
             </textarea>
 
@@ -305,57 +305,57 @@
             </textedit>
 
             <textarea name="channellabel" from="titlelabel">
-                <position>20,125</position>
+                <position>20,140</position>
                 <value>Channel:</value>
             </textarea>
 
             <buttonlist name="channel" from="basewideselector">
-                <position>340,125</position>
+                <position>340,140</position>
             </buttonlist>
 
             <textarea name="datelabel" from="labeltext">
-                <area>20,215,310,90</area>
+                <area>20,245,310,105</area>
                 <value>Date, or day of week:</value>
             </textarea>
 
             <buttonlist name="startdate" from="basewideselector">
-                <position>340,215</position>
+                <position>340,245</position>
             </buttonlist>
 
             <textarea name="timelabel" from="titlelabel">
-                <position>20,305</position>
+                <position>20,350</position>
                 <value>Start Time:</value>
             </textarea>
 
             <textarea name="hourlabel" from="labeltext">
-                <area>320,305,120,90</area>
+                <area>320,350,120,105</area>
                 <value>Hour</value>
             </textarea>
 
             <spinbox name="starthour" from="basespinbox">
-                <position>450,305</position>
+                <position>450,350</position>
             </spinbox>
 
             <textarea name="minutelabel" from="hourlabel">
-                <position>620,305</position>
+                <position>620,350</position>
                 <value>Minute</value>
             </textarea>
 
             <spinbox name="startminute" from="basespinbox">
-                <position>750,305</position>
+                <position>750,350</position>
             </spinbox>
 
             <textarea name="durationlabel" from="timelabel">
-                <position>20,395</position>
+                <position>20,455</position>
                 <value>Duration:</value>
             </textarea>
 
             <spinbox name="duration" from="basespinbox">
-                <position>340,395</position>
+                <position>340,455</position>
             </spinbox>
 
             <group name="buttons">
-                <area>305, 100%-100, 670, 100%</area>
+                <area>305, 100%-105, 670, 100%</area>
                 <button name="cancel" from="varbuttonleft">
                     <value>Cancel</value>
                 </button>
@@ -427,8 +427,8 @@
         </group>
 
         <buttonlist name="channels" from="itemsList">
-            <area>35,30,-35,920</area>
-            <buttonarea>25,0,100%,100%</buttonarea>
+            <area>35,25,-35,910</area>
+            <buttonarea>20,0,-20,100%</buttonarea>
 
             <statetype name="buttonitem">
                 <area>0,0,100%,100%</area>
@@ -440,50 +440,50 @@
                     </imagetype>
 
                     <textarea name="channelnumber" from="basetextarea">
-                        <area>60,10,120,40</area>
+                        <area>60,0,120,100%</area>
                         <font>mysmall</font>
                         <align>vcenter,right</align>
                     </textarea>
 
                     <textarea name="chanstr" from="basetextarea">
-                        <area>100,10,120,40</area>
+                        <area>100,0,120,100%</area>
                         <font>mysmall</font>
                         <align>vcenter,right</align>
                     </textarea>
 
                     <textarea name="callsign" from="chanstr">
-                        <area>220,10,240,40</area>
+                        <area>220,0,240,100%</area>
                         <align>center</align>
                     </textarea>
 
                     <textarea name="channelname" from="callsign">
-                        <area>470,10,600,40</area>
+                        <area>470,0,600,100%</area>
                         <value>name</value>
                     </textarea>
 
                     <textarea name="channelsourcename" from="callsign">
-                        <area>1080,10,240,40</area>
+                        <area>1080,0,240,100%</area>
                     </textarea>
 
                     <textarea name="recprioritylabel" from="callsign">
-                        <area>1340,10,220,40</area>
+                        <area>1240,0,220,100%</area>
                         <align>right,vcenter</align>
                         <value>Current:</value>
                     </textarea>
 
                     <textarea name="channelrecpriority" from="callsign">
-                        <area>1570,10,60,40</area>
+                        <area>1450,0,70,100%</area>
                         <align>right,vcenter</align>
                     </textarea>
 
                     <textarea name="tolabel" from="callsign">
-                        <area>1640,10,80,40</area>
+                        <area>1540,0,150,100%</area>
                         <align>right,vcenter</align>
                         <value>New:</value>
                     </textarea>
 
                     <textarea name="priority" from="callsign">
-                        <area>1730,10,60,40</area>
+                        <area>1710,0,70,100%</area>
                         <align>right,vcenter</align>
                     </textarea>
 
@@ -525,14 +525,14 @@
         </group>
 
         <group name="dialog">
-            <area>50%-660,75,1320,-140</area>
+            <area>50%-660,35,1320,-140</area>
 
             <shape name="dialogbackground" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
             </shape>
 
             <textarea name="ruleslabel" from="labeltext">
-                <area>20,75,405,90</area>
+                <area>20,75,405,105</area>
                 <value>Existing Rules:</value>
             </textarea>
 
@@ -541,44 +541,44 @@
             </buttonlist>
 
             <textarea name="titlelabel" from="ruleslabel">
-                <position>20,165</position>
+                <position>20,180</position>
                 <value>Rule Name:</value>
             </textarea>
 
             <textedit name="title" from="basewidetextedit">
-                <position>435,165</position>
+                <position>435,180</position>
             </textedit>
 
             <textarea name="prioritylabel" from="ruleslabel">
-                <position>20,255</position>
+                <position>20,285</position>
                 <value>Priority Change:</value>
             </textarea>
 
             <spinbox name="priority" from="basespinbox">
-                <position>435,255</position>
+                <position>435,285</position>
             </spinbox>
 
             <textarea name="clauseslabel" from="labeltextlarge">
-                <area>300,345,600,90</area>
+                <area>30,390,100%,105</area>
                 <align>left,bottom</align>
                 <value>Select a clause from the list:</value>
             </textarea>
 
             <buttonlist name="clauses" from="baselargeselector">
-                <position>435,435</position>
+                <position>435,495</position>
             </buttonlist>
 
             <button name="add" from="varbuttonleft">
-                <position>835,440</position>
+                <position>835,505</position>
                 <value>Add Clause</value>
             </button>
 
             <textedit name="description" from="basemultilinetextedit">
-                <area>100,535,-100,200</area>
+                <area>100,600,-100,100%-100</area>
             </textedit>
 
             <group name="buttons">
-                <area>150, 100%-90, -150, 70</area>
+                <area>150, 100%-95, -150, 85</area>
                 <button name="cancel" from="varbuttoncenter">
                     <area>0, 0, 25%, 100%</area>
                     <value>Cancel</value>
@@ -617,16 +617,16 @@
         </textarea>
 
         <buttonlist name="phrase_list" from="basepopupbuttonlist">
-            <area>20,80,-20,-190</area>
+            <area>20,80,-20,-200</area>
             <buttonarea>20,0,-20,100%</buttonarea>
         </buttonlist>
 
         <textedit name="phrase_edit" from="basewidetextedit">
-            <area>150,100%-180,-150,90</area>
+            <area>150,100%-200,-150,105</area>
         </textedit>
 
         <group name="buttons">
-            <area>115, 100%-100, -115, 100%</area>
+            <area>115, 100%-110, -115, 100%</area>
             <button name="ok_button" from="varbuttonleft">
                 <value>OK</value>
             </button>
@@ -645,14 +645,14 @@
          -> Advanced -> <New Search>
     -->
     <window name="editpowersearchpopup">
-        <area>-1,30,1050,900</area>
+        <area>-1,25,1050,960</area>
 
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>
         </shape>
 
         <textarea name="title_text" from="basetextarea">
-            <area>20,10,-20,55</area>
+            <area>20,10,-20,60</area>
             <font>mylarge</font>
             <align>hcenter,top</align>
             <value>Edit Power Search Fields</value>
@@ -669,33 +669,33 @@
         </textedit>
 
         <textarea name="subtitlelabel" from="titlelabel">
-            <position>60,210</position>
+            <position>60,225</position>
             <value>Optional subtitle phrase:</value>
         </textarea>
 
         <textedit name="subtitle_edit" from="basewidetextedit">
-            <position>200,265</position>
+            <position>200,280</position>
         </textedit>
 
         <textarea name="desclabel" from="titlelabel">
-            <position>60,355</position>
+            <position>60,385</position>
             <value>Optional description phrase:</value>
         </textarea>
 
         <textedit name="desc_edit" from="basewidetextedit">
-            <position>200,410</position>
+            <position>200,440</position>
         </textedit>
 
         <buttonlist name="category_list" from="basewideselector">
-            <position>200,500</position>
+            <position>200,545</position>
         </buttonlist>
 
         <buttonlist name="genre_list" from="basewideselector">
-            <position>200,590</position>
+            <position>200,650</position>
         </buttonlist>
 
         <buttonlist name="channel_list" from="basewideselector">
-            <position>200,680</position>
+            <position>200,755</position>
         </buttonlist>
 
         <button name="ok_button" from="varbuttonright">
@@ -708,21 +708,21 @@
          -> Advanced
     -->
     <window name="powersearchpopup" from="MythDialogBox">
-        <area>-1,30,1000,900</area>
+        <area>-1,30,1000,950</area>
 
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>
         </shape>
 
         <textarea name="title_text" from="basetextarea">
-            <area>20,20,460,55</area>
+            <area>20,20,460,60</area>
             <font>mylarge</font>
             <align>hcenter,top</align>
             <value>Select Search</value>
         </textarea>
 
         <buttonlist name="phrase_list" from="basepopupbuttonlist">
-            <area>20,90,-20,-20</area>
+            <area>20,90,-20,-100</area>
             <buttonarea>20,0,-20,100%</buttonarea>
         </buttonlist>
 
@@ -780,8 +780,7 @@
             </group>
         </group>
 
-        <group name="instructions" from="baseMsgGroup">
-            <area>40,825,450,235</area>
+        <group name="instructions" from="baseMsgGroupLarge">
             <textarea name="help2text" from="msgText" />
         </group>
 
@@ -862,7 +861,7 @@
          -> Program Finder -> 'M'(enu) -> Edit Search
     -->
     <window name="searchpopup" from="MythTextInputDialog">
-        <area>-1,120,600,300</area>
+        <area>-1,120,800,300</area>
 
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>
@@ -875,7 +874,7 @@
         </textarea>
 
         <textedit name="input" from="basecentertextedit">
-            <position>50,85</position>
+            <area>50,85,-50,105</area>
         </textedit>
 
         <button name="ok" from="varbuttonright">
@@ -908,13 +907,6 @@
         <buttonlist name="shows" from="groupsList">
             <scrollstyle>free</scrollstyle>
             <wrapstyle>selection</wrapstyle>
-            <!-- loosen up the scroll arrows -->
-            <statetype name="upscrollarrow">
-                <position>100%-20,100%-110</position>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>100%-20,100%-80</position>
-            </statetype>
         </buttonlist>
 
         <buttonlist name="times" from="scheduleList" />
@@ -933,29 +925,29 @@
         </group>
 
         <group name="dialog">
-            <area>30,30,-30,-160</area>
+            <area>30,50,-30,-140</area>
 
             <shape name="dialogbackground" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
             </shape>
 
             <textarea name="ruleslabel" from="labeltextlarge">
-                <position>40,105</position>
+                <position>40,30</position>
                 <align>right,vcenter</align>
                 <value>Existing Rules:</value>
             </textarea>
 
             <spinbox name="rules" from="baselargespinbox">
-                <position>300,105</position>
+                <position>300,30</position>
             </spinbox>
 
             <textarea name="titlelabel" from="labeltextlarge">
-                <position>680,105</position>
+                <position>680,30</position>
                 <value>Rule Name:</value>
             </textarea>
 
             <textedit name="title" from="basewidetextedit">
-                <area>940,100,600,100</area>
+                <area>940,30,600,105</area>
                 <group name="center">
                     <textarea name="text">
                         <multiline>true</multiline>
@@ -964,30 +956,30 @@
             </textedit>
 
             <textarea name="sampleslabel" from="labeltextlarge">
-                <area>30,275,260,150</area>
+                <area>30,155,260,200</area>
                 <value>Sample Clauses:</value>
             </textarea>
 
             <spinbox name="clauses" from="baselargespinbox">
-                <area>300,275,450,150</area>
+                <area>300,155,450,200</area>
             </spinbox>
 
             <group name="clausegroup" from="baseMsgGroup">
-                <area>770,275,-50,150</area>
+                <area>770,155,-50,200</area>
                 <textarea name="clausetext" from="msgText" />
             </group>
 
             <textedit name="description" from="basemultilinetextedit">
-                <area>50,445,-50,180</area>
+                <area>50,390,-50,200</area>
             </textedit>
 
             <textarea name="subtitlelabel" from="sampleslabel">
-                <area>50,645,240,125</area>
+                <area>50,625,240,105</area>
                 <value>Additional Tables:</value>
             </textarea>
 
             <textedit name="subtitle" from="description">
-                <area>300,645,-50,125</area>
+                <area>300,625,-50,105</area>
             </textedit>
 
             <group name="buttons">
@@ -1023,7 +1015,7 @@
         </imagetype>
 
         <group name="activefiltersgroup">
-            <area>1300,100,-80,-100</area>
+            <area>1400,100,-30,-100</area>
             <minsize vanish="true">500,60</minsize>
 
             <shape name="background">
@@ -1036,7 +1028,7 @@
             </shape>
 
             <textarea name="template" from="basetextarea">
-                <area>30,15,-30,42</area>
+                <area>30,5,-30,105</area>
                 <font>myverysmall</font>
                 <multiline>yes</multiline>
                 <align>center</align>
@@ -1044,7 +1036,7 @@
             </textarea>
 
             <textarea name="header">
-                <area>60,60,-30,42</area>
+                <area>60,110,-30,50</area>
                 <minsize vanish="true" shrink="short">100%,60</minsize>
                 <font>mysmalllabel</font>
                 <multiline>yes</multiline>
@@ -1054,7 +1046,7 @@
             </textarea>
 
             <buttonlist name="activefilters" from="basebulletbuttonlist">
-                <area>30,120,-30,-60</area>
+                <area>30,170,-30,-60</area>
                 <align>top,hcenter</align>
                 <wrapstyle>none</wrapstyle>
                 <statetype name="buttonitem">
@@ -1064,7 +1056,7 @@
         </group>
 
         <group name="formgroup">
-            <area>525,35,790,960</area>
+            <area>555,35,890,960</area>
 
             <shape name="layershape">
                 <area>0,0,100%,100%</area>
@@ -1097,76 +1089,76 @@
             </group>
 
             <textarea name="rule_label" from="labeltextlarge">
-                <area>10,150,270,96</area>
+                <area>10,150,270,105</area>
                 <value>Schedule Type:</value>
             </textarea>
 
             <buttonlist name="rules" from="baselargeselector">
-                <area>290,150,-30,95</area>
+                <area>290,150,-30,105</area>
                 <spacing>0</spacing>
                 <scrollstyle>free</scrollstyle>
                 <wrapstyle>items</wrapstyle>
             </buttonlist>
 
             <textarea name="recgroup_label" from="rule_label">
-                <position>10,240</position>
+                <position>10,255</position>
                 <value>Rec. Group:</value>
             </textarea>
 
             <buttonlist name="recgroup" from="rules">
-                <position>290,240</position>
+                <position>290,255</position>
             </buttonlist>
 
             <textarea name="playgroup_label" from="rule_label">
-                <position>10,330</position>
+                <position>10,360</position>
                 <value>Play Group:</value>
             </textarea>
 
             <buttonlist name="playgroup" from="rules">
-                <position>290,330</position>
+                <position>290,360</position>
             </buttonlist>
 
             <textarea name="startoffset_label" from="rule_label">
-                <area>10,420,270,96</area>
+                <area>10,465,270,105</area>
                 <value>Start Offset:</value>
             </textarea>
 
             <spinbox name="startoffset" from="baselargespinbox">
-                <area>290,420,-30,96</area>
+                <area>290,465,-30,105</area>
                 <template type="negative">%n minute(s) late</template>
                 <template type="zero">Start on time</template>
                 <template type="positive">%n minute(s) early</template>
             </spinbox>
 
             <textarea name="endoffset_label" from="rule_label">
-                <position>10,510</position>
+                <position>10,570</position>
                 <align>right,vcenter</align>
                 <value>End Offset:</value>
             </textarea>
 
             <spinbox name="endoffset" from="startoffset">
-                <position>290,510</position>
+                <position>290,570</position>
                 <template type="negative">%n minute(s) early</template>
                 <template type="zero">End on time</template>
                 <template type="positive">%n minute(s) late</template>
             </spinbox>
 
             <textarea name="newrepeat_label" from="rule_label">
-                <position>10,600</position>
+                <position>10,675</position>
                 <value>Repeats:</value>
             </textarea>
 
             <buttonlist name="newrepeat" from="rules">
-                <position>290,600</position>
+                <position>290,675</position>
                 <helptext></helptext>
             </buttonlist>
 
             <checkbox name="ruleactive" from="basecheckbox">
-                <position>240,690</position>
+                <position>240,780</position>
             </checkbox>
 
             <textarea name="ruleactive_label" from="labelcheckbox">
-                <area>290,690,-20,90</area>
+                <area>290,780,-20,105</area>
                 <value>Recording Rule is Active</value>
             </textarea>
 
@@ -1196,10 +1188,10 @@
          -> Program Guide -> 'E'(dit) -> Schedule Options
     -->
     <window name="scheduleoptionseditor">
-        <area>100%-820,35,-30,960</area>
+        <area>100%-920,35,-30,960</area>
 
         <group name="schedulegroup">
-            <area>50%-395,0,790,100%</area>
+            <area>50%-395,0,100%,100%</area>
 
             <shape name="layershape">
                 <area>0,0,100%,100%</area>
@@ -1217,7 +1209,7 @@
             </textarea>
 
             <textarea name="subtitlelabel">
-                <area>20,75,-20,90</area>
+                <area>20,75,-20,105</area>
                 <multiline>yes</multiline>
                 <font>mysmall</font>
                 <align>center</align>
@@ -1226,76 +1218,76 @@
             </textarea>
 
             <textarea name="priority_label" from="labeltextlarge">
-                <area>10,150,270,96</area>
+                <area>10,155,270,105</area>
                 <value>Priority:</value>
             </textarea>
 
             <spinbox name="priority" from="baselargespinbox">
-                <area>290,150,-30,96</area>
+                <area>290,155,-30,105</area>
                 <template type="negative">-%n</template>
                 <template type="zero">Normal</template>
                 <template type="positive">+%n</template>
             </spinbox>
 
             <textarea name="input_label" from="priority_label">
-                <position>10,240</position>
+                <position>10,260</position>
                 <align>right,vcenter</align>
                 <value>Input:</value>
             </textarea>
 
             <spinbox name="input" from="priority">
-                <position>290,240</position>
+                <position>290,260</position>
             </spinbox>
 
             <textarea name="startoffset_label" from="priority_label">
-                <position>10,330</position>
+                <position>10,365</position>
                 <value>Start Offset:</value>
             </textarea>
 
             <spinbox name="startoffset" from="priority">
-                <position>290,330</position>
+                <position>290,365</position>
                 <template type="negative">%n minute(s) late</template>
                 <template type="zero">Start on time</template>
                 <template type="positive">%n minute(s) early</template>
             </spinbox>
 
             <textarea name="endoffset_label" from="priority_label">
-                <position>10,420</position>
+                <position>10,470</position>
                 <align>right,vcenter</align>
                 <value>End Offset:</value>
             </textarea>
 
             <spinbox name="endoffset" from="priority">
-                <position>290,420</position>
+                <position>290,470</position>
                 <template type="negative">%n minute(s) early</template>
                 <template type="zero">End on time</template>
                 <template type="positive">%n minute(s) late</template>
             </spinbox>
 
             <textarea name="dupmethod_label" from="priority_label">
-                <position>10,510</position>
+                <position>10,575</position>
                 <value>Dup Method:</value>
             </textarea>
 
             <spinbox name="dupmethod" from="priority">
-                <position>290,510</position>
+                <position>290,575</position>
             </spinbox>
 
             <textarea name="dupscope_label" from="priority_label">
-                <position>10,600</position>
+                <position>10,680</position>
                 <value>Dup Scope:</value>
             </textarea>
 
             <spinbox name="dupscope" from="priority">
-                <position>290,600</position>
+                <position>290,680</position>
             </spinbox>
 
             <checkbox name="ruleactive" from="basecheckbox">
-                <position>240,710</position>
+                <position>240,785</position>
             </checkbox>
 
             <textarea name="ruleactive_label" from="labelcheckbox">
-                <area>290,710,-20,90</area>
+                <area>290,785,-20,105</area>
                 <value>Recording Rule is Active</value>
             </textarea>
 
@@ -1306,10 +1298,10 @@
          -> Program Guide -> 'E'(dit) -> Schedule Options -> Schedule Filters
     -->
     <window name="schedulefiltereditor">
-        <area>100%-820,35,-30,960</area>
+        <area>100%-1000,35,-30,960</area>
 
         <group name="schedulegroup">
-            <area>50%-395,0,790,100%</area>
+            <area>50%-395,0,100%,100%</area>
 
             <shape name="layershape">
                 <area>0,0,100%,100%</area>
@@ -1347,10 +1339,10 @@
          -> Program Guide -> 'E'(dit) -> Storage Options
     -->
     <window name="storageoptionseditor">
-        <area>100%-820,35,-30,960</area>
+        <area>100%-1000,35,-30,960</area>
 
         <group name="schedulegroup">
-            <area>50%-395,0,790,100%</area>
+            <area>50%-395,0,100%,100%</area>
 
             <shape name="layershape">
                 <area>0,0,100%,100%</area>
@@ -1368,7 +1360,7 @@
             </textarea>
 
             <textarea name="subtitlelabel">
-                <area>20,80,-20,90</area>
+                <area>20,80,-20,105</area>
                 <multiline>yes</multiline>
                 <font>mysmall</font>
                 <align>center</align>
@@ -1377,65 +1369,65 @@
             </textarea>
 
             <textarea name="recprofile_label" from="labeltext">
-                <area>10,195,270,96</area>
+                <area>10,195,270,105</area>
                 <value>Rec. Profile:</value>
             </textarea>
 
             <buttonlist name="recprofile" from="baselargeselector">
-                <area>290,195,-30,96</area>
+                <area>290,195,-30,105</area>
             </buttonlist>
 
             <textarea name="recgroup_label" from="recprofile_label">
-                <position>10,285</position>
+                <position>10,300</position>
                 <value>Rec. Group:</value>
             </textarea>
 
             <buttonlist name="recgroup" from="recprofile">
-                <position>290,285</position>
+                <position>290,300</position>
             </buttonlist>
 
             <textarea name="storagegroup_label" from="recprofile_label">
-                <position>10,375</position>
+                <position>10,405</position>
                 <value>Strg. Group:</value>
             </textarea>
 
             <buttonlist name="storagegroup" from="recprofile">
-                <position>290,375</position>
+                <position>290,405</position>
             </buttonlist>
 
             <textarea name="playgroup_label" from="recprofile_label">
-                <position>10,465</position>
+                <position>10,510</position>
                 <value>Play Group:</value>
             </textarea>
 
             <buttonlist name="playgroup" from="recprofile">
-                <position>290,465</position>
+                <position>290,510</position>
             </buttonlist>
 
             <textarea name="maxepisodes_label" from="recprofile_label">
-                <position>10,555</position>
+                <position>10,615</position>
                 <value>Max to Keep:</value>
             </textarea>
 
             <spinbox name="maxepisodes" from="baselargespinbox">
-                <area>290,555,-30,96</area>
+                <area>290,615,-30,105</area>
             </spinbox>
 
             <textarea name="maxnewest_label" from="recprofile_label">
-                <position>10,645</position>
+                <position>10,720</position>
                 <value>Max Newest:</value>
             </textarea>
 
             <buttonlist name="maxnewest" from="recprofile">
-                <position>290,645</position>
+                <position>290,720</position>
             </buttonlist>
 
             <checkbox name="autoexpire" from="basecheckbox">
-                <position>240,765</position>
+                <position>240,825</position>
             </checkbox>
 
             <textarea name="allowautoexpire_label" from="labelcheckbox">
-                <area>290,765,-10,90</area>
+                <area>290,825,-10,105</area>
                 <value>Allow Recordings to Auto-Expire</value>
             </textarea>
 
@@ -1446,10 +1438,10 @@
          -> Program Guide -> 'E'(dit) -> Post Processing
     -->
     <window name="postproceditor">
-        <area>100%-820,35,-30,960</area>
+        <area>100%-1000,35,-30,960</area>
 
         <group name="schedulegroup">
-            <area>50%-395,0,790,100%</area>
+            <area>50%-395,0,100%,100%</area>
 
             <shape name="layershape">
                 <area>0,0,100%,100%</area>
@@ -1468,7 +1460,7 @@
             </textarea>
 
             <textarea name="subtitlelabel">
-                <area>20,120,-20,90</area>
+                <area>20,120,-20,105</area>
                 <multiline>yes</multiline>
                 <font>mysmall</font>
                 <align>center</align>
@@ -1481,7 +1473,7 @@
             </checkbox>
 
             <textarea name="autocommflag_label" from="labelcheckbox">
-                <area>110,210,-10,90</area>
+                <area>110,210,-10,105</area>
                 <value>Automatically Commercial Flag Recordings</value>
             </textarea>
 
@@ -1571,7 +1563,7 @@
 
                 <state name="inactive">
                     <textarea name="statusbefore">
-                        <area>5,5,60,30</area>
+                        <area>5,5,60,40</area>
                         <font>mysmallnarrowgrey</font>
                         <font state="running">mysmallnarrowgreen</font>
                         <font state="disabled">mysmallnarrowgrey</font>
@@ -1582,13 +1574,13 @@
                         <template>(%1)</template>
                     </textarea>
                     <textarea name="direction">
-                        <area>65,5,30,35</area>
+                        <area>65,5,45,40</area>
                         <font>mysmallnarrowgrey</font>
                         <align>center</align>
                         <value>-></value>
                     </textarea>
                     <textarea name="statusafter" from="statusbefore">
-                        <area>95,4,60,30</area>
+                        <area>105,4,60,40</area>
                         <!--
                             <font>mysmallgrey</font>
                             <font state="running">mysmallnarrowgreen</font>
@@ -1600,13 +1592,19 @@
                         -->
                         <align>left,vcenter</align>
                     </textarea>
+
+                    <textarea name="filesize_str">
+                        <area>0,0,0,0</area>
+                    </textarea>
                 </state> <!-- inactive -->
 
-                <state name="active" from="inactive" />
+                <state name="active" from="inactive">
+                    <area>0,0,100%,85</area>
+                </state>
 
                 <state name="selectedinactive">
                     <textarea name="statusbefore">
-                        <area>5,10,60,30</area>
+                        <area>5,10,60,40</area>
                         <font>mysmallnarrowgrey</font>
                         <font state="running">mysmallnarrowgreen</font>
                         <font state="disabled">mysmallnarrowgrey</font>
@@ -1617,13 +1615,13 @@
                         <template>(%1)</template>
                     </textarea>
                     <textarea name="direction">
-                        <area>65,10,30,35</area>
+                        <area>65,10,45,40</area>
                         <align>center</align>
                         <font>mysmallnarrowgrey</font>
                         <value>-></value>
                     </textarea>
                     <textarea name="statusafter" from="statusbefore">
-                        <area>95,10,60,30</area>
+                        <area>105,10,60,40</area>
                         <!--
                             <font>mysmallnarrowgrey</font>
                             <font state="running">mysmallnarrowgreen</font>
@@ -1637,7 +1635,7 @@
                     </textarea>
 
                     <textarea name="rectypestatus">
-                        <area>30,100%-40,50%-10,36</area>
+                        <area>30,100%-40,50%-10,40</area>
                         <align>left,bottom</align>
                         <font>myverysmall</font>
                         <font state="running">myverysmallgreen</font>
@@ -1647,14 +1645,18 @@
                         <font state="warning">myverysmallorange</font>
                     </textarea>
                     <textarea name="programid" from="basetextarea">
-                        <area>100%-400,100%-40,-170,36</area>
+                        <area>100%-550,100%-40,-170,40</area>
                         <align>center,bottom</align>
                         <font>myverysmall</font>
+                    </textarea>
+
+                    <textarea name="filesize_str">
+                        <area>0,0,0,0</area>
                     </textarea>
                 </state> <!-- selectedinactive -->
 
                 <state name="selectedactive" from="selectedinactive">
-                    <area>0,0,100%,320</area>
+                    <area>0,0,100%,340</area>
                     <statetype name="status" from="itemsSelectedState" />
                 </state>
             </statetype>
@@ -1666,10 +1668,10 @@
          -> Program Guide -> 'E'(dit) -> Metadata Options
     -->
     <window name="metadataoptions">
-        <area>100%-820,35,-30,960</area>
+        <area>100%-1000,35,-30,960</area>
 
         <group name="schedulegroup">
-             <area>50%-395,0,790,100%</area>
+             <area>50%-395,0,100%,100%</area>
 
             <shape name="layershape">
                 <area>0,0,100%,100%</area>
@@ -1696,65 +1698,65 @@
                 <value>Select artwork, and find recording information online.</value>
             </textarea>
 
-            <textarea name="inetref_label" from="labeltext">
-                <position>5,200</position>
-                <value>TMDB/TVDB #</value>
-            </textarea>
-
-            <textedit name="inetref_edit" from="basenarrowtextedit">
-                <position>260,200</position>
-            </textedit>
-
             <textarea name="season_label" from="labeltext">
-                <area>55,280,120,90</area>
+                <area>55,190,160,105</area>
                 <value>Season:</value>
             </textarea>
 
             <spinbox name="season_spinbox" from="basespinbox">
-                <position>185,280</position>
+                <position>215,190</position>
             </spinbox>
 
             <textarea name="episode_label" from="season_label">
-                <area>320,280,200,90</area>
+                <area>340,190,220,105</area>
                 <value>Episode:</value>
             </textarea>
 
             <spinbox name="episode_spinbox" from="basespinbox">
-                <position>530,280</position>
+                <position>570,190</position>
             </spinbox>
 
+            <textarea name="inetref_label" from="labeltext">
+                <position>5,300</position>
+                <value>TMDB/TVDB #</value>
+            </textarea>
+
+            <textedit name="inetref_edit" from="basenarrowtextedit">
+                <area>260,295,360,105</area>
+            </textedit>
+
             <button name="query_button" from="varbuttoncenter">
-                <area>160,360,500,90</area>
+                <area>0,400,100%,125</area>
                 <value>Perform Query</value>
             </button>
 
             <button name="online_coverart_button" from="basewidebutton">
-                <area>100,460,-100,90</area>
+                <position>30,530</position>
                 <value>Find Coverart Online</value>
             </button>
 
             <button name="local_coverart_button" from="online_coverart_button">
-                <position>100,540</position>
+                <position>100%-430,530</position>
                 <value>Select Local Coverart</value>
             </button>
 
             <button name="online_fanart_button" from="online_coverart_button">
-                <position>100,620</position>
+                <position>30,635</position>
                 <value>Find Fanart Online</value>
             </button>
 
             <button name="local_fanart_button" from="online_coverart_button">
-                <position>100,700</position>
+                <position>100%-430,635</position>
                 <value>Select Local Fanart</value>
             </button>
 
             <button name="online_banner_button" from="online_coverart_button">
-                <position>100,780</position>
+                <position>30,750</position>
                 <value>Find Banners Online</value>
             </button>
 
             <button name="local_banner_button" from="online_coverart_button">
-                <position>100,860</position>
+                <position>100%-430,750</position>
                 <value>Select Local Banner</value>
             </button>
 
