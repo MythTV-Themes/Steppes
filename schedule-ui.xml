@@ -1735,24 +1735,24 @@
                 <value>Find Coverart Online</value>
             </button>
 
-            <button name="local_coverart_button" from="online_coverart_button">
-                <position>100%-430,530</position>
-                <value>Select Local Coverart</value>
-            </button>
-
             <button name="online_fanart_button" from="online_coverart_button">
                 <position>30,635</position>
                 <value>Find Fanart Online</value>
             </button>
 
-            <button name="local_fanart_button" from="online_coverart_button">
-                <position>100%-430,635</position>
-                <value>Select Local Fanart</value>
-            </button>
-
             <button name="online_banner_button" from="online_coverart_button">
                 <position>30,750</position>
                 <value>Find Banners Online</value>
+            </button>
+
+            <button name="local_coverart_button" from="online_coverart_button">
+                <position>100%-430,530</position>
+                <value>Select Local Coverart</value>
+            </button>
+
+            <button name="local_fanart_button" from="online_coverart_button">
+                <position>100%-430,635</position>
+                <value>Select Local Fanart</value>
             </button>
 
             <button name="local_banner_button" from="online_coverart_button">
