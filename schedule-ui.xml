@@ -1699,7 +1699,7 @@
             </textarea>
 
             <textarea name="season_label" from="labeltext">
-                <area>55,190,160,105</area>
+                <area>10,190,205,105</area>
                 <value>Season:</value>
             </textarea>
 
@@ -1708,7 +1708,7 @@
             </spinbox>
 
             <textarea name="episode_label" from="season_label">
-                <area>340,190,220,105</area>
+                <area>365,190,205,105</area>
                 <value>Episode:</value>
             </textarea>
 

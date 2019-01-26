@@ -32,118 +32,118 @@
     <!-- Small -->
     <fontdef name="mysmall" face="CartoGothic Std">
         <color>#F0F0FF</color>
-        <pixelsize>29</pixelsize>
+        <pixelsize>31</pixelsize>
     </fontdef>
 
     <fontdef name="mysmallbold" face="CartoGothic Std">
         <color>#EEDDFF</color>
-        <pixelsize>29</pixelsize>
+        <pixelsize>31</pixelsize>
         <weight>bold</weight>
     </fontdef>
 
     <fontdef name="mysmallsemibold" face="Titillium">
         <color>#F0F0FF</color>
-        <pixelsize>29</pixelsize>
+        <pixelsize>31</pixelsize>
         <weight>4</weight>
     </fontdef>
 
     <fontdef name="mysmallnarrow" face="Titillium">
         <color>#F0F0FF</color>
-        <pixelsize>29</pixelsize>
+        <pixelsize>31</pixelsize>
         <stretch>4</stretch>
     </fontdef>
 
     <fontdef name="mysmallnarrowbold" face="Titillium">
         <color>#F0F0FF</color>
-        <pixelsize>29</pixelsize>
+        <pixelsize>31</pixelsize>
         <stretch>4</stretch>
         <weight>4</weight>
     </fontdef>
 
     <fontdef name="mysmallnarrowsemibold" face="Titillium">
         <color>#F0F0FF</color>
-        <pixelsize>29</pixelsize>
+        <pixelsize>31</pixelsize>
         <stretch>4</stretch>
         <weight>4</weight>
     </fontdef>
 
     <fontdef name="mysmalllight" face="Titillium">
         <color>#F0F0FF</color>
-        <pixelsize>29</pixelsize>
+        <pixelsize>31</pixelsize>
         <weight>1</weight>
     </fontdef>
 
     <fontdef name="mysmallnarrowlight" face="Titillium">
         <color>#F0F0FF</color>
-        <pixelsize>29</pixelsize>
+        <pixelsize>31</pixelsize>
         <stretch>4</stretch>
         <weight>1</weight>
     </fontdef>
 
     <!-- Very small -->
     <fontdef name="myverysmall" from="mysmall">
-        <pixelsize>26</pixelsize>
+        <pixelsize>28</pixelsize>
     </fontdef>
 
     <fontdef name="myverysmallbold" from="mysmallbold">
-        <pixelsize>26</pixelsize>
+        <pixelsize>28</pixelsize>
     </fontdef>
 
     <fontdef name="myverysmallnarrow" from="mysmallnarrow">
-        <pixelsize>26</pixelsize>
+        <pixelsize>28</pixelsize>
     </fontdef>
 
     <fontdef name="myverysmallnarrowbold" from="mysmallnarrowbold">
-        <pixelsize>26</pixelsize>
+        <pixelsize>28</pixelsize>
     </fontdef>
 
     <fontdef name="myverysmallnarrowlight" from="mysmallnarrowlight">
-        <pixelsize>26</pixelsize>
+        <pixelsize>28</pixelsize>
     </fontdef>
 
     <!-- Medium -->
     <fontdef name="mymedium" from="mysmall">
         <color>#EEDDFF</color>
-        <pixelsize>32</pixelsize>
+        <pixelsize>34</pixelsize>
     </fontdef>
 
     <fontdef name="mymediumbold" from="mysmallbold">
         <color>#EEDDFF</color>
-        <pixelsize>32</pixelsize>
+        <pixelsize>34</pixelsize>
     </fontdef>
 
     <fontdef name="mymediumsemibold" from="mysmallsemibold">
-        <pixelsize>32</pixelsize>
+        <pixelsize>34</pixelsize>
     </fontdef>
 
     <fontdef name="mymediumlight" from="mysmalllight">
-        <pixelsize>32</pixelsize>
+        <pixelsize>34</pixelsize>
     </fontdef>
 
     <fontdef name="mymediumnarrow" from="mysmallnarrow">
-        <pixelsize>32</pixelsize>
+        <pixelsize>34</pixelsize>
     </fontdef>
 
     <fontdef name="mymediumnarrowbold" from="mysmallnarrowbold">
-        <pixelsize>32</pixelsize>
+        <pixelsize>34</pixelsize>
     </fontdef>
 
     <fontdef name="mymediumnarrowlight" from="mysmallnarrowlight">
-        <pixelsize>32</pixelsize>
+        <pixelsize>34</pixelsize>
     </fontdef>
 
     <!-- Large -->
     <fontdef name="mylarge" from="mysmall">
-        <pixelsize>40</pixelsize>
+        <pixelsize>42</pixelsize>
     </fontdef>
 
     <fontdef name="mylargenarrow" from="mysmallnarrow">
-        <pixelsize>40</pixelsize>
+        <pixelsize>42</pixelsize>
     </fontdef>
 
     <fontdef name="mylargebold" from="mysmallbold">
         <color>#EEDDFF</color>
-        <pixelsize>40</pixelsize>
+        <pixelsize>42</pixelsize>
     </fontdef>
 
     <!-- Colors -->
@@ -317,14 +317,14 @@
 
     <fontdef name="mymediumlabel" from="mysmallsemibold">
         <color>#A0BFFF</color>
-        <pixelsize>32</pixelsize>
+        <pixelsize>34</pixelsize>
     </fontdef>
 
     <!-- Mono -->
     <!-- Small -->
     <fontdef name="mysmallmono" face="Ubuntu Mono">
         <color>#F0F0FF</color>
-        <pixelsize>29</pixelsize>
+        <pixelsize>31</pixelsize>
     </fontdef>
 
     <group name="baseDateHeading">
@@ -851,7 +851,7 @@
                     <cornerradius>15</cornerradius>
                 </shape>
                 <textarea name="buttontext" from="basewidgettext">
-                    <area>20,3,-20,-5</area>
+                    <area>30,3,-30,-5</area>
                 </textarea>
             </state>
             <state name="selectedinactive" from="active" />
@@ -1106,7 +1106,7 @@
 
     <!-- Popup dialog to enter into a spin box -->
     <window name="SpinBoxEntryDialog">
-        <area>50%-700,50%-300,1400,300</area>
+        <area>50%-700,50%-300,1200,315</area>
 
         <shape name="background" from="basebuttonshape">
             <type>roundbox</type>
@@ -1131,12 +1131,12 @@
             <group name="spin">
                 <area>10,10,-420,-10</area>
 
-                <textedit name="entry" from="basewidetextedit">
+                <textedit name="entry" from="basecentertextedit">
                     <area>30,10,-10,105</area>
                 </textedit>
 
                 <group name="help">
-                    <area>30,110,-30,80</area>
+                    <area>30,120,-30,80</area>
                     <minsize>300,60</minsize>
 
                     <shape name="pagehelpshape">
