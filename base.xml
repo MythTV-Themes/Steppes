@@ -1770,7 +1770,7 @@
     </group>
 
     <group name="baseMsgGroupLarge" from="baseMsgGroup">
-        <area>50,805,430,250</area>
+        <area>45,805,430,250</area>
     </group>
 
     <group name="baseMsgGroupTall" from="baseMsgGroup">
@@ -1978,13 +1978,13 @@
         <arrange>stack</arrange>
         <align>bottom,left</align>
         <area>30,0,480,795</area>
-        <buttonarea>20,0,-20,100%</buttonarea>
+        <buttonarea>15,0,-30,100%</buttonarea>
         <scrollstyle>center</scrollstyle>
         <wrapstyle>items</wrapstyle>
         <spacing>0</spacing>
 
         <statetype name="buttonitem">
-            <area>6,0,-6,100%</area>
+            <area>0,0,100%,100%</area>
 
             <state name="inactive">
                 <area>20,0,-20,85</area>

@@ -379,7 +379,7 @@
         </group>
 
         <group name="previewgroup">
-            <area>50,805,430,250</area>
+            <area>45,805,430,250</area>
             <minsize vanish="yes">100%,100%</minsize>
 
             <shape name="previewBackground">
