@@ -8,7 +8,7 @@
     -->
     <window name="osd_debug">
         <fontdef name="small" face="CartoGothic Std">
-            <pixelsize>28</pixelsize>
+            <pixelsize>30</pixelsize>
             <color>#FFFFCC</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
@@ -186,7 +186,7 @@
     -->
     <window name="osd_message">
         <fontdef name="small" face="CartoGothic Std">
-            <pixelsize>30</pixelsize>
+            <pixelsize>32</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
@@ -250,13 +250,13 @@
     -->
     <window name="osd_status">
         <fontdef name="title" face="CartoGothic Std">
-            <pixelsize>30</pixelsize>
+            <pixelsize>34</pixelsize>
             <color>#EEDDFF</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
         <fontdef name="small" face="CartoGothic Std">
-            <pixelsize>30</pixelsize>
+            <pixelsize>32</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
@@ -307,27 +307,27 @@
     -->
     <window name="program_info">
         <fontdef name="small" face="CartoGothic Std">
-            <pixelsize>30</pixelsize>
+            <pixelsize>32</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
         <fontdef name="verysmall" from="small">
-            <pixelsize>25</pixelsize>
+            <pixelsize>27</pixelsize>
             <color>#FFFFFF</color>
         </fontdef>
         <fontdef name="descfont" from="small">
-            <pixelsize>32</pixelsize>
+            <pixelsize>34</pixelsize>
         </fontdef>
         <fontdef name="smallinfo" from="small">
             <color>#A0BFFF</color>
         </fontdef>
         <fontdef name="medium" from="small">
-            <pixelsize>34</pixelsize>
+            <pixelsize>36</pixelsize>
         </fontdef>
         <fontdef name="title" from="small">
             <color>#EEDDFF</color>
-            <pixelsize>40</pixelsize>
+            <pixelsize>42</pixelsize>
         </fontdef>
 
         <area>50%-860,450,1720,400</area>
@@ -648,13 +648,13 @@
     -->
     <window name="browse_info">
         <fontdef name="small" face="CartoGothic Std">
-            <pixelsize>30</pixelsize>
+            <pixelsize>32</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
         <fontdef name="verysmall" from="small">
-            <pixelsize>25</pixelsize>
+            <pixelsize>27</pixelsize>
             <color>#FFFFFF</color>
             <stretch>condensed</stretch>
         </fontdef>
@@ -662,11 +662,11 @@
             <color>#A0BFFF</color>
         </fontdef>
         <fontdef name="medium" from="small">
-            <pixelsize>34</pixelsize>
+            <pixelsize>36</pixelsize>
         </fontdef>
         <fontdef name="title" from="small">
             <color>#EEDDFF</color>
-            <pixelsize>40</pixelsize>
+            <pixelsize>42</pixelsize>
         </fontdef>
 
         <area>50%-860,465,1720,385</area>
@@ -767,14 +767,14 @@
     -->
     <window name="ChannelEditor">
         <fontdef name="small" face="CartoGothic Std">
-            <pixelsize>30</pixelsize>
+            <pixelsize>32</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
         <fontdef name="title" from="small">
             <color>#EEDDFF</color>
-            <pixelsize>34</pixelsize>
+            <pixelsize>36</pixelsize>
         </fontdef>
 
         <area>400,200,-400,-200</area>
@@ -947,13 +947,13 @@
     -->
     <window name="osd_program_editor">
         <fontdef name="title" face="CartoGothic Std">
-            <pixelsize>30</pixelsize>
+            <pixelsize>34</pixelsize>
             <color>#EEDDFF</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
         <fontdef name="small" face="CartoGothic Std">
-            <pixelsize>30</pixelsize>
+            <pixelsize>32</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
@@ -1034,7 +1034,7 @@
     -->
     <window name="MythPopupBox">
         <fontdef name="small" face="CartoGothic Std">
-            <pixelsize>30</pixelsize>
+            <pixelsize>32</pixelsize>
             <color>#FFFFFF</color>
         </fontdef>
 
@@ -1137,7 +1137,7 @@
 
     <window name="osd_navigation">
         <fontdef name="verysmall" face="CartoGothic Std">
-            <pixelsize>26</pixelsize>
+            <pixelsize>28</pixelsize>
             <weight>bold</weight>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>

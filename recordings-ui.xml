@@ -586,7 +586,7 @@
          -> 'M'(enu) -> Recording Options -> Change Recording Metadata
     -->
     <window name="editmetadata">
-        <area>50%-600,60,1400,1000</area>
+        <area>50%-600,50,1400,1000</area>
 
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>

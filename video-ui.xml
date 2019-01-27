@@ -1632,7 +1632,7 @@
         </group>
 
         <group name="dialog">
-            <area>50%-550,60,1100,700</area>
+            <area>50%-550,30,1100,840</area>
 
             <shape name="dialogbackground" from="basewidgetshape">
                 <area>0,0,100%,100%</area>
@@ -1648,52 +1648,52 @@
             </textedit>
 
             <textarea name="dvd_text" from="default_text">
-                <position>20,110</position>
+                <position>20,125</position>
                 <value>DVD Player:</value>
             </textarea>
 
             <textedit name="dvdplayer" from="basewidetextedit">
-                <position>280,110</position>
+                <position>280,125</position>
             </textedit>
 
             <textarea name="dvddrive_text" from="labeltext">
-                <position>20,200</position>
+                <position>20,230</position>
                 <value>DVD Drive:</value>
             </textarea>
 
             <textedit name="dvddrive" from="basewidetextedit">
-                <position>280,200</position>
+                <position>280,230</position>
             </textedit>
 
             <textarea name="bluraymount_text" from="default_text">
-                <position>20,290</position>
+                <position>20,2335</position>
                 <value>Blu-ray Mount:</value>
             </textarea>
 
             <textedit name="bluraymount" from="basewidetextedit">
-                <position>280,290</position>
+                <position>280,335</position>
             </textedit>
 
             <textarea name="blureg_text" from="labeltextlarge">
-                <position>20,380</position>
+                <position>20,440</position>
                 <value>Blu-ray Region:</value>
             </textarea>
 
             <buttonlist name="blurayregionlist" from="baselargeselector">
-                <area>280,380,600,90</area>
+                <area>280,440,600,90</area>
             </buttonlist>
 
             <checkbox name="altcheck" from="basecheckbox">
-                <position>280,470</position>
+                <position>280,545</position>
             </checkbox>
 
             <textarea name="altcheck_text" from="labelcheckbox">
-                <position>330,470</position>
+                <position>330,545</position>
                 <value>Enable Alternate Player</value>
             </textarea>
 
             <textedit name="altplayer" from="basewidetextedit">
-                <position>280,560</position>
+                <position>280,650</position>
             </textedit>
 
             <group name="buttons">

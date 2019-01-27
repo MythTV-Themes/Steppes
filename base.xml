@@ -2455,7 +2455,7 @@
                 </group>
 
                 <textarea name="titlesubtitle">
-                    <area>130,100%-42,-170,42</area>
+                    <area>130,100%-40,-170,42</area>
                     <align>left</align>
                     <font>mymedium</font>
                 </textarea>
@@ -2500,7 +2500,7 @@
                 </textarea>
 
                 <textarea name="title">
-                    <area>20,42,-15,48</area>
+                    <area>20,44,-15,48</area>
                     <align>left</align>
                     <font>mylargebold</font>
                     <cutdown>no</cutdown>
@@ -2519,7 +2519,7 @@
                 </textarea>
 
                 <textarea name="subtitle">
-                    <area>130,88,-15,42</area>
+                    <area>130,91,-15,42</area>
                     <align>left</align>
                     <font>mymediumbold</font>
                     <cutdown>no</cutdown>
@@ -2530,7 +2530,7 @@
                 </textarea>
 
                 <textarea name="description" depends="subtitle">
-                    <area>20,125,-20,-42</area>
+                    <area>20,130,-20,-42</area>
                     <align>left</align>
                     <font>mydesc</font>
                     <multiline>yes</multiline>
@@ -2541,7 +2541,7 @@
                     <template>%|RATING| %%|(STARS|) %%DESCRIPTION%</template>
                 </textarea>
                 <textarea name="description0" depends="!subtitle">
-                    <area>20,88,-20,-42</area>
+                    <area>20,91,-20,-42</area>
                     <align>left</align>
                     <font>mydesc</font>
                     <multiline>yes</multiline>
@@ -2553,9 +2553,9 @@
                 </textarea>
 
                 <textarea name="parttotal">
-                    <area>675,100%-50,230,45</area>
-                    <align>hcenter,bottom</align>
-                    <font>mysmalllabel</font>
+                    <area>675,100%-45,230,45</area>
+                    <align>center</align>
+                    <font>myverysmalllabel</font>
                     <template>%Part |PARTNUMBER| of %%PARTTOTAL%</template>
                 </textarea>
 
@@ -2575,10 +2575,10 @@
                 </statetype>
 
                 <textarea name="title">
-                    <position>20,50</position>
+                    <position>20,52</position>
                 </textarea>
                 <textarea name="subtitle">
-                    <position>60,88</position>
+                    <position>60,90</position>
                 </textarea>
             </state>
         </statetype>

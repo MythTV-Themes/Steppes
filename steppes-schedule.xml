@@ -242,10 +242,10 @@
                     </textarea>
 
                     <textarea name="description" depends="subtitle">
-                        <area>20,160,-25,-150</area>
+                        <area>20,130,-20,-150</area>
                     </textarea>
                     <textarea name="description0" depends="!subtitle">
-                        <area>20,110,-25,-150</area>
+                        <area>20,91,-20,-150</area>
                     </textarea>
 
                     <group name="details">
