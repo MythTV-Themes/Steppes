@@ -148,6 +148,7 @@
 
     <!-- Colors -->
     <fontdef name="mydesc" from="mysmall">
+        <pixelsize>30</pixelsize>
         <color>#F0F0FF</color>
     </fontdef>
 
