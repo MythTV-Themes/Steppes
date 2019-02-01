@@ -2345,7 +2345,7 @@
         </textarea>
 
         <textarea name="originalairdate">
-            <area>410,0,250,45</area>
+            <area>455,0,230,45</area>
             <align>center</align>
             <font>mysmallnarrowlabel</font>
             <template>(%1)</template>
@@ -2353,14 +2353,14 @@
         </textarea>
 
         <textarea name="year" depends="!originalairdate">
-            <area>410,0,250,45</area>
+            <area>455,0,230,45</area>
             <align>center</align>
             <font>mysmallnarrowlabel</font>
             <template>(%1)</template>
         </textarea>
 
         <textarea name="lenmins">
-            <area>650,0,200,45</area>
+            <area>670,0,180,45</area>
             <align>right,vcenter</align>
             <font>mysmallnarrowlabel</font>
             <template>%1</template>
