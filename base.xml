@@ -2464,7 +2464,6 @@
                 <textarea name="filesize_str">
                     <area>100%-155,100%-43,-15,45</area>
                     <font>myverysmalllabel</font>
-                    <extraleading>-3</extraleading>
                     <align>right,vcenter</align>
                 </textarea>
 
