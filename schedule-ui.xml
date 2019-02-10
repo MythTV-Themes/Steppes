@@ -135,8 +135,8 @@
             <recordstatus type="WeekslotRecord" image="Images/Metallurgy/guide/gg-rs-weekslot.png"></recordstatus>
             <recordstatus type="FindOneRecord" image="Images/Metallurgy/guide/gg-rs-findone.png"></recordstatus>
             <recordstatus type="OverrideRecord" image="Images/Metallurgy/guide/gg-rs-override.png"></recordstatus>
-            <arrow direction="left" image="Images/Metallurgy/guide/gg-arrow-left.png"></arrow>
-            <arrow direction="right" image="Images/Metallurgy/guide/gg-arrow-right.png"></arrow>
+            <arrow direction="left" image="gg-arrow-left.png"></arrow>
+            <arrow direction="right" image="gg-arrow-right.png"></arrow>
             <font>mysmallnarrow</font>
 
         </guidegrid>
