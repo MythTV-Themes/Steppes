@@ -29,6 +29,12 @@
                     <template>(%1)</template>
                 </textarea>
 
+                <textarea name="titlesubtitle">
+                    <area>130,100%-40,-5,42</area>
+                    <align>left</align>
+                    <font>mymedium</font>
+                </textarea>
+
                 <textarea name="filesize_str">
                     <area>0,0,0,0</area>
                 </textarea>
