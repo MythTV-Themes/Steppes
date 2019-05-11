@@ -7,7 +7,7 @@
         <statetype name="buttonitem">
             <state name="inactive">
                 <textarea name="card" depends="!inputname">
-                    <area>15,6,180,45</area>
+                    <area>0,6,195,45</area>
                     <font>mysmallgrey</font>
                     <font state="running">mysmallgreen</font>
                     <font state="disabled">mysmallgrey</font>
@@ -18,7 +18,7 @@
                     <template>(%1)</template>
                 </textarea>
                 <textarea name="inputname">
-                    <area>15,6,180,45</area>
+                    <area>0,6,195,45</area>
                     <font>mysmallgrey</font>
                     <font state="running">mysmallgreen</font>
                     <font state="disabled">mysmallgrey</font>
@@ -47,7 +47,7 @@
                 </textarea>
 
                 <textarea name="card" depends="!inputname">
-                    <area>15,6,180,45</area>
+                    <area>0,6,195,45</area>
                     <font>mysmallgrey</font>
                     <font state="running">mysmallgreen</font>
                     <font state="disabled">mysmallgrey</font>
@@ -58,7 +58,7 @@
                     <template>(%1)</template>
                 </textarea>
                 <textarea name="inputname">
-                    <area>15,6,180,45</area>
+                    <area>0,6,195,45</area>
                     <font>mysmallgrey</font>
                     <font state="running">mysmallgreen</font>
                     <font state="disabled">mysmallgrey</font>
