@@ -2144,7 +2144,7 @@
                 <area>10,10,-10,-10</area>
                 <font>myverysmall</font>
                 <align>left,top</align>
-                <template>%(|s00e00|) %%|RATING| %%|(STARS|) %%DESCRIPTION%%\n\nPart |PARTNUMBER| of %%PARTTOTAL%</template>
+                <template format="true">[font]myverysmalllabel[/font]%(|s00e00|) %%|RATING| %%|(STARS|) %[font]myverysmall[/font]%DESCRIPTION%%\n\n[font]myverysmalllabel[/font]Part |PARTNUMBER| of %%PARTTOTAL%</template>
                 <scroll direction="vertical" rate="7" returnrate="105"
                         startdelay="15" returndelay="15"/>
                 <cutdown>no</cutdown>
@@ -2163,7 +2163,7 @@
                 <scroll direction="vertical" rate="7" returnrate="105"
                         startdelay="15" returndelay="15"/>
                 <cutdown>no</cutdown>
-                <template>%(|s00e00|) %%|RATING| %%|(STARS|) %%DESCRIPTION%%\n\nPart |PARTNUMBER| of %%PARTTOTAL%</template>
+                <template format="true">[font]myverysmalllabel[/font]%(|s00e00|) %%|RATING| %%|(STARS|) %[font]myverysmall[/font]%DESCRIPTION%%\n\n[font]myverysmalllabel[/font]Part |PARTNUMBER| of %%PARTTOTAL%</template>
             </textarea>
         </group>
     </group>
@@ -2549,7 +2549,7 @@
                     <scroll direction="vertical" rate="10" returnrate="70"
                             startdelay="17" returndelay="17"/>
                     <cutdown>no</cutdown>
-                    <template>%(|s00e00|) %%|RATING| %%|(STARS|) %%DESCRIPTION%</template>
+                    <template format="true">[font]myverysmalllabel[/font]%(|s00e00|) %%|RATING| %%|(STARS|) %[font]mydesc[/font]%DESCRIPTION%</template>
                 </textarea>
 
                 <textarea name="parttotal">
