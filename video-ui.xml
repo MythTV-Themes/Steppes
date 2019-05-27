@@ -209,13 +209,13 @@
                 <state name="inactive">
 
                     <textarea name="inetref">
-                        <area>15,10,150,55</area>
+                        <area>15,10,330,55</area>
                         <align>top,left</align>
                         <font>myverysmallgrey</font>
                     </textarea>
 
                     <textarea name="rating" from="inetref">
-                        <area>100,10,200,55</area>
+                        <area>350,10,100,55</area>
                         <align>top,right</align>
                     </textarea>
 
@@ -228,14 +228,15 @@
                         <position>680,8</position>
                     </statetype>
 
-                    <textarea name="s##e##" from="basetextarea">
-                        <area>100%-200,10,120,55</area>
+                    <textarea name="s00e00" from="basetextarea">
+                        <area>100%-400,10,2000,55</area>
                         <font>myverysmallnarrowgrey</font>
                         <align>top,right</align>
                         <multiline>no</multiline>
                     </textarea>
-                    <textarea name="year" from="s##e##">
-                        <area>100%-70,6,-15,55</area>
+                    <textarea name="s##e##" from="s00e00" />
+                    <textarea name="year" from="s00e00">
+                        <area>100%-200,6,-15,55</area>
                     </textarea>
 
                     <textarea name="title" from="titlesubtitle">
@@ -244,21 +245,40 @@
 
                 </state>
 
-                <state name="active" from="inactive" />
+                <state name="active" from="inactive">
+                    <area>0,0,100%,100</area>
+                </state>
 
                 <state name="selectedinactive" from="active">
-                    <area>0,0,100%,340</area>
+                    <area>150,0,100%,400</area>
 
                     <textarea name="titlesubtitle">
                         <area>0,0,0,0</area>
                     </textarea>
 
-                    <textarea name="description">
-                        <area>25,130,-25,-100</area>
+                    <textarea name="title">
+                        <area>20,50,-15,60</area>
+                        <align>left</align>
+                        <font>mylargebold</font>
+                        <cutdown>no</cutdown>
+                        <scroll direction="horizontal" returnrate="140" returndelay="4" />
+
+                        <template>%TITLE%% - |SUBTITLE%</template>
+                    </textarea>
+
+                    <textarea name="subtitle">
+                        <area>0,0,0,0</area>
+                    </textarea>
+
+                    <textarea name="description" depends="subtitle">
+                        <area>20,110,-25,-150</area>
+                    </textarea>
+                    <textarea name="description0" depends="!subtitle">
+                        <area>20,110,-25,-150</area>
                     </textarea>
 
                     <group name="details">
-                        <area>8,100%-104,-8,-12</area>
+                        <area>8,100%-150,-8,-5</area>
 
                         <shape name="infoshape">
                             <area>0, 0, 100%, 100%</area>
@@ -269,14 +289,15 @@
                         </shape>
 
                         <textarea name="browselbl" from="labeltext">
-                            <area>10,0,250,35</area>
+                            <area>10,0,250,45</area>
                             <value>Browsable:</value>
-                            <font>mysmalllabel</font>
+                            <font>myverysmalllabel</font>
+                            <align>right,bottom</align>
                         </textarea>
 
                         <textarea name="browseable">
-                            <area>270,0,100,40</area>
-                            <align>left,vcenter</align>
+                            <area>270,0,100,45</area>
+                            <align>left,bottom</align>
                             <font>myverysmall</font>
                         </textarea>
 
@@ -286,45 +307,34 @@
                         </textarea>
 
                         <textarea name="director" from="browseable">
-                            <area>660,0,-15,40</area>
+                            <area>660,0,-15,45</area>
                         </textarea>
 
                         <textarea name="fillbl" from="browselbl">
-                            <position>10,30</position>
+                            <position>10,50</position>
                             <value>Filename:</value>
                         </textarea>
 
                         <textarea name="filename" from="browseable">
-                            <area>270,30,-15,40</area>
+                            <area>270,50,-15,45</area>
                             <cutdown>no</cutdown>
                             <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         </textarea>
 
                         <textarea name="cvflbl" from="fillbl">
-                            <position>10,60</position>
+                            <position>10,100</position>
                             <value>Cover File:</value>
                         </textarea>
 
                         <textarea name="coverfile" from="filename">
-                            <position>270,60</position>
+                            <position>270,100</position>
                         </textarea>
 
                     </group>
-
-                    <textarea name="title">
-                        <area>20,45,100%,50</area>
-                        <align>left</align>
-                        <font>mylargebold</font>
-                        <template>%TITLE%</template>
-                    </textarea>
-                    <textarea name="subtitle">
-                        <area>60,88,100%,45</area>
-                        <align>left</align>
-                        <font>mymediumbold</font>
-                    </textarea>
                 </state>
 
                 <state name="selectedactive" from="selectedinactive">
+                    <area>0,0,100%,400</area>
                     <statetype name="status" from="itemsSelectedState" />
                 </state>
 
