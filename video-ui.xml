@@ -87,7 +87,7 @@
 
         <textarea name="subtitle">
             <area>350,90,-15,80</area>
-            <font>mymedium</font>
+            <font>mymediumlight</font>
             <multiline>yes</multiline>
             <align>center</align>
         </textarea>
@@ -240,7 +240,7 @@
                     </textarea>
 
                     <textarea name="title" from="titlesubtitle">
-                        <template>%TITLE%% - |SUBTITLE%</template>
+                    <template format="true">%TITLE%% - [font]mymediumlight[/font]|SUBTITLE%</template>
                     </textarea>
 
                 </state>
@@ -263,7 +263,7 @@
                         <cutdown>no</cutdown>
                         <scroll direction="horizontal" returnrate="140" returndelay="4" />
 
-                        <template>%TITLE%% - |SUBTITLE%</template>
+                        <template format="true">%TITLE%% - [font]mymediumlight[/font]|SUBTITLE%</template>
                     </textarea>
 
                     <textarea name="subtitle">
@@ -378,26 +378,9 @@
             <wrapstyle>selection</wrapstyle>
             <spacing>0</spacing>
 
-            <statetype name="upscrollarrow">
-                <area>0,50%-25,20,20</area>
-                <state type="off">
-                </state>
-                <state type="full">
-                    <imagetype name="upon">
-                        <filename>Images/uparrow-on.png</filename>
-                    </imagetype>
-                </state>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <area>0,50%+5,20,20</area>
-                <state type="off">
-                </state>
-                <state type="full">
-                    <imagetype name="dnon">
-                        <filename>Images/downarrow-on.png</filename>
-                    </imagetype>
-                </state>
-            </statetype>
+            <group name="bar" from="basescrollgroup">
+                <area>10,30,15,-30</area>
+            </group>
 
             <statetype name="buttonitem">
                 <area>0,0,100%,100%</area>
@@ -407,11 +390,11 @@
                     <area>0,0,100%,160</area>
 
                     <shape name="statusborder">
-                        <area>7,0,-7,100%</area>
-                        <minsize>100%,160</minsize>
+                        <area>9,0,-9,100%</area>
+                        <minsize shrink="short">100%,60</minsize>
                         <type>roundbox</type>
-                        <line color="#9e9e9e" alpha="255" width="1" />
-                        <fill color="#000000" alpha="160" />
+                        <line color="#00FFFF" width="2" alpha="160" />
+                        <fill color="#000000" alpha="180" />
                         <cornerradius>10</cornerradius>
                     </shape>
 
@@ -425,19 +408,23 @@
                         <area>230,6,100%,-8</area>
                         <minsize shrink="short" vanish="true">100%,100</minsize>
 
+                        <textarea name="s##e##" depends="subtitle">
+                            <area>15,50,130,50</area>
+                            <font>myverysmalllabel</font>
+                            <extraleading>-3</extraleading>
+                            <align>center</align>
+                        </textarea>
+
                         <textarea name="subtitle">
-                            <area>50,44,-170,45</area>
+                            <area>145,50,-170,45</area>
                             <align>left,vcenter</align>
-                            <font>mymedium</font>
+                            <font>mymediumlight</font>
                         </textarea>
 
                         <textarea name="year" from="basetextarea">
-                            <area>100%-80,0,-15,35</area>
+                            <area>100%-210,2,-15,35</area>
                             <font>mysmallnarrowgrey</font>
                             <align>top,right</align>
-                        </textarea>
-                        <textarea name="s##e##" from="year">
-                            <area>100%-210,0,120,35</area>
                         </textarea>
 
                         <textarea name="rating">
@@ -554,9 +541,24 @@
                     <minsize>100%,160</minsize>
 
                     <shape name="statusborder">
-                        <area>0,0,100%,100%</area>
-                        <minsize>100%,160</minsize>
-                        <line color="#00ffff" alpha="192" width="7" />
+                        <area>9,0,-9,100%</area>
+                        <minsize shrink="short">100%,60</minsize>
+                        <type>roundbox</type>
+                        <line color="#00FFFF" width="2" alpha="160" />
+                        <fill color="#000000" alpha="180" />
+                        <cornerradius>10</cornerradius>
+                    </shape>
+                    <shape name="highlightleft">
+                        <area>0,15,6,-15</area>
+                        <minsize shrink="short">100%,60</minsize>
+                        <type>ellipse</type>
+                        <fill color="#00FFFF" alpha="180" />
+                    </shape>
+                    <shape name="highlightright">
+                        <area>100%-5,15,6,-15</area>
+                        <minsize shrink="short">100%,60</minsize>
+                        <type>ellipse</type>
+                        <fill color="#00FFFF" alpha="180" />
                     </shape>
 
                     <textarea name="title">
@@ -598,7 +600,7 @@
                         </group>
 
                         <group name="extragroup" from="VideoExtraGroup">
-                            <area>230,0,100%,100%</area>
+                            <area>230,5,100%,100%</area>
                             <minsize vanish="true">100%,110</minsize>
                         </group>
 
@@ -970,7 +972,7 @@
                             <area>80,4,-230,50</area>
                             <align>left,vcenter</align>
                             <font>mylarge</font>
-                            <template>%TITLE%% - |SUBTITLE%</template>
+                            <template format="true">%TITLE%% - [font]mymediumlight[/font]|SUBTITLE%</template>
                         </textarea>
 
                         <textarea name="year" from="basetextarea">

@@ -14,43 +14,25 @@
             <area>100,0,-30,40</area>
             <minsize shrink="short" vanish="true">100%,40</minsize>
             <align>left,vcenter</align>
-            <font>mymedium</font>
+            <font>mymediumlight</font>
         </textarea>
 
         <textarea name="description">
-            <area>15,35,-15,100%-135</area>
+            <area>15,45,-15,-50</area>
             <align>top,left</align>
             <minsize shrink="short" vanish="true">100%,1</minsize>
             <font>mysmall</font>
             <multiline>yes</multiline>
-            <cutdown>yes</cutdown>
-            <template>%|(STARS|) %%DESCRIPTION%</template>
+            <cutdown>no</cutdown>
+                    <scroll direction="vertical" rate="10" returnrate="70"
+                            startdelay="17" returndelay="17"/>
+                <template
+                    format="true">[font]myverysmalllabel[/font]%|RATING|
+                %%|(STARS|)
+                %[font]myverysmall[/font]%DESCRIPTION%%\n[font]myverysmallsub[/font]|CAST|
+                %</template>
+
         </textarea>
-
-        <group name="bufferzone">
-            <area>0,0,100%,100%</area>
-            <group name="castgroup">
-                <area>10,100%-140,-10,100%-45</area>
-                <minsize vanish="true">100%,10</minsize>
-
-                <shape name="castshape">
-                    <area>0,0,100%,100%</area>
-                    <minsize vanish="true">100%,10</minsize>
-                    <type>roundbox</type>
-                    <line alpha="0" width="0" />
-                    <fill color="#300530" alpha="180" />
-                    <cornerradius>10</cornerradius>
-                </shape>
-
-                <textarea name="cast" from="basetextarea">
-                    <area>10,2,-10,-2</area>
-                    <minsize shrink="short" vanish="true">100%,10</minsize>
-                    <align>bottom,hcenter</align>
-                    <font>myverysmallnarrowgrey</font>
-                    <multiline>yes</multiline>
-                </textarea>
-            </group>
-        </group>
 
         <textarea name="rating">
             <area>100%-200,100%-40,-15,30</area>
