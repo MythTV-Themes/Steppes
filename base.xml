@@ -2491,6 +2491,10 @@
                     <template>%|[SYNDICATEDEPISODE|]%</template>
 -->
                 </textarea>
+
+                <textarea name="stars" from="s00e00"
+                          depends="!s00e00&amp;!syndicatedepisode">
+                </textarea>
             </state>
 
             <state name="active" from="inactive">
@@ -2531,6 +2535,10 @@
 <!--
                     <template>%|[SYNDICATEDEPISODE|]%</template>
 -->
+                </textarea>
+
+                <textarea name="stars" from="s00e00"
+                          depends="subtitle&amp;!s00e00&amp;!syndicatedepisode">
                 </textarea>
 
                 <textarea name="subtitle">
