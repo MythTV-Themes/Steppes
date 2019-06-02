@@ -240,7 +240,7 @@
                     </textarea>
 
                     <textarea name="title" from="titlesubtitle">
-                    <template format="true">%TITLE%% - [font]mymediumlight[/font]|SUBTITLE%</template>
+                    <template>%TITLE%% - [font]mymediumlight[/font]|SUBTITLE%</template>
                     </textarea>
 
                 </state>
@@ -263,7 +263,7 @@
                         <cutdown>no</cutdown>
                         <scroll direction="horizontal" returnrate="140" returndelay="4" />
 
-                        <template format="true">%TITLE%% - [font]mymediumlight[/font]|SUBTITLE%</template>
+                        <template>%TITLE%% - [font]mymediumlight[/font]|SUBTITLE%</template>
                     </textarea>
 
                     <textarea name="subtitle">
@@ -404,47 +404,51 @@
                         <font>mylarge</font>
                     </textarea>
 
-                    <group name="summarygroup">
+                    <group name="detailgroup">
                         <area>230,6,100%,-8</area>
                         <minsize shrink="short" vanish="true">100%,100</minsize>
 
-                        <textarea name="s##e##" depends="subtitle">
-                            <area>15,50,130,50</area>
-                            <font>myverysmalllabel</font>
-                            <extraleading>-3</extraleading>
-                            <align>center</align>
-                        </textarea>
+                        <group name="extragroup">
+                            <area>0,0,100%,100%</area>
 
-                        <textarea name="subtitle">
-                            <area>145,50,-170,45</area>
-                            <align>left,vcenter</align>
-                            <font>mymediumlight</font>
-                        </textarea>
+                            <textarea name="s##e##" depends="subtitle">
+                                <area>15,55,130,45</area>
+                                <font>myverysmalllabel</font>
+                                <extraleading>-3</extraleading>
+                                <align>center</align>
+                            </textarea>
+
+                            <textarea name="subtitle">
+                                <area>145,55,-170,45</area>
+                                <align>left,vcenter</align>
+                                <font>mymediumlight</font>
+                            </textarea>
+
+                            <textarea name="rating">
+                                <area>100%-215, 100%-38, 400, 30</area>
+
+                                <minsize shrink="short" vanish="true">
+                                1,1</minsize>
+
+                                <align>right,top</align>
+                                <font>myverysmall</font>
+                            </textarea>
+
+                            <textarea name="length" from="rating">
+                                <area>100%-400,100%-40,200,30</area>
+                            </textarea>
+
+                            <textarea name="userrating" from="rating">
+                                <area>10,100%-38,400,30</area>
+                                <align>left,top</align>
+                                <template>User Rating: %1</template>
+                            </textarea>
+                        </group>
 
                         <textarea name="year" from="basetextarea">
                             <area>100%-210,2,-15,35</area>
                             <font>mysmallnarrowgrey</font>
                             <align>top,right</align>
-                        </textarea>
-
-                        <textarea name="rating">
-                            <area>100%-215, 100%-38, 200, 30</area>
-
-                            <minsize shrink="short" vanish="true">
-                            1,1</minsize>
-
-                            <align>right,top</align>
-                            <font>myverysmall</font>
-                        </textarea>
-
-                        <textarea name="length" from="rating">
-                            <area>100%-400,100%-40,200,30</area>
-                        </textarea>
-
-                        <textarea name="userrating" from="rating">
-                            <area>10,100%-38,200,30</area>
-                            <align>left,top</align>
-                            <template>User Rating: %1</template>
                         </textarea>
 
                         <textarea name="director" from="rating">
@@ -536,7 +540,8 @@
                 <state name="active" from="inactive">
                 </state>
 
-                <state name="selectedinactive" from="inactive">
+                <state name="selectedinactive">
+                    <!--  from="inactive"> -->
                     <area>0,0,100%,330</area>
                     <minsize>100%,160</minsize>
 
@@ -562,13 +567,17 @@
                     </shape>
 
                     <textarea name="title">
+                        <area>230,8,-210,60</area>
+                        <align>left,vcenter</align>
+                        <font>mylarge</font>
                         <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         <cutdown>no</cutdown>
                     </textarea>
 
-                    <textarea name="subtitle">
-                        <scroll direction="horizontal" returnrate="140" returndelay="4" />
-                        <cutdown>no</cutdown>
+                    <textarea name="year" from="basetextarea">
+                        <area>100%-210,2,-15,35</area>
+                        <font>mysmallnarrowgrey</font>
+                        <align>top,right</align>
                     </textarea>
 
                     <group name="detailsgroup">
@@ -600,7 +609,7 @@
                         </group>
 
                         <group name="extragroup" from="VideoExtraGroup">
-                            <area>230,5,100%,100%</area>
+                            <area>230,10,100%,-5</area>
                             <minsize vanish="true">100%,110</minsize>
                         </group>
 
@@ -627,6 +636,7 @@
         </buttonlist>
     </window>
 
+
     <!-- Home -> Media Library -> Watch Videos -> 'M'(enu) -> Change View
          -> Switch to Gallery View
     -->
@@ -647,27 +657,13 @@
 
         <group name="progdetails" from="guideprogdetails">
             <group name="wheregroup">
-                <textarea name="s##e##">
-                    <font>mysmallnarrow</font>
-                    <area>5,80,90,40</area>
-                </textarea>
                 <textarea name="year">
+                    <area>10,5,-10,45</area>
                     <font>mysmallnarrow</font>
-                    <align>right</align>
-                    <area>100%-120,80,-10,40</area>
+                    <align>left</align>
                     <template>%1</template>
                 </textarea>
-                <textarea name="length">
-                    <area>120,80,-120,40</area>
-                    <align>hcenter</align>
-                    <font>mysmallnarrow</font>
-                </textarea>
 
-                <textarea name="userrating">
-                    <area>10,5,180,40</area>
-                    <font>myverysmallnarrow</font>
-                    <template>User Rating: %1</template>
-                </textarea>
                 <textarea name="inetref" from="userrating">
                     <area>190,5,-10,40</area>
                     <template>IMDB: %1</template>
@@ -676,22 +672,33 @@
 
                 <statetype name="videolevel" from="basevideolevel">
                     <position>10,45</position>
+                    <align>vcenter,left</align>
                 </statetype>
+
                 <textarea name="rating">
-                    <area>50%,40,-10,40</area>
-                    <align>right</align>
+                    <area>50%,40,-10,45</area>
+                    <align>vcenter,right</align>
                     <font>myverysmallnarrow</font>
                 </textarea>
-            </group>
-            <group name="descgroup">
-                <textarea name="description">
-                    <template>%|RATING| %%|(STARS|) %%DESCRIPTION%%\n\nPart |PARTNUMBER| of %%PARTTOTAL%%\n\nCast: |CAST%%\n\nDirector: |DIRECTOR%</template>
+
+                <textarea name="userrating">
+                    <area>10,100%-50,100%,45</area>
+                    <font>myverysmallnarrow</font>
+                    <template>User Rating: %1</template>
+                    <align>bottom,left</align>
+                </textarea>
+
+                <textarea name="length">
+                    <area>0,100%-50,-10,45</area>
+                    <align>hcenter</align>
+                    <font>mysmallnarrow</font>
+                    <align>bottom,right</align>
                 </textarea>
             </group>
         </group>
 
         <buttonlist name="videos" from="basegridlist">
-            <area>520,40,-30,-70</area>
+            <area>535,40,-25,-50</area>
 
             <statetype name="buttonitem">
                 <area>0,0,100%,100%</area>
@@ -807,6 +814,10 @@
                     </group>
                 </state>
             </statetype>
+
+            <group name="bar" from="basescrollgroup">
+                <area>0,30,12,-60</area>
+            </group>
         </buttonlist>
 
         <textarea name="novideos">
@@ -902,6 +913,10 @@
                 <wrapstyle>selection</wrapstyle>
                 <spacing>0</spacing>
 
+                <group name="bar" from="basescrollgroup">
+                    <area>7,80,15,-30</area>
+                </group>
+
                 <statetype name="buttonitem">
                     <area>0,0,100%,100%</area>
 
@@ -909,15 +924,15 @@
                         <area>0,0,100%,60</area>
 
                         <shape name="statusborder">
-                            <area>5,0,-5,100%</area>
+                            <area>9,0,-9,100%</area>
                             <minsize shrink="short">100%,60</minsize>
                             <type>roundbox</type>
-                            <line color="#9e9e9e" alpha="255" width="1" />
-                            <fill color="#000000" alpha="160" />
+                            <line color="#00FFFF" width="2" alpha="160" />
+                            <fill color="#000000" alpha="180" />
                             <cornerradius>10</cornerradius>
                         </shape>
                         <imagetype name="buttonarrow">
-                            <area>100%-24,23,15,15</area>
+                            <area>100%-26,23,15,15</area>
                             <filename>Images/rightarrow-on.png</filename>
                         </imagetype>
 
@@ -937,7 +952,8 @@
                         </statetype>
 
                         <statetype name="videolevel">
-                            <area>100%-225,10,28,28</area>
+                            <area>100%-140,10,28,28</area>
+
                             <state name="None">
                                 <imagetype name="icon">
                                     <filename>mv_level_none.png</filename>
@@ -969,19 +985,17 @@
                         </statetype>
 
                         <textarea name="title">
-                            <area>80,4,-230,50</area>
+                            <area>80,4,-150,50</area>
+
                             <align>left,vcenter</align>
-                            <font>mylarge</font>
-                            <template format="true">%TITLE%% - [font]mymediumlight[/font]|SUBTITLE%</template>
+                            <font>mymedium</font>
+                            <template>%TITLE%% - [font]mymediumlight[/font]|SUBTITLE%</template>
                         </textarea>
 
                         <textarea name="year" from="basetextarea">
-                            <area>100%-80,4,-15,50</area>
+                            <area>100%-100,10,-15,40</area>
                             <font>mysmallnarrowgrey</font>
                             <align>right,vcenter</align>
-                        </textarea>
-                        <textarea name="s##e##" from="year">
-                            <area>100%-210,4,120,50</area>
                         </textarea>
 
                     </state>
@@ -994,8 +1008,26 @@
                         <minsize shrink="short">100%,60</minsize>
 
                         <shape name="statusborder">
-                            <area>0,0,100%,100%</area>
-                            <line color="#00ffff" alpha="192" width="5" />
+                            <area>9,0,-9,100%</area>
+                            <minsize shrink="short">100%,60</minsize>
+                            <type>roundbox</type>
+                            <line color="#00FFFF" width="3" alpha="160" />
+                            <fill color="#000000" alpha="180" />
+                            <cornerradius>10</cornerradius>
+                        </shape>
+                        <shape name="highlightleft">
+                            <area>0,10,10,-10</area>
+                            <minsize shrink="short">100%,20</minsize>
+                            <type>ellipse</type>
+                            <line color="#000000" width="1" alpha="255" />
+                            <fill color="#00FFFF" alpha="180" />
+                        </shape>
+                        <shape name="highlightright">
+                            <area>100%-9,10,10,-10</area>
+                            <minsize shrink="short">100%,20</minsize>
+                            <type>ellipse</type>
+                            <line color="#000000" width="1" alpha="255" />
+                            <fill color="#00FFFF" alpha="180" />
                         </shape>
 
                         <textarea name="title">
@@ -1005,39 +1037,24 @@
                         </textarea>
 
                         <group name="extragroup" from="VideoExtraGroup">
-                            <area>0,52,100%,100%</area>
+                            <area>15,52,100%,-5</area>
                         </group>
 
+                        <textarea name="year" from="basetextarea">
+                            <area>100%-210,10,-15,40</area>
+                            <font>mysmallnarrowgrey</font>
+                            <align>right,vcenter</align>
+                        </textarea>
+
+                        <textarea name="director" from="rating">
+                            <area>420,100%-38,-420,30</area>
+                            <align>top,hcenter</align>
+                            <template>Directed by %1</template>
+                        </textarea>
                     </state>
 
                     <state name="selectedactive" from="selectedinactive" />
 
-                </statetype>
-                <statetype name="upscrollarrow">
-                    <area>0,100%-85,20,20</area>
-                    <state type="off">
-                        <imagetype name="upoff">
-                            <filename>Images/uparrow-off.png</filename>
-                        </imagetype>
-                    </state>
-                    <state type="full">
-                        <imagetype name="upon">
-                            <filename>Images/uparrow-on.png</filename>
-                        </imagetype>
-                    </state>
-                </statetype>
-                <statetype name="downscrollarrow">
-                    <area>0,100%-55,20,20</area>
-                    <state type="off">
-                        <imagetype name="dnoff">
-                            <filename>Images/downarrow-off.png</filename>
-                        </imagetype>
-                    </state>
-                    <state type="full">
-                        <imagetype name="dnon">
-                            <filename>Images/downarrow-on.png</filename>
-                        </imagetype>
-                    </state>
                 </statetype>
             </buttonlist>
         </buttontree>

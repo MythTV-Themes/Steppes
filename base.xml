@@ -2087,7 +2087,10 @@
     </buttonlist>
 
     <group name="guideprogdetails">
+<!--
         <area>40,35,460,970</area>
+-->
+        <area>25,25,500,980</area>
 
         <group name="wheregroup" from="baseMsgGroup">
             <area>0,0,100%,126</area>
@@ -2118,28 +2121,28 @@
         </group>
 
         <group name="titlegroup" from="baseMsgGroup">
-            <area>0,128,100%,120</area>
+            <area>0,128,100%,130</area>
 
             <shape name="msgShape">
                 <line color="#00FFFF" alpha="160" width="2" />
             </shape>
             <textarea name="title" from="msgText">
-                <font>mymediumbold</font>
+                <font>mymedium</font>
             </textarea>
         </group>
 
         <group name="subtitlegroup" from="baseMsgGroup" depends="subtitle">
-            <area>0,249,100%,119</area>
+            <area>0,259,100%,129</area>
             <shape name="msgShape">
                 <line color="#00FFFF" alpha="160" width="2" />
             </shape>
             <textarea name="subtitle" from="msgText">
-                <font>mysmallbold</font>
+                <font>mymediumlight</font>
             </textarea>
         </group>
 
         <group name="descgroup0" from="baseMsgGroup" depends="subtitle">
-            <area>0,369,100%,100%</area>
+            <area>0,389,100%,100%</area>
 
             <shape name="msgShape">
                 <line color="#00FFFF" alpha="160" width="2" />
@@ -2148,14 +2151,14 @@
                 <area>10,10,-10,-10</area>
                 <font>myverysmall</font>
                 <align>left,top</align>
-                <template format="true">[font]myverysmalllabel[/font]%(|s00e00|) %%|RATING| %%|(STARS|) %[font]myverysmall[/font]%DESCRIPTION%%\n\n[font]myverysmallsub[/font]Part |PARTNUMBER| of %%PARTTOTAL%</template>
+                <template>[font]myverysmalllabel[/font]%(|s00e00|) %%|RATING| %%|(STARS|) %[font]myverysmall[/font]%DESCRIPTION%%\n\n[font]myverysmallsub[/font]Part |PARTNUMBER| of %%PARTTOTAL%%\n[font]myverysmallsub[/font]|CAST| %%[font]myverysmallsub[/font]  \n[font]myverysmalllabel[/font]Director: |DIRECTOR| %</template>
                 <scroll direction="vertical" rate="7" returnrate="105"
                         startdelay="15" returndelay="15"/>
                 <cutdown>no</cutdown>
             </textarea>
         </group>
         <group name="descgroup1" from="baseMsgGroup" depends="!subtitle">
-            <area>0,249,100%,100%</area>
+            <area>0,259,100%,100%</area>
 
             <shape name="msgShape">
                 <line color="#00FFFF" alpha="160" width="2" />
@@ -2167,7 +2170,7 @@
                 <scroll direction="vertical" rate="7" returnrate="105"
                         startdelay="15" returndelay="15"/>
                 <cutdown>no</cutdown>
-                <template format="true">[font]myverysmalllabel[/font]%(|s00e00|) %%|RATING| %%|(STARS|) %[font]myverysmall[/font]%DESCRIPTION%%\n\n[font]myverysmallsub[/font]Part |PARTNUMBER| of %%PARTTOTAL%</template>
+                <template>[font]myverysmalllabel[/font]%(|s00e00|) %%|RATING| %%|(STARS|) %[font]myverysmall[/font]%DESCRIPTION%%\n\n[font]myverysmallsub[/font]Part |PARTNUMBER| of %%PARTTOTAL%%\n[font]myverysmallsub[/font]|CAST| %%[font]myverysmallsub[/font]  \n[font]myverysmalllabel[/font]Director: |DIRECTOR| %</template>
             </textarea>
         </group>
     </group>
@@ -2463,14 +2466,14 @@
                     <area>130,100%-40,-170,42</area>
                     <align>left</align>
                     <font>mymediumlight</font>
-                    <template format="true">%SUBTITLE%%[font]myverysmallsub[/font]  [Part |PARTNUMBER|]%</template>
+                    <template>%SUBTITLE%%[font]myverysmallsub[/font]  [Part |PARTNUMBER|]%</template>
                 </textarea>
 
                 <textarea name="titlesubtitle" depends="!titlesubtitlefull">
                     <area>130,100%-40,-170,42</area>
                     <align>left</align>
                     <font>mymedium</font>
-                    <template format="true">%TITLE%% - [font]mymediumlight[/font]|SUBTITLE%%[font]myverysmallsub[/font]  [Part |PARTNUMBER|]%</template>
+                    <template>%TITLE%% - [font]mymediumlight[/font]|SUBTITLE%%[font]myverysmallsub[/font]  [Part |PARTNUMBER|]%</template>
                 </textarea>
 
                 <textarea name="filesize_str">
@@ -2528,6 +2531,7 @@
 
                 <textarea name="s00e00" depends="subtitle">
                     <area>15,88,115,42</area>
+                    <align>center</align>
                 </textarea>
 
                 <textarea name="syndicatedepisode" from="s00e00"
@@ -2572,7 +2576,7 @@
                     <scroll direction="vertical" rate="10" returnrate="70"
                             startdelay="17" returndelay="17"/>
                     <cutdown>no</cutdown>
-                    <template format="true">[font]myverysmalllabel[/font]%(|s00e00|) %%|RATING| %%|(STARS|) %[font]mydesc[/font]%DESCRIPTION%</template>
+                    <template>[font]myverysmalllabel[/font]%(|s00e00|) %%|RATING| %%|(STARS|) %[font]mydesc[/font]%DESCRIPTION%</template>
                 </textarea>
 
                 <textarea name="parttotal">

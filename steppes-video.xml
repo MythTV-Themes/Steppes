@@ -11,27 +11,45 @@
         <minsize shrink="short" vanish="true">100%,110</minsize>
 
         <textarea name="subtitle">
-            <area>100,0,-30,40</area>
+            <area>130,0,-30,45</area>
             <minsize shrink="short" vanish="true">100%,40</minsize>
             <align>left,vcenter</align>
             <font>mymediumlight</font>
         </textarea>
 
-        <textarea name="description">
-            <area>15,45,-15,-50</area>
+        <textarea name="s##e##" depends="subtitle">
+            <area>0,0,130,45</area>
+            <minsize shrink="short" vanish="true">100%,40</minsize>
+            <font>myverysmalllabel</font>
+            <align>center</align>
+        </textarea>
+
+        <textarea name="description" depends="subtitle">
+            <area>0,43,-15,-45</area>
             <align>top,left</align>
             <minsize shrink="short" vanish="true">100%,1</minsize>
-            <font>mysmall</font>
+            <font>mydesc</font>
             <multiline>yes</multiline>
+            <extraleading>-2</extraleading>
+            <scroll direction="vertical" rate="10" returnrate="70"
+                    startdelay="17" returndelay="17"/>
             <cutdown>no</cutdown>
-                    <scroll direction="vertical" rate="10" returnrate="70"
-                            startdelay="17" returndelay="17"/>
-                <template
-                    format="true">[font]myverysmalllabel[/font]%|RATING|
-                %%|(STARS|)
-                %[font]myverysmall[/font]%DESCRIPTION%%\n[font]myverysmallsub[/font]|CAST|
-                %</template>
+            <template
+               >[font]myverysmalllabel[/font]%|RATING| %%|(STARS|) %[font]mydesc[/font]%DESCRIPTION%%\n[font]myverysmallsub[/font]|CAST| %</template>
+        </textarea>
 
+        <textarea name="description0" depends="!subtitle">
+            <area>0,0,-15,-45</area>
+            <align>top,left</align>
+            <minsize shrink="short" vanish="true">100%,1</minsize>
+            <font>mydesc</font>
+            <multiline>yes</multiline>
+            <extraleading>-2</extraleading>
+            <scroll direction="vertical" rate="10" returnrate="70"
+                    startdelay="17" returndelay="17"/>
+            <cutdown>no</cutdown>
+            <template
+               >[font]myverysmalllabel[/font]%(|s00e00|) %%|RATING| %%|(STARS|) %[font]mydesc[/font]%DESCRIPTION%%\n[font]myverysmallsub[/font]|CAST| %</template>
         </textarea>
 
         <textarea name="rating">
