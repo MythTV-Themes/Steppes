@@ -379,7 +379,7 @@
             <spacing>0</spacing>
 
             <group name="bar" from="basescrollgroup">
-                <area>10,30,15,-30</area>
+                <area>10,30,12,-30</area>
             </group>
 
             <statetype name="buttonitem">
@@ -547,22 +547,24 @@
 
                     <shape name="statusborder">
                         <area>9,0,-9,100%</area>
-                        <minsize shrink="short">100%,60</minsize>
+                        <minsize shrink="short">100%,170</minsize>
                         <type>roundbox</type>
                         <line color="#00FFFF" width="2" alpha="160" />
                         <fill color="#000000" alpha="180" />
                         <cornerradius>10</cornerradius>
                     </shape>
                     <shape name="highlightleft">
-                        <area>0,15,6,-15</area>
-                        <minsize shrink="short">100%,60</minsize>
+                        <area>0,15,10,-15</area>
+                        <minsize shrink="short">100%,150</minsize>
                         <type>ellipse</type>
+                        <line color="#000000" width="1" alpha="255" />
                         <fill color="#00FFFF" alpha="180" />
                     </shape>
                     <shape name="highlightright">
-                        <area>100%-5,15,6,-15</area>
-                        <minsize shrink="short">100%,60</minsize>
+                        <area>100%-9,15,10,-15</area>
+                        <minsize shrink="short">100%,150</minsize>
                         <type>ellipse</type>
+                        <line color="#000000" width="1" alpha="255" />
                         <fill color="#00FFFF" alpha="180" />
                     </shape>
 
@@ -580,12 +582,20 @@
                         <align>top,right</align>
                     </textarea>
 
+                    <imagetype name="coverart">
+                        <area>20,5,100,136</area>
+                        <minsize initiator="false" vanish="yes">100,120</minsize>
+                        <filename />
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+
                     <group name="detailsgroup">
                         <area>0,50,100%,100%</area>
                         <minsize vanish="true">100%,110</minsize>
 
                         <group name="bufferzone">
                             <area>0,0,100%,100%</area>
+
                             <group name="screengroup">
                                 <area>10,100,212,160</area>
                                 <minsize vanish="true">100%,100%</minsize>
@@ -619,15 +629,23 @@
                         <position>135,7</position>
                         <state name="subfolder">
                             <imagetype name="icon">
+                                <area>0,0,80,80</area>
                                 <filename>Images/Graphite/folderopen.png</filename>
                             </imagetype>
                         </state>
                         <state name="upfolder" from="subfolder">
                             <imagetype name="icon">
+                                <area>0,0,80,80</area>
                                 <filename>Images/Graphite/mv_gallery_dir_up_open.png</filename>
                             </imagetype>
                         </state>
                     </statetype>
+
+                    <textarea name="childcount" from="basetextarea">
+                        <area>122,15,80,80</area>
+                        <font>myverysmallyellow</font>
+                        <align>right,vcenter</align>
+                    </textarea>
 
                 </state>
 
