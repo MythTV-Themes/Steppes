@@ -18,7 +18,7 @@
 
     <version>
         <major>2</major>
-        <minor>46</minor>
+        <minor>47</minor>
     </version>
 
     <detail>
@@ -28,6 +28,6 @@
         -->
         <description>Designed to show off some different element arrangements.  Tested at 1280x720 and with Français.
         Reminder: On Watch Recordings screen [Rew] and [FF] can be used to change the Rec. Group.</description>
-        <errata>Requires MythTV from 2019-05-31</errata>
+        <errata>REQUIRES MythTV from 2019-05-31</errata>
     </detail>
 </themeinfo>
