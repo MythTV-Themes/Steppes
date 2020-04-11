@@ -2352,7 +2352,7 @@
         </textarea>
 
         <textarea name="originalairdate">
-            <area>455,0,230,45</area>
+            <area>465,0,230,45</area>
             <align>center</align>
             <font>mysmallnarrowlabel</font>
             <template>(%1)</template>
@@ -2360,7 +2360,7 @@
         </textarea>
 
         <textarea name="year" depends="!originalairdate">
-            <area>455,0,230,45</area>
+            <area>465,0,230,45</area>
             <align>center</align>
             <font>mysmallnarrowlabel</font>
             <template>(%1)</template>
@@ -2557,7 +2557,7 @@
                 </textarea>
 
                 <textarea name="description" depends="subtitle">
-                    <area>20,130,-20,-42</area>
+                    <area>20,128,-20,-42</area>
                     <align>left</align>
                     <font>mydesc</font>
                     <multiline>yes</multiline>
