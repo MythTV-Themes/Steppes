@@ -148,7 +148,7 @@
 
     <!-- Colors -->
     <fontdef name="mydesc" from="mysmall">
-        <pixelsize>30</pixelsize>
+        <pixelsize>29</pixelsize>
         <color>#F0F0FF</color>
     </fontdef>
 
@@ -2149,7 +2149,7 @@
             </shape>
             <textarea name="description" from="msgText">
                 <area>10,10,-10,-10</area>
-                <font>myverysmall</font>
+                <font>mydesc</font>
                 <align>left,top</align>
                 <template>[font]myverysmalllabel[/font]%(|s00e00|) %%|RATING| %%|(STARS|) %[font]myverysmall[/font]%DESCRIPTION%%\n\n[font]myverysmallsub[/font]Part |PARTNUMBER| of %%PARTTOTAL%%\n[font]myverysmallsub[/font]|CAST| %%[font]myverysmallsub[/font]  \n[font]myverysmalllabel[/font]Director: |DIRECTOR| %</template>
                 <scroll direction="vertical" rate="7" returnrate="105"
@@ -2165,7 +2165,7 @@
             </shape>
             <textarea name="description0" from="msgText">
                 <area>10,10,-10,-10</area>
-                <font>myverysmall</font>
+                <font>mydesc</font>
                 <align>left,top</align>
                 <scroll direction="vertical" rate="7" returnrate="105"
                         startdelay="15" returndelay="15"/>
