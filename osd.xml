@@ -377,7 +377,7 @@
         </clock>
 
         <group name="info">
-            <area>220,0,-220,100%</area>
+            <area>210,0,-210,100%</area>
 
             <shape name="infoshape">
                 <area>0,0,100%,100%</area>
@@ -441,36 +441,37 @@
         <statetype name="tvstate">
             <area>0,0,100%,100%</area>
             <state name="WatchingLiveTV">
-                <area>100%-210,50,-10,62</area>
+                <area>100%-220,50,100%,62</area>
                 <imagetype name="image">
                     <area>0,0,100%,100%</area>
-                    <filename>Images/Arclight/LiveTV.png</filename>
+                    <filename>Images/icons/LiveTV.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="WatchingPreRecorded" from="WatchingLiveTV">
                 <imagetype name="image">
-                    <filename>Images/Arclight/Recorded.png</filename>
+                    <filename>Images/icons/Recorded.png</filename>
+                    <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="WatchingVideo" from="WatchingLiveTV">
                 <imagetype name="image">
-                    <filename>Images/Arclight/Video.png</filename>
+                    <filename>Images/icons/Video.png</filename>
                 </imagetype>
             </state>
             <state name="WatchingDVD" from="WatchingLiveTV">
                 <imagetype name="image">
-                    <filename>Images/Arclight/DVD.png</filename>
+                    <filename>Images/icons/DVD.png</filename>
                 </imagetype>
             </state>
             <state name="WatchingBD" from="WatchingLiveTV">
                 <imagetype name="image">
-                    <filename>Images/Arclight/Blu-ray.png</filename>
+                    <filename>Images/icons/Blu-ray.png</filename>
                 </imagetype>
             </state>
             <state name="WatchingRecording" from="WatchingLiveTV">
                 <imagetype name="image">
-                    <filename>Images/Arclight/Recording.png</filename>
+                    <filename>Images/icons/Recording.png</filename>
                 </imagetype>
             </state>
         </statetype>
@@ -478,61 +479,61 @@
         <statetype name="audiocodec">
             <area>0,0,100%,100%</area>
             <state name="PCM_DVD">
-                <area>100%-210,110,-10,62</area>
+                <area>100%-220,110,100%,62</area>
                 <imagetype name="image">
                     <area>0,0,100%,100%</area>
-                    <filename>Images/Arclight/PCM.png</filename>
+                    <filename>Images/icons/PCM.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="PCM_BLURAY" from="PCM_DVD">
                 <imagetype name="image">
-                    <filename>Images/Arclight/PCM-Blu-ray.png</filename>
+                    <filename>Images/icons/PCM-Blu-ray.png</filename>
                 </imagetype>
             </state>
             <state name="AC3" from="PCM_DVD">
                 <imagetype name="image">
-                    <filename>Images/Arclight/AC3.png</filename>
+                    <filename>Images/icons/AC3.png</filename>
                 </imagetype>
             </state>
             <state name="E-AC3" from="PCM_DVD">
                 <imagetype name="image">
-                    <filename>Images/Arclight/EAC3.png</filename>
+                    <filename>Images/icons/EAC3.png</filename>
                 </imagetype>
             </state>
             <state name="TRUEHD" from="PCM_DVD">
                 <imagetype name="image">
-                    <filename>Images/Arclight/TrueHD.png</filename>
+                    <filename>Images/icons/TrueHD.png</filename>
                 </imagetype>
             </state>
             <state name="WMAPRO" from="PCM_DVD">
                 <imagetype name="image">
-                    <filename>Images/Arclight/WMAPRO.png</filename>
+                    <filename>Images/icons/WMAPRO.png</filename>
                 </imagetype>
             </state>
             <state name="DTS" from="PCM_DVD">
                 <imagetype name="image">
-                    <filename>Images/Arclight/DTS.png</filename>
+                    <filename>Images/icons/DTS.png</filename>
                 </imagetype>
             </state>
             <state name="AAC" from="PCM_DVD">
                 <imagetype name="image">
-                    <filename>Images/Arclight/AAC.png</filename>
+                    <filename>Images/icons/aac.png</filename>
                 </imagetype>
             </state>
             <state name="MP2" from="PCM_DVD">
                 <imagetype name="image">
-                    <filename>Images/Arclight/MP2.png</filename>
+                    <filename>Images/icons/MP2.png</filename>
                 </imagetype>
             </state>
             <state name="MP3" from="PCM_DVD">
                 <imagetype name="image">
-                    <filename>Images/Arclight/MP3.png</filename>
+                    <filename>Images/icons/MP3.png</filename>
                 </imagetype>
             </state>
             <state name="VORBIS" from="PCM_DVD">
                 <imagetype name="image">
-                    <filename>Images/Arclight/Vorbis.png</filename>
+                    <filename>Images/icons/Vorbis.png</filename>
                 </imagetype>
             </state>
         </statetype>
@@ -540,36 +541,36 @@
         <statetype name="audiochannels">
             <area>0,0,100%,100%</area>
             <state name="1">
-                <area>100%-210,170,-10,62</area>
+                <area>100%-220,170,100%,62</area>
                 <imagetype name="image">
                     <area>0,0,100%,100%</area>
-                    <filename>Images/Arclight/1chan.png</filename>
+                    <filename>Images/icons/1chan.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="2" from="1">
                 <imagetype name="image">
-                    <filename>Images/Arclight/2chan.png</filename>
+                    <filename>Images/icons/2chan.png</filename>
                 </imagetype>
             </state>
             <state name="5" from="1">
                 <imagetype name="image">
-                    <filename>Images/Arclight/5chan.png</filename>
+                    <filename>Images/icons/5chan.png</filename>
                 </imagetype>
             </state>
             <state name="6" from="1">
                 <imagetype name="image">
-                    <filename>Images/Arclight/6chan.png</filename>
+                    <filename>Images/icons/6chan.png</filename>
                 </imagetype>
             </state>
             <state name="7" from="1">
                 <imagetype name="image">
-                    <filename>Images/Arclight/7chan.png</filename>
+                    <filename>Images/icons/7chan.png</filename>
                 </imagetype>
             </state>
             <state name="8" from="1">
                 <imagetype name="image">
-                    <filename>Images/Arclight/8chan.png</filename>
+                    <filename>Images/icons/8chan.png</filename>
                 </imagetype>
             </state>
         </statetype>
@@ -577,41 +578,46 @@
         <statetype name="videocodec">
             <area>0,0,100%,100%</area>
             <state name="MPEG-2">
-                <area>100%-210,230,-10,62</area>
+                <area>100%-220,230,100%,62</area>
                 <imagetype name="image">
                     <area>0,0,100%,100%</area>
-                    <filename>Images/Arclight/MPEG2.png</filename>
+                    <filename>Images/icons/MPEG2.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="VC-1" from="MPEG-2">
                 <imagetype name="image">
-                    <filename>Images/Arclight/VC1.png</filename>
+                    <filename>Images/icons/VC1.png</filename>
                 </imagetype>
             </state>
             <state name="H.264" from="MPEG-2">
                 <imagetype name="image">
-                    <filename>Images/Arclight/H264.png</filename>
+                    <filename>Images/icons/avc.png</filename>
+                </imagetype>
+            </state>
+            <state name="HEVC" from="MPEG-2">
+                <imagetype name="image">
+                    <filename>Images/icons/hevc.png</filename>
                 </imagetype>
             </state>
             <state name="MPEG-4" from="MPEG-2">
                 <imagetype name="image">
-                    <filename>Images/Arclight/ASP.png</filename>
+                    <filename>Images/icons/ASP.png</filename>
                 </imagetype>
             </state>
             <state name="RTjpeg" from="MPEG-2">
                 <imagetype name="image">
-                    <filename>Images/Arclight/RTJPEG.png</filename>
+                    <filename>Images/icons/RTJPEG.png</filename>
                 </imagetype>
             </state>
             <state name="WMV3" from="MPEG-2">
                 <imagetype name="image">
-                    <filename>Images/Arclight/WMV3.png</filename>
+                    <filename>Images/icons/WMV3.png</filename>
                 </imagetype>
             </state>
             <state name="H.263" from="MPEG-2">
                 <imagetype name="image">
-                    <filename>Images/Arclight/H263.png</filename>
+                    <filename>Images/icons/H263.png</filename>
                 </imagetype>
             </state>
         </statetype>
@@ -619,26 +625,26 @@
         <statetype name="videodescrip">
             <area>0,0,100%,100%</area>
             <state name="SD">
-                <area>100%-210,290,-10,62</area>
+                <area>100%-220,290,100%,62</area>
                 <imagetype name="image">
                     <area>0,0,100%,100%</area>
-                    <filename>Images/Arclight/SD.png</filename>
+                    <filename>Images/icons/SD.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="HD_720_P" from="SD">
                 <imagetype name="image">
-                    <filename>Images/Arclight/720p.png</filename>
+                    <filename>Images/icons/720p.png</filename>
                 </imagetype>
             </state>
             <state name="HD_1080_I" from="SD">
                 <imagetype name="image">
-                    <filename>Images/Arclight/1080i.png</filename>
+                    <filename>Images/icons/1080i.png</filename>
                 </imagetype>
             </state>
             <state name="HD_1080_P" from="SD">
                 <imagetype name="image">
-                    <filename>Images/Arclight/1080p.png</filename>
+                    <filename>Images/icons/1080p.png</filename>
                 </imagetype>
             </state>
         </statetype>

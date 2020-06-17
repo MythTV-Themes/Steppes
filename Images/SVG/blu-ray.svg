@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="170mm"
+   height="110mm"
+   viewBox="0 0 170 110"
+   version="1.1"
+   id="svg3812"
+   sodipodi:docname="blu-ray.svg"
+   inkscape:version="0.92.4 (unknown)"
+   inkscape:export-filename="/home/john/.mythtv/themes/Steppes/Images/icons/ASP.png"
+   inkscape:export-xdpi="26.65"
+   inkscape:export-ydpi="26.65">
+  <defs
+     id="defs3806">
+    <linearGradient
+       id="linearGradient5407"
+       inkscape:collect="always">
+      <stop
+         id="stop5403"
+         offset="0"
+         style="stop-color:#b3b3b3;stop-opacity:1" />
+      <stop
+         id="stop5405"
+         offset="1"
+         style="stop-color:#4d4d4d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5365"
+       inkscape:collect="always">
+      <stop
+         id="stop5398"
+         offset="0"
+         style="stop-color:#000000;stop-opacity:1;" />
+      <stop
+         id="stop5400"
+         offset="1"
+         style="stop-color:#000000;stop-opacity:0.898" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5365-2">
+      <stop
+         style="stop-color:#000000;stop-opacity:1"
+         offset="0"
+         id="stop5361" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1"
+         offset="1"
+         id="stop5363" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5407"
+       id="linearGradient4816"
+       x1="10.110879"
+       y1="24.425528"
+       x2="158.68463"
+       y2="64.293121"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.82996021,0,0,0.82996017,25.968198,8.2663814)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5365-2"
+       id="linearGradient5367"
+       x1="15.497024"
+       y1="197.68675"
+       x2="120.10194"
+       y2="290.10193"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5365"
+       id="linearGradient5394"
+       x1="158.96548"
+       y1="23.567135"
+       x2="9.6427832"
+       y2="63.911613"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="246.71326"
+     inkscape:cy="225.21427"
+     inkscape:document-units="mm"
+     inkscape:current-layer="svg3812"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     inkscape:window-width="3440"
+     inkscape:window-height="1358"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3809">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-187)">
+    <rect
+       id="rect3816"
+       width="160"
+       height="100"
+       x="5"
+       y="192"
+       style="opacity:0.75;fill:url(#linearGradient5367);stroke:#f2f2f2;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
+       ry="24"
+       rx="0"
+       inkscape:export-xdpi="26.65"
+       inkscape:export-ydpi="26.65"
+       inkscape:export-filename="/home/john/.mythtv/themes/Steppes/Images/icons/hevc.png" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="Gradient" />
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot4789"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:192px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+     transform="scale(0.26458333)"><flowRegion
+       id="flowRegion4791"><rect
+         id="rect4793"
+         width="548.57141"
+         height="200.35715"
+         x="47.5"
+         y="50.390888" /></flowRegion><flowPara
+       id="flowPara4795">HEVC</flowPara></flowRoot>  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.79999924px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+     x="75.122765"
+     y="36.767117"
+     id="text4799"><tspan
+       sodipodi:role="line"
+       id="tspan4797"
+       x="75.122765"
+       y="81.713211"
+       style="stroke-width:0.26458332" /></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.55594635px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#b3b3b3;fill-opacity:1;stroke:url(#linearGradient4816);stroke-width:1.65992045;stroke-miterlimit:4;stroke-dasharray:none"
+     x="95.382652"
+     y="60.123093"
+     id="text4803"
+     transform="scale(0.88362204,1.1317056)"
+     inkscape:export-filename="/home/john/.mythtv/themes/Steppes/Images/icons/hevc.png"
+     inkscape:export-xdpi="26.65"
+     inkscape:export-ydpi="26.65"><tspan
+       sodipodi:role="line"
+       id="tspan4801"
+       x="95.382652"
+       y="60.123093"
+       style="fill:#b3b3b3;fill-opacity:1;stroke:url(#linearGradient4816);stroke-width:1.65992045;stroke-miterlimit:4;stroke-dasharray:none">Blu-ray</tspan></text>
+</svg>

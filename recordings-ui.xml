@@ -720,7 +720,10 @@
                 <state name="active">
                     <area>0,0,-40,54</area>
                     <statetype name="icons">
+<!--
                         <position>10,10</position>
+-->
+                        <area>10,10,70,-10</area>
                         <state name="commflagged">
                             <imagetype name="statusimage">
                                 <filename>Images/icons/commflagged.png</filename>
@@ -797,9 +800,23 @@
                                 <filename>Images/icons/1080i-small.png</filename>
                             </imagetype>
                         </state>
-                        <state name="avchd">
+                        <state name="4k">
                             <imagetype name="statusimage">
-                                <filename>Images/icons/avchd.png</filename>
+                                <filename>Images/icons/4k-small.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="avchd">
+                            <area>0,0,100%,100%</area>
+                            <imagetype name="statusimage">
+                                <area>0,0,70,100%</area>
+                                <filename>Images/icons/avc.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="hevc">
+                            <area>0,0,100%,100%</area>
+                            <imagetype name="statusimage">
+                                <area>0,0,70,100%</area>
+                                <filename>Images/icons/hevc.png</filename>
                             </imagetype>
                         </state>
                         <state name="widescreen">
