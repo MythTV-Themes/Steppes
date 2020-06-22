@@ -518,7 +518,7 @@
             </state>
             <state name="AAC" from="PCM_DVD">
                 <imagetype name="image">
-                    <filename>Images/icons/aac.png</filename>
+                    <filename>Images/icons/AAC.png</filename>
                 </imagetype>
             </state>
             <state name="MP2" from="PCM_DVD">
@@ -592,12 +592,12 @@
             </state>
             <state name="H.264" from="MPEG-2">
                 <imagetype name="image">
-                    <filename>Images/icons/avc.png</filename>
+                    <filename>Images/icons/AVC.png</filename>
                 </imagetype>
             </state>
             <state name="HEVC" from="MPEG-2">
                 <imagetype name="image">
-                    <filename>Images/icons/hevc.png</filename>
+                    <filename>Images/icons/HEVC.png</filename>
                 </imagetype>
             </state>
             <state name="MPEG-4" from="MPEG-2">
@@ -645,6 +645,16 @@
             <state name="HD_1080_P" from="SD">
                 <imagetype name="image">
                     <filename>Images/icons/1080p.png</filename>
+                </imagetype>
+            </state>
+            <state name="UHD_4k_I" from="SD">
+                <imagetype name="image">
+                    <filename>Images/icons/4Ki.png</filename>
+                </imagetype>
+            </state>
+            <state name="UHD_4k_P" from="SD">
+                <imagetype name="image">
+                    <filename>Images/icons/4Kp.png</filename>
                 </imagetype>
             </state>
         </statetype>
