@@ -919,13 +919,13 @@
                 <multiline>true</multiline>
             </textarea>
 
-            <button name="dummy" from="basebutton">
-                <area>0%,80%,0,0</area>
-                <value></value>
-                <helptext></helptext>
-            </button>
-
             <group name="buttons" from="fourbuttons">
+                <button name="dummy" from="basebutton">
+                    <area>0%,80%,0,0</area>
+                    <value></value>
+                    <helptext></helptext>
+                </button>
+
                 <button name="retry" from="button1">
                     <value>Retry</value>
                     <helptext>Try again to establish connections.</helptext>
