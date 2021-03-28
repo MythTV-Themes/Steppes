@@ -807,18 +807,18 @@
         </group>
 
         <group name="infolistgroup" from="basevaluelistgroup" depends="infolist">
-            <area>50,40,-50,-110</area>
+            <area>25,40,-25,-100</area>
             <buttonlist name="infolist" from="valuelist">
                 <statetype name="buttonitem">
                     <state name="active">
                         <textarea name="name">
-                             <area>5,3,22%,-3</area>
+                             <area>5,3,25%,-3</area>
                         </textarea>
                         <textarea name="sep">
-                            <area>23%,3,15,-3</area>
+                            <area>26%,3,15,-3</area>
                         </textarea>
                          <textarea name="value">
-                             <area>23%+15,3,-10,-3</area>
+                             <area>26%+15,3,-10,-3</area>
                          </textarea>
                     </state>
                     <state name="selectedinactive" from="active" />
