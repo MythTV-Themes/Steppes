@@ -59,7 +59,7 @@
             </textarea>
             <textarea name="storagerate">
                 <font>data</font>
-                <area>170,5,200,90</area>
+                <area>170,5,260,90</area>
                 <align>left,vcenter</align>
                 <template>: %1</template>
             </textarea>
