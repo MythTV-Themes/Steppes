@@ -500,6 +500,11 @@
                     <filename>Images/Arclight/EAC3.png</filename>
                 </imagetype>
             </state>
+            <state name="EAC3" from="PCM_DVD">
+                <imagetype name="image">
+                    <filename>Images/Arclight/EAC3.png</filename>
+                </imagetype>
+            </state>
             <state name="TRUEHD" from="PCM_DVD">
                 <imagetype name="image">
                     <filename>Images/Arclight/TrueHD.png</filename>
