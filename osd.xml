@@ -1059,7 +1059,7 @@
             <color>#FFFFFF</color>
         </fontdef>
 
-        <area>50,60,525,-60</area>
+        <area>50,55,525,-55</area>
 
         <shape name="basebackground">
             <area>0,0,100%,100%</area>
@@ -1074,7 +1074,7 @@
             <line color="#55FFFF" alpha="96" width="2" />
         </shape>
         <textarea name="messagearea">
-            <area>10,5,-10,300</area>
+            <area>10,5,-10,190</area>
             <font>small</font>
             <multiline>yes</multiline>
             <align>center</align>
@@ -1083,7 +1083,7 @@
         <buttonlist name="list">
             <arrange>stack</arrange>
             <align>center</align>
-            <area>12,190,-12,-20</area>
+            <area>12,120,-12,-10</area>
             <layout>vertical</layout>
             <spacing>2</spacing>
             <wrapstyle>selection</wrapstyle>
