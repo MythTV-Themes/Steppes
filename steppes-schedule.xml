@@ -272,7 +272,7 @@
                         </textarea>
 
                         <textarea name="category">
-                            <area>370,0,360,45</area>
+                            <area>370,1,360,45</area>
                             <align>left,vcenter</align>
                             <font>myverysmall</font>
                         </textarea>
@@ -284,12 +284,12 @@
                         </textarea>
 
                         <textarea name="recordingprofile" from="category">
-                            <position>1110,0</position>
+                            <position>1110,1</position>
                         </textarea>
 
                         <textarea name="scheduleinfo"
                                   from="category">
-                            <area>100%-330,0,-15,-5</area>
+                            <position>100%-360,1</position>
                             <align>right,top</align>
                             <multiline>yes</multiline>
                         </textarea>
@@ -301,7 +301,7 @@
                         </textarea>
 
                         <textarea name="storagegroup" from="category">
-                            <area>370,50,-280,45</area>
+                            <position>370,51</position>
                             <cutdown>no</cutdown>
                             <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         </textarea>
@@ -314,7 +314,7 @@
 
                         <textarea name="recordinggroup"
                                   from="storagegroup">
-                            <position>370,100</position>
+                            <position>370,101</position>
                         </textarea>
                     </group>
                 </state>

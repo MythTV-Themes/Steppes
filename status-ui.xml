@@ -30,7 +30,7 @@
                 <state name="inactive">
                     <area>0,0,100%,100%</area>
                     <minsize shrink="short">100%,50</minsize>
-                    <statetype name="status" from="itemsNotSelectedState">
+                    <statetype name="status" from="itemsNotSelectedStateNB">
                         <area>0,0,100%,100%</area>
                         <minsize shrink="short">100%,50</minsize>
                     </statetype>
@@ -46,7 +46,7 @@
 
                 <state name="selectedinactive" from="inactive">
                     <area>0,0,100%,100%</area>
-                    <statetype name="status" from="itemsNotSelectedState">
+                    <statetype name="status" from="itemsNotSelectedStateNB">
                         <area>0,0,100%,100%</area>
                         <minsize shrink="short">100%,50</minsize>
                     </statetype>
@@ -59,7 +59,7 @@
                 <state name="active" from="inactive">
                     <area>0,0,100%,100%</area>
                     <minsize shrink="short">100%,50</minsize>
-                    <statetype name="status" from="itemsNotSelectedState">
+                    <statetype name="status" from="itemsNotSelectedStateNB">
                         <area>0,0,100%,100%</area>
                         <minsize shrink="short">100%,50</minsize>
                     </statetype>

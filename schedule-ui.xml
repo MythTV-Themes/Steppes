@@ -434,6 +434,7 @@
                 <area>0,0,100%,100%</area>
                 <state name="inactive">
                     <area>0,0,100%,55</area>
+
                     <imagetype name="icon">
                         <area>15,10,60,-10</area>
                         <preserveaspect>true</preserveaspect>
@@ -488,8 +489,12 @@
                     </textarea>
 
                 </state>
-                <state name="active" from="inactive" />
-                <state name="selectedinactive" from="inactive" />
+                <state name="active" from="inactive">
+                    <statetype name="status" from="itemsNotSelectedStateNB" />
+                </state>
+                <state name="selectedinactive" from="inactive">
+                    <statetype name="status" from="itemsNotSelectedStateNB" />
+                </state>
                 <state name="selectedactive" from="selectedinactive">
                     <statetype name="status" from="itemsSelectedState" />
                 </state>

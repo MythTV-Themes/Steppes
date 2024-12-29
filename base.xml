@@ -2248,6 +2248,23 @@
         </state>
     </statetype>
 
+    <statetype name="itemsNotSelectedStateNB" from="itemsNotSelectedState">
+        <state name="default">
+            <area>0,0,100%,100%</area>
+            <minsize shrink="short">100%,60</minsize>
+            <shape name="statusborder">
+                <area>9,0,-9,100%</area>
+                <minsize shrink="short">100%,60</minsize>
+                <type>roundbox</type>
+                <line color="#00FFFF" width="2" alpha="160" />
+                <fill color="#000000" alpha="100" />
+                <cornerradius>10</cornerradius>
+            </shape>
+        </state>
+        <state name="normal" from="default" />
+        <state name="disabled" from="default" />
+    </statetype>
+
     <statetype name="itemsSelectedState">
         <area>0,0,100%,100%</area>
         <minsize shrink="short">100%,60</minsize>
