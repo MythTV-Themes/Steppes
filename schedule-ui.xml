@@ -608,7 +608,7 @@
          -> Titles
     -->
     <window name="phrasepopup" from="MythDialogBox">
-        <area>-1,30,1000,880</area>
+        <area>530,30,-50,880</area>
 
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>
@@ -713,8 +713,7 @@
          -> Advanced
     -->
     <window name="powersearchpopup" from="MythDialogBox">
-        <area>-1,30,1000,950</area>
-
+        <area>530,30,-50,880</area>
         <shape name="dialogbackground" from="basewidgetshape">
             <area>0,0,100%,100%</area>
         </shape>
@@ -756,15 +755,23 @@
             </group>
         </group>
 
-        <group name="instructions" from="baseMsgGroup">
-            <textarea name="showinstr" from="msgText">
+        <group name="instructions" from="baseMsgGroupMedium">
+            <textarea name="showinstr">
                 <value>(1) Time (2) Title</value>
+            </textarea>
+            <textarea name="groupby" from="message">
+                <template>Group by: %1</template>
             </textarea>
         </group>
 
         <group name="viewgroup" from="baseModeGroup">
             <textarea name="curview" from="pagemode" />
         </group>
+
+        <textarea name="curview" from="basetextarea">
+            <area>800,4,440,40</area>
+            <align>right,bottom</align>
+        </textarea>
 
         <buttonlist name="proglist" from="scheduleList" />
     </window>
@@ -780,7 +787,7 @@
         <group name="PageHeading" from="basePageHeading">
             <group name="Heading">
                 <textarea name="text">
-                    <value>Previously Recorded </value>
+                    <value>Previously Recorded</value>
                 </textarea>
             </group>
         </group>
@@ -899,11 +906,15 @@
             </group>
         </group>
 
-        <group name="helpmsg" from="baseMsgGroupLarge">
-            <textarea name="help" from="msgText">
+        <group name="instructions" from="baseMsgGroupMedium">
+            <area>45,805,430,250</area>
+            <textarea name="showinstr">
                 <align>center</align>
                 <value>Press Up/Down from letter list, to navigate to another list.  Press Left/Right from Show or Episode list to navigate to another list.</value>
                 <font>myverysmall</font>
+            </textarea>
+            <textarea name="groupby" from="message">
+                <template>Group by: %1</template>
             </textarea>
         </group>
 

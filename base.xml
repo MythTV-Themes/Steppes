@@ -1774,6 +1774,16 @@
         </textarea>
     </group>
 
+    <group name="baseMsgGroupMedium" from="baseMsgGroup">
+        <area>45,955,430,100</area>
+        <textarea name="showinstr" from="msgText">
+            <area>5,1,-5,-40</area>
+        </textarea>
+        <textarea name="message" from="msgText">
+            <area>5,100%-40,-5,-1</area>
+        </textarea>
+    </group>
+
     <group name="baseMsgGroupLarge" from="baseMsgGroup">
         <area>45,805,430,250</area>
     </group>
