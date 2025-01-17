@@ -1138,7 +1138,7 @@
             </statetype>
 
             <statetype name="upscrollarrow">
-                <area>100%-20,50%-25,20,20</area>
+                <area>100%-17,0,20,20</area>
                 <state type="full">
                     <imagetype name="upon">
                         <filename>Images/uparrow-on.png</filename>
@@ -1146,7 +1146,7 @@
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <area>100%-20,50%+5,20,20</area>
+                <area>100%-17,100%-20,20,20</area>
                 <state type="full">
                     <imagetype name="dnon">
                         <filename>Images/downarrow-on.png</filename>
