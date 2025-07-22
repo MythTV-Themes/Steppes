@@ -41,7 +41,13 @@
                     <area>0,0,100%,230</area>
 
                     <shape name="groupBorder">
-                        <area>10,0,-10,100%</area>
+                        <area>10,3,-10,-3</area>
+                        <cornerradius>10</cornerradius>
+                    </shape>
+
+                    <shape name="groupOutline">
+                        <area>7,0,-7,100%</area>
+                        <cornerradius>9</cornerradius>
                     </shape>
 
                     <shape name="highlightleft">
@@ -67,7 +73,7 @@
                         <alpha>192</alpha>
                     </shape>
                     <shape name="descbottom">
-                        <area>13,100%-55,-13,-3</area>
+                        <area>13,100%-55,-13,-6</area>
                         <type>roundbox</type>
                         <cornerradius>1</cornerradius>
                         <fill style="gradient">

@@ -1898,9 +1898,9 @@
                         <area>0,0,100%,100%</area>
                         <minsize>30,100%</minsize>
                         <type>roundbox</type>
-                        <line color="#00FFFF" alpha="96" width="2" />
-                        <fill color="#000000" alpha="144" />
                         <cornerradius>15</cornerradius>
+                        <line color="#00FFFF" alpha="160" width="1" />
+                        <fill color="#000000" alpha="180" />
                     </shape>
                     <textarea name="buttontext">
                         <area>15,2,-15,-2</area>
@@ -1919,7 +1919,7 @@
             <state name="active" from="inactive">
                 <group name="areagroup">
                     <shape name="recGroupShape">
-                        <line color="#ff9147" alpha="250" width="2" />
+                        <line color="#B03090" alpha="255" width="2" />
                     </shape>
                 </group>
             </state>
@@ -1928,15 +1928,24 @@
                 <area>0,0,100%,100%</area>
                 <minsize>30,100%</minsize>
                 <group name="areagroup">
-                    <area>0,2,100%,-2</area>
+                    <area>0,4,100%,-4</area>
                     <minsize>30,100%</minsize>
                     <shape name="recGroupShape">
-                        <area>0,4,100%,-4</area>
+                        <area>2,2,-2,-2</area>
                         <minsize>30,100%</minsize>
                         <type>roundbox</type>
-                        <line color="#50EFDF" alpha="250" width="4" />
+                        <line color="#00FFFF" alpha="250" width="4" />
                         <fill color="#000000" alpha="180" />
                     </shape>
+
+                    <shape name="groupOutline">
+                        <area>0,0,100%,100%</area>
+                        <minsize>30,100%</minsize>
+                        <type>roundbox</type>
+                        <cornerradius>13</cornerradius>
+                        <line color="#B03090" alpha="255" width="2" />
+                    </shape>
+
                 </group>
                 <shape name="highlighttop">
                     <area>22,0,-22,4</area>
@@ -1953,11 +1962,14 @@
             </state>
 
             <state name="selectedactive" from="selectedinactive">
+<!--
                 <group name="areagroup">
                     <shape name="recGroupShape">
                         <line color="#ff9147" alpha="250" width="4" />
                     </shape>
                 </group>
+-->
+
                 <shape name="highlighttop">
                     <fill color="#ff9147" alpha="250" />
                 </shape>
@@ -1992,7 +2004,7 @@
     <buttonlist name="groupsList">
         <arrange>stack</arrange>
         <align>bottom,left</align>
-        <area>30,0,480,795</area>
+        <area>30,15,480,767</area>
         <buttonarea>15,0,-30,100%</buttonarea>
         <scrollstyle>center</scrollstyle>
         <wrapstyle>items</wrapstyle>
@@ -2054,9 +2066,16 @@
             <state name="selectedactive" from="selectedinactive">
                 <area>0,0,100%,85</area>
                 <shape name="groupBorder">
+                    <area>8,2,-8,-2</area>
+                    <type>roundbox</type>
+                    <cornerradius>12</cornerradius>
+                    <line color="#50EFDF" alpha="200" width="3" />
+                </shape>
+                <shape name="groupOutline">
                     <area>6,0,-6,100%</area>
                     <type>roundbox</type>
-                    <line color="#50EFDF" alpha="250" width="4" />
+                    <cornerradius>10</cornerradius>
+                    <line color="#B03090" alpha="255" width="3" />
                 </shape>
                 <shape name="highlightleft">
                     <area>0,20,5,-20</area>
@@ -2071,6 +2090,7 @@
                     <fill color="#00FFFF" alpha="180" />
                 </shape>
             </state>
+
         </statetype>
 
         <statetype name="upscrollarrow">
@@ -2282,24 +2302,26 @@
             <area>0,0,100%,100%</area>
             <minsize shrink="short">100%,60</minsize>
             <shape name="statusborder">
-                <area>9,0,-9,100%</area>
+                <area>10,0,-10,100%</area>
                 <minsize shrink="short">100%,60</minsize>
                 <type>roundbox</type>
+                <cornerradius>10</cornerradius>
                 <line color="#00FFFF" width="2" alpha="160" />
                 <fill color="#000000" alpha="180" />
-                <cornerradius>10</cornerradius>
             </shape>
             <shape name="highlightleft">
-                <area>0,15,6,-15</area>
+                <area>0,15,7,-15</area>
                 <minsize shrink="short">100%,60</minsize>
                 <type>ellipse</type>
-                <fill color="#00FFFF" alpha="180" />
+                <fill color="#B03090" alpha="255" />
+                <line color="#00FFFF" width="1" alpha="255" />
             </shape>
             <shape name="highlightright">
-                <area>100%-5,15,6,-15</area>
+                <area>100%-6,15,7,-15</area>
                 <minsize shrink="short">100%,60</minsize>
                 <type>ellipse</type>
-                <fill color="#00FFFF" alpha="180" />
+                <fill color="#B03090" alpha="255" />
+                <line color="#00FFFF" width="1" alpha="255" />
             </shape>
         </state>
         <state name="normal" from="default" />
@@ -2338,7 +2360,7 @@
         </state>
         <state name="running" from="default">
             <shape name="statusborder">
-                <line color="#33bf33" width="2" alpha="255" />
+                <line color="#33bf33" width="1" alpha="255" />
             </shape>
             <shape name="highlightleft">
                 <fill color="#33bf33" alpha="255" />
@@ -2349,7 +2371,7 @@
         </state>
         <state name="marked" from="default">
             <shape name="statusborder">
-                <line color="#FFFF00" width="2" alpha="255" />
+                <line color="#FFFF00" width="1" alpha="255" />
             </shape>
             <shape name="highlightleft">
                 <fill color="#FFFF00" alpha="255" />
