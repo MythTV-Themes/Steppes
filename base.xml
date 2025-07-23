@@ -1919,7 +1919,7 @@
             <state name="active" from="inactive">
                 <group name="areagroup">
                     <shape name="recGroupShape">
-                        <line color="#B03090" alpha="255" width="2" />
+                        <line color="#B03090" alpha="200" width="2" />
                     </shape>
                 </group>
             </state>
@@ -1951,13 +1951,13 @@
                     <area>22,0,-22,4</area>
                     <minsize>10,9</minsize>
                     <type>ellipse</type>
-                    <fill color="#50EFDF" alpha="250" />
+                    <fill color="#00FFFF" alpha="250" />
                 </shape>
                 <shape name="highlightbottom">
                     <area>22,100%-4,-22,4</area>
                     <minsize>10,9</minsize>
                     <type>ellipse</type>
-                    <fill color="#50EFDF" alpha="250" />
+                    <fill color="#00FFFF" alpha="250" />
                 </shape>
             </state>
 
@@ -1971,10 +1971,10 @@
 -->
 
                 <shape name="highlighttop">
-                    <fill color="#ff9147" alpha="250" />
+                    <fill color="#00FFFF" alpha="250" />
                 </shape>
                 <shape name="highlightbottom">
-                    <fill color="#ff9147" alpha="250" />
+                    <fill color="#00FFFF" alpha="250" />
                 </shape>
             </state>
 
