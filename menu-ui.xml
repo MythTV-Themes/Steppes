@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
 <mythuitheme>
     <window name="mainmenu">
 
@@ -10,11 +8,16 @@
 
         <group name="pagedate" from="baseDateHeading" />
 
-        <buttonlist name="menu" from="groupsList">
+        <buttonlist name="menu" from="itemsList">
+            <arrange>stack</arrange>
             <area>35,30,520,-30</area>
+            <buttonarea>15,0,-30,100%</buttonarea>
             <align>vcenter,left</align>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>selection</wrapstyle>
+            <spacing>0</spacing>
+            <showscrollbar>no</showscrollbar>
+
             <triggerevent context="Global" action="SELECT">RIGHT</triggerevent>
 
             <statetype name="buttonitem">
@@ -25,50 +28,56 @@
                     <shape name="groupBorder">
                         <cornerradius>10</cornerradius>
                     </shape>
+                    <textarea name="buttontext">
+                        <area>10,1,-10,-1</area>
+                        <align>center</align>
+                        <font>mymedium</font>
+                        <multiline>yes</multiline>
+                        <extraleading>-3</extraleading>
+                        <cutdown>yes</cutdown>
+                    </textarea>
                 </state>
 
-                <state name="active" from="inactive" />
+                <state name="active" from="inactive">
+                    <area>20,0,-20,85</area>
+                </state>
 
                 <state name="selectedinactive" from="inactive">
                     <area>0,0,100%,110</area>
 
                     <textarea name="buttontext">
                         <area>7,3,-7,-3</area>
+                        <align>center</align>
+                        <font>mymedium</font>
+                        <multiline>yes</multiline>
+                        <extraleading>-3</extraleading>
+                        <cutdown>yes</cutdown>
                     </textarea>
                 </state>
 
                 <state name="selectedactive" from="selectedinactive">
                     <area>0,0,100%,230</area>
 
-                    <shape name="groupBorder">
-                        <area>10,3,-10,-3</area>
-                        <cornerradius>10</cornerradius>
-                    </shape>
-
-                    <shape name="groupOutline">
-                        <area>7,0,-7,100%</area>
-                        <cornerradius>9</cornerradius>
-                    </shape>
-
                     <shape name="highlightleft">
-                        <area>0,30,4,-30</area>
+                        <area>0,30,7,-30</area>
                         <minsize>100%,20</minsize>
                         <type>ellipse</type>
-                        <fill color="#50EFDF" />
+                        <fill color="#B03090" alpha="255" />
+                        <line color="#50EFDF" width="1" alpha="255" />
                     </shape>
                     <shape name="highlightright">
-                        <area>100%-4,30,4,-30</area>
+                        <area>100%-6,30,7,-30</area>
                         <minsize>100%,20</minsize>
                         <type>ellipse</type>
-                        <fill color="#50EFDF" />
+                        <fill color="#B03090" alpha="255" />
+                        <line color="#50EFDF" width="1" alpha="255" />
                     </shape>
                     <shape name="desctop">
                         <area>13,100%-110,-13,55</area>
                         <type>roundbox</type>
                         <cornerradius>1</cornerradius>
                         <fill style="gradient">
-                            <gradient start="#000000" end="#AA99AA" alpha="224"
-                                      direction="vertical"  />
+                            <gradient start="#000000" end="#AA99AA" alpha="224" direction="vertical" />
                         </fill>
                         <alpha>192</alpha>
                     </shape>
@@ -77,8 +86,7 @@
                         <type>roundbox</type>
                         <cornerradius>1</cornerradius>
                         <fill style="gradient">
-                            <gradient start="#AA99AA" end="#000000" alpha="224"
-                                      direction="vertical"  />
+                            <gradient start="#AA99AA" end="#000000" alpha="224" direction="vertical" />
                         </fill>
                         <alpha>192</alpha>
                     </shape>
