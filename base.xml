@@ -2538,7 +2538,7 @@
                 </textarea>
 
                 <textarea name="stars" from="seasonepisode"
-                          depends="!seasonepisode&amp;!syndicatedepisode">
+                          depends="!seasonepisode">
                 </textarea>
             </state>
 
@@ -2577,7 +2577,7 @@
                 </textarea>
 
                 <textarea name="stars" from="seasonepisode"
-                          depends="subtitle&amp;!seasonepisode&amp;!syndicatedepisode">
+                          depends="subtitle&amp;!seasonepisode">
                 </textarea>
 
                 <textarea name="subtitle">
